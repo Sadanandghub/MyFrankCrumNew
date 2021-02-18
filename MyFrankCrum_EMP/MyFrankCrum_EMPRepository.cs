@@ -96,6 +96,13 @@ namespace MyFrankCrum_EMP
         [RepositoryFolder("4adb2402-d0f1-4185-819f-54d35157c656")]
         public partial class ApplicationUnderTestAppFolder : RepoGenBaseFolder
         {
+            MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder _somedivtag;
+            RepoItemInfo _hiuserInfo;
+            RepoItemInfo _pendingtimeoffrequests0Info;
+            RepoItemInfo _timeoffcalendarInfo;
+            RepoItemInfo _employeesInfo;
+            RepoItemInfo _personalInfo;
+            RepoItemInfo _jobpayInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -103,6 +110,13 @@ namespace MyFrankCrum_EMP
             public ApplicationUnderTestAppFolder(RepoGenBaseFolder parentFolder) :
                     base("ApplicationUnderTest", "/dom[@domain='devmfc.frankcrum.com']", parentFolder, 30000, null, false, "4adb2402-d0f1-4185-819f-54d35157c656", "")
             {
+                _somedivtag = new MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder(this);
+                _hiuserInfo = new RepoItemInfo(this, "HiUser", ".//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, User!']", 30000, null, "a3e32600-6f6d-4dc7-b218-60c088d58d1d");
+                _pendingtimeoffrequests0Info = new RepoItemInfo(this, "PendingTimeOffRequests0", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/div[1]/div[1]/?/?/div[@innertext>'Pending Time Off Requests']", 30000, null, "c56020f0-77cb-4f3b-959c-9530964f1a71");
+                _timeoffcalendarInfo = new RepoItemInfo(this, "TimeOffCalendar", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/?/?/h5[@innertext='Time Off Calendar']", 30000, null, "b0975e3b-721e-4b0e-87b0-893b6f26a04c");
+                _employeesInfo = new RepoItemInfo(this, "Employees", ".//div[#'/Employees']//div[@innertext='Employees']", 30000, null, "4c761a55-0c84-4b80-b662-f8ba98ff564f");
+                _personalInfo = new RepoItemInfo(this, "Personal", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Personal']", 30000, null, "18137ebf-5c2e-48a0-b589-8241b8c342d1");
+                _jobpayInfo = new RepoItemInfo(this, "JobPay", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Job & Pay']", 30000, null, "663ab337-b10c-4767-94a3-3dc45d8bdddb");
             }
 
             /// <summary>
@@ -126,6 +140,277 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HiUser item.
+            /// </summary>
+            [RepositoryItem("a3e32600-6f6d-4dc7-b218-60c088d58d1d")]
+            public virtual Ranorex.DivTag HiUser
+            {
+                get
+                {
+                    return _hiuserInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HiUser item info.
+            /// </summary>
+            [RepositoryItemInfo("a3e32600-6f6d-4dc7-b218-60c088d58d1d")]
+            public virtual RepoItemInfo HiUserInfo
+            {
+                get
+                {
+                    return _hiuserInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PendingTimeOffRequests0 item.
+            /// </summary>
+            [RepositoryItem("c56020f0-77cb-4f3b-959c-9530964f1a71")]
+            public virtual Ranorex.DivTag PendingTimeOffRequests0
+            {
+                get
+                {
+                    return _pendingtimeoffrequests0Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PendingTimeOffRequests0 item info.
+            /// </summary>
+            [RepositoryItemInfo("c56020f0-77cb-4f3b-959c-9530964f1a71")]
+            public virtual RepoItemInfo PendingTimeOffRequests0Info
+            {
+                get
+                {
+                    return _pendingtimeoffrequests0Info;
+                }
+            }
+
+            /// <summary>
+            /// The TimeOffCalendar item.
+            /// </summary>
+            [RepositoryItem("b0975e3b-721e-4b0e-87b0-893b6f26a04c")]
+            public virtual Ranorex.H5Tag TimeOffCalendar
+            {
+                get
+                {
+                    return _timeoffcalendarInfo.CreateAdapter<Ranorex.H5Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TimeOffCalendar item info.
+            /// </summary>
+            [RepositoryItemInfo("b0975e3b-721e-4b0e-87b0-893b6f26a04c")]
+            public virtual RepoItemInfo TimeOffCalendarInfo
+            {
+                get
+                {
+                    return _timeoffcalendarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Employees item.
+            /// </summary>
+            [RepositoryItem("4c761a55-0c84-4b80-b662-f8ba98ff564f")]
+            public virtual Ranorex.DivTag Employees
+            {
+                get
+                {
+                    return _employeesInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Employees item info.
+            /// </summary>
+            [RepositoryItemInfo("4c761a55-0c84-4b80-b662-f8ba98ff564f")]
+            public virtual RepoItemInfo EmployeesInfo
+            {
+                get
+                {
+                    return _employeesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Personal item.
+            /// </summary>
+            [RepositoryItem("18137ebf-5c2e-48a0-b589-8241b8c342d1")]
+            public virtual Ranorex.LiTag Personal
+            {
+                get
+                {
+                    return _personalInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Personal item info.
+            /// </summary>
+            [RepositoryItemInfo("18137ebf-5c2e-48a0-b589-8241b8c342d1")]
+            public virtual RepoItemInfo PersonalInfo
+            {
+                get
+                {
+                    return _personalInfo;
+                }
+            }
+
+            /// <summary>
+            /// The JobPay item.
+            /// </summary>
+            [RepositoryItem("663ab337-b10c-4767-94a3-3dc45d8bdddb")]
+            public virtual Ranorex.LiTag JobPay
+            {
+                get
+                {
+                    return _jobpayInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The JobPay item info.
+            /// </summary>
+            [RepositoryItemInfo("663ab337-b10c-4767-94a3-3dc45d8bdddb")]
+            public virtual RepoItemInfo JobPayInfo
+            {
+                get
+                {
+                    return _jobpayInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SomeDivTag folder.
+            /// </summary>
+            [RepositoryFolder("3c277c0b-840f-4617-a705-75fe26324e8e")]
+            public virtual MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder SomeDivTag
+            {
+                get { return _somedivtag; }
+            }
+        }
+
+        /// <summary>
+        /// The SomeDivTagFolder folder.
+        /// </summary>
+        [RepositoryFolder("3c277c0b-840f-4617-a705-75fe26324e8e")]
+        public partial class SomeDivTagFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _findemployeeInfo;
+            RepoItemInfo _searchInfo;
+            RepoItemInfo _allendanetInfo;
+
+            /// <summary>
+            /// Creates a new SomeDivTag  folder.
+            /// </summary>
+            public SomeDivTagFolder(RepoGenBaseFolder parentFolder) :
+                    base("SomeDivTag", ".//div[#'app']/div[2]/div[3]/div/div[3]", parentFolder, 30000, null, false, "3c277c0b-840f-4617-a705-75fe26324e8e", "")
+            {
+                _findemployeeInfo = new RepoItemInfo(this, "FindEmployee", ".//form[@action='https://devmfc.frankcrum.com/Employees']/button[@innertext='Find Employee']", 30000, null, "4a94201e-15df-4f15-b447-e46ce28162b6");
+                _searchInfo = new RepoItemInfo(this, "Search", ".//form[@action='https://devmfc.frankcrum.com/Employees']/input[@name='search']", 30000, null, "1afcd6c6-15d5-4d92-9d42-cfeaefa208ad");
+                _allendanetInfo = new RepoItemInfo(this, "AllenDaneT", "div/div/div[3]/div/div/div/div/div[2]/?/?/button[@innertext='Allen, Dane  T']", 30000, null, "525585a1-9415-4e8e-ba21-a47ab7c00a61");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("3c277c0b-840f-4617-a705-75fe26324e8e")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3c277c0b-840f-4617-a705-75fe26324e8e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FindEmployee item.
+            /// </summary>
+            [RepositoryItem("4a94201e-15df-4f15-b447-e46ce28162b6")]
+            public virtual Ranorex.ButtonTag FindEmployee
+            {
+                get
+                {
+                    return _findemployeeInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FindEmployee item info.
+            /// </summary>
+            [RepositoryItemInfo("4a94201e-15df-4f15-b447-e46ce28162b6")]
+            public virtual RepoItemInfo FindEmployeeInfo
+            {
+                get
+                {
+                    return _findemployeeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Search item.
+            /// </summary>
+            [RepositoryItem("1afcd6c6-15d5-4d92-9d42-cfeaefa208ad")]
+            public virtual Ranorex.InputTag Search
+            {
+                get
+                {
+                    return _searchInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Search item info.
+            /// </summary>
+            [RepositoryItemInfo("1afcd6c6-15d5-4d92-9d42-cfeaefa208ad")]
+            public virtual RepoItemInfo SearchInfo
+            {
+                get
+                {
+                    return _searchInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AllenDaneT item.
+            /// </summary>
+            [RepositoryItem("525585a1-9415-4e8e-ba21-a47ab7c00a61")]
+            public virtual Ranorex.ButtonTag AllenDaneT
+            {
+                get
+                {
+                    return _allendanetInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AllenDaneT item info.
+            /// </summary>
+            [RepositoryItemInfo("525585a1-9415-4e8e-ba21-a47ab7c00a61")]
+            public virtual RepoItemInfo AllenDaneTInfo
+            {
+                get
+                {
+                    return _allendanetInfo;
                 }
             }
         }

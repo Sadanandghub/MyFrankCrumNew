@@ -154,6 +154,53 @@ namespace MyFrankCrum_EMP
             repo.MyFrankCrum.A0F21THSNATIONALLLC.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(9));
+            Delay.Duration(10000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Hi, User!') on item 'ApplicationUnderTest.HiUser'.", repo.ApplicationUnderTest.HiUserInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.HiUserInfo, "InnerText", "Hi, User!");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Pending Time Off Requests ') on item 'ApplicationUnderTest.PendingTimeOffRequests0'.", repo.ApplicationUnderTest.PendingTimeOffRequests0Info, new RecordItemIndex(11));
+            Validate.AttributeContains(repo.ApplicationUnderTest.PendingTimeOffRequests0Info, "InnerText", "Pending Time Off Requests ");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Time Off Calendar') on item 'ApplicationUnderTest.TimeOffCalendar'.", repo.ApplicationUnderTest.TimeOffCalendarInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.TimeOffCalendarInfo, "InnerText", "Time Off Calendar");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Employees' at Center.", repo.ApplicationUnderTest.EmployeesInfo, new RecordItemIndex(13));
+            repo.ApplicationUnderTest.Employees.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Search' at Center.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(14));
+            repo.ApplicationUnderTest.SomeDivTag.Search.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'allen' with focus on 'ApplicationUnderTest.SomeDivTag.Search'.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(15));
+            repo.ApplicationUnderTest.SomeDivTag.Search.PressKeys("allen");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FindEmployee' at Center.", repo.ApplicationUnderTest.SomeDivTag.FindEmployeeInfo, new RecordItemIndex(16));
+            repo.ApplicationUnderTest.SomeDivTag.FindEmployee.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.AllenDaneT' at Center.", repo.ApplicationUnderTest.SomeDivTag.AllenDaneTInfo, new RecordItemIndex(17));
+            repo.ApplicationUnderTest.SomeDivTag.AllenDaneT.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Personal') on item 'ApplicationUnderTest.Personal'.", repo.ApplicationUnderTest.PersonalInfo, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.PersonalInfo, "InnerText", "Personal");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.JobPay' at Center.", repo.ApplicationUnderTest.JobPayInfo, new RecordItemIndex(19));
+            repo.ApplicationUnderTest.JobPay.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Job & Pay') on item 'ApplicationUnderTest.JobPay'.", repo.ApplicationUnderTest.JobPayInfo, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.JobPayInfo, "InnerText", "Job & Pay");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

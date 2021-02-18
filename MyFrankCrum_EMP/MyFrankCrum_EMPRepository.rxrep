@@ -20,6 +20,109 @@ name="MyFrankCrum_EMPRepository">
 		name="ApplicationUnderTest"
 		searchtimeout="30000ms"
 		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="a3e32600-6f6d-4dc7-b218-60c088d58d1d"
+			name="HiUser"
+			refimgid="59563d99-5990-4fe9-aee8-386b8881bd92"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, User!']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, User!']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="c56020f0-77cb-4f3b-959c-9530964f1a71"
+			name="PendingTimeOffRequests0"
+			refimgid="333c7db3-4a80-4d4b-ad60-f62b89e6248b"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[2]/div[1]/div[1]/div[1]/div[@innertext='Pending Time Off Requests (0)']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[2]/div[1]/div[1]/?/?/div[@innertext&gt;'Pending Time Off Requests']
+			</item>
+			<item
+			addcaps="unknown,webelement,h5tag"
+			capname="h5tag"
+			id="b0975e3b-721e-4b0e-87b0-893b6f26a04c"
+			name="TimeOffCalendar"
+			refimgid="dd67c25a-be24-448d-9b08-b0b673d9a772"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[2]/div[1]/h5[@innertext='Time Off Calendar']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[2]/?/?/h5[@innertext='Time Off Calendar']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="4c761a55-0c84-4b80-b662-f8ba98ff564f"
+			name="Employees"
+			refimgid="fa6a4487-8325-4fcd-9550-bae913d1c15f"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'/Employees']/div/a/div[@innertext='Employees']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'/Employees']//div[@innertext='Employees']
+			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="3c277c0b-840f-4617-a705-75fe26324e8e"
+			isrooted="True"
+			name="SomeDivTag"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="4a94201e-15df-4f15-b447-e46ce28162b6"
+				name="FindEmployee"
+				refimgid="61f51068-5fff-40e0-b9d1-5590631575a9"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[1]/form/button[@innertext='Find Employee']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]//form[@action='https://devmfc.frankcrum.com/Employees']/button[@innertext='Find Employee']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="1afcd6c6-15d5-4d92-9d42-cfeaefa208ad"
+				name="Search"
+				refimgid="15610ea2-714f-4908-ab7b-1f439901a25a"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[1]/form/input[@name='search']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]//form[@action='https://devmfc.frankcrum.com/Employees']/input[@name='search']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="525585a1-9415-4e8e-ba21-a47ab7c00a61"
+				name="AllenDaneT"
+				refimgid="51b6097e-1626-4cf6-8762-1620e415ec4a"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div/div/div/div/div[2]/div/button[@innertext='Allen, Dane  T']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div/div/div/div/div[2]/?/?/button[@innertext='Allen, Dane  T']
+				</item>
+				<basepath>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="18137ebf-5c2e-48a0-b589-8241b8c342d1"
+			name="Personal"
+			refimgid="76849cd9-89df-4934-b19f-ba9173e555cb"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='Personal']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Personal']
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="663ab337-b10c-4767-94a3-3dc45d8bdddb"
+			name="JobPay"
+			refimgid="b5fe59da-135f-4df8-86d2-6d15f1175c59"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='Job &amp; Pay']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Job &amp; Pay']
+			</item>
 			<basepath>
 				/dom[@domain='devmfc.frankcrum.com']
 			</basepath>
