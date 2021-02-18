@@ -118,86 +118,64 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Username' at Center.", repo.MyFrankCrum.UsernameInfo, new RecordItemIndex(0));
+            // Company User Name
+            Report.Log(ReportLevel.Info, "Section", "Company User Name", new RecordItemIndex(0));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Username' at Center.", repo.MyFrankCrum.UsernameInfo, new RecordItemIndex(1));
             repo.MyFrankCrum.Username.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompUser' with focus on 'MyFrankCrum.Username'.", repo.MyFrankCrum.UsernameInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompUser' with focus on 'MyFrankCrum.Username'.", repo.MyFrankCrum.UsernameInfo, new RecordItemIndex(2));
             repo.MyFrankCrum.Username.PressKeys(CompUser);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Password' at Center.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Password' at Center.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(3));
             repo.MyFrankCrum.Password.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompPwd' with focus on 'MyFrankCrum.Password'.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(3));
+            // Company User Password
+            Report.Log(ReportLevel.Info, "Section", "Company User Password", new RecordItemIndex(4));
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompPwd' with focus on 'MyFrankCrum.Password'.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(5));
             repo.MyFrankCrum.Password.PressKeys(CompPwd);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.LoginButton' at Center.", repo.MyFrankCrum.LoginButtonInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.LoginButton' at Center.", repo.MyFrankCrum.LoginButtonInfo, new RecordItemIndex(6));
             repo.MyFrankCrum.LoginButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Text' at Center.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(5));
-            repo.MyFrankCrum.Text.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Text' at Center.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(6));
-            repo.MyFrankCrum.Text.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompName' with focus on 'MyFrankCrum.Text'.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(7));
-            repo.MyFrankCrum.Text.PressKeys(CompName);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.A0F21THSNATIONALLLC' at Center.", repo.MyFrankCrum.A0F21THSNATIONALLLCInfo, new RecordItemIndex(8));
-            repo.MyFrankCrum.A0F21THSNATIONALLLC.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(7));
             Delay.Duration(10000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Hi, User!') on item 'ApplicationUnderTest.HiUser'.", repo.ApplicationUnderTest.HiUserInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.HiUserInfo, "InnerText", "Hi, User!");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Pending Time Off Requests ') on item 'ApplicationUnderTest.PendingTimeOffRequests0'.", repo.ApplicationUnderTest.PendingTimeOffRequests0Info, new RecordItemIndex(11));
-            Validate.AttributeContains(repo.ApplicationUnderTest.PendingTimeOffRequests0Info, "InnerText", "Pending Time Off Requests ");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Time Off Calendar') on item 'ApplicationUnderTest.TimeOffCalendar'.", repo.ApplicationUnderTest.TimeOffCalendarInfo, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.TimeOffCalendarInfo, "InnerText", "Time Off Calendar");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Employees' at Center.", repo.ApplicationUnderTest.EmployeesInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Employees' at Center.", repo.ApplicationUnderTest.EmployeesInfo, new RecordItemIndex(8));
             repo.ApplicationUnderTest.Employees.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Search' at Center.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Search' at Center.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.SomeDivTag.Search.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'allen' with focus on 'ApplicationUnderTest.SomeDivTag.Search'.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'allen' with focus on 'ApplicationUnderTest.SomeDivTag.Search'.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(10));
             repo.ApplicationUnderTest.SomeDivTag.Search.PressKeys("allen");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FindEmployee' at Center.", repo.ApplicationUnderTest.SomeDivTag.FindEmployeeInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FindEmployee' at Center.", repo.ApplicationUnderTest.SomeDivTag.FindEmployeeInfo, new RecordItemIndex(11));
             repo.ApplicationUnderTest.SomeDivTag.FindEmployee.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.AllenDaneT' at Center.", repo.ApplicationUnderTest.SomeDivTag.AllenDaneTInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.AllenDaneT' at Center.", repo.ApplicationUnderTest.SomeDivTag.AllenDaneTInfo, new RecordItemIndex(12));
             repo.ApplicationUnderTest.SomeDivTag.AllenDaneT.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Personal') on item 'ApplicationUnderTest.Personal'.", repo.ApplicationUnderTest.PersonalInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Personal') on item 'ApplicationUnderTest.Personal'.", repo.ApplicationUnderTest.PersonalInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.ApplicationUnderTest.PersonalInfo, "InnerText", "Personal");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.JobPay' at Center.", repo.ApplicationUnderTest.JobPayInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.JobPay' at Center.", repo.ApplicationUnderTest.JobPayInfo, new RecordItemIndex(14));
             repo.ApplicationUnderTest.JobPay.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Job & Pay') on item 'ApplicationUnderTest.JobPay'.", repo.ApplicationUnderTest.JobPayInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Job & Pay') on item 'ApplicationUnderTest.JobPay'.", repo.ApplicationUnderTest.JobPayInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.ApplicationUnderTest.JobPayInfo, "InnerText", "Job & Pay");
             Delay.Milliseconds(100);
             

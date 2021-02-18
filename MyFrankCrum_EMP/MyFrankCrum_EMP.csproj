@@ -138,6 +138,18 @@
       <UserCode>true</UserCode>
       <id>c533ac7f-6494-47c0-94e1-270fd94453ab</id>
     </Compile>
+    <Compile Include="Comp_Selector.cs">
+      <BoundTo>e9c419cd-91f2-4f90-9b1d-1281c7bf96a7</BoundTo>
+      <DependentUpon>Comp_Selector.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e9289e36-447b-40be-9a50-d4a3454458d3</id>
+    </Compile>
+    <Compile Include="Comp_Selector.UserCode.cs">
+      <BoundTo>e9c419cd-91f2-4f90-9b1d-1281c7bf96a7</BoundTo>
+      <DependentUpon>Comp_Selector.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6b375efb-d2a0-4d6b-b647-6961400d348d</id>
+    </Compile>
     <Compile Include="MyFrankCrum_EMPRepository.cs">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <DependentUpon>MyFrankCrum_EMPRepository.rxrep</DependentUpon>
@@ -171,6 +183,18 @@
       <UserCode>true</UserCode>
       <id>77b75c18-cd29-4f1d-b0aa-21b176ecd724</id>
     </Compile>
+    <Compile Include="Validation.cs">
+      <BoundTo>12f8a58a-b4e9-46cd-99d0-156e725be1e5</BoundTo>
+      <DependentUpon>Validation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>62f93ac2-107f-4299-918d-19746d9d0462</id>
+    </Compile>
+    <Compile Include="Validation.UserCode.cs">
+      <BoundTo>12f8a58a-b4e9-46cd-99d0-156e725be1e5</BoundTo>
+      <DependentUpon>Validation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ab851255-23dc-462a-97bb-804e9de18415</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -180,6 +204,11 @@
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>fd8e07d8-97f0-4519-944d-db5f94791516</id>
       <recordtableid>59d72108-e515-499f-9a9e-fbc2de6dc4b5</recordtableid>
+    </None>
+    <None Include="Comp_Selector.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>e9c419cd-91f2-4f90-9b1d-1281c7bf96a7</id>
+      <recordtableid>08404687-1bf3-4ad5-b53e-becdc510a179</recordtableid>
     </None>
     <None Include="MyFrankCrum_EMPRepository.rximg">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
@@ -201,6 +230,11 @@
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>45192c76-d874-45a8-a529-92eeb1bb2da6</id>
       <recordtableid>36c8b41b-2742-4277-9a7e-e0ef2589f773</recordtableid>
+    </None>
+    <None Include="Validation.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>12f8a58a-b4e9-46cd-99d0-156e725be1e5</id>
+      <recordtableid>9640aa47-bd0e-40ed-8226-5450e4cb66eb</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
