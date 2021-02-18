@@ -1,0 +1,125 @@
+﻿<repository
+id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"
+name="MyFrankCrum_EMPRepository">
+	<codegen
+	classname="MyFrankCrum_EMPRepository"
+	namespace="MyFrankCrum_EMP">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="57aa7af5-e1bb-4d86-b1a0-d72cef37e59c"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="4adb2402-d0f1-4185-819f-54d35157c656"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/dom[@domain='devmfc.frankcrum.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="e02b0ef2-fe8d-4d4c-89ac-ddc5221f14bc"
+		isrooted="True"
+		name="MyFrankCrum"
+		refpath="/dom[@domain='devmfc.frankcrum.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="dae14d42-0356-417b-9909-606bdede9e58"
+			name="Username"
+			refimgid="1bbb0493-3d8d-47be-ba96-2559620873dd"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//input[#'username']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//input[#'username']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="412c74cf-dc5a-4923-abfd-d0df44deb072"
+			name="Password"
+			refimgid="446ab4ef-8f50-49ca-86c9-b12a509470f3"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//input[#'password']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//input[#'password']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="5f2dc3f0-e054-4d98-957f-563cc77b128a"
+			name="LoginButton"
+			refimgid="c81f9180-4c71-4640-96c9-7ff4afefebad"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//button[#'login-button']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//button[#'login-button']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="2c2381c4-c30c-4b42-b588-e26ac722476e"
+			name="Text"
+			refimgid="e77cef36-9939-4538-adb7-a15f130ffb76"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/div/div[1]/div/input[@type='text']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/div/div[1]/?/?/input[@type='text']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="0bf98207-7145-403e-bdbb-7408bdc8115b"
+			name="A0F21THSNATIONALLLC"
+			refimgid="7e6e93c7-2622-430b-9c18-6fba1499250b"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'company-list-scroll']/div/div/button[@innertext='A0F21-THS NATIONAL LLC']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'company-list-scroll']//button[@innertext='A0F21-THS NATIONAL LLC']
+			</item>
+			<basepath>
+				/dom[@domain='devmfc.frankcrum.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
