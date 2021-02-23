@@ -24,44 +24,59 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Comp_Selector recording.
+    ///The FindEmployee recording.
     /// </summary>
-    [TestModule("08404687-1bf3-4ad5-b53e-becdc510a179", ModuleType.Recording, 1)]
-    public partial class Comp_Selector : ITestModule
+    [TestModule("188eecc5-1111-4823-9324-72e27139559c", ModuleType.Recording, 1)]
+    public partial class FindEmployee : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static Comp_Selector instance = new Comp_Selector();
+        static FindEmployee instance = new FindEmployee();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Comp_Selector()
+        public FindEmployee()
         {
-            CompName = "THS NATIONAL";
+            EmpName = "Allen, Dane T";
+            LclEmpName = "Allen, Dane T";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Comp_Selector Instance
+        public static FindEmployee Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _EmpName;
+
         /// <summary>
-        /// Gets or sets the value of variable CompName.
+        /// Gets or sets the value of variable EmpName.
         /// </summary>
-        [TestVariable("5ac666fd-4de1-4e60-8c76-7b15e63726f4")]
-        public string CompName
+        [TestVariable("8cd8cad7-5dad-41bd-abdd-61b9d649412f")]
+        public string EmpName
         {
-            get { return repo.CompName; }
-            set { repo.CompName = value; }
+            get { return _EmpName; }
+            set { _EmpName = value; }
+        }
+
+        string _LclEmpName;
+
+        /// <summary>
+        /// Gets or sets the value of variable LclEmpName.
+        /// </summary>
+        [TestVariable("cae86a64-143b-49f4-8b16-79647751cbd3")]
+        public string LclEmpName
+        {
+            get { return _LclEmpName; }
+            set { _LclEmpName = value; }
         }
 
 #endregion
@@ -90,23 +105,16 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            // Company Selector
-            Report.Log(ReportLevel.Info, "Section", "Company Selector", new RecordItemIndex(0));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Text' at Center.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(1));
-            repo.MyFrankCrum.Text.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Search' at Center.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.SomeDivTag.Search.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Text' at Center.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(2));
-            repo.MyFrankCrum.Text.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EmpName' with focus on 'ApplicationUnderTest.SomeDivTag.Search'.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.SomeDivTag.Search.PressKeys(EmpName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompName' with focus on 'MyFrankCrum.Text'.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(3));
-            repo.MyFrankCrum.Text.PressKeys(CompName);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.compselect' at Center.", repo.MyFrankCrum.compselectInfo, new RecordItemIndex(4));
-            repo.MyFrankCrum.compselect.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FindEmployee' at Center.", repo.ApplicationUnderTest.SomeDivTag.FindEmployeeInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.SomeDivTag.FindEmployee.Click();
             Delay.Milliseconds(0);
             
         }

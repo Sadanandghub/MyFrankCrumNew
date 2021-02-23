@@ -93,9 +93,8 @@ name="MyFrankCrum_EMPRepository">
 				addcaps="unknown,webelement,buttontag"
 				capname="buttontag"
 				id="525585a1-9415-4e8e-ba21-a47ab7c00a61"
-				name="AllenDaneT"
+				name="selectEmp"
 				refimgid="51b6097e-1626-4cf6-8762-1620e415ec4a"
-				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div/div/div/div/div[2]/div/button[@innertext='Allen, Dane  T']"
 				searchtimeout="30000ms">
 					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div/div/div/div/div[2]/?/?/button[@innertext='Allen, Dane  T']
 				</item>
@@ -123,6 +122,129 @@ name="MyFrankCrum_EMPRepository">
 			searchtimeout="30000ms">
 				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Job &amp; Pay']
 			</item>
+			<item
+			addcaps="unknown,webelement,formtag"
+			capname="formtag"
+			id="87755aa0-4c28-427f-8187-0b59e947f128"
+			name="HttpsDevmfcFrankcrumComLogin"
+			refimgid="284a6b7d-e549-4c77-86b1-bdcc51351555"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div/div[1]/form[@action='https://devmfc.frankcrum.com/login']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]//form[@action='https://devmfc.frankcrum.com/login']
+			</item>
+			<folder
+			addcaps="unknown,webelement,ultag"
+			capname="ultag"
+			id="5c790e60-8f13-4c69-8197-7fd2f571bc9a"
+			isrooted="True"
+			name="ReactTabsTabList"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="c01e2383-e9c4-4565-b771-190f973eba43"
+				name="Deductions"
+				refimgid="7c827c47-1e13-46b9-a188-801ed6aa4a1e"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='Deductions']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Deductions']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="9442c2e2-d591-47b0-9964-f775bd261441"
+				name="DirectDeposit"
+				refimgid="350c8ab4-9510-4da3-8d8b-a038e91b03eb"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='Direct Deposit']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Direct Deposit']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="689f8271-ab06-4b52-9f35-91d373d1af68"
+				name="Documents"
+				refimgid="44cccb7a-cbf1-4931-a6de-a3433b27c8c1"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='Documents']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Documents']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="0441b44a-75e7-4571-9c5f-27c9524e0bce"
+				name="Earnings"
+				refimgid="269cfbcb-c49f-4b16-94a4-ee4e8c7f4233"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='Earnings']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Earnings']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="f7cba47e-2466-45bf-9f31-6ba65aafc37d"
+				name="History"
+				refimgid="6b6d03c9-684e-43a4-995f-52fd85d0fc73"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='History']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='History']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="e2a9fa75-e33f-4e27-9359-377dcdef1325"
+				name="Licenses"
+				refimgid="836bbd1c-62a4-4701-b04b-5625e4f6a295"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='Licenses']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Licenses']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="1a541b7f-9362-4f53-9c7e-7c3f3effd54b"
+				name="PTOSetup"
+				refimgid="c051dd87-40eb-432b-ad3f-51b33a7e47df"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='PTO Setup']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='PTO Setup']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="480b2dd0-112e-49af-b185-c5030f6165b1"
+				name="LiTagPTO"
+				refimgid="e30ccba6-0e4c-4b90-852c-26a773c1f2cb"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='PTO']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='PTO']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="4550005c-abb9-4525-a54f-5fac3570c98b"
+				name="PayHistory"
+				refimgid="f6d6de4b-643a-4529-92b5-cde7030725d6"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='Pay History']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Pay History']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="4484973f-5ea0-494d-90cb-2d9efd1420a1"
+				name="Taxes"
+				refimgid="925f7f26-3f4a-414c-9081-ea0d6a427d7e"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/div/li[@innertext='Taxes']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Taxes']
+				</item>
+				<basepath>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain='devmfc.frankcrum.com']
 			</basepath>
@@ -167,9 +289,8 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="412c74cf-dc5a-4923-abfd-d0df44deb072"
 			name="Password"
 			refimgid="446ab4ef-8f50-49ca-86c9-b12a509470f3"
-			refpath="/dom[@domain='devmfc.frankcrum.com']//input[#'password']"
 			searchtimeout="30000ms">
-				/dom[@domain='devmfc.frankcrum.com']//input[#'password']
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']//form[@action='https://devmfc.frankcrum.com/login']/div[2]/input[@type='password']
 			</item>
 			<item
 			addcaps="unknown,webelement,buttontag"
@@ -195,11 +316,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="unknown,webelement,buttontag"
 			capname="buttontag"
 			id="0bf98207-7145-403e-bdbb-7408bdc8115b"
-			name="A0F21THSNATIONALLLC"
+			name="compselect"
 			refimgid="7e6e93c7-2622-430b-9c18-6fba1499250b"
-			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'company-list-scroll']/div/div/button[@innertext='A0F21-THS NATIONAL LLC']"
 			searchtimeout="30000ms">
-				/dom[@domain='devmfc.frankcrum.com']//div[#'company-list-scroll']//button[@innertext='A0F21-THS NATIONAL LLC']
+				/dom[@domain='devmfc.frankcrum.com']//div[#'company-list-scroll']/div/?/?/button[@innertext&gt;$CompName]
 			</item>
 			<basepath>
 				/dom[@domain='devmfc.frankcrum.com']
@@ -224,5 +344,29 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="8e0ad58d-ed8f-4b1b-95b9-74118034f7b8"
+		name="CompPwd">
+			Crum2017
+		</var>
+		<var
+		id="0af2cb6b-977b-477f-9d28-dd11890b6f7f"
+		name="CompName">
+			THS NATIONAL
+		</var>
+		<var
+		id="0d01ccb8-ab77-4f6b-b96b-a5688cbd15f7"
+		name="comselect">
+			21538
+		</var>
+		<var
+		id="85249dde-7b5d-4085-b365-e16a9c0decdf"
+		name="compselect">
+		</var>
+		<var
+		id="c35b5cb9-165d-4d1f-910e-208448e73914"
+		name="Emp">
+			-1
+		</var>
 	</variables>
 </repository>

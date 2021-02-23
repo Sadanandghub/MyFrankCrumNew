@@ -83,8 +83,8 @@ namespace MyFrankCrum_EMP
             Validate.AttributeEqual(repo.ApplicationUnderTest.HiUserInfo, "InnerText", "Hi, User!");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Pending Time Off Requests ') on item 'ApplicationUnderTest.PendingTimeOffRequests0'.", repo.ApplicationUnderTest.PendingTimeOffRequests0Info, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.ApplicationUnderTest.PendingTimeOffRequests0Info, "InnerText", "Pending Time Off Requests ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Pending Time Off Requests (0)') on item 'ApplicationUnderTest.PendingTimeOffRequests0'.", repo.ApplicationUnderTest.PendingTimeOffRequests0Info, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.ApplicationUnderTest.PendingTimeOffRequests0Info, "InnerText", "Pending Time Off Requests (0)");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Time Off Calendar') on item 'ApplicationUnderTest.TimeOffCalendar'.", repo.ApplicationUnderTest.TimeOffCalendarInfo, new RecordItemIndex(2));

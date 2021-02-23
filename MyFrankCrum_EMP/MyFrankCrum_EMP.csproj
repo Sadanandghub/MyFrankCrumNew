@@ -150,6 +150,54 @@
       <UserCode>true</UserCode>
       <id>6b375efb-d2a0-4d6b-b647-6961400d348d</id>
     </Compile>
+    <Compile Include="EmployeeLink.cs">
+      <BoundTo>a8d7cba8-9831-4b2a-be18-7e0c701b9848</BoundTo>
+      <DependentUpon>EmployeeLink.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>60ac3b9b-a17b-45ae-9148-cdb47c9733f6</id>
+    </Compile>
+    <Compile Include="EmployeeLink.UserCode.cs">
+      <BoundTo>a8d7cba8-9831-4b2a-be18-7e0c701b9848</BoundTo>
+      <DependentUpon>EmployeeLink.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8f3bb39b-b5dd-4686-aefb-d40a09a4755e</id>
+    </Compile>
+    <Compile Include="EmployeeSelection.cs">
+      <BoundTo>805bb76b-8424-4cf5-b804-3b9fa85cdf02</BoundTo>
+      <DependentUpon>EmployeeSelection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>187b5084-2fbf-4dc7-92a6-61fb9308ca9c</id>
+    </Compile>
+    <Compile Include="EmployeeSelection.UserCode.cs">
+      <BoundTo>805bb76b-8424-4cf5-b804-3b9fa85cdf02</BoundTo>
+      <DependentUpon>EmployeeSelection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a2246020-75b6-4f16-baa1-fa7d3c599fd0</id>
+    </Compile>
+    <Compile Include="EmployeeTabs.cs">
+      <BoundTo>6fa6d1c2-9b30-4e79-8207-55cf8cae403d</BoundTo>
+      <DependentUpon>EmployeeTabs.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e3fd19c8-963a-4a96-841d-79d48e141618</id>
+    </Compile>
+    <Compile Include="EmployeeTabs.UserCode.cs">
+      <BoundTo>6fa6d1c2-9b30-4e79-8207-55cf8cae403d</BoundTo>
+      <DependentUpon>EmployeeTabs.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f78d871a-01bc-46d1-91c3-1322e8828dab</id>
+    </Compile>
+    <Compile Include="FindEmployee.cs">
+      <BoundTo>8321b084-41c4-47e3-a35e-33dff04d0705</BoundTo>
+      <DependentUpon>FindEmployee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cf5d55d6-e78d-4576-a605-a08472adfb9c</id>
+    </Compile>
+    <Compile Include="FindEmployee.UserCode.cs">
+      <BoundTo>8321b084-41c4-47e3-a35e-33dff04d0705</BoundTo>
+      <DependentUpon>FindEmployee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>73e1bb7d-e5b0-48a2-8942-26035af0222d</id>
+    </Compile>
     <Compile Include="MyFrankCrum_EMPRepository.cs">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <DependentUpon>MyFrankCrum_EMPRepository.rxrep</DependentUpon>
@@ -209,6 +257,26 @@
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>e9c419cd-91f2-4f90-9b1d-1281c7bf96a7</id>
       <recordtableid>08404687-1bf3-4ad5-b53e-becdc510a179</recordtableid>
+    </None>
+    <None Include="EmployeeLink.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>a8d7cba8-9831-4b2a-be18-7e0c701b9848</id>
+      <recordtableid>c4e81d5a-8723-49b0-8cd7-43d03a08b81c</recordtableid>
+    </None>
+    <None Include="EmployeeSelection.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>805bb76b-8424-4cf5-b804-3b9fa85cdf02</id>
+      <recordtableid>677c1db2-2d99-4d44-ab6f-39c53e5498b2</recordtableid>
+    </None>
+    <None Include="EmployeeTabs.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>6fa6d1c2-9b30-4e79-8207-55cf8cae403d</id>
+      <recordtableid>1ba1b34b-98ea-42c4-a969-56dd000ac15e</recordtableid>
+    </None>
+    <None Include="FindEmployee.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>8321b084-41c4-47e3-a35e-33dff04d0705</id>
+      <recordtableid>188eecc5-1111-4823-9324-72e27139559c</recordtableid>
     </None>
     <None Include="MyFrankCrum_EMPRepository.rximg">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>

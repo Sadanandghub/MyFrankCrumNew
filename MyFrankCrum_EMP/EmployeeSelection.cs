@@ -24,30 +24,30 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Comp_Selector recording.
+    ///The EmployeeSelection recording.
     /// </summary>
-    [TestModule("08404687-1bf3-4ad5-b53e-becdc510a179", ModuleType.Recording, 1)]
-    public partial class Comp_Selector : ITestModule
+    [TestModule("677c1db2-2d99-4d44-ab6f-39c53e5498b2", ModuleType.Recording, 1)]
+    public partial class EmployeeSelection : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static Comp_Selector instance = new Comp_Selector();
+        static EmployeeSelection instance = new EmployeeSelection();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Comp_Selector()
+        public EmployeeSelection()
         {
-            CompName = "THS NATIONAL";
+            Emp = "-1";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Comp_Selector Instance
+        public static EmployeeSelection Instance
         {
             get { return instance; }
         }
@@ -55,13 +55,13 @@ namespace MyFrankCrum_EMP
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable CompName.
+        /// Gets or sets the value of variable Emp.
         /// </summary>
-        [TestVariable("5ac666fd-4de1-4e60-8c76-7b15e63726f4")]
-        public string CompName
+        [TestVariable("e16f1db2-14e4-4041-be28-46a2da27e7ee")]
+        public string Emp
         {
-            get { return repo.CompName; }
-            set { repo.CompName = value; }
+            get { return repo.Emp; }
+            set { repo.Emp = value; }
         }
 
 #endregion
@@ -90,23 +90,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            // Company Selector
-            Report.Log(ReportLevel.Info, "Section", "Company Selector", new RecordItemIndex(0));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Text' at Center.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(1));
-            repo.MyFrankCrum.Text.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Text' at Center.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(2));
-            repo.MyFrankCrum.Text.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompName' with focus on 'MyFrankCrum.Text'.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(3));
-            repo.MyFrankCrum.Text.PressKeys(CompName);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.compselect' at Center.", repo.MyFrankCrum.compselectInfo, new RecordItemIndex(4));
-            repo.MyFrankCrum.compselect.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.", repo.ApplicationUnderTest.SomeDivTag.selectEmpInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.SomeDivTag.selectEmp.Click();
             Delay.Milliseconds(0);
             
         }
