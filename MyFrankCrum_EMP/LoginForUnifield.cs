@@ -24,55 +24,34 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The EmployeeSelection recording.
+    ///The LoginForUnifield recording.
     /// </summary>
-    [TestModule("677c1db2-2d99-4d44-ab6f-39c53e5498b2", ModuleType.Recording, 1)]
-    public partial class EmployeeSelection : ITestModule
+    [TestModule("bcc43d89-8074-4c99-a688-42708fcbcba4", ModuleType.Recording, 1)]
+    public partial class LoginForUnifield : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static EmployeeSelection instance = new EmployeeSelection();
+        static LoginForUnifield instance = new LoginForUnifield();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public EmployeeSelection()
+        public LoginForUnifield()
         {
-            Emp = "-1";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static EmployeeSelection Instance
+        public static LoginForUnifield Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable EmpName.
-        /// </summary>
-        [TestVariable("63421979-03c2-4681-8118-3604485e880a")]
-        public string EmpName
-        {
-            get { return repo.EmpName; }
-            set { repo.EmpName = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Emp.
-        /// </summary>
-        [TestVariable("e16f1db2-14e4-4041-be28-46a2da27e7ee")]
-        public string Emp
-        {
-            get { return repo.Emp; }
-            set { repo.Emp = value; }
-        }
 
 #endregion
 
@@ -100,8 +79,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.", repo.ApplicationUnderTest.SomeDivTag.selectEmpInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.selectEmp.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.setting1' at Center.", repo.ApplicationUnderTest.setting1Info, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.setting1.Click();
             Delay.Milliseconds(0);
             
         }

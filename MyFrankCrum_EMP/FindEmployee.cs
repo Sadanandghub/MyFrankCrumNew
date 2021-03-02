@@ -55,18 +55,6 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
-        string _EmpName;
-
-        /// <summary>
-        /// Gets or sets the value of variable EmpName.
-        /// </summary>
-        [TestVariable("8cd8cad7-5dad-41bd-abdd-61b9d649412f")]
-        public string EmpName
-        {
-            get { return _EmpName; }
-            set { _EmpName = value; }
-        }
-
         string _LclEmpName;
 
         /// <summary>
@@ -77,6 +65,16 @@ namespace MyFrankCrum_EMP
         {
             get { return _LclEmpName; }
             set { _LclEmpName = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable EmpName.
+        /// </summary>
+        [TestVariable("8cd8cad7-5dad-41bd-abdd-61b9d649412f")]
+        public string EmpName
+        {
+            get { return repo.EmpName; }
+            set { repo.EmpName = value; }
         }
 
 #endregion
@@ -115,6 +113,10 @@ namespace MyFrankCrum_EMP
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FindEmployee' at Center.", repo.ApplicationUnderTest.SomeDivTag.FindEmployeeInfo, new RecordItemIndex(2));
             repo.ApplicationUnderTest.SomeDivTag.FindEmployee.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.", repo.ApplicationUnderTest.SomeDivTag.selectEmpInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.SomeDivTag.selectEmp.Click();
             Delay.Milliseconds(0);
             
         }

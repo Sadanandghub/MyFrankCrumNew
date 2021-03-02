@@ -29,6 +29,7 @@ namespace MyFrankCrum_EMP
         static MyFrankCrum_EMPRepository instance = new MyFrankCrum_EMPRepository();
         MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder _applicationundertest;
         MyFrankCrum_EMPRepositoryFolders.MyFrankCrumAppFolder _myfrankcrum;
+        MyFrankCrum_EMPRepositoryFolders.ExplorerAppFolder _explorer;
 
         /// <summary>
         /// Gets the singleton class instance representing the MyFrankCrum_EMPRepository element repository.
@@ -47,6 +48,7 @@ namespace MyFrankCrum_EMP
         {
             _applicationundertest = new MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder(this);
             _myfrankcrum = new MyFrankCrum_EMPRepositoryFolders.MyFrankCrumAppFolder(this);
+            _explorer = new MyFrankCrum_EMPRepositoryFolders.ExplorerAppFolder(this);
         }
 
 #region Variables
@@ -111,6 +113,18 @@ namespace MyFrankCrum_EMP
             set { _Emp = value; }
         }
 
+        string _EmpName = "Allen, Dane T";
+
+        /// <summary>
+        /// Gets or sets the value of variable EmpName.
+        /// </summary>
+        [TestVariable("63421979-03c2-4681-8118-3604485e880a")]
+        public string EmpName
+        {
+            get { return _EmpName; }
+            set { _EmpName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -142,6 +156,15 @@ namespace MyFrankCrum_EMP
         {
             get { return _myfrankcrum; }
         }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("803f8440-3af5-460b-a814-d1d1b413f407")]
+        public virtual MyFrankCrum_EMPRepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
+        }
     }
 
     /// <summary>
@@ -165,6 +188,8 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _personalInfo;
             RepoItemInfo _jobpayInfo;
             RepoItemInfo _httpsdevmfcfrankcrumcomloginInfo;
+            SidebarInfoClass _sidebarInfo;
+            RepoItemInfo _setting1Info;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -181,6 +206,43 @@ namespace MyFrankCrum_EMP
                 _personalInfo = new RepoItemInfo(this, "Personal", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Personal']", 30000, null, "18137ebf-5c2e-48a0-b589-8241b8c342d1");
                 _jobpayInfo = new RepoItemInfo(this, "JobPay", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Job & Pay']", 30000, null, "663ab337-b10c-4767-94a3-3dc45d8bdddb");
                 _httpsdevmfcfrankcrumcomloginInfo = new RepoItemInfo(this, "HttpsDevmfcFrankcrumComLogin", ".//div[#'app']/div[2]//form[@action='https://devmfc.frankcrum.com/login']", 30000, null, "87755aa0-4c28-427f-8187-0b59e947f128");
+                _sidebarInfo = new SidebarInfoClass(this);
+                _setting1Info = new RepoItemInfo(this, "setting1", ".//div[#'sidebar-content-container']/div[9]//a[@innertext='Settings']", 30000, null, "3cf03341-f3d9-4bb3-96f5-553c274f4647");
+            }
+
+            /// <summary>
+            /// The SidebarInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("3942733e-6a7d-4b8f-8c7b-e0872aee717e")]
+            public class SidebarInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// SidebarInfoClass class constructor.
+                /// </summary>
+                public SidebarInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "Sidebar", ".//div[#'app']/div[2]/div[2]", 30000, null, "3942733e-6a7d-4b8f-8c7b-e0872aee717e")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("7b4aaf44-72d6-46f0-9317-62fd81de1685")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("7b4aaf44-72d6-46f0-9317-62fd81de1685");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("7b4aaf44-72d6-46f0-9317-62fd81de1685")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("7b4aaf44-72d6-46f0-9317-62fd81de1685", cropRect);
+                }
             }
 
             /// <summary>
@@ -376,6 +438,54 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
+            /// The Sidebar item.
+            /// </summary>
+            [RepositoryItem("3942733e-6a7d-4b8f-8c7b-e0872aee717e")]
+            public virtual Ranorex.DivTag Sidebar
+            {
+                get
+                {
+                    return _sidebarInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Sidebar item info.
+            /// </summary>
+            [RepositoryItemInfo("3942733e-6a7d-4b8f-8c7b-e0872aee717e")]
+            public virtual SidebarInfoClass SidebarInfo
+            {
+                get
+                {
+                    return _sidebarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The setting1 item.
+            /// </summary>
+            [RepositoryItem("3cf03341-f3d9-4bb3-96f5-553c274f4647")]
+            public virtual Ranorex.ATag setting1
+            {
+                get
+                {
+                    return _setting1Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The setting1 item info.
+            /// </summary>
+            [RepositoryItemInfo("3cf03341-f3d9-4bb3-96f5-553c274f4647")]
+            public virtual RepoItemInfo setting1Info
+            {
+                get
+                {
+                    return _setting1Info;
+                }
+            }
+
+            /// <summary>
             /// The SomeDivTag folder.
             /// </summary>
             [RepositoryFolder("3c277c0b-840f-4617-a705-75fe26324e8e")]
@@ -403,6 +513,8 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _findemployeeInfo;
             RepoItemInfo _searchInfo;
             RepoItemInfo _selectempInfo;
+            SettingsInfoClass _settingsInfo;
+            RepoItemInfo _checkmarkInfo;
 
             /// <summary>
             /// Creates a new SomeDivTag  folder.
@@ -412,7 +524,44 @@ namespace MyFrankCrum_EMP
             {
                 _findemployeeInfo = new RepoItemInfo(this, "FindEmployee", ".//form[@action='https://devmfc.frankcrum.com/Employees']/button[@innertext='Find Employee']", 30000, null, "4a94201e-15df-4f15-b447-e46ce28162b6");
                 _searchInfo = new RepoItemInfo(this, "Search", ".//form[@action='https://devmfc.frankcrum.com/Employees']/input[@name='search']", 30000, null, "1afcd6c6-15d5-4d92-9d42-cfeaefa208ad");
-                _selectempInfo = new RepoItemInfo(this, "selectEmp", "div/div/div[3]/div/div/div/div/div[2]/?/?/button[@innertext='Allen, Dane  T']", 30000, null, "525585a1-9415-4e8e-ba21-a47ab7c00a61");
+                _selectempInfo = new RepoItemInfo(this, "selectEmp", "div/div/div[3]/div/div/div/div/div[2]/?/?/button[@innertext>$EmpName]", 30000, null, "525585a1-9415-4e8e-ba21-a47ab7c00a61");
+                _settingsInfo = new SettingsInfoClass(this);
+                _checkmarkInfo = new RepoItemInfo(this, "Checkmark", ".//form[@action='https://devmfc.frankcrum.com/employerSettings']/div[2]/div[3]/div[2]/label[2]/span[@id='checkmark']", 30000, null, "df4191fd-fee2-4754-a9ce-409dcb4c1a2f");
+            }
+
+            /// <summary>
+            /// The SettingsInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("b8a642b7-927a-4482-a911-dbe530d2cecd")]
+            public class SettingsInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// SettingsInfoClass class constructor.
+                /// </summary>
+                public SettingsInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "Settings", "div[9]//a[@innertext='Settings']", 30000, null, "b8a642b7-927a-4482-a911-dbe530d2cecd")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("5e9b78e6-f47e-453d-ad2c-4e22b4a17e1c")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("5e9b78e6-f47e-453d-ad2c-4e22b4a17e1c");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("5e9b78e6-f47e-453d-ad2c-4e22b4a17e1c")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("5e9b78e6-f47e-453d-ad2c-4e22b4a17e1c", cropRect);
+                }
             }
 
             /// <summary>
@@ -508,6 +657,54 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _selectempInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Settings item.
+            /// </summary>
+            [RepositoryItem("b8a642b7-927a-4482-a911-dbe530d2cecd")]
+            public virtual Ranorex.ATag Settings
+            {
+                get
+                {
+                    return _settingsInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Settings item info.
+            /// </summary>
+            [RepositoryItemInfo("b8a642b7-927a-4482-a911-dbe530d2cecd")]
+            public virtual SettingsInfoClass SettingsInfo
+            {
+                get
+                {
+                    return _settingsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Checkmark item.
+            /// </summary>
+            [RepositoryItem("df4191fd-fee2-4754-a9ce-409dcb4c1a2f")]
+            public virtual Ranorex.SpanTag Checkmark
+            {
+                get
+                {
+                    return _checkmarkInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Checkmark item info.
+            /// </summary>
+            [RepositoryItemInfo("df4191fd-fee2-4754-a9ce-409dcb4c1a2f")]
+            public virtual RepoItemInfo CheckmarkInfo
+            {
+                get
+                {
+                    return _checkmarkInfo;
                 }
             }
         }
@@ -978,6 +1175,72 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _compselectInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("803f8440-3af5-460b-a814-d1d1b413f407")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _ranorexstudio2runningwindowsInfo;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "803f8440-3af5-460b-a814-d1d1b413f407", "")
+            {
+                _ranorexstudio2runningwindowsInfo = new RepoItemInfo(this, "RanorexStudio2RunningWindows", "container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[9]", 30000, null, "83da23ea-c932-4c3c-827a-1d455c26d0c5");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("803f8440-3af5-460b-a814-d1d1b413f407")]
+            public virtual Ranorex.MenuBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MenuBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("803f8440-3af5-460b-a814-d1d1b413f407")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RanorexStudio2RunningWindows item.
+            /// </summary>
+            [RepositoryItem("83da23ea-c932-4c3c-827a-1d455c26d0c5")]
+            public virtual Ranorex.Button RanorexStudio2RunningWindows
+            {
+                get
+                {
+                    return _ranorexstudio2runningwindowsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RanorexStudio2RunningWindows item info.
+            /// </summary>
+            [RepositoryItemInfo("83da23ea-c932-4c3c-827a-1d455c26d0c5")]
+            public virtual RepoItemInfo RanorexStudio2RunningWindowsInfo
+            {
+                get
+                {
+                    return _ranorexstudio2runningwindowsInfo;
                 }
             }
         }
