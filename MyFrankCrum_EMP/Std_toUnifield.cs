@@ -24,29 +24,29 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The LoginForUnifield recording.
+    ///The Std_toUnifield recording.
     /// </summary>
     [TestModule("bcc43d89-8074-4c99-a688-42708fcbcba4", ModuleType.Recording, 1)]
-    public partial class LoginForUnifield : ITestModule
+    public partial class Std_toUnifield : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static LoginForUnifield instance = new LoginForUnifield();
+        static Std_toUnifield instance = new Std_toUnifield();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public LoginForUnifield()
+        public Std_toUnifield()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static LoginForUnifield Instance
+        public static Std_toUnifield Instance
         {
             get { return instance; }
         }
@@ -82,6 +82,17 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.setting1' at Center.", repo.ApplicationUnderTest.setting1Info, new RecordItemIndex(0));
             repo.ApplicationUnderTest.setting1.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UnifiedCheck' at Center.", repo.ApplicationUnderTest.UnifiedCheckInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.UnifiedCheck.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'ApplicationUnderTest.SidebarContentContainer'", repo.ApplicationUnderTest.SidebarContentContainerInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.ApplicationUnderTest.SidebarContentContainerInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Id='sidebar-content-container') on item 'ApplicationUnderTest.SidebarContentContainer'.", repo.ApplicationUnderTest.SidebarContentContainerInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.SidebarContentContainerInfo, "Id", "sidebar-content-container");
+            Delay.Milliseconds(100);
             
         }
 

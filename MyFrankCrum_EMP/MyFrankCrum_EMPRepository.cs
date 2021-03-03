@@ -190,6 +190,10 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _httpsdevmfcfrankcrumcomloginInfo;
             SidebarInfoClass _sidebarInfo;
             RepoItemInfo _setting1Info;
+            RepoItemInfo _unifiedcheckInfo;
+            SidebarContentContainerInfoClass _sidebarcontentcontainerInfo;
+            RepoItemInfo _unifiedsettingsInfo;
+            RepoItemInfo _stdcheckedInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -207,7 +211,11 @@ namespace MyFrankCrum_EMP
                 _jobpayInfo = new RepoItemInfo(this, "JobPay", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Job & Pay']", 30000, null, "663ab337-b10c-4767-94a3-3dc45d8bdddb");
                 _httpsdevmfcfrankcrumcomloginInfo = new RepoItemInfo(this, "HttpsDevmfcFrankcrumComLogin", ".//div[#'app']/div[2]//form[@action='https://devmfc.frankcrum.com/login']", 30000, null, "87755aa0-4c28-427f-8187-0b59e947f128");
                 _sidebarInfo = new SidebarInfoClass(this);
-                _setting1Info = new RepoItemInfo(this, "setting1", ".//div[#'sidebar-content-container']/div[9]//a[@innertext='Settings']", 30000, null, "3cf03341-f3d9-4bb3-96f5-553c274f4647");
+                _setting1Info = new RepoItemInfo(this, "setting1", ".//div[#'sidebar-content-container']/div[10]//a[@innertext='Settings']", 30000, null, "3cf03341-f3d9-4bb3-96f5-553c274f4647");
+                _unifiedcheckInfo = new RepoItemInfo(this, "UnifiedCheck", ".//div[#'app']/div[2]/div[3]//form[@action='https://devmfc.frankcrum.com/employerSettings']/div/div[3]/div[2]/label[2]/span[@id='checkmark']", 30000, null, "1f820e1a-b0da-498e-8f42-36439557f0d9");
+                _sidebarcontentcontainerInfo = new SidebarContentContainerInfoClass(this);
+                _unifiedsettingsInfo = new RepoItemInfo(this, "Unifiedsettings", ".//div[#'sidebar-content-container']/div[6]//a[@innertext='Settings']", 30000, null, "25534b36-d813-46ce-a4d1-672f5afc5206");
+                _stdcheckedInfo = new RepoItemInfo(this, "Stdchecked", ".//div[#'app']/div[2]/div[3]//form[@action='https://devmfc.frankcrum.com/employerSettings']/div/div[3]//span[@id='checkmark']", 30000, null, "1fbf9ab4-609f-4efe-a079-eabfb7e6f4fe");
             }
 
             /// <summary>
@@ -242,6 +250,41 @@ namespace MyFrankCrum_EMP
                 public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
                 {
                     return GetImage("7b4aaf44-72d6-46f0-9317-62fd81de1685", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The SidebarContentContainerInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("a359618d-729f-4cf8-824d-fde5af5cb1ba")]
+            public class SidebarContentContainerInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// SidebarContentContainerInfoClass class constructor.
+                /// </summary>
+                public SidebarContentContainerInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "SidebarContentContainer", ".//div[#'sidebar-content-container']", 30000, null, "a359618d-729f-4cf8-824d-fde5af5cb1ba")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("1b2567a6-06b3-477c-b049-7d36fc89e78c")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("1b2567a6-06b3-477c-b049-7d36fc89e78c");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("1b2567a6-06b3-477c-b049-7d36fc89e78c")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("1b2567a6-06b3-477c-b049-7d36fc89e78c", cropRect);
                 }
             }
 
@@ -486,6 +529,102 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
+            /// The UnifiedCheck item.
+            /// </summary>
+            [RepositoryItem("1f820e1a-b0da-498e-8f42-36439557f0d9")]
+            public virtual Ranorex.SpanTag UnifiedCheck
+            {
+                get
+                {
+                    return _unifiedcheckInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UnifiedCheck item info.
+            /// </summary>
+            [RepositoryItemInfo("1f820e1a-b0da-498e-8f42-36439557f0d9")]
+            public virtual RepoItemInfo UnifiedCheckInfo
+            {
+                get
+                {
+                    return _unifiedcheckInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SidebarContentContainer item.
+            /// </summary>
+            [RepositoryItem("a359618d-729f-4cf8-824d-fde5af5cb1ba")]
+            public virtual Ranorex.DivTag SidebarContentContainer
+            {
+                get
+                {
+                    return _sidebarcontentcontainerInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SidebarContentContainer item info.
+            /// </summary>
+            [RepositoryItemInfo("a359618d-729f-4cf8-824d-fde5af5cb1ba")]
+            public virtual SidebarContentContainerInfoClass SidebarContentContainerInfo
+            {
+                get
+                {
+                    return _sidebarcontentcontainerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Unifiedsettings item.
+            /// </summary>
+            [RepositoryItem("25534b36-d813-46ce-a4d1-672f5afc5206")]
+            public virtual Ranorex.ATag Unifiedsettings
+            {
+                get
+                {
+                    return _unifiedsettingsInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Unifiedsettings item info.
+            /// </summary>
+            [RepositoryItemInfo("25534b36-d813-46ce-a4d1-672f5afc5206")]
+            public virtual RepoItemInfo UnifiedsettingsInfo
+            {
+                get
+                {
+                    return _unifiedsettingsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Stdchecked item.
+            /// </summary>
+            [RepositoryItem("1fbf9ab4-609f-4efe-a079-eabfb7e6f4fe")]
+            public virtual Ranorex.SpanTag Stdchecked
+            {
+                get
+                {
+                    return _stdcheckedInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Stdchecked item info.
+            /// </summary>
+            [RepositoryItemInfo("1fbf9ab4-609f-4efe-a079-eabfb7e6f4fe")]
+            public virtual RepoItemInfo StdcheckedInfo
+            {
+                get
+                {
+                    return _stdcheckedInfo;
+                }
+            }
+
+            /// <summary>
             /// The SomeDivTag folder.
             /// </summary>
             [RepositoryFolder("3c277c0b-840f-4617-a705-75fe26324e8e")]
@@ -515,6 +654,8 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _selectempInfo;
             SettingsInfoClass _settingsInfo;
             RepoItemInfo _checkmarkInfo;
+            RepoItemInfo _flexrowInfo;
+            FlexRow1InfoClass _flexrow1Info;
 
             /// <summary>
             /// Creates a new SomeDivTag  folder.
@@ -527,6 +668,8 @@ namespace MyFrankCrum_EMP
                 _selectempInfo = new RepoItemInfo(this, "selectEmp", "div/div/div[3]/div/div/div/div/div[2]/?/?/button[@innertext>$EmpName]", 30000, null, "525585a1-9415-4e8e-ba21-a47ab7c00a61");
                 _settingsInfo = new SettingsInfoClass(this);
                 _checkmarkInfo = new RepoItemInfo(this, "Checkmark", ".//form[@action='https://devmfc.frankcrum.com/employerSettings']/div[2]/div[3]/div[2]/label[2]/span[@id='checkmark']", 30000, null, "df4191fd-fee2-4754-a9ce-409dcb4c1a2f");
+                _flexrowInfo = new RepoItemInfo(this, "FlexRow", "div[2]/div/div[3]/div/div/div[3]/div[1]/div/div/div[3]", 30000, null, "63dab18b-f28c-41a0-8d2a-666d6ac5f495");
+                _flexrow1Info = new FlexRow1InfoClass(this);
             }
 
             /// <summary>
@@ -561,6 +704,41 @@ namespace MyFrankCrum_EMP
                 public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
                 {
                     return GetImage("5e9b78e6-f47e-453d-ad2c-4e22b4a17e1c", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The FlexRow1InfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("551cf9c5-f471-44f9-bff1-b2f174bbaa57")]
+            public class FlexRow1InfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// FlexRow1InfoClass class constructor.
+                /// </summary>
+                public FlexRow1InfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "FlexRow1", "div[2]/div/div[3]/div/div/div[3]/div[1]/div/div/div[2]", 30000, null, "551cf9c5-f471-44f9-bff1-b2f174bbaa57")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("8b183d05-a722-493a-9f59-1d2bae68a389")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("8b183d05-a722-493a-9f59-1d2bae68a389");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("8b183d05-a722-493a-9f59-1d2bae68a389")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("8b183d05-a722-493a-9f59-1d2bae68a389", cropRect);
                 }
             }
 
@@ -705,6 +883,54 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _checkmarkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FlexRow item.
+            /// </summary>
+            [RepositoryItem("63dab18b-f28c-41a0-8d2a-666d6ac5f495")]
+            public virtual Ranorex.DivTag FlexRow
+            {
+                get
+                {
+                    return _flexrowInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FlexRow item info.
+            /// </summary>
+            [RepositoryItemInfo("63dab18b-f28c-41a0-8d2a-666d6ac5f495")]
+            public virtual RepoItemInfo FlexRowInfo
+            {
+                get
+                {
+                    return _flexrowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FlexRow1 item.
+            /// </summary>
+            [RepositoryItem("551cf9c5-f471-44f9-bff1-b2f174bbaa57")]
+            public virtual Ranorex.DivTag FlexRow1
+            {
+                get
+                {
+                    return _flexrow1Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FlexRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("551cf9c5-f471-44f9-bff1-b2f174bbaa57")]
+            public virtual FlexRow1InfoClass FlexRow1Info
+            {
+                get
+                {
+                    return _flexrow1Info;
                 }
             }
         }
