@@ -24,29 +24,29 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Std_toUnifield recording.
+    ///The Validation_for_std_view recording.
     /// </summary>
-    [TestModule("bcc43d89-8074-4c99-a688-42708fcbcba4", ModuleType.Recording, 1)]
-    public partial class Std_toUnifield : ITestModule
+    [TestModule("2a9445f5-9701-4d1f-8706-6b8b5d9904ab", ModuleType.Recording, 1)]
+    public partial class Validation_for_std_view : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static Std_toUnifield instance = new Std_toUnifield();
+        static Validation_for_std_view instance = new Validation_for_std_view();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Std_toUnifield()
+        public Validation_for_std_view()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Std_toUnifield Instance
+        public static Validation_for_std_view Instance
         {
             get { return instance; }
         }
@@ -79,20 +79,25 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.setting1' at Center.", repo.ApplicationUnderTest.setting1Info, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.setting1.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating CompareImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=180,Height=708}) on item 'ApplicationUnderTest.SidebarContentContainer'.", repo.ApplicationUnderTest.SidebarContentContainerInfo, new RecordItemIndex(0));
+            Validate.CompareImage(repo.ApplicationUnderTest.SidebarContentContainerInfo, SidebarContentContainer_Screenshot1, SidebarContentContainer_Screenshot1_Options);
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UnifiedCheck' at Center.", repo.ApplicationUnderTest.UnifiedCheckInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.UnifiedCheck.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(2));
-            Delay.Duration(60000, false);
             
         }
 
 #region Image Feature Data
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
+        CompressedImage SidebarContentContainer_Screenshot1
+        { get { return repo.ApplicationUnderTest.SidebarContentContainerInfo.GetScreenshot1(new Rectangle(0, 0, 180, 708)); } }
+
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
+        Imaging.FindOptions SidebarContentContainer_Screenshot1_Options
+        { get { return Imaging.FindOptions.Parse("1;None;0,0,180,708;True;10000000;0ms"); } }
+
 #endregion
     }
 #pragma warning restore 0436

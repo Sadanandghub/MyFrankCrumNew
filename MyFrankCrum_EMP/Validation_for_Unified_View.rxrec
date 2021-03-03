@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="544bcdd3-6d20-4912-a7c7-e83a21402720"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validation_for_Unified_View"
+	namespace="MyFrankCrum_EMP">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="CompareImage"
+		codegenpropertyname="SidebarContentContainer_Screenshot2"
+		enabled="True"
+		imageoptions="1;None;0,0,180,257;True;10000000;0ms"
+		imagerect="0,0,180,257"
+		optional="False"
+		screenshotguid="ef3b6f62-1622-4974-8188-202c0491b134"
+		screenshotname="Screenshot2"
+		searchpropertyid="1370daf4-320c-4e98-8fd8-ab89efd5cb7b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a359618d-729f-4cf8-824d-fde5af5cb1ba"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'sidebar-content-container']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"
+	name="MyFrankCrum_EMPRepository"
+	relativepath="MyFrankCrum_EMPRepository.rxrep">
+		<codegen
+		classname="MyFrankCrum_EMPRepository"
+		namespace="MyFrankCrum_EMP">
+		</codegen>
+		<rootfolder
+		id="57aa7af5-e1bb-4d86-b1a0-d72cef37e59c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validation_for_Unified_View.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

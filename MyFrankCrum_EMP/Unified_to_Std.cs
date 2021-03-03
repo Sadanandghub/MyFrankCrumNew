@@ -79,33 +79,20 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Unifiedsettings' at Center.", repo.ApplicationUnderTest.UnifiedsettingsInfo, new RecordItemIndex(0));
-            //repo.ApplicationUnderTest.Unifiedsettings.Click();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Unifiedsettings' at Center.", repo.ApplicationUnderTest.UnifiedsettingsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Unifiedsettings.Click();
+            Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Stdchecked' at Center.", repo.ApplicationUnderTest.StdcheckedInfo, new RecordItemIndex(1));
-            //repo.ApplicationUnderTest.Stdchecked.Click();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Stdchecked' at Center.", repo.ApplicationUnderTest.StdcheckedInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.Stdchecked.Click();
+            Delay.Milliseconds(2080);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=180,Height=708}) on item 'ApplicationUnderTest.SidebarContentContainer'.", repo.ApplicationUnderTest.SidebarContentContainerInfo, new RecordItemIndex(2));
-            Validate.ContainsImage(repo.ApplicationUnderTest.SidebarContentContainerInfo, SidebarContentContainer_Screenshot1, SidebarContentContainer_Screenshot1_Options);
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(2));
+            Delay.Duration(60000, false);
             
         }
 
 #region Image Feature Data
-        /// <summary>
-        /// DO NOT REFERENCE THIS CODE  - auto generated
-        /// </summary>
-        CompressedImage SidebarContentContainer_Screenshot1
-        { get { return repo.ApplicationUnderTest.SidebarContentContainerInfo.GetScreenshot1(new Rectangle(0, 0, 180, 708)); } }
-
-        /// <summary>
-        /// DO NOT REFERENCE THIS CODE  - auto generated
-        /// </summary>
-        Imaging.FindOptions SidebarContentContainer_Screenshot1_Options
-        { get { return Imaging.FindOptions.Default; } }
-
 #endregion
     }
 #pragma warning restore 0436

@@ -194,6 +194,7 @@ namespace MyFrankCrum_EMP
             SidebarContentContainerInfoClass _sidebarcontentcontainerInfo;
             RepoItemInfo _unifiedsettingsInfo;
             RepoItemInfo _stdcheckedInfo;
+            RepoItemInfo _changecompanyInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -211,11 +212,12 @@ namespace MyFrankCrum_EMP
                 _jobpayInfo = new RepoItemInfo(this, "JobPay", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Job & Pay']", 30000, null, "663ab337-b10c-4767-94a3-3dc45d8bdddb");
                 _httpsdevmfcfrankcrumcomloginInfo = new RepoItemInfo(this, "HttpsDevmfcFrankcrumComLogin", ".//div[#'app']/div[2]//form[@action='https://devmfc.frankcrum.com/login']", 30000, null, "87755aa0-4c28-427f-8187-0b59e947f128");
                 _sidebarInfo = new SidebarInfoClass(this);
-                _setting1Info = new RepoItemInfo(this, "setting1", ".//div[#'sidebar-content-container']/div[10]//a[@innertext='Settings']", 30000, null, "3cf03341-f3d9-4bb3-96f5-553c274f4647");
+                _setting1Info = new RepoItemInfo(this, "setting1", ".//div[#'sidebar-content-container']/div[9]//a[@innertext='Settings']", 30000, null, "3cf03341-f3d9-4bb3-96f5-553c274f4647");
                 _unifiedcheckInfo = new RepoItemInfo(this, "UnifiedCheck", ".//div[#'app']/div[2]/div[3]//form[@action='https://devmfc.frankcrum.com/employerSettings']/div/div[3]/div[2]/label[2]/span[@id='checkmark']", 30000, null, "1f820e1a-b0da-498e-8f42-36439557f0d9");
                 _sidebarcontentcontainerInfo = new SidebarContentContainerInfoClass(this);
                 _unifiedsettingsInfo = new RepoItemInfo(this, "Unifiedsettings", ".//div[#'sidebar-content-container']/div[6]//a[@innertext='Settings']", 30000, null, "25534b36-d813-46ce-a4d1-672f5afc5206");
                 _stdcheckedInfo = new RepoItemInfo(this, "Stdchecked", ".//div[#'app']/div[2]/div[3]//form[@action='https://devmfc.frankcrum.com/employerSettings']/div/div[3]//span[@id='checkmark']", 30000, null, "1fbf9ab4-609f-4efe-a079-eabfb7e6f4fe");
+                _changecompanyInfo = new RepoItemInfo(this, "ChangeCompany", ".//div[#'app']/div[2]/div[1]/div/div[3]//button[@innertext='Change Company']", 30000, null, "79999ea6-8702-4994-a99f-069ba20c0895");
             }
 
             /// <summary>
@@ -285,6 +287,27 @@ namespace MyFrankCrum_EMP
                 public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
                 {
                     return GetImage("1b2567a6-06b3-477c-b049-7d36fc89e78c", cropRect);
+                }
+
+                /// <summary>
+                /// Gets the Screenshot2 item image.
+                /// </summary>
+                /// <returns>The Screenshot2 image.</returns>
+                [RepositoryImage("ef3b6f62-1622-4974-8188-202c0491b134")]
+                public CompressedImage GetScreenshot2()
+                {
+                    return GetImage("ef3b6f62-1622-4974-8188-202c0491b134");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot2 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("ef3b6f62-1622-4974-8188-202c0491b134")]
+                public CompressedImage GetScreenshot2(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("ef3b6f62-1622-4974-8188-202c0491b134", cropRect);
                 }
             }
 
@@ -621,6 +644,30 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _stdcheckedInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ChangeCompany item.
+            /// </summary>
+            [RepositoryItem("79999ea6-8702-4994-a99f-069ba20c0895")]
+            public virtual Ranorex.ButtonTag ChangeCompany
+            {
+                get
+                {
+                    return _changecompanyInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ChangeCompany item info.
+            /// </summary>
+            [RepositoryItemInfo("79999ea6-8702-4994-a99f-069ba20c0895")]
+            public virtual RepoItemInfo ChangeCompanyInfo
+            {
+                get
+                {
+                    return _changecompanyInfo;
                 }
             }
 

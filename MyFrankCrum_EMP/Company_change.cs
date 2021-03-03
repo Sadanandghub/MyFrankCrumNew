@@ -24,34 +24,45 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Std_toUnifield recording.
+    ///The Company_change recording.
     /// </summary>
-    [TestModule("bcc43d89-8074-4c99-a688-42708fcbcba4", ModuleType.Recording, 1)]
-    public partial class Std_toUnifield : ITestModule
+    [TestModule("da39143a-4387-4e2a-ae82-ba2ff8e0dc6d", ModuleType.Recording, 1)]
+    public partial class Company_change : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static Std_toUnifield instance = new Std_toUnifield();
+        static Company_change instance = new Company_change();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Std_toUnifield()
+        public Company_change()
         {
+            CompName = "THS NATIONAL";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Std_toUnifield Instance
+        public static Company_change Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable CompName.
+        /// </summary>
+        [TestVariable("5ef40c9b-1ab2-45f7-b273-dff7b63c33a6")]
+        public string CompName
+        {
+            get { return repo.CompName; }
+            set { repo.CompName = value; }
+        }
 
 #endregion
 
@@ -79,16 +90,24 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.setting1' at Center.", repo.ApplicationUnderTest.setting1Info, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.setting1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChangeCompany' at Center.", repo.ApplicationUnderTest.ChangeCompanyInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.ChangeCompany.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UnifiedCheck' at Center.", repo.ApplicationUnderTest.UnifiedCheckInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.UnifiedCheck.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(1));
+            Delay.Duration(30000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Text' at Center.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(2));
+            repo.MyFrankCrum.Text.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(2));
-            Delay.Duration(60000, false);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompName' with focus on 'MyFrankCrum.Text'.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(3));
+            repo.MyFrankCrum.Text.PressKeys(CompName);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.compselect' at Center.", repo.MyFrankCrum.compselectInfo, new RecordItemIndex(4));
+            repo.MyFrankCrum.compselect.Click();
+            Delay.Milliseconds(0);
             
         }
 
