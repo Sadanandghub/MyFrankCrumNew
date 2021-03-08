@@ -87,6 +87,45 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.Company_View_Popup_Close">
+             <summary>
+            The Company_View_Popup_Close recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Company_View_Popup_Close.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Company_View_Popup_Close.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Company_View_Popup_Close.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Company_View_Popup_Close.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Company_View_Popup_Close.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Company_View_Popup_Close.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Company_View_Popup_Close.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.Comp_Selector">
              <summary>
             The Comp_Selector recording.
@@ -307,32 +346,32 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:MyFrankCrum_EMP.Std_toUnifield">
+        <member name="T:MyFrankCrum_EMP.Logout">
              <summary>
-            The Std_toUnifield recording.
+            The Logout recording.
              </summary>
         </member>
-        <member name="F:MyFrankCrum_EMP.Std_toUnifield.repo">
+        <member name="F:MyFrankCrum_EMP.Logout.repo">
             <summary>
             Holds an instance of the MyFrankCrum_EMPRepository repository.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Std_toUnifield.#ctor">
+        <member name="M:MyFrankCrum_EMP.Logout.#ctor">
             <summary>
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.Std_toUnifield.Instance">
+        <member name="P:MyFrankCrum_EMP.Logout.Instance">
             <summary>
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Std_toUnifield.Start">
+        <member name="M:MyFrankCrum_EMP.Logout.Start">
             <summary>
-            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Std_toUnifield.Instance"/>.
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Logout.Instance"/>.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Std_toUnifield.Ranorex#Core#Testing#ITestModule#Run">
+        <member name="M:MyFrankCrum_EMP.Logout.Ranorex#Core#Testing#ITestModule#Run">
             <summary>
             Performs the playback of actions in this recording.
             </summary>
@@ -340,7 +379,46 @@
             instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
             that will in turn invoke this method.</remarks>
         </member>
-        <member name="M:MyFrankCrum_EMP.Std_toUnifield.Init">
+        <member name="M:MyFrankCrum_EMP.Logout.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Std_toUnified">
+             <summary>
+            The Std_toUnified recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Std_toUnified.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Std_toUnified.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Std_toUnified.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Std_toUnified.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Std_toUnified.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Std_toUnified.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Std_toUnified.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -635,6 +713,16 @@
             The ChangeCompany item info.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FasFaTimes">
+            <summary>
+            The FasFaTimes item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FasFaTimesInfo">
+            <summary>
+            The FasFaTimes item info.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SomeDivTag">
             <summary>
             The SomeDivTag folder.
@@ -779,6 +867,26 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FlexRow1Info">
             <summary>
             The FlexRow1 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.CompanyNews">
+            <summary>
+            The CompanyNews item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.CompanyNewsInfo">
+            <summary>
+            The CompanyNews item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Logout">
+            <summary>
+            The Logout item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.LogoutInfo">
+            <summary>
+            The Logout item info.
             </summary>
         </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ReactTabsTabListFolder">

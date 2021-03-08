@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace MyFrankCrum_EMP
 {
-    public partial class Std_toUnifield
+    public partial class Logout
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -195,6 +195,7 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _unifiedsettingsInfo;
             RepoItemInfo _stdcheckedInfo;
             RepoItemInfo _changecompanyInfo;
+            RepoItemInfo _fasfatimesInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -218,6 +219,7 @@ namespace MyFrankCrum_EMP
                 _unifiedsettingsInfo = new RepoItemInfo(this, "Unifiedsettings", ".//div[#'sidebar-content-container']/div[6]//a[@innertext='Settings']", 30000, null, "25534b36-d813-46ce-a4d1-672f5afc5206");
                 _stdcheckedInfo = new RepoItemInfo(this, "Stdchecked", ".//div[#'app']/div[2]/div[3]//form[@action='https://devmfc.frankcrum.com/employerSettings']/div/div[3]//span[@id='checkmark']", 30000, null, "1fbf9ab4-609f-4efe-a079-eabfb7e6f4fe");
                 _changecompanyInfo = new RepoItemInfo(this, "ChangeCompany", ".//div[#'app']/div[2]/div[1]/div/div[3]//button[@innertext='Change Company']", 30000, null, "79999ea6-8702-4994-a99f-069ba20c0895");
+                _fasfatimesInfo = new RepoItemInfo(this, "FasFaTimes", ".//button[#'modal-close-button']/i", 30000, null, "95b54a4b-f8d8-4cf2-bf96-8cdfb96bb13d");
             }
 
             /// <summary>
@@ -672,6 +674,30 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
+            /// The FasFaTimes item.
+            /// </summary>
+            [RepositoryItem("95b54a4b-f8d8-4cf2-bf96-8cdfb96bb13d")]
+            public virtual Ranorex.ITag FasFaTimes
+            {
+                get
+                {
+                    return _fasfatimesInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FasFaTimes item info.
+            /// </summary>
+            [RepositoryItemInfo("95b54a4b-f8d8-4cf2-bf96-8cdfb96bb13d")]
+            public virtual RepoItemInfo FasFaTimesInfo
+            {
+                get
+                {
+                    return _fasfatimesInfo;
+                }
+            }
+
+            /// <summary>
             /// The SomeDivTag folder.
             /// </summary>
             [RepositoryFolder("3c277c0b-840f-4617-a705-75fe26324e8e")]
@@ -703,6 +729,8 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _checkmarkInfo;
             RepoItemInfo _flexrowInfo;
             FlexRow1InfoClass _flexrow1Info;
+            RepoItemInfo _companynewsInfo;
+            RepoItemInfo _logoutInfo;
 
             /// <summary>
             /// Creates a new SomeDivTag  folder.
@@ -717,6 +745,8 @@ namespace MyFrankCrum_EMP
                 _checkmarkInfo = new RepoItemInfo(this, "Checkmark", ".//form[@action='https://devmfc.frankcrum.com/employerSettings']/div[2]/div[3]/div[2]/label[2]/span[@id='checkmark']", 30000, null, "df4191fd-fee2-4754-a9ce-409dcb4c1a2f");
                 _flexrowInfo = new RepoItemInfo(this, "FlexRow", "div[2]/div/div[3]/div/div/div[3]/div[1]/div/div/div[3]", 30000, null, "63dab18b-f28c-41a0-8d2a-666d6ac5f495");
                 _flexrow1Info = new FlexRow1InfoClass(this);
+                _companynewsInfo = new RepoItemInfo(this, "CompanyNews", "div[3]/?/?/h5[@innertext='Company News']", 30000, null, "33af1f85-8400-4a4c-b421-dc803b640fb5");
+                _logoutInfo = new RepoItemInfo(this, "Logout", "div[4]/?/?/button[@innertext='Logout']", 30000, null, "60ce660e-aa29-40d8-b878-6c0aa16cb30b");
             }
 
             /// <summary>
@@ -978,6 +1008,54 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _flexrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CompanyNews item.
+            /// </summary>
+            [RepositoryItem("33af1f85-8400-4a4c-b421-dc803b640fb5")]
+            public virtual Ranorex.H5Tag CompanyNews
+            {
+                get
+                {
+                    return _companynewsInfo.CreateAdapter<Ranorex.H5Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CompanyNews item info.
+            /// </summary>
+            [RepositoryItemInfo("33af1f85-8400-4a4c-b421-dc803b640fb5")]
+            public virtual RepoItemInfo CompanyNewsInfo
+            {
+                get
+                {
+                    return _companynewsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Logout item.
+            /// </summary>
+            [RepositoryItem("60ce660e-aa29-40d8-b878-6c0aa16cb30b")]
+            public virtual Ranorex.ButtonTag Logout
+            {
+                get
+                {
+                    return _logoutInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Logout item info.
+            /// </summary>
+            [RepositoryItemInfo("60ce660e-aa29-40d8-b878-6c0aa16cb30b")]
+            public virtual RepoItemInfo LogoutInfo
+            {
+                get
+                {
+                    return _logoutInfo;
                 }
             }
         }

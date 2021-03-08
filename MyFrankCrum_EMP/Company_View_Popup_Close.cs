@@ -24,29 +24,29 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validation recording.
+    ///The Company_View_Popup_Close recording.
     /// </summary>
-    [TestModule("9640aa47-bd0e-40ed-8226-5450e4cb66eb", ModuleType.Recording, 1)]
-    public partial class Validation : ITestModule
+    [TestModule("1a109e6f-2250-4754-bc61-a42d18c86c74", ModuleType.Recording, 1)]
+    public partial class Company_View_Popup_Close : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static Validation instance = new Validation();
+        static Company_View_Popup_Close instance = new Company_View_Popup_Close();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validation()
+        public Company_View_Popup_Close()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validation Instance
+        public static Company_View_Popup_Close Instance
         {
             get { return instance; }
         }
@@ -79,21 +79,9 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Hi, User!') on item 'ApplicationUnderTest.HiUser'.", repo.ApplicationUnderTest.HiUserInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.HiUserInfo, "InnerText", "Hi, User!");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Pending Time Off Requests (0)') on item 'ApplicationUnderTest.PendingTimeOffRequests0'.", repo.ApplicationUnderTest.PendingTimeOffRequests0Info, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.ApplicationUnderTest.PendingTimeOffRequests0Info, "InnerText", "Pending Time Off Requests (0)");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Time Off Calendar') on item 'ApplicationUnderTest.TimeOffCalendar'.", repo.ApplicationUnderTest.TimeOffCalendarInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.TimeOffCalendarInfo, "InnerText", "Time Off Calendar");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Company News') on item 'ApplicationUnderTest.SomeDivTag.CompanyNews'.", repo.ApplicationUnderTest.SomeDivTag.CompanyNewsInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.SomeDivTag.CompanyNewsInfo, "InnerText", "Company News");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FasFaTimes' at Center.", repo.ApplicationUnderTest.FasFaTimesInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.FasFaTimes.Click();
+            Delay.Milliseconds(0);
             
         }
 

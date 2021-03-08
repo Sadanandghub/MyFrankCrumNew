@@ -24,29 +24,29 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Std_toUnifield recording.
+    ///The Std_toUnified recording.
     /// </summary>
     [TestModule("bcc43d89-8074-4c99-a688-42708fcbcba4", ModuleType.Recording, 1)]
-    public partial class Std_toUnifield : ITestModule
+    public partial class Std_toUnified : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static Std_toUnifield instance = new Std_toUnifield();
+        static Std_toUnified instance = new Std_toUnified();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Std_toUnifield()
+        public Std_toUnified()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Std_toUnifield Instance
+        public static Std_toUnified Instance
         {
             get { return instance; }
         }
