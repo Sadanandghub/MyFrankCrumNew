@@ -125,6 +125,18 @@ namespace MyFrankCrum_EMP
             set { _EmpName = value; }
         }
 
+        string _Sortingvalue = "Last Name: Z-A";
+
+        /// <summary>
+        /// Gets or sets the value of variable Sortingvalue.
+        /// </summary>
+        [TestVariable("f17c01d4-2115-4a8a-8535-c75aeffd4d53")]
+        public string Sortingvalue
+        {
+            get { return _Sortingvalue; }
+            set { _Sortingvalue = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -181,6 +193,7 @@ namespace MyFrankCrum_EMP
         {
             MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder _somedivtag;
             MyFrankCrum_EMPRepositoryFolders.ReactTabsTabListFolder _reacttabstablist;
+            MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder _cssvnm4clreacttabs;
             RepoItemInfo _hiuserInfo;
             RepoItemInfo _pendingtimeoffrequests0Info;
             RepoItemInfo _timeoffcalendarInfo;
@@ -205,6 +218,7 @@ namespace MyFrankCrum_EMP
             {
                 _somedivtag = new MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder(this);
                 _reacttabstablist = new MyFrankCrum_EMPRepositoryFolders.ReactTabsTabListFolder(this);
+                _cssvnm4clreacttabs = new MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder(this);
                 _hiuserInfo = new RepoItemInfo(this, "HiUser", ".//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, User!']", 30000, null, "a3e32600-6f6d-4dc7-b218-60c088d58d1d");
                 _pendingtimeoffrequests0Info = new RepoItemInfo(this, "PendingTimeOffRequests0", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/div[1]/div[1]/?/?/div[@innertext>'Pending Time Off Requests']", 30000, null, "c56020f0-77cb-4f3b-959c-9530964f1a71");
                 _timeoffcalendarInfo = new RepoItemInfo(this, "TimeOffCalendar", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/?/?/h5[@innertext='Time Off Calendar']", 30000, null, "b0975e3b-721e-4b0e-87b0-893b6f26a04c");
@@ -213,7 +227,7 @@ namespace MyFrankCrum_EMP
                 _jobpayInfo = new RepoItemInfo(this, "JobPay", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Job & Pay']", 30000, null, "663ab337-b10c-4767-94a3-3dc45d8bdddb");
                 _httpsdevmfcfrankcrumcomloginInfo = new RepoItemInfo(this, "HttpsDevmfcFrankcrumComLogin", ".//div[#'app']/div[2]//form[@action='https://devmfc.frankcrum.com/login']", 30000, null, "87755aa0-4c28-427f-8187-0b59e947f128");
                 _sidebarInfo = new SidebarInfoClass(this);
-                _setting1Info = new RepoItemInfo(this, "setting1", ".//div[#'sidebar-content-container']/div[9]//a[@innertext='Settings']", 30000, null, "3cf03341-f3d9-4bb3-96f5-553c274f4647");
+                _setting1Info = new RepoItemInfo(this, "setting1", ".//div[#'sidebar-content-container']//a[@innertext='Settings']", 30000, null, "3cf03341-f3d9-4bb3-96f5-553c274f4647");
                 _unifiedcheckInfo = new RepoItemInfo(this, "UnifiedCheck", ".//div[#'app']/div[2]/div[3]//form[@action='https://devmfc.frankcrum.com/employerSettings']/div/div[3]/div[2]/label[2]/span[@id='checkmark']", 30000, null, "1f820e1a-b0da-498e-8f42-36439557f0d9");
                 _sidebarcontentcontainerInfo = new SidebarContentContainerInfoClass(this);
                 _unifiedsettingsInfo = new RepoItemInfo(this, "Unifiedsettings", ".//div[#'sidebar-content-container']/div[6]//a[@innertext='Settings']", 30000, null, "25534b36-d813-46ce-a4d1-672f5afc5206");
@@ -714,6 +728,15 @@ namespace MyFrankCrum_EMP
             {
                 get { return _reacttabstablist; }
             }
+
+            /// <summary>
+            /// The CssVnm4clReactTabs folder.
+            /// </summary>
+            [RepositoryFolder("c968c047-9605-45d4-ac8c-1b761d026102")]
+            public virtual MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder CssVnm4clReactTabs
+            {
+                get { return _cssvnm4clreacttabs; }
+            }
         }
 
         /// <summary>
@@ -731,6 +754,13 @@ namespace MyFrankCrum_EMP
             FlexRow1InfoClass _flexrow1Info;
             RepoItemInfo _companynewsInfo;
             RepoItemInfo _logoutInfo;
+            RepoItemInfo _active132Info;
+            RepoItemInfo _leaveofabsence6Info;
+            RepoItemInfo _onstrike2Info;
+            RepoItemInfo _terminated20Info;
+            RepoItemInfo _total160Info;
+            RepoItemInfo _facaretdownfasInfo;
+            RepoItemInfo _sortingvalueInfo;
 
             /// <summary>
             /// Creates a new SomeDivTag  folder.
@@ -747,6 +777,13 @@ namespace MyFrankCrum_EMP
                 _flexrow1Info = new FlexRow1InfoClass(this);
                 _companynewsInfo = new RepoItemInfo(this, "CompanyNews", "div[3]/?/?/h5[@innertext='Company News']", 30000, null, "33af1f85-8400-4a4c-b421-dc803b640fb5");
                 _logoutInfo = new RepoItemInfo(this, "Logout", "div[4]/?/?/button[@innertext='Logout']", 30000, null, "60ce660e-aa29-40d8-b878-6c0aa16cb30b");
+                _active132Info = new RepoItemInfo(this, "Active132", ".//ul/li[@innertext='Active (132)']", 30000, null, "75c40658-b487-495a-9e6e-bea3790a1bd7");
+                _leaveofabsence6Info = new RepoItemInfo(this, "LeaveOfAbsence6", ".//ul/li[@innertext='Leave of absence (6)']", 30000, null, "5772e0a7-03db-4fd1-a9dd-5a090744deea");
+                _onstrike2Info = new RepoItemInfo(this, "OnStrike2", ".//ul/li[@innertext='On strike (2)']", 30000, null, "9788da96-1f4c-412c-950d-971561d6566e");
+                _terminated20Info = new RepoItemInfo(this, "Terminated20", ".//ul/li[@innertext='Terminated (20)']", 30000, null, "c603ab89-3f82-42b3-8191-24a1461e0207");
+                _total160Info = new RepoItemInfo(this, "Total160", ".//ul/li[@innertext='Total (160)']", 30000, null, "68a90e47-c0e7-47a0-82ff-aa94f5e9f2ee");
+                _facaretdownfasInfo = new RepoItemInfo(this, "FaCaretDownFas", "div/div/div[2]/div/div[2]//i", 30000, null, "c7ff59fd-bd34-493f-9547-e33cf49caa68");
+                _sortingvalueInfo = new RepoItemInfo(this, "Sortingvalue", "div/div/div[2]/div/div[2]//div[@innertext=$Sortingvalue]", 30000, null, "69a94bb6-600b-4987-871c-9dc6601e49f8");
             }
 
             /// <summary>
@@ -1058,6 +1095,174 @@ namespace MyFrankCrum_EMP
                     return _logoutInfo;
                 }
             }
+
+            /// <summary>
+            /// The Active132 item.
+            /// </summary>
+            [RepositoryItem("75c40658-b487-495a-9e6e-bea3790a1bd7")]
+            public virtual Ranorex.LiTag Active132
+            {
+                get
+                {
+                    return _active132Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Active132 item info.
+            /// </summary>
+            [RepositoryItemInfo("75c40658-b487-495a-9e6e-bea3790a1bd7")]
+            public virtual RepoItemInfo Active132Info
+            {
+                get
+                {
+                    return _active132Info;
+                }
+            }
+
+            /// <summary>
+            /// The LeaveOfAbsence6 item.
+            /// </summary>
+            [RepositoryItem("5772e0a7-03db-4fd1-a9dd-5a090744deea")]
+            public virtual Ranorex.LiTag LeaveOfAbsence6
+            {
+                get
+                {
+                    return _leaveofabsence6Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LeaveOfAbsence6 item info.
+            /// </summary>
+            [RepositoryItemInfo("5772e0a7-03db-4fd1-a9dd-5a090744deea")]
+            public virtual RepoItemInfo LeaveOfAbsence6Info
+            {
+                get
+                {
+                    return _leaveofabsence6Info;
+                }
+            }
+
+            /// <summary>
+            /// The OnStrike2 item.
+            /// </summary>
+            [RepositoryItem("9788da96-1f4c-412c-950d-971561d6566e")]
+            public virtual Ranorex.LiTag OnStrike2
+            {
+                get
+                {
+                    return _onstrike2Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OnStrike2 item info.
+            /// </summary>
+            [RepositoryItemInfo("9788da96-1f4c-412c-950d-971561d6566e")]
+            public virtual RepoItemInfo OnStrike2Info
+            {
+                get
+                {
+                    return _onstrike2Info;
+                }
+            }
+
+            /// <summary>
+            /// The Terminated20 item.
+            /// </summary>
+            [RepositoryItem("c603ab89-3f82-42b3-8191-24a1461e0207")]
+            public virtual Ranorex.LiTag Terminated20
+            {
+                get
+                {
+                    return _terminated20Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Terminated20 item info.
+            /// </summary>
+            [RepositoryItemInfo("c603ab89-3f82-42b3-8191-24a1461e0207")]
+            public virtual RepoItemInfo Terminated20Info
+            {
+                get
+                {
+                    return _terminated20Info;
+                }
+            }
+
+            /// <summary>
+            /// The Total160 item.
+            /// </summary>
+            [RepositoryItem("68a90e47-c0e7-47a0-82ff-aa94f5e9f2ee")]
+            public virtual Ranorex.LiTag Total160
+            {
+                get
+                {
+                    return _total160Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Total160 item info.
+            /// </summary>
+            [RepositoryItemInfo("68a90e47-c0e7-47a0-82ff-aa94f5e9f2ee")]
+            public virtual RepoItemInfo Total160Info
+            {
+                get
+                {
+                    return _total160Info;
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas item.
+            /// </summary>
+            [RepositoryItem("c7ff59fd-bd34-493f-9547-e33cf49caa68")]
+            public virtual Ranorex.ITag FaCaretDownFas
+            {
+                get
+                {
+                    return _facaretdownfasInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas item info.
+            /// </summary>
+            [RepositoryItemInfo("c7ff59fd-bd34-493f-9547-e33cf49caa68")]
+            public virtual RepoItemInfo FaCaretDownFasInfo
+            {
+                get
+                {
+                    return _facaretdownfasInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Sortingvalue item.
+            /// </summary>
+            [RepositoryItem("69a94bb6-600b-4987-871c-9dc6601e49f8")]
+            public virtual Ranorex.DivTag Sortingvalue
+            {
+                get
+                {
+                    return _sortingvalueInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Sortingvalue item info.
+            /// </summary>
+            [RepositoryItemInfo("69a94bb6-600b-4987-871c-9dc6601e49f8")]
+            public virtual RepoItemInfo SortingvalueInfo
+            {
+                get
+                {
+                    return _sortingvalueInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1356,6 +1561,176 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _taxesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The CssVnm4clReactTabsFolder folder.
+        /// </summary>
+        [RepositoryFolder("c968c047-9605-45d4-ac8c-1b761d026102")]
+        public partial class CssVnm4clReactTabsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _employeesactive132Info;
+            RepoItemInfo _employeestotal160Info;
+            RepoItemInfo _employeesleaveofabsence6Info;
+            RepoItemInfo _employeesonstrike2Info;
+            RepoItemInfo _employeesterminated20Info;
+
+            /// <summary>
+            /// Creates a new CssVnm4clReactTabs  folder.
+            /// </summary>
+            public CssVnm4clReactTabsFolder(RepoGenBaseFolder parentFolder) :
+                    base("CssVnm4clReactTabs", ".//div[#'app']/div[2]/div[3]/div/div[1]", parentFolder, 30000, null, false, "c968c047-9605-45d4-ac8c-1b761d026102", "")
+            {
+                _employeesactive132Info = new RepoItemInfo(this, "EmployeesActive132", "?/?/h4[@innertext='Employees  - Active (132)']", 30000, null, "0ba76efb-4929-4597-a665-e83db7156fbf");
+                _employeestotal160Info = new RepoItemInfo(this, "EmployeesTotal160", "?/?/h4[@innertext='Employees  - Total (160)']", 30000, null, "596fd64c-5bf6-42f8-9e3a-680ccaeb1aaf");
+                _employeesleaveofabsence6Info = new RepoItemInfo(this, "EmployeesLeaveOfAbsence6", "?/?/h4[@innertext>'Employees  - Leave of absence']", 30000, null, "8367c9c4-b2e9-4572-ab85-8500787e668a");
+                _employeesonstrike2Info = new RepoItemInfo(this, "EmployeesOnStrike2", "?/?/h4[@innertext>'Employees  - On strike (2']", 30000, null, "8f42b9a0-b79b-492c-b024-8ece796fca84");
+                _employeesterminated20Info = new RepoItemInfo(this, "EmployeesTerminated20", "?/?/h4[@innertext>'Employees  - Terminated (']", 30000, null, "08fea008-a25f-4b1c-8fbe-7ce9f036007a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c968c047-9605-45d4-ac8c-1b761d026102")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c968c047-9605-45d4-ac8c-1b761d026102")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesActive132 item.
+            /// </summary>
+            [RepositoryItem("0ba76efb-4929-4597-a665-e83db7156fbf")]
+            public virtual Ranorex.H4Tag EmployeesActive132
+            {
+                get
+                {
+                    return _employeesactive132Info.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesActive132 item info.
+            /// </summary>
+            [RepositoryItemInfo("0ba76efb-4929-4597-a665-e83db7156fbf")]
+            public virtual RepoItemInfo EmployeesActive132Info
+            {
+                get
+                {
+                    return _employeesactive132Info;
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesTotal160 item.
+            /// </summary>
+            [RepositoryItem("596fd64c-5bf6-42f8-9e3a-680ccaeb1aaf")]
+            public virtual Ranorex.H4Tag EmployeesTotal160
+            {
+                get
+                {
+                    return _employeestotal160Info.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesTotal160 item info.
+            /// </summary>
+            [RepositoryItemInfo("596fd64c-5bf6-42f8-9e3a-680ccaeb1aaf")]
+            public virtual RepoItemInfo EmployeesTotal160Info
+            {
+                get
+                {
+                    return _employeestotal160Info;
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesLeaveOfAbsence6 item.
+            /// </summary>
+            [RepositoryItem("8367c9c4-b2e9-4572-ab85-8500787e668a")]
+            public virtual Ranorex.H4Tag EmployeesLeaveOfAbsence6
+            {
+                get
+                {
+                    return _employeesleaveofabsence6Info.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesLeaveOfAbsence6 item info.
+            /// </summary>
+            [RepositoryItemInfo("8367c9c4-b2e9-4572-ab85-8500787e668a")]
+            public virtual RepoItemInfo EmployeesLeaveOfAbsence6Info
+            {
+                get
+                {
+                    return _employeesleaveofabsence6Info;
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesOnStrike2 item.
+            /// </summary>
+            [RepositoryItem("8f42b9a0-b79b-492c-b024-8ece796fca84")]
+            public virtual Ranorex.H4Tag EmployeesOnStrike2
+            {
+                get
+                {
+                    return _employeesonstrike2Info.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesOnStrike2 item info.
+            /// </summary>
+            [RepositoryItemInfo("8f42b9a0-b79b-492c-b024-8ece796fca84")]
+            public virtual RepoItemInfo EmployeesOnStrike2Info
+            {
+                get
+                {
+                    return _employeesonstrike2Info;
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesTerminated20 item.
+            /// </summary>
+            [RepositoryItem("08fea008-a25f-4b1c-8fbe-7ce9f036007a")]
+            public virtual Ranorex.H4Tag EmployeesTerminated20
+            {
+                get
+                {
+                    return _employeesterminated20Info.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmployeesTerminated20 item info.
+            /// </summary>
+            [RepositoryItemInfo("08fea008-a25f-4b1c-8fbe-7ce9f036007a")]
+            public virtual RepoItemInfo EmployeesTerminated20Info
+            {
+                get
+                {
+                    return _employeesterminated20Info;
                 }
             }
         }

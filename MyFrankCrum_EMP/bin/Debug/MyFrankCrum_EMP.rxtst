@@ -3,7 +3,6 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			enabled="False"
 			id="1614a066-0494-40c4-9034-8725c40f3ab4"
 			name="Company_View_Popup_Close"
 			ref="1a109e6f-2250-4754-bc61-a42d18c86c74"
@@ -96,6 +95,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="6a9a8a73-f252-41ba-a04f-8f6efac53626"
+			name="Sorting"
+			ref="bf8fc426-e5e8-44cd-9fae-692b0e1c040f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="lastN_A_Z"
+					datasourceid="634fd60b-5fef-4990-9363-d1ab1490de41"
+					variableid="f17c01d4-2115-4a8a-8535-c75aeffd4d53"
+					variablename="lastN_A_Z">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="707b4386-da95-4b05-9db4-1582a668ded0"
+			name="Employee_Status_Tab"
+			ref="d3445242-96b3-4544-9c2f-c96aeff33d88"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="85409c7f-c7e8-453f-a992-de46eae2bf28"
 			name="Std_toUnified"
 			ref="bcc43d89-8074-4c99-a688-42708fcbcba4"
@@ -125,6 +144,7 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="d726a7a9-d3e4-4dc7-94e0-50b0143d9a82"
 			name="Comp_Selector"
 			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
@@ -262,6 +282,14 @@
 						id="da8a5bde-37bc-4c90-b5e7-f3adab7df350"
 						name="Logout">
 						</testmodule>
+						<testmodule
+						id="707b4386-da95-4b05-9db4-1582a668ded0"
+						name="Employee_Status_Tab">
+						</testmodule>
+						<testmodule
+						id="6a9a8a73-f252-41ba-a04f-8f6efac53626"
+						name="Sorting">
+						</testmodule>
 						<teardown
 						id="d8fc17c2-46d2-4d8a-93e6-8713e7e9ad45"
 						name="teardown">
@@ -294,6 +322,9 @@
 				<column>
 					EmpName
 				</column>
+				<column>
+					lastN_A_Z
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 			</maskedcolumns>
@@ -311,6 +342,9 @@
 					<th>
 						EmpName
 					</th>
+					<th>
+						lastN_A_Z
+					</th>
 				</tr>
 				<tr>
 					<td>
@@ -320,10 +354,13 @@
 						Crum2017
 					</td>
 					<td>
-						60386
+						A0F21
 					</td>
 					<td>
 						Apple
+					</td>
+					<td>
+						Last Name: Z-A
 					</td>
 				</tr>
 			</table>

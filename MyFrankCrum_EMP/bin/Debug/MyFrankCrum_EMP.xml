@@ -297,6 +297,45 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Status_Tab">
+             <summary>
+            The Employee_Status_Tab recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Status_Tab.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Status_Tab.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Status_Tab.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Status_Tab.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Status_Tab.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Status_Tab.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Status_Tab.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.FindEmployee">
              <summary>
             The FindEmployee recording.
@@ -385,6 +424,50 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.Sorting">
+             <summary>
+            The Sorting recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Sorting.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Sorting.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Sorting.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Sorting.lastN_A_Z">
+            <summary>
+            Gets or sets the value of variable lastN_A_Z.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Sorting.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Sorting.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Sorting.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Sorting.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.Std_toUnified">
              <summary>
             The Std_toUnified recording.
@@ -467,6 +550,11 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.EmpName">
             <summary>
             Gets or sets the value of variable EmpName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.lastN_A_Z">
+            <summary>
+            Gets or sets the value of variable lastN_A_Z.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.SelfInfo">
@@ -733,6 +821,11 @@
             The ReactTabsTabList folder.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssVnm4clReactTabs">
+            <summary>
+            The CssVnm4clReactTabs folder.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder">
             <summary>
             The SomeDivTagFolder folder.
@@ -889,6 +982,76 @@
             The Logout item info.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Active132">
+            <summary>
+            The Active132 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Active132Info">
+            <summary>
+            The Active132 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.LeaveOfAbsence6">
+            <summary>
+            The LeaveOfAbsence6 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.LeaveOfAbsence6Info">
+            <summary>
+            The LeaveOfAbsence6 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.OnStrike2">
+            <summary>
+            The OnStrike2 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.OnStrike2Info">
+            <summary>
+            The OnStrike2 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Terminated20">
+            <summary>
+            The Terminated20 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Terminated20Info">
+            <summary>
+            The Terminated20 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Total160">
+            <summary>
+            The Total160 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Total160Info">
+            <summary>
+            The Total160 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FaCaretDownFas">
+            <summary>
+            The FaCaretDownFas item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FaCaretDownFasInfo">
+            <summary>
+            The FaCaretDownFas item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.LastNameAZ">
+            <summary>
+            The LastNameAZ item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.LastNameAZInfo">
+            <summary>
+            The LastNameAZ item info.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ReactTabsTabListFolder">
             <summary>
             The ReactTabsTabListFolder folder.
@@ -1007,6 +1170,76 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ReactTabsTabListFolder.TaxesInfo">
             <summary>
             The Taxes item info.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder">
+            <summary>
+            The CssVnm4clReactTabsFolder folder.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new CssVnm4clReactTabs  folder.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesActive132">
+            <summary>
+            The EmployeesActive132 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesActive132Info">
+            <summary>
+            The EmployeesActive132 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesTotal160">
+            <summary>
+            The EmployeesTotal160 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesTotal160Info">
+            <summary>
+            The EmployeesTotal160 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesLeaveOfAbsence6">
+            <summary>
+            The EmployeesLeaveOfAbsence6 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesLeaveOfAbsence6Info">
+            <summary>
+            The EmployeesLeaveOfAbsence6 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesOnStrike2">
+            <summary>
+            The EmployeesOnStrike2 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesOnStrike2Info">
+            <summary>
+            The EmployeesOnStrike2 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesTerminated20">
+            <summary>
+            The EmployeesTerminated20 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesTerminated20Info">
+            <summary>
+            The EmployeesTerminated20 item info.
             </summary>
         </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.MyFrankCrumAppFolder">

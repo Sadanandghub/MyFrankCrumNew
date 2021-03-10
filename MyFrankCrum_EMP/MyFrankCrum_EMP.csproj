@@ -210,6 +210,18 @@
       <UserCode>true</UserCode>
       <id>f78d871a-01bc-46d1-91c3-1322e8828dab</id>
     </Compile>
+    <Compile Include="Employee_Status_Tab.cs">
+      <BoundTo>339d1b9f-c759-45d8-be34-0a4f95b3e5f1</BoundTo>
+      <DependentUpon>Employee_Status_Tab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ebfe9eb7-ad36-4ce9-a50b-e81b0537bc6a</id>
+    </Compile>
+    <Compile Include="Employee_Status_Tab.UserCode.cs">
+      <BoundTo>339d1b9f-c759-45d8-be34-0a4f95b3e5f1</BoundTo>
+      <DependentUpon>Employee_Status_Tab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>105a7eac-3c21-473f-8f4b-3524644a7c82</id>
+    </Compile>
     <Compile Include="FindEmployee.cs">
       <BoundTo>8321b084-41c4-47e3-a35e-33dff04d0705</BoundTo>
       <DependentUpon>FindEmployee.rxrec</DependentUpon>
@@ -233,6 +245,18 @@
       <DependentUpon>Logout.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8812501e-bc3c-4537-ad6b-832c0b736d19</id>
+    </Compile>
+    <Compile Include="Sorting.cs">
+      <BoundTo>40060c78-8273-4c44-9414-f8b5813cf85a</BoundTo>
+      <DependentUpon>Sorting.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>02348fd7-2faa-44c7-b37a-1e16396c0472</id>
+    </Compile>
+    <Compile Include="Sorting.UserCode.cs">
+      <BoundTo>40060c78-8273-4c44-9414-f8b5813cf85a</BoundTo>
+      <DependentUpon>Sorting.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>085f3950-e97d-407f-b3e7-2fff4d0e7c29</id>
     </Compile>
     <Compile Include="Std_toUnified.cs">
       <BoundTo>cf6f0742-660b-41b9-93e4-344bda1c3047</BoundTo>
@@ -379,6 +403,11 @@
       <id>6fa6d1c2-9b30-4e79-8207-55cf8cae403d</id>
       <recordtableid>1ba1b34b-98ea-42c4-a969-56dd000ac15e</recordtableid>
     </None>
+    <None Include="Employee_Status_Tab.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>339d1b9f-c759-45d8-be34-0a4f95b3e5f1</id>
+      <recordtableid>d3445242-96b3-4544-9c2f-c96aeff33d88</recordtableid>
+    </None>
     <None Include="FindEmployee.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>8321b084-41c4-47e3-a35e-33dff04d0705</id>
@@ -388,6 +417,11 @@
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>c773ca22-4c39-4f13-a039-2f4cc6e074f2</id>
       <recordtableid>43df22c7-db53-42c0-a98a-90b838188152</recordtableid>
+    </None>
+    <None Include="Sorting.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>40060c78-8273-4c44-9414-f8b5813cf85a</id>
+      <recordtableid>bf8fc426-e5e8-44cd-9fae-692b0e1c040f</recordtableid>
     </None>
     <None Include="Std_toUnified.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
