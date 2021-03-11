@@ -79,44 +79,44 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Active132' at Center.", repo.ApplicationUnderTest.SomeDivTag.Active132Info, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.Active132.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Activeclick' at Center.", repo.ApplicationUnderTest.ActiveclickInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Activeclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Employees  - Active (132)') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesActive132'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesActive132Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesActive132Info, "InnerText", "Employees  - Active (132)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Active ') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesActive'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesActiveInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesActiveInfo, "InnerText", "Employees  - Active ");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.LeaveOfAbsence6' at Center.", repo.ApplicationUnderTest.SomeDivTag.LeaveOfAbsence6Info, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.SomeDivTag.LeaveOfAbsence6.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeaveOfAbsenceclick' at Center.", repo.ApplicationUnderTest.LeaveOfAbsenceclickInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.LeaveOfAbsenceclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Employees  - Leave of absence (6)') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesLeaveOfAbsence6'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesLeaveOfAbsence6Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesLeaveOfAbsence6Info, "InnerText", "Employees  - Leave of absence (6)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Leave of absence') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesLeaveOfAbsence'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesLeaveOfAbsenceInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesLeaveOfAbsenceInfo, "InnerText", "Employees  - Leave of absence");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.OnStrike2' at Center.", repo.ApplicationUnderTest.SomeDivTag.OnStrike2Info, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.SomeDivTag.OnStrike2.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnStrikeclick' at Center.", repo.ApplicationUnderTest.OnStrikeclickInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.OnStrikeclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Employees  - On strike (2)') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesOnStrike2'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesOnStrike2Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesOnStrike2Info, "InnerText", "Employees  - On strike (2)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - On strike') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesOnStrike'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesOnStrikeInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesOnStrikeInfo, "InnerText", "Employees  - On strike");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Terminated20' at Center.", repo.ApplicationUnderTest.SomeDivTag.Terminated20Info, new RecordItemIndex(6));
-            repo.ApplicationUnderTest.SomeDivTag.Terminated20.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Terminatedclick' at Center.", repo.ApplicationUnderTest.TerminatedclickInfo, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.Terminatedclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Employees  - Terminated (20)') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTerminated20'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTerminated20Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTerminated20Info, "InnerText", "Employees  - Terminated (20)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Terminated') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTerminated'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTerminatedInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTerminatedInfo, "InnerText", "Employees  - Terminated");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Total160' at Center.", repo.ApplicationUnderTest.SomeDivTag.Total160Info, new RecordItemIndex(8));
-            repo.ApplicationUnderTest.SomeDivTag.Total160.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Totalclick' at Center.", repo.ApplicationUnderTest.TotalclickInfo, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.Totalclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Employees  - Total (160)') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal160'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal160Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal160Info, "InnerText", "Employees  - Total (160)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Total') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal160'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal160Info, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal160Info, "InnerText", "Employees  - Total");
             Delay.Milliseconds(100);
             
         }

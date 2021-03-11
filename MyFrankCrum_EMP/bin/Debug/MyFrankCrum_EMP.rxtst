@@ -74,6 +74,11 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datasource="NewConnector2"
+			id="6253f538-ba93-45bf-b355-4b046e9d6698"
+			name="Setting">
+			</smartfoldernode>
 			<testmodule
 			id="632256bb-003f-43ea-a670-a114f4d9eb78"
 			name="Login"
@@ -101,10 +106,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="lastN_A_Z"
-					datasourceid="634fd60b-5fef-4990-9363-d1ab1490de41"
+					dataname="Sortingvalue"
+					datasourceid="b599dd35-fe57-4cc2-b1f1-9b017f4f19fd"
 					variableid="f17c01d4-2115-4a8a-8535-c75aeffd4d53"
-					variablename="lastN_A_Z">
+					variablename="Sortingvalue">
 					</var>
 				</databinding>
 			</testmodule>
@@ -137,7 +142,6 @@
 			name="TestCase">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="d5d618c8-a6ca-4162-8f37-2e40c06e9ded"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -279,16 +283,20 @@
 						name="EmployeeTabs">
 						</testmodule>
 						<testmodule
-						id="da8a5bde-37bc-4c90-b5e7-f3adab7df350"
-						name="Logout">
-						</testmodule>
-						<testmodule
 						id="707b4386-da95-4b05-9db4-1582a668ded0"
 						name="Employee_Status_Tab">
 						</testmodule>
+						<smartfoldernode
+						id="6253f538-ba93-45bf-b355-4b046e9d6698"
+						name="Setting">
+							<testmodule
+							id="6a9a8a73-f252-41ba-a04f-8f6efac53626"
+							name="Sorting">
+							</testmodule>
+						</smartfoldernode>
 						<testmodule
-						id="6a9a8a73-f252-41ba-a04f-8f6efac53626"
-						name="Sorting">
+						id="da8a5bde-37bc-4c90-b5e7-f3adab7df350"
+						name="Logout">
 						</testmodule>
 						<teardown
 						id="d8fc17c2-46d2-4d8a-93e6-8713e7e9ad45"
@@ -323,7 +331,7 @@
 					EmpName
 				</column>
 				<column>
-					lastN_A_Z
+					Sortingvalue
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -343,7 +351,7 @@
 						EmpName
 					</th>
 					<th>
-						lastN_A_Z
+						Sortingvalue
 					</th>
 				</tr>
 				<tr>
@@ -386,11 +394,44 @@
 				C:\Users\SadanandG\Desktop\sada.csv
 			</file>
 		</DataSource>
+		<DataSource
+		id="b599dd35-fe57-4cc2-b1f1-9b017f4f19fd"
+		lastknownrowcount="2"
+		name="NewConnector2"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					Sortingvalue
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						Sortingvalue
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Last Name: A-Z
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Last Name: Z-A
+					</td>
+				</tr>
+			</table>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="6253f538-ba93-45bf-b355-4b046e9d6698">
+			</testcontainer>
 			<testcontainer
 			id="90d83ede-3ec4-453d-8970-fb2edcdbd1dd">
 			</testcontainer>

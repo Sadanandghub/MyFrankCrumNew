@@ -33,11 +33,6 @@ namespace MyFrankCrum_EMP
             // Your recording specific initialization code goes here.
         }
 
-        public string Mouse_Click_Sortingvalue(RepoItemInfo divtagInfo)
-        {
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'divtagInfo' at Center.", divtagInfo);
-            divtagInfo.FindAdapter<DivTag>().Click();
-        }
-
+       
     }
 }

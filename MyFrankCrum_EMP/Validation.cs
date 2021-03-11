@@ -91,8 +91,8 @@ namespace MyFrankCrum_EMP
             Validate.AttributeEqual(repo.ApplicationUnderTest.TimeOffCalendarInfo, "InnerText", "Time Off Calendar");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Company News') on item 'ApplicationUnderTest.SomeDivTag.CompanyNews'.", repo.ApplicationUnderTest.SomeDivTag.CompanyNewsInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.SomeDivTag.CompanyNewsInfo, "InnerText", "Company News");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Company News') on item 'ApplicationUnderTest.CompanyNews'.", repo.ApplicationUnderTest.CompanyNewsInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.CompanyNewsInfo, "InnerText", "Company News");
             Delay.Milliseconds(100);
             
         }

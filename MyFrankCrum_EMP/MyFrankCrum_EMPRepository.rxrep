@@ -52,6 +52,15 @@ name="MyFrankCrum_EMPRepository">
 				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[2]/?/?/h5[@innertext='Time Off Calendar']
 			</item>
 			<item
+			addcaps="unknown,webelement,h5tag"
+			capname="h5tag"
+			id="b76c8e54-8672-4017-8805-a419cfa206ac"
+			name="CompanyNews"
+			refimgid="326a43cd-13d8-46ac-8a38-edca29afa307"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[3]/?/?/h5[@innertext&gt;'Company News']
+			</item>
+			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="4c761a55-0c84-4b80-b662-f8ba98ff564f"
@@ -319,26 +328,6 @@ FJVoooGgqETUQ/hfck7HDFN3kMUAAAAASUVORK5CYII=
 					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div[2]/div/div[3]/div/div/div[3]/div[1]/div/div/div[2]
 				</item>
 				<item
-				addcaps="unknown,webelement,h5tag"
-				capname="h5tag"
-				id="33af1f85-8400-4a4c-b421-dc803b640fb5"
-				name="CompanyNews"
-				refimgid="3cc2cc68-bd1e-4728-8223-396b133903bc"
-				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[3]/div/h5[@innertext='Company News']"
-				searchtimeout="30000ms">
-					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div[3]/?/?/h5[@innertext='Company News']
-				</item>
-				<item
-				addcaps="unknown,webelement,buttontag"
-				capname="buttontag"
-				id="60ce660e-aa29-40d8-b878-6c0aa16cb30b"
-				name="Logout"
-				refimgid="b6253eba-1a38-43ba-989c-4f5feb4318df"
-				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/div/button[@innertext='Logout']"
-				searchtimeout="30000ms">
-					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div[4]/?/?/button[@innertext='Logout']
-				</item>
-				<item
 				addcaps="unknown,webelement,litag"
 				capname="litag"
 				id="75c40658-b487-495a-9e6e-bea3790a1bd7"
@@ -352,7 +341,7 @@ FJVoooGgqETUQ/hfck7HDFN3kMUAAAAASUVORK5CYII=
 				addcaps="unknown,webelement,litag"
 				capname="litag"
 				id="5772e0a7-03db-4fd1-a9dd-5a090744deea"
-				name="LeaveOfAbsence6"
+				name="LeaveOfAbsence"
 				refimgid="7063a514-2c22-4c68-9bc9-a5780e99a86d"
 				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/ul/li[@innertext='Leave of absence (6)']"
 				searchtimeout="30000ms">
@@ -362,7 +351,7 @@ FJVoooGgqETUQ/hfck7HDFN3kMUAAAAASUVORK5CYII=
 				addcaps="unknown,webelement,litag"
 				capname="litag"
 				id="9788da96-1f4c-412c-950d-971561d6566e"
-				name="OnStrike2"
+				name="OnStrike"
 				refimgid="8dfa004e-00a3-4b86-ae98-19afe326ea00"
 				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/ul/li[@innertext='On strike (2)']"
 				searchtimeout="30000ms">
@@ -372,7 +361,7 @@ FJVoooGgqETUQ/hfck7HDFN3kMUAAAAASUVORK5CYII=
 				addcaps="unknown,webelement,litag"
 				capname="litag"
 				id="c603ab89-3f82-42b3-8191-24a1461e0207"
-				name="Terminated20"
+				name="Terminated"
 				refimgid="13d2eda5-d3f8-44a9-9826-0d6a5f7ad0ed"
 				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/ul/li[@innertext='Terminated (20)']"
 				searchtimeout="30000ms">
@@ -406,6 +395,16 @@ FJVoooGgqETUQ/hfck7HDFN3kMUAAAAASUVORK5CYII=
 				refimgid="18687dc7-661e-4c12-ae65-6571e568f98a"
 				searchtimeout="30000ms">
 					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[2]/div/div[2]//div[@innertext=$Sortingvalue]
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="6b9edcb5-4016-4092-b2ce-c1eacd6ea894"
+				name="Logout"
+				refimgid="ab9e0711-896e-4861-a74b-dd598856fb09"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/div/button[@innertext='Logout']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div[4]/?/?/button[@innertext='Logout']
 				</item>
 				<basepath>
 					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]
@@ -1374,11 +1373,10 @@ IJSQHIQSkoNQQnIQSkgOQgnJQSghOQglJAehhOQgFKys/D8oC/GYqi9nVwAAAABJRU5ErkJggg==
 				addcaps="unknown,webelement,h4tag"
 				capname="h4tag"
 				id="0ba76efb-4929-4597-a665-e83db7156fbf"
-				name="EmployeesActive132"
+				name="EmployeesActive"
 				refimgid="2ff72b62-6a4a-4551-ac78-bf137554ce12"
-				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/div/h4[@innertext='Employees  - Active (132)']"
 				searchtimeout="30000ms">
-					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext='Employees  - Active (132)']
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext&gt;'Employees  - Active']
 				</item>
 				<item
 				addcaps="unknown,webelement,h4tag"
@@ -1386,15 +1384,14 @@ IJSQHIQSkoNQQnIQSkgOQgnJQSghOQglJAehhOQgFKys/D8oC/GYqi9nVwAAAABJRU5ErkJggg==
 				id="596fd64c-5bf6-42f8-9e3a-680ccaeb1aaf"
 				name="EmployeesTotal160"
 				refimgid="809e1119-9961-41a4-82c6-a1bf14655880"
-				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/div/h4[@innertext='Employees  - Total (160)']"
 				searchtimeout="30000ms">
-					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext='Employees  - Total (160)']
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext&gt;'Employees  - Total']
 				</item>
 				<item
 				addcaps="unknown,webelement,h4tag"
 				capname="h4tag"
 				id="8367c9c4-b2e9-4572-ab85-8500787e668a"
-				name="EmployeesLeaveOfAbsence6"
+				name="EmployeesLeaveOfAbsence"
 				refimgid="4f6350f0-b0f3-4f8e-bd53-573fc840c3c5"
 				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/div/h4[@innertext='Employees  - Leave of absence (6)']"
 				searchtimeout="30000ms">
@@ -1404,26 +1401,66 @@ IJSQHIQSkoNQQnIQSkgOQgnJQSghOQglJAehhOQgFKys/D8oC/GYqi9nVwAAAABJRU5ErkJggg==
 				addcaps="unknown,webelement,h4tag"
 				capname="h4tag"
 				id="8f42b9a0-b79b-492c-b024-8ece796fca84"
-				name="EmployeesOnStrike2"
+				name="EmployeesOnStrike"
 				refimgid="279a7738-b525-4283-a63c-c6600df2acf0"
-				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/div/h4[@innertext='Employees  - On strike (2)']"
 				searchtimeout="30000ms">
-					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext&gt;'Employees  - On strike (2']
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext&gt;'Employees  - On strike']
 				</item>
 				<item
 				addcaps="unknown,webelement,h4tag"
 				capname="h4tag"
 				id="08fea008-a25f-4b1c-8fbe-7ce9f036007a"
-				name="EmployeesTerminated20"
+				name="EmployeesTerminated"
 				refimgid="b15c8084-3d91-4e74-a1a1-de98d683adcd"
-				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/div/h4[@innertext='Employees  - Terminated (20)']"
 				searchtimeout="30000ms">
-					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext&gt;'Employees  - Terminated (']
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext&gt;'Employees  - Terminated']
 				</item>
 				<basepath>
 					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]
 				</basepath>
 			</folder>
+			<item
+			capname="litag"
+			id="2c90fa00-c4e3-46b9-88ab-6b975cfeaff2"
+			name="Activeclick"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext&gt;'Active']
+			</item>
+			<item
+			capname="litag"
+			id="38f7593e-9dd1-4d76-9856-df3ee9769c30"
+			name="LeaveOfAbsenceclick"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext&gt;'Leave of absence']
+			</item>
+			<item
+			capname="litag"
+			id="ad40cbc1-46ba-43a3-b38f-dd8d01e5ab1e"
+			name="OnStrikeclick"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext&gt;'On strike']
+			</item>
+			<item
+			capname="litag"
+			id="fe4d6f8b-6cb0-4ce7-832d-e1c84f684fdf"
+			name="Terminatedclick"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext&gt;'Terminated']
+			</item>
+			<item
+			capname="litag"
+			id="c1799bb8-a568-4374-b97c-7dad75251455"
+			name="Totalclick"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext&gt;'Total']
+			</item>
+			<item
+			capname="button"
+			id="2c71ddd3-0d28-4c04-9ba8-7ab24afde839"
+			name="Logoutc"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/?/?/button[@innertext='Logout']
+			</item>
 			<basepath>
 				/dom[@domain='devmfc.frankcrum.com']
 			</basepath>
