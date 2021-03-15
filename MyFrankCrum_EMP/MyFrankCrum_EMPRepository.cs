@@ -942,6 +942,8 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _facaretdownfasInfo;
             RepoItemInfo _sortingvalueInfo;
             RepoItemInfo _logoutInfo;
+            RepoItemInfo _flexrow2Info;
+            RepoItemInfo _flexrownameInfo;
 
             /// <summary>
             /// Creates a new SomeDivTag  folder.
@@ -964,6 +966,8 @@ namespace MyFrankCrum_EMP
                 _facaretdownfasInfo = new RepoItemInfo(this, "FaCaretDownFas", "div/div/div[2]/div/div[2]//i", 30000, null, "c7ff59fd-bd34-493f-9547-e33cf49caa68");
                 _sortingvalueInfo = new RepoItemInfo(this, "Sortingvalue", "div/div/div[2]/div/div[2]//div[@innertext=$Sortingvalue]", 30000, null, "69a94bb6-600b-4987-871c-9dc6601e49f8");
                 _logoutInfo = new RepoItemInfo(this, "Logout", "div[4]/?/?/button[@innertext='Logout']", 30000, null, "6b9edcb5-4016-4092-b2ce-c1eacd6ea894");
+                _flexrow2Info = new RepoItemInfo(this, "FlexRow2", "div/div/div[3]/div[1]/div/div/div[1]", 30000, null, "d50037f5-9258-4f83-9f68-0b80574abd35");
+                _flexrownameInfo = new RepoItemInfo(this, "FlexRowName", "div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/button", 30000, null, "cd1a6415-51ce-4d7e-873f-8893acfb0502");
             }
 
             /// <summary>
@@ -1417,6 +1421,54 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _logoutInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FlexRow2 item.
+            /// </summary>
+            [RepositoryItem("d50037f5-9258-4f83-9f68-0b80574abd35")]
+            public virtual Ranorex.DivTag FlexRow2
+            {
+                get
+                {
+                    return _flexrow2Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FlexRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("d50037f5-9258-4f83-9f68-0b80574abd35")]
+            public virtual RepoItemInfo FlexRow2Info
+            {
+                get
+                {
+                    return _flexrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The FlexRowName item.
+            /// </summary>
+            [RepositoryItem("cd1a6415-51ce-4d7e-873f-8893acfb0502")]
+            public virtual Ranorex.ButtonTag FlexRowName
+            {
+                get
+                {
+                    return _flexrownameInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FlexRowName item info.
+            /// </summary>
+            [RepositoryItemInfo("cd1a6415-51ce-4d7e-873f-8893acfb0502")]
+            public virtual RepoItemInfo FlexRowNameInfo
+            {
+                get
+                {
+                    return _flexrownameInfo;
                 }
             }
         }

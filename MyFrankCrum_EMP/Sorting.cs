@@ -42,6 +42,8 @@ namespace MyFrankCrum_EMP
         public Sorting()
         {
             Sortingvalue = "Last Name: Z-A";
+            As_new_variable___ = "";
+            FlexRowValue = "XYZ";
         }
 
         /// <summary>
@@ -53,6 +55,30 @@ namespace MyFrankCrum_EMP
         }
 
 #region Variables
+
+        string _As_new_variable___;
+
+        /// <summary>
+        /// Gets or sets the value of variable As_new_variable___.
+        /// </summary>
+        [TestVariable("f5155496-9058-41c2-ae7b-dd0ad5e3bc08")]
+        public string As_new_variable___
+        {
+            get { return _As_new_variable___; }
+            set { _As_new_variable___ = value; }
+        }
+
+        string _FlexRowValue;
+
+        /// <summary>
+        /// Gets or sets the value of variable FlexRowValue.
+        /// </summary>
+        [TestVariable("1676eaeb-a1fc-4763-9ef9-98afdbb89063")]
+        public string FlexRowValue
+        {
+            get { return _FlexRowValue; }
+            set { _FlexRowValue = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable Sortingvalue.
@@ -96,6 +122,18 @@ namespace MyFrankCrum_EMP
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Sortingvalue' at Center.", repo.ApplicationUnderTest.SomeDivTag.SortingvalueInfo, new RecordItemIndex(1));
             repo.ApplicationUnderTest.SomeDivTag.Sortingvalue.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FlexRow2' at Center.", repo.ApplicationUnderTest.SomeDivTag.FlexRow2Info, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.SomeDivTag.FlexRow2.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FlexRowName' at Center.", repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.SomeDivTag.FlexRowName.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.SomeDivTag.FlexRowName' and assigning its value to variable 'FlexRowValue'.", repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, new RecordItemIndex(4));
+            FlexRowValue = repo.ApplicationUnderTest.SomeDivTag.FlexRowName.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
         }
