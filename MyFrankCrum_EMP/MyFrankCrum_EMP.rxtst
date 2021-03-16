@@ -77,6 +77,8 @@
 			<smartfoldernode
 			datasource="NewConnector2"
 			id="6253f538-ba93-45bf-b355-4b046e9d6698"
+			maxrange="0"
+			minrange="0"
 			name="Setting">
 			</smartfoldernode>
 			<testmodule
@@ -279,14 +281,6 @@
 						id="707b4386-da95-4b05-9db4-1582a668ded0"
 						name="Employee_Status_Tab">
 						</testmodule>
-						<testmodule
-						id="4bcb12f4-4a01-4cb6-94fb-23f487a53d6e"
-						name="FindEmployee">
-						</testmodule>
-						<testmodule
-						id="932c6c4b-2efe-4a5b-bacd-f4d40513752f"
-						name="EmployeeTabs">
-						</testmodule>
 						<smartfoldernode
 						id="6253f538-ba93-45bf-b355-4b046e9d6698"
 						name="Setting">
@@ -295,6 +289,14 @@
 							name="Sorting">
 							</testmodule>
 						</smartfoldernode>
+						<testmodule
+						id="4bcb12f4-4a01-4cb6-94fb-23f487a53d6e"
+						name="FindEmployee">
+						</testmodule>
+						<testmodule
+						id="932c6c4b-2efe-4a5b-bacd-f4d40513752f"
+						name="EmployeeTabs">
+						</testmodule>
 						<testmodule
 						id="da8a5bde-37bc-4c90-b5e7-f3adab7df350"
 						name="Logout">
@@ -397,7 +399,7 @@
 		</DataSource>
 		<DataSource
 		id="b599dd35-fe57-4cc2-b1f1-9b017f4f19fd"
-		lastknownrowcount="2"
+		lastknownrowcount="4"
 		name="NewConnector2"
 		type="Ranorex.Core.Data.SimpleDataConnector">
 			<lastknowncolumns>
@@ -421,6 +423,16 @@
 				<tr>
 					<td>
 						Last Name: Z-A
+					</td>
+				</tr>
+				<tr>
+					<td>
+						First Name: A-Z
+					</td>
+				</tr>
+				<tr>
+					<td>
+						First Name: Z-A
 					</td>
 				</tr>
 			</table>

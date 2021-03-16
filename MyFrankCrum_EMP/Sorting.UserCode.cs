@@ -9,12 +9,12 @@
 
 using System;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
@@ -33,6 +33,71 @@ namespace MyFrankCrum_EMP
             // Your recording specific initialization code goes here.
         }
 
+        public void Get_value_FlexRowName(RepoItemInfo buttontagInfo , String Sortingvalue)
+        {
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'buttontagInfo' and assigning its value to variable 'FlexRowValue'.", buttontagInfo);
+            FlexRowValue = buttontagInfo.FindAdapter<ButtonTag>().Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, FlexRowValue, "value in FlexRowValue");
+            
+            //String a[]= StringSplitOptions(_FlexRowValue,",");
+            string LastName="0" , FirstName = "0";
+            string[] b = _FlexRowValue.Split(',');
+            String Z=b[0];
+            String X=b[1];
+            Report.Log(ReportLevel.Info, LastName, "value in last name");
+            Report.Log(ReportLevel.Info, Z, "value in last name");
+            Report.Log(ReportLevel.Info, FirstName, "value in First name");
+            Report.Log(ReportLevel.Info, X, "value in First name");
+            if(Sortingvalue == "Last Name:A-Z")
+            {
+     	
+             if(b[0].StartsWith("A")==true)
+            {
+            	Report.Log(ReportLevel.Info, "true" , "Bool value in last name");
+            }
+            else
+            {
+            	Report.Log(ReportLevel.Info, "false" , "Bool value in last name");
+            }
+            
+            }
+            else if (Sortingvalue=="Last Name: Z-A")
+            {
+            	 if(b[0].StartsWith("Z")==true)
+            {
+            	Report.Log(ReportLevel.Info, "true" , "Bool value in last name");
+            }
+            else
+            {
+            	Report.Log(ReportLevel.Info, "false" , "Bool value in last name");
+            }
+            
+            }
+            else if (Sortingvalue=="First Name: Z-A")
+            {
+            	if(b[1].StartsWith("Z")==true)
+            {
+            	Report.Log(ReportLevel.Info, "true" , "Bool value in last name");
+            }
+            else
+            {
+            	Report.Log(ReportLevel.Info, "false" , "Bool value in last name");
+            }
+            }
+            else if (Sortingvalue=="First Name: A-Z")
+            {
+            	if(b[1].StartsWith("A")==true)
+            {
+            	Report.Log(ReportLevel.Info, "true" , "Bool value in last name");
+            }
+            else
+            {
+            	Report.Log(ReportLevel.Info, "false" , "Bool value in last name");
+            }
+            }
+            
+            
+        }
        
     }
 }

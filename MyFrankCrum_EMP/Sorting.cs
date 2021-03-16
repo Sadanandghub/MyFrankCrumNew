@@ -41,9 +41,11 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public Sorting()
         {
-            Sortingvalue = "Last Name: Z-A";
+            Sortingvalue = "Last Name: A-Z";
             As_new_variable___ = "";
             FlexRowValue = "XYZ";
+            EmployeeNumber = "AWS";
+            JobTitle = "ASD";
         }
 
         /// <summary>
@@ -78,6 +80,30 @@ namespace MyFrankCrum_EMP
         {
             get { return _FlexRowValue; }
             set { _FlexRowValue = value; }
+        }
+
+        string _EmployeeNumber;
+
+        /// <summary>
+        /// Gets or sets the value of variable EmployeeNumber.
+        /// </summary>
+        [TestVariable("02fcbffb-c191-4245-b0c1-88c5f96a4bf2")]
+        public string EmployeeNumber
+        {
+            get { return _EmployeeNumber; }
+            set { _EmployeeNumber = value; }
+        }
+
+        string _JobTitle;
+
+        /// <summary>
+        /// Gets or sets the value of variable JobTitle.
+        /// </summary>
+        [TestVariable("92f6cb93-ecb6-4003-9bb8-964882b0df51")]
+        public string JobTitle
+        {
+            get { return _JobTitle; }
+            set { _JobTitle = value; }
         }
 
         /// <summary>
@@ -128,13 +154,30 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.SomeDivTag.FlexRow2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FlexRowName' at Center.", repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.SomeDivTag.FlexRowName.Click();
+            Get_value_FlexRowName(repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, Sortingvalue);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.SomeDivTag.FlexRowName' and assigning its value to variable 'FlexRowValue'.", repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, new RecordItemIndex(4));
-            FlexRowValue = repo.ApplicationUnderTest.SomeDivTag.FlexRowName.Element.GetAttributeValueText("InnerText");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FlexRowName' at Center.", repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, new RecordItemIndex(4));
+            //repo.ApplicationUnderTest.SomeDivTag.FlexRowName.Click();
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "User", "", new RecordItemIndex(5));
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.EmployeeNumber' at Center.", repo.ApplicationUnderTest.SomeDivTag.EmployeeNumberInfo, new RecordItemIndex(6));
+            //repo.ApplicationUnderTest.SomeDivTag.EmployeeNumber.Click();
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.SomeDivTag.EmployeeNumber' and assigning its value to variable 'EmployeeNumber'.", repo.ApplicationUnderTest.SomeDivTag.EmployeeNumberInfo, new RecordItemIndex(7));
+            //EmployeeNumber = repo.ApplicationUnderTest.SomeDivTag.EmployeeNumber.Element.GetAttributeValueText("InnerText");
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.JobTitle' at Center.", repo.ApplicationUnderTest.SomeDivTag.JobTitleInfo, new RecordItemIndex(8));
+            //repo.ApplicationUnderTest.SomeDivTag.JobTitle.Click();
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.SomeDivTag.JobTitle' and assigning its value to variable 'JobTitle'.", repo.ApplicationUnderTest.SomeDivTag.JobTitleInfo, new RecordItemIndex(9));
+            //JobTitle = repo.ApplicationUnderTest.SomeDivTag.JobTitle.Element.GetAttributeValueText("InnerText");
+            //Delay.Milliseconds(0);
             
         }
 

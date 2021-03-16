@@ -26,7 +26,7 @@ mode="Global">
 		<var
 		id="f17c01d4-2115-4a8a-8535-c75aeffd4d53"
 		name="Sortingvalue">
-			Last Name: Z-A
+			Last Name: A-Z
 		</var>
 		<var
 		id="f5155496-9058-41c2-ae7b-dd0ad5e3bc08"
@@ -36,6 +36,16 @@ mode="Global">
 		id="1676eaeb-a1fc-4763-9ef9-98afdbb89063"
 		name="FlexRowValue">
 			XYZ
+		</var>
+		<var
+		id="02fcbffb-c191-4245-b0c1-88c5f96a4bf2"
+		name="EmployeeNumber">
+			AWS
+		</var>
+		<var
+		id="92f6cb93-ecb6-4003-9bb8-964882b0df51"
+		name="JobTitle">
+			ASD
 		</var>
 	</variables>
 	<recorditems>
@@ -817,11 +827,52 @@ gAooooAKKKKACiiigAooooAKBRRQIWiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
 ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 			</helperscreenshot>
 		</mouseitem>
+		<userrecorditem
+		classname="Sorting"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Get_value_FlexRowName"
+		namespace="MyFrankCrum_EMP"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c395e6a3-1868-4070-826b-48ace898d67e">
+				<argument
+				argname="buttontagInfo"
+				id="80672382-3455-4359-8d1d-ea3dad50433b">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="cd1a6415-51ce-4d7e-873f-8893acfb0502"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/button
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="Sortingvalue"
+				id="9da8cc56-0b18-4313-aa8b-1b27784905e0"
+				variable="Sortingvalue">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -981,21 +1032,273 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
 AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<getvaluerecorditem
-		attrname="InnerText"
-		enabled="True"
+		<loggingrecorditem
+		category="User"
+		enabled="False"
+		message=""
 		optional="False"
-		searchpropertyid="cceb290b-e23b-4e11-88e5-9a7b8ef690c5"
-		varname="FlexRowValue">
+		reportlevel="Info;20"
+		searchpropertyid="9702008c-ad9f-42fd-b736-9d02614ea82a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="04e18105-c254-4beb-81f8-a8a7f3e92644"
+		sx="475"
+		sy="459"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="cd1a6415-51ce-4d7e-873f-8893acfb0502"
+			id="e4ba39eb-39c6-4294-b7c5-08280dbadf85"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="442,449,69,17"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						bold faded
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						#000000021
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						bold faded
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/span[@innertext='#000000021']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="819fa27a-9ecf-4c4f-bb62-1360dc2d09ef">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<getvaluerecorditem
+		attrname="InnerText"
+		enabled="False"
+		optional="False"
+		searchpropertyid="3cbc1cb2-c275-4841-aee5-7fb711595d80"
+		varname="EmployeeNumber">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e4ba39eb-39c6-4294-b7c5-08280dbadf85"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/button
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/span
+				</path>
+			</info>
+		</getvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="655248a3-76bf-49fb-8974-851764b959dd"
+		sx="784"
+		sy="436"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7145b258-9718-4825-9bef-194b210576dc"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="778,425,149,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						--
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div[1]/div/div/div[1]/div[4]/div[@innertext='--']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="6e28f1ff-f9fd-40c8-bda2-7572bcd4f5e2">
+				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
+ooAKKKKACiiigAooooAKKKKAP//Z
+			</helperscreenshot>
+		</mouseitem>
+		<getvaluerecorditem
+		attrname="InnerText"
+		enabled="False"
+		optional="False"
+		searchpropertyid="0742ae63-099a-4ac0-9b19-5b203f1b929d"
+		varname="JobTitle">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7145b258-9718-4825-9bef-194b210576dc"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div[1]/div/div/div[1]/div[4]/div
 				</path>
 			</info>
 		</getvaluerecorditem>

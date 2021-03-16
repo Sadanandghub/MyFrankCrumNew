@@ -125,7 +125,7 @@ namespace MyFrankCrum_EMP
             set { _EmpName = value; }
         }
 
-        string _Sortingvalue = "Last Name: Z-A";
+        string _Sortingvalue = "Last Name: A-Z";
 
         /// <summary>
         /// Gets or sets the value of variable Sortingvalue.
@@ -944,6 +944,8 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _logoutInfo;
             RepoItemInfo _flexrow2Info;
             RepoItemInfo _flexrownameInfo;
+            RepoItemInfo _employeenumberInfo;
+            RepoItemInfo _jobtitleInfo;
 
             /// <summary>
             /// Creates a new SomeDivTag  folder.
@@ -968,6 +970,8 @@ namespace MyFrankCrum_EMP
                 _logoutInfo = new RepoItemInfo(this, "Logout", "div[4]/?/?/button[@innertext='Logout']", 30000, null, "6b9edcb5-4016-4092-b2ce-c1eacd6ea894");
                 _flexrow2Info = new RepoItemInfo(this, "FlexRow2", "div/div/div[3]/div[1]/div/div/div[1]", 30000, null, "d50037f5-9258-4f83-9f68-0b80574abd35");
                 _flexrownameInfo = new RepoItemInfo(this, "FlexRowName", "div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/button", 30000, null, "cd1a6415-51ce-4d7e-873f-8893acfb0502");
+                _employeenumberInfo = new RepoItemInfo(this, "EmployeeNumber", "div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/span", 30000, null, "e4ba39eb-39c6-4294-b7c5-08280dbadf85");
+                _jobtitleInfo = new RepoItemInfo(this, "JobTitle", "div/div/div[3]/div[1]/div/div/div[1]/div[4]/div", 30000, null, "7145b258-9718-4825-9bef-194b210576dc");
             }
 
             /// <summary>
@@ -1469,6 +1473,54 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _flexrownameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EmployeeNumber item.
+            /// </summary>
+            [RepositoryItem("e4ba39eb-39c6-4294-b7c5-08280dbadf85")]
+            public virtual Ranorex.SpanTag EmployeeNumber
+            {
+                get
+                {
+                    return _employeenumberInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmployeeNumber item info.
+            /// </summary>
+            [RepositoryItemInfo("e4ba39eb-39c6-4294-b7c5-08280dbadf85")]
+            public virtual RepoItemInfo EmployeeNumberInfo
+            {
+                get
+                {
+                    return _employeenumberInfo;
+                }
+            }
+
+            /// <summary>
+            /// The JobTitle item.
+            /// </summary>
+            [RepositoryItem("7145b258-9718-4825-9bef-194b210576dc")]
+            public virtual Ranorex.DivTag JobTitle
+            {
+                get
+                {
+                    return _jobtitleInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The JobTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("7145b258-9718-4825-9bef-194b210576dc")]
+            public virtual RepoItemInfo JobTitleInfo
+            {
+                get
+                {
+                    return _jobtitleInfo;
                 }
             }
         }
