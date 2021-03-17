@@ -157,25 +157,28 @@ namespace MyFrankCrum_EMP
             Get_value_FlexRowName(repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, Sortingvalue);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FlexRowName' at Center.", repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, new RecordItemIndex(4));
-            //repo.ApplicationUnderTest.SomeDivTag.FlexRowName.Click();
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", null, false, new RecordItemIndex(4));
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ApplicationUnderTest.SomeDivTag.FlexRowName' at Center.", repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, new RecordItemIndex(5));
+            //repo.ApplicationUnderTest.SomeDivTag.FlexRowName.MoveTo();
+            //Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "User", "", new RecordItemIndex(5));
+            //Report.Log(ReportLevel.Info, "User", "", new RecordItemIndex(6));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.EmployeeNumber' at Center.", repo.ApplicationUnderTest.SomeDivTag.EmployeeNumberInfo, new RecordItemIndex(6));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.EmployeeNumber' at Center.", repo.ApplicationUnderTest.SomeDivTag.EmployeeNumberInfo, new RecordItemIndex(7));
             //repo.ApplicationUnderTest.SomeDivTag.EmployeeNumber.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.SomeDivTag.EmployeeNumber' and assigning its value to variable 'EmployeeNumber'.", repo.ApplicationUnderTest.SomeDivTag.EmployeeNumberInfo, new RecordItemIndex(7));
+            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.SomeDivTag.EmployeeNumber' and assigning its value to variable 'EmployeeNumber'.", repo.ApplicationUnderTest.SomeDivTag.EmployeeNumberInfo, new RecordItemIndex(8));
             //EmployeeNumber = repo.ApplicationUnderTest.SomeDivTag.EmployeeNumber.Element.GetAttributeValueText("InnerText");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.JobTitle' at Center.", repo.ApplicationUnderTest.SomeDivTag.JobTitleInfo, new RecordItemIndex(8));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.JobTitle' at Center.", repo.ApplicationUnderTest.SomeDivTag.JobTitleInfo, new RecordItemIndex(9));
             //repo.ApplicationUnderTest.SomeDivTag.JobTitle.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.SomeDivTag.JobTitle' and assigning its value to variable 'JobTitle'.", repo.ApplicationUnderTest.SomeDivTag.JobTitleInfo, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.SomeDivTag.JobTitle' and assigning its value to variable 'JobTitle'.", repo.ApplicationUnderTest.SomeDivTag.JobTitleInfo, new RecordItemIndex(10));
             //JobTitle = repo.ApplicationUnderTest.SomeDivTag.JobTitle.Element.GetAttributeValueText("InnerText");
             //Delay.Milliseconds(0);
             
