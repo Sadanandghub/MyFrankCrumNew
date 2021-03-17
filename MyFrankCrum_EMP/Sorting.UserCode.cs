@@ -40,19 +40,21 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, FlexRowValue, "value in FlexRowValue");
             
             //String a[]= StringSplitOptions(_FlexRowValue,",");
-            string LastName="0" , FirstName = "0";
+           // string LastName="0" , FirstName = "0";
             string[] b = _FlexRowValue.Split(',');
             String Z=b[0];
             String X=b[1];
-            Report.Log(ReportLevel.Info, LastName, "value in last name");
+            //Report.Log(ReportLevel.Info, LastName, "value in last name");
             Report.Log(ReportLevel.Info, Z, "value in last name");
-            Report.Log(ReportLevel.Info, FirstName, "value in First name");
+            //Report.Log(ReportLevel.Info, FirstName, "value in First name");
             Report.Log(ReportLevel.Info, X, "value in First name");
-            if(Sortingvalue == "Last Name:A-Z")
+            if(Sortingvalue == "Last Name: A-Z")
             {
+            	Report.Log(ReportLevel.Info, Sortingvalue , "Bool value in last name A-Z Sorting value");
      	
              if(b[0].StartsWith("A")==true)
             {
+            
             	Report.Log(ReportLevel.Info, "true" , "Bool value in last name");
             }
             else
@@ -75,24 +77,24 @@ namespace MyFrankCrum_EMP
             }
             else if (Sortingvalue=="First Name: Z-A")
             {
-            	if(b[1].StartsWith("Z")==true)
+            	if(b[1].StartsWith(" Z")==true)
             {
-            	Report.Log(ReportLevel.Info, "true" , "Bool value in last name");
+            	Report.Log(ReportLevel.Info, "true" , "Bool value in First name");
             }
             else
             {
-            	Report.Log(ReportLevel.Info, "false" , "Bool value in last name");
+            	Report.Log(ReportLevel.Info, "false" , "Bool value in First name");
             }
             }
             else if (Sortingvalue=="First Name: A-Z")
             {
-            	if(b[1].StartsWith("A")==true)
+            	if(b[1].StartsWith(" A")==true)
             {
-            	Report.Log(ReportLevel.Info, "true" , "Bool value in last name");
+            	Report.Log(ReportLevel.Info, "true" , "Bool value in First name");
             }
             else
             {
-            	Report.Log(ReportLevel.Info, "false" , "Bool value in last name");
+            	Report.Log(ReportLevel.Info, "false" , "Bool value in First name");
             }
             }
             
