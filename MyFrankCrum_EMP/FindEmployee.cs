@@ -41,7 +41,7 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public FindEmployee()
         {
-            EmpName = "Allen, Dane T";
+            EmpName = "Apple";
             LclEmpName = "Allen, Dane T";
         }
 
@@ -118,6 +118,14 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.", repo.ApplicationUnderTest.SomeDivTag.selectEmpInfo, new RecordItemIndex(3));
             repo.ApplicationUnderTest.SomeDivTag.selectEmp.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$EmpName) on item 'ApplicationUnderTest.EmpName'.", repo.ApplicationUnderTest.EmpNameInfo, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.ApplicationUnderTest.EmpNameInfo, "InnerText", EmpName);
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Personal') on item 'ApplicationUnderTest.Personal'.", repo.ApplicationUnderTest.PersonalInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.PersonalInfo, "InnerText", "Personal");
+            Delay.Milliseconds(100);
             
         }
 

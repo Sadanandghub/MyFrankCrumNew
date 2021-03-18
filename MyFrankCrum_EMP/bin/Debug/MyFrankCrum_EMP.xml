@@ -4,6 +4,162 @@
         <name>MyFrankCrum_EMP</name>
     </assembly>
     <members>
+        <member name="T:MyFrankCrum_EMP.Back_to_Employeelist">
+             <summary>
+            The Back_to_Employeelist recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Back_to_Employeelist.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Back_to_Employeelist.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Back_to_Employeelist.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Back_to_Employeelist.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Back_to_Employeelist.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Back_to_Employeelist.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Back_to_Employeelist.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.ClickDetails">
+             <summary>
+            The ClickDetails recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.ClickDetails.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickDetails.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.ClickDetails.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickDetails.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.ClickDetails.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickDetails.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickDetails.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.ClickTerminateEmployee">
+             <summary>
+            The ClickTerminateEmployee recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.ClickTerminateEmployee.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickTerminateEmployee.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.ClickTerminateEmployee.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickTerminateEmployee.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.ClickTerminateEmployee.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickTerminateEmployee.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickTerminateEmployee.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Click_Emp_Gray_Box">
+             <summary>
+            The Click_Emp_Gray_Box recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Click_Emp_Gray_Box.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Click_Emp_Gray_Box.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Click_Emp_Gray_Box.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Click_Emp_Gray_Box.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Click_Emp_Gray_Box.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Click_Emp_Gray_Box.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Click_Emp_Gray_Box.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.CloseBrowser">
              <summary>
             The CloseBrowser recording.
@@ -592,11 +748,6 @@
             The MyFrankCrum folder.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.Explorer">
-            <summary>
-            The Explorer folder.
-            </summary>
-        </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders">
             <summary>
             Inner folder classes.
@@ -611,29 +762,6 @@
             <summary>
             Creates a new ApplicationUnderTest  folder.
             </summary>
-        </member>
-        <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SidebarInfoClass">
-            <summary>
-            The SidebarInfoClass folder.
-            </summary>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SidebarInfoClass.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            SidebarInfoClass class constructor.
-            </summary>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SidebarInfoClass.GetScreenshot1">
-            <summary>
-            Gets the Screenshot1 item image.
-            </summary>
-            <returns>The Screenshot1 image.</returns>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SidebarInfoClass.GetScreenshot1(System.Drawing.Rectangle)">
-            <summary>
-            Gets the Screenshot1 item image.
-            </summary>
-            <param name="cropRect">The bounds of the sub-image to return.</param>
-            <returns>The cropped image.</returns>
         </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SidebarContentContainerInfoClass">
             <summary>
@@ -731,6 +859,36 @@
             The Employees item info.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Details">
+            <summary>
+            The Details item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.DetailsInfo">
+            <summary>
+            The Details item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.TerminateEmployee">
+            <summary>
+            The TerminateEmployee item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.TerminateEmployeeInfo">
+            <summary>
+            The TerminateEmployee item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.TerminateClick">
+            <summary>
+            The TerminateClick item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.TerminateClickInfo">
+            <summary>
+            The TerminateClick item info.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Personal">
             <summary>
             The Personal item.
@@ -749,26 +907,6 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.JobPayInfo">
             <summary>
             The JobPay item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.HttpsDevmfcFrankcrumComLogin">
-            <summary>
-            The HttpsDevmfcFrankcrumComLogin item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.HttpsDevmfcFrankcrumComLoginInfo">
-            <summary>
-            The HttpsDevmfcFrankcrumComLogin item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Sidebar">
-            <summary>
-            The Sidebar item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SidebarInfo">
-            <summary>
-            The Sidebar item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.setting1">
@@ -891,14 +1029,34 @@
             The Totalclick item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Logoutc">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.EmpName">
             <summary>
-            The Logoutc item.
+            The EmpName item.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.LogoutcInfo">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.EmpNameInfo">
             <summary>
-            The Logoutc item info.
+            The EmpName item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.BackToEmployeeList">
+            <summary>
+            The BackToEmployeeList item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.BackToEmployeeListInfo">
+            <summary>
+            The BackToEmployeeList item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Detailclick">
+            <summary>
+            The Detailclick item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.DetailclickInfo">
+            <summary>
+            The Detailclick item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SomeDivTag">
@@ -925,52 +1083,6 @@
             <summary>
             Creates a new SomeDivTag  folder.
             </summary>
-        </member>
-        <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.SettingsInfoClass">
-            <summary>
-            The SettingsInfoClass folder.
-            </summary>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.SettingsInfoClass.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            SettingsInfoClass class constructor.
-            </summary>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.SettingsInfoClass.GetScreenshot1">
-            <summary>
-            Gets the Screenshot1 item image.
-            </summary>
-            <returns>The Screenshot1 image.</returns>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.SettingsInfoClass.GetScreenshot1(System.Drawing.Rectangle)">
-            <summary>
-            Gets the Screenshot1 item image.
-            </summary>
-            <param name="cropRect">The bounds of the sub-image to return.</param>
-            <returns>The cropped image.</returns>
-        </member>
-        <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FlexRow1InfoClass">
-            <summary>
-            The FlexRow1InfoClass folder.
-            </summary>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FlexRow1InfoClass.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            FlexRow1InfoClass class constructor.
-            </summary>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FlexRow1InfoClass.GetScreenshot1">
-            <summary>
-            Gets the Screenshot1 item image.
-            </summary>
-            <returns>The Screenshot1 image.</returns>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FlexRow1InfoClass.GetScreenshot1(System.Drawing.Rectangle)">
-            <summary>
-            Gets the Screenshot1 item image.
-            </summary>
-            <param name="cropRect">The bounds of the sub-image to return.</param>
-            <returns>The cropped image.</returns>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Self">
             <summary>
@@ -1010,96 +1122,6 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.selectEmpInfo">
             <summary>
             The selectEmp item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Settings">
-            <summary>
-            The Settings item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.SettingsInfo">
-            <summary>
-            The Settings item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Checkmark">
-            <summary>
-            The Checkmark item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.CheckmarkInfo">
-            <summary>
-            The Checkmark item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FlexRow">
-            <summary>
-            The FlexRow item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FlexRowInfo">
-            <summary>
-            The FlexRow item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FlexRow1">
-            <summary>
-            The FlexRow1 item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FlexRow1Info">
-            <summary>
-            The FlexRow1 item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Active132">
-            <summary>
-            The Active132 item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Active132Info">
-            <summary>
-            The Active132 item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.LeaveOfAbsence">
-            <summary>
-            The LeaveOfAbsence item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.LeaveOfAbsenceInfo">
-            <summary>
-            The LeaveOfAbsence item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.OnStrike">
-            <summary>
-            The OnStrike item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.OnStrikeInfo">
-            <summary>
-            The OnStrike item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Terminated">
-            <summary>
-            The Terminated item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.TerminatedInfo">
-            <summary>
-            The Terminated item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Total160">
-            <summary>
-            The Total160 item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Total160Info">
-            <summary>
-            The Total160 item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.FaCaretDownFas">
@@ -1152,24 +1174,24 @@
             The FlexRowName item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.EmployeeNumber">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Apple">
             <summary>
-            The EmployeeNumber item.
+            The Apple item.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.EmployeeNumberInfo">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.AppleInfo">
             <summary>
-            The EmployeeNumber item info.
+            The Apple item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.JobTitle">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.GrayBox">
             <summary>
-            The JobTitle item.
+            The GrayBox item.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.JobTitleInfo">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.GrayBoxInfo">
             <summary>
-            The JobTitle item info.
+            The GrayBox item info.
             </summary>
         </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ReactTabsTabListFolder">
@@ -1430,36 +1452,6 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.MyFrankCrumAppFolder.compselectInfo">
             <summary>
             The compselect item info.
-            </summary>
-        </member>
-        <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ExplorerAppFolder">
-            <summary>
-            The ExplorerAppFolder folder.
-            </summary>
-        </member>
-        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ExplorerAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            Creates a new Explorer  folder.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ExplorerAppFolder.Self">
-            <summary>
-            The Self item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ExplorerAppFolder.SelfInfo">
-            <summary>
-            The Self item info.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ExplorerAppFolder.RanorexStudio2RunningWindows">
-            <summary>
-            The RanorexStudio2RunningWindows item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ExplorerAppFolder.RanorexStudio2RunningWindowsInfo">
-            <summary>
-            The RanorexStudio2RunningWindows item info.
             </summary>
         </member>
         <member name="T:MyFrankCrum_EMP.OpenBrowser">

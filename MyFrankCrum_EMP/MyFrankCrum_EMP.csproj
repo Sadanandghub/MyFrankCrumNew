@@ -126,6 +126,54 @@
     <Compile Include="AssemblyInfo.cs">
       <id>9e48e7b4-348b-4877-bec6-8278994649dd</id>
     </Compile>
+    <Compile Include="Back_to_Employeelist.cs">
+      <BoundTo>b9a25114-f055-4f02-9b04-bab5c91286dc</BoundTo>
+      <DependentUpon>Back_to_Employeelist.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6a668dd5-416e-4744-8c48-56044d0be6a5</id>
+    </Compile>
+    <Compile Include="Back_to_Employeelist.UserCode.cs">
+      <BoundTo>b9a25114-f055-4f02-9b04-bab5c91286dc</BoundTo>
+      <DependentUpon>Back_to_Employeelist.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce18f827-9414-429d-96ef-b3f3a21a06cf</id>
+    </Compile>
+    <Compile Include="ClickDetails.cs">
+      <BoundTo>5edaf2bb-e4d0-448d-93af-ac8bca5cbfe5</BoundTo>
+      <DependentUpon>ClickDetails.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cfabfc02-e63c-4543-bbc4-b903b3842d6d</id>
+    </Compile>
+    <Compile Include="ClickDetails.UserCode.cs">
+      <BoundTo>5edaf2bb-e4d0-448d-93af-ac8bca5cbfe5</BoundTo>
+      <DependentUpon>ClickDetails.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>26dae6ea-08fe-4fa8-b22b-f8d66fdc7b54</id>
+    </Compile>
+    <Compile Include="ClickTerminateEmployee.cs">
+      <BoundTo>254b73ff-a49a-4d92-98b6-2f96f5bb3bbf</BoundTo>
+      <DependentUpon>ClickTerminateEmployee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>820339ac-4390-4a5b-94b9-a108142fc3c2</id>
+    </Compile>
+    <Compile Include="ClickTerminateEmployee.UserCode.cs">
+      <BoundTo>254b73ff-a49a-4d92-98b6-2f96f5bb3bbf</BoundTo>
+      <DependentUpon>ClickTerminateEmployee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>52c5b2dd-2b18-4bff-bd77-8ed78c8cebd0</id>
+    </Compile>
+    <Compile Include="Click_Emp_Gray_Box.cs">
+      <BoundTo>c1a962f6-9b3d-4d81-b672-499788ab97d0</BoundTo>
+      <DependentUpon>Click_Emp_Gray_Box.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ebed79cb-8a8a-4cd6-aaa0-2f678560bf0f</id>
+    </Compile>
+    <Compile Include="Click_Emp_Gray_Box.UserCode.cs">
+      <BoundTo>c1a962f6-9b3d-4d81-b672-499788ab97d0</BoundTo>
+      <DependentUpon>Click_Emp_Gray_Box.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7e76656b-1179-4beb-b736-c3b8967ce147</id>
+    </Compile>
     <Compile Include="CloseBrowser.cs">
       <BoundTo>fd8e07d8-97f0-4519-944d-db5f94791516</BoundTo>
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
@@ -367,6 +415,26 @@
   <ItemGroup>
     <None Include="app.config">
       <id>63fb34a2-8425-4b0d-8bb6-5dc1c8fad259</id>
+    </None>
+    <None Include="Back_to_Employeelist.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>b9a25114-f055-4f02-9b04-bab5c91286dc</id>
+      <recordtableid>76924a0b-c4b1-4a62-b8f0-23ac080ed8a4</recordtableid>
+    </None>
+    <None Include="ClickDetails.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>5edaf2bb-e4d0-448d-93af-ac8bca5cbfe5</id>
+      <recordtableid>976e9511-125b-4029-97d7-2d1fb16277af</recordtableid>
+    </None>
+    <None Include="ClickTerminateEmployee.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>254b73ff-a49a-4d92-98b6-2f96f5bb3bbf</id>
+      <recordtableid>f5c3ef27-52e1-4198-a7a6-0961cfee1ae9</recordtableid>
+    </None>
+    <None Include="Click_Emp_Gray_Box.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>c1a962f6-9b3d-4d81-b672-499788ab97d0</id>
+      <recordtableid>b71b85ff-8931-440f-bd02-a4e315eb1f29</recordtableid>
     </None>
     <None Include="CloseBrowser.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
