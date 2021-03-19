@@ -190,7 +190,6 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _employeesInfo;
             RepoItemInfo _detailsInfo;
             RepoItemInfo _terminateemployeeInfo;
-            RepoItemInfo _terminateclickInfo;
             RepoItemInfo _personalInfo;
             RepoItemInfo _jobpayInfo;
             RepoItemInfo _setting1Info;
@@ -208,6 +207,10 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _empnameInfo;
             RepoItemInfo _backtoemployeelistInfo;
             RepoItemInfo _detailclickInfo;
+            RepoItemInfo _terminateclickInfo;
+            RepoItemInfo _ssnvalueInfo;
+            RepoItemInfo _fafalockInfo;
+            RepoItemInfo _unlockInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -225,7 +228,6 @@ namespace MyFrankCrum_EMP
                 _employeesInfo = new RepoItemInfo(this, "Employees", ".//div[#'/Employees']//div[@innertext='Employees']", 30000, null, "4c761a55-0c84-4b80-b662-f8ba98ff564f");
                 _detailsInfo = new RepoItemInfo(this, "Details", ".//div[#'dropdown-menu']/button[@innertext='Details']", 30000, null, "98189446-a511-431a-b6da-465fbad7b1c7");
                 _terminateemployeeInfo = new RepoItemInfo(this, "TerminateEmployee", ".//div[#'dropdown-menu']/button[@innertext='Terminate Employee']", 30000, null, "ce2aa6e5-6c76-4365-b1e6-dadd03fbe9dc");
-                _terminateclickInfo = new RepoItemInfo(this, "TerminateClick", ".//div[#'dropdown-menu']/?", 30000, null, "2c1862a8-230d-4c03-ae85-72d93a4c999a");
                 _personalInfo = new RepoItemInfo(this, "Personal", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Personal']", 30000, null, "18137ebf-5c2e-48a0-b589-8241b8c342d1");
                 _jobpayInfo = new RepoItemInfo(this, "JobPay", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Job & Pay']", 30000, null, "663ab337-b10c-4767-94a3-3dc45d8bdddb");
                 _setting1Info = new RepoItemInfo(this, "setting1", ".//div[#'sidebar-content-container']//a[@innertext='Settings']", 30000, null, "3cf03341-f3d9-4bb3-96f5-553c274f4647");
@@ -238,11 +240,15 @@ namespace MyFrankCrum_EMP
                 _activeclickInfo = new RepoItemInfo(this, "Activeclick", ".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Active']", 30000, null, "2c90fa00-c4e3-46b9-88ab-6b975cfeaff2");
                 _leaveofabsenceclickInfo = new RepoItemInfo(this, "LeaveOfAbsenceclick", ".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Leave of absence']", 30000, null, "38f7593e-9dd1-4d76-9856-df3ee9769c30");
                 _onstrikeclickInfo = new RepoItemInfo(this, "OnStrikeclick", ".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'On strike']", 30000, null, "ad40cbc1-46ba-43a3-b38f-dd8d01e5ab1e");
-                _terminatedclickInfo = new RepoItemInfo(this, "Terminatedclick", ".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Terminated']", 30000, null, "fe4d6f8b-6cb0-4ce7-832d-e1c84f684fdf");
+                _terminatedclickInfo = new RepoItemInfo(this, "Terminatedclick", ".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Terminated']", 30000, null, "14540359-8a4c-4e93-9574-3b79cce97262");
                 _totalclickInfo = new RepoItemInfo(this, "Totalclick", ".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Total']", 30000, null, "c1799bb8-a568-4374-b97c-7dad75251455");
                 _empnameInfo = new RepoItemInfo(this, "EmpName", ".//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Sally  Apple JR']", 30000, null, "3adb98d7-3eb9-4fad-b821-34649810c11b");
                 _backtoemployeelistInfo = new RepoItemInfo(this, "BackToEmployeeList", ".//div[#'app']/div[2]/div[3]/?/?/a[@href>'https://devmfc.frankcrum.']/?/?/div[@innertext='Back to Employee List']", 30000, null, "68921955-34ad-42fc-b013-c868c794b96d");
-                _detailclickInfo = new RepoItemInfo(this, "Detailclick", ".//div[#'dropdown-menu']/?", 30000, null, "02ab53d6-46f9-400a-8930-9faa30ebdef3");
+                _detailclickInfo = new RepoItemInfo(this, "Detailclick", ".//div[#'dropdown-menu']/*[@innertext='Details']", 30000, null, "02ab53d6-46f9-400a-8930-9faa30ebdef3");
+                _terminateclickInfo = new RepoItemInfo(this, "TerminateClick", ".//div[#'dropdown-menu']/*[@innertext='Terminate Employee']", 30000, null, "2c1862a8-230d-4c03-ae85-72d93a4c999a");
+                _ssnvalueInfo = new RepoItemInfo(this, "SSNValue", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext>'XXX-XX-']", 30000, null, "3269555b-956d-4d2e-9e7e-55dac860c104");
+                _fafalockInfo = new RepoItemInfo(this, "FaFaLock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='XXX-XX-0932']/i", 30000, null, "8a67bc5a-cd1d-4cfc-a3bc-545c34c29a8a");
+                _unlockInfo = new RepoItemInfo(this, "Unlock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='743-98-0932']/i[@class='fa fa-lock-open']", 30000, null, "475de8fb-6b47-49c1-bf4d-8b0cba7235eb");
             }
 
             /// <summary>
@@ -490,30 +496,6 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _terminateemployeeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TerminateClick item.
-            /// </summary>
-            [RepositoryItem("2c1862a8-230d-4c03-ae85-72d93a4c999a")]
-            public virtual Ranorex.Unknown TerminateClick
-            {
-                get
-                {
-                    return _terminateclickInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TerminateClick item info.
-            /// </summary>
-            [RepositoryItemInfo("2c1862a8-230d-4c03-ae85-72d93a4c999a")]
-            public virtual RepoItemInfo TerminateClickInfo
-            {
-                get
-                {
-                    return _terminateclickInfo;
                 }
             }
 
@@ -808,7 +790,7 @@ namespace MyFrankCrum_EMP
             /// <summary>
             /// The Terminatedclick item.
             /// </summary>
-            [RepositoryItem("fe4d6f8b-6cb0-4ce7-832d-e1c84f684fdf")]
+            [RepositoryItem("14540359-8a4c-4e93-9574-3b79cce97262")]
             public virtual Ranorex.LiTag Terminatedclick
             {
                 get
@@ -820,7 +802,7 @@ namespace MyFrankCrum_EMP
             /// <summary>
             /// The Terminatedclick item info.
             /// </summary>
-            [RepositoryItemInfo("fe4d6f8b-6cb0-4ce7-832d-e1c84f684fdf")]
+            [RepositoryItemInfo("14540359-8a4c-4e93-9574-3b79cce97262")]
             public virtual RepoItemInfo TerminatedclickInfo
             {
                 get
@@ -922,6 +904,102 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _detailclickInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TerminateClick item.
+            /// </summary>
+            [RepositoryItem("2c1862a8-230d-4c03-ae85-72d93a4c999a")]
+            public virtual Ranorex.Unknown TerminateClick
+            {
+                get
+                {
+                    return _terminateclickInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TerminateClick item info.
+            /// </summary>
+            [RepositoryItemInfo("2c1862a8-230d-4c03-ae85-72d93a4c999a")]
+            public virtual RepoItemInfo TerminateClickInfo
+            {
+                get
+                {
+                    return _terminateclickInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SSNValue item.
+            /// </summary>
+            [RepositoryItem("3269555b-956d-4d2e-9e7e-55dac860c104")]
+            public virtual Ranorex.DivTag SSNValue
+            {
+                get
+                {
+                    return _ssnvalueInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SSNValue item info.
+            /// </summary>
+            [RepositoryItemInfo("3269555b-956d-4d2e-9e7e-55dac860c104")]
+            public virtual RepoItemInfo SSNValueInfo
+            {
+                get
+                {
+                    return _ssnvalueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FaFaLock item.
+            /// </summary>
+            [RepositoryItem("8a67bc5a-cd1d-4cfc-a3bc-545c34c29a8a")]
+            public virtual Ranorex.ITag FaFaLock
+            {
+                get
+                {
+                    return _fafalockInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaFaLock item info.
+            /// </summary>
+            [RepositoryItemInfo("8a67bc5a-cd1d-4cfc-a3bc-545c34c29a8a")]
+            public virtual RepoItemInfo FaFaLockInfo
+            {
+                get
+                {
+                    return _fafalockInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Unlock item.
+            /// </summary>
+            [RepositoryItem("475de8fb-6b47-49c1-bf4d-8b0cba7235eb")]
+            public virtual Ranorex.ITag Unlock
+            {
+                get
+                {
+                    return _unlockInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Unlock item info.
+            /// </summary>
+            [RepositoryItemInfo("475de8fb-6b47-49c1-bf4d-8b0cba7235eb")]
+            public virtual RepoItemInfo UnlockInfo
+            {
+                get
+                {
+                    return _unlockInfo;
                 }
             }
 
@@ -1560,7 +1638,7 @@ namespace MyFrankCrum_EMP
         public partial class CssVnm4clReactTabsFolder : RepoGenBaseFolder
         {
             RepoItemInfo _employeesactiveInfo;
-            RepoItemInfo _employeestotal160Info;
+            RepoItemInfo _employeestotalInfo;
             RepoItemInfo _employeesleaveofabsenceInfo;
             RepoItemInfo _employeesonstrikeInfo;
             RepoItemInfo _employeesterminatedInfo;
@@ -1572,7 +1650,7 @@ namespace MyFrankCrum_EMP
                     base("CssVnm4clReactTabs", ".//div[#'app']/div[2]/div[3]/div/div[1]", parentFolder, 30000, null, false, "c968c047-9605-45d4-ac8c-1b761d026102", "")
             {
                 _employeesactiveInfo = new RepoItemInfo(this, "EmployeesActive", "?/?/h4[@innertext>'Employees  - Active']", 30000, null, "0ba76efb-4929-4597-a665-e83db7156fbf");
-                _employeestotal160Info = new RepoItemInfo(this, "EmployeesTotal160", "?/?/h4[@innertext>'Employees  - Total']", 30000, null, "596fd64c-5bf6-42f8-9e3a-680ccaeb1aaf");
+                _employeestotalInfo = new RepoItemInfo(this, "EmployeesTotal", "?/?/h4[@innertext>'Employees  - Total']", 30000, null, "596fd64c-5bf6-42f8-9e3a-680ccaeb1aaf");
                 _employeesleaveofabsenceInfo = new RepoItemInfo(this, "EmployeesLeaveOfAbsence", "?/?/h4[@innertext>'Employees  - Leave of absence']", 30000, null, "8367c9c4-b2e9-4572-ab85-8500787e668a");
                 _employeesonstrikeInfo = new RepoItemInfo(this, "EmployeesOnStrike", "?/?/h4[@innertext>'Employees  - On strike']", 30000, null, "8f42b9a0-b79b-492c-b024-8ece796fca84");
                 _employeesterminatedInfo = new RepoItemInfo(this, "EmployeesTerminated", "?/?/h4[@innertext>'Employees  - Terminated']", 30000, null, "08fea008-a25f-4b1c-8fbe-7ce9f036007a");
@@ -1627,26 +1705,26 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
-            /// The EmployeesTotal160 item.
+            /// The EmployeesTotal item.
             /// </summary>
             [RepositoryItem("596fd64c-5bf6-42f8-9e3a-680ccaeb1aaf")]
-            public virtual Ranorex.H4Tag EmployeesTotal160
+            public virtual Ranorex.H4Tag EmployeesTotal
             {
                 get
                 {
-                    return _employeestotal160Info.CreateAdapter<Ranorex.H4Tag>(true);
+                    return _employeestotalInfo.CreateAdapter<Ranorex.H4Tag>(true);
                 }
             }
 
             /// <summary>
-            /// The EmployeesTotal160 item info.
+            /// The EmployeesTotal item info.
             /// </summary>
             [RepositoryItemInfo("596fd64c-5bf6-42f8-9e3a-680ccaeb1aaf")]
-            public virtual RepoItemInfo EmployeesTotal160Info
+            public virtual RepoItemInfo EmployeesTotalInfo
             {
                 get
                 {
-                    return _employeestotal160Info;
+                    return _employeestotalInfo;
                 }
             }
 

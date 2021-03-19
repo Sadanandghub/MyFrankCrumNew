@@ -19,12 +19,21 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Validation"
+	classname="HomePageContentValidation"
 	namespace="MyFrankCrum_EMP">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="10000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -1132,7 +1141,7 @@ ANdG/nUNFFYM3QUUUUAFFFFABRRRQAUUUUDCiiigAooooAKKKKACiiigAooooA//2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Validation.UserCode.cs
+		HomePageContentValidation.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace MyFrankCrum_EMP
 {
-    public partial class Employee_Status_Tab
+    public partial class ClickEmployeeLink
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

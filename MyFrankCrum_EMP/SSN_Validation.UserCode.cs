@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace MyFrankCrum_EMP
 {
-    public partial class EmployeeLink
+    public partial class SSN_Validation
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -90,6 +90,10 @@ namespace MyFrankCrum_EMP
             Validate.AttributeEqual(repo.ApplicationUnderTest.PersonalInfo, "InnerText", "Personal");
             Delay.Milliseconds(100);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BackToEmployeeList' at Center.", repo.ApplicationUnderTest.BackToEmployeeListInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.BackToEmployeeList.Click();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

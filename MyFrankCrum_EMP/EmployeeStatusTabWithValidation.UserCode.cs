@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace MyFrankCrum_EMP
 {
-    public partial class Validation
+    public partial class EmployeeStatusTabWithValidation
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

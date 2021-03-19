@@ -222,15 +222,15 @@
       <UserCode>true</UserCode>
       <id>6b375efb-d2a0-4d6b-b647-6961400d348d</id>
     </Compile>
-    <Compile Include="EmployeeLink.cs">
+    <Compile Include="ClickEmployeeLink.cs">
       <BoundTo>a8d7cba8-9831-4b2a-be18-7e0c701b9848</BoundTo>
-      <DependentUpon>EmployeeLink.rxrec</DependentUpon>
+      <DependentUpon>ClickEmployeeLink.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>60ac3b9b-a17b-45ae-9148-cdb47c9733f6</id>
     </Compile>
-    <Compile Include="EmployeeLink.UserCode.cs">
+    <Compile Include="ClickEmployeeLink.UserCode.cs">
       <BoundTo>a8d7cba8-9831-4b2a-be18-7e0c701b9848</BoundTo>
-      <DependentUpon>EmployeeLink.rxrec</DependentUpon>
+      <DependentUpon>ClickEmployeeLink.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8f3bb39b-b5dd-4686-aefb-d40a09a4755e</id>
     </Compile>
@@ -258,15 +258,15 @@
       <UserCode>true</UserCode>
       <id>f78d871a-01bc-46d1-91c3-1322e8828dab</id>
     </Compile>
-    <Compile Include="Employee_Status_Tab.cs">
+    <Compile Include="EmployeeStatusTabWithValidation.cs">
       <BoundTo>339d1b9f-c759-45d8-be34-0a4f95b3e5f1</BoundTo>
-      <DependentUpon>Employee_Status_Tab.rxrec</DependentUpon>
+      <DependentUpon>EmployeeStatusTabWithValidation.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ebfe9eb7-ad36-4ce9-a50b-e81b0537bc6a</id>
     </Compile>
-    <Compile Include="Employee_Status_Tab.UserCode.cs">
+    <Compile Include="EmployeeStatusTabWithValidation.UserCode.cs">
       <BoundTo>339d1b9f-c759-45d8-be34-0a4f95b3e5f1</BoundTo>
-      <DependentUpon>Employee_Status_Tab.rxrec</DependentUpon>
+      <DependentUpon>EmployeeStatusTabWithValidation.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>105a7eac-3c21-473f-8f4b-3524644a7c82</id>
     </Compile>
@@ -305,6 +305,18 @@
       <DependentUpon>Sorting.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>085f3950-e97d-407f-b3e7-2fff4d0e7c29</id>
+    </Compile>
+    <Compile Include="SSN_Validation.cs">
+      <BoundTo>189c2b97-8bbc-4c9a-baf5-c13e7041dc38</BoundTo>
+      <DependentUpon>SSN_Validation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b7f5701-878d-4743-8fb1-aae125b63b7e</id>
+    </Compile>
+    <Compile Include="SSN_Validation.UserCode.cs">
+      <BoundTo>189c2b97-8bbc-4c9a-baf5-c13e7041dc38</BoundTo>
+      <DependentUpon>SSN_Validation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5e59d198-eadd-44eb-b049-fbae84be9f7c</id>
     </Compile>
     <Compile Include="Std_toUnified.cs">
       <BoundTo>cf6f0742-660b-41b9-93e4-344bda1c3047</BoundTo>
@@ -375,15 +387,15 @@
       <UserCode>true</UserCode>
       <id>39d553ec-7552-4de5-903c-7193b433d318</id>
     </Compile>
-    <Compile Include="Validation.cs">
+    <Compile Include="HomePageContentValidation.cs">
       <BoundTo>12f8a58a-b4e9-46cd-99d0-156e725be1e5</BoundTo>
-      <DependentUpon>Validation.rxrec</DependentUpon>
+      <DependentUpon>HomePageContentValidation.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>62f93ac2-107f-4299-918d-19746d9d0462</id>
     </Compile>
-    <Compile Include="Validation.UserCode.cs">
+    <Compile Include="HomePageContentValidation.UserCode.cs">
       <BoundTo>12f8a58a-b4e9-46cd-99d0-156e725be1e5</BoundTo>
-      <DependentUpon>Validation.rxrec</DependentUpon>
+      <DependentUpon>HomePageContentValidation.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ab851255-23dc-462a-97bb-804e9de18415</id>
     </Compile>
@@ -456,7 +468,7 @@
       <id>e9c419cd-91f2-4f90-9b1d-1281c7bf96a7</id>
       <recordtableid>08404687-1bf3-4ad5-b53e-becdc510a179</recordtableid>
     </None>
-    <None Include="EmployeeLink.rxrec">
+    <None Include="ClickEmployeeLink.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>a8d7cba8-9831-4b2a-be18-7e0c701b9848</id>
       <recordtableid>c4e81d5a-8723-49b0-8cd7-43d03a08b81c</recordtableid>
@@ -471,7 +483,7 @@
       <id>6fa6d1c2-9b30-4e79-8207-55cf8cae403d</id>
       <recordtableid>1ba1b34b-98ea-42c4-a969-56dd000ac15e</recordtableid>
     </None>
-    <None Include="Employee_Status_Tab.rxrec">
+    <None Include="EmployeeStatusTabWithValidation.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>339d1b9f-c759-45d8-be34-0a4f95b3e5f1</id>
       <recordtableid>d3445242-96b3-4544-9c2f-c96aeff33d88</recordtableid>
@@ -490,6 +502,11 @@
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>40060c78-8273-4c44-9414-f8b5813cf85a</id>
       <recordtableid>bf8fc426-e5e8-44cd-9fae-692b0e1c040f</recordtableid>
+    </None>
+    <None Include="SSN_Validation.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>189c2b97-8bbc-4c9a-baf5-c13e7041dc38</id>
+      <recordtableid>d72dc97d-c425-4637-80f8-5a67f68a8574</recordtableid>
     </None>
     <None Include="Std_toUnified.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
@@ -527,7 +544,7 @@
       <id>ce8ae584-f9bd-43b8-ba58-002d4ed08f62</id>
       <recordtableid>644843f3-0765-41a6-9795-68744048b355</recordtableid>
     </None>
-    <None Include="Validation.rxrec">
+    <None Include="HomePageContentValidation.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>12f8a58a-b4e9-46cd-99d0-156e725be1e5</id>
       <recordtableid>9640aa47-bd0e-40ed-8226-5450e4cb66eb</recordtableid>

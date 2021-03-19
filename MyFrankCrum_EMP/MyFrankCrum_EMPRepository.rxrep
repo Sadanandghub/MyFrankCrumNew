@@ -85,13 +85,6 @@ name="MyFrankCrum_EMPRepository">
 			searchtimeout="30000ms">
 				/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown-menu']/button[@innertext='Terminate Employee']
 			</item>
-			<item
-			capname="unknown"
-			id="2c1862a8-230d-4c03-ae85-72d93a4c999a"
-			name="TerminateClick"
-			searchtimeout="30000ms">
-				/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown-menu']/?
-			</item>
 			<folder
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
@@ -831,7 +824,7 @@ IJSQHIQSkoNQQnIQSkgOQgnJQSghOQglJAehhOQgFKys/D8oC/GYqi9nVwAAAABJRU5ErkJggg==
 				addcaps="unknown,webelement,h4tag"
 				capname="h4tag"
 				id="596fd64c-5bf6-42f8-9e3a-680ccaeb1aaf"
-				name="EmployeesTotal160"
+				name="EmployeesTotal"
 				refimgid="809e1119-9961-41a4-82c6-a1bf14655880"
 				searchtimeout="30000ms">
 					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext&gt;'Employees  - Total']
@@ -890,9 +883,11 @@ IJSQHIQSkoNQQnIQSkgOQgnJQSghOQglJAehhOQgFKys/D8oC/GYqi9nVwAAAABJRU5ErkJggg==
 				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext&gt;'On strike']
 			</item>
 			<item
+			addcaps="unknown,webelement,litag"
 			capname="litag"
-			id="fe4d6f8b-6cb0-4ce7-832d-e1c84f684fdf"
+			id="14540359-8a4c-4e93-9574-3b79cce97262"
 			name="Terminatedclick"
+			refimgid="9b6dd1dd-3bbd-47fb-bccc-c4735aca04c3"
 			searchtimeout="30000ms">
 				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext&gt;'Terminated']
 			</item>
@@ -925,7 +920,42 @@ IJSQHIQSkoNQQnIQSkgOQgnJQSghOQglJAehhOQgFKys/D8oC/GYqi9nVwAAAABJRU5ErkJggg==
 			id="02ab53d6-46f9-400a-8930-9faa30ebdef3"
 			name="Detailclick"
 			searchtimeout="30000ms">
-				/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown-menu']/?
+				/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown-menu']/*[@innertext='Details']
+			</item>
+			<item
+			capname="unknown"
+			id="2c1862a8-230d-4c03-ae85-72d93a4c999a"
+			name="TerminateClick"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown-menu']/*[@innertext='Terminate Employee']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="3269555b-956d-4d2e-9e7e-55dac860c104"
+			name="SSNValue"
+			refimgid="d2b81c1f-e179-4662-9683-a615ae8f62fd"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext&gt;'XXX-XX-']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="8a67bc5a-cd1d-4cfc-a3bc-545c34c29a8a"
+			name="FaFaLock"
+			refimgid="3f2875ea-7027-4dac-a7c2-82cb806cc145"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div/i"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='XXX-XX-0932']/i
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="itag"
+			id="475de8fb-6b47-49c1-bf4d-8b0cba7235eb"
+			name="Unlock"
+			refimgid="0551f5ed-8ae8-4c0a-966a-0c820a8615e3"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='743-98-0932']/i[@class='fa fa-lock-open']
 			</item>
 			<basepath>
 				/dom[@domain='devmfc.frankcrum.com']

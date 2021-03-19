@@ -24,34 +24,44 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ClickTerminateEmployee recording.
+    ///The SSN_Validation recording.
     /// </summary>
-    [TestModule("f5c3ef27-52e1-4198-a7a6-0961cfee1ae9", ModuleType.Recording, 1)]
-    public partial class ClickTerminateEmployee : ITestModule
+    [TestModule("d72dc97d-c425-4637-80f8-5a67f68a8574", ModuleType.Recording, 1)]
+    public partial class SSN_Validation : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static ClickTerminateEmployee instance = new ClickTerminateEmployee();
+        static SSN_Validation instance = new SSN_Validation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ClickTerminateEmployee()
+        public SSN_Validation()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ClickTerminateEmployee Instance
+        public static SSN_Validation Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable EmpName.
+        /// </summary>
+        [TestVariable("63421979-03c2-4681-8118-3604485e880a")]
+        public string EmpName
+        {
+            get { return repo.EmpName; }
+            set { repo.EmpName = value; }
+        }
 
 #endregion
 
@@ -79,20 +89,24 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.GrayBox' at Center.", repo.ApplicationUnderTest.SomeDivTag.GrayBoxInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.GrayBox.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.", repo.ApplicationUnderTest.SomeDivTag.selectEmpInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.SomeDivTag.selectEmp.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateClick' at Center.", repo.ApplicationUnderTest.TerminateClickInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.TerminateClick.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(1));
+            Delay.Duration(15000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='XXX-XX-0932') on item 'ApplicationUnderTest.SSNValue'.", repo.ApplicationUnderTest.SSNValueInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.SSNValueInfo, "InnerText", "XXX-XX-0932");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FaFaLock' at Center.", repo.ApplicationUnderTest.FaFaLockInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.FaFaLock.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(2));
-            Delay.Duration(10000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FasFaTimes' at Center.", repo.ApplicationUnderTest.FasFaTimesInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.FasFaTimes.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'ApplicationUnderTest.Unlock'.", repo.ApplicationUnderTest.UnlockInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.UnlockInfo, "Visible", "True");
+            Delay.Milliseconds(100);
             
         }
 

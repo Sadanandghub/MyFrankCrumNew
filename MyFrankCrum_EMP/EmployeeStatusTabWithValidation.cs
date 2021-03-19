@@ -24,29 +24,29 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Employee_Status_Tab recording.
+    ///The EmployeeStatusTabWithValidation recording.
     /// </summary>
     [TestModule("d3445242-96b3-4544-9c2f-c96aeff33d88", ModuleType.Recording, 1)]
-    public partial class Employee_Status_Tab : ITestModule
+    public partial class EmployeeStatusTabWithValidation : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static Employee_Status_Tab instance = new Employee_Status_Tab();
+        static EmployeeStatusTabWithValidation instance = new EmployeeStatusTabWithValidation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Employee_Status_Tab()
+        public EmployeeStatusTabWithValidation()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Employee_Status_Tab Instance
+        public static EmployeeStatusTabWithValidation Instance
         {
             get { return instance; }
         }
@@ -115,8 +115,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.Totalclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Total') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal160'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal160Info, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal160Info, "InnerText", "Employees  - Total");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Total') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotalInfo, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotalInfo, "InnerText", "Employees  - Total");
             Delay.Milliseconds(100);
             
         }

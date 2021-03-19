@@ -326,32 +326,32 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:MyFrankCrum_EMP.EmployeeLink">
+        <member name="T:MyFrankCrum_EMP.ClickEmployeeLink">
              <summary>
-            The EmployeeLink recording.
+            The ClickEmployeeLink recording.
              </summary>
         </member>
-        <member name="F:MyFrankCrum_EMP.EmployeeLink.repo">
+        <member name="F:MyFrankCrum_EMP.ClickEmployeeLink.repo">
             <summary>
             Holds an instance of the MyFrankCrum_EMPRepository repository.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.EmployeeLink.#ctor">
+        <member name="M:MyFrankCrum_EMP.ClickEmployeeLink.#ctor">
             <summary>
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.EmployeeLink.Instance">
+        <member name="P:MyFrankCrum_EMP.ClickEmployeeLink.Instance">
             <summary>
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.EmployeeLink.Start">
+        <member name="M:MyFrankCrum_EMP.ClickEmployeeLink.Start">
             <summary>
-            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.EmployeeLink.Instance"/>.
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.ClickEmployeeLink.Instance"/>.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.EmployeeLink.Ranorex#Core#Testing#ITestModule#Run">
+        <member name="M:MyFrankCrum_EMP.ClickEmployeeLink.Ranorex#Core#Testing#ITestModule#Run">
             <summary>
             Performs the playback of actions in this recording.
             </summary>
@@ -359,7 +359,7 @@
             instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
             that will in turn invoke this method.</remarks>
         </member>
-        <member name="M:MyFrankCrum_EMP.EmployeeLink.Init">
+        <member name="M:MyFrankCrum_EMP.ClickEmployeeLink.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -453,32 +453,32 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:MyFrankCrum_EMP.Employee_Status_Tab">
+        <member name="T:MyFrankCrum_EMP.EmployeeStatusTabWithValidation">
              <summary>
-            The Employee_Status_Tab recording.
+            The EmployeeStatusTabWithValidation recording.
              </summary>
         </member>
-        <member name="F:MyFrankCrum_EMP.Employee_Status_Tab.repo">
+        <member name="F:MyFrankCrum_EMP.EmployeeStatusTabWithValidation.repo">
             <summary>
             Holds an instance of the MyFrankCrum_EMPRepository repository.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Employee_Status_Tab.#ctor">
+        <member name="M:MyFrankCrum_EMP.EmployeeStatusTabWithValidation.#ctor">
             <summary>
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.Employee_Status_Tab.Instance">
+        <member name="P:MyFrankCrum_EMP.EmployeeStatusTabWithValidation.Instance">
             <summary>
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Employee_Status_Tab.Start">
+        <member name="M:MyFrankCrum_EMP.EmployeeStatusTabWithValidation.Start">
             <summary>
-            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Status_Tab.Instance"/>.
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.EmployeeStatusTabWithValidation.Instance"/>.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Employee_Status_Tab.Ranorex#Core#Testing#ITestModule#Run">
+        <member name="M:MyFrankCrum_EMP.EmployeeStatusTabWithValidation.Ranorex#Core#Testing#ITestModule#Run">
             <summary>
             Performs the playback of actions in this recording.
             </summary>
@@ -486,7 +486,7 @@
             instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
             that will in turn invoke this method.</remarks>
         </member>
-        <member name="M:MyFrankCrum_EMP.Employee_Status_Tab.Init">
+        <member name="M:MyFrankCrum_EMP.EmployeeStatusTabWithValidation.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -639,6 +639,50 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:MyFrankCrum_EMP.Sorting.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.SSN_Validation">
+             <summary>
+            The SSN_Validation recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.SSN_Validation.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.SSN_Validation.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.SSN_Validation.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.SSN_Validation.EmpName">
+            <summary>
+            Gets or sets the value of variable EmpName.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.SSN_Validation.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.SSN_Validation.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.SSN_Validation.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.SSN_Validation.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -879,16 +923,6 @@
             The TerminateEmployee item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.TerminateClick">
-            <summary>
-            The TerminateClick item.
-            </summary>
-        </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.TerminateClickInfo">
-            <summary>
-            The TerminateClick item info.
-            </summary>
-        </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Personal">
             <summary>
             The Personal item.
@@ -1057,6 +1091,46 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.DetailclickInfo">
             <summary>
             The Detailclick item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.TerminateClick">
+            <summary>
+            The TerminateClick item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.TerminateClickInfo">
+            <summary>
+            The TerminateClick item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SSNValue">
+            <summary>
+            The SSNValue item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SSNValueInfo">
+            <summary>
+            The SSNValue item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaFaLock">
+            <summary>
+            The FaFaLock item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaFaLockInfo">
+            <summary>
+            The FaFaLock item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Unlock">
+            <summary>
+            The Unlock item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.UnlockInfo">
+            <summary>
+            The Unlock item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SomeDivTag">
@@ -1344,14 +1418,14 @@
             The EmployeesActive item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesTotal160">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesTotal">
             <summary>
-            The EmployeesTotal160 item.
+            The EmployeesTotal item.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesTotal160Info">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesTotalInfo">
             <summary>
-            The EmployeesTotal160 item info.
+            The EmployeesTotal item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesLeaveOfAbsence">
@@ -1620,32 +1694,32 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:MyFrankCrum_EMP.Validation">
+        <member name="T:MyFrankCrum_EMP.HomePageContentValidation">
              <summary>
-            The Validation recording.
+            The HomePageContentValidation recording.
              </summary>
         </member>
-        <member name="F:MyFrankCrum_EMP.Validation.repo">
+        <member name="F:MyFrankCrum_EMP.HomePageContentValidation.repo">
             <summary>
             Holds an instance of the MyFrankCrum_EMPRepository repository.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Validation.#ctor">
+        <member name="M:MyFrankCrum_EMP.HomePageContentValidation.#ctor">
             <summary>
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.Validation.Instance">
+        <member name="P:MyFrankCrum_EMP.HomePageContentValidation.Instance">
             <summary>
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Validation.Start">
+        <member name="M:MyFrankCrum_EMP.HomePageContentValidation.Start">
             <summary>
-            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Validation.Instance"/>.
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.HomePageContentValidation.Instance"/>.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Validation.Ranorex#Core#Testing#ITestModule#Run">
+        <member name="M:MyFrankCrum_EMP.HomePageContentValidation.Ranorex#Core#Testing#ITestModule#Run">
             <summary>
             Performs the playback of actions in this recording.
             </summary>
@@ -1653,7 +1727,7 @@
             instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
             that will in turn invoke this method.</remarks>
         </member>
-        <member name="M:MyFrankCrum_EMP.Validation.Init">
+        <member name="M:MyFrankCrum_EMP.HomePageContentValidation.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.

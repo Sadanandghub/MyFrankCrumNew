@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Employee_Status_Tab"
+	classname="EmployeeStatusTabWithValidation"
 	namespace="MyFrankCrum_EMP">
 	</codegen>
 	<variables>
@@ -995,10 +995,93 @@ D//Z
 			<bindings>
 			</bindings>
 			<info
-			id="fe4d6f8b-6cb0-4ce7-832d-e1c84f684fdf"
+			id="14540359-8a4c-4e93-9574-3b79cce97262"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, litag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="3"
+				prefcap="litag"
+				rect="664,222,107,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						react-tabs__tab react-tabs__tab--selected
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						react-tabs-70
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Terminated (20)
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						react-tabs__tab
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						li
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-controls"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-selected"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
 				<path>
-					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext&gt;'Terminated']
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]//ul/li[@innertext='Terminated (20)']
 				</path>
 			</info>
 		</mouseitem>
@@ -1637,7 +1720,7 @@ KKACiiigAooooAKKKKAP/9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Employee_Status_Tab.UserCode.cs
+		EmployeeStatusTabWithValidation.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
