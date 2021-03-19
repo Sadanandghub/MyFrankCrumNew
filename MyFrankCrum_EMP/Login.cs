@@ -67,14 +67,16 @@ namespace MyFrankCrum_EMP
             set { _CompUser = value; }
         }
 
+        string _CompPwd;
+
         /// <summary>
         /// Gets or sets the value of variable CompPwd.
         /// </summary>
         [TestVariable("b0780f8a-34b4-4e0a-9ae8-8b57866aa511")]
         public string CompPwd
         {
-            get { return repo.CompPwd; }
-            set { repo.CompPwd = value; }
+            get { return _CompPwd; }
+            set { _CompPwd = value; }
         }
 
 #endregion

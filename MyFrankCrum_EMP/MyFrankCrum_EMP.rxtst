@@ -85,20 +85,6 @@
 					variablename="LclEmpName">
 					</var>
 				</missingdatabinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="EmpName"
-					datasourceid="90d83ede-3ec4-453d-8970-fb2edcdbd1dd"
-					variableid="ea3ed33b-37fd-44fc-91cb-328e8abbcc2e"
-					variablename="getempname">
-					</var>
-					<var
-					dataname="glbEmpName"
-					datasourceid="90d83ede-3ec4-453d-8970-fb2edcdbd1dd"
-					variableid="99a3f3f8-c6f6-4e74-8609-245659f116fc"
-					variablename="localemp">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="55870487-a792-4679-a0ca-64771a1547ec"
@@ -229,6 +215,14 @@
 			name="SSN_Validation"
 			ref="d72dc97d-c425-4637-80f8-5a67f68a8574"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="EmpName"
+					datasourceid="634fd60b-5fef-4990-9363-d1ab1490de41"
+					variableid="63421979-03c2-4681-8118-3604485e880a"
+					variablename="EmpName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="a58d032f-989a-4a74-8c75-2f1cb1096bc1"

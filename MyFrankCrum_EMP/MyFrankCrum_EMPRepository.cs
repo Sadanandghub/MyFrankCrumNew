@@ -51,18 +51,6 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
-        string _CompPwd = "Crum2017";
-
-        /// <summary>
-        /// Gets or sets the value of variable CompPwd.
-        /// </summary>
-        [TestVariable("8e0ad58d-ed8f-4b1b-95b9-74118034f7b8")]
-        public string CompPwd
-        {
-            get { return _CompPwd; }
-            set { _CompPwd = value; }
-        }
-
         string _CompName = "THS NATIONAL";
 
         /// <summary>
@@ -1071,7 +1059,6 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _logoutInfo;
             RepoItemInfo _flexrow2Info;
             RepoItemInfo _flexrownameInfo;
-            RepoItemInfo _appleInfo;
             RepoItemInfo _grayboxInfo;
 
             /// <summary>
@@ -1088,7 +1075,6 @@ namespace MyFrankCrum_EMP
                 _logoutInfo = new RepoItemInfo(this, "Logout", "div[4]/?/?/button[@innertext='Logout']", 30000, null, "6b9edcb5-4016-4092-b2ce-c1eacd6ea894");
                 _flexrow2Info = new RepoItemInfo(this, "FlexRow2", "div/div/div[3]/div[1]/div/div/div[1]", 30000, null, "d50037f5-9258-4f83-9f68-0b80574abd35");
                 _flexrownameInfo = new RepoItemInfo(this, "FlexRowName", "div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/button", 30000, null, "cd1a6415-51ce-4d7e-873f-8893acfb0502");
-                _appleInfo = new RepoItemInfo(this, "Apple", ".//h3[@innertext='Sally  Apple JR']", 30000, null, "fcb85535-756d-4723-9bf9-fee2dca601c4");
                 _grayboxInfo = new RepoItemInfo(this, "GrayBox", "div/div/div[3]/div/div/div/?/?/div[@id='dropdown']", 30000, null, "e4b1d86c-907b-46cd-a541-0040da95abcd");
             }
 
@@ -1305,30 +1291,6 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _flexrownameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Apple item.
-            /// </summary>
-            [RepositoryItem("fcb85535-756d-4723-9bf9-fee2dca601c4")]
-            public virtual Ranorex.H3Tag Apple
-            {
-                get
-                {
-                    return _appleInfo.CreateAdapter<Ranorex.H3Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Apple item info.
-            /// </summary>
-            [RepositoryItemInfo("fcb85535-756d-4723-9bf9-fee2dca601c4")]
-            public virtual RepoItemInfo AppleInfo
-            {
-                get
-                {
-                    return _appleInfo;
                 }
             }
 

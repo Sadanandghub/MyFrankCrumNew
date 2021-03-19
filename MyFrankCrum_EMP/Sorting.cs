@@ -42,10 +42,7 @@ namespace MyFrankCrum_EMP
         public Sorting()
         {
             Sortingvalue = "Last Name: A-Z";
-            As_new_variable___ = "";
             FlexRowValue = "XYZ";
-            EmployeeNumber = "AWS";
-            JobTitle = "ASD";
         }
 
         /// <summary>
@@ -58,18 +55,6 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
-        string _As_new_variable___;
-
-        /// <summary>
-        /// Gets or sets the value of variable As_new_variable___.
-        /// </summary>
-        [TestVariable("f5155496-9058-41c2-ae7b-dd0ad5e3bc08")]
-        public string As_new_variable___
-        {
-            get { return _As_new_variable___; }
-            set { _As_new_variable___ = value; }
-        }
-
         string _FlexRowValue;
 
         /// <summary>
@@ -80,30 +65,6 @@ namespace MyFrankCrum_EMP
         {
             get { return _FlexRowValue; }
             set { _FlexRowValue = value; }
-        }
-
-        string _EmployeeNumber;
-
-        /// <summary>
-        /// Gets or sets the value of variable EmployeeNumber.
-        /// </summary>
-        [TestVariable("02fcbffb-c191-4245-b0c1-88c5f96a4bf2")]
-        public string EmployeeNumber
-        {
-            get { return _EmployeeNumber; }
-            set { _EmployeeNumber = value; }
-        }
-
-        string _JobTitle;
-
-        /// <summary>
-        /// Gets or sets the value of variable JobTitle.
-        /// </summary>
-        [TestVariable("92f6cb93-ecb6-4003-9bb8-964882b0df51")]
-        public string JobTitle
-        {
-            get { return _JobTitle; }
-            set { _JobTitle = value; }
         }
 
         /// <summary>
