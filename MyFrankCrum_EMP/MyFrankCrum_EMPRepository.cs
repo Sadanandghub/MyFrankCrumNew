@@ -211,6 +211,7 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _ssnvalueInfo;
             RepoItemInfo _fafalockInfo;
             RepoItemInfo _unlockInfo;
+            RepoItemInfo _appcuesInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -249,6 +250,7 @@ namespace MyFrankCrum_EMP
                 _ssnvalueInfo = new RepoItemInfo(this, "SSNValue", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext>'XXX-XX-']", 30000, null, "3269555b-956d-4d2e-9e7e-55dac860c104");
                 _fafalockInfo = new RepoItemInfo(this, "FaFaLock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='XXX-XX-0932']/i", 30000, null, "8a67bc5a-cd1d-4cfc-a3bc-545c34c29a8a");
                 _unlockInfo = new RepoItemInfo(this, "Unlock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='743-98-0932']/i[@class='fa fa-lock-open']", 30000, null, "475de8fb-6b47-49c1-bf4d-8b0cba7235eb");
+                _appcuesInfo = new RepoItemInfo(this, "Appcues", "body/div[6]/?/?/iframe[@src='about:blank']/?/?/tag[@tagname='appcues']", 30000, null, "77098423-7751-4ee4-8ccf-702adc3eab27");
             }
 
             /// <summary>
@@ -1000,6 +1002,30 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _unlockInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Appcues item.
+            /// </summary>
+            [RepositoryItem("77098423-7751-4ee4-8ccf-702adc3eab27")]
+            public virtual Ranorex.WebElement Appcues
+            {
+                get
+                {
+                    return _appcuesInfo.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Appcues item info.
+            /// </summary>
+            [RepositoryItemInfo("77098423-7751-4ee4-8ccf-702adc3eab27")]
+            public virtual RepoItemInfo AppcuesInfo
+            {
+                get
+                {
+                    return _appcuesInfo;
                 }
             }
 

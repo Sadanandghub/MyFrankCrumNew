@@ -83,6 +83,12 @@ namespace MyFrankCrum_EMP
             Host.Current.OpenBrowser("https://devmfc.frankcrum.com/login", "chrome", "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ApplicationUnderTest.Appcues' at Center.", repo.ApplicationUnderTest.AppcuesInfo, new RecordItemIndex(1));
+                repo.ApplicationUnderTest.Appcues.Click();
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
+            
         }
 
 #region Image Feature Data

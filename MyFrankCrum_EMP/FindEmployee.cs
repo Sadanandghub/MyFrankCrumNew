@@ -42,7 +42,6 @@ namespace MyFrankCrum_EMP
         public FindEmployee()
         {
             EmpName = "Apple";
-            LclEmpName = "Allen, Dane T";
         }
 
         /// <summary>
@@ -54,18 +53,6 @@ namespace MyFrankCrum_EMP
         }
 
 #region Variables
-
-        string _LclEmpName;
-
-        /// <summary>
-        /// Gets or sets the value of variable LclEmpName.
-        /// </summary>
-        [TestVariable("cae86a64-143b-49f4-8b16-79647751cbd3")]
-        public string LclEmpName
-        {
-            get { return _LclEmpName; }
-            set { _LclEmpName = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable EmpName.
