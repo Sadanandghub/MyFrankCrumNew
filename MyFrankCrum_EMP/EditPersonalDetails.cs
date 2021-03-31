@@ -191,6 +191,23 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.KeepAsIs.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.City1' at Center.", repo.ApplicationUnderTest.City1Info, new RecordItemIndex(27));
+            repo.ApplicationUnderTest.City1.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM4' at Center.", repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM4Info, new RecordItemIndex(28));
+            repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM4.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Massachu{Return}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(29));
+            repo.ApplicationUnderTest.Self.EnsureVisible();
+            Keyboard.Press("Massachu{Return}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ZipCode1' at Center.", repo.ApplicationUnderTest.ZipCode1Info, new RecordItemIndex(30));
+            repo.ApplicationUnderTest.ZipCode1.Click();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
