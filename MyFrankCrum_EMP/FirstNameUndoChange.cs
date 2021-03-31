@@ -24,43 +24,46 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SSN_Validation recording.
+    ///The FirstNameUndoChange recording.
     /// </summary>
-    [TestModule("d72dc97d-c425-4637-80f8-5a67f68a8574", ModuleType.Recording, 1)]
-    public partial class SSN_Validation : ITestModule
+    [TestModule("5cf17c1c-93f0-4ccc-8675-cbd8e2f67c63", ModuleType.Recording, 1)]
+    public partial class FirstNameUndoChange : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static SSN_Validation instance = new SSN_Validation();
+        static FirstNameUndoChange instance = new FirstNameUndoChange();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SSN_Validation()
+        public FirstNameUndoChange()
         {
+            GetFirstName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SSN_Validation Instance
+        public static FirstNameUndoChange Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _GetFirstName;
+
         /// <summary>
-        /// Gets or sets the value of variable EmpName.
+        /// Gets or sets the value of variable GetFirstName.
         /// </summary>
-        [TestVariable("63421979-03c2-4681-8118-3604485e880a")]
-        public string EmpName
+        [TestVariable("9ed51af9-2697-451d-8153-6895b09f2bb4")]
+        public string GetFirstName
         {
-            get { return repo.EmpName; }
-            set { repo.EmpName = value; }
+            get { return _GetFirstName; }
+            set { _GetFirstName = value; }
         }
 
 #endregion
@@ -89,32 +92,22 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.", repo.ApplicationUnderTest.SomeDivTag.selectEmpInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.selectEmp.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FirstName' at Center.", repo.ApplicationUnderTest.FirstNameInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.FirstName.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(1));
-            Delay.Duration(15000, false);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'XXX-XX-0932') on item 'ApplicationUnderTest.SSNValue'.", repo.ApplicationUnderTest.SSNValueInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.ApplicationUnderTest.SSNValueInfo, "InnerText", "XXX-XX-0932");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FaFaLock' at Center.", repo.ApplicationUnderTest.FaFaLockInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.FaFaLock.Click();
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'ApplicationUnderTest.FirstName' and assigning its value to variable 'GetFirstName'.", repo.ApplicationUnderTest.FirstNameInfo, new RecordItemIndex(1));
+            GetFirstName = repo.ApplicationUnderTest.FirstName.Element.GetAttributeValueText("Value");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'ApplicationUnderTest.Unlock'.", repo.ApplicationUnderTest.UnlockInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.UnlockInfo, "Visible", "True");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Unlock' at Center.", repo.ApplicationUnderTest.UnlockInfo, new RecordItemIndex(5));
-            repo.ApplicationUnderTest.Unlock.Click();
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to 'Sadanand' on item 'ApplicationUnderTest.FirstName'.", repo.ApplicationUnderTest.FirstNameInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.FirstName.Element.SetAttributeValue("Value", "Sadanand");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'XXX-XX-0932') on item 'ApplicationUnderTest.SSNValue'.", repo.ApplicationUnderTest.SSNValueInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.ApplicationUnderTest.SSNValueInfo, "InnerText", "XXX-XX-0932");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ApplicationUnderTest.ModalSectionsWrapper' at Center.", repo.ApplicationUnderTest.ModalSectionsWrapperInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.ModalSectionsWrapper.MoveTo();
+            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
+            Delay.Milliseconds(0);
             
         }
 

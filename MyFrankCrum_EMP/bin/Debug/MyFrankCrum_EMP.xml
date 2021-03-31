@@ -4,6 +4,50 @@
         <name>MyFrankCrum_EMP</name>
     </assembly>
     <members>
+        <member name="T:MyFrankCrum_EMP.AfterUndoValidation">
+             <summary>
+            The AfterUndoValidation recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.AfterUndoValidation.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.AfterUndoValidation.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.AfterUndoValidation.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.AfterUndoValidation.GetFirstName">
+            <summary>
+            Gets or sets the value of variable GetFirstName.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.AfterUndoValidation.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.AfterUndoValidation.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.AfterUndoValidation.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.AfterUndoValidation.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.Back_to_Employeelist">
              <summary>
             The Back_to_Employeelist recording.
@@ -38,6 +82,45 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:MyFrankCrum_EMP.Back_to_Employeelist.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.EditPersonalDetails">
+             <summary>
+            The EditPersonalDetails recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.EditPersonalDetails.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.EditPersonalDetails.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.EditPersonalDetails.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.EditPersonalDetails.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.EditPersonalDetails.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.EditPersonalDetails.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -536,6 +619,89 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.FirstNameUndoChange">
+             <summary>
+            The FirstNameUndoChange recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.FirstNameUndoChange.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.FirstNameUndoChange.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.FirstNameUndoChange.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.FirstNameUndoChange.GetFirstName">
+            <summary>
+            Gets or sets the value of variable GetFirstName.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.FirstNameUndoChange.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.FirstNameUndoChange.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.FirstNameUndoChange.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.FirstNameUndoChange.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.IdentityEditClick">
+             <summary>
+            The IdentityEditClick recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.IdentityEditClick.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.IdentityEditClick.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.IdentityEditClick.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.IdentityEditClick.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.IdentityEditClick.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.IdentityEditClick.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.IdentityEditClick.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.Logout">
              <summary>
             The Logout recording.
@@ -570,6 +736,45 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:MyFrankCrum_EMP.Logout.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Personal_Tab_Info">
+             <summary>
+            The Personal_Tab_Info recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Personal_Tab_Info.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Personal_Tab_Info.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Personal_Tab_Info.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Personal_Tab_Info.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Personal_Tab_Info.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Personal_Tab_Info.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Personal_Tab_Info.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -755,6 +960,26 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.SelfInfo">
             <summary>
             The Self item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.UndoChanges">
+            <summary>
+            The UndoChanges item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.UndoChangesInfo">
+            <summary>
+            The UndoChanges item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.EDIT">
+            <summary>
+            The EDIT item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.EDITInfo">
+            <summary>
+            The EDIT item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.ApplicationUnderTest">
@@ -1118,6 +1343,446 @@
             The Appcues item info.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FirstNamelbl">
+            <summary>
+            The FirstNamelbl item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FirstNamelblInfo">
+            <summary>
+            The FirstNamelbl item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.MIDDLENAME">
+            <summary>
+            The MIDDLENAME item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.MIDDLENAMEInfo">
+            <summary>
+            The MIDDLENAME item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.LASTNAME">
+            <summary>
+            The LASTNAME item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.LASTNAMEInfo">
+            <summary>
+            The LASTNAME item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SUFFIX">
+            <summary>
+            The SUFFIX item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SUFFIXInfo">
+            <summary>
+            The SUFFIX item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.BIRTHDATE">
+            <summary>
+            The BIRTHDATE item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.BIRTHDATEInfo">
+            <summary>
+            The BIRTHDATE item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ETHNICID">
+            <summary>
+            The ETHNICID item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ETHNICIDInfo">
+            <summary>
+            The ETHNICID item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.GENDER">
+            <summary>
+            The GENDER item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.GENDERInfo">
+            <summary>
+            The GENDER item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.MARITALSTATUS">
+            <summary>
+            The MARITALSTATUS item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.MARITALSTATUSInfo">
+            <summary>
+            The MARITALSTATUS item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ADDRESSLINE1">
+            <summary>
+            The ADDRESSLINE1 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ADDRESSLINE1Info">
+            <summary>
+            The ADDRESSLINE1 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CITY">
+            <summary>
+            The CITY item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CITYInfo">
+            <summary>
+            The CITY item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.STATE">
+            <summary>
+            The STATE item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.STATEInfo">
+            <summary>
+            The STATE item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ZIPCODE">
+            <summary>
+            The ZIPCODE item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ZIPCODEInfo">
+            <summary>
+            The ZIPCODE item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.HOMEPHONE">
+            <summary>
+            The HOMEPHONE item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.HOMEPHONEInfo">
+            <summary>
+            The HOMEPHONE item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.WORKPHONE">
+            <summary>
+            The WORKPHONE item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.WORKPHONEInfo">
+            <summary>
+            The WORKPHONE item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.WORKEXTENSION">
+            <summary>
+            The WORKEXTENSION item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.WORKEXTENSIONInfo">
+            <summary>
+            The WORKEXTENSION item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.WORKMOBILE">
+            <summary>
+            The WORKMOBILE item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.WORKMOBILEInfo">
+            <summary>
+            The WORKMOBILE item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.OTHERPHONE">
+            <summary>
+            The OTHERPHONE item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.OTHERPHONEInfo">
+            <summary>
+            The OTHERPHONE item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ADDRESSLINE2">
+            <summary>
+            The ADDRESSLINE2 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ADDRESSLINE2Info">
+            <summary>
+            The ADDRESSLINE2 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.HOMEEMAIL">
+            <summary>
+            The HOMEEMAIL item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.HOMEEMAILInfo">
+            <summary>
+            The HOMEEMAIL item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.PERSONALMOBILE">
+            <summary>
+            The PERSONALMOBILE item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.PERSONALMOBILEInfo">
+            <summary>
+            The PERSONALMOBILE item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.WORKEMAIL">
+            <summary>
+            The WORKEMAIL item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.WORKEMAILInfo">
+            <summary>
+            The WORKEMAIL item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ContactsLabel">
+            <summary>
+            The ContactsLabel item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ContactsLabelInfo">
+            <summary>
+            The ContactsLabel item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FirstName">
+            <summary>
+            The FirstName item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FirstNameInfo">
+            <summary>
+            The FirstName item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ModalScroll">
+            <summary>
+            The ModalScroll item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ModalScrollInfo">
+            <summary>
+            The ModalScroll item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ModalSectionsWrapper">
+            <summary>
+            The ModalSectionsWrapper item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ModalSectionsWrapperInfo">
+            <summary>
+            The ModalSectionsWrapper item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.AddressLineOne">
+            <summary>
+            The AddressLineOne item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.AddressLineOneInfo">
+            <summary>
+            The AddressLineOne item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.AddressLineTwo">
+            <summary>
+            The AddressLineTwo item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.AddressLineTwoInfo">
+            <summary>
+            The AddressLineTwo item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.MiddleName1">
+            <summary>
+            The MiddleName1 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.MiddleName1Info">
+            <summary>
+            The MiddleName1 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.LastName1">
+            <summary>
+            The LastName1 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.LastName1Info">
+            <summary>
+            The LastName1 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.DivTagIV">
+            <summary>
+            The DivTagIV item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.DivTagIVInfo">
+            <summary>
+            The DivTagIV item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.BirthDate1">
+            <summary>
+            The BirthDate1 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.BirthDate1Info">
+            <summary>
+            The BirthDate1 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaCaretDownFas1">
+            <summary>
+            The FaCaretDownFas1 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaCaretDownFas1Info">
+            <summary>
+            The FaCaretDownFas1 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaCaretDownFas2">
+            <summary>
+            The FaCaretDownFas2 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaCaretDownFas2Info">
+            <summary>
+            The FaCaretDownFas2 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.HispanicOrLatino">
+            <summary>
+            The HispanicOrLatino item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.HispanicOrLatinoInfo">
+            <summary>
+            The HispanicOrLatino item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaCaretDownFas3">
+            <summary>
+            The FaCaretDownFas3 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaCaretDownFas3Info">
+            <summary>
+            The FaCaretDownFas3 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Male">
+            <summary>
+            The Male item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.MaleInfo">
+            <summary>
+            The Male item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaCaretDownFas4">
+            <summary>
+            The FaCaretDownFas4 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.FaCaretDownFas4Info">
+            <summary>
+            The FaCaretDownFas4 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Married">
+            <summary>
+            The Married item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.MarriedInfo">
+            <summary>
+            The Married item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SaveChanges">
+            <summary>
+            The SaveChanges item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SaveChangesInfo">
+            <summary>
+            The SaveChanges item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.KeepAsIs">
+            <summary>
+            The KeepAsIs item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.KeepAsIsInfo">
+            <summary>
+            The KeepAsIs item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssHxuxk6MfcSelectValueContainerM">
+            <summary>
+            The CssHxuxk6MfcSelectValueContainerM item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssHxuxk6MfcSelectValueContainerMInfo">
+            <summary>
+            The CssHxuxk6MfcSelectValueContainerM item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssHxuxk6MfcSelectValueContainerM1">
+            <summary>
+            The CssHxuxk6MfcSelectValueContainerM1 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssHxuxk6MfcSelectValueContainerM1Info">
+            <summary>
+            The CssHxuxk6MfcSelectValueContainerM1 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssHxuxk6MfcSelectValueContainerM2">
+            <summary>
+            The CssHxuxk6MfcSelectValueContainerM2 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssHxuxk6MfcSelectValueContainerM2Info">
+            <summary>
+            The CssHxuxk6MfcSelectValueContainerM2 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssHxuxk6MfcSelectValueContainerM3">
+            <summary>
+            The CssHxuxk6MfcSelectValueContainerM3 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssHxuxk6MfcSelectValueContainerM3Info">
+            <summary>
+            The CssHxuxk6MfcSelectValueContainerM3 item info.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SomeDivTag">
             <summary>
             The SomeDivTag folder.
@@ -1131,6 +1796,11 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssVnm4clReactTabs">
             <summary>
             The CssVnm4clReactTabs folder.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.PersonalIdentity">
+            <summary>
+            The PersonalIdentity folder.
             </summary>
         </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder">
@@ -1241,6 +1911,16 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.GrayBoxInfo">
             <summary>
             The GrayBox item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.Asian">
+            <summary>
+            The Asian item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder.AsianInfo">
+            <summary>
+            The Asian item info.
             </summary>
         </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ReactTabsTabListFolder">
@@ -1431,6 +2111,26 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder.EmployeesTerminatedInfo">
             <summary>
             The EmployeesTerminated item info.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.PersonalIdentityFolder">
+            <summary>
+            The PersonalIdentityFolder folder.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.PersonalIdentityFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new PersonalIdentity  folder.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.PersonalIdentityFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.PersonalIdentityFolder.SelfInfo">
+            <summary>
+            The Self item info.
             </summary>
         </member>
         <member name="T:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.MyFrankCrumAppFolder">
@@ -1625,6 +2325,89 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:MyFrankCrum_EMP.test.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.TrailTest">
+             <summary>
+            The TrailTest recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.TrailTest.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.TrailTest.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.TrailTest.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.TrailTest.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.TrailTest.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.TrailTest.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.TrailTest.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.UndoChangeClick">
+             <summary>
+            The UndoChangeClick recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.UndoChangeClick.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.UndoChangeClick.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.UndoChangeClick.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.UndoChangeClick.GetFirstName">
+            <summary>
+            Gets or sets the value of variable GetFirstName.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.UndoChangeClick.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.UndoChangeClick.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.UndoChangeClick.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.UndoChangeClick.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.

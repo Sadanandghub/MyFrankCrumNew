@@ -29,6 +29,8 @@ namespace MyFrankCrum_EMP
         static MyFrankCrum_EMPRepository instance = new MyFrankCrum_EMPRepository();
         MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder _applicationundertest;
         MyFrankCrum_EMPRepositoryFolders.MyFrankCrumAppFolder _myfrankcrum;
+        RepoItemInfo _undochangesInfo;
+        RepoItemInfo _editInfo;
 
         /// <summary>
         /// Gets the singleton class instance representing the MyFrankCrum_EMPRepository element repository.
@@ -47,6 +49,8 @@ namespace MyFrankCrum_EMP
         {
             _applicationundertest = new MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder(this);
             _myfrankcrum = new MyFrankCrum_EMPRepositoryFolders.MyFrankCrumAppFolder(this);
+            _undochangesInfo = new RepoItemInfo(this, "UndoChanges", "/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']", 30000, null, "f0d50017-b5c0-4cc4-a397-721e371ff99f");
+            _editInfo = new RepoItemInfo(this, "EDIT", "/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]//h4/button[@innertext='EDIT']", 30000, null, "8a84d6a8-098b-4ae8-8fb4-51fa54c50ee1");
         }
 
 #region Variables
@@ -138,6 +142,54 @@ namespace MyFrankCrum_EMP
         }
 
         /// <summary>
+        /// The UndoChanges item.
+        /// </summary>
+        [RepositoryItem("f0d50017-b5c0-4cc4-a397-721e371ff99f")]
+        public virtual Ranorex.ButtonTag UndoChanges
+        {
+            get
+            {
+                 return _undochangesInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+            }
+        }
+
+        /// <summary>
+        /// The UndoChanges item info.
+        /// </summary>
+        [RepositoryItemInfo("f0d50017-b5c0-4cc4-a397-721e371ff99f")]
+        public virtual RepoItemInfo UndoChangesInfo
+        {
+            get
+            {
+                return _undochangesInfo;
+            }
+        }
+
+        /// <summary>
+        /// The EDIT item.
+        /// </summary>
+        [RepositoryItem("8a84d6a8-098b-4ae8-8fb4-51fa54c50ee1")]
+        public virtual Ranorex.ButtonTag EDIT
+        {
+            get
+            {
+                 return _editInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+            }
+        }
+
+        /// <summary>
+        /// The EDIT item info.
+        /// </summary>
+        [RepositoryItemInfo("8a84d6a8-098b-4ae8-8fb4-51fa54c50ee1")]
+        public virtual RepoItemInfo EDITInfo
+        {
+            get
+            {
+                return _editInfo;
+            }
+        }
+
+        /// <summary>
         /// The ApplicationUnderTest folder.
         /// </summary>
         [RepositoryFolder("4adb2402-d0f1-4185-819f-54d35157c656")]
@@ -171,6 +223,7 @@ namespace MyFrankCrum_EMP
             MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder _somedivtag;
             MyFrankCrum_EMPRepositoryFolders.ReactTabsTabListFolder _reacttabstablist;
             MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder _cssvnm4clreacttabs;
+            MyFrankCrum_EMPRepositoryFolders.PersonalIdentityFolder _personalidentity;
             RepoItemInfo _hiuserInfo;
             RepoItemInfo _pendingtimeoffrequests0Info;
             RepoItemInfo _timeoffcalendarInfo;
@@ -200,6 +253,50 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _fafalockInfo;
             RepoItemInfo _unlockInfo;
             RepoItemInfo _appcuesInfo;
+            RepoItemInfo _firstnamelblInfo;
+            RepoItemInfo _middlenameInfo;
+            RepoItemInfo _lastnameInfo;
+            RepoItemInfo _suffixInfo;
+            RepoItemInfo _birthdateInfo;
+            RepoItemInfo _ethnicidInfo;
+            RepoItemInfo _genderInfo;
+            RepoItemInfo _maritalstatusInfo;
+            RepoItemInfo _addressline1Info;
+            RepoItemInfo _cityInfo;
+            RepoItemInfo _stateInfo;
+            RepoItemInfo _zipcodeInfo;
+            RepoItemInfo _homephoneInfo;
+            RepoItemInfo _workphoneInfo;
+            RepoItemInfo _workextensionInfo;
+            RepoItemInfo _workmobileInfo;
+            RepoItemInfo _otherphoneInfo;
+            RepoItemInfo _addressline2Info;
+            RepoItemInfo _homeemailInfo;
+            RepoItemInfo _personalmobileInfo;
+            RepoItemInfo _workemailInfo;
+            RepoItemInfo _contactslabelInfo;
+            RepoItemInfo _firstnameInfo;
+            RepoItemInfo _modalscrollInfo;
+            RepoItemInfo _modalsectionswrapperInfo;
+            RepoItemInfo _addresslineoneInfo;
+            RepoItemInfo _addresslinetwoInfo;
+            RepoItemInfo _middlename1Info;
+            RepoItemInfo _lastname1Info;
+            RepoItemInfo _divtagivInfo;
+            RepoItemInfo _birthdate1Info;
+            RepoItemInfo _facaretdownfas1Info;
+            RepoItemInfo _facaretdownfas2Info;
+            RepoItemInfo _hispanicorlatinoInfo;
+            RepoItemInfo _facaretdownfas3Info;
+            RepoItemInfo _maleInfo;
+            RepoItemInfo _facaretdownfas4Info;
+            RepoItemInfo _marriedInfo;
+            RepoItemInfo _savechangesInfo;
+            RepoItemInfo _keepasisInfo;
+            RepoItemInfo _csshxuxk6mfcselectvaluecontainermInfo;
+            RepoItemInfo _csshxuxk6mfcselectvaluecontainerm1Info;
+            RepoItemInfo _csshxuxk6mfcselectvaluecontainerm2Info;
+            RepoItemInfo _csshxuxk6mfcselectvaluecontainerm3Info;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -210,6 +307,7 @@ namespace MyFrankCrum_EMP
                 _somedivtag = new MyFrankCrum_EMPRepositoryFolders.SomeDivTagFolder(this);
                 _reacttabstablist = new MyFrankCrum_EMPRepositoryFolders.ReactTabsTabListFolder(this);
                 _cssvnm4clreacttabs = new MyFrankCrum_EMPRepositoryFolders.CssVnm4clReactTabsFolder(this);
+                _personalidentity = new MyFrankCrum_EMPRepositoryFolders.PersonalIdentityFolder(this);
                 _hiuserInfo = new RepoItemInfo(this, "HiUser", ".//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, User!']", 30000, null, "a3e32600-6f6d-4dc7-b218-60c088d58d1d");
                 _pendingtimeoffrequests0Info = new RepoItemInfo(this, "PendingTimeOffRequests0", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/div[1]/div[1]/?/?/div[@innertext>'Pending Time Off Requests']", 30000, null, "c56020f0-77cb-4f3b-959c-9530964f1a71");
                 _timeoffcalendarInfo = new RepoItemInfo(this, "TimeOffCalendar", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/?/?/h5[@innertext='Time Off Calendar']", 30000, null, "b0975e3b-721e-4b0e-87b0-893b6f26a04c");
@@ -238,7 +336,51 @@ namespace MyFrankCrum_EMP
                 _ssnvalueInfo = new RepoItemInfo(this, "SSNValue", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext>'XXX-XX-']", 30000, null, "3269555b-956d-4d2e-9e7e-55dac860c104");
                 _fafalockInfo = new RepoItemInfo(this, "FaFaLock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='XXX-XX-0932']/i", 30000, null, "8a67bc5a-cd1d-4cfc-a3bc-545c34c29a8a");
                 _unlockInfo = new RepoItemInfo(this, "Unlock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='743-98-0932']/i[@class='fa fa-lock-open']", 30000, null, "475de8fb-6b47-49c1-bf4d-8b0cba7235eb");
-                _appcuesInfo = new RepoItemInfo(this, "Appcues", "body/div[6]/?/?/iframe[@src='about:blank']/?/?/tag[@tagname='appcues']", 30000, null, "77098423-7751-4ee4-8ccf-702adc3eab27");
+                _appcuesInfo = new RepoItemInfo(this, "Appcues", "body/div[6]/?/?/iframe[@src='about:blank']/?/?/tag[@tagname='appcues']", 5000, null, "77098423-7751-4ee4-8ccf-702adc3eab27");
+                _firstnamelblInfo = new RepoItemInfo(this, "FirstNamelbl", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div[@tagname='div']/label[@innertext='FIRST NAME']", 30000, null, "2af7c699-d369-4a90-86c9-6b7c3a1157dd");
+                _middlenameInfo = new RepoItemInfo(this, "MIDDLENAME", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[3]/label[@innertext='MIDDLE NAME']", 30000, null, "32852ee8-5c59-4021-b8d1-4b9946ed5125");
+                _lastnameInfo = new RepoItemInfo(this, "LASTNAME", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div[@tagname='div']/label[@innertext='LAST NAME']", 30000, null, "439861ad-f79f-4fda-8899-6c97d26c2b77");
+                _suffixInfo = new RepoItemInfo(this, "SUFFIX", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[5]/label[@innertext='SUFFIX']", 30000, null, "fe19aecd-5500-4ab6-b4b6-bae66447eae3");
+                _birthdateInfo = new RepoItemInfo(this, "BIRTHDATE", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='BIRTH DATE']", 30000, null, "a95c5789-4b17-4c9f-9baa-254e931a5d7e");
+                _ethnicidInfo = new RepoItemInfo(this, "ETHNICID", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='ETHNIC ID']", 30000, null, "17d13e16-a631-4a39-b697-fb889fbb83e5");
+                _genderInfo = new RepoItemInfo(this, "GENDER", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='GENDER']", 30000, null, "6dec6a31-039a-460d-85f1-177a55b3a585");
+                _maritalstatusInfo = new RepoItemInfo(this, "MARITALSTATUS", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='MARITAL STATUS']", 30000, null, "648997bf-1a9e-45bc-b2f3-7cd16c4d931e");
+                _addressline1Info = new RepoItemInfo(this, "ADDRESSLINE1", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='ADDRESS LINE 1']", 30000, null, "7691eb5d-848b-44eb-9d36-d3ab18515fdc");
+                _cityInfo = new RepoItemInfo(this, "CITY", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='CITY']", 30000, null, "11b52061-0aba-450d-88b9-8de133a6c8e2");
+                _stateInfo = new RepoItemInfo(this, "STATE", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='STATE']", 30000, null, "af97ef7c-8103-43cf-b14a-a85c5a606b45");
+                _zipcodeInfo = new RepoItemInfo(this, "ZIPCODE", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='ZIP CODE']", 30000, null, "614b9db3-41f4-47e9-ac65-96dd985f046f");
+                _homephoneInfo = new RepoItemInfo(this, "HOMEPHONE", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[7]/label[@innertext='HOME PHONE']", 30000, null, "3508c149-2df1-4635-a705-276fe06c6591");
+                _workphoneInfo = new RepoItemInfo(this, "WORKPHONE", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[10]/label[@innertext='WORK PHONE']", 30000, null, "e0b10151-69b1-46e4-bff1-c7c2c3d8df50");
+                _workextensionInfo = new RepoItemInfo(this, "WORKEXTENSION", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[11]/label[@innertext='WORK EXTENSION']", 30000, null, "00f7e769-f804-4c98-b244-87c319a76641");
+                _workmobileInfo = new RepoItemInfo(this, "WORKMOBILE", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[12]/label[@innertext='WORK MOBILE']", 30000, null, "79495b9d-b339-42df-a118-585af74971c2");
+                _otherphoneInfo = new RepoItemInfo(this, "OTHERPHONE", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[13]/label[@innertext='OTHER PHONE']", 30000, null, "24f63d97-45bf-46e2-b155-4f3b44491fa4");
+                _addressline2Info = new RepoItemInfo(this, "ADDRESSLINE2", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[2]/label[@innertext='ADDRESS LINE 2']", 30000, null, "8a136d71-86d0-470d-871e-e9d67c8cbf43");
+                _homeemailInfo = new RepoItemInfo(this, "HOMEEMAIL", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[6]/label[@innertext='HOME EMAIL']", 30000, null, "4c88db69-825b-4ae0-a658-0c0c0ce176a8");
+                _personalmobileInfo = new RepoItemInfo(this, "PERSONALMOBILE", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[8]/label[@innertext='PERSONAL MOBILE']", 30000, null, "d4baf42b-a3dd-4065-aede-c54398d46b5d");
+                _workemailInfo = new RepoItemInfo(this, "WORKEMAIL", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[9]/label[@innertext='WORK EMAIL']", 30000, null, "84b0444d-4d1b-407b-b6f6-81a8991c11e4");
+                _contactslabelInfo = new RepoItemInfo(this, "ContactsLabel", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[2]/?/?/h5[@innertext>'Contacts']", 30000, null, "5e1fc8bd-939f-4fec-b7d2-3009268d8564");
+                _firstnameInfo = new RepoItemInfo(this, "FirstName", ".//input[#'firstName']", 30000, null, "75797465-1a5c-4a0e-868a-4b391622d104");
+                _modalscrollInfo = new RepoItemInfo(this, "ModalScroll", ".//div[#'modal-wrapper']/div/div", 30000, null, "8cc35e14-dd52-4c18-b00c-94225a737f65");
+                _modalsectionswrapperInfo = new RepoItemInfo(this, "ModalSectionsWrapper", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div[2]/h4[@innertext='Address & Contact']", 30000, null, "93d2f38e-37fb-48f9-ad35-9692b9fb128e");
+                _addresslineoneInfo = new RepoItemInfo(this, "AddressLineOne", ".//input[#'Address Line One']", 30000, null, "6d702992-fc92-4e9c-8187-70333a8559fc");
+                _addresslinetwoInfo = new RepoItemInfo(this, "AddressLineTwo", ".//input[#'Address Line Two']", 30000, null, "c861e9c4-2d39-4174-9d31-7009836eca16");
+                _middlename1Info = new RepoItemInfo(this, "MiddleName1", ".//input[#'middleName']", 30000, null, "c6886b39-748e-4437-afcd-f68804efc64f");
+                _lastname1Info = new RepoItemInfo(this, "LastName1", ".//input[#'lastName']", 30000, null, "7b574303-c51d-436b-a4ed-7b63d48aff36");
+                _divtagivInfo = new RepoItemInfo(this, "DivTagIV", ".//div[#'Suffix']/div[2]/div/div[6]/div[@innertext='IV']", 30000, null, "6cbbb825-d2da-40d0-b2e7-49e3b7cc0cc2");
+                _birthdate1Info = new RepoItemInfo(this, "BirthDate1", ".//input[#'birthDate']", 30000, null, "1ea13a34-339d-4612-a318-719347520dfa");
+                _facaretdownfas1Info = new RepoItemInfo(this, "FaCaretDownFas1", ".//div[#'Suffix']/div/div[2]/div", 30000, null, "a876640b-af8b-46dd-8f42-0077cdbd0487");
+                _facaretdownfas2Info = new RepoItemInfo(this, "FaCaretDownFas2", ".//div[#'ethnicity']/div/div/div[2]/div", 30000, null, "3768a59c-e62c-401d-b095-4dec9aa3450e");
+                _hispanicorlatinoInfo = new RepoItemInfo(this, "HispanicOrLatino", ".//div[#'app']/div[2]/div[3]/div/div[3]//div[@innertext='Hispanic or Latino']", 30000, null, "5c650f55-7a62-4484-936f-38143e98655a");
+                _facaretdownfas3Info = new RepoItemInfo(this, "FaCaretDownFas3", ".//div[#'gender']/div[@id='gender']/div/div[2]/div", 30000, null, "489a0814-527b-4b09-8db5-6557df6f77e5");
+                _maleInfo = new RepoItemInfo(this, "Male", ".//div[#'gender']/div[@id='gender']//div[@innertext='Male']", 30000, null, "c110cc4a-9e00-491b-a53b-26bbe4dafb4c");
+                _facaretdownfas4Info = new RepoItemInfo(this, "FaCaretDownFas4", ".//div[#'maritalStatus']/div[@id='maritalStatus']/div/div[2]/div", 30000, null, "b0defc1e-18c6-45a7-af94-d0577d5a3fa8");
+                _marriedInfo = new RepoItemInfo(this, "Married", ".//div[#'app']/div[2]/div[3]/div/div[3]//div[@innertext='Married']", 30000, null, "fd0ba039-fea1-44e6-8a23-b620a25099aa");
+                _savechangesInfo = new RepoItemInfo(this, "SaveChanges", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Save Changes']", 30000, null, "5af24951-ae40-48ed-8de3-263107f5541e");
+                _keepasisInfo = new RepoItemInfo(this, "KeepAsIs", ".//div[#'modal-wrapper']/div[2]/div/div[4]/div/div/div[2]/button[@innertext='Keep As Is']", 30000, null, "208bf3ea-3b7a-4b8a-bb2d-94ef7e0c77dc");
+                _csshxuxk6mfcselectvaluecontainermInfo = new RepoItemInfo(this, "CssHxuxk6MfcSelectValueContainerM", ".//div[#'Suffix']/div/div[1]", 30000, null, "bb9c84a0-7610-4be9-a8d8-2e1ed9c18380");
+                _csshxuxk6mfcselectvaluecontainerm1Info = new RepoItemInfo(this, "CssHxuxk6MfcSelectValueContainerM1", ".//div[#'ethnicity']/div/div/div[1]", 30000, null, "68a49c8b-17f7-4243-a219-a8559239bbbc");
+                _csshxuxk6mfcselectvaluecontainerm2Info = new RepoItemInfo(this, "CssHxuxk6MfcSelectValueContainerM2", ".//div[#'gender']/div/div/div[1]", 30000, null, "ee807ac2-0e53-48d5-9572-ce5a3b836368");
+                _csshxuxk6mfcselectvaluecontainerm3Info = new RepoItemInfo(this, "CssHxuxk6MfcSelectValueContainerM3", ".//div[#'maritalStatus']/div/div/div[1]", 30000, null, "88b0428f-82c0-4b62-9e9c-c980e4924d39");
             }
 
             /// <summary>
@@ -1018,6 +1160,1062 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
+            /// The FirstNamelbl item.
+            /// </summary>
+            [RepositoryItem("2af7c699-d369-4a90-86c9-6b7c3a1157dd")]
+            public virtual Ranorex.LabelTag FirstNamelbl
+            {
+                get
+                {
+                    return _firstnamelblInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirstNamelbl item info.
+            /// </summary>
+            [RepositoryItemInfo("2af7c699-d369-4a90-86c9-6b7c3a1157dd")]
+            public virtual RepoItemInfo FirstNamelblInfo
+            {
+                get
+                {
+                    return _firstnamelblInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MIDDLENAME item.
+            /// </summary>
+            [RepositoryItem("32852ee8-5c59-4021-b8d1-4b9946ed5125")]
+            public virtual Ranorex.LabelTag MIDDLENAME
+            {
+                get
+                {
+                    return _middlenameInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MIDDLENAME item info.
+            /// </summary>
+            [RepositoryItemInfo("32852ee8-5c59-4021-b8d1-4b9946ed5125")]
+            public virtual RepoItemInfo MIDDLENAMEInfo
+            {
+                get
+                {
+                    return _middlenameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LASTNAME item.
+            /// </summary>
+            [RepositoryItem("439861ad-f79f-4fda-8899-6c97d26c2b77")]
+            public virtual Ranorex.LabelTag LASTNAME
+            {
+                get
+                {
+                    return _lastnameInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LASTNAME item info.
+            /// </summary>
+            [RepositoryItemInfo("439861ad-f79f-4fda-8899-6c97d26c2b77")]
+            public virtual RepoItemInfo LASTNAMEInfo
+            {
+                get
+                {
+                    return _lastnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SUFFIX item.
+            /// </summary>
+            [RepositoryItem("fe19aecd-5500-4ab6-b4b6-bae66447eae3")]
+            public virtual Ranorex.LabelTag SUFFIX
+            {
+                get
+                {
+                    return _suffixInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SUFFIX item info.
+            /// </summary>
+            [RepositoryItemInfo("fe19aecd-5500-4ab6-b4b6-bae66447eae3")]
+            public virtual RepoItemInfo SUFFIXInfo
+            {
+                get
+                {
+                    return _suffixInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BIRTHDATE item.
+            /// </summary>
+            [RepositoryItem("a95c5789-4b17-4c9f-9baa-254e931a5d7e")]
+            public virtual Ranorex.LabelTag BIRTHDATE
+            {
+                get
+                {
+                    return _birthdateInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BIRTHDATE item info.
+            /// </summary>
+            [RepositoryItemInfo("a95c5789-4b17-4c9f-9baa-254e931a5d7e")]
+            public virtual RepoItemInfo BIRTHDATEInfo
+            {
+                get
+                {
+                    return _birthdateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ETHNICID item.
+            /// </summary>
+            [RepositoryItem("17d13e16-a631-4a39-b697-fb889fbb83e5")]
+            public virtual Ranorex.LabelTag ETHNICID
+            {
+                get
+                {
+                    return _ethnicidInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ETHNICID item info.
+            /// </summary>
+            [RepositoryItemInfo("17d13e16-a631-4a39-b697-fb889fbb83e5")]
+            public virtual RepoItemInfo ETHNICIDInfo
+            {
+                get
+                {
+                    return _ethnicidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GENDER item.
+            /// </summary>
+            [RepositoryItem("6dec6a31-039a-460d-85f1-177a55b3a585")]
+            public virtual Ranorex.LabelTag GENDER
+            {
+                get
+                {
+                    return _genderInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GENDER item info.
+            /// </summary>
+            [RepositoryItemInfo("6dec6a31-039a-460d-85f1-177a55b3a585")]
+            public virtual RepoItemInfo GENDERInfo
+            {
+                get
+                {
+                    return _genderInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MARITALSTATUS item.
+            /// </summary>
+            [RepositoryItem("648997bf-1a9e-45bc-b2f3-7cd16c4d931e")]
+            public virtual Ranorex.LabelTag MARITALSTATUS
+            {
+                get
+                {
+                    return _maritalstatusInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MARITALSTATUS item info.
+            /// </summary>
+            [RepositoryItemInfo("648997bf-1a9e-45bc-b2f3-7cd16c4d931e")]
+            public virtual RepoItemInfo MARITALSTATUSInfo
+            {
+                get
+                {
+                    return _maritalstatusInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ADDRESSLINE1 item.
+            /// </summary>
+            [RepositoryItem("7691eb5d-848b-44eb-9d36-d3ab18515fdc")]
+            public virtual Ranorex.LabelTag ADDRESSLINE1
+            {
+                get
+                {
+                    return _addressline1Info.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ADDRESSLINE1 item info.
+            /// </summary>
+            [RepositoryItemInfo("7691eb5d-848b-44eb-9d36-d3ab18515fdc")]
+            public virtual RepoItemInfo ADDRESSLINE1Info
+            {
+                get
+                {
+                    return _addressline1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CITY item.
+            /// </summary>
+            [RepositoryItem("11b52061-0aba-450d-88b9-8de133a6c8e2")]
+            public virtual Ranorex.LabelTag CITY
+            {
+                get
+                {
+                    return _cityInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CITY item info.
+            /// </summary>
+            [RepositoryItemInfo("11b52061-0aba-450d-88b9-8de133a6c8e2")]
+            public virtual RepoItemInfo CITYInfo
+            {
+                get
+                {
+                    return _cityInfo;
+                }
+            }
+
+            /// <summary>
+            /// The STATE item.
+            /// </summary>
+            [RepositoryItem("af97ef7c-8103-43cf-b14a-a85c5a606b45")]
+            public virtual Ranorex.LabelTag STATE
+            {
+                get
+                {
+                    return _stateInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The STATE item info.
+            /// </summary>
+            [RepositoryItemInfo("af97ef7c-8103-43cf-b14a-a85c5a606b45")]
+            public virtual RepoItemInfo STATEInfo
+            {
+                get
+                {
+                    return _stateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ZIPCODE item.
+            /// </summary>
+            [RepositoryItem("614b9db3-41f4-47e9-ac65-96dd985f046f")]
+            public virtual Ranorex.LabelTag ZIPCODE
+            {
+                get
+                {
+                    return _zipcodeInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ZIPCODE item info.
+            /// </summary>
+            [RepositoryItemInfo("614b9db3-41f4-47e9-ac65-96dd985f046f")]
+            public virtual RepoItemInfo ZIPCODEInfo
+            {
+                get
+                {
+                    return _zipcodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HOMEPHONE item.
+            /// </summary>
+            [RepositoryItem("3508c149-2df1-4635-a705-276fe06c6591")]
+            public virtual Ranorex.LabelTag HOMEPHONE
+            {
+                get
+                {
+                    return _homephoneInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HOMEPHONE item info.
+            /// </summary>
+            [RepositoryItemInfo("3508c149-2df1-4635-a705-276fe06c6591")]
+            public virtual RepoItemInfo HOMEPHONEInfo
+            {
+                get
+                {
+                    return _homephoneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WORKPHONE item.
+            /// </summary>
+            [RepositoryItem("e0b10151-69b1-46e4-bff1-c7c2c3d8df50")]
+            public virtual Ranorex.LabelTag WORKPHONE
+            {
+                get
+                {
+                    return _workphoneInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WORKPHONE item info.
+            /// </summary>
+            [RepositoryItemInfo("e0b10151-69b1-46e4-bff1-c7c2c3d8df50")]
+            public virtual RepoItemInfo WORKPHONEInfo
+            {
+                get
+                {
+                    return _workphoneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WORKEXTENSION item.
+            /// </summary>
+            [RepositoryItem("00f7e769-f804-4c98-b244-87c319a76641")]
+            public virtual Ranorex.LabelTag WORKEXTENSION
+            {
+                get
+                {
+                    return _workextensionInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WORKEXTENSION item info.
+            /// </summary>
+            [RepositoryItemInfo("00f7e769-f804-4c98-b244-87c319a76641")]
+            public virtual RepoItemInfo WORKEXTENSIONInfo
+            {
+                get
+                {
+                    return _workextensionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WORKMOBILE item.
+            /// </summary>
+            [RepositoryItem("79495b9d-b339-42df-a118-585af74971c2")]
+            public virtual Ranorex.LabelTag WORKMOBILE
+            {
+                get
+                {
+                    return _workmobileInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WORKMOBILE item info.
+            /// </summary>
+            [RepositoryItemInfo("79495b9d-b339-42df-a118-585af74971c2")]
+            public virtual RepoItemInfo WORKMOBILEInfo
+            {
+                get
+                {
+                    return _workmobileInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OTHERPHONE item.
+            /// </summary>
+            [RepositoryItem("24f63d97-45bf-46e2-b155-4f3b44491fa4")]
+            public virtual Ranorex.LabelTag OTHERPHONE
+            {
+                get
+                {
+                    return _otherphoneInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OTHERPHONE item info.
+            /// </summary>
+            [RepositoryItemInfo("24f63d97-45bf-46e2-b155-4f3b44491fa4")]
+            public virtual RepoItemInfo OTHERPHONEInfo
+            {
+                get
+                {
+                    return _otherphoneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ADDRESSLINE2 item.
+            /// </summary>
+            [RepositoryItem("8a136d71-86d0-470d-871e-e9d67c8cbf43")]
+            public virtual Ranorex.LabelTag ADDRESSLINE2
+            {
+                get
+                {
+                    return _addressline2Info.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ADDRESSLINE2 item info.
+            /// </summary>
+            [RepositoryItemInfo("8a136d71-86d0-470d-871e-e9d67c8cbf43")]
+            public virtual RepoItemInfo ADDRESSLINE2Info
+            {
+                get
+                {
+                    return _addressline2Info;
+                }
+            }
+
+            /// <summary>
+            /// The HOMEEMAIL item.
+            /// </summary>
+            [RepositoryItem("4c88db69-825b-4ae0-a658-0c0c0ce176a8")]
+            public virtual Ranorex.LabelTag HOMEEMAIL
+            {
+                get
+                {
+                    return _homeemailInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HOMEEMAIL item info.
+            /// </summary>
+            [RepositoryItemInfo("4c88db69-825b-4ae0-a658-0c0c0ce176a8")]
+            public virtual RepoItemInfo HOMEEMAILInfo
+            {
+                get
+                {
+                    return _homeemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PERSONALMOBILE item.
+            /// </summary>
+            [RepositoryItem("d4baf42b-a3dd-4065-aede-c54398d46b5d")]
+            public virtual Ranorex.LabelTag PERSONALMOBILE
+            {
+                get
+                {
+                    return _personalmobileInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PERSONALMOBILE item info.
+            /// </summary>
+            [RepositoryItemInfo("d4baf42b-a3dd-4065-aede-c54398d46b5d")]
+            public virtual RepoItemInfo PERSONALMOBILEInfo
+            {
+                get
+                {
+                    return _personalmobileInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WORKEMAIL item.
+            /// </summary>
+            [RepositoryItem("84b0444d-4d1b-407b-b6f6-81a8991c11e4")]
+            public virtual Ranorex.LabelTag WORKEMAIL
+            {
+                get
+                {
+                    return _workemailInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WORKEMAIL item info.
+            /// </summary>
+            [RepositoryItemInfo("84b0444d-4d1b-407b-b6f6-81a8991c11e4")]
+            public virtual RepoItemInfo WORKEMAILInfo
+            {
+                get
+                {
+                    return _workemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ContactsLabel item.
+            /// </summary>
+            [RepositoryItem("5e1fc8bd-939f-4fec-b7d2-3009268d8564")]
+            public virtual Ranorex.H5Tag ContactsLabel
+            {
+                get
+                {
+                    return _contactslabelInfo.CreateAdapter<Ranorex.H5Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ContactsLabel item info.
+            /// </summary>
+            [RepositoryItemInfo("5e1fc8bd-939f-4fec-b7d2-3009268d8564")]
+            public virtual RepoItemInfo ContactsLabelInfo
+            {
+                get
+                {
+                    return _contactslabelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirstName item.
+            /// </summary>
+            [RepositoryItem("75797465-1a5c-4a0e-868a-4b391622d104")]
+            public virtual Ranorex.InputTag FirstName
+            {
+                get
+                {
+                    return _firstnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirstName item info.
+            /// </summary>
+            [RepositoryItemInfo("75797465-1a5c-4a0e-868a-4b391622d104")]
+            public virtual RepoItemInfo FirstNameInfo
+            {
+                get
+                {
+                    return _firstnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ModalScroll item.
+            /// </summary>
+            [RepositoryItem("8cc35e14-dd52-4c18-b00c-94225a737f65")]
+            public virtual Ranorex.DivTag ModalScroll
+            {
+                get
+                {
+                    return _modalscrollInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ModalScroll item info.
+            /// </summary>
+            [RepositoryItemInfo("8cc35e14-dd52-4c18-b00c-94225a737f65")]
+            public virtual RepoItemInfo ModalScrollInfo
+            {
+                get
+                {
+                    return _modalscrollInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ModalSectionsWrapper item.
+            /// </summary>
+            [RepositoryItem("93d2f38e-37fb-48f9-ad35-9692b9fb128e")]
+            public virtual Ranorex.H4Tag ModalSectionsWrapper
+            {
+                get
+                {
+                    return _modalsectionswrapperInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ModalSectionsWrapper item info.
+            /// </summary>
+            [RepositoryItemInfo("93d2f38e-37fb-48f9-ad35-9692b9fb128e")]
+            public virtual RepoItemInfo ModalSectionsWrapperInfo
+            {
+                get
+                {
+                    return _modalsectionswrapperInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddressLineOne item.
+            /// </summary>
+            [RepositoryItem("6d702992-fc92-4e9c-8187-70333a8559fc")]
+            public virtual Ranorex.InputTag AddressLineOne
+            {
+                get
+                {
+                    return _addresslineoneInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddressLineOne item info.
+            /// </summary>
+            [RepositoryItemInfo("6d702992-fc92-4e9c-8187-70333a8559fc")]
+            public virtual RepoItemInfo AddressLineOneInfo
+            {
+                get
+                {
+                    return _addresslineoneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddressLineTwo item.
+            /// </summary>
+            [RepositoryItem("c861e9c4-2d39-4174-9d31-7009836eca16")]
+            public virtual Ranorex.InputTag AddressLineTwo
+            {
+                get
+                {
+                    return _addresslinetwoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddressLineTwo item info.
+            /// </summary>
+            [RepositoryItemInfo("c861e9c4-2d39-4174-9d31-7009836eca16")]
+            public virtual RepoItemInfo AddressLineTwoInfo
+            {
+                get
+                {
+                    return _addresslinetwoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MiddleName1 item.
+            /// </summary>
+            [RepositoryItem("c6886b39-748e-4437-afcd-f68804efc64f")]
+            public virtual Ranorex.InputTag MiddleName1
+            {
+                get
+                {
+                    return _middlename1Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MiddleName1 item info.
+            /// </summary>
+            [RepositoryItemInfo("c6886b39-748e-4437-afcd-f68804efc64f")]
+            public virtual RepoItemInfo MiddleName1Info
+            {
+                get
+                {
+                    return _middlename1Info;
+                }
+            }
+
+            /// <summary>
+            /// The LastName1 item.
+            /// </summary>
+            [RepositoryItem("7b574303-c51d-436b-a4ed-7b63d48aff36")]
+            public virtual Ranorex.InputTag LastName1
+            {
+                get
+                {
+                    return _lastname1Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LastName1 item info.
+            /// </summary>
+            [RepositoryItemInfo("7b574303-c51d-436b-a4ed-7b63d48aff36")]
+            public virtual RepoItemInfo LastName1Info
+            {
+                get
+                {
+                    return _lastname1Info;
+                }
+            }
+
+            /// <summary>
+            /// The DivTagIV item.
+            /// </summary>
+            [RepositoryItem("6cbbb825-d2da-40d0-b2e7-49e3b7cc0cc2")]
+            public virtual Ranorex.DivTag DivTagIV
+            {
+                get
+                {
+                    return _divtagivInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DivTagIV item info.
+            /// </summary>
+            [RepositoryItemInfo("6cbbb825-d2da-40d0-b2e7-49e3b7cc0cc2")]
+            public virtual RepoItemInfo DivTagIVInfo
+            {
+                get
+                {
+                    return _divtagivInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BirthDate1 item.
+            /// </summary>
+            [RepositoryItem("1ea13a34-339d-4612-a318-719347520dfa")]
+            public virtual Ranorex.InputTag BirthDate1
+            {
+                get
+                {
+                    return _birthdate1Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BirthDate1 item info.
+            /// </summary>
+            [RepositoryItemInfo("1ea13a34-339d-4612-a318-719347520dfa")]
+            public virtual RepoItemInfo BirthDate1Info
+            {
+                get
+                {
+                    return _birthdate1Info;
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas1 item.
+            /// </summary>
+            [RepositoryItem("a876640b-af8b-46dd-8f42-0077cdbd0487")]
+            public virtual Ranorex.DivTag FaCaretDownFas1
+            {
+                get
+                {
+                    return _facaretdownfas1Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas1 item info.
+            /// </summary>
+            [RepositoryItemInfo("a876640b-af8b-46dd-8f42-0077cdbd0487")]
+            public virtual RepoItemInfo FaCaretDownFas1Info
+            {
+                get
+                {
+                    return _facaretdownfas1Info;
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas2 item.
+            /// </summary>
+            [RepositoryItem("3768a59c-e62c-401d-b095-4dec9aa3450e")]
+            public virtual Ranorex.DivTag FaCaretDownFas2
+            {
+                get
+                {
+                    return _facaretdownfas2Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas2 item info.
+            /// </summary>
+            [RepositoryItemInfo("3768a59c-e62c-401d-b095-4dec9aa3450e")]
+            public virtual RepoItemInfo FaCaretDownFas2Info
+            {
+                get
+                {
+                    return _facaretdownfas2Info;
+                }
+            }
+
+            /// <summary>
+            /// The HispanicOrLatino item.
+            /// </summary>
+            [RepositoryItem("5c650f55-7a62-4484-936f-38143e98655a")]
+            public virtual Ranorex.DivTag HispanicOrLatino
+            {
+                get
+                {
+                    return _hispanicorlatinoInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HispanicOrLatino item info.
+            /// </summary>
+            [RepositoryItemInfo("5c650f55-7a62-4484-936f-38143e98655a")]
+            public virtual RepoItemInfo HispanicOrLatinoInfo
+            {
+                get
+                {
+                    return _hispanicorlatinoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas3 item.
+            /// </summary>
+            [RepositoryItem("489a0814-527b-4b09-8db5-6557df6f77e5")]
+            public virtual Ranorex.DivTag FaCaretDownFas3
+            {
+                get
+                {
+                    return _facaretdownfas3Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas3 item info.
+            /// </summary>
+            [RepositoryItemInfo("489a0814-527b-4b09-8db5-6557df6f77e5")]
+            public virtual RepoItemInfo FaCaretDownFas3Info
+            {
+                get
+                {
+                    return _facaretdownfas3Info;
+                }
+            }
+
+            /// <summary>
+            /// The Male item.
+            /// </summary>
+            [RepositoryItem("c110cc4a-9e00-491b-a53b-26bbe4dafb4c")]
+            public virtual Ranorex.DivTag Male
+            {
+                get
+                {
+                    return _maleInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Male item info.
+            /// </summary>
+            [RepositoryItemInfo("c110cc4a-9e00-491b-a53b-26bbe4dafb4c")]
+            public virtual RepoItemInfo MaleInfo
+            {
+                get
+                {
+                    return _maleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas4 item.
+            /// </summary>
+            [RepositoryItem("b0defc1e-18c6-45a7-af94-d0577d5a3fa8")]
+            public virtual Ranorex.DivTag FaCaretDownFas4
+            {
+                get
+                {
+                    return _facaretdownfas4Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaCaretDownFas4 item info.
+            /// </summary>
+            [RepositoryItemInfo("b0defc1e-18c6-45a7-af94-d0577d5a3fa8")]
+            public virtual RepoItemInfo FaCaretDownFas4Info
+            {
+                get
+                {
+                    return _facaretdownfas4Info;
+                }
+            }
+
+            /// <summary>
+            /// The Married item.
+            /// </summary>
+            [RepositoryItem("fd0ba039-fea1-44e6-8a23-b620a25099aa")]
+            public virtual Ranorex.DivTag Married
+            {
+                get
+                {
+                    return _marriedInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Married item info.
+            /// </summary>
+            [RepositoryItemInfo("fd0ba039-fea1-44e6-8a23-b620a25099aa")]
+            public virtual RepoItemInfo MarriedInfo
+            {
+                get
+                {
+                    return _marriedInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveChanges item.
+            /// </summary>
+            [RepositoryItem("5af24951-ae40-48ed-8de3-263107f5541e")]
+            public virtual Ranorex.ButtonTag SaveChanges
+            {
+                get
+                {
+                    return _savechangesInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveChanges item info.
+            /// </summary>
+            [RepositoryItemInfo("5af24951-ae40-48ed-8de3-263107f5541e")]
+            public virtual RepoItemInfo SaveChangesInfo
+            {
+                get
+                {
+                    return _savechangesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The KeepAsIs item.
+            /// </summary>
+            [RepositoryItem("208bf3ea-3b7a-4b8a-bb2d-94ef7e0c77dc")]
+            public virtual Ranorex.ButtonTag KeepAsIs
+            {
+                get
+                {
+                    return _keepasisInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KeepAsIs item info.
+            /// </summary>
+            [RepositoryItemInfo("208bf3ea-3b7a-4b8a-bb2d-94ef7e0c77dc")]
+            public virtual RepoItemInfo KeepAsIsInfo
+            {
+                get
+                {
+                    return _keepasisInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CssHxuxk6MfcSelectValueContainerM item.
+            /// </summary>
+            [RepositoryItem("bb9c84a0-7610-4be9-a8d8-2e1ed9c18380")]
+            public virtual Ranorex.DivTag CssHxuxk6MfcSelectValueContainerM
+            {
+                get
+                {
+                    return _csshxuxk6mfcselectvaluecontainermInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CssHxuxk6MfcSelectValueContainerM item info.
+            /// </summary>
+            [RepositoryItemInfo("bb9c84a0-7610-4be9-a8d8-2e1ed9c18380")]
+            public virtual RepoItemInfo CssHxuxk6MfcSelectValueContainerMInfo
+            {
+                get
+                {
+                    return _csshxuxk6mfcselectvaluecontainermInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CssHxuxk6MfcSelectValueContainerM1 item.
+            /// </summary>
+            [RepositoryItem("68a49c8b-17f7-4243-a219-a8559239bbbc")]
+            public virtual Ranorex.DivTag CssHxuxk6MfcSelectValueContainerM1
+            {
+                get
+                {
+                    return _csshxuxk6mfcselectvaluecontainerm1Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CssHxuxk6MfcSelectValueContainerM1 item info.
+            /// </summary>
+            [RepositoryItemInfo("68a49c8b-17f7-4243-a219-a8559239bbbc")]
+            public virtual RepoItemInfo CssHxuxk6MfcSelectValueContainerM1Info
+            {
+                get
+                {
+                    return _csshxuxk6mfcselectvaluecontainerm1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CssHxuxk6MfcSelectValueContainerM2 item.
+            /// </summary>
+            [RepositoryItem("ee807ac2-0e53-48d5-9572-ce5a3b836368")]
+            public virtual Ranorex.DivTag CssHxuxk6MfcSelectValueContainerM2
+            {
+                get
+                {
+                    return _csshxuxk6mfcselectvaluecontainerm2Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CssHxuxk6MfcSelectValueContainerM2 item info.
+            /// </summary>
+            [RepositoryItemInfo("ee807ac2-0e53-48d5-9572-ce5a3b836368")]
+            public virtual RepoItemInfo CssHxuxk6MfcSelectValueContainerM2Info
+            {
+                get
+                {
+                    return _csshxuxk6mfcselectvaluecontainerm2Info;
+                }
+            }
+
+            /// <summary>
+            /// The CssHxuxk6MfcSelectValueContainerM3 item.
+            /// </summary>
+            [RepositoryItem("88b0428f-82c0-4b62-9e9c-c980e4924d39")]
+            public virtual Ranorex.DivTag CssHxuxk6MfcSelectValueContainerM3
+            {
+                get
+                {
+                    return _csshxuxk6mfcselectvaluecontainerm3Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CssHxuxk6MfcSelectValueContainerM3 item info.
+            /// </summary>
+            [RepositoryItemInfo("88b0428f-82c0-4b62-9e9c-c980e4924d39")]
+            public virtual RepoItemInfo CssHxuxk6MfcSelectValueContainerM3Info
+            {
+                get
+                {
+                    return _csshxuxk6mfcselectvaluecontainerm3Info;
+                }
+            }
+
+            /// <summary>
             /// The SomeDivTag folder.
             /// </summary>
             [RepositoryFolder("3c277c0b-840f-4617-a705-75fe26324e8e")]
@@ -1043,6 +2241,15 @@ namespace MyFrankCrum_EMP
             {
                 get { return _cssvnm4clreacttabs; }
             }
+
+            /// <summary>
+            /// The PersonalIdentity folder.
+            /// </summary>
+            [RepositoryFolder("aa7e268a-8c28-49b1-aec5-aea3d3d99929")]
+            public virtual MyFrankCrum_EMPRepositoryFolders.PersonalIdentityFolder PersonalIdentity
+            {
+                get { return _personalidentity; }
+            }
         }
 
         /// <summary>
@@ -1060,6 +2267,7 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _flexrow2Info;
             RepoItemInfo _flexrownameInfo;
             RepoItemInfo _grayboxInfo;
+            RepoItemInfo _asianInfo;
 
             /// <summary>
             /// Creates a new SomeDivTag  folder.
@@ -1076,6 +2284,7 @@ namespace MyFrankCrum_EMP
                 _flexrow2Info = new RepoItemInfo(this, "FlexRow2", "div/div/div[3]/div[1]/div/div/div[1]", 30000, null, "d50037f5-9258-4f83-9f68-0b80574abd35");
                 _flexrownameInfo = new RepoItemInfo(this, "FlexRowName", "div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/button", 30000, null, "cd1a6415-51ce-4d7e-873f-8893acfb0502");
                 _grayboxInfo = new RepoItemInfo(this, "GrayBox", "div/div/div[3]/div/div/div/?/?/div[@id='dropdown']", 30000, null, "e4b1d86c-907b-46cd-a541-0040da95abcd");
+                _asianInfo = new RepoItemInfo(this, "Asian", ".//div[@innertext='Asian']", 30000, null, "e30677cb-8a22-4ce4-a7d3-effa9a0b0d22");
             }
 
             /// <summary>
@@ -1315,6 +2524,30 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _grayboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Asian item.
+            /// </summary>
+            [RepositoryItem("e30677cb-8a22-4ce4-a7d3-effa9a0b0d22")]
+            public virtual Ranorex.DivTag Asian
+            {
+                get
+                {
+                    return _asianInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Asian item info.
+            /// </summary>
+            [RepositoryItemInfo("e30677cb-8a22-4ce4-a7d3-effa9a0b0d22")]
+            public virtual RepoItemInfo AsianInfo
+            {
+                get
+                {
+                    return _asianInfo;
                 }
             }
         }
@@ -1785,6 +3018,46 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _employeesterminatedInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The PersonalIdentityFolder folder.
+        /// </summary>
+        [RepositoryFolder("aa7e268a-8c28-49b1-aec5-aea3d3d99929")]
+        public partial class PersonalIdentityFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new PersonalIdentity  folder.
+            /// </summary>
+            public PersonalIdentityFolder(RepoGenBaseFolder parentFolder) :
+                    base("PersonalIdentity", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div", parentFolder, 30000, null, false, "aa7e268a-8c28-49b1-aec5-aea3d3d99929", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("aa7e268a-8c28-49b1-aec5-aea3d3d99929")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("aa7e268a-8c28-49b1-aec5-aea3d3d99929")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

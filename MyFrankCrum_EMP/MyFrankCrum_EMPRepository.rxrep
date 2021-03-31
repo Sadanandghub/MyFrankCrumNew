@@ -18,7 +18,7 @@ name="MyFrankCrum_EMPRepository">
 		id="4adb2402-d0f1-4185-819f-54d35157c656"
 		isrooted="True"
 		name="ApplicationUnderTest"
-		refimgid="081240e4-ae56-4ced-bb57-78aaa26237ea"
+		refimgid="cff046ac-c28c-4a1c-89ff-5f7c12dd46ed"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -177,6 +177,16 @@ name="MyFrankCrum_EMPRepository">
 				name="GrayBox"
 				searchtimeout="30000ms">
 					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div/div/div/?/?/div[@id='dropdown']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="e30677cb-8a22-4ce4-a7d3-effa9a0b0d22"
+				name="Asian"
+				refimgid="c3bc53e9-e7c5-451f-b424-86014be1ec73"
+				refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'ethnicity']/div/div/div[1]/div[@innertext='Asian']"
+				searchtimeout="30000ms">
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]//div[@innertext='Asian']
 				</item>
 				<basepath>
 					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]
@@ -954,8 +964,434 @@ IJSQHIQSkoNQQnIQSkgOQgnJQSghOQglJAehhOQgFKys/D8oC/GYqi9nVwAAAABJRU5ErkJggg==
 			name="Appcues"
 			refimgid="a2ae31f8-da9d-4902-9e0b-8bc9448baa16"
 			refpath="/dom[@domain='devmfc.frankcrum.com' and @caption='MyFrankCrum' and @page='login']/body/div[6]/tag/iframe/body/tag[@tagname='appcues']"
-			searchtimeout="30000ms">
+			searchtimeout="5000ms">
 				/dom[@domain='devmfc.frankcrum.com']/body/div[6]/?/?/iframe[@src='about:blank']/?/?/tag[@tagname='appcues']
+			</item>
+			<folder
+			capname="divtag"
+			id="aa7e268a-8c28-49b1-aec5-aea3d3d99929"
+			isrooted="True"
+			name="PersonalIdentity"
+			searchtimeout="30000ms"
+			usecache="False">
+				<basepath>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div
+				</basepath>
+			</folder>
+			<item
+			capname="labeltag"
+			id="2af7c699-d369-4a90-86c9-6b7c3a1157dd"
+			name="FirstNamelbl"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div[@tagname='div']/label[@innertext='FIRST NAME']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="32852ee8-5c59-4021-b8d1-4b9946ed5125"
+			name="MIDDLENAME"
+			refimgid="3ff549b4-ad98-4d05-ac11-6f644d2d7fb0"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[3]/label[@innertext='MIDDLE NAME']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="439861ad-f79f-4fda-8899-6c97d26c2b77"
+			name="LASTNAME"
+			refimgid="5d2f5b58-59d4-417d-be90-5bbf0662c338"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div[@tagname='div']/label[@innertext='LAST NAME']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="fe19aecd-5500-4ab6-b4b6-bae66447eae3"
+			name="SUFFIX"
+			refimgid="28e845b1-2b65-45ff-be48-8d029aaf427d"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[5]/label[@innertext='SUFFIX']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="a95c5789-4b17-4c9f-9baa-254e931a5d7e"
+			name="BIRTHDATE"
+			refimgid="43539fb6-82c3-4fa2-b59b-c3801c78ebc9"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='BIRTH DATE']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="17d13e16-a631-4a39-b697-fb889fbb83e5"
+			name="ETHNICID"
+			refimgid="f2a36dcc-6f85-4d5d-8f7e-eac326a9655b"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='ETHNIC ID']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="6dec6a31-039a-460d-85f1-177a55b3a585"
+			name="GENDER"
+			refimgid="8f85ed2d-7c79-4589-b4b6-7623dd598143"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='GENDER']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="648997bf-1a9e-45bc-b2f3-7cd16c4d931e"
+			name="MARITALSTATUS"
+			refimgid="7ca28bc4-c576-42bb-9223-ded280292a19"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='MARITAL STATUS']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="7691eb5d-848b-44eb-9d36-d3ab18515fdc"
+			name="ADDRESSLINE1"
+			refimgid="07249336-7f92-4b59-b5b4-43a35a739ed6"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='ADDRESS LINE 1']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="11b52061-0aba-450d-88b9-8de133a6c8e2"
+			name="CITY"
+			refimgid="f32a187e-2cde-4b83-970c-dc91ba7587cb"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='CITY']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="af97ef7c-8103-43cf-b14a-a85c5a606b45"
+			name="STATE"
+			refimgid="5bd703d5-f945-4e0c-93b2-36e9f8163325"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='STATE']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="614b9db3-41f4-47e9-ac65-96dd985f046f"
+			name="ZIPCODE"
+			refimgid="6d4dd7ec-c4f4-43d7-b047-f333ee75fab6"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div/label[@innertext='ZIP CODE']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="3508c149-2df1-4635-a705-276fe06c6591"
+			name="HOMEPHONE"
+			refimgid="0346bd20-8e70-420a-a0c3-435abcb6cf73"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[7]/label[@innertext='HOME PHONE']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="e0b10151-69b1-46e4-bff1-c7c2c3d8df50"
+			name="WORKPHONE"
+			refimgid="da2aa6e9-92b7-4b15-9d81-06f8c74ba4cf"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[10]/label[@innertext='WORK PHONE']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[10]/label[@innertext='WORK PHONE']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="00f7e769-f804-4c98-b244-87c319a76641"
+			name="WORKEXTENSION"
+			refimgid="974bde6b-22ea-4f11-b28c-faba9e4a0ed1"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[11]/label[@innertext='WORK EXTENSION']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[11]/label[@innertext='WORK EXTENSION']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="79495b9d-b339-42df-a118-585af74971c2"
+			name="WORKMOBILE"
+			refimgid="0424a00d-ad05-44b3-9b22-db3db4b41d4d"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[12]/label[@innertext='WORK MOBILE']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[12]/label[@innertext='WORK MOBILE']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="24f63d97-45bf-46e2-b155-4f3b44491fa4"
+			name="OTHERPHONE"
+			refimgid="9cad69a6-6aee-4a8e-b5f1-10fb56bc9833"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[13]/label[@innertext='OTHER PHONE']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[13]/label[@innertext='OTHER PHONE']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="8a136d71-86d0-470d-871e-e9d67c8cbf43"
+			name="ADDRESSLINE2"
+			refimgid="db138760-999d-4812-95bf-117f17331de6"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[2]/label[@innertext='ADDRESS LINE 2']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[2]/label[@innertext='ADDRESS LINE 2']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="4c88db69-825b-4ae0-a658-0c0c0ce176a8"
+			name="HOMEEMAIL"
+			refimgid="bcec9b92-4f2a-4035-b669-1bc0059fe768"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[6]/label[@innertext='HOME EMAIL']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[6]/label[@innertext='HOME EMAIL']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="d4baf42b-a3dd-4065-aede-c54398d46b5d"
+			name="PERSONALMOBILE"
+			refimgid="696d5c3a-20c9-4a89-b9a1-b7bc58ae0061"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[8]/label[@innertext='PERSONAL MOBILE']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[8]/label[@innertext='PERSONAL MOBILE']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="84b0444d-4d1b-407b-b6f6-81a8991c11e4"
+			name="WORKEMAIL"
+			refimgid="7e4f4e0b-5e2a-48e1-935b-4abd9363f29a"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[9]/label[@innertext='WORK EMAIL']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[2]/div/div[9]/label[@innertext='WORK EMAIL']
+			</item>
+			<item
+			addcaps="unknown,webelement,h5tag"
+			capname="h5tag"
+			id="5e1fc8bd-939f-4fec-b7d2-3009268d8564"
+			name="ContactsLabel"
+			refimgid="139998d2-cbde-4a65-97e9-e4b87683ee5c"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[2]/?/?/h5[@innertext&gt;'Contacts']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="75797465-1a5c-4a0e-868a-4b391622d104"
+			name="FirstName"
+			refimgid="25c87f14-2ad0-48d9-9eca-fcc272c9aab6"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//input[#'firstName']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//input[#'firstName']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="8cc35e14-dd52-4c18-b00c-94225a737f65"
+			name="ModalScroll"
+			refimgid="d7547396-7fcb-46f8-b638-c6212d670799"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="h4tag"
+			id="93d2f38e-37fb-48f9-ad35-9692b9fb128e"
+			name="ModalSectionsWrapper"
+			refimgid="f3b69fe6-6c99-4531-948e-f237c6bf59f4"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div[2]/h4[@innertext='Address &amp; Contact']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="6d702992-fc92-4e9c-8187-70333a8559fc"
+			name="AddressLineOne"
+			refimgid="51cd6978-195a-4053-a818-10a710fbbe6f"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//input[#'Address Line One']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c861e9c4-2d39-4174-9d31-7009836eca16"
+			name="AddressLineTwo"
+			refimgid="65e81181-ed82-4f64-9533-476616931974"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//input[#'Address Line Two']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//input[#'Address Line Two']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c6886b39-748e-4437-afcd-f68804efc64f"
+			name="MiddleName1"
+			refimgid="3a543b16-1464-479a-8e53-770577fd4373"
+			refpath="/dom[1]//input[#'middleName']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//input[#'middleName']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="7b574303-c51d-436b-a4ed-7b63d48aff36"
+			name="LastName1"
+			refimgid="65759192-accb-4104-89ef-4c757ef7a2fe"
+			refpath="/dom[1]//input[#'lastName']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//input[#'lastName']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="6cbbb825-d2da-40d0-b2e7-49e3b7cc0cc2"
+			name="DivTagIV"
+			refimgid="0cb4c3b5-5aac-4165-9c3d-ed892e490ef4"
+			refpath="/dom[1]//div[#'Suffix']/div[2]/div/div[6]/div[@innertext='IV']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'Suffix']/div[2]/div/div[6]/div[@innertext='IV']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="1ea13a34-339d-4612-a318-719347520dfa"
+			name="BirthDate1"
+			refimgid="b9611472-b09c-4b5b-b10e-2d6ddaa9fbbf"
+			refpath="/dom[1]//input[#'birthDate']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//input[#'birthDate']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="divtag"
+			id="a876640b-af8b-46dd-8f42-0077cdbd0487"
+			name="FaCaretDownFas1"
+			refimgid="30f1028e-b3e8-4a38-b4d5-90c0d11008c3"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'Suffix']/div/div[2]/div
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="divtag"
+			id="3768a59c-e62c-401d-b095-4dec9aa3450e"
+			name="FaCaretDownFas2"
+			refimgid="031730b7-d770-4a8a-8623-603778b80adc"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'ethnicity']/div/div/div[2]/div
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="5c650f55-7a62-4484-936f-38143e98655a"
+			name="HispanicOrLatino"
+			refimgid="735352e2-3d6e-4f9c-9544-58d4762400cc"
+			refpath="/dom[1]//div[#'ethnicity']/div/div[2]/div/div[3]/div[@innertext='Hispanic or Latino']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]//div[@innertext='Hispanic or Latino']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="divtag"
+			id="489a0814-527b-4b09-8db5-6557df6f77e5"
+			name="FaCaretDownFas3"
+			refimgid="5aaa4956-d2a3-4301-b730-f7c8461ddb99"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'gender']/div[@id='gender']/div/div[2]/div
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="c110cc4a-9e00-491b-a53b-26bbe4dafb4c"
+			name="Male"
+			refimgid="e02a8372-60a6-47ac-8682-9085df6f0362"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'gender']/div[@id='gender']//div[@innertext='Male']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="divtag"
+			id="b0defc1e-18c6-45a7-af94-d0577d5a3fa8"
+			name="FaCaretDownFas4"
+			refimgid="0b2350f1-4513-456e-a418-dddf36b55698"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'maritalStatus']/div[@id='maritalStatus']/div/div[2]/div
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="fd0ba039-fea1-44e6-8a23-b620a25099aa"
+			name="Married"
+			refimgid="cabdb759-26f2-4c59-bb81-17c8581a4a17"
+			refpath="/dom[1]//div[#'maritalStatus']/div/div[2]/div/div[2]/div[@innertext='Married']"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]//div[@innertext='Married']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="5af24951-ae40-48ed-8de3-263107f5541e"
+			name="SaveChanges"
+			refimgid="429fb065-c8f4-4adb-b78e-e8f7ffdc651c"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Save Changes']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="208bf3ea-3b7a-4b8a-bb2d-94ef7e0c77dc"
+			name="KeepAsIs"
+			refimgid="c749a3ea-830f-4fa5-8c07-62d44b324d94"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div[2]/div/div[4]/div/div/div[2]/button[@innertext='Keep As Is']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="bb9c84a0-7610-4be9-a8d8-2e1ed9c18380"
+			name="CssHxuxk6MfcSelectValueContainerM"
+			refimgid="5c137e32-24c3-4e6d-89db-22139de4e50d"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'Suffix']/div/div[1]"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'Suffix']/div/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="68a49c8b-17f7-4243-a219-a8559239bbbc"
+			name="CssHxuxk6MfcSelectValueContainerM1"
+			refimgid="c17af4ca-5c23-417d-9a72-e11dccb4ec28"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'ethnicity']/div/div/div[1]"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'ethnicity']/div/div/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="ee807ac2-0e53-48d5-9572-ce5a3b836368"
+			name="CssHxuxk6MfcSelectValueContainerM2"
+			refimgid="8e7f90b0-d529-4445-be7c-025753e83413"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'gender']/div/div/div[1]"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'gender']/div/div/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="88b0428f-82c0-4b62-9e9c-c980e4924d39"
+			name="CssHxuxk6MfcSelectValueContainerM3"
+			refimgid="d0ae526b-ac48-4396-b55e-77b22e543569"
+			refpath="/dom[@domain='devmfc.frankcrum.com']//div[#'maritalStatus']/div/div/div[1]"
+			searchtimeout="30000ms">
+				/dom[@domain='devmfc.frankcrum.com']//div[#'maritalStatus']/div/div/div[1]
 			</item>
 			<basepath>
 				/dom[@domain='devmfc.frankcrum.com']
@@ -976,6 +1412,24 @@ zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<item
+		addcaps="unknown,webelement,buttontag"
+		capname="buttontag"
+		id="f0d50017-b5c0-4cc4-a397-721e371ff99f"
+		name="UndoChanges"
+		refimgid="57bd4ae6-461b-4ba3-b5c3-09f52de025af"
+		searchtimeout="30000ms">
+			/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']
+		</item>
+		<item
+		addcaps="unknown,webelement,buttontag"
+		capname="buttontag"
+		id="8a84d6a8-098b-4ae8-8fb4-51fa54c50ee1"
+		name="EDIT"
+		refimgid="fb53228d-57e9-4078-ac06-fe9c6a430eac"
+		searchtimeout="30000ms">
+			/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]//h4/button[@innertext='EDIT']
+		</item>
 		<appfolder
 		addcaps="container,webdocument"
 		capname="webdocument"

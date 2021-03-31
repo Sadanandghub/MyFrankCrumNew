@@ -123,6 +123,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AfterUndoValidation.cs">
+      <BoundTo>b25462cf-cb20-466e-bd6b-c888a9909bb0</BoundTo>
+      <DependentUpon>AfterUndoValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8a0efcff-9775-4882-8e4c-a3e95c71038e</id>
+    </Compile>
+    <Compile Include="AfterUndoValidation.UserCode.cs">
+      <BoundTo>b25462cf-cb20-466e-bd6b-c888a9909bb0</BoundTo>
+      <DependentUpon>AfterUndoValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>08a4531b-3082-4dbd-aef1-235e92b3f7f2</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>9e48e7b4-348b-4877-bec6-8278994649dd</id>
     </Compile>
@@ -137,6 +149,18 @@
       <DependentUpon>Back_to_Employeelist.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ce18f827-9414-429d-96ef-b3f3a21a06cf</id>
+    </Compile>
+    <Compile Include="EditPersonalDetails.cs">
+      <BoundTo>c237cbc2-a13c-4286-a9a1-7288886bc8d6</BoundTo>
+      <DependentUpon>EditPersonalDetails.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b890707-7271-46c6-99d9-4b83724a3c99</id>
+    </Compile>
+    <Compile Include="EditPersonalDetails.UserCode.cs">
+      <BoundTo>c237cbc2-a13c-4286-a9a1-7288886bc8d6</BoundTo>
+      <DependentUpon>EditPersonalDetails.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8a6b817f-f530-483c-ae33-6b0837355715</id>
     </Compile>
     <Compile Include="ClickDetails.cs">
       <BoundTo>5edaf2bb-e4d0-448d-93af-ac8bca5cbfe5</BoundTo>
@@ -282,6 +306,30 @@
       <UserCode>true</UserCode>
       <id>73e1bb7d-e5b0-48a2-8942-26035af0222d</id>
     </Compile>
+    <Compile Include="FirstNameUndoChange.cs">
+      <BoundTo>cf6a3ef3-3cb7-4496-9c11-b1a6d897e6f5</BoundTo>
+      <DependentUpon>FirstNameUndoChange.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cb9fd507-bf32-4be3-bd86-70dc343d41e7</id>
+    </Compile>
+    <Compile Include="FirstNameUndoChange.UserCode.cs">
+      <BoundTo>cf6a3ef3-3cb7-4496-9c11-b1a6d897e6f5</BoundTo>
+      <DependentUpon>FirstNameUndoChange.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>34366209-301f-4d73-9933-2e104ffdd4d9</id>
+    </Compile>
+    <Compile Include="IdentityEditClick.cs">
+      <BoundTo>8802050a-cdda-4d6c-bd5f-879967e3e795</BoundTo>
+      <DependentUpon>IdentityEditClick.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1c056e80-0a3e-4644-a71b-a4ec8b9657ed</id>
+    </Compile>
+    <Compile Include="IdentityEditClick.UserCode.cs">
+      <BoundTo>8802050a-cdda-4d6c-bd5f-879967e3e795</BoundTo>
+      <DependentUpon>IdentityEditClick.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>692c4d9d-99cd-40ad-8761-35f15c26b075</id>
+    </Compile>
     <Compile Include="Logout.cs">
       <BoundTo>c773ca22-4c39-4f13-a039-2f4cc6e074f2</BoundTo>
       <DependentUpon>Logout.rxrec</DependentUpon>
@@ -293,6 +341,18 @@
       <DependentUpon>Logout.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8812501e-bc3c-4537-ad6b-832c0b736d19</id>
+    </Compile>
+    <Compile Include="Personal_Tab_Info.cs">
+      <BoundTo>b3b94a30-1ca2-49e2-a8a0-46c9feee985e</BoundTo>
+      <DependentUpon>Personal_Tab_Info.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72dfa0d4-8c1a-4049-a7f3-6ce4ce7910a3</id>
+    </Compile>
+    <Compile Include="Personal_Tab_Info.UserCode.cs">
+      <BoundTo>b3b94a30-1ca2-49e2-a8a0-46c9feee985e</BoundTo>
+      <DependentUpon>Personal_Tab_Info.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>25451f5f-c864-4b14-ba18-52e8282db9ca</id>
     </Compile>
     <Compile Include="Sorting.cs">
       <BoundTo>40060c78-8273-4c44-9414-f8b5813cf85a</BoundTo>
@@ -375,6 +435,30 @@
       <UserCode>true</UserCode>
       <id>e85b33fc-32c0-4b32-97b8-37a872b1ce3d</id>
     </Compile>
+    <Compile Include="TrailTest.cs">
+      <BoundTo>effb48a4-0fd5-4ec2-81dd-52f601c40e80</BoundTo>
+      <DependentUpon>TrailTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ca9d4200-1d47-4c23-ad1b-d4b09dcb22e6</id>
+    </Compile>
+    <Compile Include="TrailTest.UserCode.cs">
+      <BoundTo>effb48a4-0fd5-4ec2-81dd-52f601c40e80</BoundTo>
+      <DependentUpon>TrailTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>80db0f76-3621-47b0-be2a-a52f7adf6060</id>
+    </Compile>
+    <Compile Include="UndoChangeClick.cs">
+      <BoundTo>592900cd-c012-41d8-93e2-48bf10641974</BoundTo>
+      <DependentUpon>UndoChangeClick.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cd0cf93b-7736-4851-bbc6-dac5c1af9249</id>
+    </Compile>
+    <Compile Include="UndoChangeClick.UserCode.cs">
+      <BoundTo>592900cd-c012-41d8-93e2-48bf10641974</BoundTo>
+      <DependentUpon>UndoChangeClick.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b058e3a3-d957-4c2a-9c99-0b951912eef6</id>
+    </Compile>
     <Compile Include="Unified_to_Std.cs">
       <BoundTo>ce8ae584-f9bd-43b8-ba58-002d4ed08f62</BoundTo>
       <DependentUpon>Unified_to_Std.rxrec</DependentUpon>
@@ -425,6 +509,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AfterUndoValidation.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>b25462cf-cb20-466e-bd6b-c888a9909bb0</id>
+      <recordtableid>ad146a15-508c-4f55-a5ae-802a1eba76d4</recordtableid>
+    </None>
     <None Include="app.config">
       <id>63fb34a2-8425-4b0d-8bb6-5dc1c8fad259</id>
     </None>
@@ -432,6 +521,11 @@
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>b9a25114-f055-4f02-9b04-bab5c91286dc</id>
       <recordtableid>76924a0b-c4b1-4a62-b8f0-23ac080ed8a4</recordtableid>
+    </None>
+    <None Include="EditPersonalDetails.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>c237cbc2-a13c-4286-a9a1-7288886bc8d6</id>
+      <recordtableid>2ad8a87f-9935-45fb-acc5-a920e77a1dc4</recordtableid>
     </None>
     <None Include="ClickDetails.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
@@ -493,10 +587,25 @@
       <id>8321b084-41c4-47e3-a35e-33dff04d0705</id>
       <recordtableid>188eecc5-1111-4823-9324-72e27139559c</recordtableid>
     </None>
+    <None Include="FirstNameUndoChange.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>cf6a3ef3-3cb7-4496-9c11-b1a6d897e6f5</id>
+      <recordtableid>5cf17c1c-93f0-4ccc-8675-cbd8e2f67c63</recordtableid>
+    </None>
+    <None Include="IdentityEditClick.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>8802050a-cdda-4d6c-bd5f-879967e3e795</id>
+      <recordtableid>dea26420-c8a8-4190-8de3-bd970c110aad</recordtableid>
+    </None>
     <None Include="Logout.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>c773ca22-4c39-4f13-a039-2f4cc6e074f2</id>
       <recordtableid>43df22c7-db53-42c0-a98a-90b838188152</recordtableid>
+    </None>
+    <None Include="Personal_Tab_Info.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>b3b94a30-1ca2-49e2-a8a0-46c9feee985e</id>
+      <recordtableid>fca94505-975b-4122-8879-fab8c68b1539</recordtableid>
     </None>
     <None Include="Sorting.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
@@ -538,6 +647,16 @@
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>37feb046-1b56-4619-bb99-93cc2780c7dd</id>
       <recordtableid>36fe16ec-ccd4-4d47-b792-80949c239aef</recordtableid>
+    </None>
+    <None Include="TrailTest.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>effb48a4-0fd5-4ec2-81dd-52f601c40e80</id>
+      <recordtableid>d358ffe5-5da4-47c6-a85c-738a0b757ba1</recordtableid>
+    </None>
+    <None Include="UndoChangeClick.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>592900cd-c012-41d8-93e2-48bf10641974</id>
+      <recordtableid>dcbc4168-6b2d-45af-93e4-39f28e052e32</recordtableid>
     </None>
     <None Include="Unified_to_Std.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
