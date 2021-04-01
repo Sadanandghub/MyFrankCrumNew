@@ -187,8 +187,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.SaveChanges.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.KeepAsIs' at Center.", repo.ApplicationUnderTest.KeepAsIsInfo, new RecordItemIndex(26));
-            repo.ApplicationUnderTest.KeepAsIs.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeepAsIs' at Center.", repo.KeepAsIsInfo, new RecordItemIndex(26));
+            repo.KeepAsIs.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.City1' at Center.", repo.ApplicationUnderTest.City1Info, new RecordItemIndex(27));

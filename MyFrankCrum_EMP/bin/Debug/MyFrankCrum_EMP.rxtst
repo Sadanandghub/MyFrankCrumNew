@@ -432,6 +432,12 @@
 			ref="b71b85ff-8931-440f-bd02-a4e315eb1f29"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="f778a895-1a28-49a1-8d46-475295ae30db"
+			name="PersonalTabContacts"
+			ref="0c0609f2-ef3d-475b-b875-50dfcf762749"
+			type="Recording">
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -440,16 +446,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="f7956b2f-198d-4ec7-b103-04d06c992194"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="MyFrankCrum_EMP"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="f7f53c64-fb8d-4573-a41e-a8a0ef278087"
@@ -589,6 +600,10 @@
 						<testmodule
 						id="3b97b0b2-8a99-4d84-bf86-a5ee5e84d027"
 						name="EditPersonalDetails">
+						</testmodule>
+						<testmodule
+						id="f778a895-1a28-49a1-8d46-475295ae30db"
+						name="PersonalTabContacts">
 						</testmodule>
 						<teardown
 						id="d8fc17c2-46d2-4d8a-93e6-8713e7e9ad45"
@@ -863,6 +878,15 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="72e67dcf-8af0-4a48-a60f-3bc2f235279a">
+			</testcontainer>
+			<testcontainer
+			id="90d83ede-3ec4-453d-8970-fb2edcdbd1dd">
+			</testcontainer>
+			<testcontainer
+			id="bfeef577-667a-4e35-a661-c4a098667a3e">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

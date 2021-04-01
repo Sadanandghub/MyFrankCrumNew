@@ -120,26 +120,30 @@ namespace MyFrankCrum_EMP
             repo.MyFrankCrum.Username.Element.SetAttributeValue("TagValue", CompUser);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Password' at Center.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.ClickOutside' at Center.", repo.MyFrankCrum.ClickOutsideInfo, new RecordItemIndex(4));
+            repo.MyFrankCrum.ClickOutside.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Password' at Center.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(5));
             repo.MyFrankCrum.Password.Click();
             Delay.Milliseconds(0);
             
             // Company User Password
-            Report.Log(ReportLevel.Info, "Section", "Company User Password", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Section", "Company User Password", new RecordItemIndex(6));
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompPwd' with focus on 'MyFrankCrum.Password'.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(6));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompPwd' with focus on 'MyFrankCrum.Password'.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(7));
             //repo.MyFrankCrum.Password.PressKeys(CompPwd);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$CompPwd' on item 'MyFrankCrum.Password'.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$CompPwd' on item 'MyFrankCrum.Password'.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(8));
             repo.MyFrankCrum.Password.Element.SetAttributeValue("TagValue", CompPwd);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.LoginButton' at Center.", repo.MyFrankCrum.LoginButtonInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.LoginButton' at Center.", repo.MyFrankCrum.LoginButtonInfo, new RecordItemIndex(9));
             repo.MyFrankCrum.LoginButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(10));
             Delay.Duration(10000, false);
             
         }
