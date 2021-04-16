@@ -109,6 +109,14 @@ namespace MyFrankCrum_EMP
             Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UndoChanges' at Center.", repo.UndoChangesInfo, new RecordItemIndex(4));
+            repo.UndoChanges.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$GetFirstName) on item 'ApplicationUnderTest.FirstName'.", repo.ApplicationUnderTest.FirstNameInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.FirstNameInfo, "TagValue", GetFirstName);
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

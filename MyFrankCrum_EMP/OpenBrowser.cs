@@ -41,6 +41,7 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public OpenBrowser()
         {
+            URL = "test";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace MyFrankCrum_EMP
         }
 
 #region Variables
+
+        string _URL;
+
+        /// <summary>
+        /// Gets or sets the value of variable URL.
+        /// </summary>
+        [TestVariable("c48f33a1-1d14-48b4-93c8-303518d18814")]
+        public string URL
+        {
+            get { return _URL; }
+            set { _URL = value; }
+        }
 
 #endregion
 
@@ -79,8 +92,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://devmfc.frankcrum.com/login' with browser 'chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("https://devmfc.frankcrum.com/login", "chrome", "", false, false, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(URL, "chrome", "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
             try {

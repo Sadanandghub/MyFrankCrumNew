@@ -79,16 +79,16 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.AddNewContact' at Center.", repo.ApplicationUnderTest.SomeDivTag.AddNewContactInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.AddNewContact.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddNewContact' at Center.", repo.ApplicationUnderTest.AddNewContactInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.AddNewContact.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelectInfo, new RecordItemIndex(1));
             repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Brother' at Center.", repo.ApplicationUnderTest.SomeDivTag.BrotherInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.SomeDivTag.Brother.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Relationship' at Center.", repo.ApplicationUnderTest.RelationshipInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.Relationship.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.InputTagSsn' at Center.", repo.ApplicationUnderTest.InputTagSsnInfo, new RecordItemIndex(3));
@@ -135,16 +135,16 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.DivTagSr' at Center.", repo.ApplicationUnderTest.SomeDivTag.DivTagSrInfo, new RecordItemIndex(14));
-            repo.ApplicationUnderTest.SomeDivTag.DivTagSr.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactsSuffix' at Center.", repo.ApplicationUnderTest.ContactsSuffixInfo, new RecordItemIndex(14));
+            repo.ApplicationUnderTest.ContactsSuffix.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FaCaretDownFas1' at Center.", repo.ApplicationUnderTest.SomeDivTag.FaCaretDownFas1Info, new RecordItemIndex(15));
-            repo.ApplicationUnderTest.SomeDivTag.FaCaretDownFas1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FaCaretDownFas3' at Center.", repo.ApplicationUnderTest.FaCaretDownFas3Info, new RecordItemIndex(15));
+            repo.ApplicationUnderTest.FaCaretDownFas3.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Male' at Center.", repo.ApplicationUnderTest.MaleInfo, new RecordItemIndex(16));
-            repo.ApplicationUnderTest.Male.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactGender' at Center.", repo.ApplicationUnderTest.ContactGenderInfo, new RecordItemIndex(16));
+            repo.ApplicationUnderTest.ContactGender.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BirthDate1' at Center.", repo.ApplicationUnderTest.BirthDate1Info, new RecordItemIndex(17));
@@ -161,6 +161,126 @@ namespace MyFrankCrum_EMP
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0711/2019' with focus on 'ApplicationUnderTest.MarriageDate'.", repo.ApplicationUnderTest.MarriageDateInfo, new RecordItemIndex(20));
             repo.ApplicationUnderTest.MarriageDate.PressKeys("0711/2019");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DivorceDate' at Center.", repo.ApplicationUnderTest.DivorceDateInfo, new RecordItemIndex(21));
+            repo.ApplicationUnderTest.DivorceDate.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '07112019' with focus on 'ApplicationUnderTest.DivorceDate'.", repo.ApplicationUnderTest.DivorceDateInfo, new RecordItemIndex(22));
+            repo.ApplicationUnderTest.DivorceDate.PressKeys("07112019");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactAddinfo' at Center.", repo.ApplicationUnderTest.ContactAddinfoInfo, new RecordItemIndex(23));
+            repo.ApplicationUnderTest.ContactAddinfo.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactAdddiffer' at Center.", repo.ApplicationUnderTest.ContactAdddifferInfo, new RecordItemIndex(24));
+            repo.ApplicationUnderTest.ContactAdddiffer.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactAddone' at Center.", repo.ApplicationUnderTest.ContactAddoneInfo, new RecordItemIndex(25));
+            repo.ApplicationUnderTest.ContactAddone.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Address one' with focus on 'ApplicationUnderTest.ContactAddone'.", repo.ApplicationUnderTest.ContactAddoneInfo, new RecordItemIndex(26));
+            repo.ApplicationUnderTest.ContactAddone.PressKeys("Address one");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactAddtwo' at Center.", repo.ApplicationUnderTest.ContactAddtwoInfo, new RecordItemIndex(27));
+            repo.ApplicationUnderTest.ContactAddtwo.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Address two' with focus on 'ApplicationUnderTest.ContactAddtwo'.", repo.ApplicationUnderTest.ContactAddtwoInfo, new RecordItemIndex(28));
+            repo.ApplicationUnderTest.ContactAddtwo.PressKeys("Address two");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CITY3' at Center.", repo.ApplicationUnderTest.CITY3Info, new RecordItemIndex(29));
+            repo.ApplicationUnderTest.CITY3.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Florida' with focus on 'ApplicationUnderTest.CITY3'.", repo.ApplicationUnderTest.CITY3Info, new RecordItemIndex(30));
+            repo.ApplicationUnderTest.CITY3.PressKeys("Florida");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect2' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect2Info, new RecordItemIndex(31));
+            repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect2.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactState' at Center.", repo.ApplicationUnderTest.ContactStateInfo, new RecordItemIndex(32));
+            repo.ApplicationUnderTest.ContactState.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.InputTagZIP' at Center.", repo.ApplicationUnderTest.InputTagZIPInfo, new RecordItemIndex(33));
+            repo.ApplicationUnderTest.InputTagZIP.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2345677654' with focus on 'ApplicationUnderTest.InputTagZIP'.", repo.ApplicationUnderTest.InputTagZIPInfo, new RecordItemIndex(34));
+            repo.ApplicationUnderTest.InputTagZIP.PressKeys("2345677654");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HomePhone' at Center.", repo.HomePhoneInfo, new RecordItemIndex(35));
+            repo.HomePhone.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5678765676' with focus on 'HomePhone'.", repo.HomePhoneInfo, new RecordItemIndex(36));
+            repo.HomePhone.PressKeys("5678765676");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactWorkPhone' at Center.", repo.ApplicationUnderTest.ContactWorkPhoneInfo, new RecordItemIndex(37));
+            repo.ApplicationUnderTest.ContactWorkPhone.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5674567892' with focus on 'ApplicationUnderTest.ContactWorkPhone'.", repo.ApplicationUnderTest.ContactWorkPhoneInfo, new RecordItemIndex(38));
+            repo.ApplicationUnderTest.ContactWorkPhone.PressKeys("5674567892");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.WorkExt' at Center.", repo.ApplicationUnderTest.WorkExtInfo, new RecordItemIndex(39));
+            repo.ApplicationUnderTest.WorkExt.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '34' with focus on 'ApplicationUnderTest.WorkExt'.", repo.ApplicationUnderTest.WorkExtInfo, new RecordItemIndex(40));
+            repo.ApplicationUnderTest.WorkExt.PressKeys("34");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactOtherPhone' at Center.", repo.ApplicationUnderTest.ContactOtherPhoneInfo, new RecordItemIndex(41));
+            repo.ApplicationUnderTest.ContactOtherPhone.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '6498765434' with focus on 'ApplicationUnderTest.ContactOtherPhone'.", repo.ApplicationUnderTest.ContactOtherPhoneInfo, new RecordItemIndex(42));
+            repo.ApplicationUnderTest.ContactOtherPhone.PressKeys("6498765434");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Employer' at Center.", repo.ApplicationUnderTest.EmployerInfo, new RecordItemIndex(43));
+            repo.ApplicationUnderTest.Employer.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Sadanand' with focus on 'ApplicationUnderTest.Employer'.", repo.ApplicationUnderTest.EmployerInfo, new RecordItemIndex(44));
+            repo.ApplicationUnderTest.Employer.PressKeys("Sadanand");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Occupation' at Center.", repo.ApplicationUnderTest.OccupationInfo, new RecordItemIndex(45));
+            repo.ApplicationUnderTest.Occupation.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Sales' with focus on 'ApplicationUnderTest.Occupation'.", repo.ApplicationUnderTest.OccupationInfo, new RecordItemIndex(46));
+            repo.ApplicationUnderTest.Occupation.PressKeys("Sales");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'ApplicationUnderTest.AddContactBtn'.", repo.ApplicationUnderTest.AddContactBtnInfo, new RecordItemIndex(47));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.AddContactBtnInfo, "Enabled", "False");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.IsEmergencyContact' at Center.", repo.ApplicationUnderTest.IsEmergencyContactInfo, new RecordItemIndex(48));
+            repo.ApplicationUnderTest.IsEmergencyContact.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'AddContactbtnTr'.", repo.AddContactbtnTrInfo, new RecordItemIndex(49));
+            Validate.AttributeEqual(repo.AddContactbtnTrInfo, "Enabled", "True");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddContact2' at Center.", repo.ApplicationUnderTest.AddContact2Info, new RecordItemIndex(50));
+            repo.ApplicationUnderTest.AddContact2.Click();
             Delay.Milliseconds(0);
             
         }

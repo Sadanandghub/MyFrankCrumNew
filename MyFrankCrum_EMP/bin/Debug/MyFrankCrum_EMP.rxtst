@@ -9,15 +9,75 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
+			id="02acbe3f-958e-450b-aecb-733174c2f334"
+			name="ContactDeletePOPUP"
+			ref="7cfbe0a8-e18c-4b5e-bf01-f76793683213"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="0729e21f-093c-463e-8052-b0db796d4cca"
+			name="Deductions"
+			ref="0cffcd81-5997-4a62-a330-f88d8b8408af"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="DeductionCode"
+					datasourceid="2f365e0f-2d5d-40c4-b3d1-9101e90df2ad"
+					variableid="4ef0aac5-856e-4ee3-809d-1e9abd61dcd5"
+					variablename="DeductionCode">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="09280f1c-fad4-487c-9390-b46c3cfb6263"
+			name="AsDeductionCode"
+			ref="f2d3b412-2b3b-4e0c-9dbe-6872884ec682"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="DeductionCode"
+					datasourceid="2f365e0f-2d5d-40c4-b3d1-9101e90df2ad"
+					variableid="4ef0aac5-856e-4ee3-809d-1e9abd61dcd5"
+					variablename="DeductionCode">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="11434661-ca85-49cf-b99b-c392c3131bf9"
+			name="History"
+			ref="c8f1b84d-fe30-4849-bdd9-b7420690cacf"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="12b791bf-b3dc-4e50-a375-9aaf25d5ba4a"
+			name="ContactDeletePOPUP"
+			ref="7cfbe0a8-e18c-4b5e-bf01-f76793683213"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="1614a066-0494-40c4-9034-8725c40f3ab4"
 			name="Company_View_Popup_Close"
 			ref="1a109e6f-2250-4754-bc61-a42d18c86c74"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="18136464-a2c3-46da-afc7-f22d57776827"
+			name="Licenses"
+			ref="776e2740-85c9-40bb-a4a3-5459589cae03"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="21402de2-957e-453b-a25b-feed9dc8f600"
 			name="Click_Emp_Gray_Box"
 			ref="b71b85ff-8931-440f-bd02-a4e315eb1f29"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="22980db2-02bf-482b-b1b1-808b34e3613f"
+			name="EEOI9section"
+			ref="5cba7dc5-d707-409f-a6e3-98c4c33d0a4d"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -33,6 +93,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="28316f33-85d7-4ba6-928d-1f3c61a289e5"
+			name="PTO"
+			ref="040e506b-57e7-4a9a-bfc7-2d23b07ceddc"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="2b3dee7a-720c-434b-9eb5-c24926847486"
 			name="CloseBrowser"
@@ -40,7 +106,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="31d8a97e-6886-4379-9ae9-defa39a371d3"
 			name="Validation_for_Unified_View"
 			ref="544bcdd3-6d20-4912-a7c7-e83a21402720"
@@ -71,10 +136,30 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="3df658c3-3ccc-4f7a-b11d-c31a7c00e9cc"
+			name="EEOI9section"
+			ref="5cba7dc5-d707-409f-a6e3-98c4c33d0a4d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3ee0f28a-fe7d-419d-bbc4-f3e4254aa3fd"
+			name="EditPersonalDetails"
+			ref="2ad8a87f-9935-45fb-acc5-a920e77a1dc4"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="40468714-4ea6-46d9-9787-f5a939d0db0b"
 			name="OpenBrowser"
 			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="634fd60b-5fef-4990-9363-d1ab1490de41"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="4bcb12f4-4a01-4cb6-94fb-23f487a53d6e"
@@ -99,13 +184,30 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="51c54137-4fef-42df-ad70-c1a08fe20941"
+			name="PayHistory"
+			ref="8a792f5e-79c6-49ad-b2de-3353e57dd482"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5502f5ab-55e8-4553-9444-78b55c39648e"
+			name="TerminateActiveEmployee"
+			ref="67ee5bc9-5812-4da3-9927-c0de11f1e6fe"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="55870487-a792-4679-a0ca-64771a1547ec"
 			name="Back_to_Employeelist"
 			ref="76924a0b-c4b1-4a62-b8f0-23ac080ed8a4"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
+			id="5678af8c-c7e8-4413-b289-0c9e8e3e6155"
+			name="ContactDelete"
+			ref="edc358f6-9a72-482f-99ad-8eeebf27c397"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="5b9fb92b-4e37-4d83-9b51-bffe1aa650ab"
 			name="Unified_to_Std"
 			ref="644843f3-0765-41a6-9795-68744048b355"
@@ -175,6 +277,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="6864a2c4-915e-4b93-97ef-c00a9d5cf3b4"
+			name="Documents"
+			ref="79668db1-b320-4edb-b260-5cfc7bf64d78"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="6a9a8a73-f252-41ba-a04f-8f6efac53626"
 			name="Sorting"
 			ref="bf8fc426-e5e8-44cd-9fae-692b0e1c040f"
@@ -200,13 +308,18 @@
 			name="EmployerReggressionTesting">
 			</testcase>
 			<testmodule
+			id="7ab1f523-bc0c-4381-8990-51e2272b13ce"
+			name="ContactGrayBoxValidwithEdit"
+			ref="5794ea78-099c-4e69-9389-6b9ac8f95a49"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7e1ac7ba-a1d2-4a02-8654-3ec1d00e7f15"
 			name="HomePageContentValidation"
 			ref="9640aa47-bd0e-40ed-8226-5450e4cb66eb"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="85409c7f-c7e8-453f-a992-de46eae2bf28"
 			name="Std_toUnified"
 			ref="bcc43d89-8074-4c99-a688-42708fcbcba4"
@@ -280,6 +393,37 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="a63fc4bf-78e5-4769-a5b1-24bf171febd0"
+			name="Codecondition">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="DeductionCode"
+								id="2f365e0f-2d5d-40c4-b3d1-9101e90df2ad">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="ADVANCE-ADV">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testmodule
+			id="a676585f-4af8-40bc-90e0-b51d87e2ee3a"
+			name="PersonalTabContacts"
+			ref="0c0609f2-ef3d-475b-b875-50dfcf762749"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="a74c6659-4000-427a-b6a8-0d106e32ae5e"
 			name="ClickEmployeeLink"
@@ -310,6 +454,18 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="b2c86d25-b2f4-436f-99c5-87b9f5bd2485"
+			name="Taxes"
+			ref="ff307b83-c641-485a-96a9-db5435539195"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="bbf52b11-43a4-4a29-ab96-08400a094440"
+			name="ContactDelete"
+			ref="edc358f6-9a72-482f-99ad-8eeebf27c397"
+			type="Recording">
+			</testmodule>
 			<smartfoldernode
 			datasource="NewConnector2"
 			id="bfeef577-667a-4e35-a661-c4a098667a3e"
@@ -321,12 +477,6 @@
 			id="c4cbae3e-c70f-4022-a15d-25a1186b4cee"
 			name="Personal_Tab_Info"
 			ref="fca94505-975b-4122-8879-fab8c68b1539"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="c5dd1bc1-297d-4253-b485-5619d0e1d7d0"
-			name="AfterUndoValidation"
-			ref="ad146a15-508c-4f55-a5ae-802a1eba76d4"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -344,9 +494,15 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="d22d27ed-de76-408c-84e7-6a8d0b4426e2"
-			name="UndoChangeClick"
-			ref="dcbc4168-6b2d-45af-93e4-39f28e052e32"
+			id="d28dbcd8-395a-4a73-83b0-a4b8586d6c8f"
+			name="ContactGrayBoxValidwithEdit"
+			ref="5794ea78-099c-4e69-9389-6b9ac8f95a49"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d4bedd78-f1d2-4c94-90dd-26e2141dd975"
+			name="Earnings"
+			ref="1283464a-e97a-4adc-be8e-15c25689c3b3"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -356,7 +512,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="d726a7a9-d3e4-4dc7-94e0-50b0143d9a82"
 			name="Comp_Selector"
 			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
@@ -375,7 +530,6 @@
 			name="teardown">
 			</teardown>
 			<testmodule
-			enabled="False"
 			id="da8a5bde-37bc-4c90-b5e7-f3adab7df350"
 			name="Logout"
 			ref="43df22c7-db53-42c0-a98a-90b838188152"
@@ -388,10 +542,33 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
+			id="dbd36205-1c00-4419-83c1-b9aa2401fdee"
+			name="JobAndPay"
+			ref="19ef1c10-ee1c-4109-8b46-b097a34d9670"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="dc055521-30b4-426c-bb95-61b625c37217"
+			name="EditContactUndoMiddelName"
+			ref="06765410-6f77-4d45-beb3-35b64b8546a9"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="dffd2e67-d95d-45c4-a008-ee1d192e3c91"
+			name="PTO_SETUP"
+			ref="227790b1-dc83-4b0a-aedb-50daf484b638"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e6f290e3-94ea-47fc-93ef-12b4c5ac3d79"
 			name="Validation_for_std_view"
 			ref="2a9445f5-9701-4d1f-8706-6b8b5d9904ab"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e709a950-ff52-4233-bafd-4cb2f9d7702d"
+			name="EditContactUndoMiddelName"
+			ref="06765410-6f77-4d45-beb3-35b64b8546a9"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -446,21 +623,16 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
-			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="f7956b2f-198d-4ec7-b103-04d06c992194"
-			includeimageschecked="False"
-			includerecordingschecked="False"
 			junitreport="False"
 			name="MyFrankCrum_EMP"
-			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms"
-			singlereportpdfdirectory="SingleReportPDF">
+			reportwriteinterval="30000ms">
 			</testsuite>
 			<testmodule
 			id="f7f53c64-fb8d-4573-a41e-a8a0ef278087"
@@ -469,10 +641,24 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="fc996ad9-bea4-4ea0-bda3-4c02538fc629"
+			name="DirectDeposite"
+			ref="0640122a-438f-404f-89c0-279242556fed"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="fcb9d9da-70e3-4fd2-9234-f392ec57ecbd"
 			name="OpenBrowser"
 			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="634fd60b-5fef-4990-9363-d1ab1490de41"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -605,6 +791,82 @@
 						id="f778a895-1a28-49a1-8d46-475295ae30db"
 						name="PersonalTabContacts">
 						</testmodule>
+						<testmodule
+						id="7ab1f523-bc0c-4381-8990-51e2272b13ce"
+						name="ContactGrayBoxValidwithEdit">
+						</testmodule>
+						<testmodule
+						id="e709a950-ff52-4233-bafd-4cb2f9d7702d"
+						name="EditContactUndoMiddelName">
+						</testmodule>
+						<testmodule
+						id="5678af8c-c7e8-4413-b289-0c9e8e3e6155"
+						name="ContactDelete">
+						</testmodule>
+						<testmodule
+						id="12b791bf-b3dc-4e50-a375-9aaf25d5ba4a"
+						name="ContactDeletePOPUP">
+						</testmodule>
+						<testmodule
+						id="3df658c3-3ccc-4f7a-b11d-c31a7c00e9cc"
+						name="EEOI9section">
+						</testmodule>
+						<testmodule
+						id="dbd36205-1c00-4419-83c1-b9aa2401fdee"
+						name="JobAndPay">
+						</testmodule>
+						<testmodule
+						id="d4bedd78-f1d2-4c94-90dd-26e2141dd975"
+						name="Earnings">
+						</testmodule>
+						<testmodule
+						id="0729e21f-093c-463e-8052-b0db796d4cca"
+						name="Deductions">
+						</testmodule>
+						<smartfoldernode
+						id="a63fc4bf-78e5-4769-a5b1-24bf171febd0"
+						name="Codecondition">
+							<testmodule
+							id="09280f1c-fad4-487c-9390-b46c3cfb6263"
+							name="AsDeductionCode">
+							</testmodule>
+						</smartfoldernode>
+						<testmodule
+						id="fc996ad9-bea4-4ea0-bda3-4c02538fc629"
+						name="DirectDeposite">
+						</testmodule>
+						<testmodule
+						id="b2c86d25-b2f4-436f-99c5-87b9f5bd2485"
+						name="Taxes">
+						</testmodule>
+						<testmodule
+						id="51c54137-4fef-42df-ad70-c1a08fe20941"
+						name="PayHistory">
+						</testmodule>
+						<testmodule
+						id="28316f33-85d7-4ba6-928d-1f3c61a289e5"
+						name="PTO">
+						</testmodule>
+						<testmodule
+						id="dffd2e67-d95d-45c4-a008-ee1d192e3c91"
+						name="PTO_SETUP">
+						</testmodule>
+						<testmodule
+						id="6864a2c4-915e-4b93-97ef-c00a9d5cf3b4"
+						name="Documents">
+						</testmodule>
+						<testmodule
+						id="18136464-a2c3-46da-afc7-f22d57776827"
+						name="Licenses">
+						</testmodule>
+						<testmodule
+						id="11434661-ca85-49cf-b99b-c392c3131bf9"
+						name="History">
+						</testmodule>
+						<testmodule
+						id="5502f5ab-55e8-4553-9444-78b55c39648e"
+						name="TerminateActiveEmployee">
+						</testmodule>
 						<teardown
 						id="d8fc17c2-46d2-4d8a-93e6-8713e7e9ad45"
 						name="teardown">
@@ -690,12 +952,32 @@
 						name="FirstNameUndoChange">
 						</testmodule>
 						<testmodule
-						id="d22d27ed-de76-408c-84e7-6a8d0b4426e2"
-						name="UndoChangeClick">
+						id="3ee0f28a-fe7d-419d-bbc4-f3e4254aa3fd"
+						name="EditPersonalDetails">
 						</testmodule>
 						<testmodule
-						id="c5dd1bc1-297d-4253-b485-5619d0e1d7d0"
-						name="AfterUndoValidation">
+						id="a676585f-4af8-40bc-90e0-b51d87e2ee3a"
+						name="PersonalTabContacts">
+						</testmodule>
+						<testmodule
+						id="d28dbcd8-395a-4a73-83b0-a4b8586d6c8f"
+						name="ContactGrayBoxValidwithEdit">
+						</testmodule>
+						<testmodule
+						id="dc055521-30b4-426c-bb95-61b625c37217"
+						name="EditContactUndoMiddelName">
+						</testmodule>
+						<testmodule
+						id="02acbe3f-958e-450b-aecb-733174c2f334"
+						name="ContactDeletePOPUP">
+						</testmodule>
+						<testmodule
+						id="bbf52b11-43a4-4a29-ab96-08400a094440"
+						name="ContactDelete">
+						</testmodule>
+						<testmodule
+						id="22980db2-02bf-482b-b1b1-808b34e3613f"
+						name="EEOI9section">
 						</testmodule>
 						<teardown
 						id="66b4c5a7-29c4-4f5a-92db-92fd970a853d"
@@ -732,6 +1014,9 @@
 				<column>
 					Sortingvalue
 				</column>
+				<column>
+					URL
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 			</maskedcolumns>
@@ -752,6 +1037,9 @@
 					<th>
 						Sortingvalue
 					</th>
+					<th>
+						URL
+					</th>
 				</tr>
 				<tr>
 					<td>
@@ -768,6 +1056,9 @@
 					</td>
 					<td>
 						Last Name: Z-A
+					</td>
+					<td>
+						https://mfcqa01.frankcrum.com/login
 					</td>
 				</tr>
 			</table>
@@ -869,6 +1160,31 @@
 				<tr>
 					<td>
 						State: Z-A
+					</td>
+				</tr>
+			</table>
+		</DataSource>
+		<DataSource
+		id="2f365e0f-2d5d-40c4-b3d1-9101e90df2ad"
+		lastknownrowcount="1"
+		name="NewConnector3"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					DeductionCode
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						DeductionCode
+					</th>
+				</tr>
+				<tr>
+					<td>
+						MA Med Leave-KMA8
 					</td>
 				</tr>
 			</table>

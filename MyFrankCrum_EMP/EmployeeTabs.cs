@@ -200,10 +200,7 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(32));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(33));
-            Delay.Duration(5000, false);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='History') on item 'ApplicationUnderTest.ReactTabsTabList.History'.", repo.ApplicationUnderTest.ReactTabsTabList.HistoryInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='History') on item 'ApplicationUnderTest.ReactTabsTabList.History'.", repo.ApplicationUnderTest.ReactTabsTabList.HistoryInfo, new RecordItemIndex(33));
             Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.HistoryInfo, "InnerText", "History");
             Delay.Milliseconds(100);
             
