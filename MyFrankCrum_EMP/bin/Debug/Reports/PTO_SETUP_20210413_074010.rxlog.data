@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="6.61s"
+		durationms="6606"
+		type="root"
+		rid="72f6306528ec68b"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/13/2021 7:40:14 AM"
+		timestampiso="2021-04-13T11:40:14"
+		endtime="4/13/2021 7:40:20 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="PTO_SETUP">
+		<detail>
+			PTO_SETUP
+		</detail>
+		<errormessage>
+			Item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.PTOSaveButton' is no Button.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.245"
+			timeRelativeToTestModuleStartTime="00:04.245"
+			timeWallClock="07:40:18"
+			time="00:04.245"
+			level="Warn"
+			category="Data"
+			errimg="images_PTO_SETU_5a8dd314\PTO_SETU_5a8dd314_e3b2b1b8_trace.jpg"
+			errthumb="images_PTO_SETU_5a8dd314\PTO_SETU_5a8dd314_e3b2b1b8_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccruatTypeValue, AccuratOptionValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.272"
+			timeRelativeToTestModuleStartTime="00:04.272"
+			timeWallClock="07:40:18"
+			time="00:04.272"
+			level="Info"
+			category="Mouse"
+			errimg="images_PTO_SETU_5a8dd314\PTO_SETU_5a8dd314_e3b2b1b8_trace.jpg"
+			errthumb="images_PTO_SETU_5a8dd314\PTO_SETU_5a8dd314_e3b2b1b8_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.PTOSaveButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Add New PTO Plan']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Add New PTO Plan']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PTOSaveButton"
+				id="9d1faa7cd0504145bfb2d51ab3cc9f98"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="102"
+				itemindex="22"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.514"
+			timeRelativeToTestModuleStartTime="00:06.514"
+			timeWallClock="07:40:20"
+			time="00:06.514"
+			level="Error"
+			category="Module"
+			errimg="images_PTO_SETU_5a8dd314\PTO_SETU_5a8dd314_8aefc710_trace.jpg"
+			errthumb="images_PTO_SETU_5a8dd314\PTO_SETU_5a8dd314_8aefc710_trace_thumb.jpg">
+			<message>
+				Item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.PTOSaveButton' is no Button.<br/>The element does not support the required capability 'button'.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_PTOSaveButton() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 2528&#13;&#10;   at MyFrankCrum_EMP.PTO_SETUP.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs:line 103&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="103"
+				loglvl="Error"
+				id="9d1faa7cd0504145bfb2d51ab3cc9f98"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Add New PTO Plan']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PTOSaveButton"
+				itemindex="22">
+			</metainfo>
+		</item>
+	</activity>
+</report>

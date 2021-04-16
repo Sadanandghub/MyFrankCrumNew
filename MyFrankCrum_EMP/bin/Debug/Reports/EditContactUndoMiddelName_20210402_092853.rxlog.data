@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="8.04s"
+		durationms="8041"
+		type="root"
+		rid="5c07a5568f02580"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/2/2021 9:28:57 AM"
+		timestampiso="2021-04-02T13:28:57"
+		endtime="4/2/2021 9:29:05 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EditContactUndoMiddelName">
+		<detail>
+			EditContactUndoMiddelName
+		</detail>
+		<errormessage>
+			Item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.ContactSavechanges' is no Button.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.402"
+			timeRelativeToTestModuleStartTime="00:04.402"
+			timeWallClock="09:29:01"
+			time="00:04.402"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>ContactMiddelName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.434"
+			timeRelativeToTestModuleStartTime="00:04.434"
+			timeWallClock="09:29:01"
+			time="00:04.434"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (Enabled='False') on item 'UndoChangesContact'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Undo Changes']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Undo Changes']"
+				fullname="MyFrankCrum_EMPRepository.UndoChangesContact"
+				id="5ed3f902fcec4cd981d2dae2f272ba76"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.740"
+			timeRelativeToTestModuleStartTime="00:05.740"
+			timeWallClock="09:29:03"
+			time="00:05.740"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Enabled' of element for item 'MyFrankCrum_EMPRepository.UndoChangesContact' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Undo Changes']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Undo Changes']"
+				fullname="MyFrankCrum_EMPRepository.UndoChangesContact"
+				id="5ed3f902fcec4cd981d2dae2f272ba76"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="96"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.852"
+			timeRelativeToTestModuleStartTime="00:05.852"
+			timeWallClock="09:29:03"
+			time="00:05.852"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.MiddleName2' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.562"
+			timeRelativeToTestModuleStartTime="00:06.562"
+			timeWallClock="09:29:03"
+			time="00:06.562"
+			level="Info"
+			category="Get Value">
+			<message>
+				Getting attribute 'TagValue' from item 'ApplicationUnderTest.MiddleName2' and assigning its value to variable 'ContactMiddelName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.670"
+			timeRelativeToTestModuleStartTime="00:06.670"
+			timeWallClock="09:29:03"
+			time="00:06.670"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute TagValue to 'Lalji' on item 'ApplicationUnderTest.MiddleName2'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="107"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.809"
+			timeRelativeToTestModuleStartTime="00:06.809"
+			timeWallClock="09:29:04"
+			time="00:06.809"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'UndoChangesContact' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Undo Changes']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Undo Changes']"
+				fullname="MyFrankCrum_EMPRepository.UndoChangesContact"
+				id="5ed3f902fcec4cd981d2dae2f272ba76"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="111"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.427"
+			timeRelativeToTestModuleStartTime="00:07.427"
+			timeWallClock="09:29:04"
+			time="00:07.427"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (TagValue=$ContactMiddelName) on item 'ApplicationUnderTest.MiddleName2'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="115"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.549"
+			timeRelativeToTestModuleStartTime="00:07.549"
+			timeWallClock="09:29:04"
+			time="00:07.549"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'TagValue' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="116"
+				loglvl="Success"
+				itemindex="5">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.659"
+			timeRelativeToTestModuleStartTime="00:07.659"
+			timeWallClock="09:29:04"
+			time="00:07.659"
+			level="Info"
+			category="Set value"
+			errimg="images_EditCont_709e940\EditCont_709e940_db173822_trace.jpg"
+			errthumb="images_EditCont_709e940\EditCont_709e940_db173822_trace_thumb.jpg">
+			<message>
+				Setting attribute TagValue to 'Lalji' on item 'ApplicationUnderTest.MiddleName2'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="119"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.799"
+			timeRelativeToTestModuleStartTime="00:07.799"
+			timeWallClock="09:29:05"
+			time="00:07.799"
+			level="Info"
+			category="Mouse"
+			errimg="images_EditCont_709e940\EditCont_709e940_09f303b7_trace.jpg"
+			errthumb="images_EditCont_709e940\EditCont_709e940_09f303b7_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ContactSavechanges' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Save Changes']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Save Changes']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ContactSavechanges"
+				id="c95775d2d6f94e5b893d7352dd258880"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="123"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.948"
+			timeRelativeToTestModuleStartTime="00:07.948"
+			timeWallClock="09:29:05"
+			time="00:07.948"
+			level="Error"
+			category="Module"
+			errimg="images_EditCont_709e940\EditCont_709e940_8a72527b_trace.jpg"
+			errthumb="images_EditCont_709e940\EditCont_709e940_8a72527b_trace_thumb.jpg">
+			<message>
+				Item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.ContactSavechanges' is no Button.<br/>The element does not support the required capability 'button'.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_ContactSavechanges() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 4796&#13;&#10;   at MyFrankCrum_EMP.EditContactUndoMiddelName.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs:line 124&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContactUndoMiddelName.cs"
+				codeline="124"
+				loglvl="Error"
+				id="c95775d2d6f94e5b893d7352dd258880"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Save Changes']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ContactSavechanges"
+				itemindex="7">
+			</metainfo>
+		</item>
+	</activity>
+</report>

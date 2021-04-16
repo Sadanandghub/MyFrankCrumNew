@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="10.07s"
+		durationms="10072"
+		type="root"
+		rid="c3786bb57a64d2"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 8:04:56 AM"
+		timestampiso="2021-04-09T12:04:56"
+		endtime="4/9/2021 8:05:06 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.180"
+			timeRelativeToTestModuleStartTime="00:04.180"
+			timeWallClock="08:05:00"
+			time="00:04.180"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType, DepositRuleType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.209"
+			timeRelativeToTestModuleStartTime="00:04.209"
+			timeWallClock="08:05:00"
+			time="00:04.209"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DepositeChooseFile' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div[9]/div/div[2]/div/div[2]/button[@innertext='Choose File']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div[9]/div/div[2]/div/div[2]/button[@innertext='Choose File']"
+				fullname="MyFrankCrum_EMPRepository.DepositeChooseFile"
+				id="a52625fd9e064bc1b905ccf4d9ae30d2"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="102"
+				itemindex="20"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.066"
+			timeRelativeToTestModuleStartTime="00:07.066"
+			timeWallClock="08:05:03"
+			time="00:07.066"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Open.SystemItemNameDisplay1' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Open']/element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='7']/text[@automationid='System.ItemNameDisplay']"
+				itempath="element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='7']/text[@automationid='System.ItemNameDisplay']"
+				fullname="MyFrankCrum_EMPRepository.Open.SystemItemNameDisplay1"
+				id="40318f53a384450b925a654fbffeadef"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="106"
+				itemindex="21"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.622"
+			timeRelativeToTestModuleStartTime="00:09.622"
+			timeWallClock="08:05:06"
+			time="00:09.622"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Open.ButtonOpen' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Open']/button[@text='&amp;Open']"
+				itempath="button[@text='&amp;Open']"
+				fullname="MyFrankCrum_EMPRepository.Open.ButtonOpen"
+				id="097ed2fc06214e3eb6f53527177afddc"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="110"
+				itemindex="22"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="12.43s"
+		durationms="12428"
+		type="root"
+		rid="548fb010077ffff"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 9:32:57 AM"
+		timestampiso="2021-04-09T13:32:57"
+		endtime="4/9/2021 9:33:10 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<errormessage>
+			Item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.DeactivatePopupOK' is no Button.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.984"
+			timeRelativeToTestModuleStartTime="00:04.984"
+			timeWallClock="09:33:02"
+			time="00:04.984"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType, DepositRuleType, ChangeRuleType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.015"
+			timeRelativeToTestModuleStartTime="00:05.015"
+			timeWallClock="09:33:02"
+			time="00:05.015"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown']/button[@id='dropdownMenuButton']"
+				itempath=".//div[#'dropdown']/button[@id='dropdownMenuButton']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DropdownMenuButton"
+				id="66b60ac9174b433e857d14cde8bf0fa4"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="112"
+				itemindex="44"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.384"
+			timeRelativeToTestModuleStartTime="00:08.384"
+			timeWallClock="09:33:06"
+			time="00:08.384"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DeactivateAccount' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown']/div[@id='dropdown-menu']/button[@innertext='Deactivate Account']"
+				itempath=".//div[#'dropdown']/div[@id='dropdown-menu']/button[@innertext='Deactivate Account']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeactivateAccount"
+				id="4b692659ba7e440ca992e812b42f7752"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="116"
+				itemindex="45"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.211"
+			timeRelativeToTestModuleStartTime="00:09.211"
+			timeWallClock="09:33:07"
+			time="00:09.211"
+			level="Info"
+			category="Delay"
+			errimg="images_DirectDe_bdfaa452\DirectDe_bdfaa452_af298280_trace.jpg"
+			errthumb="images_DirectDe_bdfaa452\DirectDe_bdfaa452_af298280_trace_thumb.jpg">
+			<message>
+				Waiting for 3s.
+			</message>
+			<metainfo
+				itemindex="46"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="120"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.221"
+			timeRelativeToTestModuleStartTime="00:12.221"
+			timeWallClock="09:33:10"
+			time="00:12.221"
+			level="Info"
+			category="Mouse"
+			errimg="images_DirectDe_bdfaa452\DirectDe_bdfaa452_67ddda9e_trace.jpg"
+			errthumb="images_DirectDe_bdfaa452\DirectDe_bdfaa452_67ddda9e_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DeactivatePopupOK' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='OK']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='OK']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeactivatePopupOK"
+				id="773ffb472fc940c9961de3f3ae2bb514"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="123"
+				itemindex="47"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.340"
+			timeRelativeToTestModuleStartTime="00:12.340"
+			timeWallClock="09:33:10"
+			time="00:12.340"
+			level="Error"
+			category="Module"
+			errimg="images_DirectDe_bdfaa452\DirectDe_bdfaa452_44f0df1c_trace.jpg"
+			errthumb="images_DirectDe_bdfaa452\DirectDe_bdfaa452_44f0df1c_trace_thumb.jpg">
+			<message>
+				Item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.DeactivatePopupOK' is no Button.<br/>The element does not support the required capability 'button'.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_DeactivatePopupOK() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 7018&#13;&#10;   at MyFrankCrum_EMP.DirectDeposite.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs:line 124&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="124"
+				loglvl="Error"
+				id="773ffb472fc940c9961de3f3ae2bb514"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='OK']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeactivatePopupOK"
+				itemindex="47">
+			</metainfo>
+		</item>
+	</activity>
+</report>

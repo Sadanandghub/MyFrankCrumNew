@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.1m"
+		durationms="68011"
+		type="root"
+		rid="2680c3ca6d136350"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/5/2021 3:40:03 AM"
+		timestampiso="2021-04-05T07:40:03"
+		endtime="4/5/2021 3:41:11 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ContactDelete">
+		<detail>
+			ContactDelete
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.DeleteConfirmContact'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.355"
+			timeRelativeToTestModuleStartTime="00:04.355"
+			timeWallClock="03:40:07"
+			time="00:04.355"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown']/button[@id='dropdownMenuButton']"
+				itempath=".//div[#'dropdown']/button[@id='dropdownMenuButton']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DropdownMenuButton"
+				id="66b60ac9174b433e857d14cde8bf0fa4"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\ContactDelete.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.089"
+			timeRelativeToTestModuleStartTime="00:07.089"
+			timeWallClock="03:40:10"
+			time="00:07.089"
+			level="Info"
+			category="Mouse"
+			errimg="images_ContactD_1db5484b\ContactD_1db5484b_daca8bcc_trace.jpg"
+			errthumb="images_ContactD_1db5484b\ContactD_1db5484b_daca8bcc_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DeleteContact' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown']/?/?/button[@innertext='Delete Contact']"
+				itempath=".//div[#'dropdown']/?/?/button[@innertext='Delete Contact']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeleteContact"
+				id="27606dbbf1e6471783f95e60f5aa157b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\ContactDelete.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.787"
+			timeRelativeToTestModuleStartTime="00:07.787"
+			timeWallClock="03:40:11"
+			time="00:07.787"
+			level="Info"
+			category="Mouse"
+			errimg="images_ContactD_1db5484b\ContactD_1db5484b_b95628b4_trace.jpg"
+			errthumb="images_ContactD_1db5484b\ContactD_1db5484b_b95628b4_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DeleteConfirmContact' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Delete']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Delete']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeleteConfirmContact"
+				id="9552dd9d89d64f6eadf82262ee175266"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\ContactDelete.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:07.918"
+			timeRelativeToTestModuleStartTime="01:07.918"
+			timeWallClock="03:41:11"
+			time="01:07.918"
+			level="Error"
+			category="Module"
+			errimg="images_ContactD_1db5484b\ContactD_1db5484b_b157bf92_trace.jpg"
+			errthumb="images_ContactD_1db5484b\ContactD_1db5484b_b157bf92_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.DeleteConfirmContact'.<br/>No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Delete']' at step 'descendant-or-self::div[#'modal-wrapper']' after 456 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_DeleteConfirmContact() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 4848&#13;&#10;   at MyFrankCrum_EMP.ContactDelete.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\ContactDelete.cs:line 91&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\ContactDelete.cs"
+				codeline="91"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Delete']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Delete']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeleteConfirmContact"
+				id="9552dd9d89d64f6eadf82262ee175266"
+				timeout="60000"
+				failedStep="descendant-or-self::div[#'modal-wrapper']"
+				bestPathPrefix="/dom[@domain='devmfc.frankcrum.com']"
+				loglvl="Error"
+				itemindex="2">
+			</metainfo>
+		</item>
+	</activity>
+</report>

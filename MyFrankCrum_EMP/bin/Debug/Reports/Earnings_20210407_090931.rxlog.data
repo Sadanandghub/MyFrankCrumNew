@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.1m"
+		durationms="64577"
+		type="root"
+		rid="3daa75355aafb58"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/7/2021 9:09:34 AM"
+		timestampiso="2021-04-07T13:09:34"
+		endtime="4/7/2021 9:10:39 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Earnings">
+		<detail>
+			Earnings
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EDIT'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.274"
+			timeRelativeToTestModuleStartTime="00:04.274"
+			timeWallClock="09:09:39"
+			time="00:04.274"
+			level="Info"
+			category="Mouse"
+			errimg="images_Earnings_d8ffd490\Earnings_d8ffd490_b70052a4_trace.jpg"
+			errthumb="images_Earnings_d8ffd490\Earnings_d8ffd490_b70052a4_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EDIT' at CenterRight.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[4]/div/div/div/div[2]/div[1]/button[@innertext='EDIT' and @pressed='True']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[4]/div[4]/div/div/div/div[2]/div[1]/button[@innertext='EDIT' and @pressed='True']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EDIT"
+				id="b85d60921d524e8a835e6fc05f7d9dc5"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Earnings.cs"
+				codeline="82"
+				itemindex="15"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:04.469"
+			timeRelativeToTestModuleStartTime="01:04.469"
+			timeWallClock="09:10:39"
+			time="01:04.469"
+			level="Error"
+			category="Module"
+			errimg="images_Earnings_d8ffd490\Earnings_d8ffd490_120fa6f4_trace.jpg"
+			errthumb="images_Earnings_d8ffd490\Earnings_d8ffd490_120fa6f4_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EDIT'.<br/>No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[4]/div/div/div/div[2]/div[1]/button[@innertext='EDIT' and @pressed='True']' at step 'button[@innertext='EDIT' and @pressed='True']' after 283 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_EDIT() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 5866&#13;&#10;   at MyFrankCrum_EMP.Earnings.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\Earnings.cs:line 83&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Earnings.cs"
+				codeline="83"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[4]/div/div/div/div[2]/div[1]/button[@innertext='EDIT' and @pressed='True']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[4]/div[4]/div/div/div/div[2]/div[1]/button[@innertext='EDIT' and @pressed='True']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EDIT"
+				id="b85d60921d524e8a835e6fc05f7d9dc5"
+				timeout="60000"
+				failedStep="button[@innertext='EDIT' and @pressed='True']"
+				bestPathPrefix="/dom[@domain='devmfc.frankcrum.com']/descendant-or-self::div[#'app']/div[2]/div[3]/div/div[4]/div[4]/div/div/div/div[2]/div[1]"
+				loglvl="Error"
+				itemindex="15">
+			</metainfo>
+		</item>
+	</activity>
+</report>

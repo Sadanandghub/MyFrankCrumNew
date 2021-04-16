@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="14.4s"
+		durationms="14401"
+		type="root"
+		rid="a94fc44a99cc"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/5/2021 7:17:07 AM"
+		timestampiso="2021-04-05T11:17:07"
+		endtime="4/5/2021 7:17:22 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EEOI9section">
+		<detail>
+			EEOI9section
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.368"
+			timeRelativeToTestModuleStartTime="00:04.368"
+			timeWallClock="07:17:12"
+			time="00:04.368"
+			level="Info"
+			category="Section">
+			<message>
+				Validaton -EEO/I-9 section
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="83"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.391"
+			timeRelativeToTestModuleStartTime="00:04.391"
+			timeWallClock="07:17:12"
+			time="00:04.391"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText='EEO / I-9   ') on item 'EEOI9'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				fullname="MyFrankCrum_EMPRepository.EEOI9"
+				id="14dcdfa146c9474db878470d1348c760"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.646"
+			timeRelativeToTestModuleStartTime="00:06.646"
+			timeWallClock="07:17:14"
+			time="00:06.646"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.EEOI9' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				fullname="MyFrankCrum_EMPRepository.EEOI9"
+				id="14dcdfa146c9474db878470d1348c760"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="86"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.748"
+			timeRelativeToTestModuleStartTime="00:06.748"
+			timeWallClock="07:17:14"
+			time="00:06.748"
+			level="Info"
+			category="Section">
+			<message>
+				Press Edit Button
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="90"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.748"
+			timeRelativeToTestModuleStartTime="00:06.748"
+			timeWallClock="07:17:14"
+			time="00:06.748"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'EDIT_EEOI9Section' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]//h4[@innertext='EEO / I-9   ']/button[@innertext='EDIT']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]//h4[@innertext='EEO / I-9   ']/button[@innertext='EDIT']"
+				fullname="MyFrankCrum_EMPRepository.EDIT_EEOI9Section"
+				id="d6cf07fdb70a47f0a894b7c97aee77c8"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="92"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.455"
+			timeRelativeToTestModuleStartTime="00:07.455"
+			timeWallClock="07:17:15"
+			time="00:07.455"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 5s.
+			</message>
+			<metainfo
+				itemindex="4"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="96"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.461"
+			timeRelativeToTestModuleStartTime="00:12.461"
+			timeWallClock="07:17:20"
+			time="00:12.461"
+			level="Info"
+			category="Section">
+			<message>
+				Change one or more of the fields  The Undo Changes button will become enabled
+			</message>
+			<metainfo
+				itemindex="5"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="100"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.463"
+			timeRelativeToTestModuleStartTime="00:12.463"
+			timeWallClock="07:17:20"
+			time="00:12.463"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'birthCountry']/div[@id='birthCountry']/div/div[2]/div"
+				itempath=".//div[#'birthCountry']/div[@id='birthCountry']/div/div[2]/div"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3"
+				id="0e1a641b3d954d9c8cba609260ee4338"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="102"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.333"
+			timeRelativeToTestModuleStartTime="00:13.333"
+			timeWallClock="07:17:21"
+			time="00:13.333"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EEO_I_9State' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'birthCountry']/div[@id='birthCountry']/div/?/?/div/div[@innertext='United States']"
+				itempath=".//div[#'birthCountry']/div[@id='birthCountry']/div/?/?/div/div[@innertext='United States']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EEO_I_9State"
+				id="171aa017560646dab7e45f2b7f6f691d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="106"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.164"
+			timeRelativeToTestModuleStartTime="00:14.164"
+			timeWallClock="07:17:21"
+			time="00:14.164"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (Enabled='True') on item 'UndoChanges'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				fullname="MyFrankCrum_EMPRepository.UndoChanges"
+				id="f0d50017b5c04cc4a397721e371ff99f"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="110"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.289"
+			timeRelativeToTestModuleStartTime="00:14.289"
+			timeWallClock="07:17:22"
+			time="00:14.289"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Enabled' of element for item 'MyFrankCrum_EMPRepository.UndoChanges' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				fullname="MyFrankCrum_EMPRepository.UndoChanges"
+				id="f0d50017b5c04cc4a397721e371ff99f"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="111"
+				loglvl="Success"
+				itemindex="8">
+			</metainfo>
+		</item>
+	</activity>
+</report>

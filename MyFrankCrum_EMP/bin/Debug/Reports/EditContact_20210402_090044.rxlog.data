@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="11.61s"
+		durationms="11611"
+		type="root"
+		rid="246d5136be525751"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/2/2021 9:00:48 AM"
+		timestampiso="2021-04-02T13:00:48"
+		endtime="4/2/2021 9:01:00 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EditContact">
+		<detail>
+			EditContact
+		</detail>
+		<errormessage>
+			Attribute 'TagValue' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2' does not match the specified value (actual='Guptagupta', expected='L').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.403"
+			timeRelativeToTestModuleStartTime="00:04.403"
+			timeWallClock="09:00:53"
+			time="00:04.403"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>ContactMiddelName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.437"
+			timeRelativeToTestModuleStartTime="00:04.437"
+			timeWallClock="09:00:53"
+			time="00:04.437"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.MiddleName2' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.734"
+			timeRelativeToTestModuleStartTime="00:07.734"
+			timeWallClock="09:00:56"
+			time="00:07.734"
+			level="Info"
+			category="Get Value">
+			<message>
+				Getting attribute 'TagValue' from item 'ApplicationUnderTest.MiddleName2' and assigning its value to variable 'ContactMiddelName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.852"
+			timeRelativeToTestModuleStartTime="00:07.852"
+			timeWallClock="09:00:56"
+			time="00:07.852"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute Value to 'Gupta' on item 'ApplicationUnderTest.MiddleName2'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.978"
+			timeRelativeToTestModuleStartTime="00:07.978"
+			timeWallClock="09:00:56"
+			time="00:07.978"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'Gupta' with focus on 'ApplicationUnderTest'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Self"
+				id="4adb2402d0f14185819f54d35157c656"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="107"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.283"
+			timeRelativeToTestModuleStartTime="00:08.283"
+			timeWallClock="09:00:56"
+			time="00:08.283"
+			level="Info"
+			category="Validation"
+			errimg="images_EditCont_6e079b16\EditCont_6e079b16_ea207b24_trace.jpg"
+			errthumb="images_EditCont_6e079b16\EditCont_6e079b16_ea207b24_trace_thumb.jpg">
+			<message>
+				Validating AttributeEqual (TagValue=$ContactMiddelName) on item 'ApplicationUnderTest.MiddleName2'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="116"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.516"
+			timeRelativeToTestModuleStartTime="00:11.516"
+			timeWallClock="09:01:00"
+			time="00:11.516"
+			level="Failure"
+			category="Validation"
+			errimg="images_EditCont_6e079b16\EditCont_6e079b16_e680bdb7_trace.jpg"
+			errthumb="images_EditCont_6e079b16\EditCont_6e079b16_e680bdb7_trace_thumb.jpg">
+			<message>
+				Attribute 'TagValue' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2' does not match the specified value (actual='Guptagupta', expected='L').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="117"
+				loglvl="Failure"
+				itemindex="5">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.524"
+			timeRelativeToTestModuleStartTime="00:11.524"
+			timeWallClock="09:01:00"
+			time="00:11.524"
+			level="Error"
+			category="Module"
+			errimg="images_EditCont_6e079b16\EditCont_6e079b16_e680bdb7_trace.jpg"
+			errthumb="images_EditCont_6e079b16\EditCont_6e079b16_e680bdb7_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'TagValue' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2' does not match the specified value (actual='Guptagupta', expected='L').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   at Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)
+   at MyFrankCrum_EMP.EditContact.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs:line 117
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="117"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="5">
+			</metainfo>
+		</item>
+	</activity>
+</report>

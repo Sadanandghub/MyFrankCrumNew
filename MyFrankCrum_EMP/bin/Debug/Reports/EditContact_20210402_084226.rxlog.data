@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="39.02s"
+		durationms="39019"
+		type="root"
+		rid="4963557c03a9500"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/2/2021 8:42:30 AM"
+		timestampiso="2021-04-02T12:42:30"
+		endtime="4/2/2021 8:43:09 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EditContact">
+		<detail>
+			EditContact
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.UndoChanges'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.201"
+			timeRelativeToTestModuleStartTime="00:04.201"
+			timeWallClock="08:42:34"
+			time="00:04.201"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>ContactMiddelName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.227"
+			timeRelativeToTestModuleStartTime="00:04.227"
+			timeWallClock="08:42:34"
+			time="00:04.227"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.MiddleName2' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.217"
+			timeRelativeToTestModuleStartTime="00:08.217"
+			timeWallClock="08:42:38"
+			time="00:08.217"
+			level="Info"
+			category="Get Value">
+			<message>
+				Getting attribute 'TagValue' from item 'ApplicationUnderTest.MiddleName2' and assigning its value to variable 'ContactMiddelName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.425"
+			timeRelativeToTestModuleStartTime="00:08.425"
+			timeWallClock="08:42:38"
+			time="00:08.425"
+			level="Info"
+			category="Keyboard"
+			errimg="images_EditCont_1021757b\EditCont_1021757b_4c9c4422_trace.jpg"
+			errthumb="images_EditCont_1021757b\EditCont_1021757b_4c9c4422_trace_thumb.jpg">
+			<message>
+				Key sequence 'Gupta' with focus on 'ApplicationUnderTest'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Self"
+				id="4adb2402d0f14185819f54d35157c656"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.735"
+			timeRelativeToTestModuleStartTime="00:08.735"
+			timeWallClock="08:42:38"
+			time="00:08.735"
+			level="Info"
+			category="Mouse"
+			errimg="images_EditCont_1021757b\EditCont_1021757b_7c05a71c_trace.jpg"
+			errthumb="images_EditCont_1021757b\EditCont_1021757b_7c05a71c_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'UndoChanges' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				fullname="MyFrankCrum_EMPRepository.UndoChanges"
+				id="f0d50017b5c04cc4a397721e371ff99f"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="108"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:38.901"
+			timeRelativeToTestModuleStartTime="00:38.901"
+			timeWallClock="08:43:09"
+			time="00:38.901"
+			level="Error"
+			category="Module"
+			errimg="images_EditCont_1021757b\EditCont_1021757b_49311d59_trace.jpg"
+			errthumb="images_EditCont_1021757b\EditCont_1021757b_49311d59_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.UndoChanges'.<br/>No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']' at step 'button[@innertext='Undo Changes']' after 197 attempts within 30s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepository.get_UndoChanges() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 262&#13;&#10;   at MyFrankCrum_EMP.EditContact.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs:line 109&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="109"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				fullname="MyFrankCrum_EMPRepository.UndoChanges"
+				id="f0d50017b5c04cc4a397721e371ff99f"
+				timeout="30000"
+				failedStep="button[@innertext='Undo Changes']"
+				bestPathPrefix="/dom[@domain='devmfc.frankcrum.com']/descendant-or-self::div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]"
+				loglvl="Error"
+				itemindex="3">
+			</metainfo>
+		</item>
+	</activity>
+</report>

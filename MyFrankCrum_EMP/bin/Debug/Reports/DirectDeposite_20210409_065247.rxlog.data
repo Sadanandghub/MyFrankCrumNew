@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="9.55s"
+		durationms="9550"
+		type="root"
+		rid="248dc9a2ed23b8d8"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 6:52:51 AM"
+		timestampiso="2021-04-09T10:52:51"
+		endtime="4/9/2021 6:53:00 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.197"
+			timeRelativeToTestModuleStartTime="00:04.197"
+			timeWallClock="06:52:55"
+			time="00:04.197"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.222"
+			timeRelativeToTestModuleStartTime="00:04.222"
+			timeWallClock="06:52:55"
+			time="00:04.222"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect9' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'Account Type']/div/div[2]/div"
+				itempath=".//div[#'Account Type']/div/div[2]/div"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect9"
+				id="c06f9b4f3c544505830557752ae2309a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="92"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.308"
+			timeRelativeToTestModuleStartTime="00:07.308"
+			timeWallClock="06:52:58"
+			time="00:07.308"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeAccountType' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'Account Type']/div/?/?/div/div[@innertext='Checking']"
+				itempath=".//div[#'Account Type']/div/?/?/div/div[@innertext=$AccountType]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeAccountType"
+				id="f2e19e250adc41e0abfcba8a221fb099"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="96"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.228"
+			timeRelativeToTestModuleStartTime="00:08.228"
+			timeWallClock="06:52:59"
+			time="00:08.228"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeBankName' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Bank Name']"
+				itempath=".//input[#'Bank Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeBankName"
+				id="0a4546020c5640a4abfb54a4bf09089d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="100"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.997"
+			timeRelativeToTestModuleStartTime="00:08.997"
+			timeWallClock="06:53:00"
+			time="00:08.997"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'SBI ePay' with focus on 'ApplicationUnderTest.DepositeBankName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Bank Name']"
+				itempath=".//input[#'Bank Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeBankName"
+				id="0a4546020c5640a4abfb54a4bf09089d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="104"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

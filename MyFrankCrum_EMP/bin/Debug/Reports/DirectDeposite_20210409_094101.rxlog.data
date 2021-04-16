@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.4m"
+		durationms="82041"
+		type="root"
+		rid="236b15b994db1329"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 9:41:04 AM"
+		timestampiso="2021-04-09T13:41:04"
+		endtime="4/9/2021 9:42:27 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRuleType'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.194"
+			timeRelativeToTestModuleStartTime="00:04.194"
+			timeWallClock="09:41:09"
+			time="00:04.194"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType, DepositRuleType, ChangeRuleType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.223"
+			timeRelativeToTestModuleStartTime="00:04.223"
+			timeWallClock="09:41:09"
+			time="00:04.223"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.DirectDeposit' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Direct Deposit']"
+				itempath="?/?/li[@innertext='Direct Deposit']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ReactTabsTabList.DirectDeposit"
+				id="9442c2e2d59147b09964f775bd261441"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="112"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.153"
+			timeRelativeToTestModuleStartTime="00:07.153"
+			timeWallClock="09:41:12"
+			time="00:07.153"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 5s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="116"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.159"
+			timeRelativeToTestModuleStartTime="00:12.159"
+			timeWallClock="09:41:17"
+			time="00:12.159"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.AddDirectDepositAccount' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[6]/?/?/main/div/div/div/div[1]/?/?/button[@innertext>'Add Direct Deposit Accoun']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[4]/div[6]/?/?/main/div/div/div/div[1]/?/?/button[@innertext>'Add Direct Deposit Accoun']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.AddDirectDepositAccount"
+				id="74dfb5d76b81472db43e1cc2bb21f22b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="119"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.871"
+			timeRelativeToTestModuleStartTime="00:12.871"
+			timeWallClock="09:41:17"
+			time="00:12.871"
+			level="Info"
+			category="Section">
+			<message>
+				Add New Direct Deposit Account
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="124"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.871"
+			timeRelativeToTestModuleStartTime="00:12.871"
+			timeWallClock="09:41:17"
+			time="00:12.871"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect9' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'Account Type']/div/div[2]/div"
+				itempath=".//div[#'Account Type']/div/div[2]/div"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect9"
+				id="c06f9b4f3c544505830557752ae2309a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="126"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.833"
+			timeRelativeToTestModuleStartTime="00:13.833"
+			timeWallClock="09:41:18"
+			time="00:13.833"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeAccountType' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'Account Type']/div/?/?/div/div[@innertext='Checking']"
+				itempath=".//div[#'Account Type']/div/?/?/div/div[@innertext=$AccountType]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeAccountType"
+				id="f2e19e250adc41e0abfcba8a221fb099"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="130"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.692"
+			timeRelativeToTestModuleStartTime="00:14.692"
+			timeWallClock="09:41:19"
+			time="00:14.692"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeBankName' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Bank Name']"
+				itempath=".//input[#'Bank Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeBankName"
+				id="0a4546020c5640a4abfb54a4bf09089d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="134"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.394"
+			timeRelativeToTestModuleStartTime="00:15.394"
+			timeWallClock="09:41:20"
+			time="00:15.394"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'SBI ePay' with focus on 'ApplicationUnderTest.DepositeBankName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Bank Name']"
+				itempath=".//input[#'Bank Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeBankName"
+				id="0a4546020c5640a4abfb54a4bf09089d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="138"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.898"
+			timeRelativeToTestModuleStartTime="00:15.898"
+			timeWallClock="09:41:20"
+			time="00:15.898"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeRoutingNumber' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Routing / Transit Number']"
+				itempath=".//input[#'Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumber"
+				id="8b1bfd4ec19c44488bb7361c6bd0215f"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="142"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.577"
+			timeRelativeToTestModuleStartTime="00:16.577"
+			timeWallClock="09:41:21"
+			time="00:16.577"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '021000021' with focus on 'ApplicationUnderTest.DepositeRoutingNumber'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Routing / Transit Number']"
+				itempath=".//input[#'Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumber"
+				id="8b1bfd4ec19c44488bb7361c6bd0215f"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="146"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.066"
+			timeRelativeToTestModuleStartTime="00:17.066"
+			timeWallClock="09:41:22"
+			time="00:17.066"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeRoutingNumberConfirm' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Confirm Routing / Transit Number']"
+				itempath=".//input[#'Confirm Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberConfirm"
+				id="3c0b418b9dc8447d99b6327f493e600c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="150"
+				itemindex="10"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.759"
+			timeRelativeToTestModuleStartTime="00:17.759"
+			timeWallClock="09:41:22"
+			time="00:17.759"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '021000021' with focus on 'ApplicationUnderTest.DepositeRoutingNumberConfirm'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Confirm Routing / Transit Number']"
+				itempath=".//input[#'Confirm Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberConfirm"
+				id="3c0b418b9dc8447d99b6327f493e600c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="154"
+				itemindex="11"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.259"
+			timeRelativeToTestModuleStartTime="00:18.259"
+			timeWallClock="09:41:23"
+			time="00:18.259"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeAccountNumber' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Account Number']"
+				itempath=".//input[#'Account Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeAccountNumber"
+				id="7282664b6d5d4e89a1f167d7912916fb"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="158"
+				itemindex="12"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.004"
+			timeRelativeToTestModuleStartTime="00:19.004"
+			timeWallClock="09:41:23"
+			time="00:19.004"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '87665455678' with focus on 'ApplicationUnderTest.DepositeAccountNumber'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Account Number']"
+				itempath=".//input[#'Account Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeAccountNumber"
+				id="7282664b6d5d4e89a1f167d7912916fb"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="162"
+				itemindex="13"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.666"
+			timeRelativeToTestModuleStartTime="00:19.666"
+			timeWallClock="09:41:24"
+			time="00:19.666"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeAccountNumberConfirm' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Confirm Account Number']"
+				itempath=".//input[#'Confirm Account Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeAccountNumberConfirm"
+				id="c32905337cb64f768954c2fd2003b95a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="167"
+				itemindex="14"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.378"
+			timeRelativeToTestModuleStartTime="00:20.378"
+			timeWallClock="09:41:25"
+			time="00:20.378"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '87665455678' with focus on 'ApplicationUnderTest.DepositeAccountNumberConfirm'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Confirm Account Number']"
+				itempath=".//input[#'Confirm Account Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeAccountNumberConfirm"
+				id="c32905337cb64f768954c2fd2003b95a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="171"
+				itemindex="15"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.926"
+			timeRelativeToTestModuleStartTime="00:20.926"
+			timeWallClock="09:41:25"
+			time="00:20.926"
+			level="Info"
+			category="Mouse"
+			errimg="images_DirectDe_315b0226\DirectDe_315b0226_441d1968_trace.jpg"
+			errthumb="images_DirectDe_315b0226\DirectDe_315b0226_441d1968_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ClickDepositRule' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'depositRule']/div/div/div[1]"
+				itempath=".//div[#'depositRule']/div/div/div[1]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ClickDepositRule"
+				id="0a0b9961bbe940b7a659f77dc8f51450"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="175"
+				itemindex="16"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.720"
+			timeRelativeToTestModuleStartTime="00:21.720"
+			timeWallClock="09:41:26"
+			time="00:21.720"
+			level="Info"
+			category="Mouse"
+			errimg="images_DirectDe_315b0226\DirectDe_315b0226_61e79175_trace.jpg"
+			errthumb="images_DirectDe_315b0226\DirectDe_315b0226_61e79175_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeRuleType' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext='Remaining Balance']"
+				itempath=".//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext=$DepositRuleType]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRuleType"
+				id="9d419621eb20455f815270d210fb76f6"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="179"
+				itemindex="17"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:21.960"
+			timeRelativeToTestModuleStartTime="01:21.960"
+			timeWallClock="09:42:26"
+			time="01:21.960"
+			level="Error"
+			category="Module"
+			errimg="images_DirectDe_315b0226\DirectDe_315b0226_a4800e20_trace.jpg"
+			errthumb="images_DirectDe_315b0226\DirectDe_315b0226_a4800e20_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRuleType'.<br/>No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext='Remaining Balance']' at step 'div[@innertext='Remaining Balance']' after 294 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_DepositeRuleType() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 2122&#13;&#10;   at MyFrankCrum_EMP.DirectDeposite.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs:line 180&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="180"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext='Remaining Balance']"
+				itempath=".//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext=$DepositRuleType]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRuleType"
+				id="9d419621eb20455f815270d210fb76f6"
+				timeout="60000"
+				failedStep="div[@innertext=$DepositRuleType]"
+				bestPathPrefix="/dom[@domain='devmfc.frankcrum.com']/descendant-or-self::div[#'depositRule']/div[@id='depositRule']/div/?/?/div"
+				loglvl="Error"
+				itemindex="17">
+			</metainfo>
+		</item>
+	</activity>
+</report>

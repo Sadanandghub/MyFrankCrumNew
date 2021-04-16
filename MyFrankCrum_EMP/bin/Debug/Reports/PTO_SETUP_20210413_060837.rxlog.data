@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.77s"
+		durationms="7774"
+		type="root"
+		rid="28e058dfe99c48d4"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/13/2021 6:08:41 AM"
+		timestampiso="2021-04-13T10:08:41"
+		endtime="4/13/2021 6:08:49 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="PTO_SETUP">
+		<detail>
+			PTO_SETUP
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.278"
+			timeRelativeToTestModuleStartTime="00:04.278"
+			timeWallClock="06:08:45"
+			time="00:04.278"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccruatTypeValue, AccuratOptionValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.304"
+			timeRelativeToTestModuleStartTime="00:04.304"
+			timeWallClock="06:08:45"
+			time="00:04.304"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.PTOAllowed' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'allowed']"
+				itempath=".//input[#'allowed']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PTOAllowed"
+				id="85f44af4c46f4e1aa67e95662915a33d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="102"
+				itemindex="11"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.265"
+			timeRelativeToTestModuleStartTime="00:07.265"
+			timeWallClock="06:08:48"
+			time="00:07.265"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '200' with focus on 'ApplicationUnderTest.PTOAllowed'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'allowed']"
+				itempath=".//input[#'allowed']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PTOAllowed"
+				id="85f44af4c46f4e1aa67e95662915a33d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="106"
+				itemindex="12"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

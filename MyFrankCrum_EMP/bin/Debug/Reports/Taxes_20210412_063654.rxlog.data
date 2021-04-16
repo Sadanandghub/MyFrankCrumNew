@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="8s"
+		durationms="7999"
+		type="root"
+		rid="45656040965012c"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/12/2021 6:36:58 AM"
+		timestampiso="2021-04-12T10:36:58"
+		endtime="4/12/2021 6:37:06 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Taxes">
+		<detail>
+			Taxes
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.021"
+			timeRelativeToTestModuleStartTime="00:05.021"
+			timeWallClock="06:37:03"
+			time="00:05.021"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>Location
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.046"
+			timeRelativeToTestModuleStartTime="00:05.046"
+			timeWallClock="06:37:03"
+			time="00:05.046"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.TaxDropdownMenuButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown']/button[@id='dropdownMenuButton'][2]"
+				itempath=".//div[#'dropdown']/button[@id='dropdownMenuButton'][2]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.TaxDropdownMenuButton"
+				id="8e1ea00bd0034bdc82f910adb7df5265"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Taxes.cs"
+				codeline="93"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

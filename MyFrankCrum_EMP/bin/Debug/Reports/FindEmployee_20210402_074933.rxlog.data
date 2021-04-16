@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.3m"
+		durationms="80853"
+		type="root"
+		rid="97eac141f1055c"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/2/2021 7:49:36 AM"
+		timestampiso="2021-04-02T11:49:36"
+		endtime="4/2/2021 7:50:57 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="FindEmployee">
+		<detail>
+			FindEmployee
+		</detail>
+		<errormessage>
+			Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName' can not be evaluated (Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName'. No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext&gt;'Sally  Apple JR']' at step 'h3[@innertext&gt;'Sally  Apple JR']' after 487 attempts within 1m.).
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.065"
+			timeRelativeToTestModuleStartTime="00:04.065"
+			timeWallClock="07:49:40"
+			time="00:04.065"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>EmpName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.091"
+			timeRelativeToTestModuleStartTime="00:04.091"
+			timeWallClock="07:49:40"
+			time="00:04.091"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Search' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]//form[@action='https://devmfc.frankcrum.com/Employees']/input[@name='search']"
+				itempath=".//form[@action='https://devmfc.frankcrum.com/Employees']/input[@name='search']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SomeDivTag.Search"
+				id="1afcd6c615d54d929d42cfeaefa208ad"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="93"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.321"
+			timeRelativeToTestModuleStartTime="00:18.321"
+			timeWallClock="07:49:55"
+			time="00:18.321"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$EmpName' with focus on 'ApplicationUnderTest.SomeDivTag.Search'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]//form[@action='https://devmfc.frankcrum.com/Employees']/input[@name='search']"
+				itempath=".//form[@action='https://devmfc.frankcrum.com/Employees']/input[@name='search']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SomeDivTag.Search"
+				id="1afcd6c615d54d929d42cfeaefa208ad"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="97"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.653"
+			timeRelativeToTestModuleStartTime="00:18.653"
+			timeWallClock="07:49:55"
+			time="00:18.653"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FindEmployee' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]//form[@action='https://devmfc.frankcrum.com/Employees']/button[@innertext='Find Employee']"
+				itempath=".//form[@action='https://devmfc.frankcrum.com/Employees']/button[@innertext='Find Employee']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SomeDivTag.FindEmployee"
+				id="4a94201e15df4f15b447e46ce28162b6"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="101"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.250"
+			timeRelativeToTestModuleStartTime="00:19.250"
+			timeWallClock="07:49:55"
+			time="00:19.250"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div/div/div/div/div[2]/?/?/button[@innertext>'Apple']"
+				itempath="div/div/div[3]/div/div/div/div/div[2]/?/?/button[@innertext>$EmpName]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SomeDivTag.selectEmp"
+				id="525585a194154e8eba21a47ab7c00a61"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="105"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.621"
+			timeRelativeToTestModuleStartTime="00:20.621"
+			timeWallClock="07:49:57"
+			time="00:20.621"
+			level="Info"
+			category="Validation"
+			errimg="images_FindEmpl_733db964\FindEmpl_733db964_43288d5d_trace.jpg"
+			errthumb="images_FindEmpl_733db964\FindEmpl_733db964_43288d5d_trace_thumb.jpg">
+			<message>
+				Validating AttributeContains (InnerText&gt;$EmpName) on item 'ApplicationUnderTest.EmpName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Sally  Apple JR']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Sally  Apple JR']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName"
+				id="3adb98d73eb94fadb82134649810c11b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="109"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:20.775"
+			timeRelativeToTestModuleStartTime="01:20.775"
+			timeWallClock="07:50:57"
+			time="01:20.775"
+			level="Failure"
+			category="Validation"
+			errimg="images_FindEmpl_733db964\FindEmpl_733db964_c225615e_trace.jpg"
+			errthumb="images_FindEmpl_733db964\FindEmpl_733db964_c225615e_trace_thumb.jpg">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName' can not be evaluated (Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName'. No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext&gt;'Sally  Apple JR']' at step 'h3[@innertext&gt;'Sally  Apple JR']' after 487 attempts within 1m.).
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Sally  Apple JR']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Sally  Apple JR']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName"
+				id="3adb98d73eb94fadb82134649810c11b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="110"
+				failedStep="h3[@innertext>'Sally  Apple JR']"
+				bestPathPrefix="/dom[@domain='devmfc.frankcrum.com']/descendant-or-self::div[#'app']/div[2]/div[3]/div/div[2]"
+				loglvl="Failure"
+				itemindex="4">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:20.781"
+			timeRelativeToTestModuleStartTime="01:20.781"
+			timeWallClock="07:50:57"
+			time="01:20.781"
+			level="Error"
+			category="Module"
+			errimg="images_FindEmpl_733db964\FindEmpl_733db964_c225615e_trace.jpg"
+			errthumb="images_FindEmpl_733db964\FindEmpl_733db964_c225615e_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName' can not be evaluated (Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName'. No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext&gt;'Sally  Apple JR']' at step 'h3[@innertext&gt;'Sally  Apple JR']' after 487 attempts within 1m.).<br/>Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName'.<br/>No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext&gt;'Sally  Apple JR']' at step 'h3[@innertext&gt;'Sally  Apple JR']' after 487 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)
+   at Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo, RanorexException innerException)
+   at Ranorex.Validate.AttributeContainsInternal(RepoItemInfo itemInfo, String name, String value, String message, Options options)
+   at Ranorex.Validate.AttributeContains(RepoItemInfo itemInfo, String name, String value, String message, Options options)
+   at Ranorex.Validate.AttributeContains(RepoItemInfo itemInfo, String name, String value)
+   at MyFrankCrum_EMP.FindEmployee.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs:line 110
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="110"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Sally  Apple JR']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Sally  Apple JR']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName"
+				id="3adb98d73eb94fadb82134649810c11b"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="4">
+			</metainfo>
+		</item>
+	</activity>
+</report>

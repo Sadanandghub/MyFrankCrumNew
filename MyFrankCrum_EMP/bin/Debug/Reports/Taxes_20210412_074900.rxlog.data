@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.77s"
+		durationms="7770"
+		type="root"
+		rid="21337834ac14528"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/12/2021 7:49:04 AM"
+		timestampiso="2021-04-12T11:49:04"
+		endtime="4/12/2021 7:49:12 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Taxes">
+		<detail>
+			Taxes
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.492"
+			timeRelativeToTestModuleStartTime="00:04.492"
+			timeWallClock="07:49:08"
+			time="00:04.492"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>ChildrenAmount, OtherDependentsAmount, Location
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.520"
+			timeRelativeToTestModuleStartTime="00:04.520"
+			timeWallClock="07:49:08"
+			time="00:04.520"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'TaxesUndoChanges1' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']"
+				fullname="MyFrankCrum_EMPRepository.TaxesUndoChanges1"
+				id="ada6dc2384c547bf9441e08122bf70d2"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Taxes.cs"
+				codeline="119"
+				itemindex="29"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

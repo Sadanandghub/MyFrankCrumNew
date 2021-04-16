@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.95s"
+		durationms="7945"
+		type="root"
+		rid="176192db94cc80e2"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/13/2021 8:08:06 AM"
+		timestampiso="2021-04-13T12:08:06"
+		endtime="4/13/2021 8:08:14 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="PTO_SETUP">
+		<detail>
+			PTO_SETUP
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.343"
+			timeRelativeToTestModuleStartTime="00:04.343"
+			timeWallClock="08:08:10"
+			time="00:04.343"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccruatTypeValue, AccuratOptionValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.368"
+			timeRelativeToTestModuleStartTime="00:04.368"
+			timeWallClock="08:08:10"
+			time="00:04.368"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.PTODropdownMenuButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//button[#'dropdownMenuButton']"
+				itempath=".//button[#'dropdownMenuButton']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PTODropdownMenuButton"
+				id="15ba27914afc4a969dc3d1d2ffc9ed68"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="102"
+				itemindex="30"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.180"
+			timeRelativeToTestModuleStartTime="00:07.180"
+			timeWallClock="08:08:13"
+			time="00:07.180"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.PTOEdit' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown-menu']/button[@innertext='Edit']"
+				itempath=".//div[#'dropdown-menu']/button[@innertext='Edit']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PTOEdit"
+				id="10646ee7807647dfa2fb0defec67d504"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="106"
+				itemindex="31"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

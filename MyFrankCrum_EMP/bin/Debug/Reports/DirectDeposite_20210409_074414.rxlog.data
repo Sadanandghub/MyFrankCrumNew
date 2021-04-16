@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="8.1s"
+		durationms="8100"
+		type="root"
+		rid="8322400dca975d8"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 7:44:18 AM"
+		timestampiso="2021-04-09T11:44:18"
+		endtime="4/9/2021 7:44:26 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.288"
+			timeRelativeToTestModuleStartTime="00:04.288"
+			timeWallClock="07:44:22"
+			time="00:04.288"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType, DepositRuleType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.315"
+			timeRelativeToTestModuleStartTime="00:04.315"
+			timeWallClock="07:44:22"
+			time="00:04.315"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ClickDepositRule' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'depositRule']/div/div/div[1]"
+				itempath=".//div[#'depositRule']/div/div/div[1]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ClickDepositRule"
+				id="0a0b9961bbe940b7a659f77dc8f51450"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="102"
+				itemindex="16"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.245"
+			timeRelativeToTestModuleStartTime="00:07.245"
+			timeWallClock="07:44:25"
+			time="00:07.245"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeRuleType' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext='Remaining Balance']"
+				itempath=".//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext=$DepositRuleType]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRuleType"
+				id="9d419621eb20455f815270d210fb76f6"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="106"
+				itemindex="17"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

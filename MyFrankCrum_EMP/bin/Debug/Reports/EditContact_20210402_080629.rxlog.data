@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="21.97s"
+		durationms="21973"
+		type="root"
+		rid="1295d93842582400"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/2/2021 8:06:34 AM"
+		timestampiso="2021-04-02T12:06:34"
+		endtime="4/2/2021 8:06:56 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EditContact">
+		<detail>
+			EditContact
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.371"
+			timeRelativeToTestModuleStartTime="00:05.371"
+			timeWallClock="08:06:39"
+			time="00:05.371"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>ContactMiddelName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.399"
+			timeRelativeToTestModuleStartTime="00:05.399"
+			timeWallClock="08:06:39"
+			time="00:05.399"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.MiddleName2' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.353"
+			timeRelativeToTestModuleStartTime="00:08.353"
+			timeWallClock="08:06:42"
+			time="00:08.353"
+			level="Info"
+			category="Get Value">
+			<message>
+				Getting attribute 'TagValue' from item 'ApplicationUnderTest.MiddleName2' and assigning its value to variable 'ContactMiddelName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Middle Name']"
+				itempath=".//input[#'Middle Name']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MiddleName2"
+				id="3eb10728c4884b21ad331da5b29d814b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.444"
+			timeRelativeToTestModuleStartTime="00:08.444"
+			timeWallClock="08:06:42"
+			time="00:08.444"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'Gupta' with focus on 'ApplicationUnderTest'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Self"
+				id="4adb2402d0f14185819f54d35157c656"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.720"
+			timeRelativeToTestModuleStartTime="00:08.720"
+			timeWallClock="08:06:43"
+			time="00:08.720"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.UndoChanges' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div[4]/form[@action='https://devmfc.frankcrum.com/EmployeeDetails/D250L10000K0']/div/div/div[3]/button[@innertext='Undo Changes']"
+				itempath="div[4]/form[@action='https://devmfc.frankcrum.com/EmployeeDetails/D250L10000K0']/div/div/div[3]/button[@innertext='Undo Changes']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SomeDivTag.UndoChanges"
+				id="4f0dcc70b14e4e19aa65dc6bac60b8e1"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EditContact.cs"
+				codeline="108"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.968"
+			timeRelativeToTestModuleStartTime="00:21.968"
+			timeWallClock="08:06:56"
+			time="00:21.968"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

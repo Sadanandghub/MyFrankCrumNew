@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="27.91s"
+		durationms="27909"
+		type="root"
+		rid="1fcc1427c6dc0d"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/5/2021 7:00:59 AM"
+		timestampiso="2021-04-05T11:00:59"
+		endtime="4/5/2021 7:01:27 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EEOI9section">
+		<detail>
+			EEOI9section
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.578"
+			timeRelativeToTestModuleStartTime="00:04.578"
+			timeWallClock="07:01:03"
+			time="00:04.578"
+			level="Info"
+			category="Section">
+			<message>
+				Validaton -EEO/I-9 section
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="83"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.601"
+			timeRelativeToTestModuleStartTime="00:04.601"
+			timeWallClock="07:01:03"
+			time="00:04.601"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText='EEO / I-9   ') on item 'ApplicationUnderTest.SomeDivTag.EEOI9'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				itempath="div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SomeDivTag.EEOI9"
+				id="14dcdfa146c9474db878470d1348c760"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.902"
+			timeRelativeToTestModuleStartTime="00:27.902"
+			timeWallClock="07:01:27"
+			time="00:27.902"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

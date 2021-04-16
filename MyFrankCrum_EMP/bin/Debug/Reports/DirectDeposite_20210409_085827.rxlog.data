@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="10.41s"
+		durationms="10407"
+		type="root"
+		rid="41f960a2dfde697"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 8:58:31 AM"
+		timestampiso="2021-04-09T12:58:31"
+		endtime="4/9/2021 8:58:41 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.542"
+			timeRelativeToTestModuleStartTime="00:04.542"
+			timeWallClock="08:58:36"
+			time="00:04.542"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType, DepositRuleType, ChangeRuleType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.573"
+			timeRelativeToTestModuleStartTime="00:04.573"
+			timeWallClock="08:58:36"
+			time="00:04.573"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeRoutingNumberConfirm' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Confirm Routing / Transit Number']"
+				itempath=".//input[#'Confirm Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberConfirm"
+				id="3c0b418b9dc8447d99b6327f493e600c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="112"
+				itemindex="28"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.043"
+			timeRelativeToTestModuleStartTime="00:08.043"
+			timeWallClock="08:58:39"
+			time="00:08.043"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '021000021' with focus on 'ApplicationUnderTest.DepositeRoutingNumberConfirm'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Confirm Routing / Transit Number']"
+				itempath=".//input[#'Confirm Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberConfirm"
+				id="3c0b418b9dc8447d99b6327f493e600c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="116"
+				itemindex="29"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.648"
+			timeRelativeToTestModuleStartTime="00:08.648"
+			timeWallClock="08:58:40"
+			time="00:08.648"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ClickDepositRule' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'depositRule']/div/div/div[1]"
+				itempath=".//div[#'depositRule']/div/div/div[1]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ClickDepositRule"
+				id="0a0b9961bbe940b7a659f77dc8f51450"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="120"
+				itemindex="30"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.514"
+			timeRelativeToTestModuleStartTime="00:09.514"
+			timeWallClock="08:58:41"
+			time="00:09.514"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EditDepositeRuleType' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext='Dollar Amount']"
+				itempath=".//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext=$ChangeRuleType]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EditDepositeRuleType"
+				id="924d5bf6c3544a92a50468be07b1796a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="124"
+				itemindex="31"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

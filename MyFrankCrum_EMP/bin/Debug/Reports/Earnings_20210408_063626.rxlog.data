@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="8.49s"
+		durationms="8490"
+		type="root"
+		rid="103925175a13fba4"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/8/2021 6:36:30 AM"
+		timestampiso="2021-04-08T10:36:30"
+		endtime="4/8/2021 6:36:39 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Earnings">
+		<detail>
+			Earnings
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.369"
+			timeRelativeToTestModuleStartTime="00:04.369"
+			timeWallClock="06:36:35"
+			time="00:04.369"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>GetEarningStopDate, EarningCode
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.395"
+			timeRelativeToTestModuleStartTime="00:04.395"
+			timeWallClock="06:36:35"
+			time="00:04.395"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect7' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'earningCode']/div[@id='earningCode']/div/div[2]/div"
+				itempath=".//div[#'earningCode']/div[@id='earningCode']/div/div[2]/div"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect7"
+				id="b44e85d539144d99a5b61b07ffd76dd1"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Earnings.cs"
+				codeline="106"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.635"
+			timeRelativeToTestModuleStartTime="00:07.635"
+			timeWallClock="06:36:38"
+			time="00:07.635"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EarningCodeSelection' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'earningCode']/div[@id='earningCode']/div/?/?/div/div[@innertext='BEREAVEMENT-BEVMT']"
+				itempath=".//div[#'earningCode']/div[@id='earningCode']/div/?/?/div/div[@innertext=$EarningCode]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EarningCodeSelection"
+				id="e131a11129e94b25b6167ab9af5bb314"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Earnings.cs"
+				codeline="110"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

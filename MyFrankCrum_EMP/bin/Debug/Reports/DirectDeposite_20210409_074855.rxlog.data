@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.82s"
+		durationms="7821"
+		type="root"
+		rid="232f090d5c470f9c"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 7:48:59 AM"
+		timestampiso="2021-04-09T11:48:59"
+		endtime="4/9/2021 7:49:07 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.461"
+			timeRelativeToTestModuleStartTime="00:04.461"
+			timeWallClock="07:49:04"
+			time="00:04.461"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType, DepositRuleType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.495"
+			timeRelativeToTestModuleStartTime="00:04.495"
+			timeWallClock="07:49:04"
+			time="00:04.495"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositePercent' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Percent Amount']"
+				itempath=".//input[#'Percent Amount']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositePercent"
+				id="2961702f4efc48d8b8209169fb41cc2b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="102"
+				itemindex="18"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.382"
+			timeRelativeToTestModuleStartTime="00:07.382"
+			timeWallClock="07:49:07"
+			time="00:07.382"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '12' with focus on 'ApplicationUnderTest.DepositePercent'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Percent Amount']"
+				itempath=".//input[#'Percent Amount']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositePercent"
+				id="2961702f4efc48d8b8209169fb41cc2b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="106"
+				itemindex="19"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

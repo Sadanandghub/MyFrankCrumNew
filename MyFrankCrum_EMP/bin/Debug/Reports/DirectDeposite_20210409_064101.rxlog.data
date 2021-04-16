@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="9.22s"
+		durationms="9223"
+		type="root"
+		rid="10ff2c11247c8d2c"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 6:41:05 AM"
+		timestampiso="2021-04-09T10:41:05"
+		endtime="4/9/2021 6:41:14 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.799"
+			timeRelativeToTestModuleStartTime="00:04.799"
+			timeWallClock="06:41:10"
+			time="00:04.799"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.826"
+			timeRelativeToTestModuleStartTime="00:04.826"
+			timeWallClock="06:41:10"
+			time="00:04.826"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect9' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'Account Type']/div/div[2]/div"
+				itempath=".//div[#'Account Type']/div/div[2]/div"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect9"
+				id="c06f9b4f3c544505830557752ae2309a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="92"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.299"
+			timeRelativeToTestModuleStartTime="00:08.299"
+			timeWallClock="06:41:13"
+			time="00:08.299"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Savings' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'accountType']/div/div/?/?/div[@innertext='Savings']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'accountType']/div/div/?/?/div[@innertext='Savings']"
+				fullname="MyFrankCrum_EMPRepository.Savings"
+				id="ab9df253828f470f86bf12dd53025247"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="100"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

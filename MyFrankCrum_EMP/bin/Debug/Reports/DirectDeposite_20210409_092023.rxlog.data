@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.02s"
+		durationms="7018"
+		type="root"
+		rid="1d9256471aed284f"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 9:20:27 AM"
+		timestampiso="2021-04-09T13:20:27"
+		endtime="4/9/2021 9:20:34 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.272"
+			timeRelativeToTestModuleStartTime="00:04.272"
+			timeWallClock="09:20:31"
+			time="00:04.272"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType, DepositRuleType, ChangeRuleType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.298"
+			timeRelativeToTestModuleStartTime="00:04.298"
+			timeWallClock="09:20:31"
+			time="00:04.298"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DeactivatePopupClose' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//button[#'modal-close-button']/i"
+				itempath=".//button[#'modal-close-button']/i"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeactivatePopupClose"
+				id="df7e7d46c2d740438751fde32c50152b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="112"
+				itemindex="40"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

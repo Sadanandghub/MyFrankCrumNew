@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="12.4s"
+		durationms="12399"
+		type="root"
+		rid="77037f28315696b"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/13/2021 9:39:05 AM"
+		timestampiso="2021-04-13T13:39:05"
+		endtime="4/13/2021 9:39:18 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="PTO_SETUP">
+		<detail>
+			PTO_SETUP
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.311"
+			timeRelativeToTestModuleStartTime="00:04.311"
+			timeWallClock="09:39:09"
+			time="00:04.311"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>GetPTOAllowedValue, GetPTOTakenValue, AccruatTypeValue, AccuratOptionValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.342"
+			timeRelativeToTestModuleStartTime="00:04.342"
+			timeWallClock="09:39:09"
+			time="00:04.342"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.PTOSetup' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='PTO Setup']"
+				itempath="?/?/li[@innertext='PTO Setup']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ReactTabsTabList.PTOSetup"
+				id="1a541b7f93624f539c7e7c3f3effd54b"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="128"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.342"
+			timeRelativeToTestModuleStartTime="00:07.342"
+			timeWallClock="09:39:12"
+			time="00:07.342"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 5s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="132"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.347"
+			timeRelativeToTestModuleStartTime="00:12.347"
+			timeWallClock="09:39:17"
+			time="00:12.347"
+			level="Info"
+			category="Section">
+			<message>
+				Press the Add PTO Plan button to the right if the Current PTO Plans label
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="136"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.347"
+			timeRelativeToTestModuleStartTime="00:12.347"
+			timeWallClock="09:39:17"
+			time="00:12.347"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.AddPTOPlan' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[10]//button[@innertext='Add PTO Plan']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[4]/div[10]//button[@innertext='Add PTO Plan']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.AddPTOPlan"
+				id="cdccee3c6b164359914cdf53ebef8bdc"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_SETUP.cs"
+				codeline="138"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.395"
+			timeRelativeToTestModuleStartTime="00:12.395"
+			timeWallClock="09:39:18"
+			time="00:12.395"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

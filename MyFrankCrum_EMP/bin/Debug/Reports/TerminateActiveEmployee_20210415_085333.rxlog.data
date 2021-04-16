@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="4.32s"
+		durationms="4322"
+		type="root"
+		rid="ebb4f49b5887295"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/15/2021 8:53:37 AM"
+		timestampiso="2021-04-15T12:53:37"
+		endtime="4/15/2021 8:53:42 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.306"
+			timeRelativeToTestModuleStartTime="00:04.306"
+			timeWallClock="08:53:41"
+			time="00:04.306"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.350"
+			timeRelativeToTestModuleStartTime="00:04.350"
+			timeWallClock="08:53:41"
+			time="00:04.350"
+			level="Failure"
+			category="Module"
+			errimg="images_Terminat_2273615\Terminat_2273615_a0d2843b_trace.jpg"
+			errthumb="images_Terminat_2273615\Terminat_2273615_a0d2843b_trace_thumb.jpg">
+			<message>
+				Thread was being aborted.
+			</message>
+			<metainfo
+				stacktrace="   at System.Linq.Set`1.InternalGetHashCode(TElement value)&#13;&#10;   at System.Linq.Set`1.Find(TElement value, Boolean add)&#13;&#10;   at System.Linq.Enumerable.&lt;IntersectIterator>d__70`1.MoveNext()&#13;&#10;   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)&#13;&#10;   at Ranorex.Core.Utils.DisplaySettings.AreScalingsDifferent()&#13;&#10;   at Ranorex.Core.ElementEngine.AddTechnologyLimitations(Element element)&#13;&#10;   at Ranorex.Core.ElementEngine.GetRootElement(Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.ElementEngine.get_RootElement()&#13;&#10;   at Ranorex.Core.Testing.TestModuleRunner.RunStandalone(ITestModule module, String reportFilename, Boolean generateReport, String standaloneModuleName, CaseInsensitiveString guid)"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>

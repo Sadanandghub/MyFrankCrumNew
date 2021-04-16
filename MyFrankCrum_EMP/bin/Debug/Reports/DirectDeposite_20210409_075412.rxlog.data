@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="34.36s"
+		durationms="34364"
+		type="root"
+		rid="75a8d6a7ec68628"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/9/2021 7:54:16 AM"
+		timestampiso="2021-04-09T11:54:16"
+		endtime="4/9/2021 7:54:50 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DirectDeposite">
+		<detail>
+			DirectDeposite
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.ChooseFile'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.012"
+			timeRelativeToTestModuleStartTime="00:04.012"
+			timeWallClock="07:54:20"
+			time="00:04.012"
+			level="Warn"
+			category="Data"
+			errimg="images_DirectDe_486f8d8c\DirectDe_486f8d8c_b4eb0b77_trace.jpg"
+			errthumb="images_DirectDe_486f8d8c\DirectDe_486f8d8c_b4eb0b77_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>AccountType, DepositRuleType
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.036"
+			timeRelativeToTestModuleStartTime="00:04.036"
+			timeWallClock="07:54:20"
+			time="00:04.036"
+			level="Info"
+			category="Mouse"
+			errimg="images_DirectDe_486f8d8c\DirectDe_486f8d8c_b4eb0b77_trace.jpg"
+			errthumb="images_DirectDe_486f8d8c\DirectDe_486f8d8c_b4eb0b77_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ChooseFile' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div[9]/div/div[2]/div/div[2]/button[@innertext='Choose File']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div[9]/div/div[2]/div/div[2]/button[@innertext='Choose File']"
+				fullname="MyFrankCrum_EMPRepository.ChooseFile"
+				id="a3afeb900422466082fa5e2dacdeba5d"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="102"
+				itemindex="20"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:34.265"
+			timeRelativeToTestModuleStartTime="00:34.265"
+			timeWallClock="07:54:50"
+			time="00:34.265"
+			level="Error"
+			category="Module"
+			errimg="images_DirectDe_486f8d8c\DirectDe_486f8d8c_35f3fced_trace.jpg"
+			errthumb="images_DirectDe_486f8d8c\DirectDe_486f8d8c_35f3fced_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.ChooseFile'.<br/>No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div[9]/div/div[2]/div/div[2]/button[@innertext='Choose File']' at step 'form[@action='https://devmfc.frankcrum.com/NewHire']' after 159 attempts within 30s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepository.get_ChooseFile() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 1098&#13;&#10;   at MyFrankCrum_EMP.DirectDeposite.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs:line 103&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DirectDeposite.cs"
+				codeline="103"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div[9]/div/div[2]/div/div[2]/button[@innertext='Choose File']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div[9]/div/div[2]/div/div[2]/button[@innertext='Choose File']"
+				fullname="MyFrankCrum_EMPRepository.ChooseFile"
+				id="a3afeb900422466082fa5e2dacdeba5d"
+				timeout="30000"
+				failedStep="form[@action='https://devmfc.frankcrum.com/NewHire']"
+				bestPathPrefix="/dom[@domain='devmfc.frankcrum.com']/descendant-or-self::div[#'modal-wrapper']/div/div/div[4]/?/?"
+				loglvl="Error"
+				itemindex="20">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="11.68s"
+		durationms="11677"
+		type="root"
+		rid="1f66909a188687b0"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/5/2021 7:09:17 AM"
+		timestampiso="2021-04-05T11:09:17"
+		endtime="4/5/2021 7:09:28 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EEOI9section">
+		<detail>
+			EEOI9section
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.536"
+			timeRelativeToTestModuleStartTime="00:04.536"
+			timeWallClock="07:09:21"
+			time="00:04.536"
+			level="Info"
+			category="Section">
+			<message>
+				Validaton -EEO/I-9 section
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="83"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.558"
+			timeRelativeToTestModuleStartTime="00:04.558"
+			timeWallClock="07:09:21"
+			time="00:04.558"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText='EEO / I-9   ') on item 'EEOI9'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				fullname="MyFrankCrum_EMPRepository.EEOI9"
+				id="14dcdfa146c9474db878470d1348c760"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.873"
+			timeRelativeToTestModuleStartTime="00:05.873"
+			timeWallClock="07:09:23"
+			time="00:05.873"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.EEOI9' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[3]//h4[@innertext='EEO / I-9   ']"
+				fullname="MyFrankCrum_EMPRepository.EEOI9"
+				id="14dcdfa146c9474db878470d1348c760"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="86"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.976"
+			timeRelativeToTestModuleStartTime="00:05.976"
+			timeWallClock="07:09:23"
+			time="00:05.976"
+			level="Info"
+			category="Section">
+			<message>
+				Press Edit Button
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="90"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.976"
+			timeRelativeToTestModuleStartTime="00:05.976"
+			timeWallClock="07:09:23"
+			time="00:05.976"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'EDIT_EEOI9Section' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]//h4[@innertext='EEO / I-9   ']/button[@innertext='EDIT']"
+				itempath="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[2]//h4[@innertext='EEO / I-9   ']/button[@innertext='EDIT']"
+				fullname="MyFrankCrum_EMPRepository.EDIT_EEOI9Section"
+				id="d6cf07fdb70a47f0a894b7c97aee77c8"
+				timeout="30000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="92"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.668"
+			timeRelativeToTestModuleStartTime="00:06.668"
+			timeWallClock="07:09:23"
+			time="00:06.668"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 5s.
+			</message>
+			<metainfo
+				itemindex="4"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EEOI9section.cs"
+				codeline="96"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="2.28s"
+		durationms="2276"
+		type="root"
+		rid="25f5ad82dde544c"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/2/2021 9:06:40 AM"
+		timestampiso="2021-04-02T13:06:40"
+		endtime="4/2/2021 9:06:42 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.265"
+			timeRelativeToTestModuleStartTime="00:02.265"
+			timeWallClock="09:06:42"
+			time="00:02.265"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.418"
+			timeRelativeToTestModuleStartTime="00:02.418"
+			timeWallClock="09:06:42"
+			time="00:02.418"
+			level="Failure"
+			category="Module"
+			errimg="images_EditCont_b34f844e\EditCont_b34f844e_a3f71139_trace.jpg"
+			errthumb="images_EditCont_b34f844e\EditCont_b34f844e_a3f71139_trace_thumb.jpg">
+			<message>
+				Failed to load default plugins. Please reinstall Ranorex. Failed to load plugins from assembly 'Ranorex.Plugin.Delphi, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b798506b574ebc9a'. Thread was being aborted.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.PluginManager.LoadDefaultPlugins(Boolean nonBlocking)
+   at Ranorex.Core.PluginManager.LoadDefaultPluginsSuppressible(Boolean nonBlocking)
+   at Ranorex.Core.ElementEngine.get_Instance()
+   at Ranorex.Core.Testing.TestModuleRunner.RunStandalone(ITestModule module, String reportFilename, Boolean generateReport, String standaloneModuleName, CaseInsensitiveString guid)"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>

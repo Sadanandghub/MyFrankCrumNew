@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="9.12s"
+		durationms="9116"
+		type="root"
+		rid="65a3e88a087b50c"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/12/2021 6:00:39 AM"
+		timestampiso="2021-04-12T10:00:39"
+		endtime="4/12/2021 6:00:49 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Taxes">
+		<detail>
+			Taxes
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.587"
+			timeRelativeToTestModuleStartTime="00:04.587"
+			timeWallClock="06:00:44"
+			time="00:04.587"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>Location
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.617"
+			timeRelativeToTestModuleStartTime="00:04.617"
+			timeWallClock="06:00:44"
+			time="00:04.617"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.AddLocationDropClick' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'Location']/div/div[2]/div"
+				itempath=".//div[#'Location']/div/div[2]/div"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.AddLocationDropClick"
+				id="eac0497eb4c74af5b763abafa689225b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Taxes.cs"
+				codeline="93"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.097"
+			timeRelativeToTestModuleStartTime="00:08.097"
+			timeWallClock="06:00:48"
+			time="00:08.097"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.LocationName' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'Location']/div/?/?/div/div[@innertext='006648 - A0F21-THS NATIONAL LLCVA']"
+				itempath=".//div[#'Location']/div/?/?/div/div[@innertext=$Location]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.LocationName"
+				id="af7e3b02800b46fb836c082bbde12f88"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Taxes.cs"
+				codeline="97"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>
