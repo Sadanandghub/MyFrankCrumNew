@@ -33,5 +33,40 @@ namespace MyFrankCrum_EMP
             // Your recording specific initialization code goes here.
         }
 
+        public void Validate_SomeFieldSetTag1(RepoItemInfo fieldsettagInfo)
+        {
+        	if(fieldsettagInfo.Exists()){
+        	Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Visible='True') on item 'fieldsettagInfo'.", fieldsettagInfo);
+            Validate.AttributeEqual(fieldsettagInfo, "Visible", "True", null, false);
+           }
+        }
+        
+        public void Validate_SomeFieldSetTag(RepoItemInfo fieldsettagInfo)
+        {
+        	if(fieldsettagInfo.Exists()){
+            Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Enabled='True') on item 'fieldsettagInfo'.", fieldsettagInfo);
+            Validate.AttributeEqual(fieldsettagInfo, "Enabled", "True", null, false);
+        	}
+        }
+
+        public void NewHireMethod(RepoItemInfo inputtagInfo, RepoItemInfo iframetagInfo)
+        {
+        	if(inputtagInfo.Exists()){
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'iframetagInfo' at Center.", iframetagInfo);
+            iframetagInfo.FindAdapter<IFrameTag>().Click();
+        	}
+        }
+
+        public void NoHireMethod(RepoItemInfo inputtagInfo, RepoItemInfo spantagInfo)
+        {
+        	if(inputtagInfo.Exists()){
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'spantagInfo' at Center.", spantagInfo);
+            spantagInfo.FindAdapter<SpanTag>().Click();
+        	}
+        }
     }
 }
