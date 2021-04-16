@@ -9651,7 +9651,6 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _addlicenseInfo;
             RepoItemInfo _branchclosingInfo;
             RepoItemInfo _choosefileInfo;
-            RepoItemInfo _editInfo;
             RepoItemInfo _backtosummaryInfo;
             RepoItemInfo _summaryInfo;
             RepoItemInfo _columnInfo;
@@ -9687,7 +9686,6 @@ namespace MyFrankCrum_EMP
                 _addlicenseInfo = new RepoItemInfo(this, "AddLicense", "div/div[4]/div[12]//button[@innertext='Add License']", 30000, null, "2372b3ae-1a4b-42b4-8f57-fb89d447dece");
                 _branchclosingInfo = new RepoItemInfo(this, "BranchClosing", ".//div[@innertext='Branch Closing']", 30000, null, "2b9e3c56-0a97-4ee3-acb4-d72bc1b1c6d2");
                 _choosefileInfo = new RepoItemInfo(this, "ChooseFile", "div/div[8]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div[1]/div/div[2]/div/div[2]/button[@innertext='Choose File']", 30000, null, "7c82dda8-7013-4512-ba8c-d563316eb386");
-                _editInfo = new RepoItemInfo(this, "Edit", "div/div[9]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/section//button[@innertext='Edit']", 30000, null, "660c4ca7-3ed4-476e-9998-1e4050aceb00");
                 _backtosummaryInfo = new RepoItemInfo(this, "BackToSummary", "div[3]/?/?/a[@href>'https://devmfc.frankcrum.']/button[@innertext='Back To Summary']", 30000, null, "fa489209-b546-43f9-8262-f7b7f43b4116");
                 _summaryInfo = new RepoItemInfo(this, "Summary", "div[9]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/h4[@innertext='Summary']", 30000, null, "31a32214-4ed5-4517-b245-82b0145b608a");
                 _columnInfo = new RepoItemInfo(this, "Column", "div[9]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/section/div[4]/div[1]", 30000, null, "8248600a-7c8f-4315-ada5-0862b9ad5d96");
@@ -10268,30 +10266,6 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _choosefileInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Edit item.
-            /// </summary>
-            [RepositoryItem("660c4ca7-3ed4-476e-9998-1e4050aceb00")]
-            public virtual Ranorex.ButtonTag Edit
-            {
-                get
-                {
-                    return _editInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Edit item info.
-            /// </summary>
-            [RepositoryItemInfo("660c4ca7-3ed4-476e-9998-1e4050aceb00")]
-            public virtual RepoItemInfo EditInfo
-            {
-                get
-                {
-                    return _editInfo;
                 }
             }
 
@@ -12912,8 +12886,6 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _systemitemnamedisplayInfo;
             RepoItemInfo _buttonopenInfo;
             RepoItemInfo _systemitemnamedisplay1Info;
-            RepoItemInfo _systemitemnamedisplayInfo;
-            RepoItemInfo _buttonopenInfo;
 
             /// <summary>
             /// Creates a new Open  folder.
@@ -12926,8 +12898,6 @@ namespace MyFrankCrum_EMP
                 _systemitemnamedisplayInfo = new RepoItemInfo(this, "SystemItemNameDisplay", "element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='9']/text[@automationid='System.ItemNameDisplay']", 30000, null, "630d6308-674d-4dbb-b982-1b78de89f52a");
                 _buttonopenInfo = new RepoItemInfo(this, "ButtonOpen", "button[@text='&Open']", 30000, null, "097ed2fc-0621-4e3e-b6f5-3527177afddc");
                 _systemitemnamedisplay1Info = new RepoItemInfo(this, "SystemItemNameDisplay1", "element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='7']/text[@automationid='System.ItemNameDisplay']", 30000, null, "40318f53-a384-450b-925a-654fbffeadef");
-                _systemitemnamedisplayInfo = new RepoItemInfo(this, "SystemItemNameDisplay", "element[@class='DUIViewWndClassName']//container[@automationid='0']/listitem[@automationid='0']/text[@automationid='System.ItemNameDisplay']", 30000, null, "04b787df-c5e4-4375-8503-339c0b365e6d");
-                _buttonopenInfo = new RepoItemInfo(this, "ButtonOpen", "button[@text='&Open']", 30000, null, "8202f86e-cd83-48bb-acd1-98c3bb911786");
             }
 
             /// <summary>
@@ -13071,54 +13041,6 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _systemitemnamedisplay1Info;
-                }
-            }
-
-            /// <summary>
-            /// The SystemItemNameDisplay item.
-            /// </summary>
-            [RepositoryItem("04b787df-c5e4-4375-8503-339c0b365e6d")]
-            public virtual Ranorex.Text SystemItemNameDisplay
-            {
-                get
-                {
-                    return _systemitemnamedisplayInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SystemItemNameDisplay item info.
-            /// </summary>
-            [RepositoryItemInfo("04b787df-c5e4-4375-8503-339c0b365e6d")]
-            public virtual RepoItemInfo SystemItemNameDisplayInfo
-            {
-                get
-                {
-                    return _systemitemnamedisplayInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOpen item.
-            /// </summary>
-            [RepositoryItem("8202f86e-cd83-48bb-acd1-98c3bb911786")]
-            public virtual Ranorex.Button ButtonOpen
-            {
-                get
-                {
-                    return _buttonopenInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOpen item info.
-            /// </summary>
-            [RepositoryItemInfo("8202f86e-cd83-48bb-acd1-98c3bb911786")]
-            public virtual RepoItemInfo ButtonOpenInfo
-            {
-                get
-                {
-                    return _buttonopenInfo;
                 }
             }
         }

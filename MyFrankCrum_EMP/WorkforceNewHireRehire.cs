@@ -908,96 +908,92 @@ namespace MyFrankCrum_EMP
             // Personal Information
             Report.Log(ReportLevel.Info, "Section", "Personal Information", new RecordItemIndex(206));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Edit' at Center.", repo.ApplicationUnderTest.SomeDivTag.EditInfo, new RecordItemIndex(207));
-            repo.ApplicationUnderTest.SomeDivTag.Edit.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddressLine11' at Center.", repo.ApplicationUnderTest.AddressLine11Info, new RecordItemIndex(208));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddressLine11' at Center.", repo.ApplicationUnderTest.AddressLine11Info, new RecordItemIndex(207));
             repo.ApplicationUnderTest.AddressLine11.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Address1' with focus on 'ApplicationUnderTest.AddressLine11'.", repo.ApplicationUnderTest.AddressLine11Info, new RecordItemIndex(209));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Address1' with focus on 'ApplicationUnderTest.AddressLine11'.", repo.ApplicationUnderTest.AddressLine11Info, new RecordItemIndex(208));
             repo.ApplicationUnderTest.AddressLine11.PressKeys("Address1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.City2' at Center.", repo.ApplicationUnderTest.City2Info, new RecordItemIndex(210));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.City2' at Center.", repo.ApplicationUnderTest.City2Info, new RecordItemIndex(209));
             repo.ApplicationUnderTest.City2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Tampa' with focus on 'ApplicationUnderTest.City2'.", repo.ApplicationUnderTest.City2Info, new RecordItemIndex(211));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Tampa' with focus on 'ApplicationUnderTest.City2'.", repo.ApplicationUnderTest.City2Info, new RecordItemIndex(210));
             repo.ApplicationUnderTest.City2.PressKeys("Tampa");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.State2' at Center.", repo.ApplicationUnderTest.State2Info, new RecordItemIndex(212));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.State2' at Center.", repo.ApplicationUnderTest.State2Info, new RecordItemIndex(211));
             repo.ApplicationUnderTest.State2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Florida{Return}' with focus on 'ApplicationUnderTest.State2'.", repo.ApplicationUnderTest.State2Info, new RecordItemIndex(213));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Florida{Return}' with focus on 'ApplicationUnderTest.State2'.", repo.ApplicationUnderTest.State2Info, new RecordItemIndex(212));
             repo.ApplicationUnderTest.State2.EnsureVisible();
             Keyboard.Press("Florida{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ZipCode2' at Center.", repo.ApplicationUnderTest.ZipCode2Info, new RecordItemIndex(214));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ZipCode2' at Center.", repo.ApplicationUnderTest.ZipCode2Info, new RecordItemIndex(213));
             repo.ApplicationUnderTest.ZipCode2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '33604' with focus on 'ApplicationUnderTest.ZipCode2'.", repo.ApplicationUnderTest.ZipCode2Info, new RecordItemIndex(215));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '33604' with focus on 'ApplicationUnderTest.ZipCode2'.", repo.ApplicationUnderTest.ZipCode2Info, new RecordItemIndex(214));
             repo.ApplicationUnderTest.ZipCode2.PressKeys("33604");
             Delay.Milliseconds(0);
             
             // End
-            Report.Log(ReportLevel.Info, "Section", "End", new RecordItemIndex(216));
+            Report.Log(ReportLevel.Info, "Section", "End", new RecordItemIndex(215));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.BackToSummary' at Center.", repo.ApplicationUnderTest.SomeDivTag.BackToSummaryInfo, new RecordItemIndex(217));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.BackToSummary' at Center.", repo.ApplicationUnderTest.SomeDivTag.BackToSummaryInfo, new RecordItemIndex(216));
             repo.ApplicationUnderTest.SomeDivTag.BackToSummary.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.SomeDivTag.Summary'.", repo.ApplicationUnderTest.SomeDivTag.SummaryInfo, new RecordItemIndex(218));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.SomeDivTag.Summary'.", repo.ApplicationUnderTest.SomeDivTag.SummaryInfo, new RecordItemIndex(217));
             Validate.Exists(repo.ApplicationUnderTest.SomeDivTag.SummaryInfo);
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Changes to be seen", repo.ApplicationUnderTest.SomeDivTag.Column, false, new RecordItemIndex(219));
+            Report.Screenshot(ReportLevel.Info, "User", "Changes to be seen", repo.ApplicationUnderTest.SomeDivTag.Column, false, new RecordItemIndex(218));
             
             // Job/Payroll panel
-            Report.Log(ReportLevel.Info, "Section", "Job/Payroll panel", new RecordItemIndex(220));
+            Report.Log(ReportLevel.Info, "Section", "Job/Payroll panel", new RecordItemIndex(219));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Edit1' at Center.", repo.ApplicationUnderTest.SomeDivTag.Edit1Info, new RecordItemIndex(221));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Edit1' at Center.", repo.ApplicationUnderTest.SomeDivTag.Edit1Info, new RecordItemIndex(220));
             repo.ApplicationUnderTest.SomeDivTag.Edit1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PayRatePerHour' at Center.", repo.ApplicationUnderTest.PayRatePerHourInfo, new RecordItemIndex(222));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PayRatePerHour' at Center.", repo.ApplicationUnderTest.PayRatePerHourInfo, new RecordItemIndex(221));
             repo.ApplicationUnderTest.PayRatePerHour.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '130' with focus on 'ApplicationUnderTest.PayRatePerHour'.", repo.ApplicationUnderTest.PayRatePerHourInfo, new RecordItemIndex(223));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '130' with focus on 'ApplicationUnderTest.PayRatePerHour'.", repo.ApplicationUnderTest.PayRatePerHourInfo, new RecordItemIndex(222));
             repo.ApplicationUnderTest.PayRatePerHour.PressKeys("130");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AnnualSalary' at Center.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(224));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AnnualSalary' at Center.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(223));
             repo.ApplicationUnderTest.AnnualSalary.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'ApplicationUnderTest.AnnualSalary' and assigning its value to variable 'AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(225));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'ApplicationUnderTest.AnnualSalary' and assigning its value to variable 'AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(224));
             AnnualSalary = repo.ApplicationUnderTest.AnnualSalary.Element.GetAttributeValueText("Value");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$AnnualSalary) on item 'ApplicationUnderTest.AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(226));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$AnnualSalary) on item 'ApplicationUnderTest.AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(225));
             Validate.AttributeContains(repo.ApplicationUnderTest.AnnualSalaryInfo, "Value", AnnualSalary);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.BackToSummary1' at Center.", repo.ApplicationUnderTest.SomeDivTag.BackToSummary1Info, new RecordItemIndex(227));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.BackToSummary1' at Center.", repo.ApplicationUnderTest.SomeDivTag.BackToSummary1Info, new RecordItemIndex(226));
             repo.ApplicationUnderTest.SomeDivTag.BackToSummary1.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest' at Center.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(227));
+            repo.ApplicationUnderTest.Self.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest' at Center.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(228));
             repo.ApplicationUnderTest.Self.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest' at Center.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(229));
-            repo.ApplicationUnderTest.Self.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "PAGE CAPTURED", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(230));
+            Report.Screenshot(ReportLevel.Info, "User", "PAGE CAPTURED", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(229));
             
         }
 
