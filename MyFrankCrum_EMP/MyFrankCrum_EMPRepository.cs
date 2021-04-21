@@ -269,7 +269,7 @@ namespace MyFrankCrum_EMP
             set { _Sortingvalue = value; }
         }
 
-        string _EarningCode = "BEREAVEMENT-BEVMT";
+        string _EarningCode = "SALARY-SALF";
 
         /// <summary>
         /// Gets or sets the value of variable EarningCode.
@@ -2184,6 +2184,8 @@ namespace MyFrankCrum_EMP
             MyFrankCrum_EMPRepositoryFolders.InputContainerInputTextContainerFolder _inputcontainerinputtextcontainer;
             MyFrankCrum_EMPRepositoryFolders.FormSectionFolder _formsection;
             RepoItemInfo _hiuserInfo;
+            RepoItemInfo _personalbacktosummaryInfo;
+            RepoItemInfo _employeementchoosefileInfo;
             RepoItemInfo _termreasonvalueInfo;
             RepoItemInfo _managelicensecodesInfo;
             RepoItemInfo _licensesaddlicenseInfo;
@@ -2218,6 +2220,7 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _savedeductionbtnInfo;
             RepoItemInfo _addlocationdropclickInfo;
             RepoItemInfo _taxeseditInfo;
+            RepoItemInfo _personaleditInfo;
             RepoItemInfo _isprimaryInfo;
             RepoItemInfo _depositebanknameInfo;
             RepoItemInfo _addnewlocationInfo;
@@ -2459,9 +2462,9 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _csskynsejindicatorcontainermfcselect12Info;
             RepoItemInfo _licensedescriptionvalueInfo;
             RepoItemInfo _termreasonclickInfo;
-            RepoItemInfo _choosefile1Info;
             RepoItemInfo _choosefile3Info;
             RepoItemInfo _employeeformnextInfo;
+            RepoItemInfo _summaryvalidInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -2476,6 +2479,8 @@ namespace MyFrankCrum_EMP
                 _inputcontainerinputtextcontainer = new MyFrankCrum_EMPRepositoryFolders.InputContainerInputTextContainerFolder(this);
                 _formsection = new MyFrankCrum_EMPRepositoryFolders.FormSectionFolder(this);
                 _hiuserInfo = new RepoItemInfo(this, "HiUser", ".//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, User!']", 30000, null, "a3e32600-6f6d-4dc7-b218-60c088d58d1d");
+                _personalbacktosummaryInfo = new RepoItemInfo(this, "PersonalBackToSummary", ".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[3]/?/?/a/button[@innertext='Back To Summary']", 30000, null, "5cb6bb02-bf0d-4346-af36-76776beccf8a");
+                _employeementchoosefileInfo = new RepoItemInfo(this, "EmployeementChooseFile", ".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[8]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div[1]/div/div[2]/div/div[2]/button[@innertext='Choose File']", 30000, null, "02880e85-28fd-4b51-9dc4-440c721570f1");
                 _termreasonvalueInfo = new RepoItemInfo(this, "TermReasonValue", ".//div[#'termReason']/div[@id='termReason']/div/?/?/div/div[@innertext=$TermReasonValue]", 30000, null, "af5856ad-919c-48ca-86ae-748d389efdd9");
                 _managelicensecodesInfo = new RepoItemInfo(this, "ManageLicenseCodes", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[12]//button[@innertext='Manage License Codes']", 30000, null, "02e7c305-8487-4b56-866b-30e9eeab16af");
                 _licensesaddlicenseInfo = new RepoItemInfo(this, "LicensesAddLicense", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[12]//button[@innertext='Add License']", 30000, null, "dba3d7e8-302f-474a-aa7c-de95d63838dc");
@@ -2510,6 +2515,7 @@ namespace MyFrankCrum_EMP
                 _savedeductionbtnInfo = new RepoItemInfo(this, "SaveDeductionbtn", ".//div[#'modal-wrapper']/div[2]/div/div[4]/form//button[@innertext='Save Deduction']", 30000, null, "2fe0c5b6-1776-47c8-b31b-77a4928bdeab");
                 _addlocationdropclickInfo = new RepoItemInfo(this, "AddLocationDropClick", ".//div[#'Location']/div/div[2]/div", 30000, null, "eac0497e-b4c7-4af5-b763-abafa689225b");
                 _taxeseditInfo = new RepoItemInfo(this, "TaxesEdit", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[7]/div/div[3]//button[@innertext='Edit']", 30000, null, "0a4c4388-773c-4d8e-ac6d-bcc58c872c93");
+                _personaleditInfo = new RepoItemInfo(this, "PersonalEdit", ".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[9]/?/?/form/section//button[@innertext='Edit']", 30000, null, "18c74b9f-e736-4c8c-9baf-bbecc052df12");
                 _isprimaryInfo = new RepoItemInfo(this, "IsPrimary", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[4]/input[@name='isPrimary']", 30000, null, "98a637d1-a217-4eaf-b0d3-1328bf910ded");
                 _depositebanknameInfo = new RepoItemInfo(this, "DepositeBankName", ".//input[#'Bank Name']", 30000, null, "0a454602-0c56-40a4-abfb-54a4bf09089d");
                 _addnewlocationInfo = new RepoItemInfo(this, "AddNewLocation", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[7]//button[@innertext='Add New Location']", 30000, null, "9af5bbdf-1796-4de1-8572-a57c6139385d");
@@ -2751,9 +2757,9 @@ namespace MyFrankCrum_EMP
                 _csskynsejindicatorcontainermfcselect12Info = new RepoItemInfo(this, "CssKynsejIndicatorContainerMfcSelect12", ".//div[#'Description']/div/div[2]/div", 30000, null, "8d833ce6-6997-43c7-ae29-3b9108d0bbca");
                 _licensedescriptionvalueInfo = new RepoItemInfo(this, "LicenseDescriptionValue", ".//div[#'Description']/div/?/?/div/div[@innertext=$LicenseDescriptionValue]", 30000, null, "c1e22915-74b9-4b08-837e-b25a0b813806");
                 _termreasonclickInfo = new RepoItemInfo(this, "TermReasonClick", ".//div[#'termReason']/div/div/div[1]", 30000, null, "0d47a744-7dd5-4b69-b300-4c129d865662");
-                _choosefile1Info = new RepoItemInfo(this, "ChooseFile1", ".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[8]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div[1]/div/div[2]/div/div[2]/button[@innertext='Choose File']", 30000, null, "96c2f031-5efd-47ab-bb44-6342804459d4");
                 _choosefile3Info = new RepoItemInfo(this, "ChooseFile3", ".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[8]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div[3]/div/div[2]/div/div[2]/button[@innertext='Choose File']", 30000, null, "ad92a8c1-940f-488f-8c8f-05189acb4984");
                 _employeeformnextInfo = new RepoItemInfo(this, "EmployeeFormNext", ".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[8]/div/div/?/?/button[@innertext='Next']", 30000, null, "6547d240-61cc-400f-964c-0e02d5067d85");
+                _summaryvalidInfo = new RepoItemInfo(this, "Summaryvalid", ".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[9]/?/?/form/h4[@innertext='Summary']", 30000, null, "846f18a8-10f7-44d6-a0e5-9ea816ba86c2");
             }
 
             /// <summary>
@@ -2892,6 +2898,54 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _hiuserInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PersonalBackToSummary item.
+            /// </summary>
+            [RepositoryItem("5cb6bb02-bf0d-4346-af36-76776beccf8a")]
+            public virtual Ranorex.ButtonTag PersonalBackToSummary
+            {
+                get
+                {
+                    return _personalbacktosummaryInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PersonalBackToSummary item info.
+            /// </summary>
+            [RepositoryItemInfo("5cb6bb02-bf0d-4346-af36-76776beccf8a")]
+            public virtual RepoItemInfo PersonalBackToSummaryInfo
+            {
+                get
+                {
+                    return _personalbacktosummaryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EmployeementChooseFile item.
+            /// </summary>
+            [RepositoryItem("02880e85-28fd-4b51-9dc4-440c721570f1")]
+            public virtual Ranorex.ButtonTag EmployeementChooseFile
+            {
+                get
+                {
+                    return _employeementchoosefileInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmployeementChooseFile item info.
+            /// </summary>
+            [RepositoryItemInfo("02880e85-28fd-4b51-9dc4-440c721570f1")]
+            public virtual RepoItemInfo EmployeementChooseFileInfo
+            {
+                get
+                {
+                    return _employeementchoosefileInfo;
                 }
             }
 
@@ -3708,6 +3762,30 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _taxeseditInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PersonalEdit item.
+            /// </summary>
+            [RepositoryItem("18c74b9f-e736-4c8c-9baf-bbecc052df12")]
+            public virtual Ranorex.ButtonTag PersonalEdit
+            {
+                get
+                {
+                    return _personaleditInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PersonalEdit item info.
+            /// </summary>
+            [RepositoryItemInfo("18c74b9f-e736-4c8c-9baf-bbecc052df12")]
+            public virtual RepoItemInfo PersonalEditInfo
+            {
+                get
+                {
+                    return _personaleditInfo;
                 }
             }
 
@@ -9496,30 +9574,6 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
-            /// The ChooseFile1 item.
-            /// </summary>
-            [RepositoryItem("96c2f031-5efd-47ab-bb44-6342804459d4")]
-            public virtual Ranorex.Button ChooseFile1
-            {
-                get
-                {
-                    return _choosefile1Info.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ChooseFile1 item info.
-            /// </summary>
-            [RepositoryItemInfo("96c2f031-5efd-47ab-bb44-6342804459d4")]
-            public virtual RepoItemInfo ChooseFile1Info
-            {
-                get
-                {
-                    return _choosefile1Info;
-                }
-            }
-
-            /// <summary>
             /// The ChooseFile3 item.
             /// </summary>
             [RepositoryItem("ad92a8c1-940f-488f-8c8f-05189acb4984")]
@@ -9564,6 +9618,30 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _employeeformnextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Summaryvalid item.
+            /// </summary>
+            [RepositoryItem("846f18a8-10f7-44d6-a0e5-9ea816ba86c2")]
+            public virtual Ranorex.H4Tag Summaryvalid
+            {
+                get
+                {
+                    return _summaryvalidInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Summaryvalid item info.
+            /// </summary>
+            [RepositoryItemInfo("846f18a8-10f7-44d6-a0e5-9ea816ba86c2")]
+            public virtual RepoItemInfo SummaryvalidInfo
+            {
+                get
+                {
+                    return _summaryvalidInfo;
                 }
             }
 
@@ -12686,6 +12764,7 @@ namespace MyFrankCrum_EMP
         public partial class MyFrankCrumAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _usernameInfo;
+            RepoItemInfo _password1Info;
             RepoItemInfo _passwordInfo;
             RepoItemInfo _loginbuttonInfo;
             RepoItemInfo _textInfo;
@@ -12699,6 +12778,7 @@ namespace MyFrankCrum_EMP
                     base("MyFrankCrum", "/dom[@domain='devmfc.frankcrum.com']", parentFolder, 30000, null, false, "e02b0ef2-fe8d-4d4c-89ac-ddc5221f14bc", "")
             {
                 _usernameInfo = new RepoItemInfo(this, "Username", ".//input[#'username']", 30000, null, "dae14d42-0356-417b-9909-606bdede9e58");
+                _password1Info = new RepoItemInfo(this, "Password1", ".//input[#'password']", 30000, null, "21b2dcc9-5485-4ba4-8161-48af52cfcede");
                 _passwordInfo = new RepoItemInfo(this, "Password", ".//div[#'app']//form[@action='https://devmfc.frankcrum.com/login']/div[2]/input[@type='password']", 30000, null, "412c74cf-dc5a-4923-abfd-d0df44deb072");
                 _loginbuttonInfo = new RepoItemInfo(this, "LoginButton", ".//button[#'login-button']", 30000, null, "5f2dc3f0-e054-4d98-957f-563cc77b128a");
                 _textInfo = new RepoItemInfo(this, "Text", ".//div[#'modal-wrapper']/div/div/div[4]/div/div[1]/?/?/input[@type='text']", 30000, null, "2c2381c4-c30c-4b42-b588-e26ac722476e");
@@ -12751,6 +12831,30 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _usernameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Password1 item.
+            /// </summary>
+            [RepositoryItem("21b2dcc9-5485-4ba4-8161-48af52cfcede")]
+            public virtual Ranorex.InputTag Password1
+            {
+                get
+                {
+                    return _password1Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Password1 item info.
+            /// </summary>
+            [RepositoryItemInfo("21b2dcc9-5485-4ba4-8161-48af52cfcede")]
+            public virtual RepoItemInfo Password1Info
+            {
+                get
+                {
+                    return _password1Info;
                 }
             }
 
@@ -12886,6 +12990,7 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _systemitemnamedisplayInfo;
             RepoItemInfo _buttonopenInfo;
             RepoItemInfo _systemitemnamedisplay1Info;
+            RepoItemInfo _systemitemnamedisplay2Info;
 
             /// <summary>
             /// Creates a new Open  folder.
@@ -12898,6 +13003,7 @@ namespace MyFrankCrum_EMP
                 _systemitemnamedisplayInfo = new RepoItemInfo(this, "SystemItemNameDisplay", "element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='9']/text[@automationid='System.ItemNameDisplay']", 30000, null, "630d6308-674d-4dbb-b982-1b78de89f52a");
                 _buttonopenInfo = new RepoItemInfo(this, "ButtonOpen", "button[@text='&Open']", 30000, null, "097ed2fc-0621-4e3e-b6f5-3527177afddc");
                 _systemitemnamedisplay1Info = new RepoItemInfo(this, "SystemItemNameDisplay1", "element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='7']/text[@automationid='System.ItemNameDisplay']", 30000, null, "40318f53-a384-450b-925a-654fbffeadef");
+                _systemitemnamedisplay2Info = new RepoItemInfo(this, "SystemItemNameDisplay2", "element[@class='DUIViewWndClassName']//container[@automationid='0']/listitem[@automationid='1']/text[@automationid='System.ItemNameDisplay']", 30000, null, "ad84d2f5-e271-460d-a005-d2cc75762f93");
             }
 
             /// <summary>
@@ -13041,6 +13147,30 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _systemitemnamedisplay1Info;
+                }
+            }
+
+            /// <summary>
+            /// The SystemItemNameDisplay2 item.
+            /// </summary>
+            [RepositoryItem("ad84d2f5-e271-460d-a005-d2cc75762f93")]
+            public virtual Ranorex.Text SystemItemNameDisplay2
+            {
+                get
+                {
+                    return _systemitemnamedisplay2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SystemItemNameDisplay2 item info.
+            /// </summary>
+            [RepositoryItemInfo("ad84d2f5-e271-460d-a005-d2cc75762f93")]
+            public virtual RepoItemInfo SystemItemNameDisplay2Info
+            {
+                get
+                {
+                    return _systemitemnamedisplay2Info;
                 }
             }
         }

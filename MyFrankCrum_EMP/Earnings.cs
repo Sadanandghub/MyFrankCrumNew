@@ -42,7 +42,7 @@ namespace MyFrankCrum_EMP
         public Earnings()
         {
             GetEarningStopDate = "";
-            EarningCode = "BEREAVEMENT-BEVMT";
+            EarningCode = "SALARY-SALF";
         }
 
         /// <summary>

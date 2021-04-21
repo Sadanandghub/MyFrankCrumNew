@@ -124,8 +124,8 @@ namespace MyFrankCrum_EMP
             repo.MyFrankCrum.ClickOutside.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Password' at Center.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(5));
-            repo.MyFrankCrum.Password.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Password1' at Center.", repo.MyFrankCrum.Password1Info, new RecordItemIndex(5));
+            repo.MyFrankCrum.Password1.Click();
             Delay.Milliseconds(0);
             
             // Company User Password
@@ -135,8 +135,8 @@ namespace MyFrankCrum_EMP
             //repo.MyFrankCrum.Password.PressKeys(Password);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Password' on item 'MyFrankCrum.Password'.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(8));
-            repo.MyFrankCrum.Password.Element.SetAttributeValue("TagValue", Password);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Password' on item 'MyFrankCrum.Password1'.", repo.MyFrankCrum.Password1Info, new RecordItemIndex(8));
+            repo.MyFrankCrum.Password1.Element.SetAttributeValue("TagValue", Password);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.LoginButton' at Center.", repo.MyFrankCrum.LoginButtonInfo, new RecordItemIndex(9));
