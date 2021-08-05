@@ -66,6 +66,16 @@ namespace MyFrankCrum_EMP
             set { _GetFirstName = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -109,8 +119,8 @@ namespace MyFrankCrum_EMP
             Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UndoChanges' at Center.", repo.UndoChangesInfo, new RecordItemIndex(4));
-            repo.UndoChanges.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UndoChanges' at Center.", repo.ApplicationUnderTest.UndoChangesInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.UndoChanges.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$GetFirstName) on item 'ApplicationUnderTest.FirstName'.", repo.ApplicationUnderTest.FirstNameInfo, new RecordItemIndex(5));

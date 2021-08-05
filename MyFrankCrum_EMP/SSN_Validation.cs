@@ -54,6 +54,16 @@ namespace MyFrankCrum_EMP
 #region Variables
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable EmpName.
         /// </summary>
         [TestVariable("63421979-03c2-4681-8118-3604485e880a")]
@@ -89,8 +99,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.", repo.ApplicationUnderTest.SomeDivTag.selectEmpInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.selectEmp.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.selectEmp' at Center.", repo.ApplicationUnderTest.selectEmpInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.selectEmp.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(1));

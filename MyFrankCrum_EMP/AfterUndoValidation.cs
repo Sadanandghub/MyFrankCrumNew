@@ -66,6 +66,16 @@ namespace MyFrankCrum_EMP
             set { _GetFirstName = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>

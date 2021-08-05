@@ -123,6 +123,78 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_New_Hire_Deduction_Tab_Edit.cs">
+      <BoundTo>aff58e8a-6846-4417-846c-247300e54fbc</BoundTo>
+      <DependentUpon>Add_New_Hire_Deduction_Tab_Edit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ae5fe323-8bf7-49aa-a9bf-e520bc866d97</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_Deduction_Tab_Edit.UserCode.cs">
+      <BoundTo>aff58e8a-6846-4417-846c-247300e54fbc</BoundTo>
+      <DependentUpon>Add_New_Hire_Deduction_Tab_Edit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81eed445-80b0-4ff9-8655-080f02fa7012</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_DirectDeposit_Tab_Edit.cs">
+      <BoundTo>e75d2a95-7719-40ba-8245-28996d9fa76f</BoundTo>
+      <DependentUpon>Add_New_Hire_DirectDeposit_Tab_Edit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a730e352-c36e-410e-aac3-f5b5fc6d2a01</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_DirectDeposit_Tab_Edit.UserCode.cs">
+      <BoundTo>e75d2a95-7719-40ba-8245-28996d9fa76f</BoundTo>
+      <DependentUpon>Add_New_Hire_DirectDeposit_Tab_Edit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7a29310b-8a05-4daa-a09f-849183baec97</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_EmployementForms_Tab_Edit.cs">
+      <BoundTo>92a0eff0-60a0-4763-a1f3-241028bb9cb1</BoundTo>
+      <DependentUpon>Add_New_Hire_EmployementForms_Tab_Edit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>01f89860-d595-4b6b-8372-87ddf4f2594e</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_EmployementForms_Tab_Edit.UserCode.cs">
+      <BoundTo>92a0eff0-60a0-4763-a1f3-241028bb9cb1</BoundTo>
+      <DependentUpon>Add_New_Hire_EmployementForms_Tab_Edit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b91308ad-1091-49eb-be86-1dfba1c16a74</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_JobPayroll_Edit.cs">
+      <BoundTo>681c2c3e-875b-4f2b-9615-fb8f621321a9</BoundTo>
+      <DependentUpon>Add_New_Hire_JobPayroll_Edit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dc10ca45-6f23-4b47-bfef-04dd8e493138</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_JobPayroll_Edit.UserCode.cs">
+      <BoundTo>681c2c3e-875b-4f2b-9615-fb8f621321a9</BoundTo>
+      <DependentUpon>Add_New_Hire_JobPayroll_Edit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c63250da-d523-469f-b6ef-3c341fcf4634</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_Personal_Tab_Edit.cs">
+      <BoundTo>f5bf45a0-d232-477b-b971-78f99508f466</BoundTo>
+      <DependentUpon>Add_New_Hire_Personal_Tab_Edit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1d831098-7274-4a26-a170-2b07f5e19b65</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_Personal_Tab_Edit.UserCode.cs">
+      <BoundTo>f5bf45a0-d232-477b-b971-78f99508f466</BoundTo>
+      <DependentUpon>Add_New_Hire_Personal_Tab_Edit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6c2b91e7-0cc8-4bb3-a0ca-4ed060149690</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_Taxes_Tab_Edit.cs">
+      <BoundTo>7f0dd636-a26e-4869-b164-e2eff9834982</BoundTo>
+      <DependentUpon>Add_New_Hire_Taxes_Tab_Edit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f60ef3cd-446e-47ab-b2a1-c6ac8f6341fa</id>
+    </Compile>
+    <Compile Include="Add_New_Hire_Taxes_Tab_Edit.UserCode.cs">
+      <BoundTo>7f0dd636-a26e-4869-b164-e2eff9834982</BoundTo>
+      <DependentUpon>Add_New_Hire_Taxes_Tab_Edit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f89e4d7-b617-4dac-9b3b-ceb5eb7ba415</id>
+    </Compile>
     <Compile Include="AfterUndoValidation.cs">
       <BoundTo>b25462cf-cb20-466e-bd6b-c888a9909bb0</BoundTo>
       <DependentUpon>AfterUndoValidation.rxrec</DependentUpon>
@@ -161,6 +233,342 @@
       <DependentUpon>Back_to_Employeelist.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ce18f827-9414-429d-96ef-b3f3a21a06cf</id>
+    </Compile>
+    <Compile Include="Balance_Overview.cs">
+      <BoundTo>1fa2c11a-2ac3-45f8-b8d0-f5423e27d561</BoundTo>
+      <DependentUpon>Balance_Overview.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0b4d2c5e-a81e-4684-a130-acb0e764f11b</id>
+    </Compile>
+    <Compile Include="Balance_Overview.UserCode.cs">
+      <BoundTo>1fa2c11a-2ac3-45f8-b8d0-f5423e27d561</BoundTo>
+      <DependentUpon>Balance_Overview.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8f879cff-f4f1-42d8-8f95-895bc0936fd6</id>
+    </Compile>
+    <Compile Include="ChangeClients.cs">
+      <BoundTo>57f68227-0df5-4188-acbd-6abd83d0a7c3</BoundTo>
+      <DependentUpon>ChangeClients.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5cce50e3-cac1-426b-8325-6c3b614f14c7</id>
+    </Compile>
+    <Compile Include="ChangeClients.UserCode.cs">
+      <BoundTo>57f68227-0df5-4188-acbd-6abd83d0a7c3</BoundTo>
+      <DependentUpon>ChangeClients.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9e29bfaf-5842-47a6-9ab9-41fe0858243d</id>
+    </Compile>
+    <Compile Include="Click_Employees.cs">
+      <BoundTo>eb793c93-87ed-4ab5-b189-3fd097c13fcb</BoundTo>
+      <DependentUpon>Click_Employees.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8d1533c4-5bd9-456a-86f6-fd371309e1bc</id>
+    </Compile>
+    <Compile Include="Click_Employees.UserCode.cs">
+      <BoundTo>eb793c93-87ed-4ab5-b189-3fd097c13fcb</BoundTo>
+      <DependentUpon>Click_Employees.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6107020b-1ebc-47ea-82d1-10d94ce91ea5</id>
+    </Compile>
+    <Compile Include="Click_NewHire.cs">
+      <BoundTo>f26b4ba6-1828-4ecd-96d3-b600040a98d0</BoundTo>
+      <DependentUpon>Click_NewHire.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8aacb8a6-5b97-4eae-9ef2-5a8a77d0a9ba</id>
+    </Compile>
+    <Compile Include="Click_NewHire.UserCode.cs">
+      <BoundTo>f26b4ba6-1828-4ecd-96d3-b600040a98d0</BoundTo>
+      <DependentUpon>Click_NewHire.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c2218049-14f3-446c-8d24-a3df8676962a</id>
+    </Compile>
+    <Compile Include="Click_Invoices.cs">
+      <BoundTo>0d9b7936-61f0-43e9-b960-98d02cdf5f8d</BoundTo>
+      <DependentUpon>Click_Invoices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dab4a4fd-e040-4c76-b46d-309e1a3f7527</id>
+    </Compile>
+    <Compile Include="Click_Invoices.UserCode.cs">
+      <BoundTo>0d9b7936-61f0-43e9-b960-98d02cdf5f8d</BoundTo>
+      <DependentUpon>Click_Invoices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>db904dff-a9f0-4a7f-8766-69e7740652d6</id>
+    </Compile>
+    <Compile Include="Click_Setting.cs">
+      <BoundTo>80e969e2-9302-4c12-bad6-6a6be41a04f7</BoundTo>
+      <DependentUpon>Click_Setting.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>465c284c-ff76-45db-a076-2761d97b60f0</id>
+    </Compile>
+    <Compile Include="Click_Setting.UserCode.cs">
+      <BoundTo>80e969e2-9302-4c12-bad6-6a6be41a04f7</BoundTo>
+      <DependentUpon>Click_Setting.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7317f64c-0dcb-4c51-982b-dc6ea50f7402</id>
+    </Compile>
+    <Compile Include="CreateAccount.cs">
+      <BoundTo>d0de3a0f-75bd-47cd-a739-7b9b2321417c</BoundTo>
+      <DependentUpon>CreateAccount.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>de09b5f3-471f-48af-9792-dc99aeb6138f</id>
+    </Compile>
+    <Compile Include="CreateAccount.UserCode.cs">
+      <BoundTo>d0de3a0f-75bd-47cd-a739-7b9b2321417c</BoundTo>
+      <DependentUpon>CreateAccount.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5efb10a4-3026-4c3f-b6b3-a204627bb24a</id>
+    </Compile>
+    <Compile Include="Current_Paycheck.cs">
+      <BoundTo>0f24f56a-3f75-464c-abac-685852934b65</BoundTo>
+      <DependentUpon>Current_Paycheck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c3662c8e-1e83-4961-9eda-8f319356fa31</id>
+    </Compile>
+    <Compile Include="Current_Paycheck.UserCode.cs">
+      <BoundTo>0f24f56a-3f75-464c-abac-685852934b65</BoundTo>
+      <DependentUpon>Current_Paycheck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7196d147-fe3f-4d00-a403-59da83cc4a35</id>
+    </Compile>
+    <Compile Include="Employment_Forms.cs">
+      <BoundTo>bfe5585a-4104-498c-90bf-2ba9ae619212</BoundTo>
+      <DependentUpon>Employment_Forms.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1ed11745-40ce-4d67-8075-68ce7e8deee4</id>
+    </Compile>
+    <Compile Include="Employment_Forms.UserCode.cs">
+      <BoundTo>bfe5585a-4104-498c-90bf-2ba9ae619212</BoundTo>
+      <DependentUpon>Employment_Forms.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2295f397-81b5-4517-9350-74545132e8bf</id>
+    </Compile>
+    <Compile Include="FilterbyDates.cs">
+      <BoundTo>c000d3b3-2fe6-4b4e-8f30-799c5219d37c</BoundTo>
+      <DependentUpon>FilterbyDates.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6b8f45f1-dade-4f70-900e-67a59737784b</id>
+    </Compile>
+    <Compile Include="FilterbyDates.UserCode.cs">
+      <BoundTo>c000d3b3-2fe6-4b4e-8f30-799c5219d37c</BoundTo>
+      <DependentUpon>FilterbyDates.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c0ef81be-ea2a-480d-80d6-c994f40d9e67</id>
+    </Compile>
+    <Compile Include="FIlterbyTotalamounts.cs">
+      <BoundTo>4433a3a0-e085-416d-bc08-7feb9663f90c</BoundTo>
+      <DependentUpon>FIlterbyTotalamounts.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>35928c40-13c6-4f7c-a2dd-89fc5517d1db</id>
+    </Compile>
+    <Compile Include="FIlterbyTotalamounts.UserCode.cs">
+      <BoundTo>4433a3a0-e085-416d-bc08-7feb9663f90c</BoundTo>
+      <DependentUpon>FIlterbyTotalamounts.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bbc15ef4-3051-4ac6-97fa-ee9484e9d696</id>
+    </Compile>
+    <Compile Include="Global_Search.cs">
+      <BoundTo>fa4c75b0-c4dc-4ef2-97df-0c2900ed4334</BoundTo>
+      <DependentUpon>Global_Search.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f619a531-9b6d-481a-a0ca-16061ed9d468</id>
+    </Compile>
+    <Compile Include="Global_Search.UserCode.cs">
+      <BoundTo>fa4c75b0-c4dc-4ef2-97df-0c2900ed4334</BoundTo>
+      <DependentUpon>Global_Search.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>675ae24d-91fa-4ad2-ad8d-3ebcd07d4667</id>
+    </Compile>
+    <Compile Include="InvoicesSearchByNumber.cs">
+      <BoundTo>1f73525f-cc15-4452-9499-5ddf889fd7eb</BoundTo>
+      <DependentUpon>InvoicesSearchByNumber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>428df044-8f74-41a8-8d32-48d95c068e39</id>
+    </Compile>
+    <Compile Include="InvoicesSearchByNumber.UserCode.cs">
+      <BoundTo>1f73525f-cc15-4452-9499-5ddf889fd7eb</BoundTo>
+      <DependentUpon>InvoicesSearchByNumber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eeca268e-a83b-4bb4-bac4-14bafca48ffa</id>
+    </Compile>
+    <Compile Include="New_Hire_JobPayrol_Pagel.cs">
+      <BoundTo>745ad50d-38b6-480f-a7a7-f730e3289fcc</BoundTo>
+      <DependentUpon>New_Hire_JobPayrol_Pagel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ec7da1a5-6eae-447f-87d7-2afb092053f3</id>
+    </Compile>
+    <Compile Include="New_Hire_JobPayrol_Pagel.UserCode.cs">
+      <BoundTo>745ad50d-38b6-480f-a7a7-f730e3289fcc</BoundTo>
+      <DependentUpon>New_Hire_JobPayrol_Pagel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e4046e12-f0f2-42b2-96d8-7c57333a5eac</id>
+    </Compile>
+    <Compile Include="ManageSecurity.cs">
+      <BoundTo>516299cf-b8b3-439e-9593-f77a2fbdc73d</BoundTo>
+      <DependentUpon>ManageSecurity.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dd04a3b6-7740-44da-8684-b8ebca01325e</id>
+    </Compile>
+    <Compile Include="ManageSecurity.UserCode.cs">
+      <BoundTo>516299cf-b8b3-439e-9593-f77a2fbdc73d</BoundTo>
+      <DependentUpon>ManageSecurity.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4d6cedcb-d017-42d7-a3cb-fc12e2820336</id>
+    </Compile>
+    <Compile Include="New_Hire_Deduction_Page.cs">
+      <BoundTo>d8605b9e-9f6d-4ce7-982f-01fc58e4e8bb</BoundTo>
+      <DependentUpon>New_Hire_Deduction_Page.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50649b31-342e-4f3d-bef4-b3c0cfc4c1a9</id>
+    </Compile>
+    <Compile Include="New_Hire_Deduction_Page.UserCode.cs">
+      <BoundTo>d8605b9e-9f6d-4ce7-982f-01fc58e4e8bb</BoundTo>
+      <DependentUpon>New_Hire_Deduction_Page.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f2495b81-5682-4b3b-85df-6d742d166767</id>
+    </Compile>
+    <Compile Include="New_Hire_DirectDepositAccounts_page.cs">
+      <BoundTo>014758c6-0c30-4d6b-87de-1f0cb5dcddce</BoundTo>
+      <DependentUpon>New_Hire_DirectDepositAccounts_page.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>725e99ac-dc04-4120-bc74-0942865b1d7e</id>
+    </Compile>
+    <Compile Include="New_Hire_DirectDepositAccounts_page.UserCode.cs">
+      <BoundTo>014758c6-0c30-4d6b-87de-1f0cb5dcddce</BoundTo>
+      <DependentUpon>New_Hire_DirectDepositAccounts_page.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>892e5aa5-6474-4921-bd45-95d64a2e358c</id>
+    </Compile>
+    <Compile Include="New_Hire_Personal_Page.cs">
+      <BoundTo>ec2fb3d4-4730-4451-8673-4fae4db01848</BoundTo>
+      <DependentUpon>New_Hire_Personal_Page.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7138ffcf-7123-425c-9c46-7e038ebdc954</id>
+    </Compile>
+    <Compile Include="New_Hire_Personal_Page.UserCode.cs">
+      <BoundTo>ec2fb3d4-4730-4451-8673-4fae4db01848</BoundTo>
+      <DependentUpon>New_Hire_Personal_Page.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9b3a205c-3e6b-4c44-85d3-5c9ff39cf01a</id>
+    </Compile>
+    <Compile Include="New_Hire_Start_Page.cs">
+      <BoundTo>0258bb4e-1720-4e3f-86e1-8fc570241aa6</BoundTo>
+      <DependentUpon>New_Hire_Start_Page.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>563928a8-dcd0-406a-b88f-49c6a47b5b0b</id>
+    </Compile>
+    <Compile Include="New_Hire_Start_Page.UserCode.cs">
+      <BoundTo>0258bb4e-1720-4e3f-86e1-8fc570241aa6</BoundTo>
+      <DependentUpon>New_Hire_Start_Page.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c99780cc-5031-4e38-b17f-ca5271240e7d</id>
+    </Compile>
+    <Compile Include="New_Hire_Taxes_Page.cs">
+      <BoundTo>4c607a3e-3f3e-4e6a-9cf6-a67007f1cd80</BoundTo>
+      <DependentUpon>New_Hire_Taxes_Page.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1aebecc-d20c-4803-ac51-4f2806531dde</id>
+    </Compile>
+    <Compile Include="New_Hire_Taxes_Page.UserCode.cs">
+      <BoundTo>4c607a3e-3f3e-4e6a-9cf6-a67007f1cd80</BoundTo>
+      <DependentUpon>New_Hire_Taxes_Page.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>977f06f4-1a21-46ed-8a67-b74d7acc282f</id>
+    </Compile>
+    <Compile Include="OnboardingClick.cs">
+      <BoundTo>daa38c28-3238-420d-8d1b-474a02d59671</BoundTo>
+      <DependentUpon>OnboardingClick.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5e173172-8d6f-4249-886b-5ac6f9c9abc8</id>
+    </Compile>
+    <Compile Include="OnboardingClick.UserCode.cs">
+      <BoundTo>daa38c28-3238-420d-8d1b-474a02d59671</BoundTo>
+      <DependentUpon>OnboardingClick.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e878cb4e-9943-4757-a6c0-ab7bd277d263</id>
+    </Compile>
+    <Compile Include="OnboardingEmp.cs">
+      <BoundTo>af1094f0-1e70-433e-9845-77b1166e5d1e</BoundTo>
+      <DependentUpon>OnboardingEmp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb63c525-6f28-4ff1-8384-cae14a1c10ad</id>
+    </Compile>
+    <Compile Include="OnboardingEmp.UserCode.cs">
+      <BoundTo>af1094f0-1e70-433e-9845-77b1166e5d1e</BoundTo>
+      <DependentUpon>OnboardingEmp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55f5102a-5b68-4847-8083-4b1d5fbcc7f8</id>
+    </Compile>
+    <Compile Include="Paycheck_Details.cs">
+      <BoundTo>dabcc1c8-de56-46e2-a3ba-0db8b48ebe77</BoundTo>
+      <DependentUpon>Paycheck_Details.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>07059a6f-1082-436d-8749-d663ed101a9b</id>
+    </Compile>
+    <Compile Include="Paycheck_Details.UserCode.cs">
+      <BoundTo>dabcc1c8-de56-46e2-a3ba-0db8b48ebe77</BoundTo>
+      <DependentUpon>Paycheck_Details.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8dbe39dc-b83f-4fb7-afd5-d6d4e3c1f45e</id>
+    </Compile>
+    <Compile Include="Paycheck_History.cs">
+      <BoundTo>acda077a-23eb-43f0-a098-c83bd8142ed9</BoundTo>
+      <DependentUpon>Paycheck_History.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6216626e-d25c-4674-864b-9c54bdeb70c4</id>
+    </Compile>
+    <Compile Include="Paycheck_History.UserCode.cs">
+      <BoundTo>acda077a-23eb-43f0-a098-c83bd8142ed9</BoundTo>
+      <DependentUpon>Paycheck_History.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3cb5e284-23d3-470c-85ca-cca006c44e31</id>
+    </Compile>
+    <Compile Include="Payroll_Time_Entry.cs">
+      <BoundTo>fc2ecdc6-e917-47be-8500-7fe9a9ec8f54</BoundTo>
+      <DependentUpon>Payroll_Time_Entry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1a4a15b3-5bde-4a18-b1d4-ea0ed6ac197e</id>
+    </Compile>
+    <Compile Include="Payroll_Time_Entry.UserCode.cs">
+      <BoundTo>fc2ecdc6-e917-47be-8500-7fe9a9ec8f54</BoundTo>
+      <DependentUpon>Payroll_Time_Entry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7007462f-2336-49d0-9c7e-c9356f6f876a</id>
+    </Compile>
+    <Compile Include="PTO_Request.cs">
+      <BoundTo>b36eafea-2b63-49ba-86c2-35e8ad276f0d</BoundTo>
+      <DependentUpon>PTO_Request.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>99855fce-d9cf-4ef7-989b-3fc6d982e740</id>
+    </Compile>
+    <Compile Include="PTO_Request.UserCode.cs">
+      <BoundTo>b36eafea-2b63-49ba-86c2-35e8ad276f0d</BoundTo>
+      <DependentUpon>PTO_Request.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2daccc69-8906-4b1a-ab72-bb3c1b405fac</id>
+    </Compile>
+    <Compile Include="Reset.cs">
+      <BoundTo>dcc9255f-3ad0-4c35-bb4e-bbf5b89f0c32</BoundTo>
+      <DependentUpon>Reset.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a67ed40-b2e1-4216-bab2-a6ecb391b522</id>
+    </Compile>
+    <Compile Include="Reset.UserCode.cs">
+      <BoundTo>dcc9255f-3ad0-4c35-bb4e-bbf5b89f0c32</BoundTo>
+      <DependentUpon>Reset.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>532aafa5-7c3c-4d72-9f0f-f2ea3b31f664</id>
+    </Compile>
+    <Compile Include="ResetPasswordcase.cs">
+      <BoundTo>4f3cc54d-f41a-4290-b78e-7ff2f70d66d5</BoundTo>
+      <DependentUpon>ResetPasswordcase.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3489fe40-27fc-4f98-b131-cc3c1a06f9ca</id>
+    </Compile>
+    <Compile Include="ResetPasswordcase.UserCode.cs">
+      <BoundTo>4f3cc54d-f41a-4290-b78e-7ff2f70d66d5</BoundTo>
+      <DependentUpon>ResetPasswordcase.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>00e17d5f-a1fb-4eb1-af39-a9f3bdc51fd1</id>
     </Compile>
     <Compile Include="ContactDelete.cs">
       <BoundTo>49347b20-0163-4831-a020-13f43ab78aee</BoundTo>
@@ -342,15 +750,51 @@
       <UserCode>true</UserCode>
       <id>c1e286e2-7445-438d-acc5-e93763cbe72c</id>
     </Compile>
-    <Compile Include="Comp_Selector.cs">
+    <Compile Include="SelectanotherEmp.cs">
+      <BoundTo>ca760ed5-e24f-4289-9562-af7c30274242</BoundTo>
+      <DependentUpon>SelectanotherEmp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d932ac35-4770-41e3-ae65-57fa085ca020</id>
+    </Compile>
+    <Compile Include="SelectanotherEmp.UserCode.cs">
+      <BoundTo>ca760ed5-e24f-4289-9562-af7c30274242</BoundTo>
+      <DependentUpon>SelectanotherEmp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4b194b2e-009b-4a9a-9b51-f800630dac97</id>
+    </Compile>
+    <Compile Include="SelectEmployee.cs">
+      <BoundTo>433510c7-6afe-42cc-a9ed-299219b24b0a</BoundTo>
+      <DependentUpon>SelectEmployee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1a1e9cb9-fefa-40ce-8992-4c67bb725b03</id>
+    </Compile>
+    <Compile Include="SelectEmployee.UserCode.cs">
+      <BoundTo>433510c7-6afe-42cc-a9ed-299219b24b0a</BoundTo>
+      <DependentUpon>SelectEmployee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>13491e6b-c9ca-41e4-b76b-d76d5f3c782c</id>
+    </Compile>
+    <Compile Include="SelectEmployeeStatus.cs">
+      <BoundTo>973356e6-b8ff-4ea7-9ec8-0aae96810318</BoundTo>
+      <DependentUpon>SelectEmployeeStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c1f813ac-09d2-4040-9b89-3da21814b095</id>
+    </Compile>
+    <Compile Include="SelectEmployeeStatus.UserCode.cs">
+      <BoundTo>973356e6-b8ff-4ea7-9ec8-0aae96810318</BoundTo>
+      <DependentUpon>SelectEmployeeStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>03c8aefa-5787-4481-ad6b-1dfea98a8f0a</id>
+    </Compile>
+    <Compile Include="Select_Company.cs">
       <BoundTo>e9c419cd-91f2-4f90-9b1d-1281c7bf96a7</BoundTo>
-      <DependentUpon>Comp_Selector.rxrec</DependentUpon>
+      <DependentUpon>Select_Company.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>e9289e36-447b-40be-9a50-d4a3454458d3</id>
     </Compile>
-    <Compile Include="Comp_Selector.UserCode.cs">
+    <Compile Include="Select_Company.UserCode.cs">
       <BoundTo>e9c419cd-91f2-4f90-9b1d-1281c7bf96a7</BoundTo>
-      <DependentUpon>Comp_Selector.rxrec</DependentUpon>
+      <DependentUpon>Select_Company.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6b375efb-d2a0-4d6b-b647-6961400d348d</id>
     </Compile>
@@ -558,6 +1002,42 @@
       <UserCode>true</UserCode>
       <id>8f6f2f58-e7c6-40d1-9fb1-0a0e8d2c9dab</id>
     </Compile>
+    <Compile Include="Select_Employee_tab.cs">
+      <BoundTo>26894051-a982-4ad3-855f-4d90a17d8120</BoundTo>
+      <DependentUpon>Select_Employee_tab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1439f572-c817-47aa-8ef8-922e2e9624cb</id>
+    </Compile>
+    <Compile Include="Select_Employee_tab.UserCode.cs">
+      <BoundTo>26894051-a982-4ad3-855f-4d90a17d8120</BoundTo>
+      <DependentUpon>Select_Employee_tab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c4366468-eaa3-412c-b6fb-c2fc7b16ec9b</id>
+    </Compile>
+    <Compile Include="Select_Employer.cs">
+      <BoundTo>ddc006a8-bc21-4425-9825-8344ba3c01aa</BoundTo>
+      <DependentUpon>Select_Employer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b04d336d-9d33-4720-b39a-bb3429ff737d</id>
+    </Compile>
+    <Compile Include="Select_Employer.UserCode.cs">
+      <BoundTo>ddc006a8-bc21-4425-9825-8344ba3c01aa</BoundTo>
+      <DependentUpon>Select_Employer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6db40ace-9cb3-4a03-abe4-68ff875cefdc</id>
+    </Compile>
+    <Compile Include="Show_Hide_Total.cs">
+      <BoundTo>033c06e0-2e5e-48e6-be7a-3ea1ea91d98b</BoundTo>
+      <DependentUpon>Show_Hide_Total.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>510130a6-e64b-49c5-8a30-d82fe888101b</id>
+    </Compile>
+    <Compile Include="Show_Hide_Total.UserCode.cs">
+      <BoundTo>033c06e0-2e5e-48e6-be7a-3ea1ea91d98b</BoundTo>
+      <DependentUpon>Show_Hide_Total.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b324c19-d914-4996-a737-b784b188de4b</id>
+    </Compile>
     <Compile Include="Sorting.cs">
       <BoundTo>40060c78-8273-4c44-9414-f8b5813cf85a</BoundTo>
       <DependentUpon>Sorting.rxrec</DependentUpon>
@@ -626,6 +1106,18 @@
       <DependentUpon>Login.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>77b75c18-cd29-4f1d-b0aa-21b176ecd724</id>
+    </Compile>
+    <Compile Include="Summary_Page.cs">
+      <BoundTo>c18999cf-634b-4e4e-8dd0-68343949fb15</BoundTo>
+      <DependentUpon>Summary_Page.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1b1cfccb-59f9-40d6-916a-add154020af7</id>
+    </Compile>
+    <Compile Include="Summary_Page.UserCode.cs">
+      <BoundTo>c18999cf-634b-4e4e-8dd0-68343949fb15</BoundTo>
+      <DependentUpon>Summary_Page.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>463cc0fa-a057-4e6d-a2ab-17e1cfae347a</id>
     </Compile>
     <Compile Include="Taxes.cs">
       <BoundTo>c8a0b003-2afd-4898-9d31-64d971f4ca8d</BoundTo>
@@ -699,27 +1191,27 @@
       <UserCode>true</UserCode>
       <id>39d553ec-7552-4de5-903c-7193b433d318</id>
     </Compile>
-    <Compile Include="HomePageContentValidation.cs">
+    <Compile Include="Home.cs">
       <BoundTo>12f8a58a-b4e9-46cd-99d0-156e725be1e5</BoundTo>
-      <DependentUpon>HomePageContentValidation.rxrec</DependentUpon>
+      <DependentUpon>Home.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>62f93ac2-107f-4299-918d-19746d9d0462</id>
     </Compile>
-    <Compile Include="HomePageContentValidation.UserCode.cs">
+    <Compile Include="Home.UserCode.cs">
       <BoundTo>12f8a58a-b4e9-46cd-99d0-156e725be1e5</BoundTo>
-      <DependentUpon>HomePageContentValidation.rxrec</DependentUpon>
+      <DependentUpon>Home.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ab851255-23dc-462a-97bb-804e9de18415</id>
     </Compile>
-    <Compile Include="Validation_for_std_view.cs">
+    <Compile Include="StdViewValidation.cs">
       <BoundTo>dd7d4295-4e9f-4184-9bc7-857505642080</BoundTo>
-      <DependentUpon>Validation_for_std_view.rxrec</DependentUpon>
+      <DependentUpon>StdViewValidation.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>10a60722-15a4-451f-aef4-64f7d45206b5</id>
     </Compile>
-    <Compile Include="Validation_for_std_view.UserCode.cs">
+    <Compile Include="StdViewValidation.UserCode.cs">
       <BoundTo>dd7d4295-4e9f-4184-9bc7-857505642080</BoundTo>
-      <DependentUpon>Validation_for_std_view.rxrec</DependentUpon>
+      <DependentUpon>StdViewValidation.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a412e211-87a4-4795-af55-7fba00f3574e</id>
     </Compile>
@@ -734,6 +1226,18 @@
       <DependentUpon>Validation_for_Unified_View.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>29ed6f9d-8087-433d-b5c0-9aaaab4653df</id>
+    </Compile>
+    <Compile Include="W2s.cs">
+      <BoundTo>52a33fe2-b095-47f2-ae53-3f53d5100224</BoundTo>
+      <DependentUpon>W2s.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>918ecc2c-70e9-488b-9922-f619509cca65</id>
+    </Compile>
+    <Compile Include="W2s.UserCode.cs">
+      <BoundTo>52a33fe2-b095-47f2-ae53-3f53d5100224</BoundTo>
+      <DependentUpon>W2s.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fc73b7d-1be5-4067-94f3-e48556e4a60e</id>
     </Compile>
     <Compile Include="WorkforceNewHireRehire.cs">
       <BoundTo>42f6a0c9-4e8e-487a-9c1f-5f8bdb58814f</BoundTo>
@@ -761,6 +1265,36 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Add_New_Hire_Deduction_Tab_Edit.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>aff58e8a-6846-4417-846c-247300e54fbc</id>
+      <recordtableid>1d31fdbe-3f00-4869-8dbe-b60fc88f106e</recordtableid>
+    </None>
+    <None Include="Add_New_Hire_DirectDeposit_Tab_Edit.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>e75d2a95-7719-40ba-8245-28996d9fa76f</id>
+      <recordtableid>c4fe0d54-2441-49e3-9bfc-f2b177e9d381</recordtableid>
+    </None>
+    <None Include="Add_New_Hire_EmployementForms_Tab_Edit.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>92a0eff0-60a0-4763-a1f3-241028bb9cb1</id>
+      <recordtableid>e5dc942e-b33b-4600-9532-d1f2aec09746</recordtableid>
+    </None>
+    <None Include="Add_New_Hire_JobPayroll_Edit.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>681c2c3e-875b-4f2b-9615-fb8f621321a9</id>
+      <recordtableid>a38c2fb2-e5dd-4988-92d8-8ce2905197e3</recordtableid>
+    </None>
+    <None Include="Add_New_Hire_Personal_Tab_Edit.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>f5bf45a0-d232-477b-b971-78f99508f466</id>
+      <recordtableid>b2cc36d8-e03b-4245-b9b1-d2027f93622e</recordtableid>
+    </None>
+    <None Include="Add_New_Hire_Taxes_Tab_Edit.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>7f0dd636-a26e-4869-b164-e2eff9834982</id>
+      <recordtableid>fb486293-df82-4342-9a20-784d5c7ca0d8</recordtableid>
+    </None>
     <None Include="AfterUndoValidation.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>b25462cf-cb20-466e-bd6b-c888a9909bb0</id>
@@ -778,6 +1312,146 @@
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>b9a25114-f055-4f02-9b04-bab5c91286dc</id>
       <recordtableid>76924a0b-c4b1-4a62-b8f0-23ac080ed8a4</recordtableid>
+    </None>
+    <None Include="Balance_Overview.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>1fa2c11a-2ac3-45f8-b8d0-f5423e27d561</id>
+      <recordtableid>2b3f3b67-ca09-437a-909b-ea05f1ffd738</recordtableid>
+    </None>
+    <None Include="ChangeClients.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>57f68227-0df5-4188-acbd-6abd83d0a7c3</id>
+      <recordtableid>b2e28e78-e3c7-4e17-8960-ef3a891cda7f</recordtableid>
+    </None>
+    <None Include="Click_Employees.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>eb793c93-87ed-4ab5-b189-3fd097c13fcb</id>
+      <recordtableid>ecc86826-2581-4150-9ae6-873cd9338465</recordtableid>
+    </None>
+    <None Include="Click_NewHire.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>f26b4ba6-1828-4ecd-96d3-b600040a98d0</id>
+      <recordtableid>2cb369d0-dd6e-4da6-b2c0-1f7cec8f9990</recordtableid>
+    </None>
+    <None Include="Click_Invoices.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>0d9b7936-61f0-43e9-b960-98d02cdf5f8d</id>
+      <recordtableid>27fe6dff-ff52-49f3-a9d8-09d59d617c77</recordtableid>
+    </None>
+    <None Include="Click_Setting.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>80e969e2-9302-4c12-bad6-6a6be41a04f7</id>
+      <recordtableid>102dcc91-3811-423a-9803-bc1cbec3312b</recordtableid>
+    </None>
+    <None Include="CreateAccount.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>d0de3a0f-75bd-47cd-a739-7b9b2321417c</id>
+      <recordtableid>5c2ea544-081b-44ea-aa57-26803d93d094</recordtableid>
+    </None>
+    <None Include="Current_Paycheck.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>0f24f56a-3f75-464c-abac-685852934b65</id>
+      <recordtableid>5e8fb953-2814-46cd-a644-dc1786049646</recordtableid>
+    </None>
+    <None Include="Employment_Forms.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>bfe5585a-4104-498c-90bf-2ba9ae619212</id>
+      <recordtableid>910672e6-3bdd-43cc-9bef-d38f3c621b8a</recordtableid>
+    </None>
+    <None Include="FilterbyDates.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>c000d3b3-2fe6-4b4e-8f30-799c5219d37c</id>
+      <recordtableid>3e9b28ba-3fb5-47e1-b175-f5bca7540ee6</recordtableid>
+    </None>
+    <None Include="FIlterbyTotalamounts.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>4433a3a0-e085-416d-bc08-7feb9663f90c</id>
+      <recordtableid>d751f8c6-6ce8-48c5-9cc3-7de2d1e0f042</recordtableid>
+    </None>
+    <None Include="Global_Search.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>fa4c75b0-c4dc-4ef2-97df-0c2900ed4334</id>
+      <recordtableid>f50f578a-eba4-4d07-a5a6-fbd636b0fd18</recordtableid>
+    </None>
+    <None Include="InvoicesSearchByNumber.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>1f73525f-cc15-4452-9499-5ddf889fd7eb</id>
+      <recordtableid>43bdfa2a-92a8-4e20-9620-b7d0a8d43dad</recordtableid>
+    </None>
+    <None Include="New_Hire_JobPayrol_Pagel.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>745ad50d-38b6-480f-a7a7-f730e3289fcc</id>
+      <recordtableid>cde91585-de45-484c-adb5-8e9402e45195</recordtableid>
+    </None>
+    <None Include="ManageSecurity.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>516299cf-b8b3-439e-9593-f77a2fbdc73d</id>
+      <recordtableid>8453aa92-f49a-4809-ae5f-6471d7e6e03b</recordtableid>
+    </None>
+    <None Include="New_Hire_Deduction_Page.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>d8605b9e-9f6d-4ce7-982f-01fc58e4e8bb</id>
+      <recordtableid>46912dc9-51f6-4fc3-a600-1478ac0ddeab</recordtableid>
+    </None>
+    <None Include="New_Hire_DirectDepositAccounts_page.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>014758c6-0c30-4d6b-87de-1f0cb5dcddce</id>
+      <recordtableid>c1069030-b751-47a1-8b69-13aea264b2a7</recordtableid>
+    </None>
+    <None Include="New_Hire_Personal_Page.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>ec2fb3d4-4730-4451-8673-4fae4db01848</id>
+      <recordtableid>bae6b182-98e7-495b-9b8e-ee90eda1088c</recordtableid>
+    </None>
+    <None Include="New_Hire_Start_Page.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>0258bb4e-1720-4e3f-86e1-8fc570241aa6</id>
+      <recordtableid>68b4c5d9-e680-4742-9212-987c899bab82</recordtableid>
+    </None>
+    <None Include="New_Hire_Taxes_Page.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>4c607a3e-3f3e-4e6a-9cf6-a67007f1cd80</id>
+      <recordtableid>70ae1cf2-26bc-434e-b6fc-38f3492f5f2c</recordtableid>
+    </None>
+    <None Include="OnboardingClick.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>daa38c28-3238-420d-8d1b-474a02d59671</id>
+      <recordtableid>6802c0a4-8c41-4bdd-afc9-28d264d4abfa</recordtableid>
+    </None>
+    <None Include="OnboardingEmp.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>af1094f0-1e70-433e-9845-77b1166e5d1e</id>
+      <recordtableid>46c79001-5733-4646-a743-9e629fd061a2</recordtableid>
+    </None>
+    <None Include="Paycheck_Details.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>dabcc1c8-de56-46e2-a3ba-0db8b48ebe77</id>
+      <recordtableid>2d51bfc4-9c67-44f6-a965-1e7e1cbcd534</recordtableid>
+    </None>
+    <None Include="Paycheck_History.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>acda077a-23eb-43f0-a098-c83bd8142ed9</id>
+      <recordtableid>aa570232-51a0-48ae-b4e4-384f07cef25e</recordtableid>
+    </None>
+    <None Include="Payroll_Time_Entry.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>fc2ecdc6-e917-47be-8500-7fe9a9ec8f54</id>
+      <recordtableid>4a11c005-b37e-4cf4-bad5-9179a50fbaa8</recordtableid>
+    </None>
+    <None Include="PTO_Request.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>b36eafea-2b63-49ba-86c2-35e8ad276f0d</id>
+      <recordtableid>0962c374-f8fc-4201-9ec0-364866b8283e</recordtableid>
+    </None>
+    <None Include="Reset.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>dcc9255f-3ad0-4c35-bb4e-bbf5b89f0c32</id>
+      <recordtableid>fec56302-3ee1-4cc5-913c-0529b1c981b9</recordtableid>
+    </None>
+    <None Include="ResetPasswordcase.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>4f3cc54d-f41a-4290-b78e-7ff2f70d66d5</id>
+      <recordtableid>fc4b3c2f-cbc9-4470-b5af-74be76d2dfd2</recordtableid>
     </None>
     <None Include="ContactDelete.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
@@ -854,7 +1528,29 @@
       <id>e7ccbb31-9630-43ac-b813-b0c92b60f672</id>
       <recordtableid>1a109e6f-2250-4754-bc61-a42d18c86c74</recordtableid>
     </None>
-    <None Include="Comp_Selector.rxrec">
+    <Content Include="MasscompanySheet.xlsx">
+      <Link>MasscompanySheet.xlsx</Link>
+      <BoundTo>07eda8d3-5e15-4eae-afcb-e1bc92c3c7bc</BoundTo>
+      <DependentUpon>MyFrankCrum_EMP.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>16e19965-4680-4a16-9ddf-25e4e79269b9</id>
+    </Content>
+    <None Include="SelectanotherEmp.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>ca760ed5-e24f-4289-9562-af7c30274242</id>
+      <recordtableid>eae95fe6-70f0-4609-b641-f0f3fbb1b388</recordtableid>
+    </None>
+    <None Include="SelectEmployee.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>433510c7-6afe-42cc-a9ed-299219b24b0a</id>
+      <recordtableid>8daac054-3726-46f2-9ec8-3323a671f3f8</recordtableid>
+    </None>
+    <None Include="SelectEmployeeStatus.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>973356e6-b8ff-4ea7-9ec8-0aae96810318</id>
+      <recordtableid>0a280dff-71a4-4923-8533-dec80cb35366</recordtableid>
+    </None>
+    <None Include="Select_Company.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>e9c419cd-91f2-4f90-9b1d-1281c7bf96a7</id>
       <recordtableid>08404687-1bf3-4ad5-b53e-becdc510a179</recordtableid>
@@ -944,6 +1640,21 @@
       <id>0040cd46-ef45-4d8d-85f9-15fbcb5597e4</id>
       <recordtableid>227790b1-dc83-4b0a-aedb-50daf484b638</recordtableid>
     </None>
+    <None Include="Select_Employee_tab.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>26894051-a982-4ad3-855f-4d90a17d8120</id>
+      <recordtableid>1c3fd369-68fa-4848-bad3-ab931307ca8b</recordtableid>
+    </None>
+    <None Include="Select_Employer.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>ddc006a8-bc21-4425-9825-8344ba3c01aa</id>
+      <recordtableid>dfa8a739-add6-4b0a-85ef-f40b1bffbfe9</recordtableid>
+    </None>
+    <None Include="Show_Hide_Total.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>033c06e0-2e5e-48e6-be7a-3ea1ea91d98b</id>
+      <recordtableid>7f149869-d2e9-4ec4-9ea0-256d17083c98</recordtableid>
+    </None>
     <None Include="Sorting.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>40060c78-8273-4c44-9414-f8b5813cf85a</id>
@@ -980,6 +1691,11 @@
       <id>45192c76-d874-45a8-a529-92eeb1bb2da6</id>
       <recordtableid>36c8b41b-2742-4277-9a7e-e0ef2589f773</recordtableid>
     </None>
+    <None Include="Summary_Page.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>c18999cf-634b-4e4e-8dd0-68343949fb15</id>
+      <recordtableid>ce55fdd6-f498-42ca-b111-0b7baf212d74</recordtableid>
+    </None>
     <None Include="Taxes.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>c8a0b003-2afd-4898-9d31-64d971f4ca8d</id>
@@ -1010,12 +1726,12 @@
       <id>ce8ae584-f9bd-43b8-ba58-002d4ed08f62</id>
       <recordtableid>644843f3-0765-41a6-9795-68744048b355</recordtableid>
     </None>
-    <None Include="HomePageContentValidation.rxrec">
+    <None Include="Home.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>12f8a58a-b4e9-46cd-99d0-156e725be1e5</id>
       <recordtableid>9640aa47-bd0e-40ed-8226-5450e4cb66eb</recordtableid>
     </None>
-    <None Include="Validation_for_std_view.rxrec">
+    <None Include="StdViewValidation.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>dd7d4295-4e9f-4184-9bc7-857505642080</id>
       <recordtableid>2a9445f5-9701-4d1f-8706-6b8b5d9904ab</recordtableid>
@@ -1024,6 +1740,11 @@
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
       <id>eec1ab93-f463-4de1-9af5-d4474dcda3cc</id>
       <recordtableid>544bcdd3-6d20-4912-a7c7-e83a21402720</recordtableid>
+    </None>
+    <None Include="W2s.rxrec">
+      <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>
+      <id>52a33fe2-b095-47f2-ae53-3f53d5100224</id>
+      <recordtableid>1f6c45f3-ed36-499c-90bd-92f55695d2ba</recordtableid>
     </None>
     <None Include="WorkforceNewHireRehire.rxrec">
       <BoundTo>17d05cd0-9dd8-4fec-9a99-46a1c9be97c9</BoundTo>

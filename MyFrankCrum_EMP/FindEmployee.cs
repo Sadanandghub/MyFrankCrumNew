@@ -41,7 +41,7 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public FindEmployee()
         {
-            EmpName = "Apple";
+            EmpName = "Porter";
         }
 
         /// <summary>
@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable EmpName.
@@ -90,27 +100,23 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Search' at Center.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.Search.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Search' at Center.", repo.ApplicationUnderTest.SearchInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Search.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EmpName' with focus on 'ApplicationUnderTest.SomeDivTag.Search'.", repo.ApplicationUnderTest.SomeDivTag.SearchInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.SomeDivTag.Search.PressKeys(EmpName);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EmpName' with focus on 'ApplicationUnderTest.Search'.", repo.ApplicationUnderTest.SearchInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.Search.PressKeys(EmpName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FindEmployee' at Center.", repo.ApplicationUnderTest.SomeDivTag.FindEmployeeInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.SomeDivTag.FindEmployee.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FindEmployee' at Center.", repo.ApplicationUnderTest.FindEmployeeInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.FindEmployee.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.", repo.ApplicationUnderTest.SomeDivTag.selectEmpInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.SomeDivTag.selectEmp.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.selectEmp' at Center.", repo.ApplicationUnderTest.selectEmpInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.selectEmp.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$EmpName) on item 'ApplicationUnderTest.EmpName'.", repo.ApplicationUnderTest.EmpNameInfo, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.ApplicationUnderTest.EmpNameInfo, "InnerText", EmpName);
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Personal') on item 'ApplicationUnderTest.Personal'.", repo.ApplicationUnderTest.PersonalInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Personal') on item 'ApplicationUnderTest.Personal'.", repo.ApplicationUnderTest.PersonalInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.ApplicationUnderTest.PersonalInfo, "InnerText", "Personal");
             Delay.Milliseconds(100);
             

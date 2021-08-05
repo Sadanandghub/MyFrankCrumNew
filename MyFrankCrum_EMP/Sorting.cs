@@ -68,6 +68,16 @@ namespace MyFrankCrum_EMP
         }
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable Sortingvalue.
         /// </summary>
         [TestVariable("f17c01d4-2115-4a8a-8535-c75aeffd4d53")]
@@ -103,19 +113,19 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FaCaretDownFas' at Center.", repo.ApplicationUnderTest.SomeDivTag.FaCaretDownFasInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.FaCaretDownFas.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FaCaretDownFas' at Center.", repo.ApplicationUnderTest.FaCaretDownFasInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.FaCaretDownFas.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Sortingvalue' at Center.", repo.ApplicationUnderTest.SomeDivTag.SortingvalueInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.SomeDivTag.Sortingvalue.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Sortingvalue' at Center.", repo.ApplicationUnderTest.SortingvalueInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.Sortingvalue.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.FlexRow2' at Center.", repo.ApplicationUnderTest.SomeDivTag.FlexRow2Info, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.SomeDivTag.FlexRow2.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FlexRow2' at Center.", repo.ApplicationUnderTest.FlexRow2Info, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.FlexRow2.Click();
             Delay.Milliseconds(0);
             
-            Get_value_FlexRowName(repo.ApplicationUnderTest.SomeDivTag.FlexRowNameInfo, Sortingvalue);
+            Get_value_FlexRowName(repo.ApplicationUnderTest.FlexRowNameInfo, Sortingvalue);
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", null, false, new RecordItemIndex(4));

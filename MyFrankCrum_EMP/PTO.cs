@@ -54,6 +54,16 @@ namespace MyFrankCrum_EMP
 #region Variables
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable PTODropdownValue.
         /// </summary>
         [TestVariable("bd890e68-765c-4247-a21f-6c8dd1b6c1e0")]
@@ -89,8 +99,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.LiTagPTO' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.LiTagPTOInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.ReactTabsTabList.LiTagPTO.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LiTagPTO' at Center.", repo.ApplicationUnderTest.LiTagPTOInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.LiTagPTO.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));

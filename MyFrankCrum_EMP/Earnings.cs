@@ -68,6 +68,16 @@ namespace MyFrankCrum_EMP
         }
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable EarningCode.
         /// </summary>
         [TestVariable("f9b509cf-1529-41c8-b025-8d1a61323f7a")]
@@ -103,8 +113,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Earnings' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.EarningsInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.ReactTabsTabList.Earnings.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Earnings' at Center.", repo.ApplicationUnderTest.EarningsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Earnings.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
@@ -113,8 +123,8 @@ namespace MyFrankCrum_EMP
             // Add New Earning
             Report.Log(ReportLevel.Info, "Section", "Add New Earning", new RecordItemIndex(2));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddNewEarning' at Center.", repo.AddNewEarningInfo, new RecordItemIndex(3));
-            repo.AddNewEarning.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddNewEarning' at Center.", repo.ApplicationUnderTest.AddNewEarningInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.AddNewEarning.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(4));

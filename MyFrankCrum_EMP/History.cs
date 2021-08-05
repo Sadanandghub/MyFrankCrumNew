@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,12 +89,12 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Licenses') on item 'ApplicationUnderTest.ReactTabsTabList.Licenses'.", repo.ApplicationUnderTest.ReactTabsTabList.LicensesInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.LicensesInfo, "InnerText", "Licenses");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Licenses') on item 'ApplicationUnderTest.Licenses'.", repo.ApplicationUnderTest.LicensesInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.LicensesInfo, "InnerText", "Licenses");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.History' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.HistoryInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.ReactTabsTabList.History.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.History' at Center.", repo.ApplicationUnderTest.HistoryInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.History.Click();
             Delay.Milliseconds(0);
             
         }

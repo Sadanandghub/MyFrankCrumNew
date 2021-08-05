@@ -41,8 +41,8 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public Login()
         {
-            UserID = "WSapp123";
-            Password = "WSapp123$";
+            UserID = "masscompany";
+            Password = "Crum2017";
         }
 
         /// <summary>
@@ -79,6 +79,16 @@ namespace MyFrankCrum_EMP
             set { _Password = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -108,39 +118,39 @@ namespace MyFrankCrum_EMP
             // Company User Name
             Report.Log(ReportLevel.Info, "Section", "Company User Name", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Username' at Center.", repo.MyFrankCrum.UsernameInfo, new RecordItemIndex(1));
-            repo.MyFrankCrum.Username.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Username' at Center.", repo.ApplicationUnderTest.UsernameInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.Username.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UserID' with focus on 'MyFrankCrum.Username'.", repo.MyFrankCrum.UsernameInfo, new RecordItemIndex(2));
-            //repo.MyFrankCrum.Username.PressKeys(UserID);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UserID' with focus on 'ApplicationUnderTest.Username'.", repo.ApplicationUnderTest.UsernameInfo, new RecordItemIndex(2));
+            //repo.ApplicationUnderTest.Username.PressKeys(UserID);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$UserID' on item 'MyFrankCrum.Username'.", repo.MyFrankCrum.UsernameInfo, new RecordItemIndex(3));
-            repo.MyFrankCrum.Username.Element.SetAttributeValue("TagValue", UserID);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$UserID' on item 'ApplicationUnderTest.Username'.", repo.ApplicationUnderTest.UsernameInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.Username.Element.SetAttributeValue("TagValue", UserID);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.ClickOutside' at Center.", repo.MyFrankCrum.ClickOutsideInfo, new RecordItemIndex(4));
-            repo.MyFrankCrum.ClickOutside.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ClickOutside' at Center.", repo.ApplicationUnderTest.ClickOutsideInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.ClickOutside.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Password1' at Center.", repo.MyFrankCrum.Password1Info, new RecordItemIndex(5));
-            repo.MyFrankCrum.Password1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Password1' at Center.", repo.ApplicationUnderTest.Password1Info, new RecordItemIndex(5));
+            repo.ApplicationUnderTest.Password1.Click();
             Delay.Milliseconds(0);
             
             // Company User Password
             Report.Log(ReportLevel.Info, "Section", "Company User Password", new RecordItemIndex(6));
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'MyFrankCrum.Password'.", repo.MyFrankCrum.PasswordInfo, new RecordItemIndex(7));
-            //repo.MyFrankCrum.Password.PressKeys(Password);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'ApplicationUnderTest.Password'.", repo.ApplicationUnderTest.PasswordInfo, new RecordItemIndex(7));
+            //repo.ApplicationUnderTest.Password.PressKeys(Password);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Password' on item 'MyFrankCrum.Password1'.", repo.MyFrankCrum.Password1Info, new RecordItemIndex(8));
-            repo.MyFrankCrum.Password1.Element.SetAttributeValue("TagValue", Password);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Password' on item 'ApplicationUnderTest.Password1'.", repo.ApplicationUnderTest.Password1Info, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.Password1.Element.SetAttributeValue("TagValue", Password);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.LoginButton' at Center.", repo.MyFrankCrum.LoginButtonInfo, new RecordItemIndex(9));
-            repo.MyFrankCrum.LoginButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LoginButton' at Center.", repo.ApplicationUnderTest.LoginButtonInfo, new RecordItemIndex(9));
+            repo.ApplicationUnderTest.LoginButton.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(10));

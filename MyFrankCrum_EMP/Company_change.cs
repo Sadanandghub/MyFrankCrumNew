@@ -55,6 +55,16 @@ namespace MyFrankCrum_EMP
 #region Variables
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable CompName.
         /// </summary>
         [TestVariable("5ef40c9b-1ab2-45f7-b273-dff7b63c33a6")]
@@ -97,16 +107,16 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(1));
             Delay.Duration(30000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.Text' at Center.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(2));
-            repo.MyFrankCrum.Text.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Text1' at Center.", repo.ApplicationUnderTest.Text1Info, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.Text1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompName' with focus on 'MyFrankCrum.Text'.", repo.MyFrankCrum.TextInfo, new RecordItemIndex(3));
-            repo.MyFrankCrum.Text.PressKeys(CompName);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CompName' with focus on 'ApplicationUnderTest.Text1'.", repo.ApplicationUnderTest.Text1Info, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.Text1.PressKeys(CompName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MyFrankCrum.compselect' at Center.", repo.MyFrankCrum.compselectInfo, new RecordItemIndex(4));
-            repo.MyFrankCrum.compselect.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.compselect' at Center.", repo.ApplicationUnderTest.compselectInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.compselect.Click();
             Delay.Milliseconds(0);
             
         }

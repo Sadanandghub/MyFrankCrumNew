@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -187,8 +197,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.SaveChanges.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeepAsIs' at Center.", repo.KeepAsIsInfo, new RecordItemIndex(26));
-            repo.KeepAsIs.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.KeepAsIs' at Center.", repo.ApplicationUnderTest.KeepAsIsInfo, new RecordItemIndex(26));
+            repo.ApplicationUnderTest.KeepAsIs.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.City1' at Center.", repo.ApplicationUnderTest.City1Info, new RecordItemIndex(27));

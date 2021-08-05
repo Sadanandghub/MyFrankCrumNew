@@ -80,6 +80,16 @@ namespace MyFrankCrum_EMP
         }
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable AccruatTypeValue.
         /// </summary>
         [TestVariable("914e2351-f44c-4895-a856-23817ea3604f")]
@@ -125,8 +135,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.PTOSetup' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.PTOSetupInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.ReactTabsTabList.PTOSetup.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTOSetup' at Center.", repo.ApplicationUnderTest.PTOSetupInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.PTOSetup.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
@@ -209,8 +219,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.PTOPending.PressKeys("140");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddNewPTOPlan' at Center.", repo.AddNewPTOPlanInfo, new RecordItemIndex(22));
-            repo.AddNewPTOPlan.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddNewPTOPlan' at Center.", repo.ApplicationUnderTest.AddNewPTOPlanInfo, new RecordItemIndex(22));
+            repo.ApplicationUnderTest.AddNewPTOPlan.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(23));
@@ -221,8 +231,8 @@ namespace MyFrankCrum_EMP
             // The PTO Plan is added. A new row is added to the Current PTO Plans list
             Report.Log(ReportLevel.Info, "Section", "The PTO Plan is added. A new row is added to the Current PTO Plans list", new RecordItemIndex(25));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.LiTagPTO' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.LiTagPTOInfo, new RecordItemIndex(26));
-            repo.ApplicationUnderTest.ReactTabsTabList.LiTagPTO.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LiTagPTO' at Center.", repo.ApplicationUnderTest.LiTagPTOInfo, new RecordItemIndex(26));
+            repo.ApplicationUnderTest.LiTagPTO.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(27));
@@ -233,8 +243,8 @@ namespace MyFrankCrum_EMP
             // Click Edit in the menu on the right side of the Current PTO Plan row
             Report.Log(ReportLevel.Info, "Section", "Click Edit in the menu on the right side of the Current PTO Plan row", new RecordItemIndex(29));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.PTOSetup' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.PTOSetupInfo, new RecordItemIndex(30));
-            repo.ApplicationUnderTest.ReactTabsTabList.PTOSetup.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTOSetup' at Center.", repo.ApplicationUnderTest.PTOSetupInfo, new RecordItemIndex(30));
+            repo.ApplicationUnderTest.PTOSetup.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(31));
@@ -272,8 +282,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.EditPTOTaken.Element.SetAttributeValue("Value", "1000");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PTOUndoChanges' at Center.", repo.PTOUndoChangesInfo, new RecordItemIndex(40));
-            repo.PTOUndoChanges.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTOUndoChanges' at Center.", repo.ApplicationUnderTest.PTOUndoChangesInfo, new RecordItemIndex(40));
+            repo.ApplicationUnderTest.PTOUndoChanges.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$GetPTOAllowedValue) on item 'ApplicationUnderTest.PTOAllowed'.", repo.ApplicationUnderTest.PTOAllowedInfo, new RecordItemIndex(41));
@@ -303,8 +313,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.EditPTOTaken.Element.SetAttributeValue("Value", "1300");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EditSavePTOPlan' at Center.", repo.EditSavePTOPlanInfo, new RecordItemIndex(48));
-            repo.EditSavePTOPlan.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EditSavePTOPlan' at Center.", repo.ApplicationUnderTest.EditSavePTOPlanInfo, new RecordItemIndex(48));
+            repo.ApplicationUnderTest.EditSavePTOPlan.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(49));
@@ -344,8 +354,8 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(59));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PTODeletebtn' at Center.", repo.PTODeletebtnInfo, new RecordItemIndex(60));
-            repo.PTODeletebtn.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTODeletebtn' at Center.", repo.ApplicationUnderTest.PTODeletebtnInfo, new RecordItemIndex(60));
+            repo.ApplicationUnderTest.PTODeletebtn.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(61));

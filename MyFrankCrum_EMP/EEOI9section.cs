@@ -66,6 +66,16 @@ namespace MyFrankCrum_EMP
             set { _EEOI9_BirthLocattion = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -95,15 +105,15 @@ namespace MyFrankCrum_EMP
             // Validaton -EEO/I-9 section
             Report.Log(ReportLevel.Info, "Section", "Validaton -EEO/I-9 section", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='EEO / I-9   ') on item 'EEOI9'.", repo.EEOI9Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.EEOI9Info, "InnerText", "EEO / I-9   ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='EEO / I-9   ') on item 'ApplicationUnderTest.EEOI9'.", repo.ApplicationUnderTest.EEOI9Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.EEOI9Info, "InnerText", "EEO / I-9   ");
             Delay.Milliseconds(100);
             
             // Press Edit Button
             Report.Log(ReportLevel.Info, "Section", "Press Edit Button", new RecordItemIndex(2));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EDIT_EEOI9Section' at Center.", repo.EDIT_EEOI9SectionInfo, new RecordItemIndex(3));
-            repo.EDIT_EEOI9Section.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EDIT_EEOI9Section' at Center.", repo.ApplicationUnderTest.EDIT_EEOI9SectionInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.EDIT_EEOI9Section.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(4));
@@ -120,8 +130,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.EEO_I_9State.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'UndoChanges'.", repo.UndoChangesInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.UndoChangesInfo, "Enabled", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.UndoChanges'.", repo.ApplicationUnderTest.UndoChangesInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.UndoChangesInfo, "Enabled", "True");
             Delay.Milliseconds(100);
             
             // Press Undo Changes I The changes you made are reverted
@@ -139,8 +149,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.BirthLocation.Element.SetAttributeValue("TagValue", "Mumbai");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EEOI9UndoChanges' at Center.", repo.EEOI9UndoChangesInfo, new RecordItemIndex(13));
-            repo.EEOI9UndoChanges.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EEOI9UndoChanges' at Center.", repo.ApplicationUnderTest.EEOI9UndoChangesInfo, new RecordItemIndex(13));
+            repo.ApplicationUnderTest.EEOI9UndoChanges.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$EEOI9_BirthLocattion) on item 'ApplicationUnderTest.BirthLocation'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(14));

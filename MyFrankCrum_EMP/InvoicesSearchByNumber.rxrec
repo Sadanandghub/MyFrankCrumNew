@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="43bdfa2a-92a8-4e20-9620-b7d0a8d43dad"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="InvoicesSearchByNumber"
+	namespace="MyFrankCrum_EMP">
+	</codegen>
+	<variables>
+		<var
+		id="5847002d-a1c9-485b-bf9c-8fb630de1f8d"
+		name="InvoiceNumber">
+			MI_0000370
+		</var>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Search by Invices Number
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="60dab9c7-d808-4ce6-8e1b-4ea8f437b086"
+		sx="450"
+		sy="265"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2205d73b-0602-413f-bd55-49c2416b7aa0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div[3]//form/input[@name='search']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="MI{LShiftKey down}_{LShiftKey up}000370"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="8e9212bb-3688-47e7-87bd-f5bf8a4438bd">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="InvoiceNumber">
+				</binding>
+			</bindings>
+			<info
+			id="2205d73b-0602-413f-bd55-49c2416b7aa0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div[3]//form/input[@name='search']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7d797d00-15ae-48b9-a35f-7a9570599efb"
+		sx="1076"
+		sy="273"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="da6e6e02-7fb7-4b04-8473-bfaa92f9cc58"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="1022,251,145,38"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						button-primary
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Search
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						button-primary
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-radium"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div/div[1]/div/div[1]/form[@action='https://mfcdev05.frankcrum.com/Invoices']/button[@innertext='Search']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="b1305c16-60d7-4e61-9612-e00a71101ab0">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAC2AbwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACmP1p9MfrQA2iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAl
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKY/Wn0x+tADaKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igCWiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+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
+AK6H+Qp0DwBwz3EIA7eYKb4f/wCPF/8Arof5CsJtOSsehh4ShRnzK2q/U06Y/Wn0x+tAhtFFFABR
+RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBLRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFAFe4sba5cPNHuYDGdxHH4VF/ZNj/zw/8AH2/xq7RS5V2NFVmlZNlL+ybH/nh/4+3+NH9k
+2P8Azw/8fb/GrtFHKuwe2qfzP7yl/ZNj/wA8P/H2/wAaP7Jsf+eH/j7f41doo5V2D21T+Z/eUv7J
+sf8Anh/4+3+NNWCbT5P9DiM1u5y0W7BQ+oJ7H0q/RQklsTKcpfE7lCZbq+xC8HkW5I8wu4LOPQbT
+x+fenf2TY/8APD/x9v8AGrtFDSe4RnKPwuxS/smx/wCeH/j7f40f2TY/88P/AB9v8au0Ucq7Fe2q
+fzP7yl/ZNj/zw/8AH2/xo/smx/54f+Pt/jV2ijlXYPbVP5n95S/smx/54f8Aj7f40f2TY/8APD/x
+9v8AGrtFHKuwe2qfzP7yl/ZNj/zw/wDH2/xo/smx/wCeH/j7f41doo5V2D21T+Z/eUv7Jsf+eH/j
+7f41Yt7eK2QpCu1Sc4yTz+NS0UJJClUnJWbYUx+tPpj9aZA2iiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAfvT+8v50b0/vL+dOooAbvT+8v50u9P7y/nS0UAFFNXhiO3WnUAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABTH
+60+mP1oAbRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAS0UUUAFFFFADR/rD9B/WnU0f6
+w/Qf1p1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUx+tPpj9aAG0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEtFN3
+j0b/AL5NG8ejf98mgB1FN3j0b/vk0bx6N/3yaAAf6w/Qf1p1Io5JPeloAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACmP1p9MfrQ
+A2iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAlooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKY/Wii
+gBtFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"
+	name="MyFrankCrum_EMPRepository"
+	relativepath="MyFrankCrum_EMPRepository.rxrep">
+		<codegen
+		classname="MyFrankCrum_EMPRepository"
+		namespace="MyFrankCrum_EMP">
+		</codegen>
+		<rootfolder
+		id="57aa7af5-e1bb-4d86-b1a0-d72cef37e59c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		InvoicesSearchByNumber.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

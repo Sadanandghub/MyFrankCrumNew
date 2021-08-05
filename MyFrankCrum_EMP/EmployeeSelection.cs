@@ -42,6 +42,7 @@ namespace MyFrankCrum_EMP
         public EmployeeSelection()
         {
             Emp = "-1";
+            EmpName = "Azua";
         }
 
         /// <summary>
@@ -53,6 +54,16 @@ namespace MyFrankCrum_EMP
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable EmpName.
@@ -100,8 +111,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.selectEmp' at Center.", repo.ApplicationUnderTest.SomeDivTag.selectEmpInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.selectEmp.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.selectEmp' at Center.", repo.ApplicationUnderTest.selectEmpInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.selectEmp.Click();
             Delay.Milliseconds(0);
             
         }

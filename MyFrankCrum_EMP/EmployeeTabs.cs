@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -94,114 +104,114 @@ namespace MyFrankCrum_EMP
             Validate.AttributeEqual(repo.ApplicationUnderTest.JobPayInfo, "InnerText", "Job & Pay");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Earnings' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.EarningsInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.ReactTabsTabList.Earnings.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Earnings' at Center.", repo.ApplicationUnderTest.EarningsInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.Earnings.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(5));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Earnings') on item 'ApplicationUnderTest.ReactTabsTabList.Earnings'.", repo.ApplicationUnderTest.ReactTabsTabList.EarningsInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.EarningsInfo, "InnerText", "Earnings");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Earnings') on item 'ApplicationUnderTest.Earnings'.", repo.ApplicationUnderTest.EarningsInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.EarningsInfo, "InnerText", "Earnings");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Deductions' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.DeductionsInfo, new RecordItemIndex(7));
-            repo.ApplicationUnderTest.ReactTabsTabList.Deductions.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Deductions' at Center.", repo.ApplicationUnderTest.DeductionsInfo, new RecordItemIndex(7));
+            repo.ApplicationUnderTest.Deductions.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(8));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Deductions') on item 'ApplicationUnderTest.ReactTabsTabList.Deductions'.", repo.ApplicationUnderTest.ReactTabsTabList.DeductionsInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.DeductionsInfo, "InnerText", "Deductions");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Deductions') on item 'ApplicationUnderTest.Deductions'.", repo.ApplicationUnderTest.DeductionsInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.DeductionsInfo, "InnerText", "Deductions");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.DirectDeposit' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.DirectDepositInfo, new RecordItemIndex(10));
-            repo.ApplicationUnderTest.ReactTabsTabList.DirectDeposit.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DirectDeposit' at Center.", repo.ApplicationUnderTest.DirectDepositInfo, new RecordItemIndex(10));
+            repo.ApplicationUnderTest.DirectDeposit.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(11));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Direct Deposit') on item 'ApplicationUnderTest.ReactTabsTabList.DirectDeposit'.", repo.ApplicationUnderTest.ReactTabsTabList.DirectDepositInfo, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.DirectDepositInfo, "InnerText", "Direct Deposit");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Direct Deposit') on item 'ApplicationUnderTest.DirectDeposit'.", repo.ApplicationUnderTest.DirectDepositInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.DirectDepositInfo, "InnerText", "Direct Deposit");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Taxes' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.TaxesInfo, new RecordItemIndex(13));
-            repo.ApplicationUnderTest.ReactTabsTabList.Taxes.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Taxes' at Center.", repo.ApplicationUnderTest.TaxesInfo, new RecordItemIndex(13));
+            repo.ApplicationUnderTest.Taxes.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(14));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Taxes') on item 'ApplicationUnderTest.ReactTabsTabList.Taxes'.", repo.ApplicationUnderTest.ReactTabsTabList.TaxesInfo, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.TaxesInfo, "InnerText", "Taxes");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Taxes') on item 'ApplicationUnderTest.Taxes'.", repo.ApplicationUnderTest.TaxesInfo, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.TaxesInfo, "InnerText", "Taxes");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.PayHistory' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.PayHistoryInfo, new RecordItemIndex(16));
-            repo.ApplicationUnderTest.ReactTabsTabList.PayHistory.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PayHistory' at Center.", repo.ApplicationUnderTest.PayHistoryInfo, new RecordItemIndex(16));
+            repo.ApplicationUnderTest.PayHistory.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(17));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Pay History') on item 'ApplicationUnderTest.ReactTabsTabList.PayHistory'.", repo.ApplicationUnderTest.ReactTabsTabList.PayHistoryInfo, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.PayHistoryInfo, "InnerText", "Pay History");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Pay History') on item 'ApplicationUnderTest.PayHistory'.", repo.ApplicationUnderTest.PayHistoryInfo, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.PayHistoryInfo, "InnerText", "Pay History");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.LiTagPTO' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.LiTagPTOInfo, new RecordItemIndex(19));
-            repo.ApplicationUnderTest.ReactTabsTabList.LiTagPTO.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LiTagPTO' at Center.", repo.ApplicationUnderTest.LiTagPTOInfo, new RecordItemIndex(19));
+            repo.ApplicationUnderTest.LiTagPTO.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(20));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='PTO') on item 'ApplicationUnderTest.ReactTabsTabList.LiTagPTO'.", repo.ApplicationUnderTest.ReactTabsTabList.LiTagPTOInfo, new RecordItemIndex(21));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.LiTagPTOInfo, "InnerText", "PTO");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='PTO') on item 'ApplicationUnderTest.LiTagPTO'.", repo.ApplicationUnderTest.LiTagPTOInfo, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.LiTagPTOInfo, "InnerText", "PTO");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.PTOSetup' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.PTOSetupInfo, new RecordItemIndex(22));
-            repo.ApplicationUnderTest.ReactTabsTabList.PTOSetup.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTOSetup' at Center.", repo.ApplicationUnderTest.PTOSetupInfo, new RecordItemIndex(22));
+            repo.ApplicationUnderTest.PTOSetup.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(23));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='PTO Setup') on item 'ApplicationUnderTest.ReactTabsTabList.PTOSetup'.", repo.ApplicationUnderTest.ReactTabsTabList.PTOSetupInfo, new RecordItemIndex(24));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.PTOSetupInfo, "InnerText", "PTO Setup");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='PTO Setup') on item 'ApplicationUnderTest.PTOSetup'.", repo.ApplicationUnderTest.PTOSetupInfo, new RecordItemIndex(24));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.PTOSetupInfo, "InnerText", "PTO Setup");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Documents' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.DocumentsInfo, new RecordItemIndex(25));
-            repo.ApplicationUnderTest.ReactTabsTabList.Documents.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Documents' at Center.", repo.ApplicationUnderTest.DocumentsInfo, new RecordItemIndex(25));
+            repo.ApplicationUnderTest.Documents.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(26));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Documents') on item 'ApplicationUnderTest.ReactTabsTabList.Documents'.", repo.ApplicationUnderTest.ReactTabsTabList.DocumentsInfo, new RecordItemIndex(27));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.DocumentsInfo, "InnerText", "Documents");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Documents') on item 'ApplicationUnderTest.Documents'.", repo.ApplicationUnderTest.DocumentsInfo, new RecordItemIndex(27));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.DocumentsInfo, "InnerText", "Documents");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Licenses' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.LicensesInfo, new RecordItemIndex(28));
-            repo.ApplicationUnderTest.ReactTabsTabList.Licenses.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Licenses' at Center.", repo.ApplicationUnderTest.LicensesInfo, new RecordItemIndex(28));
+            repo.ApplicationUnderTest.Licenses.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(29));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Licenses') on item 'ApplicationUnderTest.ReactTabsTabList.Licenses'.", repo.ApplicationUnderTest.ReactTabsTabList.LicensesInfo, new RecordItemIndex(30));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.LicensesInfo, "InnerText", "Licenses");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Licenses') on item 'ApplicationUnderTest.Licenses'.", repo.ApplicationUnderTest.LicensesInfo, new RecordItemIndex(30));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.LicensesInfo, "InnerText", "Licenses");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.History' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.HistoryInfo, new RecordItemIndex(31));
-            repo.ApplicationUnderTest.ReactTabsTabList.History.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.History' at Center.", repo.ApplicationUnderTest.HistoryInfo, new RecordItemIndex(31));
+            repo.ApplicationUnderTest.History.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(32));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='History') on item 'ApplicationUnderTest.ReactTabsTabList.History'.", repo.ApplicationUnderTest.ReactTabsTabList.HistoryInfo, new RecordItemIndex(33));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.ReactTabsTabList.HistoryInfo, "InnerText", "History");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='History') on item 'ApplicationUnderTest.History'.", repo.ApplicationUnderTest.HistoryInfo, new RecordItemIndex(33));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.HistoryInfo, "InnerText", "History");
             Delay.Milliseconds(100);
             
         }

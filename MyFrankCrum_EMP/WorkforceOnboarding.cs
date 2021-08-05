@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,8 +89,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Onboarding' at Center.", repo.OnboardingInfo, new RecordItemIndex(0));
-            repo.Onboarding.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Onboarding' at Center.", repo.ApplicationUnderTest.OnboardingInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Onboarding.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.ModalScroll'.", repo.ApplicationUnderTest.ModalScrollInfo, new RecordItemIndex(1));
@@ -416,8 +426,11 @@ namespace MyFrankCrum_EMP
             Validate.AttributeEqual(repo.ApplicationUnderTest.OnboardingIframe.NoHireInfo, "Enabled", "True");
             Delay.Milliseconds(100);
             
+            // Deductions
+            Report.Log(ReportLevel.Info, "Section", "Deductions", new RecordItemIndex(90));
+            
             // Onboard Taxes
-            Report.Log(ReportLevel.Info, "Section", "Onboard Taxes", new RecordItemIndex(90));
+            Report.Log(ReportLevel.Info, "Section", "Onboard Taxes", new RecordItemIndex(91));
             
             Validate_SomeFieldSetTag(repo.ApplicationUnderTest.OnboardingIframe.SomeFieldSetTagInfo);
             Delay.Milliseconds(0);
@@ -426,74 +439,74 @@ namespace MyFrankCrum_EMP
             Delay.Milliseconds(0);
             
             // New Hire form
-            Report.Log(ReportLevel.Info, "Section", "New Hire form", new RecordItemIndex(93));
+            Report.Log(ReportLevel.Info, "Section", "New Hire form", new RecordItemIndex(94));
             
             NewHireMethod(repo.ApplicationUnderTest.OnboardingIframe.HireEmployeeInfo, repo.ApplicationUnderTest.OnboardingIframe.OnboardingIframeInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.OnboardingIframe.LnkReturn' at Center.", repo.ApplicationUnderTest.OnboardingIframe.LnkReturnInfo, new RecordItemIndex(95));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.OnboardingIframe.LnkReturn' at Center.", repo.ApplicationUnderTest.OnboardingIframe.LnkReturnInfo, new RecordItemIndex(96));
             repo.ApplicationUnderTest.OnboardingIframe.LnkReturn.DoubleClick();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(96));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(97));
             Delay.Duration(300, false);
             
             // No Hire
-            Report.Log(ReportLevel.Info, "Section", "No Hire", new RecordItemIndex(97));
+            Report.Log(ReportLevel.Info, "Section", "No Hire", new RecordItemIndex(98));
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '(null)' on item 'ApplicationUnderTest.OnboardingIframe.TxtFirstName'.", repo.ApplicationUnderTest.OnboardingIframe.TxtFirstNameInfo, new RecordItemIndex(98));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '(null)' on item 'ApplicationUnderTest.OnboardingIframe.TxtFirstName'.", repo.ApplicationUnderTest.OnboardingIframe.TxtFirstNameInfo, new RecordItemIndex(99));
             repo.ApplicationUnderTest.OnboardingIframe.TxtFirstName.Element.SetAttributeValue("Value", null);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.TxtLastName' at Center.", repo.ApplicationUnderTest.OnboardingIframe.TxtLastNameInfo, new RecordItemIndex(99));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.TxtLastName' at Center.", repo.ApplicationUnderTest.OnboardingIframe.TxtLastNameInfo, new RecordItemIndex(100));
             repo.ApplicationUnderTest.OnboardingIframe.TxtLastName.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'BUG' with focus on 'ApplicationUnderTest.OnboardingIframe.TxtLastName'.", repo.ApplicationUnderTest.OnboardingIframe.TxtLastNameInfo, new RecordItemIndex(100));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'BUG' with focus on 'ApplicationUnderTest.OnboardingIframe.TxtLastName'.", repo.ApplicationUnderTest.OnboardingIframe.TxtLastNameInfo, new RecordItemIndex(101));
             repo.ApplicationUnderTest.OnboardingIframe.TxtLastName.PressKeys("BUG");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.BtnSearch' at Center.", repo.ApplicationUnderTest.OnboardingIframe.BtnSearchInfo, new RecordItemIndex(101));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.BtnSearch' at Center.", repo.ApplicationUnderTest.OnboardingIframe.BtnSearchInfo, new RecordItemIndex(102));
             repo.ApplicationUnderTest.OnboardingIframe.BtnSearch.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(102));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(103));
             Delay.Duration(3000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Screenshot capture", repo.ApplicationUnderTest.ModalScroll, false, new RecordItemIndex(103));
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot capture", repo.ApplicationUnderTest.ModalScroll, false, new RecordItemIndex(104));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.Select' at Center.", repo.ApplicationUnderTest.OnboardingIframe.SelectInfo, new RecordItemIndex(104));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.Select' at Center.", repo.ApplicationUnderTest.OnboardingIframe.SelectInfo, new RecordItemIndex(105));
             repo.ApplicationUnderTest.OnboardingIframe.Select.Click();
             Delay.Milliseconds(0);
             
             NoHireMethod(repo.ApplicationUnderTest.OnboardingIframe.NoHireInfo, repo.ApplicationUnderTest.OnboardingIframe.SpanTagNoInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.SpanTagOK' at Center.", repo.ApplicationUnderTest.OnboardingIframe.SpanTagOKInfo, new RecordItemIndex(106));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.SpanTagOK' at Center.", repo.ApplicationUnderTest.OnboardingIframe.SpanTagOKInfo, new RecordItemIndex(107));
             repo.ApplicationUnderTest.OnboardingIframe.SpanTagOK.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(107));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(108));
             Delay.Duration(3000, false);
             
             NoHireMethod(repo.ApplicationUnderTest.OnboardingIframe.NoHireInfo, repo.ApplicationUnderTest.OnboardingIframe.SpanTagYesInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.SpanTagOK' at Center.", repo.ApplicationUnderTest.OnboardingIframe.SpanTagOKInfo, new RecordItemIndex(109));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.SpanTagOK' at Center.", repo.ApplicationUnderTest.OnboardingIframe.SpanTagOKInfo, new RecordItemIndex(110));
             repo.ApplicationUnderTest.OnboardingIframe.SpanTagOK.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(110));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(111));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.BtnReset' at Center.", repo.ApplicationUnderTest.OnboardingIframe.BtnResetInfo, new RecordItemIndex(111));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.BtnReset' at Center.", repo.ApplicationUnderTest.OnboardingIframe.BtnResetInfo, new RecordItemIndex(112));
             repo.ApplicationUnderTest.OnboardingIframe.BtnReset.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(112));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(113));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FasFaTimes' at Center.", repo.ApplicationUnderTest.FasFaTimesInfo, new RecordItemIndex(113));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FasFaTimes' at Center.", repo.ApplicationUnderTest.FasFaTimesInfo, new RecordItemIndex(114));
             repo.ApplicationUnderTest.FasFaTimes.Click();
             Delay.Milliseconds(0);
             

@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -98,8 +108,8 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(4));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Address & Contact') on item 'AddressContact'.", repo.AddressContactInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.AddressContactInfo, "InnerText", "Address & Contact");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Address & Contact') on item 'ApplicationUnderTest.AddressContact'.", repo.ApplicationUnderTest.AddressContactInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.AddressContactInfo, "InnerText", "Address & Contact");
             Delay.Milliseconds(100);
             
         }

@@ -67,6 +67,16 @@ namespace MyFrankCrum_EMP
         }
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable LicenseDescriptionValue.
         /// </summary>
         [TestVariable("0cb4b840-1402-48f6-a74e-c987f83adac6")]
@@ -102,8 +112,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Licenses' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.LicensesInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.ReactTabsTabList.Licenses.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Licenses' at Center.", repo.ApplicationUnderTest.LicensesInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Licenses.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
@@ -127,12 +137,12 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.LicensesCode.PressKeys("AS123456");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LicensesButtonTagAdd' at Center.", repo.LicensesButtonTagAddInfo, new RecordItemIndex(7));
-            repo.LicensesButtonTagAdd.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LicensesButtonTagAdd' at Center.", repo.ApplicationUnderTest.LicensesButtonTagAddInfo, new RecordItemIndex(7));
+            repo.ApplicationUnderTest.LicensesButtonTagAdd.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LicenseManagePopupClose' at Center.", repo.LicenseManagePopupCloseInfo, new RecordItemIndex(8));
-            repo.LicenseManagePopupClose.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LicenseManagePopupClose' at Center.", repo.ApplicationUnderTest.LicenseManagePopupCloseInfo, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.LicenseManagePopupClose.Click();
             Delay.Milliseconds(0);
             
             // Press the Add License button to the right of the Licenses label
@@ -142,8 +152,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.LicensesAddLicense.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LicenseDescription' at Center.", repo.LicenseDescriptionInfo, new RecordItemIndex(11));
-            repo.LicenseDescription.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LicenseDescription' at Center.", repo.ApplicationUnderTest.LicenseDescriptionInfo, new RecordItemIndex(11));
+            repo.ApplicationUnderTest.LicenseDescription.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LicenseDescriptionValue' at Center.", repo.ApplicationUnderTest.LicenseDescriptionValueInfo, new RecordItemIndex(12));
@@ -174,12 +184,12 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.LicenseExpirationdate.PressKeys("04/01/2022");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LicenseNotes' at Center.", repo.LicenseNotesInfo, new RecordItemIndex(19));
-            repo.LicenseNotes.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LicenseNotes' at Center.", repo.ApplicationUnderTest.LicenseNotesInfo, new RecordItemIndex(19));
+            repo.ApplicationUnderTest.LicenseNotes.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Test' with focus on 'LicenseNotes'.", repo.LicenseNotesInfo, new RecordItemIndex(20));
-            repo.LicenseNotes.PressKeys("Test");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Test' with focus on 'ApplicationUnderTest.LicenseNotes'.", repo.ApplicationUnderTest.LicenseNotesInfo, new RecordItemIndex(20));
+            repo.ApplicationUnderTest.LicenseNotes.PressKeys("Test");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LicensesAddNewLicense' at Center.", repo.ApplicationUnderTest.LicensesAddNewLicenseInfo, new RecordItemIndex(21));
@@ -217,12 +227,12 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.LicenseNumber.Element.SetAttributeValue("Value", "12345678");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LicenseNotesLable' at Center.", repo.LicenseNotesLableInfo, new RecordItemIndex(31));
-            repo.LicenseNotesLable.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LicenseNotesLable' at Center.", repo.ApplicationUnderTest.LicenseNotesLableInfo, new RecordItemIndex(31));
+            repo.ApplicationUnderTest.LicenseNotesLable.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LicenseUndoChanges' at Center.", repo.LicenseUndoChangesInfo, new RecordItemIndex(32));
-            repo.LicenseUndoChanges.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LicenseUndoChanges' at Center.", repo.ApplicationUnderTest.LicenseUndoChangesInfo, new RecordItemIndex(32));
+            repo.ApplicationUnderTest.LicenseUndoChanges.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$GetLicenseNumber) on item 'ApplicationUnderTest.LicenseNumber'.", repo.ApplicationUnderTest.LicenseNumberInfo, new RecordItemIndex(33));

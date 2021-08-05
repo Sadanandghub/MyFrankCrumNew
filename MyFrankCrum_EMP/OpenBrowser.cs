@@ -41,7 +41,9 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public OpenBrowser()
         {
-            URL = "test";
+            URL = "https://mfcdev05.frankcrum.com";
+            Browser = "Chrome";
+            RepoURL = "mfcdev05.frankcrum.com";
         }
 
         /// <summary>
@@ -64,6 +66,28 @@ namespace MyFrankCrum_EMP
         {
             get { return _URL; }
             set { _URL = value; }
+        }
+
+        string _Browser;
+
+        /// <summary>
+        /// Gets or sets the value of variable Browser.
+        /// </summary>
+        [TestVariable("21808886-c6dc-4eb8-aaeb-6751a59d2efd")]
+        public string Browser
+        {
+            get { return _Browser; }
+            set { _Browser = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
         }
 
 #endregion
@@ -92,15 +116,21 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(URL, "chrome", "", false, false, false, false, false, true);
+            //OpenBrowser_Open_browser(Browser, URL);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(1));
+            Host.Current.OpenBrowser(URL, Browser, "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
+            Delay.Duration(5000, false);
+            
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ApplicationUnderTest.Appcues' at Center.", repo.ApplicationUnderTest.AppcuesInfo, new RecordItemIndex(1));
-                repo.ApplicationUnderTest.Appcues.Click();
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
+                //Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ApplicationUnderTest.Appcues' at Center.", repo.ApplicationUnderTest.AppcuesInfo, new RecordItemIndex(3));
+                //repo.ApplicationUnderTest.Appcues.Click();
+                //Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
         }
 

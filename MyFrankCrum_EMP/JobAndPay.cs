@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -102,8 +112,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.Job_Code.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect6' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect6Info, new RecordItemIndex(6));
-            repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect6.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Departmentclick' at Center.", repo.ApplicationUnderTest.DepartmentclickInfo, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.Departmentclick.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Department' at Center.", repo.ApplicationUnderTest.DepartmentInfo, new RecordItemIndex(7));
@@ -217,12 +227,12 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.performanceText.PressKeys("04042021");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PerformanceReviewCorrectiveActionF' at Center.", repo.PerformanceReviewCorrectiveActionFInfo, new RecordItemIndex(37));
-            repo.PerformanceReviewCorrectiveActionF.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceReviewCorrectiveActionF' at Center.", repo.ApplicationUnderTest.PerformanceReviewCorrectiveActionFInfo, new RecordItemIndex(37));
+            repo.ApplicationUnderTest.PerformanceReviewCorrectiveActionF.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PerformanceChooseFile' at Center.", repo.PerformanceChooseFileInfo, new RecordItemIndex(38));
-            repo.PerformanceChooseFile.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceChooseFile' at Center.", repo.ApplicationUnderTest.PerformanceChooseFileInfo, new RecordItemIndex(38));
+            repo.ApplicationUnderTest.PerformanceChooseFile.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay' at Center.", repo.Open.SystemItemNameDisplayInfo, new RecordItemIndex(39));
@@ -233,8 +243,8 @@ namespace MyFrankCrum_EMP
             repo.Open.ButtonOpen.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PerformanceReviewFileFileEmployeeCanVie' at Center.", repo.PerformanceReviewFileFileEmployeeCanVieInfo, new RecordItemIndex(41));
-            repo.PerformanceReviewFileFileEmployeeCanVie.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceReviewFileFileEmployeeCanVie' at Center.", repo.ApplicationUnderTest.PerformanceReviewFileFileEmployeeCanVieInfo, new RecordItemIndex(41));
+            repo.ApplicationUnderTest.PerformanceReviewFileFileEmployeeCanVie.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveJobPayChanges' at Center.", repo.ApplicationUnderTest.SaveJobPayChangesInfo, new RecordItemIndex(42));

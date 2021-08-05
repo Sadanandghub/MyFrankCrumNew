@@ -66,6 +66,16 @@ namespace MyFrankCrum_EMP
             set { _ContactMiddelName = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -92,8 +102,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'UndoChangesContact'.", repo.UndoChangesContactInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.UndoChangesContactInfo, "Enabled", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'ApplicationUnderTest.UndoChangesContact'.", repo.ApplicationUnderTest.UndoChangesContactInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.UndoChangesContactInfo, "Enabled", "False");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.MiddleName2' at Center.", repo.ApplicationUnderTest.MiddleName2Info, new RecordItemIndex(1));
@@ -108,8 +118,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.MiddleName2.Element.SetAttributeValue("TagValue", "Lalji");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UndoChangesContact' at Center.", repo.UndoChangesContactInfo, new RecordItemIndex(4));
-            repo.UndoChangesContact.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UndoChangesContact' at Center.", repo.ApplicationUnderTest.UndoChangesContactInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.UndoChangesContact.Click();
             Delay.Milliseconds(0);
             
             // Edit Middle Name ----------------------------------------

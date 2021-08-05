@@ -54,6 +54,16 @@ namespace MyFrankCrum_EMP
 #region Variables
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable TermReasonValue.
         /// </summary>
         [TestVariable("4a796e37-36e6-40be-9cbb-afbecd29fb31")]
@@ -91,8 +101,8 @@ namespace MyFrankCrum_EMP
 
             Report.Screenshot(ReportLevel.Info, "User", "Emp Count before done Inactive Employee", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.GrayBox' at Center.", repo.ApplicationUnderTest.SomeDivTag.GrayBoxInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.SomeDivTag.GrayBox.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.GrayBox' at Center.", repo.ApplicationUnderTest.GrayBoxInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.GrayBox.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateClick' at Center.", repo.ApplicationUnderTest.TerminateClickInfo, new RecordItemIndex(2));
@@ -116,8 +126,8 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(7));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LastDayWorked' at Center.", repo.LastDayWorkedInfo, new RecordItemIndex(8));
-            repo.LastDayWorked.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LastDayWorked' at Center.", repo.ApplicationUnderTest.LastDayWorkedInfo, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.LastDayWorked.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermiLastWorkDate' at Center.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(9));
@@ -155,15 +165,15 @@ namespace MyFrankCrum_EMP
             // Press the Cancel button
             Report.Log(ReportLevel.Info, "Section", "Press the Cancel button", new RecordItemIndex(17));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TermCancelbtn' at Center.", repo.TermCancelbtnInfo, new RecordItemIndex(18));
-            repo.TermCancelbtn.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermCancelbtn' at Center.", repo.ApplicationUnderTest.TermCancelbtnInfo, new RecordItemIndex(18));
+            repo.ApplicationUnderTest.TermCancelbtn.Click();
             Delay.Milliseconds(0);
             
             // On an employee row click "Terminate Employee" in the right menu
             Report.Log(ReportLevel.Info, "Section", "On an employee row click \"Terminate Employee\" in the right menu", new RecordItemIndex(19));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.GrayBox' at Center.", repo.ApplicationUnderTest.SomeDivTag.GrayBoxInfo, new RecordItemIndex(20));
-            repo.ApplicationUnderTest.SomeDivTag.GrayBox.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.GrayBox' at Center.", repo.ApplicationUnderTest.GrayBoxInfo, new RecordItemIndex(20));
+            repo.ApplicationUnderTest.GrayBox.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateClick' at Center.", repo.ApplicationUnderTest.TerminateClickInfo, new RecordItemIndex(21));
@@ -187,8 +197,8 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(26));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LastDayWorked' at Center.", repo.LastDayWorkedInfo, new RecordItemIndex(27));
-            repo.LastDayWorked.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LastDayWorked' at Center.", repo.ApplicationUnderTest.LastDayWorkedInfo, new RecordItemIndex(27));
+            repo.ApplicationUnderTest.LastDayWorked.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermiLastWorkDate' at Center.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(28));
@@ -226,15 +236,15 @@ namespace MyFrankCrum_EMP
             // Press the Terminate button
             Report.Log(ReportLevel.Info, "Section", "Press the Terminate button", new RecordItemIndex(36));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Terminatebtn' at Center.", repo.TerminatebtnInfo, new RecordItemIndex(37));
-            repo.Terminatebtn.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Terminatebtn' at Center.", repo.ApplicationUnderTest.TerminatebtnInfo, new RecordItemIndex(37));
+            repo.ApplicationUnderTest.Terminatebtn.Click();
             Delay.Milliseconds(0);
             
             // Press Yes, Terminate
             Report.Log(ReportLevel.Info, "Section", "Press Yes, Terminate", new RecordItemIndex(38));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TerminateYesbtn' at Center.", repo.TerminateYesbtnInfo, new RecordItemIndex(39));
-            repo.TerminateYesbtn.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateYesbtn' at Center.", repo.ApplicationUnderTest.TerminateYesbtnInfo, new RecordItemIndex(39));
+            repo.ApplicationUnderTest.TerminateYesbtn.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(40));

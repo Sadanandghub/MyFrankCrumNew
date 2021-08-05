@@ -81,6 +81,16 @@ namespace MyFrankCrum_EMP
         }
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable Location.
         /// </summary>
         [TestVariable("8a960ec7-be01-42b6-8733-a8dffdb1cb27")]
@@ -116,8 +126,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Taxes' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.TaxesInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.ReactTabsTabList.Taxes.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Taxes' at Center.", repo.ApplicationUnderTest.TaxesInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Taxes.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
@@ -139,8 +149,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.IsPrimary.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddLocation' at Center.", repo.AddLocationInfo, new RecordItemIndex(6));
-            repo.AddLocation.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddLocation' at Center.", repo.ApplicationUnderTest.AddLocationInfo, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.AddLocation.Click();
             Delay.Milliseconds(0);
             
             // Two or more locations are needed for this test. Open the right side menu on one of the location rows that is NOT a primary location and press the Edit menu option
@@ -157,12 +167,12 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(10));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TaxesEditIsPrimary' at Center.", repo.TaxesEditIsPrimaryInfo, new RecordItemIndex(11));
-            repo.TaxesEditIsPrimary.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TaxesEditIsPrimary' at Center.", repo.ApplicationUnderTest.TaxesEditIsPrimaryInfo, new RecordItemIndex(11));
+            repo.ApplicationUnderTest.TaxesEditIsPrimary.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TaxesEditSaveChanges' at Center.", repo.TaxesEditSaveChangesInfo, new RecordItemIndex(12));
-            repo.TaxesEditSaveChanges.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TaxesEditSaveChanges' at Center.", repo.ApplicationUnderTest.TaxesEditSaveChangesInfo, new RecordItemIndex(12));
+            repo.ApplicationUnderTest.TaxesEditSaveChanges.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(13));
@@ -220,8 +230,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.OTHER_DEPENDENTS.Element.SetAttributeValue("Value", "4000");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TaxesUndoChanges1' at Center.", repo.TaxesUndoChanges1Info, new RecordItemIndex(29));
-            repo.TaxesUndoChanges1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TaxesUndoChanges1' at Center.", repo.ApplicationUnderTest.TaxesUndoChanges1Info, new RecordItemIndex(29));
+            repo.ApplicationUnderTest.TaxesUndoChanges1.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$OtherDependentsAmount) on item 'ApplicationUnderTest.OTHER_DEPENDENTS'.", repo.ApplicationUnderTest.OTHER_DEPENDENTSInfo, new RecordItemIndex(30));
@@ -251,8 +261,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.OTHER_DEPENDENTS.Element.SetAttributeValue("Value", "6000");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TaxesEditSaveChanges3' at Center.", repo.TaxesEditSaveChanges3Info, new RecordItemIndex(37));
-            repo.TaxesEditSaveChanges3.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TaxesEditSaveChanges3' at Center.", repo.ApplicationUnderTest.TaxesEditSaveChanges3Info, new RecordItemIndex(37));
+            repo.ApplicationUnderTest.TaxesEditSaveChanges3.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(38));

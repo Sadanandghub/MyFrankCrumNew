@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -83,40 +93,40 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.Activeclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Active ') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesActive'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesActiveInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesActiveInfo, "InnerText", "Employees  - Active ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees - Active') on item 'ApplicationUnderTest.EmployeesActive'.", repo.ApplicationUnderTest.EmployeesActiveInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.ApplicationUnderTest.EmployeesActiveInfo, "InnerText", "Employees - Active");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeaveOfAbsenceclick' at Center.", repo.ApplicationUnderTest.LeaveOfAbsenceclickInfo, new RecordItemIndex(2));
             repo.ApplicationUnderTest.LeaveOfAbsenceclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Leave of absence') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesLeaveOfAbsence'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesLeaveOfAbsenceInfo, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesLeaveOfAbsenceInfo, "InnerText", "Employees  - Leave of absence");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees - Leave of absence') on item 'ApplicationUnderTest.EmployeesLeaveOfAbsence'.", repo.ApplicationUnderTest.EmployeesLeaveOfAbsenceInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.ApplicationUnderTest.EmployeesLeaveOfAbsenceInfo, "InnerText", "Employees - Leave of absence");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnStrikeclick' at Center.", repo.ApplicationUnderTest.OnStrikeclickInfo, new RecordItemIndex(4));
             repo.ApplicationUnderTest.OnStrikeclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - On strike') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesOnStrike'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesOnStrikeInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesOnStrikeInfo, "InnerText", "Employees  - On strike");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees - On strike') on item 'ApplicationUnderTest.EmployeesOnStrike'.", repo.ApplicationUnderTest.EmployeesOnStrikeInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.ApplicationUnderTest.EmployeesOnStrikeInfo, "InnerText", "Employees - On strike");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Terminatedclick' at Center.", repo.ApplicationUnderTest.TerminatedclickInfo, new RecordItemIndex(6));
             repo.ApplicationUnderTest.Terminatedclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Terminated') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTerminated'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTerminatedInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTerminatedInfo, "InnerText", "Employees  - Terminated");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees - Terminated') on item 'ApplicationUnderTest.EmployeesTerminated'.", repo.ApplicationUnderTest.EmployeesTerminatedInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.ApplicationUnderTest.EmployeesTerminatedInfo, "InnerText", "Employees - Terminated");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Totalclick' at Center.", repo.ApplicationUnderTest.TotalclickInfo, new RecordItemIndex(8));
             repo.ApplicationUnderTest.Totalclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees  - Total') on item 'ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotal'.", repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotalInfo, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.ApplicationUnderTest.CssVnm4clReactTabs.EmployeesTotalInfo, "InnerText", "Employees  - Total");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Employees - Total') on item 'ApplicationUnderTest.EmployeesTotal'.", repo.ApplicationUnderTest.EmployeesTotalInfo, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.ApplicationUnderTest.EmployeesTotalInfo, "InnerText", "Employees - Total");
             Delay.Milliseconds(100);
             
         }

@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -83,8 +93,11 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.ChangeCompany.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.Logout' at Center.", repo.ApplicationUnderTest.SomeDivTag.LogoutInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.SomeDivTag.Logout.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Logout' at Center.", repo.ApplicationUnderTest.LogoutInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.Logout.Click();
             Delay.Milliseconds(0);
             
         }

@@ -1759,74 +1759,10 @@ ooooA//Z
 			<bindings>
 			</bindings>
 			<info
-			id="6b00a6a2-616d-458f-bbd7-9c54f2baabe2"
-			sourcename="Recorder">
-				<element
-				capabilities="webelement, selecttag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="selecttag"
-				rect="526,291,200,37"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						ddlStatus
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						select
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="name"
-					type="System.String">
-						ddlStatus
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
+			id="c91040a0-a1b1-41dc-9dc9-c8e6314c7a9e"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='devmfc.frankcrum.com']//iframe[#'onboardingIframe']//select[#'ddlStatus']
+					/dom[@domain=$RepoURL]//iframe[#'onboardingIframe']//select[#'ddlStatus']
 				</path>
 			</info>
 			<AttributeValue>
@@ -8624,6 +8560,15 @@ KKACiiigAooooAMUmOR6DoKKKAFowKKKAAADoAKKKKAP/9k=
 				True
 			</matchvalue>
 		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Deductions
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<separatoritem
 		enabled="True"
 		optional="False">

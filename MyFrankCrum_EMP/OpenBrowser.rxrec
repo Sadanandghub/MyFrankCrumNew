@@ -26,20 +26,65 @@ mode="Desktop">
 		<var
 		id="c48f33a1-1d14-48b4-93c8-303518d18814"
 		name="URL">
-			test
+			https://mfcdev05.frankcrum.com
+		</var>
+		<var
+		id="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+		name="Browser">
+			Chrome
+		</var>
+		<var
+		id="c75816bd-3150-4b49-aa6d-f8479454f515"
+		name="RepoURL">
+			mfcdev05.frankcrum.com
 		</var>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="OpenBrowser"
+		enabled="False"
+		isexternaltestmethod="False"
+		methodname="OpenBrowser_Open_browser"
+		namespace="MyFrankCrum_EMP"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="67fb7412-227e-4b03-b6f0-55b62ccca8a4">
+				<argument
+				argname="Browser"
+				id="0dd0caaa-0acd-4096-826a-43c039e1ad0e"
+				variable="Browser">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="URL"
+				id="df9fdd83-a138-46a0-9b7d-625a52b59d79"
+				variable="URL">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<openwebsiterecorditem
 		args=""
-		browser="chrome"
+		browser="IE"
 		clearcache="False"
 		clearcookies="False"
 		enabled="True"
 		incognito="False"
 		instrument="True"
 		killexisting="False"
-		maximized="False"
+		maximized="True"
 		optional="False">
 			<comment>
 			</comment>
@@ -48,16 +93,29 @@ mode="Desktop">
 				target="Url"
 				variable="URL">
 				</binding>
+				<binding
+				target="BrowserName"
+				variable="Browser">
+				</binding>
 			</bindings>
 			<url>
-				https://devmfc.frankcrum.com/login
+				http://www.ranorex.com
 			</url>
 		</openwebsiterecorditem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="True"

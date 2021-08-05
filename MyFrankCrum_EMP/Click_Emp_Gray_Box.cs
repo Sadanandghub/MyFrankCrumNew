@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,8 +89,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeDivTag.GrayBox' at Center.", repo.ApplicationUnderTest.SomeDivTag.GrayBoxInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.SomeDivTag.GrayBox.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.GrayBox' at Center.", repo.ApplicationUnderTest.GrayBoxInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.GrayBox.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Details') on item 'ApplicationUnderTest.Details'.", repo.ApplicationUnderTest.DetailsInfo, new RecordItemIndex(1));

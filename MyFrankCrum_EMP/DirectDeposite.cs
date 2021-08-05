@@ -55,6 +55,16 @@ namespace MyFrankCrum_EMP
 #region Variables
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable AccountType.
         /// </summary>
         [TestVariable("a44c9dd6-de9b-4dad-a8dd-cf1b9cefa736")]
@@ -110,8 +120,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.DirectDeposit' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.DirectDepositInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.ReactTabsTabList.DirectDeposit.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DirectDeposit' at Center.", repo.ApplicationUnderTest.DirectDepositInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.DirectDeposit.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
@@ -193,8 +203,8 @@ namespace MyFrankCrum_EMP
                 Delay.Milliseconds(2840);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(19)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DepositeChooseFile' at Center.", repo.DepositeChooseFileInfo, new RecordItemIndex(20));
-            repo.DepositeChooseFile.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeChooseFile' at Center.", repo.ApplicationUnderTest.DepositeChooseFileInfo, new RecordItemIndex(20));
+            repo.ApplicationUnderTest.DepositeChooseFile.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay1' at Center.", repo.Open.SystemItemNameDisplay1Info, new RecordItemIndex(21));

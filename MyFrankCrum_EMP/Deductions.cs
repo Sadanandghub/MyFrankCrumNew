@@ -68,6 +68,16 @@ namespace MyFrankCrum_EMP
         }
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable DeductionCode.
         /// </summary>
         [TestVariable("4ef0aac5-856e-4ee3-809d-1e9abd61dcd5")]
@@ -103,8 +113,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Deductions' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.DeductionsInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.ReactTabsTabList.Deductions.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Deductions' at Center.", repo.ApplicationUnderTest.DeductionsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Deductions.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
@@ -147,8 +157,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.DeductionStartDate.PressKeys("08042021");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DeductionAddUndoChanges' at Center.", repo.DeductionAddUndoChangesInfo, new RecordItemIndex(12));
-            repo.DeductionAddUndoChanges.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeductionAddUndoChanges' at Center.", repo.ApplicationUnderTest.DeductionAddUndoChangesInfo, new RecordItemIndex(12));
+            repo.ApplicationUnderTest.DeductionAddUndoChanges.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Placeholder=$DeductionStartDate) on item 'ApplicationUnderTest.DeductionStartDate'.", repo.ApplicationUnderTest.DeductionStartDateInfo, new RecordItemIndex(13));
@@ -190,8 +200,8 @@ namespace MyFrankCrum_EMP
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(21)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DeductionChooseFile' at Center.", repo.DeductionChooseFileInfo, new RecordItemIndex(22));
-            repo.DeductionChooseFile.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeductionChooseFile' at Center.", repo.ApplicationUnderTest.DeductionChooseFileInfo, new RecordItemIndex(22));
+            repo.ApplicationUnderTest.DeductionChooseFile.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay' at Center.", repo.Open.SystemItemNameDisplayInfo, new RecordItemIndex(23));

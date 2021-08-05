@@ -53,6 +53,16 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -219,12 +229,12 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.InputTagZIP.PressKeys("2345677654");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HomePhone' at Center.", repo.HomePhoneInfo, new RecordItemIndex(35));
-            repo.HomePhone.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.HomePhone1' at Center.", repo.ApplicationUnderTest.HomePhone1Info, new RecordItemIndex(35));
+            repo.ApplicationUnderTest.HomePhone1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5678765676' with focus on 'HomePhone'.", repo.HomePhoneInfo, new RecordItemIndex(36));
-            repo.HomePhone.PressKeys("5678765676");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5678765676' with focus on 'ApplicationUnderTest.HomePhone1'.", repo.ApplicationUnderTest.HomePhone1Info, new RecordItemIndex(36));
+            repo.ApplicationUnderTest.HomePhone1.PressKeys("5678765676");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactWorkPhone' at Center.", repo.ApplicationUnderTest.ContactWorkPhoneInfo, new RecordItemIndex(37));
@@ -275,8 +285,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.IsEmergencyContact.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'AddContactbtnTr'.", repo.AddContactbtnTrInfo, new RecordItemIndex(49));
-            Validate.AttributeEqual(repo.AddContactbtnTrInfo, "Enabled", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.AddContactbtnTr'.", repo.ApplicationUnderTest.AddContactbtnTrInfo, new RecordItemIndex(49));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.AddContactbtnTrInfo, "Enabled", "True");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddContact2' at Center.", repo.ApplicationUnderTest.AddContact2Info, new RecordItemIndex(50));

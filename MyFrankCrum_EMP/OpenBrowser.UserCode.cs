@@ -33,5 +33,22 @@ namespace MyFrankCrum_EMP
             // Your recording specific initialization code goes here.
         }
 
+        public void OpenBrowser_Open_browser(string Browser , string URL)
+        {
+        	if(URL.Equals(""))
+        	{
+        		Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser specified by variable $Browser in normal mode.");
+            Host.Current.OpenBrowser("", Browser, "", false, false, false, false, false, true);
+        	}
+        	else
+        	{
+        		Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser specified by variable $Browser in normal mode.");
+            Host.Current.OpenBrowser(URL, Browser, "", false, false, false, false, false, true);
+        	}
+            
+            
+        }
+
+
     }
 }

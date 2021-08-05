@@ -54,6 +54,16 @@ namespace MyFrankCrum_EMP
 #region Variables
 
         /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable DocumentCategoryValue.
         /// </summary>
         [TestVariable("f25e8f2a-0b5c-4fb3-9630-41c8872a54ed")]
@@ -89,8 +99,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Documents' at Center.", repo.ApplicationUnderTest.ReactTabsTabList.DocumentsInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.ReactTabsTabList.Documents.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Documents' at Center.", repo.ApplicationUnderTest.DocumentsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Documents.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
@@ -100,8 +110,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.UploadNewDocument.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentCategoryDropclick' at Center.", repo.DocumentCategoryDropclickInfo, new RecordItemIndex(3));
-            repo.DocumentCategoryDropclick.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryDropclick' at Center.", repo.ApplicationUnderTest.DocumentCategoryDropclickInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.DocumentCategoryDropclick.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryValue' at Center.", repo.ApplicationUnderTest.DocumentCategoryValueInfo, new RecordItemIndex(4));
@@ -124,12 +134,12 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.DocumentExpiresDate.PressKeys("05/18/2021");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentFileEmployeeCanView' at Center.", repo.DocumentFileEmployeeCanViewInfo, new RecordItemIndex(9));
-            repo.DocumentFileEmployeeCanView.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentFileEmployeeCanView' at Center.", repo.ApplicationUnderTest.DocumentFileEmployeeCanViewInfo, new RecordItemIndex(9));
+            repo.ApplicationUnderTest.DocumentFileEmployeeCanView.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentChooseFile' at Center.", repo.DocumentChooseFileInfo, new RecordItemIndex(10));
-            repo.DocumentChooseFile.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentChooseFile' at Center.", repo.ApplicationUnderTest.DocumentChooseFileInfo, new RecordItemIndex(10));
+            repo.ApplicationUnderTest.DocumentChooseFile.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay' at Center.", repo.Open.SystemItemNameDisplayInfo, new RecordItemIndex(11));
@@ -140,8 +150,8 @@ namespace MyFrankCrum_EMP
             repo.Open.ButtonOpen.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentUpload' at Center.", repo.DocumentUploadInfo, new RecordItemIndex(13));
-            repo.DocumentUpload.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentUpload' at Center.", repo.ApplicationUnderTest.DocumentUploadInfo, new RecordItemIndex(13));
+            repo.ApplicationUnderTest.DocumentUpload.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(14));
@@ -156,8 +166,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.UploadNewDocument.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentCategoryDropclick' at Center.", repo.DocumentCategoryDropclickInfo, new RecordItemIndex(18));
-            repo.DocumentCategoryDropclick.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryDropclick' at Center.", repo.ApplicationUnderTest.DocumentCategoryDropclickInfo, new RecordItemIndex(18));
+            repo.ApplicationUnderTest.DocumentCategoryDropclick.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryValue' at Center.", repo.ApplicationUnderTest.DocumentCategoryValueInfo, new RecordItemIndex(19));
@@ -180,12 +190,12 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.DocumentExpiresDate.PressKeys("05/18/2021");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentFileEmployeeCanView' at Center.", repo.DocumentFileEmployeeCanViewInfo, new RecordItemIndex(24));
-            repo.DocumentFileEmployeeCanView.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentFileEmployeeCanView' at Center.", repo.ApplicationUnderTest.DocumentFileEmployeeCanViewInfo, new RecordItemIndex(24));
+            repo.ApplicationUnderTest.DocumentFileEmployeeCanView.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentChooseFile' at Center.", repo.DocumentChooseFileInfo, new RecordItemIndex(25));
-            repo.DocumentChooseFile.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentChooseFile' at Center.", repo.ApplicationUnderTest.DocumentChooseFileInfo, new RecordItemIndex(25));
+            repo.ApplicationUnderTest.DocumentChooseFile.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay1' at Center.", repo.Open.SystemItemNameDisplay1Info, new RecordItemIndex(26));
@@ -200,12 +210,12 @@ namespace MyFrankCrum_EMP
             repo.Open.ButtonOpen.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentUpload' at Center.", repo.DocumentUploadInfo, new RecordItemIndex(29));
-            repo.DocumentUpload.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentUpload' at Center.", repo.ApplicationUnderTest.DocumentUploadInfo, new RecordItemIndex(29));
+            repo.ApplicationUnderTest.DocumentUpload.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'AlertErrorErrorSectionWrapper'.", repo.AlertErrorErrorSectionWrapperInfo, new RecordItemIndex(30));
-            Validate.Exists(repo.AlertErrorErrorSectionWrapperInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.AlertErrorErrorSectionWrapper'.", repo.ApplicationUnderTest.AlertErrorErrorSectionWrapperInfo, new RecordItemIndex(30));
+            Validate.Exists(repo.ApplicationUnderTest.AlertErrorErrorSectionWrapperInfo);
             Delay.Milliseconds(100);
             
             // Press the Download menu option on the right of the document row
@@ -226,8 +236,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.DropdownMenuButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentDelete' at Center.", repo.DocumentDeleteInfo, new RecordItemIndex(36));
-            repo.DocumentDelete.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentDelete' at Center.", repo.ApplicationUnderTest.DocumentDeleteInfo, new RecordItemIndex(36));
+            repo.ApplicationUnderTest.DocumentDelete.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(37));
@@ -235,8 +245,8 @@ namespace MyFrankCrum_EMP
             
             Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(38));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DocumentDelete1' at Center.", repo.DocumentDelete1Info, new RecordItemIndex(39));
-            repo.DocumentDelete1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentDelete1' at Center.", repo.ApplicationUnderTest.DocumentDelete1Info, new RecordItemIndex(39));
+            repo.ApplicationUnderTest.DocumentDelete1.Click();
             Delay.Milliseconds(0);
             
         }

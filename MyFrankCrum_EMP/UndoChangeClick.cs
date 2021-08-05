@@ -66,6 +66,16 @@ namespace MyFrankCrum_EMP
             set { _GetFirstName = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable RepoURL.
+        /// </summary>
+        [TestVariable("c75816bd-3150-4b49-aa6d-f8479454f515")]
+        public string RepoURL
+        {
+            get { return repo.RepoURL; }
+            set { repo.RepoURL = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -92,8 +102,8 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UndoChanges' at Center.", repo.UndoChangesInfo, new RecordItemIndex(0));
-            repo.UndoChanges.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UndoChanges' at Center.", repo.ApplicationUnderTest.UndoChangesInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.UndoChanges.Click();
             Delay.Milliseconds(0);
             
         }
