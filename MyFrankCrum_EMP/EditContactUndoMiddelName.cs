@@ -42,6 +42,7 @@ namespace MyFrankCrum_EMP
         public EditContactUndoMiddelName()
         {
             ContactMiddelName = "";
+            EditNewMiddlename = "Lalji";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace MyFrankCrum_EMP
         {
             get { return _ContactMiddelName; }
             set { _ContactMiddelName = value; }
+        }
+
+        string _EditNewMiddlename;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditNewMiddlename.
+        /// </summary>
+        [TestVariable("3ef6ff36-8829-461a-8cde-2aa57a575e6b")]
+        public string EditNewMiddlename
+        {
+            get { return _EditNewMiddlename; }
+            set { _EditNewMiddlename = value; }
         }
 
         /// <summary>
@@ -114,8 +127,8 @@ namespace MyFrankCrum_EMP
             ContactMiddelName = repo.ApplicationUnderTest.MiddleName2.Element.GetAttributeValueText("TagValue");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to 'Lalji' on item 'ApplicationUnderTest.MiddleName2'.", repo.ApplicationUnderTest.MiddleName2Info, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.MiddleName2.Element.SetAttributeValue("TagValue", "Lalji");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$EditNewMiddlename' on item 'ApplicationUnderTest.MiddleName2'.", repo.ApplicationUnderTest.MiddleName2Info, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.MiddleName2.Element.SetAttributeValue("TagValue", EditNewMiddlename);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UndoChangesContact' at Center.", repo.ApplicationUnderTest.UndoChangesContactInfo, new RecordItemIndex(4));
@@ -129,8 +142,8 @@ namespace MyFrankCrum_EMP
             Validate.AttributeEqual(repo.ApplicationUnderTest.MiddleName2Info, "TagValue", ContactMiddelName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to 'Lalji' on item 'ApplicationUnderTest.MiddleName2'.", repo.ApplicationUnderTest.MiddleName2Info, new RecordItemIndex(7));
-            repo.ApplicationUnderTest.MiddleName2.Element.SetAttributeValue("TagValue", "Lalji");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$EditNewMiddlename' on item 'ApplicationUnderTest.MiddleName2'.", repo.ApplicationUnderTest.MiddleName2Info, new RecordItemIndex(7));
+            repo.ApplicationUnderTest.MiddleName2.Element.SetAttributeValue("TagValue", EditNewMiddlename);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactSaveChanges' at Center.", repo.ApplicationUnderTest.ContactSaveChangesInfo, new RecordItemIndex(8));

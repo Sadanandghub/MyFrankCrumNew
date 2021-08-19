@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.14s"
+		durationms="7137"
+		type="root"
+		rid="25c86ba36d8ea4ad"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="sadanandg"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/14/2021 9:35:39 AM"
+		timestampiso="2021-07-14T13:35:39"
+		endtime="7/14/2021 9:35:46 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="SelectEmployeeStatus">
+		<detail>
+			SelectEmployeeStatus
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.428"
+			timeRelativeToTestModuleStartTime="00:04.428"
+			timeWallClock="09:35:43"
+			time="00:04.428"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.466"
+			timeRelativeToTestModuleStartTime="00:04.466"
+			timeWallClock="09:35:43"
+			time="00:04.466"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute TagValue to '132' on item 'ApplicationUnderTest.OnboardingIframe.DdlStatus'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//iframe[#'onboardingIframe']//select[#'ddlStatus']"
+				itempath=".//select[#'ddlStatus']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.OnboardingIframe.DdlStatus"
+				id="c91040a0a1b141dc9dc9c8e6314c7a9e"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\SelectEmployeeStatus.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

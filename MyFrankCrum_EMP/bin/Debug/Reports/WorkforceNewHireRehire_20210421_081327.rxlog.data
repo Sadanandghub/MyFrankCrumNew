@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.07s"
+		durationms="1073"
+		type="root"
+		rid="509ce5161a940"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/21/2021 8:13:30 AM"
+		timestampiso="2021-04-21T12:13:30"
+		endtime="4/21/2021 8:13:32 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.064"
+			timeRelativeToTestModuleStartTime="00:01.064"
+			timeWallClock="08:13:31"
+			time="00:01.064"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.340"
+			timeRelativeToTestModuleStartTime="00:01.340"
+			timeWallClock="08:13:32"
+			time="00:01.340"
+			level="Failure"
+			category="Module"
+			errimg="images_Workforc_7e62869f\Workforc_7e62869f_2c525486_trace.jpg"
+			errthumb="images_Workforc_7e62869f\Workforc_7e62869f_2c525486_trace_thumb.jpg">
+			<message>
+				Thread was being aborted.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Keyboard.add_DownInternal(KeyEventHandler value)
+   at Ranorex.Keyboard.set_PauseKey(Keys value)
+   at Ranorex.Keyboard.set_AbortKey(Keys value)
+   at Ranorex.Core.Testing.TestModuleRunner.RunStandalone(ITestModule module, String reportFilename, Boolean generateReport, String standaloneModuleName, CaseInsensitiveString guid)"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>

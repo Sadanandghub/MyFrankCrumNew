@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.6s"
+		durationms="7601"
+		type="root"
+		rid="44dffc987d49156"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/22/2021 4:40:45 AM"
+		timestampiso="2021-04-22T08:40:45"
+		endtime="4/22/2021 4:40:53 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ClickEmployeeLink">
+		<detail>
+			ClickEmployeeLink
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.440"
+			timeRelativeToTestModuleStartTime="00:04.440"
+			timeWallClock="04:40:50"
+			time="00:04.440"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.470"
+			timeRelativeToTestModuleStartTime="00:04.470"
+			timeWallClock="04:40:50"
+			time="00:04.470"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'ApplicationUnderTest.Employees' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'/Employees']//div[@innertext='Employees']"
+				itempath=".//div[#'/Employees']//div[@innertext='Employees']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Employees"
+				id="4c761a550c844b80b662f8ba98ff564f"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\ClickEmployeeLink.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

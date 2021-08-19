@@ -89,17 +89,35 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton' at Center.", repo.ApplicationUnderTest.DropdownMenuButtonInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -713 units.", new RecordItemIndex(1));
+            Mouse.ScrollWheel(-713);
+            Delay.Milliseconds(300);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot before delete the Contact", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton' at Center.", repo.ApplicationUnderTest.DropdownMenuButtonInfo, new RecordItemIndex(3));
             repo.ApplicationUnderTest.DropdownMenuButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeleteContact' at Center.", repo.ApplicationUnderTest.DeleteContactInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeleteContact' at Center.", repo.ApplicationUnderTest.DeleteContactInfo, new RecordItemIndex(4));
             repo.ApplicationUnderTest.DeleteContact.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeleteConfirmContacts' at Center.", repo.ApplicationUnderTest.DeleteConfirmContactsInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeleteConfirmContacts' at Center.", repo.ApplicationUnderTest.DeleteConfirmContactsInfo, new RecordItemIndex(5));
             repo.ApplicationUnderTest.DeleteConfirmContacts.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(6));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -713 units.", new RecordItemIndex(7));
+            Mouse.ScrollWheel(-713);
+            Delay.Milliseconds(300);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot after delete the Contact", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(8));
             
         }
 

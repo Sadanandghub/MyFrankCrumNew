@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="50.42s"
+		durationms="50422"
+		type="root"
+		rid="1f8373783d6effa4"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/20/2021 10:06:46 AM"
+		timestampiso="2021-07-20T14:06:46"
+		endtime="7/20/2021 10:07:37 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Job_Payroll">
+		<detail>
+			Job_Payroll
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.245"
+			timeRelativeToTestModuleStartTime="00:04.245"
+			timeWallClock="10:06:50"
+			time="00:04.245"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AnnualSalary, WCCode, LocationID, FLSAStatus, RepoURL, HireSourceValue, EmployeeTypeValue, DepartmentValue, SupervisorIDValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.274"
+			timeRelativeToTestModuleStartTime="00:04.274"
+			timeWallClock="10:06:50"
+			time="00:04.274"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Departmentclick' at 7;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'department']/div/div[2]/div"
+				itempath=".//div[#'department']/div/div[2]/div"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Departmentclick"
+				id="2a8de2d8306540e28e65239732cc6448"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Job_Payroll.cs"
+				codeline="187"
+				itemindex="18"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.155"
+			timeRelativeToTestModuleStartTime="00:07.155"
+			timeWallClock="10:06:53"
+			time="00:07.155"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepartmentValue' at 34;16.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'department']/div[2]/div/div[3]/div[@innertext='0001 - 0001']"
+				itempath=".//div[#'department']/div[2]/div/div[3]/div[@innertext=$DepartmentValue]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepartmentValue"
+				id="934f0ae096c645cfb6dc0c9199dbc943"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Job_Payroll.cs"
+				codeline="191"
+				itemindex="19"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:50.419"
+			timeRelativeToTestModuleStartTime="00:50.419"
+			timeWallClock="10:07:37"
+			time="00:50.419"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

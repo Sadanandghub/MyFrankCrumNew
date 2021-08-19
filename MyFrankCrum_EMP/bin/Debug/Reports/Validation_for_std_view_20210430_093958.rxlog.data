@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="7.23s"
+		durationms="7233"
+		type="root"
+		rid="443dc3af2532838"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/30/2021 9:40:02 AM"
+		timestampiso="2021-04-30T13:40:02"
+		endtime="4/30/2021 9:40:09 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Validation_for_std_view">
+		<detail>
+			Validation_for_std_view
+		</detail>
+		<errormessage>
+			Screenshot of item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.SidebarContentContainer' does not match the specified image.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.732"
+			timeRelativeToTestModuleStartTime="00:04.732"
+			timeWallClock="09:40:07"
+			time="00:04.732"
+			level="Warn"
+			category="Data"
+			errimg="images_Validati_7cda8113\Validati_7cda8113_ff7a6190_trace.jpg"
+			errthumb="images_Validati_7cda8113\Validati_7cda8113_ff7a6190_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.765"
+			timeRelativeToTestModuleStartTime="00:04.765"
+			timeWallClock="09:40:07"
+			time="00:04.765"
+			level="Info"
+			category="Validation"
+			errimg="images_Validati_7cda8113\Validati_7cda8113_ff7a6190_trace.jpg"
+			errthumb="images_Validati_7cda8113\Validati_7cda8113_ff7a6190_trace_thumb.jpg">
+			<message>
+				Validating CompareImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=180,Height=708}) on item 'ApplicationUnderTest.SidebarContentContainer'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'sidebar-content-container']"
+				itempath=".//div[#'sidebar-content-container']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SidebarContentContainer"
+				id="a359618d729f4cf8824dfde5af5cb1ba"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Validation_for_std_view.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.068"
+			timeRelativeToTestModuleStartTime="00:07.068"
+			timeWallClock="09:40:09"
+			time="00:07.068"
+			level="Failure"
+			category="Validation"
+			errimg="images_Validati_7cda8113\Validati_7cda8113_aa00f56d_trace.jpg"
+			errthumb="images_Validati_7cda8113\Validati_7cda8113_aa00f56d_trace_thumb.jpg">
+			<message>
+				Screenshot of item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.SidebarContentContainer' does not match the specified image.
+			</message>
+			<metainfo
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Validation_for_std_view.cs"
+				codeline="93"
+				loglvl="Failure"
+				id="a359618d729f4cf8824dfde5af5cb1ba"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'sidebar-content-container']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SidebarContentContainer"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.093"
+			timeRelativeToTestModuleStartTime="00:07.093"
+			timeWallClock="09:40:09"
+			time="00:07.093"
+			level="Failure"
+			category="Expected image"
+			errimg="images_Validati_7cda8113\Validati_e98dcb7b_rxlog.png"
+			errthumb="images_Validati_7cda8113\Validati_e98dcb7b_rxlog_thumb.jpg">
+			<message>
+				
+			</message>
+			<metainfo
+				fullSizeImage="true"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Validation_for_std_view.cs"
+				codeline="93"
+				loglvl="Failure"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.107"
+			timeRelativeToTestModuleStartTime="00:07.107"
+			timeWallClock="09:40:09"
+			time="00:07.107"
+			level="Failure"
+			category="Actual image"
+			errimg="images_Validati_7cda8113\Validati_e98dcb7c_rxlog.png"
+			errthumb="images_Validati_7cda8113\Validati_e98dcb7c_rxlog_thumb.jpg">
+			<message>
+				
+			</message>
+			<metainfo
+				fullSizeImage="true"
+				replaceImage="true"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Validation_for_std_view.cs"
+				codeline="93"
+				loglvl="Failure"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.122"
+			timeRelativeToTestModuleStartTime="00:07.122"
+			timeWallClock="09:40:09"
+			time="00:07.122"
+			level="Error"
+			category="Module"
+			errimg="images_Validati_7cda8113\Validati_7cda8113_193d0960_trace.jpg"
+			errthumb="images_Validati_7cda8113\Validati_7cda8113_193d0960_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Screenshot of item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.SidebarContentContainer' does not match the specified image.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)
+   at Ranorex.Validate.ValidateImage(ValidateImageMethod validationMethod, Element element, Bitmap image, FindOptions findOptions, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.CompareImage(Element element, Bitmap image, FindOptions findOptions, String message, Options options)
+   at Ranorex.Validate.CompareImage(RepoItemInfo itemInfo, Bitmap image, FindOptions findOptions, String message, Options options)
+   at Ranorex.Validate.CompareImage(RepoItemInfo itemInfo, Bitmap image, FindOptions findOptions)
+   at MyFrankCrum_EMP.Validation_for_std_view.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\Validation_for_std_view.cs:line 93
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Validation_for_std_view.cs"
+				codeline="93"
+				loglvl="Error"
+				id="a359618d729f4cf8824dfde5af5cb1ba"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'sidebar-content-container']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SidebarContentContainer"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

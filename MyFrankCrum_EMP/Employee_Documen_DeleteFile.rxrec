@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ce8c28a2-3095-49be-b23a-7faa27765e4f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Employee_Documen_DeleteFile"
+	namespace="MyFrankCrum_EMP">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				The document is deleted **suggesting we add confirmation before deleting**
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c8f8598a-e50e-4b1c-8ac8-8efa2015de10"
+		sx="1000"
+		sy="311"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="689f8271-ab06-4b52-9f35-91d373d1af68"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, litag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="9"
+				prefcap="litag"
+				rect="964,296,76,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						react-tabs__tab
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						react-tabs-58
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Documents
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						react-tabs__tab
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						li
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-controls"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-selected"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Documents']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="96f3133d-6e92-4644-b062-6429ebc75c19">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAE4ATgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigCr50n979KPOk/vfpUdFAEnnSf3v0o86T+9+lR0UASedJ/e/Sjz
+pP736VHRQBJ50n979KPOk/vfpUdFAEnnSf3v0o86T+9+lR0UASedJ/e/SjzpP736VHRQBJ50n979
+KPOk/vfpUdFAEnnSf3v0o86T+9+lR0UASedJ/e/SjzpP736VHRQBJ50n979KPOk/vfpUdFAEnnSf
+3v0o86T+9+lR0UASedJ/e/SjzpP736VHRQBJ50n979KPOk/vfpUdFAEnnSf3v0o86T+9+lR0UASe
+dJ/e/SjzpP736VHRQBJ50n979KPOk/vfpUdFAEnnSf3v0o86T+9+lR0UASedJ/e/SjzpP736VHRQ
+BJ50n979KPOk/vfpUdFAEnnSf3v0oqOigCpazhy6+arkrvGGzt9vwpscjrbBHYligZWJ5I/+tVp4
+w7KxJBXPSmvbo8KRknCYwQeeKYELgtcyApM4GMbJNoH6irdRNCTIzrK6bsZAx/UVLSGFFFFMAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+Apr7th8vG7tnpTqKQFS1lu5ZSJY0RV4PByfpzRVuimIKKvUUgKNFXqKAKNFXqKAKNFXqKAKNFXqK
+AKNFXqKAKNFXqKAKNFXqKAKNFXqKAKNFXqKAKNFXqKAKNFXqKAKNFXqKAKNFXqKAKNFXqKAKNFXq
+KAKNFXqKAKNFXqKAKNFXqKAKNFXqKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKAI5J4Ym2ySxocZwzAU37Za/8/MP/fYrPvYkn1yC
+OVdyNHyM4/vVZ/smx/54f+Pt/jUXb2OhwpxS5m9Sf7Za/wDPzD/32KPtlr/z8w/99ioP7Jsf+eH/
+AI+3+NH9k2P/ADw/8fb/ABp+8K1Hu/w/zJ/tlr/z8w/99ij7Za/8/MP/AH2Kg/smx/54f+Pt/jR/
+ZNj/AM8P/H2/xo94LUe7/D/Mn+2Wv/PzD/32KPtlr/z8w/8AfYqD+ybH/nh/4+3+NH9k2P8Azw/8
+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
+			</helperscreenshot>
+		</mouseitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Before Delete Document"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="1c4d3e7c-97fa-4f55-a303-1f3210ba57ca">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+			</info>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5e332821-a6c3-4919-b800-89337fbc6cb2"
+		sx="1135"
+		sy="472"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="66b60ac9-174b-433e-857d-14cde8bf0fa4"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="buttontag"
+				rect="1112,456,40,38"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						dropdown-toggle without-title
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						dropdownMenuButton
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						dropdown-toggle without-title
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-expanded"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-haspopup"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown']/button[@id='dropdownMenuButton']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="ddc3d418-fba8-4800-aaae-ae879bf6e510">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACvAOQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKi8
+v3/Sjy/f9KAJaKi8v3/Sjy/f9KAJaKi8v3/Sjy/f9KAJaKi8v3/Sjy/f9KAJaKi8v3/Sjy/f9KAJ
+aKi8v3/Sjy/f9KAJaKi8v3/Sjy/f9KAJaKi8v3/Sjy/f9KAJaKi8v3/Sjy/f9KAJaKYibTnNPoAK
+jPU1JUZ6mgBKKKKACiiigAooooAKKKKAJKKKKBhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAApaQUtAgqM9TUlRnqaAEooooAKKKKACiiigAooooAkooooGFFFFABRRRQAUUUUAFFFFABRR
+RQAUUUUAFFFFABRRRQAClpBS0CCoz1NSVGepoASiiigAooooAKKKKACiiigCSiiigYUUUUAFFFFA
+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
+1H5UALRSc+o/Kjn1H5UALRSc+o/KigD/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="740fecac-0981-4d27-a1a5-bd5cc640dbdf"
+		sx="1156"
+		sy="543"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="571c5e94-5054-49dc-8e9b-d268fb67a891"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'dropdown']/?/?/button[@innertext='Delete']
+				</path>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="After delete document Screenshot Taken"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="c22b0041-d12b-41bd-8be8-912780d2cc23">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,79,1366,624"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="False">
+					<attribute
+					name="caption"
+					type="System.String">
+						MyFrankCrum
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						89.0.4389.128
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						devmfc.frankcrum.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						D250L10000K0
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://devmfc.frankcrum.com/EmployeeDetails/D250L10000K0
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/EmployeeDetails/D250L10000K0
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']
+				</path>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"
+	name="MyFrankCrum_EMPRepository"
+	relativepath="MyFrankCrum_EMPRepository.rxrep">
+		<codegen
+		classname="MyFrankCrum_EMPRepository"
+		namespace="MyFrankCrum_EMP">
+		</codegen>
+		<rootfolder
+		id="57aa7af5-e1bb-4d86-b1a0-d72cef37e59c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Employee_Documen_DeleteFile.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

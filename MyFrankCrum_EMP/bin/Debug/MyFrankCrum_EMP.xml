@@ -4,6 +4,95 @@
         <name>MyFrankCrum_EMP</name>
     </assembly>
     <members>
+        <member name="T:MyFrankCrum_EMP.Add_Direct_Deposite_Account">
+             <summary>
+            The Add_Direct_Deposite_Account recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Add_Direct_Deposite_Account.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Add_Direct_Deposite_Account.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.DepositFilePath">
+            <summary>
+            Gets or sets the value of variable DepositFilePath.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.DepositeBankName">
+            <summary>
+            Gets or sets the value of variable DepositeBankName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.DepositeRoutinNumber">
+            <summary>
+            Gets or sets the value of variable DepositeRoutinNumber.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.DepositeRoutingNameConfirm">
+            <summary>
+            Gets or sets the value of variable DepositeRoutingNameConfirm.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.DepositeAccountNumber">
+            <summary>
+            Gets or sets the value of variable DepositeAccountNumber.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.ConfirmDepositeAccountNumber">
+            <summary>
+            Gets or sets the value of variable ConfirmDepositeAccountNumber.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.DepositePercent">
+            <summary>
+            Gets or sets the value of variable DepositePercent.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.AccountType">
+            <summary>
+            Gets or sets the value of variable AccountType.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.DepositRuleType">
+            <summary>
+            Gets or sets the value of variable DepositRuleType.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Add_Direct_Deposite_Account.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Add_Direct_Deposite_Account.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Add_Direct_Deposite_Account.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Add_Direct_Deposite_Account.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.Add_New_Hire_Deduction_Tab_Edit">
              <summary>
             The Add_New_Hire_Deduction_Tab_Edit recording.
@@ -120,6 +209,11 @@
         <member name="P:MyFrankCrum_EMP.Add_New_Hire_EmployementForms_Tab_Edit.Instance">
             <summary>
             Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Add_New_Hire_EmployementForms_Tab_Edit.DocumentPath">
+            <summary>
+            Gets or sets the value of variable DocumentPath.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.Add_New_Hire_EmployementForms_Tab_Edit.RepoURL">
@@ -489,6 +583,60 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.Cancel_New_Hire_Process_link">
+             <summary>
+            The Cancel_New_Hire_Process_link recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.EmployeeSSN">
+            <summary>
+            Gets or sets the value of variable EmployeeSSN.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.EmployeeDOB">
+            <summary>
+            Gets or sets the value of variable EmployeeDOB.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Cancel_New_Hire_Process_link.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.ChangeClients">
              <summary>
             The ChangeClients recording.
@@ -533,6 +681,55 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:MyFrankCrum_EMP.ChangeClients.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.ClickEmp">
+             <summary>
+            The ClickEmp recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.ClickEmp.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickEmp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.ClickEmp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.ClickEmp.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.ClickEmp.EmpName">
+            <summary>
+            Gets or sets the value of variable EmpName.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickEmp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.ClickEmp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickEmp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.ClickEmp.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -837,6 +1034,644 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.Deactivate_Direct_Deposite_Account">
+             <summary>
+            The Deactivate_Direct_Deposite_Account recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Deactivate_Direct_Deposite_Account.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Deactivate_Direct_Deposite_Account.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Deactivate_Direct_Deposite_Account.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Deactivate_Direct_Deposite_Account.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Deactivate_Direct_Deposite_Account.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Deactivate_Direct_Deposite_Account.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Deactivate_Direct_Deposite_Account.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Deactivate_Direct_Deposite_Account.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Edit_Direct_Deposite_Account">
+             <summary>
+            The Edit_Direct_Deposite_Account recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.ConfirmRoutingDeposite">
+            <summary>
+            Gets or sets the value of variable ConfirmRoutingDeposite.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.DepositeDollarAmount">
+            <summary>
+            Gets or sets the value of variable DepositeDollarAmount.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.ChangeRuleType">
+            <summary>
+            Gets or sets the value of variable ChangeRuleType.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Document_DownloadFile">
+             <summary>
+            The Employee_Document_DownloadFile recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Document_DownloadFile.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_DownloadFile.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_DownloadFile.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_DownloadFile.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_DownloadFile.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Document_DownloadFile.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_DownloadFile.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_DownloadFile.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Document_UploadValidFile">
+             <summary>
+            The Employee_Document_UploadValidFile recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Document_UploadValidFile.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_UploadValidFile.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_UploadValidFile.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_UploadValidFile.DocumentFilePath">
+            <summary>
+            Gets or sets the value of variable DocumentFilePath.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_UploadValidFile.DocumentTitle">
+            <summary>
+            Gets or sets the value of variable DocumentTitle.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_UploadValidFile.DocumentExpiresDate">
+            <summary>
+            Gets or sets the value of variable DocumentExpiresDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_UploadValidFile.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_UploadValidFile.DocumentCategoryValue">
+            <summary>
+            Gets or sets the value of variable DocumentCategoryValue.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_UploadValidFile.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Document_UploadValidFile.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_UploadValidFile.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_UploadValidFile.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile">
+             <summary>
+            The Employee_Document_Upload_InvalidFile recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.InvalidFileUpload">
+            <summary>
+            Gets or sets the value of variable InvalidFileUpload.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.DocumentName">
+            <summary>
+            Gets or sets the value of variable DocumentName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.DocumentExpireDate">
+            <summary>
+            Gets or sets the value of variable DocumentExpireDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.DocumentCategoryValue">
+            <summary>
+            Gets or sets the value of variable DocumentCategoryValue.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Document_Upload_InvalidFile.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Documen_DeleteFile">
+             <summary>
+            The Employee_Documen_DeleteFile recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Documen_DeleteFile.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Documen_DeleteFile.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Documen_DeleteFile.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Documen_DeleteFile.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Documen_DeleteFile.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Documen_DeleteFile.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Documen_DeleteFile.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Documen_DeleteFile.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses">
+             <summary>
+            The Employee_Licenses_tab_Add_Licenses recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.LicenseNumber">
+            <summary>
+            Gets or sets the value of variable LicenseNumber.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.LicenseIssueDate">
+            <summary>
+            Gets or sets the value of variable LicenseIssueDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.LicenseExpirationDate">
+            <summary>
+            Gets or sets the value of variable LicenseExpirationDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.LicenseNotes">
+            <summary>
+            Gets or sets the value of variable LicenseNotes.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.LicenseDescriptionValue">
+            <summary>
+            Gets or sets the value of variable LicenseDescriptionValue.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Licenses_tab_Add_Licenses.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses">
+             <summary>
+            The Employee_Licenses_tab_Edit_Licenses recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses.GetLicenseNumber">
+            <summary>
+            Gets or sets the value of variable GetLicenseNumber.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Licenses_tab_Edit_Licenses.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Taxes_Add_Location">
+             <summary>
+            The Employee_Taxes_Add_Location recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Taxes_Add_Location.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Add_Location.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Add_Location.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Add_Location.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Add_Location.LocationName">
+            <summary>
+            Gets or sets the value of variable LocationName.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Add_Location.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Taxes_Add_Location.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Add_Location.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Add_Location.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Taxes_Tab_Deactivate_Location">
+             <summary>
+            The Employee_Taxes_Tab_Deactivate_Location recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Taxes_Tab_Deactivate_Location.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Deactivate_Location.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Deactivate_Location.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Deactivate_Location.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Deactivate_Location.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Deactivate_Location.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Deactivate_Location.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Deactivate_Location.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Taxes_Tab_Edit_Location">
+             <summary>
+            The Employee_Taxes_Tab_Edit_Location recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Taxes_Tab_Edit_Location.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Edit_Location.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Edit_Location.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Edit_Location.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Edit_Location.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Edit_Location.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Edit_Location.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Edit_Location.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit">
+             <summary>
+            The Employee_Taxes_Tab_Taxes_Edit recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.ChildrenAmount">
+            <summary>
+            Gets or sets the value of variable ChildrenAmount.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.OtherDependentsAmount">
+            <summary>
+            Gets or sets the value of variable OtherDependentsAmount.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.EditChildrenAmount">
+            <summary>
+            Gets or sets the value of variable EditChildrenAmount.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.EditOtherDependents">
+            <summary>
+            Gets or sets the value of variable EditOtherDependents.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Employee_Taxes_Tab_Taxes_Edit.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.Employment_Forms">
              <summary>
             The Employment_Forms recording.
@@ -1082,6 +1917,109 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:MyFrankCrum_EMP.InvoicesSearchByNumber.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.JobPayScheduleHours">
+             <summary>
+            The JobPayScheduleHours recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.JobPayScheduleHours.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.JobPayScheduleHours.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobPayScheduleHours.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobPayScheduleHours.ScheduledHours">
+            <summary>
+            Gets or sets the value of variable ScheduledHours.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobPayScheduleHours.HourlyPayRate">
+            <summary>
+            Gets or sets the value of variable HourlyPayRate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobPayScheduleHours.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.JobPayScheduleHours.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.JobPayScheduleHours.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.JobPayScheduleHours.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.JobPayScheduleHours.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes">
+             <summary>
+            The Licenses_tab_Manage_License_Codes recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes.LicensesCode">
+            <summary>
+            Gets or sets the value of variable LicensesCode.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Licenses_tab_Manage_License_Codes.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -1855,6 +2793,50 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.PTO_Delete">
+             <summary>
+            The PTO_Delete recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.PTO_Delete.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Delete.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Delete.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Delete.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Delete.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.PTO_Delete.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Delete.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Delete.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.PTO_Request">
              <summary>
             The PTO_Request recording.
@@ -1894,6 +2876,154 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:MyFrankCrum_EMP.PTO_Request.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.PTO_Setup_Add">
+             <summary>
+            The PTO_Setup_Add recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.PTO_Setup_Add.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Setup_Add.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.AccruedThruDate">
+            <summary>
+            Gets or sets the value of variable AccruedThruDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.PTOAllowed">
+            <summary>
+            Gets or sets the value of variable PTOAllowed.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.LastOverRollDate">
+            <summary>
+            Gets or sets the value of variable LastOverRollDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.PTOTaken">
+            <summary>
+            Gets or sets the value of variable PTOTaken.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.PendingMovedDate">
+            <summary>
+            Gets or sets the value of variable PendingMovedDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.PTOPending">
+            <summary>
+            Gets or sets the value of variable PTOPending.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.AccruatTypeValue">
+            <summary>
+            Gets or sets the value of variable AccruatTypeValue.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Add.AccuratOptionValue">
+            <summary>
+            Gets or sets the value of variable AccuratOptionValue.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Setup_Add.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.PTO_Setup_Add.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Setup_Add.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Setup_Add.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.PTO_Setup_Edit">
+             <summary>
+            The PTO_Setup_Edit recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.PTO_Setup_Edit.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Setup_Edit.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Edit.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Edit.GetPTOAllowedValue">
+            <summary>
+            Gets or sets the value of variable GetPTOAllowedValue.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Edit.GetPTOTakenValue">
+            <summary>
+            Gets or sets the value of variable GetPTOTakenValue.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Edit.EditPTOAllowed">
+            <summary>
+            Gets or sets the value of variable EditPTOAllowed.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Edit.EditPTOTaken">
+            <summary>
+            Gets or sets the value of variable EditPTOTaken.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PTO_Setup_Edit.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Setup_Edit.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.PTO_Setup_Edit.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Setup_Edit.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.PTO_Setup_Edit.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -2218,6 +3348,16 @@
             Gets a static instance of this recording.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.DirectDeposite.SalaryUploadPath">
+            <summary>
+            Gets or sets the value of variable SalaryUploadPath.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.DirectDeposite.DepositFilePath">
+            <summary>
+            Gets or sets the value of variable DepositFilePath.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.DirectDeposite.RepoURL">
             <summary>
             Gets or sets the value of variable RepoURL.
@@ -2277,6 +3417,16 @@
             Gets a static instance of this recording.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.Documents.DocumentFilePath">
+            <summary>
+            Gets or sets the value of variable DocumentFilePath.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Documents.InvalidFileUpload">
+            <summary>
+            Gets or sets the value of variable InvalidFileUpload.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.Documents.RepoURL">
             <summary>
             Gets or sets the value of variable RepoURL.
@@ -2306,47 +3456,47 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:MyFrankCrum_EMP.Earnings">
+        <member name="T:MyFrankCrum_EMP.Add_Earnings">
              <summary>
             The Earnings recording.
              </summary>
         </member>
-        <member name="F:MyFrankCrum_EMP.Earnings.repo">
+        <member name="F:MyFrankCrum_EMP.Add_Earnings.repo">
             <summary>
             Holds an instance of the MyFrankCrum_EMPRepository repository.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Earnings.#ctor">
+        <member name="M:MyFrankCrum_EMP.Add_Earnings.#ctor">
             <summary>
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.Earnings.Instance">
+        <member name="P:MyFrankCrum_EMP.Add_Earnings.Instance">
             <summary>
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.Earnings.GetEarningStopDate">
+        <member name="P:MyFrankCrum_EMP.Add_Earnings.GetEarningStopDate">
             <summary>
             Gets or sets the value of variable GetEarningStopDate.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.Earnings.RepoURL">
+        <member name="P:MyFrankCrum_EMP.Add_Earnings.RepoURL">
             <summary>
             Gets or sets the value of variable RepoURL.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.Earnings.EarningCode">
+        <member name="P:MyFrankCrum_EMP.Add_Earnings.EarningCode">
             <summary>
             Gets or sets the value of variable EarningCode.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Earnings.Start">
+        <member name="M:MyFrankCrum_EMP.Add_Earnings.Start">
             <summary>
-            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Earnings.Instance"/>.
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Add_Earnings.Instance"/>.
             </summary>
         </member>
-        <member name="M:MyFrankCrum_EMP.Earnings.Ranorex#Core#Testing#ITestModule#Run">
+        <member name="M:MyFrankCrum_EMP.Add_Earnings.Ranorex#Core#Testing#ITestModule#Run">
             <summary>
             Performs the playback of actions in this recording.
             </summary>
@@ -2354,7 +3504,7 @@
             instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
             that will in turn invoke this method.</remarks>
         </member>
-        <member name="M:MyFrankCrum_EMP.Earnings.Init">
+        <member name="M:MyFrankCrum_EMP.Add_Earnings.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -2383,6 +3533,11 @@
         <member name="P:MyFrankCrum_EMP.EditContactUndoMiddelName.ContactMiddelName">
             <summary>
             Gets or sets the value of variable ContactMiddelName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditContactUndoMiddelName.EditNewMiddlename">
+            <summary>
+            Gets or sets the value of variable EditNewMiddlename.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.EditContactUndoMiddelName.RepoURL">
@@ -2429,9 +3584,59 @@
             Gets a static instance of this recording.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditFirstName">
+            <summary>
+            Gets or sets the value of variable EditFirstName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditMiddleName">
+            <summary>
+            Gets or sets the value of variable EditMiddleName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditLastName">
+            <summary>
+            Gets or sets the value of variable EditLastName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditDOB">
+            <summary>
+            Gets or sets the value of variable EditDOB.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditSuffix">
+            <summary>
+            Gets or sets the value of variable EditSuffix.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditEthnicId">
+            <summary>
+            Gets or sets the value of variable EditEthnicId.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditMaritalStatus">
+            <summary>
+            Gets or sets the value of variable EditMaritalStatus.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditAddressOne">
+            <summary>
+            Gets or sets the value of variable EditAddressOne.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditAddressTwo">
+            <summary>
+            Gets or sets the value of variable EditAddressTwo.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.EditPersonalDetails.RepoURL">
             <summary>
             Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EditPersonalDetails.EditGender">
+            <summary>
+            Gets or sets the value of variable EditGender.
             </summary>
         </member>
         <member name="M:MyFrankCrum_EMP.EditPersonalDetails.Start">
@@ -2771,6 +3976,55 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.selectEmp">
+             <summary>
+            The selectEmp recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.selectEmp.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.selectEmp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.selectEmp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.selectEmp.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.selectEmp.EmpName">
+            <summary>
+            Gets or sets the value of variable EmpName.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.selectEmp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.selectEmp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.selectEmp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.selectEmp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.SelectEmployee">
              <summary>
             The SelectEmployee recording.
@@ -2977,9 +4231,19 @@
             Gets or sets the value of variable EEOI9_BirthLocattion.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.EEOI9section.EditBirthLocation">
+            <summary>
+            Gets or sets the value of variable EditBirthLocation.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.EEOI9section.RepoURL">
             <summary>
             Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EEOI9section.BirthCountry">
+            <summary>
+            Gets or sets the value of variable BirthCountry.
             </summary>
         </member>
         <member name="M:MyFrankCrum_EMP.EEOI9section.Start">
@@ -3349,9 +4613,59 @@
             Gets a static instance of this recording.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.ScheduledHours">
+            <summary>
+            Gets or sets the value of variable ScheduledHours.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.HourlyPayRate">
+            <summary>
+            Gets or sets the value of variable HourlyPayRate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.SalaryDocumentTitle">
+            <summary>
+            Gets or sets the value of variable SalaryDocumentTitle.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.SalaryDocExpiresDate">
+            <summary>
+            Gets or sets the value of variable SalaryDocExpiresDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.SalaryUploadPath">
+            <summary>
+            Gets or sets the value of variable SalaryUploadPath.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.PerformanceDocTitle">
+            <summary>
+            Gets or sets the value of variable PerformanceDocTitle.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.PerformanceDocExpireDate">
+            <summary>
+            Gets or sets the value of variable PerformanceDocExpireDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.PerformanceUploadPath">
+            <summary>
+            Gets or sets the value of variable PerformanceUploadPath.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.JobAndPay.RepoURL">
             <summary>
             Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.SelectReason">
+            <summary>
+            Gets or sets the value of variable SelectReason.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.JobAndPay.JobCode">
+            <summary>
+            Gets or sets the value of variable JobCode.
             </summary>
         </member>
         <member name="M:MyFrankCrum_EMP.JobAndPay.Start">
@@ -3396,6 +4710,11 @@
         <member name="P:MyFrankCrum_EMP.Licenses.GetLicenseNumber">
             <summary>
             Gets or sets the value of variable GetLicenseNumber.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Licenses.LicensesCode">
+            <summary>
+            Gets or sets the value of variable LicensesCode.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.Licenses.RepoURL">
@@ -3491,6 +4810,16 @@
             Gets a static instance of this recording.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.PayHistory.PayHistoryTodate">
+            <summary>
+            Gets or sets the value of variable PayHistoryTodate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PayHistory.PayHistoryFromDate">
+            <summary>
+            Gets or sets the value of variable PayHistoryFromDate.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.PayHistory.RepoURL">
             <summary>
             Gets or sets the value of variable RepoURL.
@@ -3535,9 +4864,124 @@
             Gets a static instance of this recording.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactSSN">
+            <summary>
+            Gets or sets the value of variable ContactSSN.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactFirstName">
+            <summary>
+            Gets or sets the value of variable ContactFirstName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactMiddleName">
+            <summary>
+            Gets or sets the value of variable ContactMiddleName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactLastName">
+            <summary>
+            Gets or sets the value of variable ContactLastName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactFormerName">
+            <summary>
+            Gets or sets the value of variable ContactFormerName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactDOB">
+            <summary>
+            Gets or sets the value of variable ContactDOB.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactMarriageDate">
+            <summary>
+            Gets or sets the value of variable ContactMarriageDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactDivorceDate">
+            <summary>
+            Gets or sets the value of variable ContactDivorceDate.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactAddOne">
+            <summary>
+            Gets or sets the value of variable ContactAddOne.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactAddTwo">
+            <summary>
+            Gets or sets the value of variable ContactAddTwo.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactCity">
+            <summary>
+            Gets or sets the value of variable ContactCity.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactZip">
+            <summary>
+            Gets or sets the value of variable ContactZip.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactHomePhone">
+            <summary>
+            Gets or sets the value of variable ContactHomePhone.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactWorkPhone">
+            <summary>
+            Gets or sets the value of variable ContactWorkPhone.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactWorkExt">
+            <summary>
+            Gets or sets the value of variable ContactWorkExt.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactOtherPhone">
+            <summary>
+            Gets or sets the value of variable ContactOtherPhone.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactEmployer">
+            <summary>
+            Gets or sets the value of variable ContactEmployer.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactOccupation">
+            <summary>
+            Gets or sets the value of variable ContactOccupation.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.PersonalTabContacts.RepoURL">
             <summary>
             Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.Relationship">
+            <summary>
+            Gets or sets the value of variable Relationship.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactSuffix">
+            <summary>
+            Gets or sets the value of variable ContactSuffix.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactGender">
+            <summary>
+            Gets or sets the value of variable ContactGender.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactAddInfo">
+            <summary>
+            Gets or sets the value of variable ContactAddInfo.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.PersonalTabContacts.ContactState">
+            <summary>
+            Gets or sets the value of variable ContactState.
             </summary>
         </member>
         <member name="M:MyFrankCrum_EMP.PersonalTabContacts.Start">
@@ -4213,6 +5657,51 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.GetEmpName">
             <summary>
             Gets or sets the value of variable GetEmpName.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.EditGender">
+            <summary>
+            Gets or sets the value of variable EditGender.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.Relationship">
+            <summary>
+            Gets or sets the value of variable Relationship.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.ContactSuffix">
+            <summary>
+            Gets or sets the value of variable ContactSuffix.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.ContactGender">
+            <summary>
+            Gets or sets the value of variable ContactGender.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.ContactAddInfo">
+            <summary>
+            Gets or sets the value of variable ContactAddInfo.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.ContactState">
+            <summary>
+            Gets or sets the value of variable ContactState.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.BirthCountry">
+            <summary>
+            Gets or sets the value of variable BirthCountry.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.SelectReason">
+            <summary>
+            Gets or sets the value of variable SelectReason.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.JobCode">
+            <summary>
+            Gets or sets the value of variable JobCode.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepository.SelfInfo">
@@ -5995,14 +7484,14 @@
             The FaCaretDownFas3 item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Male">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.EditGender">
             <summary>
-            The Male item.
+            The EditGender item.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.MaleInfo">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.EditGenderInfo">
             <summary>
-            The Male item info.
+            The EditGender item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssHxuxk6MfcSelectValueContainerM">
@@ -6845,34 +8334,34 @@
             The BirthLocation item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssKynsejIndicatorContainerMfcSelect4">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ReasonClick">
             <summary>
-            The CssKynsejIndicatorContainerMfcSelect4 item.
+            The ReasonClick item.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssKynsejIndicatorContainerMfcSelect4Info">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ReasonClickInfo">
             <summary>
-            The CssKynsejIndicatorContainerMfcSelect4 item info.
+            The ReasonClick item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CostOfLivingAdjustment">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SelectReason">
             <summary>
-            The CostOfLivingAdjustment item.
+            The SelectReason item.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CostOfLivingAdjustmentInfo">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.SelectReasonInfo">
             <summary>
-            The CostOfLivingAdjustment item info.
+            The SelectReason item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssKynsejIndicatorContainerMfcSelect5">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ClickJobCode">
             <summary>
-            The CssKynsejIndicatorContainerMfcSelect5 item.
+            The ClickJobCode item.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssKynsejIndicatorContainerMfcSelect5Info">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ClickJobCodeInfo">
             <summary>
-            The CssKynsejIndicatorContainerMfcSelect5 item info.
+            The ClickJobCode item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Departmentclick">
@@ -7245,14 +8734,14 @@
             The AddDirectDepositAccount item info.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssKynsejIndicatorContainerMfcSelect9">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ClickDAT">
             <summary>
-            The CssKynsejIndicatorContainerMfcSelect9 item.
+            The ClickDAT item.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CssKynsejIndicatorContainerMfcSelect9Info">
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ClickDATInfo">
             <summary>
-            The CssKynsejIndicatorContainerMfcSelect9 item info.
+            The ClickDAT item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.EditSettings">
@@ -8955,6 +10444,126 @@
             The BackToSummary2 item info.
             </summary>
         </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.DivTag5">
+            <summary>
+            The DivTag5 item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.DivTag5Info">
+            <summary>
+            The DivTag5 item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CancelNewHireProcess">
+            <summary>
+            The CancelNewHireProcess item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CancelNewHireProcessInfo">
+            <summary>
+            The CancelNewHireProcess item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.StartNext">
+            <summary>
+            The StartNext item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.StartNextInfo">
+            <summary>
+            The StartNext item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CancelNewHire">
+            <summary>
+            The CancelNewHire item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CancelNewHireInfo">
+            <summary>
+            The CancelNewHire item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.LabelTagSuffix">
+            <summary>
+            The LabelTagSuffix item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.LabelTagSuffixInfo">
+            <summary>
+            The LabelTagSuffix item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.PersonalSection">
+            <summary>
+            The PersonalSection item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.PersonalSectionInfo">
+            <summary>
+            The PersonalSection item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CheckSample">
+            <summary>
+            The CheckSample item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CheckSampleInfo">
+            <summary>
+            The CheckSample item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.PleaseSelect">
+            <summary>
+            The PleaseSelect item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.PleaseSelectInfo">
+            <summary>
+            The PleaseSelect item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.DivTag006645A0F21THSNATIONALLLCGA">
+            <summary>
+            The DivTag006645A0F21THSNATIONALLLCGA item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.DivTag006645A0F21THSNATIONALLLCGAInfo">
+            <summary>
+            The DivTag006645A0F21THSNATIONALLLCGA item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Checkbox">
+            <summary>
+            The Checkbox item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.CheckboxInfo">
+            <summary>
+            The Checkbox item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Historyselectdate">
+            <summary>
+            The Historyselectdate item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.HistoryselectdateInfo">
+            <summary>
+            The Historyselectdate item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ReactDatepickerMonthContainer">
+            <summary>
+            The ReactDatepickerMonthContainer item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ReactDatepickerMonthContainerInfo">
+            <summary>
+            The ReactDatepickerMonthContainer item info.
+            </summary>
+        </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ReactTabsTabList">
             <summary>
             The ReactTabsTabList folder.
@@ -9715,9 +11324,9 @@
             Gets or sets the value of variable RepoURL.
             </summary>
         </member>
-        <member name="P:MyFrankCrum_EMP.Taxes.Location">
+        <member name="P:MyFrankCrum_EMP.Taxes.LocationName">
             <summary>
-            Gets or sets the value of variable Location.
+            Gets or sets the value of variable LocationName.
             </summary>
         </member>
         <member name="M:MyFrankCrum_EMP.Taxes.Start">

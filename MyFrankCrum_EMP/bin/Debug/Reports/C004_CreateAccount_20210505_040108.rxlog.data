@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="10.72s"
+		durationms="10715"
+		type="root"
+		rid="af42909f742fecc"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/5/2021 4:01:12 AM"
+		timestampiso="2021-05-05T08:01:12"
+		endtime="5/5/2021 4:01:23 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="C004_CreateAccount">
+		<detail>
+			C004_CreateAccount
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.482"
+			timeRelativeToTestModuleStartTime="00:04.482"
+			timeWallClock="04:01:16"
+			time="00:04.482"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>SocialSecurityNumber, DateOfBirth, NewUserName, NewPassword, NewConfirmPassword, SecurityAnswer, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.508"
+			timeRelativeToTestModuleStartTime="00:04.508"
+			timeWallClock="04:01:16"
+			time="00:04.508"
+			level="Info"
+			category="Section">
+			<message>
+				Click the &quot;Can't log in? Click here&quot; link..
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="171"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.513"
+			timeRelativeToTestModuleStartTime="00:04.513"
+			timeWallClock="04:01:16"
+			time="00:04.513"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.CantLogInClickHere' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']//form/div[3]/?/?/button[@innertext='Can''t log in? Click here']"
+				itempath=".//div[#'app']//form/div[3]/?/?/button[@innertext='Can''t log in? Click here']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.CantLogInClickHere"
+				id="b9a5317fcde44090a530680508fd6a8a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="173"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.679"
+			timeRelativeToTestModuleStartTime="00:07.679"
+			timeWallClock="04:01:20"
+			time="00:07.679"
+			level="Info"
+			category="Section">
+			<message>
+				Enter SSN &amp; DOB.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="178"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.680"
+			timeRelativeToTestModuleStartTime="00:07.680"
+			timeWallClock="04:01:20"
+			time="00:07.680"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SocialSecurityNumber' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Your social security number']"
+				itempath=".//input[#'Your social security number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SocialSecurityNumber"
+				id="ab0b0e0219184e35a90e035b4786ecc9"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="180"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.508"
+			timeRelativeToTestModuleStartTime="00:08.508"
+			timeWallClock="04:01:20"
+			time="00:08.508"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$SocialSecurityNumber' with focus on 'ApplicationUnderTest.SocialSecurityNumber'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Your social security number']"
+				itempath=".//input[#'Your social security number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SocialSecurityNumber"
+				id="ab0b0e0219184e35a90e035b4786ecc9"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="184"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.031"
+			timeRelativeToTestModuleStartTime="00:09.031"
+			timeWallClock="04:01:21"
+			time="00:09.031"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.YourBirthDate' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Your birth date']"
+				itempath=".//input[#'Your birth date']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.YourBirthDate"
+				id="8a30380fcab94e4a8a29af86e4f1a095"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="188"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.659"
+			timeRelativeToTestModuleStartTime="00:09.659"
+			timeWallClock="04:01:22"
+			time="00:09.659"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$DateOfBirth' with focus on 'ApplicationUnderTest.YourBirthDate'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//input[#'Your birth date']"
+				itempath=".//input[#'Your birth date']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.YourBirthDate"
+				id="8a30380fcab94e4a8a29af86e4f1a095"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="192"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.166"
+			timeRelativeToTestModuleStartTime="00:10.166"
+			timeWallClock="04:01:22"
+			time="00:10.166"
+			level="Info"
+			category="Section">
+			<message>
+				Click the &quot;Find my Account&quot; button
+			</message>
+			<metainfo
+				itemindex="7"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="197"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.166"
+			timeRelativeToTestModuleStartTime="00:10.166"
+			timeWallClock="04:01:22"
+			time="00:10.166"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.FindMyAccount' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]//button[@innertext='Find my Account']"
+				itempath=".//div[#'app']/div[2]//button[@innertext='Find my Account']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.FindMyAccount"
+				id="58d6d2e24b934883b5c5d6fc7c68015d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="199"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.713"
+			timeRelativeToTestModuleStartTime="00:10.713"
+			timeWallClock="04:01:23"
+			time="00:10.713"
+			level="Info"
+			category="Section">
+			<message>
+				Answer the security question.
+			</message>
+			<metainfo
+				itemindex="9"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="204"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

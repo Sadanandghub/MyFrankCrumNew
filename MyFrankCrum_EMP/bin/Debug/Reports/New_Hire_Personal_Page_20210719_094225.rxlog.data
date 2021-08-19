@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="41.23s"
+		durationms="41231"
+		type="root"
+		rid="7f85fe024b4ac7a"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/19/2021 9:42:28 AM"
+		timestampiso="2021-07-19T13:42:28"
+		endtime="7/19/2021 9:43:09 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="New_Hire_Personal_Page">
+		<detail>
+			New_Hire_Personal_Page
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.197"
+			timeRelativeToTestModuleStartTime="00:04.197"
+			timeWallClock="09:42:32"
+			time="00:04.197"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>EmployeeFirstName, EmployeeLastName, Address1, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.226"
+			timeRelativeToTestModuleStartTime="00:04.226"
+			timeWallClock="09:42:32"
+			time="00:04.226"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.AddressLine3' at 39;14.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div/div/div/di/div[1]/div[2]/div[2]//input[@name='employee.addressLine2']"
+				itempath=".//div/div/div/di/div[1]/div[2]/div[2]//input[@name='employee.addressLine2']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.AddressLine3"
+				id="c8bdf6849d534ae7bffe134cb4d5fa2f"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="131"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:41.228"
+			timeRelativeToTestModuleStartTime="00:41.228"
+			timeWallClock="09:43:09"
+			time="00:41.228"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

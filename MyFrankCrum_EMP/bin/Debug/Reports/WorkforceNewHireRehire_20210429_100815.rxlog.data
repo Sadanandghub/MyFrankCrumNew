@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.1m"
+		durationms="67800"
+		type="root"
+		rid="408366ebc056137"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/29/2021 10:08:19 AM"
+		timestampiso="2021-04-29T14:08:19"
+		endtime="4/29/2021 10:09:27 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="WorkforceNewHireRehire">
+		<detail>
+			WorkforceNewHireRehire
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.Column'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.810"
+			timeRelativeToTestModuleStartTime="00:04.810"
+			timeWallClock="10:08:24"
+			time="00:04.810"
+			level="Warn"
+			category="Data"
+			errimg="images_Workforc_526a51fe\Workforc_526a51fe_265dab70_trace.jpg"
+			errthumb="images_Workforc_526a51fe\Workforc_526a51fe_265dab70_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>AnnualSalary, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.847"
+			timeRelativeToTestModuleStartTime="00:04.847"
+			timeWallClock="10:08:24"
+			time="00:04.847"
+			level="Info"
+			category="Validation"
+			errimg="images_Workforc_526a51fe\Workforc_526a51fe_265dab70_trace.jpg"
+			errthumb="images_Workforc_526a51fe\Workforc_526a51fe_265dab70_trace_thumb.jpg">
+			<message>
+				Validating Exists on item 'ApplicationUnderTest.Summary'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[9]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/h4[@innertext='Summary']"
+				itempath=".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[9]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/h4[@innertext='Summary']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Summary"
+				id="31a322144ed54517b24582b0145b608a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="105"
+				itemindex="221"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.409"
+			timeRelativeToTestModuleStartTime="00:07.409"
+			timeWallClock="10:08:26"
+			time="00:07.409"
+			level="Success"
+			category="Validation"
+			errimg="images_Workforc_526a51fe\Workforc_526a51fe_4238380c_trace.jpg"
+			errthumb="images_Workforc_526a51fe\Workforc_526a51fe_4238380c_trace_thumb.jpg">
+			<message>
+				Element for item 'Summary' does exist.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[9]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/h4[@innertext='Summary']"
+				itempath=".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[9]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/h4[@innertext='Summary']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Summary"
+				id="31a322144ed54517b24582b0145b608a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="106"
+				loglvl="Success"
+				itemindex="221">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:07.660"
+			timeRelativeToTestModuleStartTime="01:07.660"
+			timeWallClock="10:09:27"
+			time="01:07.660"
+			level="Error"
+			category="Module"
+			errimg="images_Workforc_526a51fe\Workforc_526a51fe_cd94d414_trace.jpg"
+			errthumb="images_Workforc_526a51fe\Workforc_526a51fe_cd94d414_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.Column'.<br/>No element found for path '/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div[9]/?/?/form/section/div[4]/div[1]' at step 'div[3]' after 348 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_Column() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 1541&#13;&#10;   at MyFrankCrum_EMP.WorkforceNewHireRehire.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs:line 109&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="109"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div[9]/?/?/form/section/div[4]/div[1]"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[3]/div[9]/?/?/form/section/div[4]/div[1]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Column"
+				id="8248600a7c8f4315ada50862b9ad5d96"
+				timeout="60000"
+				failedStep="div[3]"
+				bestPathPrefix="/dom[@domain=$RepoURL]/descendant-or-self::div[#'app']/div[2]"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

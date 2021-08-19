@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="48s"
+		durationms="48003"
+		type="root"
+		rid="403c0a9d4573a9d"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/20/2021 9:03:45 AM"
+		timestampiso="2021-07-20T13:03:45"
+		endtime="7/20/2021 9:04:33 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Job_Payroll">
+		<detail>
+			Job_Payroll
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.512"
+			timeRelativeToTestModuleStartTime="00:04.512"
+			timeWallClock="09:03:49"
+			time="00:04.512"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AnnualSalary, RepoURL, SupervisorID
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.543"
+			timeRelativeToTestModuleStartTime="00:04.543"
+			timeWallClock="09:03:49"
+			time="00:04.543"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SupervisorID' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'supervisorID']/div/div[1]"
+				itempath=".//div[#'supervisorID']/div/div[1]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SupervisorID"
+				id="605dbf4512994194b3f28a158278c71c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Job_Payroll.cs"
+				codeline="116"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.571"
+			timeRelativeToTestModuleStartTime="00:07.571"
+			timeWallClock="09:03:52"
+			time="00:07.571"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SupervisorIDValue' at 54;213.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'supervisorID']/div/?/?/div[@innertext='ADAMES, FELIX O.']"
+				itempath=".//div[#'supervisorID']/div/?/?/div[@innertext=$SupervisorID]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SupervisorIDValue"
+				id="cc257a1dc5ef4ea88ed1792ffa09e80d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Job_Payroll.cs"
+				codeline="120"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:47.309"
+			timeRelativeToTestModuleStartTime="00:47.309"
+			timeWallClock="09:04:32"
+			time="00:47.309"
+			level="Warn"
+			category="Click"
+			errimg="images_Job_Payr_248beedd\Job_Payr_556bdc6a_rxlog.jpg"
+			errthumb="images_Job_Payr_248beedd\Job_Payr_556bdc6a_rxlog_thumb.jpg">
+			<message>
+				The mouse action was performed outside the boundaries of the assigned UI element.<br/>
+			</message>
+			<metainfo
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Job_Payroll.cs"
+				codeline="121"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+	</activity>
+</report>

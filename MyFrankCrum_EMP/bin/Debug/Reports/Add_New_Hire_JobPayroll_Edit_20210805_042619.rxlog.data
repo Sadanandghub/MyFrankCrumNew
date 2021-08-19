@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="14.62s"
+		durationms="14615"
+		type="root"
+		rid="e2cd2bf69d8288"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="8/5/2021 4:26:23 AM"
+		timestampiso="2021-08-05T08:26:23"
+		endtime="8/5/2021 4:26:37 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Add_New_Hire_JobPayroll_Edit">
+		<detail>
+			Add_New_Hire_JobPayroll_Edit
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.098"
+			timeRelativeToTestModuleStartTime="00:04.098"
+			timeWallClock="04:26:27"
+			time="00:04.098"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AnnualSalary, PayRatePerHour, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.127"
+			timeRelativeToTestModuleStartTime="00:04.127"
+			timeWallClock="04:26:27"
+			time="00:04.127"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.BackToSummary1' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[]/div[4]/?/?/a[]/button[@innertext='Back To Summary']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div/div[]/div[4]/?/?/a[]/button[@innertext='Back To Summary']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.BackToSummary1"
+				id="f3628b1af69844b6be5ae5e9e93658be"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Add_New_Hire_JobPayroll_Edit.cs"
+				codeline="118"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.611"
+			timeRelativeToTestModuleStartTime="00:14.611"
+			timeWallClock="04:26:37"
+			time="00:14.611"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.08s"
+		durationms="7076"
+		type="root"
+		rid="c9d5831dfaeb33a"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/28/2021 6:56:48 AM"
+		timestampiso="2021-07-28T10:56:48"
+		endtime="7/28/2021 6:56:56 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Paycheck_History">
+		<detail>
+			Paycheck_History
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.207"
+			timeRelativeToTestModuleStartTime="00:04.207"
+			timeWallClock="06:56:53"
+			time="00:04.207"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.235"
+			timeRelativeToTestModuleStartTime="00:04.235"
+			timeWallClock="06:56:53"
+			time="00:04.235"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.PaycheckHistory' at 25;11.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'/PaycheckHistory']//div[@innertext='Paycheck History']"
+				itempath=".//div[#'/PaycheckHistory']//div[@innertext='Paycheck History']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PaycheckHistory"
+				id="9d04887671a74ad1ad9b5a856e56c024"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Paycheck_History.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="9.06s"
+		durationms="9059"
+		type="root"
+		rid="64a4fba122cd75"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/20/2021 7:20:36 AM"
+		timestampiso="2021-07-20T11:20:36"
+		endtime="7/20/2021 7:20:45 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="New_Hire_Personal_Page">
+		<detail>
+			New_Hire_Personal_Page
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.185"
+			timeRelativeToTestModuleStartTime="00:04.185"
+			timeWallClock="07:20:40"
+			time="00:04.185"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>EmployeeFirstName, EmployeeLastName, EmployeeAdd1, EmployeeMiddleName, EmployeeAdd2, ZipCode, WorkPhone, WorkExt, EmployeMobilePhone, HomePhone, EmployeeHomeEmail, EmployeeWorkEmail, RepoURL, EmployeeSuffix, StateValue, EmployeeGender, MaritalStatusValue, EthnicValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.212"
+			timeRelativeToTestModuleStartTime="00:04.212"
+			timeWallClock="07:20:40"
+			time="00:04.212"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EmpHomeEmail' at 25;21.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'home email']"
+				itempath=".//input[#'home email']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpHomeEmail"
+				id="d60f6b49e28145138157644eb1c3368d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="300"
+				itemindex="38"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.024"
+			timeRelativeToTestModuleStartTime="00:07.024"
+			timeWallClock="07:20:43"
+			time="00:07.024"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$EmployeeHomeEmail' with focus on 'ApplicationUnderTest.EmpHomeEmail'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'home email']"
+				itempath=".//input[#'home email']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpHomeEmail"
+				id="d60f6b49e28145138157644eb1c3368d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="304"
+				itemindex="39"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.744"
+			timeRelativeToTestModuleStartTime="00:07.744"
+			timeWallClock="07:20:44"
+			time="00:07.744"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EmpWorkEmail' at 36;6.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'work email']"
+				itempath=".//input[#'work email']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpWorkEmail"
+				id="25f6b2338fbe4711a1094d9941911d5b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="308"
+				itemindex="40"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.460"
+			timeRelativeToTestModuleStartTime="00:08.460"
+			timeWallClock="07:20:45"
+			time="00:08.460"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$EmployeeWorkEmail' with focus on 'ApplicationUnderTest.EmpWorkEmail'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'work email']"
+				itempath=".//input[#'work email']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpWorkEmail"
+				id="25f6b2338fbe4711a1094d9941911d5b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="312"
+				itemindex="41"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

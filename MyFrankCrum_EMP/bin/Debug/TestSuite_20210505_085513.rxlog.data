@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="2.95s"
+		durationms="2951"
+		type="root"
+		rid="cc411a2439a1803"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/5/2021 8:55:13 AM"
+		timestampiso="2021-05-05T12:55:13"
+		endtime="5/5/2021 8:55:16 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.921"
+			timeRelativeToTestModuleStartTime="00:02.921"
+			timeWallClock="08:55:16"
+			time="00:02.921"
+			level="Failure"
+			category="TestSuite">
+			<message>
+				TestSuite XML format is invalid. Failed to load default plugins. Please reinstall Ranorex. Failed to load plugins from assembly 'Ranorex.Plugin.Qt, Version=9.3.2.0, Culture=neutral, PublicKeyToken=b798506b574ebc9a'. Thread was being aborted.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Testing.TestSuite.CreateFromXmlNode(XmlNode node, Boolean captureChangeState)&#13;&#10;   at Ranorex.Core.Testing.TestSuiteRunner.&lt;>c.&lt;RunInternal>b__13_1(String xml)&#13;&#10;   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()&#13;&#10;   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)&#13;&#10;   at Ranorex.Core.Testing.TestSuiteRunner.RunInternal(Type containerType, String[] testSuiteXmls, RunParams[] rps)"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>

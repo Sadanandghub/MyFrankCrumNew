@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="26.08s"
+		durationms="26080"
+		type="root"
+		rid="5b1989aa31d7819"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/21/2021 11:22:08 AM"
+		timestampiso="2021-04-21T15:22:08"
+		endtime="4/21/2021 11:22:34 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Login">
+		<detail>
+			Login
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.627"
+			timeRelativeToTestModuleStartTime="00:05.627"
+			timeWallClock="11:22:14"
+			time="00:05.627"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>UserID, Password
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.653"
+			timeRelativeToTestModuleStartTime="00:05.653"
+			timeWallClock="11:22:14"
+			time="00:05.653"
+			level="Info"
+			category="Section">
+			<message>
+				Company User Name
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Login.cs"
+				codeline="109"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.656"
+			timeRelativeToTestModuleStartTime="00:05.656"
+			timeWallClock="11:22:14"
+			time="00:05.656"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Username' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='https://mfcqa01.frankcrum.com']//input[#'username']"
+				itempath=".//input[#'username']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Username"
+				id="dae14d420356417b9909606bdede9e58"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Login.cs"
+				codeline="111"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:26.076"
+			timeRelativeToTestModuleStartTime="00:26.076"
+			timeWallClock="11:22:34"
+			time="00:26.076"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

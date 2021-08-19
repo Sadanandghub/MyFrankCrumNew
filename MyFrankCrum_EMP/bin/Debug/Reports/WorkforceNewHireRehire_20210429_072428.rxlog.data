@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.1m"
+		durationms="67685"
+		type="root"
+		rid="26f28df2cec04d7"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/29/2021 7:24:32 AM"
+		timestampiso="2021-04-29T11:24:32"
+		endtime="4/29/2021 7:25:39 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="WorkforceNewHireRehire">
+		<detail>
+			WorkforceNewHireRehire
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeeDeductions0EmployeeAmount'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.247"
+			timeRelativeToTestModuleStartTime="00:04.247"
+			timeWallClock="07:24:36"
+			time="00:04.247"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AnnualSalary, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.275"
+			timeRelativeToTestModuleStartTime="00:04.275"
+			timeWallClock="07:24:36"
+			time="00:04.275"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Text2' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[5]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div/div[2]/div[2]//input[@type='text']"
+				itempath=".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[5]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div/div[2]/div[2]//input[@type='text']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Text2"
+				id="c3d02a50c69149e193d26d177892c9f7"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="105"
+				itemindex="86"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.367"
+			timeRelativeToTestModuleStartTime="00:06.367"
+			timeWallClock="07:24:38"
+			time="00:06.367"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '05/03/2021' with focus on 'ApplicationUnderTest.Text2'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[5]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div/div[2]/div[2]//input[@type='text']"
+				itempath=".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[5]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div/div[2]/div[2]//input[@type='text']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Text2"
+				id="c3d02a50c69149e193d26d177892c9f7"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="109"
+				itemindex="87"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.115"
+			timeRelativeToTestModuleStartTime="00:07.115"
+			timeWallClock="07:24:39"
+			time="00:07.115"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (Enabled='False') on item 'ApplicationUnderTest.DeductionNext'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']//button[@innertext='Next' and @type='submit']"
+				itempath=".//div[#'app']//button[@innertext='Next' and @type='submit']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeductionNext"
+				id="d83b576754844a8bbc016d09784273a8"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="113"
+				itemindex="88"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.352"
+			timeRelativeToTestModuleStartTime="00:07.352"
+			timeWallClock="07:24:39"
+			time="00:07.352"
+			level="Success"
+			category="Validation"
+			errimg="images_Workforc_edb3b12\Workforc_edb3b12_c11e8cb6_trace.jpg"
+			errthumb="images_Workforc_edb3b12\Workforc_edb3b12_c11e8cb6_trace_thumb.jpg">
+			<message>
+				Attribute 'Enabled' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.DeductionNext' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']//button[@innertext='Next' and @type='submit']"
+				itempath=".//div[#'app']//button[@innertext='Next' and @type='submit']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeductionNext"
+				id="d83b576754844a8bbc016d09784273a8"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="114"
+				loglvl="Success"
+				itemindex="88">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.461"
+			timeRelativeToTestModuleStartTime="00:07.461"
+			timeWallClock="07:24:39"
+			time="00:07.461"
+			level="Info"
+			category="Mouse"
+			errimg="images_Workforc_edb3b12\Workforc_edb3b12_55f37d83_trace.jpg"
+			errthumb="images_Workforc_edb3b12\Workforc_edb3b12_55f37d83_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EmployeeDeductions0EmployeeAmount' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[5]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div/div[2]/div[4]//input[@name='employeeDeductions[0].employeeAmount']"
+				itempath="dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[5]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div/div[2]/div[4]//input[@name='employeeDeductions[0].employeeAmount']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeeDeductions0EmployeeAmount"
+				id="e83548454dc14c53941c478a81802dcc"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="117"
+				itemindex="89"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:07.618"
+			timeRelativeToTestModuleStartTime="01:07.618"
+			timeWallClock="07:25:39"
+			time="01:07.618"
+			level="Error"
+			category="Module"
+			errimg="images_Workforc_edb3b12\Workforc_edb3b12_5f38b224_trace.jpg"
+			errthumb="images_Workforc_edb3b12\Workforc_edb3b12_5f38b224_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeeDeductions0EmployeeAmount'.<br/>No element found for path '/dom[@domain='devmfc.frankcrum.com']/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext&gt;'Please fill out all the required']/div/div/div[5]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div/div[2]/div[4]//input[@name='employeeDeductions[0].employeeAmount']' at step 'dom[@domain='devmfc.frankcrum.com']' after 469 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_EmployeeDeductions0EmployeeAmount() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 9653&#13;&#10;   at MyFrankCrum_EMP.WorkforceNewHireRehire.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs:line 118&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="118"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[5]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div/div[2]/div[4]//input[@name='employeeDeductions[0].employeeAmount']"
+				itempath="dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[5]/?/?/form[@action='https://devmfc.frankcrum.com/NewHire']/div/div[2]/div[4]//input[@name='employeeDeductions[0].employeeAmount']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeeDeductions0EmployeeAmount"
+				id="e83548454dc14c53941c478a81802dcc"
+				timeout="60000"
+				failedStep="dom[@domain='devmfc.frankcrum.com']"
+				bestPathPrefix="/dom[@domain=$RepoURL]"
+				loglvl="Error"
+				itemindex="89">
+			</metainfo>
+		</item>
+	</activity>
+</report>

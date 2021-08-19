@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="8.05s"
+		durationms="8045"
+		type="root"
+		rid="15a4984cc4143544"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/20/2021 9:33:01 AM"
+		timestampiso="2021-07-20T13:33:01"
+		endtime="7/20/2021 9:33:09 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Job_Payroll">
+		<detail>
+			Job_Payroll
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.215"
+			timeRelativeToTestModuleStartTime="00:04.215"
+			timeWallClock="09:33:05"
+			time="00:04.215"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AnnualSalary, WCCode, LocationID, RepoURL, HireSourceValue, SupervisorIDValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.243"
+			timeRelativeToTestModuleStartTime="00:04.243"
+			timeWallClock="09:33:05"
+			time="00:04.243"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.HireSource' at 164;22.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'hireSource']/div/div[1]"
+				itempath=".//div[#'hireSource']/div/div[1]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.HireSource"
+				id="d2a7d2a8f2364d2e8053578d02e08ad1"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Job_Payroll.cs"
+				codeline="153"
+				itemindex="10"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.246"
+			timeRelativeToTestModuleStartTime="00:07.246"
+			timeWallClock="09:33:08"
+			time="00:07.246"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.HRAssistant' at 53;16.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'hireSource']/div/?/?/div/div[@innertext='Dice']"
+				itempath=".//div[#'hireSource']/div/?/?/div/div[@innertext=$HireSourceValue]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.HRAssistant"
+				id="0e7b611399b54ffea13d7909953ff1fc"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Job_Payroll.cs"
+				codeline="157"
+				itemindex="11"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

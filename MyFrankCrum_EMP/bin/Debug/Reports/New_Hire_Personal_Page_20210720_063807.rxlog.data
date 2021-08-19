@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.34s"
+		durationms="7340"
+		type="root"
+		rid="a52bcb19c06add9"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/20/2021 6:38:10 AM"
+		timestampiso="2021-07-20T10:38:10"
+		endtime="7/20/2021 6:38:17 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="New_Hire_Personal_Page">
+		<detail>
+			New_Hire_Personal_Page
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.011"
+			timeRelativeToTestModuleStartTime="00:04.011"
+			timeWallClock="06:38:14"
+			time="00:04.011"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>EmployeeFirstName, EmployeeLastName, EmployeeAdd1, EmployeeMiddleName, EmployeeAdd2, ZipCode, WorkPhone, WorkExt, EmployeMobilePhone, RepoURL, EmployeeSuffix, StateValue, EmployeeGender, MaritalStatusValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.039"
+			timeRelativeToTestModuleStartTime="00:04.039"
+			timeWallClock="06:38:14"
+			time="00:04.039"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.MobilePhone' at 39;23.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'mobile phone']"
+				itempath=".//input[#'mobile phone']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MobilePhone"
+				id="ecd8bd19f75a43c08abe8028c30be656"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="251"
+				itemindex="29"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.811"
+			timeRelativeToTestModuleStartTime="00:06.811"
+			timeWallClock="06:38:17"
+			time="00:06.811"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$EmployeMobilePhone' with focus on 'ApplicationUnderTest.MobilePhone'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'mobile phone']"
+				itempath=".//input[#'mobile phone']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.MobilePhone"
+				id="ecd8bd19f75a43c08abe8028c30be656"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="255"
+				itemindex="30"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

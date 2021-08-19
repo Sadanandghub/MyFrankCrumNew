@@ -26,6 +26,16 @@ mode="Global">
 	namespace="MyFrankCrum_EMP">
 	</codegen>
 	<variables>
+		<var
+		id="26dc0310-53dc-4a62-aacf-368b7265295f"
+		name="PayHistoryTodate">
+			04/28/2020
+		</var>
+		<var
+		id="05792033-fde1-4390-ba4c-44fb4e06d23d"
+		name="PayHistoryFromDate">
+			04/27/2020
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -290,7 +300,7 @@ FABRRRQAUUUUAFFFFABRRRQAUyQkBcf3hRRQIjh/4+Z/qP5VPRRSWxMNvvCiiimWFFFFAH//2Q==
 			</info>
 		</keyitem>
 		<keysequenceitem
-		KeySequence="01/14/2019"
+		KeySequence="04/27/2020"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -299,6 +309,10 @@ FABRRRQAUUUUAFFFFABRRRQAUyQkBcf3hRRQIjh/4+Z/qP5VPRRSWxMNvvCiiimWFFFFAH//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="PayHistoryFromDate">
+				</binding>
 			</bindings>
 			<info
 			id="2d52ec75-16f5-445c-b077-16195e8e0f7a"
@@ -308,6 +322,195 @@ FABRRRQAUUUUAFFFFABRRRQAUyQkBcf3hRRQIjh/4+Z/qP5VPRRSWxMNvvCiiimWFFFFAH//2Q==
 				</path>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="da7ae89a-d5ad-4c5d-9b7f-25c0ef479f8d"
+		sx="580"
+		sy="598"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b433c5df-66f5-4924-a22b-04c92c33e2dd"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="5"
+				prefcap="divtag"
+				rect="568,589,24,23"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						react-datepicker__day react-datepicker__day--028 react-datepicker__day--keyboard-selected
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						28
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						react-datepicker__day react-datepicker__day--028
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div[4]/div[8]/div/div/div/div[1]/div[2]/div[2]/div/div/div[2]/div[2]/div[5]/div[@innertext='28']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="eb962ba3-96e3-4c2e-94d0-88105b0d4db5">
+				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
+5BJIxj86dsP99v0p1FAH/9k=
+			</helperscreenshot>
+		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -356,7 +559,7 @@ FABRRRQAUUUUAFFFFABRRRQAUyQkBcf3hRRQIjh/4+Z/qP5VPRRSWxMNvvCiiimWFFFFAH//2Q==
 			</info>
 		</keyitem>
 		<keysequenceitem
-		KeySequence="03/28/2021"
+		KeySequence="04/28/2020"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -365,6 +568,10 @@ FABRRRQAUUUUAFFFFABRRRQAUyQkBcf3hRRQIjh/4+Z/qP5VPRRSWxMNvvCiiimWFFFFAH//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="PayHistoryTodate">
+				</binding>
 			</bindings>
 			<info
 			id="36fe7462-b981-4f8d-82d4-3648bdda7e67"

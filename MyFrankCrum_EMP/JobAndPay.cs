@@ -41,6 +41,14 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public JobAndPay()
         {
+            ScheduledHours = "45";
+            HourlyPayRate = "130";
+            SalaryDocumentTitle = "Salary file";
+            SalaryDocExpiresDate = "04042021";
+            SalaryUploadPath = "QDC_FWCI_Q-117097_34823_GL_ACCEPTED03182021_03212321_AM";
+            PerformanceDocTitle = "Performance file";
+            PerformanceDocExpireDate = "04042021";
+            PerformanceUploadPath = "QDC_FWCI_Q-117097_34823_GL_ACCEPTED03182021_03212321_AM";
         }
 
         /// <summary>
@@ -53,6 +61,102 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        string _ScheduledHours;
+
+        /// <summary>
+        /// Gets or sets the value of variable ScheduledHours.
+        /// </summary>
+        [TestVariable("bb1d0a50-7629-424c-8d22-de96e0b2a1b3")]
+        public string ScheduledHours
+        {
+            get { return _ScheduledHours; }
+            set { _ScheduledHours = value; }
+        }
+
+        string _HourlyPayRate;
+
+        /// <summary>
+        /// Gets or sets the value of variable HourlyPayRate.
+        /// </summary>
+        [TestVariable("7f52f76c-65c5-4696-bff4-6d10642c6910")]
+        public string HourlyPayRate
+        {
+            get { return _HourlyPayRate; }
+            set { _HourlyPayRate = value; }
+        }
+
+        string _SalaryDocumentTitle;
+
+        /// <summary>
+        /// Gets or sets the value of variable SalaryDocumentTitle.
+        /// </summary>
+        [TestVariable("40e9556d-b888-4191-97d9-34a67d31712a")]
+        public string SalaryDocumentTitle
+        {
+            get { return _SalaryDocumentTitle; }
+            set { _SalaryDocumentTitle = value; }
+        }
+
+        string _SalaryDocExpiresDate;
+
+        /// <summary>
+        /// Gets or sets the value of variable SalaryDocExpiresDate.
+        /// </summary>
+        [TestVariable("9203bdb4-8a34-414e-8087-12f869af3f9e")]
+        public string SalaryDocExpiresDate
+        {
+            get { return _SalaryDocExpiresDate; }
+            set { _SalaryDocExpiresDate = value; }
+        }
+
+        string _SalaryUploadPath;
+
+        /// <summary>
+        /// Gets or sets the value of variable SalaryUploadPath.
+        /// </summary>
+        [TestVariable("13b369f3-61e8-49c4-bf25-893a667801ba")]
+        public string SalaryUploadPath
+        {
+            get { return _SalaryUploadPath; }
+            set { _SalaryUploadPath = value; }
+        }
+
+        string _PerformanceDocTitle;
+
+        /// <summary>
+        /// Gets or sets the value of variable PerformanceDocTitle.
+        /// </summary>
+        [TestVariable("4e156a69-4251-4f62-a400-5b63006c1565")]
+        public string PerformanceDocTitle
+        {
+            get { return _PerformanceDocTitle; }
+            set { _PerformanceDocTitle = value; }
+        }
+
+        string _PerformanceDocExpireDate;
+
+        /// <summary>
+        /// Gets or sets the value of variable PerformanceDocExpireDate.
+        /// </summary>
+        [TestVariable("ed2d9022-29d4-4431-8b4a-7ed2381efae8")]
+        public string PerformanceDocExpireDate
+        {
+            get { return _PerformanceDocExpireDate; }
+            set { _PerformanceDocExpireDate = value; }
+        }
+
+        string _PerformanceUploadPath;
+
+        /// <summary>
+        /// Gets or sets the value of variable PerformanceUploadPath.
+        /// </summary>
+        [TestVariable("85a18f3b-5990-4d20-9a2f-8cfca6fba516")]
+        public string PerformanceUploadPath
+        {
+            get { return _PerformanceUploadPath; }
+            set { _PerformanceUploadPath = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable RepoURL.
         /// </summary>
@@ -61,6 +165,26 @@ namespace MyFrankCrum_EMP
         {
             get { return repo.RepoURL; }
             set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable SelectReason.
+        /// </summary>
+        [TestVariable("16586a30-6aa1-4f00-a1c8-69562018748a")]
+        public string SelectReason
+        {
+            get { return repo.SelectReason; }
+            set { repo.SelectReason = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable JobCode.
+        /// </summary>
+        [TestVariable("6052f08a-c048-4771-b726-a4a3c0d2bbc7")]
+        public string JobCode
+        {
+            get { return repo.JobCode; }
+            set { repo.JobCode = value; }
         }
 
 #endregion
@@ -96,160 +220,216 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect4' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect4Info, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect4.Click();
+            Report.Screenshot(ReportLevel.Info, "User", "Before Job Changes screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReasonClick' at Center.", repo.ApplicationUnderTest.ReasonClickInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.ReasonClick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CostOfLivingAdjustment' at Center.", repo.ApplicationUnderTest.CostOfLivingAdjustmentInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.CostOfLivingAdjustment.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SelectReason' at Center.", repo.ApplicationUnderTest.SelectReasonInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.SelectReason.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect5' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect5Info, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect5.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ClickJobCode' at Center.", repo.ApplicationUnderTest.ClickJobCodeInfo, new RecordItemIndex(5));
+            repo.ApplicationUnderTest.ClickJobCode.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Job_Code' at Center.", repo.ApplicationUnderTest.Job_CodeInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Job_Code' at Center.", repo.ApplicationUnderTest.Job_CodeInfo, new RecordItemIndex(6));
             repo.ApplicationUnderTest.Job_Code.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Departmentclick' at Center.", repo.ApplicationUnderTest.DepartmentclickInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Departmentclick' at Center.", repo.ApplicationUnderTest.DepartmentclickInfo, new RecordItemIndex(7));
             repo.ApplicationUnderTest.Departmentclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Department' at Center.", repo.ApplicationUnderTest.DepartmentInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Department' at Center.", repo.ApplicationUnderTest.DepartmentInfo, new RecordItemIndex(8));
             repo.ApplicationUnderTest.Department.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveJobPayChanges' at Center.", repo.ApplicationUnderTest.SaveJobPayChangesInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveJobPayChanges' at Center.", repo.ApplicationUnderTest.SaveJobPayChangesInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.SaveJobPayChanges.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.NotificationNotificationLeaveNotifica'.", repo.ApplicationUnderTest.NotificationNotificationLeaveNotificaInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(10));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.NotificationNotificationLeaveNotifica'.", repo.ApplicationUnderTest.NotificationNotificationLeaveNotificaInfo, new RecordItemIndex(11));
             Validate.Exists(repo.ApplicationUnderTest.NotificationNotificationLeaveNotificaInfo);
             Delay.Milliseconds(100);
             
-            // Change the scheduled hours value
-            Report.Log(ReportLevel.Info, "Section", "Change the scheduled hours value", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by 4550 units.", new RecordItemIndex(12));
+            Mouse.ScrollWheel(4550);
+            Delay.Milliseconds(300);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ScheduledHours1' at Center.", repo.ApplicationUnderTest.ScheduledHours1Info, new RecordItemIndex(11));
+            Report.Screenshot(ReportLevel.Info, "User", "After Job Changes screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(13));
+            
+            // Change the scheduled hours value
+            Report.Log(ReportLevel.Info, "Section", "Change the scheduled hours value", new RecordItemIndex(14));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -1100 units.", new RecordItemIndex(15));
+            Mouse.ScrollWheel(-1100);
+            Delay.Milliseconds(300);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(16));
+            Delay.Duration(3000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Before changes in Scheduled Hours Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(17));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ScheduledHours1' at Center.", repo.ApplicationUnderTest.ScheduledHours1Info, new RecordItemIndex(18));
             repo.ApplicationUnderTest.ScheduledHours1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '35' on item 'ApplicationUnderTest.ScheduledHours1'.", repo.ApplicationUnderTest.ScheduledHours1Info, new RecordItemIndex(12));
-            repo.ApplicationUnderTest.ScheduledHours1.Element.SetAttributeValue("Value", "35");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$ScheduledHours' on item 'ApplicationUnderTest.ScheduledHours1'.", repo.ApplicationUnderTest.ScheduledHours1Info, new RecordItemIndex(19));
+            repo.ApplicationUnderTest.ScheduledHours1.Element.SetAttributeValue("Value", ScheduledHours);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Salary' at Center.", repo.ApplicationUnderTest.SalaryInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Salary' at Center.", repo.ApplicationUnderTest.SalaryInfo, new RecordItemIndex(20));
             repo.ApplicationUnderTest.Salary.Click();
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", null, false, new RecordItemIndex(14));
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(21));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.HourlyPayRateInput' at Center.", repo.ApplicationUnderTest.HourlyPayRateInputInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.HourlyPayRateInput' at Center.", repo.ApplicationUnderTest.HourlyPayRateInputInfo, new RecordItemIndex(22));
             repo.ApplicationUnderTest.HourlyPayRateInput.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '130' on item 'ApplicationUnderTest.HourlyPayRateInput'.", repo.ApplicationUnderTest.HourlyPayRateInputInfo, new RecordItemIndex(16));
-            repo.ApplicationUnderTest.HourlyPayRateInput.Element.SetAttributeValue("Value", "130");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$HourlyPayRate' on item 'ApplicationUnderTest.HourlyPayRateInput'.", repo.ApplicationUnderTest.HourlyPayRateInputInfo, new RecordItemIndex(23));
+            repo.ApplicationUnderTest.HourlyPayRateInput.Element.SetAttributeValue("Value", HourlyPayRate);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FullFormSection' at Center.", repo.ApplicationUnderTest.FullFormSectionInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FullFormSection' at Center.", repo.ApplicationUnderTest.FullFormSectionInfo, new RecordItemIndex(24));
             repo.ApplicationUnderTest.FullFormSection.Click();
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "HourlyPayRate Screenshot Taken", null, false, new RecordItemIndex(18));
+            Report.Screenshot(ReportLevel.Info, "User", "HourlyPayRate Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(25));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveJobPayChanges' at Center.", repo.ApplicationUnderTest.SaveJobPayChangesInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveJobPayChanges' at Center.", repo.ApplicationUnderTest.SaveJobPayChangesInfo, new RecordItemIndex(26));
             repo.ApplicationUnderTest.SaveJobPayChanges.Click();
             Delay.Milliseconds(0);
             
-            // Salary Review File Upload section
-            Report.Log(ReportLevel.Info, "Section", "Salary Review File Upload section", new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(27));
+            Delay.Duration(8000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentTitle' at Center.", repo.ApplicationUnderTest.DocumentTitleInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by 3250 units.", new RecordItemIndex(28));
+            Mouse.ScrollWheel(3250);
+            Delay.Milliseconds(300);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "After Schedule hours changes screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(29));
+            
+            // Salary Review File Upload section  with Unchecked "Employee can View"
+            Report.Log(ReportLevel.Info, "Section", "Salary Review File Upload section  with Unchecked \"Employee can View\"", new RecordItemIndex(30));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -3500 units.", new RecordItemIndex(31));
+            Mouse.ScrollWheel(-3500);
+            Delay.Milliseconds(300);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(32));
+            Delay.Duration(3000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Before upload document Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(33));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentTitle' at Center.", repo.ApplicationUnderTest.DocumentTitleInfo, new RecordItemIndex(34));
             repo.ApplicationUnderTest.DocumentTitle.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Salary file' with focus on 'ApplicationUnderTest.DocumentTitle'.", repo.ApplicationUnderTest.DocumentTitleInfo, new RecordItemIndex(22));
-            repo.ApplicationUnderTest.DocumentTitle.PressKeys("Salary file");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SalaryDocumentTitle' with focus on 'ApplicationUnderTest.DocumentTitle'.", repo.ApplicationUnderTest.DocumentTitleInfo, new RecordItemIndex(35));
+            repo.ApplicationUnderTest.DocumentTitle.PressKeys(SalaryDocumentTitle);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Text' at Center.", repo.ApplicationUnderTest.TextInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Text' at Center.", repo.ApplicationUnderTest.TextInfo, new RecordItemIndex(36));
             repo.ApplicationUnderTest.Text.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04042021' with focus on 'ApplicationUnderTest.Text'.", repo.ApplicationUnderTest.TextInfo, new RecordItemIndex(24));
-            repo.ApplicationUnderTest.Text.PressKeys("04042021");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SalaryDocExpiresDate' with focus on 'ApplicationUnderTest.Text'.", repo.ApplicationUnderTest.TextInfo, new RecordItemIndex(37));
+            repo.ApplicationUnderTest.Text.PressKeys(SalaryDocExpiresDate);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceReviewCorrectiveAction' at Center.", repo.ApplicationUnderTest.PerformanceReviewCorrectiveActionInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceReviewCorrectiveAction' at Center.", repo.ApplicationUnderTest.PerformanceReviewCorrectiveActionInfo, new RecordItemIndex(38));
             repo.ApplicationUnderTest.PerformanceReviewCorrectiveAction.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChooseFile' at Center.", repo.ApplicationUnderTest.ChooseFileInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChooseFile' at Center.", repo.ApplicationUnderTest.ChooseFileInfo, new RecordItemIndex(39));
             repo.ApplicationUnderTest.ChooseFile.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay' at Center.", repo.Open.SystemItemNameDisplayInfo, new RecordItemIndex(27));
-            repo.Open.SystemItemNameDisplay.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Text1148' at Center.", repo.Open.Text1148Info, new RecordItemIndex(40));
+            repo.Open.Text1148.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.ButtonOpen' at Center.", repo.Open.ButtonOpenInfo, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SalaryUploadPath' with focus on 'Open.Text1148'.", repo.Open.Text1148Info, new RecordItemIndex(41));
+            repo.Open.Text1148.PressKeys(SalaryUploadPath);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.ButtonOpen' at Center.", repo.Open.ButtonOpenInfo, new RecordItemIndex(42));
             repo.Open.ButtonOpen.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SalaryReviewFileFileEmployeeCanView' at Center.", repo.ApplicationUnderTest.SalaryReviewFileFileEmployeeCanViewInfo, new RecordItemIndex(29));
-            repo.ApplicationUnderTest.SalaryReviewFileFileEmployeeCanView.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SalaryReviewFileFileEmployeeCanView' at Center.", repo.ApplicationUnderTest.SalaryReviewFileFileEmployeeCanViewInfo, new RecordItemIndex(43));
+            //repo.ApplicationUnderTest.SalaryReviewFileFileEmployeeCanView.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Screenshot taken", null, false, new RecordItemIndex(30));
+            Report.Screenshot(ReportLevel.Info, "User", "After upload document Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(44));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveJobPayChanges' at Center.", repo.ApplicationUnderTest.SaveJobPayChangesInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveJobPayChanges' at Center.", repo.ApplicationUnderTest.SaveJobPayChangesInfo, new RecordItemIndex(45));
             repo.ApplicationUnderTest.SaveJobPayChanges.Click();
             Delay.Milliseconds(0);
             
-            // Performance Review / Corrective Action File Upload
-            Report.Log(ReportLevel.Info, "Section", "Performance Review / Corrective Action File Upload", new RecordItemIndex(32));
+            // Performance Review / Corrective Action File Upload with checked "Employee can View"
+            Report.Log(ReportLevel.Info, "Section", "Performance Review / Corrective Action File Upload with checked \"Employee can View\"", new RecordItemIndex(46));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceDocumentTitle' at Center.", repo.ApplicationUnderTest.PerformanceDocumentTitleInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(47));
+            Delay.Duration(5000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Before upload document Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(48));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceDocumentTitle' at Center.", repo.ApplicationUnderTest.PerformanceDocumentTitleInfo, new RecordItemIndex(49));
             repo.ApplicationUnderTest.PerformanceDocumentTitle.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Performance file' with focus on 'ApplicationUnderTest.PerformanceDocumentTitle'.", repo.ApplicationUnderTest.PerformanceDocumentTitleInfo, new RecordItemIndex(34));
-            repo.ApplicationUnderTest.PerformanceDocumentTitle.PressKeys("Performance file");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PerformanceDocTitle' with focus on 'ApplicationUnderTest.PerformanceDocumentTitle'.", repo.ApplicationUnderTest.PerformanceDocumentTitleInfo, new RecordItemIndex(50));
+            repo.ApplicationUnderTest.PerformanceDocumentTitle.PressKeys(PerformanceDocTitle);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.performanceText' at Center.", repo.ApplicationUnderTest.performanceTextInfo, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.performanceText' at Center.", repo.ApplicationUnderTest.performanceTextInfo, new RecordItemIndex(51));
             repo.ApplicationUnderTest.performanceText.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04042021' with focus on 'ApplicationUnderTest.performanceText'.", repo.ApplicationUnderTest.performanceTextInfo, new RecordItemIndex(36));
-            repo.ApplicationUnderTest.performanceText.PressKeys("04042021");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PerformanceDocExpireDate' with focus on 'ApplicationUnderTest.performanceText'.", repo.ApplicationUnderTest.performanceTextInfo, new RecordItemIndex(52));
+            repo.ApplicationUnderTest.performanceText.PressKeys(PerformanceDocExpireDate);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceReviewCorrectiveActionF' at Center.", repo.ApplicationUnderTest.PerformanceReviewCorrectiveActionFInfo, new RecordItemIndex(37));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceReviewCorrectiveActionF' at Center.", repo.ApplicationUnderTest.PerformanceReviewCorrectiveActionFInfo, new RecordItemIndex(53));
             repo.ApplicationUnderTest.PerformanceReviewCorrectiveActionF.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceChooseFile' at Center.", repo.ApplicationUnderTest.PerformanceChooseFileInfo, new RecordItemIndex(38));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceChooseFile' at Center.", repo.ApplicationUnderTest.PerformanceChooseFileInfo, new RecordItemIndex(54));
             repo.ApplicationUnderTest.PerformanceChooseFile.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay' at Center.", repo.Open.SystemItemNameDisplayInfo, new RecordItemIndex(39));
-            repo.Open.SystemItemNameDisplay.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Text1148' at Center.", repo.Open.Text1148Info, new RecordItemIndex(55));
+            repo.Open.Text1148.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.ButtonOpen' at Center.", repo.Open.ButtonOpenInfo, new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PerformanceUploadPath' with focus on 'Open.Text1148'.", repo.Open.Text1148Info, new RecordItemIndex(56));
+            repo.Open.Text1148.PressKeys(PerformanceUploadPath);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.ButtonOpen' at Center.", repo.Open.ButtonOpenInfo, new RecordItemIndex(57));
             repo.Open.ButtonOpen.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceReviewFileFileEmployeeCanVie' at Center.", repo.ApplicationUnderTest.PerformanceReviewFileFileEmployeeCanVieInfo, new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PerformanceReviewFileFileEmployeeCanVie' at Center.", repo.ApplicationUnderTest.PerformanceReviewFileFileEmployeeCanVieInfo, new RecordItemIndex(58));
             repo.ApplicationUnderTest.PerformanceReviewFileFileEmployeeCanVie.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveJobPayChanges' at Center.", repo.ApplicationUnderTest.SaveJobPayChangesInfo, new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveJobPayChanges' at Center.", repo.ApplicationUnderTest.SaveJobPayChangesInfo, new RecordItemIndex(59));
             repo.ApplicationUnderTest.SaveJobPayChanges.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(60));
+            Delay.Duration(3000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "After upload document Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(61));
             
         }
 

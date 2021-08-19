@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.1m"
+		durationms="67633"
+		type="root"
+		rid="20ad626607e02d0"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/29/2021 6:07:24 AM"
+		timestampiso="2021-04-29T10:07:24"
+		endtime="4/29/2021 6:08:32 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="WorkforceNewHireRehire">
+		<detail>
+			WorkforceNewHireRehire
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.PleaseEnterTheSSNInTheFormatHashH'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.514"
+			timeRelativeToTestModuleStartTime="00:04.514"
+			timeWallClock="06:07:29"
+			time="00:04.514"
+			level="Warn"
+			category="Data"
+			errimg="images_Workforc_6c2451dc\Workforc_6c2451dc_4b60fca7_trace.jpg"
+			errthumb="images_Workforc_6c2451dc\Workforc_6c2451dc_4b60fca7_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>AnnualSalary, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.562"
+			timeRelativeToTestModuleStartTime="00:04.562"
+			timeWallClock="06:07:29"
+			time="00:04.562"
+			level="Info"
+			category="Mouse"
+			errimg="images_Workforc_6c2451dc\Workforc_6c2451dc_4b60fca7_trace.jpg"
+			errthumb="images_Workforc_6c2451dc\Workforc_6c2451dc_4b60fca7_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Next' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[2]/div/div/?/?/button[@innertext='Next']"
+				itempath=".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[2]/div/div/?/?/button[@innertext='Next']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Next"
+				id="a9adff02b51948fa8fd250b3a672b403"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="105"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.377"
+			timeRelativeToTestModuleStartTime="00:07.377"
+			timeWallClock="06:07:31"
+			time="00:07.377"
+			level="Info"
+			category="Mouse"
+			errimg="images_Workforc_6c2451dc\Workforc_6c2451dc_3ac10877_trace.jpg"
+			errthumb="images_Workforc_6c2451dc\Workforc_6c2451dc_3ac10877_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.PleaseEnterTheSSNInTheFormatHashH' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[2]//div[@innertext>'Please enter the SSN in the']"
+				itempath="dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[2]//div[@innertext>'Please enter the SSN in the']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PleaseEnterTheSSNInTheFormatHashH"
+				id="07bf5d2834a945f0aa43a5e1a9716232"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="109"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:07.532"
+			timeRelativeToTestModuleStartTime="01:07.532"
+			timeWallClock="06:08:32"
+			time="01:07.532"
+			level="Error"
+			category="Module"
+			errimg="images_Workforc_6c2451dc\Workforc_6c2451dc_2786e32c_trace.jpg"
+			errthumb="images_Workforc_6c2451dc\Workforc_6c2451dc_2786e32c_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.PleaseEnterTheSSNInTheFormatHashH'.<br/>No element found for path '/dom[@domain='devmfc.frankcrum.com']/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext&gt;'Please fill out all the required']/div/div/div[2]//div[@innertext&gt;'Please enter the SSN in the']' at step 'dom[@domain='devmfc.frankcrum.com']' after 460 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_PleaseEnterTheSSNInTheFormatHashH() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 9411&#13;&#10;   at MyFrankCrum_EMP.WorkforceNewHireRehire.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs:line 110&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceNewHireRehire.cs"
+				codeline="110"
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[2]//div[@innertext>'Please enter the SSN in the']"
+				itempath="dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[2]//div[@innertext>'Please enter the SSN in the']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PleaseEnterTheSSNInTheFormatHashH"
+				id="07bf5d2834a945f0aa43a5e1a9716232"
+				timeout="60000"
+				failedStep="dom[@domain='devmfc.frankcrum.com']"
+				bestPathPrefix="/dom[@domain=$RepoURL]"
+				loglvl="Error"
+				itemindex="7">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="37.18s"
+		durationms="37183"
+		type="root"
+		rid="a567026dcc1f5de"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/30/2021 8:04:02 AM"
+		timestampiso="2021-07-30T12:04:02"
+		endtime="7/30/2021 8:04:39 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EmployeeStatusTabWithValidation">
+		<detail>
+			EmployeeStatusTabWithValidation
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.393"
+			timeRelativeToTestModuleStartTime="00:04.393"
+			timeWallClock="08:04:06"
+			time="00:04.393"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.422"
+			timeRelativeToTestModuleStartTime="00:04.422"
+			timeWallClock="08:04:07"
+			time="00:04.422"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Activeclick' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Active']"
+				itempath=".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Activeclick"
+				id="2c90fa00c4e346b988ab6b975cfeaff2"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.137"
+			timeRelativeToTestModuleStartTime="00:06.137"
+			timeWallClock="08:04:08"
+			time="00:06.137"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeContains (InnerText&gt;'Employees - Active') on item 'ApplicationUnderTest.EmployeesActive'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive"
+				id="0ba76efb49294597a665e83db7156fbf"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="96"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.262"
+			timeRelativeToTestModuleStartTime="00:06.262"
+			timeWallClock="08:04:08"
+			time="00:06.262"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive"
+				id="0ba76efb49294597a665e83db7156fbf"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="97"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.371"
+			timeRelativeToTestModuleStartTime="00:06.371"
+			timeWallClock="08:04:08"
+			time="00:06.371"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.LeaveOfAbsenceclick' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Leave of absence']"
+				itempath=".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Leave of absence']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.LeaveOfAbsenceclick"
+				id="38f7593e9dd14d769856df3ee9769c30"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="100"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.933"
+			timeRelativeToTestModuleStartTime="00:06.933"
+			timeWallClock="08:04:09"
+			time="00:06.933"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeContains (InnerText&gt;'Employees  - Leave of absence') on item 'ApplicationUnderTest.EmployeesLeaveOfAbsence'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees  - Leave of absence']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees  - Leave of absence']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesLeaveOfAbsence"
+				id="8367c9c4b2e94572ab858500787e668a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="104"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:37.178"
+			timeRelativeToTestModuleStartTime="00:37.178"
+			timeWallClock="08:04:39"
+			time="00:37.178"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="6.53s"
+		durationms="6530"
+		type="root"
+		rid="49efb55742ce40e"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/22/2021 4:27:52 AM"
+		timestampiso="2021-04-22T08:27:52"
+		endtime="4/22/2021 4:27:59 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="HomePageContentValidation">
+		<detail>
+			HomePageContentValidation
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.261"
+			timeRelativeToTestModuleStartTime="00:04.261"
+			timeWallClock="04:27:57"
+			time="00:04.261"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.288"
+			timeRelativeToTestModuleStartTime="00:04.288"
+			timeWallClock="04:27:57"
+			time="00:04.288"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeContains (InnerText&gt;'Hi,') on item 'ApplicationUnderTest.HiUser'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, Warren!']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, Warren!']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.HiUser"
+				id="a3e326006f6d4dc7b21860c088d58d1d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\HomePageContentValidation.cs"
+				codeline="92"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.427"
+			timeRelativeToTestModuleStartTime="00:06.427"
+			timeWallClock="04:27:59"
+			time="00:06.427"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.HiUser' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, Warren!']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div/div[1]/div[@innertext='Hi, Warren!']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.HiUser"
+				id="a3e326006f6d4dc7b21860c088d58d1d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\HomePageContentValidation.cs"
+				codeline="93"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

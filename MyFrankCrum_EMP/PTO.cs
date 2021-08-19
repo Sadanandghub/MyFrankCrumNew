@@ -41,6 +41,7 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public PTO()
         {
+            PTODropdownValue = "Paid Time Off";
         }
 
         /// <summary>

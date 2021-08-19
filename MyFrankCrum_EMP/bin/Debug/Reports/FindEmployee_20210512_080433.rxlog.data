@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.61s"
+		durationms="7611"
+		type="root"
+		rid="53dcce0690f588a"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/12/2021 8:04:38 AM"
+		timestampiso="2021-05-12T12:04:38"
+		endtime="5/12/2021 8:04:46 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="FindEmployee">
+		<detail>
+			FindEmployee
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.926"
+			timeRelativeToTestModuleStartTime="00:04.926"
+			timeWallClock="08:04:43"
+			time="00:04.926"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL, EmpName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.956"
+			timeRelativeToTestModuleStartTime="00:04.956"
+			timeWallClock="08:04:43"
+			time="00:04.956"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeContains (InnerText&gt;$EmpName) on item 'ApplicationUnderTest.EmpName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Fidel  Azua ']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Fidel  Azua ']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName"
+				id="3adb98d73eb94fadb82134649810c11b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="103"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.270"
+			timeRelativeToTestModuleStartTime="00:07.270"
+			timeWallClock="08:04:46"
+			time="00:07.270"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Fidel  Azua ']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext>'Fidel  Azua ']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpName"
+				id="3adb98d73eb94fadb82134649810c11b"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="104"
+				loglvl="Success"
+				itemindex="4">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.373"
+			timeRelativeToTestModuleStartTime="00:07.373"
+			timeWallClock="08:04:46"
+			time="00:07.373"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText='Personal') on item 'ApplicationUnderTest.Personal'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Personal']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Personal']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Personal"
+				id="18137ebf5c2e48a0b5898241b8c342d1"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="107"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.503"
+			timeRelativeToTestModuleStartTime="00:07.503"
+			timeWallClock="08:04:46"
+			time="00:07.503"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.Personal' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Personal']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Personal']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Personal"
+				id="18137ebf5c2e48a0b5898241b8c342d1"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\FindEmployee.cs"
+				codeline="108"
+				loglvl="Success"
+				itemindex="5">
+			</metainfo>
+		</item>
+	</activity>
+</report>

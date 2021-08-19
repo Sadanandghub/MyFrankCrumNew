@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="6.81s"
+		durationms="6807"
+		type="root"
+		rid="19ca61e24d43dffc"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/19/2021 10:16:03 AM"
+		timestampiso="2021-07-19T14:16:03"
+		endtime="7/19/2021 10:16:10 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="New_Hire_Personal_Page">
+		<detail>
+			New_Hire_Personal_Page
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.133"
+			timeRelativeToTestModuleStartTime="00:04.133"
+			timeWallClock="10:16:07"
+			time="00:04.133"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>EmployeeFirstName, EmployeeLastName, EmployeeAdd1, EmployeeMiddleName, EmployeeAdd2, RepoURL, StateValue, EmployeeGender
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.161"
+			timeRelativeToTestModuleStartTime="00:04.161"
+			timeWallClock="10:16:07"
+			time="00:04.161"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.State2' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'state']/div[1]/div[1]"
+				itempath=".//div[#'state']/div[1]/div[1]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.State2"
+				id="2983e81821bf4394952b1b973916596d"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="178"
+				itemindex="13"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.044"
+			timeRelativeToTestModuleStartTime="00:06.044"
+			timeWallClock="10:16:09"
+			time="00:06.044"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EmpStateValue' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'state']/div/?/?/div/div[@innertext='Florida']"
+				itempath=".//div[#'state']/div/?/?/div/div[@innertext=$StateValue]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmpStateValue"
+				id="ae05bb17732346eda4d3c8a072748c43"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="182"
+				itemindex="14"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

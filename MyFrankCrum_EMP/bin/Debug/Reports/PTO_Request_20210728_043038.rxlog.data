@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.14s"
+		durationms="7142"
+		type="root"
+		rid="9f0b2ed7d6dc800"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/28/2021 4:30:41 AM"
+		timestampiso="2021-07-28T08:30:41"
+		endtime="7/28/2021 4:30:48 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="PTO_Request">
+		<detail>
+			PTO_Request
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.201"
+			timeRelativeToTestModuleStartTime="00:04.201"
+			timeWallClock="04:30:45"
+			time="00:04.201"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.229"
+			timeRelativeToTestModuleStartTime="00:04.229"
+			timeWallClock="04:30:45"
+			time="00:04.229"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.PendingRequests' at 31;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'sidebar-content-container']/div[4]//a[@href>'https://mfcdev05.frankcru']/?/?/div[@innertext='Pending Requests']"
+				itempath=".//div[#'sidebar-content-container']/div[4]//a[@href>'https://mfcdev05.frankcru']/?/?/div[@innertext='Pending Requests']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.PendingRequests"
+				id="076e92ce070640e9b92e33e11653a14c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PTO_Request.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

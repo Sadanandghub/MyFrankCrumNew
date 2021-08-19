@@ -41,6 +41,25 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public PersonalTabContacts()
         {
+            Relationship = "Brother";
+            ContactSSN = "234565434";
+            ContactFirstName = "Sadanand";
+            ContactMiddleName = "L";
+            ContactLastName = "Gupta";
+            ContactFormerName = "Saddu";
+            ContactDOB = "07101994";
+            ContactMarriageDate = "0711/2019";
+            ContactDivorceDate = "07112019";
+            ContactAddOne = "Address one";
+            ContactAddTwo = "Address two";
+            ContactCity = "Florida";
+            ContactZip = "2345677654";
+            ContactHomePhone = "5678765676";
+            ContactWorkPhone = "5674567892";
+            ContactWorkExt = "34";
+            ContactOtherPhone = "6498765434";
+            ContactEmployer = "Sadanand";
+            ContactOccupation = "Sales";
         }
 
         /// <summary>
@@ -53,6 +72,222 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        string _ContactSSN;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactSSN.
+        /// </summary>
+        [TestVariable("c4d114ab-55d7-48a7-89fb-4d1f7952ad9d")]
+        public string ContactSSN
+        {
+            get { return _ContactSSN; }
+            set { _ContactSSN = value; }
+        }
+
+        string _ContactFirstName;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactFirstName.
+        /// </summary>
+        [TestVariable("61ad55c3-771d-452f-ab42-d2fbff734b36")]
+        public string ContactFirstName
+        {
+            get { return _ContactFirstName; }
+            set { _ContactFirstName = value; }
+        }
+
+        string _ContactMiddleName;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactMiddleName.
+        /// </summary>
+        [TestVariable("540376a4-8af0-447b-a0c8-0e43950b7047")]
+        public string ContactMiddleName
+        {
+            get { return _ContactMiddleName; }
+            set { _ContactMiddleName = value; }
+        }
+
+        string _ContactLastName;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactLastName.
+        /// </summary>
+        [TestVariable("b1fa9640-929d-41ed-af03-0701a9026f53")]
+        public string ContactLastName
+        {
+            get { return _ContactLastName; }
+            set { _ContactLastName = value; }
+        }
+
+        string _ContactFormerName;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactFormerName.
+        /// </summary>
+        [TestVariable("24a63ab3-1bd4-44ba-9e14-4c0b4af5ca92")]
+        public string ContactFormerName
+        {
+            get { return _ContactFormerName; }
+            set { _ContactFormerName = value; }
+        }
+
+        string _ContactDOB;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactDOB.
+        /// </summary>
+        [TestVariable("b92f5a72-cd39-4f9e-8f07-1675703d6478")]
+        public string ContactDOB
+        {
+            get { return _ContactDOB; }
+            set { _ContactDOB = value; }
+        }
+
+        string _ContactMarriageDate;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactMarriageDate.
+        /// </summary>
+        [TestVariable("4355a747-3853-43e3-a4cf-333eaa4a27cf")]
+        public string ContactMarriageDate
+        {
+            get { return _ContactMarriageDate; }
+            set { _ContactMarriageDate = value; }
+        }
+
+        string _ContactDivorceDate;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactDivorceDate.
+        /// </summary>
+        [TestVariable("f2abb96c-d014-4cc7-bcf2-1a3c28e0c7c4")]
+        public string ContactDivorceDate
+        {
+            get { return _ContactDivorceDate; }
+            set { _ContactDivorceDate = value; }
+        }
+
+        string _ContactAddOne;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactAddOne.
+        /// </summary>
+        [TestVariable("0580b6e9-ff86-4d4e-9eab-092f57f28b73")]
+        public string ContactAddOne
+        {
+            get { return _ContactAddOne; }
+            set { _ContactAddOne = value; }
+        }
+
+        string _ContactAddTwo;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactAddTwo.
+        /// </summary>
+        [TestVariable("cb9152e7-68bf-4cf8-88da-b7d705bfb9ad")]
+        public string ContactAddTwo
+        {
+            get { return _ContactAddTwo; }
+            set { _ContactAddTwo = value; }
+        }
+
+        string _ContactCity;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactCity.
+        /// </summary>
+        [TestVariable("45a92607-be8a-41e7-b77e-14606a2f4190")]
+        public string ContactCity
+        {
+            get { return _ContactCity; }
+            set { _ContactCity = value; }
+        }
+
+        string _ContactZip;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactZip.
+        /// </summary>
+        [TestVariable("fb756a5f-2c19-4ec9-b925-7d20ab7012dc")]
+        public string ContactZip
+        {
+            get { return _ContactZip; }
+            set { _ContactZip = value; }
+        }
+
+        string _ContactHomePhone;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactHomePhone.
+        /// </summary>
+        [TestVariable("8576ea7c-9c1e-4603-824b-58d0688a03d7")]
+        public string ContactHomePhone
+        {
+            get { return _ContactHomePhone; }
+            set { _ContactHomePhone = value; }
+        }
+
+        string _ContactWorkPhone;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactWorkPhone.
+        /// </summary>
+        [TestVariable("46fbc034-932c-4a9f-ba53-519c9b0db91c")]
+        public string ContactWorkPhone
+        {
+            get { return _ContactWorkPhone; }
+            set { _ContactWorkPhone = value; }
+        }
+
+        string _ContactWorkExt;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactWorkExt.
+        /// </summary>
+        [TestVariable("7395d6e5-a922-4505-9b72-889e6283b761")]
+        public string ContactWorkExt
+        {
+            get { return _ContactWorkExt; }
+            set { _ContactWorkExt = value; }
+        }
+
+        string _ContactOtherPhone;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactOtherPhone.
+        /// </summary>
+        [TestVariable("faf91357-f387-481f-b6e0-57d5213b1d88")]
+        public string ContactOtherPhone
+        {
+            get { return _ContactOtherPhone; }
+            set { _ContactOtherPhone = value; }
+        }
+
+        string _ContactEmployer;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactEmployer.
+        /// </summary>
+        [TestVariable("bff7a970-fbfa-421a-aaa5-64e42a59443c")]
+        public string ContactEmployer
+        {
+            get { return _ContactEmployer; }
+            set { _ContactEmployer = value; }
+        }
+
+        string _ContactOccupation;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactOccupation.
+        /// </summary>
+        [TestVariable("174c4c8e-c3f8-469f-8736-cd4f99ae3a0b")]
+        public string ContactOccupation
+        {
+            get { return _ContactOccupation; }
+            set { _ContactOccupation = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable RepoURL.
         /// </summary>
@@ -61,6 +296,56 @@ namespace MyFrankCrum_EMP
         {
             get { return repo.RepoURL; }
             set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Relationship.
+        /// </summary>
+        [TestVariable("533e729f-6988-432e-908e-33a4b359e3e2")]
+        public string Relationship
+        {
+            get { return repo.Relationship; }
+            set { repo.Relationship = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactSuffix.
+        /// </summary>
+        [TestVariable("8966e0e5-ac64-467d-aa41-728bdc7dcfc7")]
+        public string ContactSuffix
+        {
+            get { return repo.ContactSuffix; }
+            set { repo.ContactSuffix = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactGender.
+        /// </summary>
+        [TestVariable("8763cbd0-d04c-4da6-9371-b5e9077e63e0")]
+        public string ContactGender
+        {
+            get { return repo.ContactGender; }
+            set { repo.ContactGender = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactAddInfo.
+        /// </summary>
+        [TestVariable("f8179723-4f23-4df3-9e1b-0d00c9dfd354")]
+        public string ContactAddInfo
+        {
+            get { return repo.ContactAddInfo; }
+            set { repo.ContactAddInfo = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactState.
+        /// </summary>
+        [TestVariable("54c74ddc-9932-484a-920a-e1ba74fa3f5b")]
+        public string ContactState
+        {
+            get { return repo.ContactState; }
+            set { repo.ContactState = value; }
         }
 
 #endregion
@@ -105,40 +390,40 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.InputTagSsn.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '234565434' with focus on 'ApplicationUnderTest.InputTagSsn'.", repo.ApplicationUnderTest.InputTagSsnInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.InputTagSsn.PressKeys("234565434");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactSSN' with focus on 'ApplicationUnderTest.InputTagSsn'.", repo.ApplicationUnderTest.InputTagSsnInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.InputTagSsn.PressKeys(ContactSSN);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FirstName1' at Center.", repo.ApplicationUnderTest.FirstName1Info, new RecordItemIndex(5));
             repo.ApplicationUnderTest.FirstName1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Sadanand' with focus on 'ApplicationUnderTest.FirstName1'.", repo.ApplicationUnderTest.FirstName1Info, new RecordItemIndex(6));
-            repo.ApplicationUnderTest.FirstName1.PressKeys("Sadanand");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactFirstName' with focus on 'ApplicationUnderTest.FirstName1'.", repo.ApplicationUnderTest.FirstName1Info, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.FirstName1.PressKeys(ContactFirstName);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.MiddleName2' at Center.", repo.ApplicationUnderTest.MiddleName2Info, new RecordItemIndex(7));
             repo.ApplicationUnderTest.MiddleName2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'L' with focus on 'ApplicationUnderTest.MiddleName2'.", repo.ApplicationUnderTest.MiddleName2Info, new RecordItemIndex(8));
-            repo.ApplicationUnderTest.MiddleName2.PressKeys("L");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactMiddleName' with focus on 'ApplicationUnderTest.MiddleName2'.", repo.ApplicationUnderTest.MiddleName2Info, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.MiddleName2.PressKeys(ContactMiddleName);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LastName2' at Center.", repo.ApplicationUnderTest.LastName2Info, new RecordItemIndex(9));
             repo.ApplicationUnderTest.LastName2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'GUpta' with focus on 'ApplicationUnderTest.LastName2'.", repo.ApplicationUnderTest.LastName2Info, new RecordItemIndex(10));
-            repo.ApplicationUnderTest.LastName2.PressKeys("GUpta");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactLastName' with focus on 'ApplicationUnderTest.LastName2'.", repo.ApplicationUnderTest.LastName2Info, new RecordItemIndex(10));
+            repo.ApplicationUnderTest.LastName2.PressKeys(ContactLastName);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FormerName' at Center.", repo.ApplicationUnderTest.FormerNameInfo, new RecordItemIndex(11));
             repo.ApplicationUnderTest.FormerName.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Saddu' with focus on 'ApplicationUnderTest.FormerName'.", repo.ApplicationUnderTest.FormerNameInfo, new RecordItemIndex(12));
-            repo.ApplicationUnderTest.FormerName.PressKeys("Saddu");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactFormerName' with focus on 'ApplicationUnderTest.FormerName'.", repo.ApplicationUnderTest.FormerNameInfo, new RecordItemIndex(12));
+            repo.ApplicationUnderTest.FormerName.PressKeys(ContactFormerName);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect1' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect1Info, new RecordItemIndex(13));
@@ -161,24 +446,24 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.BirthDate1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '07101994' with focus on 'ApplicationUnderTest.BirthDate1'.", repo.ApplicationUnderTest.BirthDate1Info, new RecordItemIndex(18));
-            repo.ApplicationUnderTest.BirthDate1.PressKeys("07101994");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactDOB' with focus on 'ApplicationUnderTest.BirthDate1'.", repo.ApplicationUnderTest.BirthDate1Info, new RecordItemIndex(18));
+            repo.ApplicationUnderTest.BirthDate1.PressKeys(ContactDOB);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.MarriageDate' at Center.", repo.ApplicationUnderTest.MarriageDateInfo, new RecordItemIndex(19));
             repo.ApplicationUnderTest.MarriageDate.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0711/2019' with focus on 'ApplicationUnderTest.MarriageDate'.", repo.ApplicationUnderTest.MarriageDateInfo, new RecordItemIndex(20));
-            repo.ApplicationUnderTest.MarriageDate.PressKeys("0711/2019");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactMarriageDate' with focus on 'ApplicationUnderTest.MarriageDate'.", repo.ApplicationUnderTest.MarriageDateInfo, new RecordItemIndex(20));
+            repo.ApplicationUnderTest.MarriageDate.PressKeys(ContactMarriageDate);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DivorceDate' at Center.", repo.ApplicationUnderTest.DivorceDateInfo, new RecordItemIndex(21));
             repo.ApplicationUnderTest.DivorceDate.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '07112019' with focus on 'ApplicationUnderTest.DivorceDate'.", repo.ApplicationUnderTest.DivorceDateInfo, new RecordItemIndex(22));
-            repo.ApplicationUnderTest.DivorceDate.PressKeys("07112019");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactDivorceDate' with focus on 'ApplicationUnderTest.DivorceDate'.", repo.ApplicationUnderTest.DivorceDateInfo, new RecordItemIndex(22));
+            repo.ApplicationUnderTest.DivorceDate.PressKeys(ContactDivorceDate);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactAddinfo' at Center.", repo.ApplicationUnderTest.ContactAddinfoInfo, new RecordItemIndex(23));
@@ -193,24 +478,24 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.ContactAddone.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Address one' with focus on 'ApplicationUnderTest.ContactAddone'.", repo.ApplicationUnderTest.ContactAddoneInfo, new RecordItemIndex(26));
-            repo.ApplicationUnderTest.ContactAddone.PressKeys("Address one");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactAddOne' with focus on 'ApplicationUnderTest.ContactAddone'.", repo.ApplicationUnderTest.ContactAddoneInfo, new RecordItemIndex(26));
+            repo.ApplicationUnderTest.ContactAddone.PressKeys(ContactAddOne);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactAddtwo' at Center.", repo.ApplicationUnderTest.ContactAddtwoInfo, new RecordItemIndex(27));
             repo.ApplicationUnderTest.ContactAddtwo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Address two' with focus on 'ApplicationUnderTest.ContactAddtwo'.", repo.ApplicationUnderTest.ContactAddtwoInfo, new RecordItemIndex(28));
-            repo.ApplicationUnderTest.ContactAddtwo.PressKeys("Address two");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactAddTwo' with focus on 'ApplicationUnderTest.ContactAddtwo'.", repo.ApplicationUnderTest.ContactAddtwoInfo, new RecordItemIndex(28));
+            repo.ApplicationUnderTest.ContactAddtwo.PressKeys(ContactAddTwo);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CITY3' at Center.", repo.ApplicationUnderTest.CITY3Info, new RecordItemIndex(29));
             repo.ApplicationUnderTest.CITY3.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Florida' with focus on 'ApplicationUnderTest.CITY3'.", repo.ApplicationUnderTest.CITY3Info, new RecordItemIndex(30));
-            repo.ApplicationUnderTest.CITY3.PressKeys("Florida");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactCity' with focus on 'ApplicationUnderTest.CITY3'.", repo.ApplicationUnderTest.CITY3Info, new RecordItemIndex(30));
+            repo.ApplicationUnderTest.CITY3.PressKeys(ContactCity);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect2' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect2Info, new RecordItemIndex(31));
@@ -225,56 +510,56 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.InputTagZIP.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2345677654' with focus on 'ApplicationUnderTest.InputTagZIP'.", repo.ApplicationUnderTest.InputTagZIPInfo, new RecordItemIndex(34));
-            repo.ApplicationUnderTest.InputTagZIP.PressKeys("2345677654");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactZip' with focus on 'ApplicationUnderTest.InputTagZIP'.", repo.ApplicationUnderTest.InputTagZIPInfo, new RecordItemIndex(34));
+            repo.ApplicationUnderTest.InputTagZIP.PressKeys(ContactZip);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.HomePhone1' at Center.", repo.ApplicationUnderTest.HomePhone1Info, new RecordItemIndex(35));
             repo.ApplicationUnderTest.HomePhone1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5678765676' with focus on 'ApplicationUnderTest.HomePhone1'.", repo.ApplicationUnderTest.HomePhone1Info, new RecordItemIndex(36));
-            repo.ApplicationUnderTest.HomePhone1.PressKeys("5678765676");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactHomePhone' with focus on 'ApplicationUnderTest.HomePhone1'.", repo.ApplicationUnderTest.HomePhone1Info, new RecordItemIndex(36));
+            repo.ApplicationUnderTest.HomePhone1.PressKeys(ContactHomePhone);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactWorkPhone' at Center.", repo.ApplicationUnderTest.ContactWorkPhoneInfo, new RecordItemIndex(37));
             repo.ApplicationUnderTest.ContactWorkPhone.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5674567892' with focus on 'ApplicationUnderTest.ContactWorkPhone'.", repo.ApplicationUnderTest.ContactWorkPhoneInfo, new RecordItemIndex(38));
-            repo.ApplicationUnderTest.ContactWorkPhone.PressKeys("5674567892");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactWorkPhone' with focus on 'ApplicationUnderTest.ContactWorkPhone'.", repo.ApplicationUnderTest.ContactWorkPhoneInfo, new RecordItemIndex(38));
+            repo.ApplicationUnderTest.ContactWorkPhone.PressKeys(ContactWorkPhone);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.WorkExt' at Center.", repo.ApplicationUnderTest.WorkExtInfo, new RecordItemIndex(39));
             repo.ApplicationUnderTest.WorkExt.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '34' with focus on 'ApplicationUnderTest.WorkExt'.", repo.ApplicationUnderTest.WorkExtInfo, new RecordItemIndex(40));
-            repo.ApplicationUnderTest.WorkExt.PressKeys("34");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactWorkExt' with focus on 'ApplicationUnderTest.WorkExt'.", repo.ApplicationUnderTest.WorkExtInfo, new RecordItemIndex(40));
+            repo.ApplicationUnderTest.WorkExt.PressKeys(ContactWorkExt);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactOtherPhone' at Center.", repo.ApplicationUnderTest.ContactOtherPhoneInfo, new RecordItemIndex(41));
             repo.ApplicationUnderTest.ContactOtherPhone.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '6498765434' with focus on 'ApplicationUnderTest.ContactOtherPhone'.", repo.ApplicationUnderTest.ContactOtherPhoneInfo, new RecordItemIndex(42));
-            repo.ApplicationUnderTest.ContactOtherPhone.PressKeys("6498765434");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactOtherPhone' with focus on 'ApplicationUnderTest.ContactOtherPhone'.", repo.ApplicationUnderTest.ContactOtherPhoneInfo, new RecordItemIndex(42));
+            repo.ApplicationUnderTest.ContactOtherPhone.PressKeys(ContactOtherPhone);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Employer' at Center.", repo.ApplicationUnderTest.EmployerInfo, new RecordItemIndex(43));
             repo.ApplicationUnderTest.Employer.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Sadanand' with focus on 'ApplicationUnderTest.Employer'.", repo.ApplicationUnderTest.EmployerInfo, new RecordItemIndex(44));
-            repo.ApplicationUnderTest.Employer.PressKeys("Sadanand");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactEmployer' with focus on 'ApplicationUnderTest.Employer'.", repo.ApplicationUnderTest.EmployerInfo, new RecordItemIndex(44));
+            repo.ApplicationUnderTest.Employer.PressKeys(ContactEmployer);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Occupation' at Center.", repo.ApplicationUnderTest.OccupationInfo, new RecordItemIndex(45));
             repo.ApplicationUnderTest.Occupation.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Sales' with focus on 'ApplicationUnderTest.Occupation'.", repo.ApplicationUnderTest.OccupationInfo, new RecordItemIndex(46));
-            repo.ApplicationUnderTest.Occupation.PressKeys("Sales");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactOccupation' with focus on 'ApplicationUnderTest.Occupation'.", repo.ApplicationUnderTest.OccupationInfo, new RecordItemIndex(46));
+            repo.ApplicationUnderTest.Occupation.PressKeys(ContactOccupation);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'ApplicationUnderTest.AddContactBtn'.", repo.ApplicationUnderTest.AddContactBtnInfo, new RecordItemIndex(47));
@@ -292,6 +577,15 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddContact2' at Center.", repo.ApplicationUnderTest.AddContact2Info, new RecordItemIndex(50));
             repo.ApplicationUnderTest.AddContact2.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(51));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -713 units.", new RecordItemIndex(52));
+            Mouse.ScrollWheel(-713);
+            Delay.Milliseconds(300);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(53));
             
         }
 

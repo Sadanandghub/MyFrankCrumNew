@@ -23,6 +23,101 @@ mode="Global">
 	namespace="MyFrankCrum_EMP">
 	</codegen>
 	<variables>
+		<var
+		id="533e729f-6988-432e-908e-33a4b359e3e2"
+		name="Relationship">
+			Brother
+		</var>
+		<var
+		id="c4d114ab-55d7-48a7-89fb-4d1f7952ad9d"
+		name="ContactSSN">
+			234565434
+		</var>
+		<var
+		id="61ad55c3-771d-452f-ab42-d2fbff734b36"
+		name="ContactFirstName">
+			Sadanand
+		</var>
+		<var
+		id="540376a4-8af0-447b-a0c8-0e43950b7047"
+		name="ContactMiddleName">
+			L
+		</var>
+		<var
+		id="b1fa9640-929d-41ed-af03-0701a9026f53"
+		name="ContactLastName">
+			Gupta
+		</var>
+		<var
+		id="24a63ab3-1bd4-44ba-9e14-4c0b4af5ca92"
+		name="ContactFormerName">
+			Saddu
+		</var>
+		<var
+		id="b92f5a72-cd39-4f9e-8f07-1675703d6478"
+		name="ContactDOB">
+			07101994
+		</var>
+		<var
+		id="4355a747-3853-43e3-a4cf-333eaa4a27cf"
+		name="ContactMarriageDate">
+			0711/2019
+		</var>
+		<var
+		id="f2abb96c-d014-4cc7-bcf2-1a3c28e0c7c4"
+		name="ContactDivorceDate">
+			07112019
+		</var>
+		<var
+		id="0580b6e9-ff86-4d4e-9eab-092f57f28b73"
+		name="ContactAddOne">
+			Address one
+		</var>
+		<var
+		id="cb9152e7-68bf-4cf8-88da-b7d705bfb9ad"
+		name="ContactAddTwo">
+			Address two
+		</var>
+		<var
+		id="45a92607-be8a-41e7-b77e-14606a2f4190"
+		name="ContactCity">
+			Florida
+		</var>
+		<var
+		id="fb756a5f-2c19-4ec9-b925-7d20ab7012dc"
+		name="ContactZip">
+			2345677654
+		</var>
+		<var
+		id="8576ea7c-9c1e-4603-824b-58d0688a03d7"
+		name="ContactHomePhone">
+			5678765676
+		</var>
+		<var
+		id="46fbc034-932c-4a9f-ba53-519c9b0db91c"
+		name="ContactWorkPhone">
+			5674567892
+		</var>
+		<var
+		id="7395d6e5-a922-4505-9b72-889e6283b761"
+		name="ContactWorkExt">
+			34
+		</var>
+		<var
+		id="faf91357-f387-481f-b6e0-57d5213b1d88"
+		name="ContactOtherPhone">
+			6498765434
+		</var>
+		<var
+		id="bff7a970-fbfa-421a-aaa5-64e42a59443c"
+		name="ContactEmployer">
+			Sadanand
+		</var>
+		<var
+		id="174c4c8e-c3f8-469f-8736-cd4f99ae3a0b"
+		name="ContactOccupation">
+			Sales
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -795,6 +890,10 @@ FABRRRQAUUUUAFFFFABRRRQAUUUUAf/Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactSSN">
+				</binding>
 			</bindings>
 			<info
 			id="56645e61-6ba4-4b6c-a055-3a1e52dc21f6"
@@ -1373,6 +1472,10 @@ AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDO73P1/rUkXW1+hoooAbJ0uP98Urfdk/6
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactFirstName">
+				</binding>
 			</bindings>
 			<info
 			id="aeb4a75c-a9e0-43f6-9ba3-9ecb3081e93a"
@@ -2153,6 +2256,10 @@ T6KKzLJYlBUnvmnW7H7Un1oorGfU7o6U42LF+SYVz/eqhRRRh/gMMR8Y6P8A1n4GpaKK2MCxagct
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactMiddleName">
+				</binding>
 			</bindings>
 			<info
 			id="3eb10728-c488-4b21-ad33-1da5b29d814b"
@@ -2940,6 +3047,10 @@ mK6P/9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactLastName">
+				</binding>
 			</bindings>
 			<info
 			id="3538721a-27f1-4fa8-8821-591df44d6d4b"
@@ -3714,6 +3825,10 @@ RD/zyT/vkUUUUWC5/9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactFormerName">
+				</binding>
 			</bindings>
 			<info
 			id="f7642653-79d1-40de-aaed-7131546e7344"
@@ -4758,6 +4873,10 @@ iigAooooAKKKKAP/2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactDOB">
+				</binding>
 			</bindings>
 			<info
 			id="1ea13a34-339d-4612-a318-719347520dfa"
@@ -5520,6 +5639,10 @@ ik23uNJLYkj70+iikMKcJHH8RoooauUpNbCEk9STSUUUCHR/6z8DUtFFAgqWO5miOUfB6ZxRRSaT
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactMarriageDate">
+				</binding>
 			</bindings>
 			<info
 			id="e2da1a1b-9f35-49eb-8b5f-99aa3c2fbabb"
@@ -6265,6 +6388,10 @@ FFFMAooooAKKKKACiiigAooooAKKKKAJbf8A1h+lWaKKQBSUUUDCiiigAooooA//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactDivorceDate">
+				</binding>
 			</bindings>
 			<info
 			id="4ca7e75c-beca-409e-835d-be7a20f887d7"
@@ -6694,6 +6821,10 @@ gAooooAKKKKAJbf/AFh+lWaKKQBSUUUDCiiigAooooA//9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactAddOne">
+				</binding>
 			</bindings>
 			<info
 			id="27e63cad-f23d-4875-bc8b-f96e5b49a73b"
@@ -6737,6 +6868,10 @@ gAooooAKKKKAJbf/AFh+lWaKKQBSUUUDCiiigAooooA//9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactAddTwo">
+				</binding>
 			</bindings>
 			<info
 			id="dc21e6b0-cef1-46a0-8278-950bff78b5f4"
@@ -7045,6 +7180,10 @@ ooAKKKKACiiigAooooAKKKKAP//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactCity">
+				</binding>
 			</bindings>
 			<info
 			id="f827ea46-4662-4f44-b731-dbcc6e0d8016"
@@ -7836,6 +7975,10 @@ KKKACiiigAooooAKKKKAP//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactZip">
+				</binding>
 			</bindings>
 			<info
 			id="d930cf3c-bfbf-448f-b2f7-ce9bc61029cc"
@@ -8568,6 +8711,10 @@ AFSx3E8RBimkQgbQVYjAznH0zRRQATXE8+PPmkk29N7E4/OoqKKAClDMoIViAwwcHqKKKAEpyffX
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactHomePhone">
+				</binding>
 			</bindings>
 			<info
 			id="dec8dadd-de04-4483-b7a1-f4de6e0f2e40"
@@ -9033,6 +9180,10 @@ eTjjJCgFsdMkDJ/GmT3U06BZGXaDu2qgUZ9eB1qGigAooooA/9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactWorkPhone">
+				</binding>
 			</bindings>
 			<info
 			id="e3dd0201-9a78-45ca-b7b2-0691d859a434"
@@ -9283,6 +9434,10 @@ HXqNWbHzZ81t23Of4cY/TimUUVRiFFFFABRRRQAUUUUAf//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactWorkExt">
+				</binding>
 			</bindings>
 			<info
 			id="b9bc854f-f369-490e-938d-10d57cf35ec3"
@@ -9540,6 +9695,10 @@ PbufpUk8kbwEnytvlqEAxvDD9fX2qhRQAUUUUAf/2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactOtherPhone">
+				</binding>
 			</bindings>
 			<info
 			id="c05dac1c-dc68-4548-9c1b-70a6cf38f381"
@@ -9944,6 +10103,10 @@ DiFiMjoar0UUhBRRRQB//9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactEmployer">
+				</binding>
 			</bindings>
 			<info
 			id="dc73501f-4255-4087-81ea-9303f7d7cafd"
@@ -10734,6 +10897,10 @@ WxjgYooptmcYpNWXQiooopGoUUUUAFPj+5L/ALv9RRRQJjKKKKBn/9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ContactOccupation">
+				</binding>
 			</bindings>
 			<info
 			id="ae66114b-a55e-4372-8256-23a8a61d7e4f"
@@ -11356,6 +11523,110 @@ cYI4/rRVN+JrHH/PJv8A0GincTguh//Z
 				</path>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mousewheelitem
+		delta="-713"
+		duration="300ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Screenshot Taken"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d5359ffa-aae9-41c1-97ae-08427ed7af3a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1366,657"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="False">
+					<attribute
+					name="caption"
+					type="System.String">
+						MyFrankCrum
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						92.0.4515.131
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mfcdev05.frankcrum.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						8Q9UAA0000K0
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mfcdev05.frankcrum.com/EmployeeDetails/8Q9UAA0000K0
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/EmployeeDetails/8Q9UAA0000K0
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"

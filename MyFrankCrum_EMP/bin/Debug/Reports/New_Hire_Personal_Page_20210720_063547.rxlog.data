@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.56s"
+		durationms="7558"
+		type="root"
+		rid="5a2b9ca76791400"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/20/2021 6:35:50 AM"
+		timestampiso="2021-07-20T10:35:50"
+		endtime="7/20/2021 6:35:58 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="New_Hire_Personal_Page">
+		<detail>
+			New_Hire_Personal_Page
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.307"
+			timeRelativeToTestModuleStartTime="00:04.307"
+			timeWallClock="06:35:54"
+			time="00:04.307"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>EmployeeFirstName, EmployeeLastName, EmployeeAdd1, EmployeeMiddleName, EmployeeAdd2, ZipCode, WorkPhone, RepoURL, EmployeeSuffix, StateValue, EmployeeGender, MaritalStatusValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.335"
+			timeRelativeToTestModuleStartTime="00:04.335"
+			timeWallClock="06:35:54"
+			time="00:04.335"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.WorkExt' at 53;18.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'work ext.']"
+				itempath=".//input[#'work ext.']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.WorkExt"
+				id="b9bc854ff369490e938d10d57cf35ec3"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="225"
+				itemindex="27"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.183"
+			timeRelativeToTestModuleStartTime="00:07.183"
+			timeWallClock="06:35:57"
+			time="00:07.183"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '4545' with focus on 'ApplicationUnderTest.WorkExt'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'work ext.']"
+				itempath=".//input[#'work ext.']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.WorkExt"
+				id="b9bc854ff369490e938d10d57cf35ec3"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="229"
+				itemindex="28"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

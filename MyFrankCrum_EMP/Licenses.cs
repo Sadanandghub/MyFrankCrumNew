@@ -42,6 +42,7 @@ namespace MyFrankCrum_EMP
         public Licenses()
         {
             GetLicenseNumber = "";
+            LicensesCode = "AS16678678";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace MyFrankCrum_EMP
         {
             get { return _GetLicenseNumber; }
             set { _GetLicenseNumber = value; }
+        }
+
+        string _LicensesCode;
+
+        /// <summary>
+        /// Gets or sets the value of variable LicensesCode.
+        /// </summary>
+        [TestVariable("a86d7a10-960e-4a47-aece-284ccfd4a0ec")]
+        public string LicensesCode
+        {
+            get { return _LicensesCode; }
+            set { _LicensesCode = value; }
         }
 
         /// <summary>
@@ -133,8 +146,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.LicensesCode.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'AS123456' with focus on 'ApplicationUnderTest.LicensesCode'.", repo.ApplicationUnderTest.LicensesCodeInfo, new RecordItemIndex(6));
-            repo.ApplicationUnderTest.LicensesCode.PressKeys("AS123456");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$LicensesCode' with focus on 'ApplicationUnderTest.LicensesCode'.", repo.ApplicationUnderTest.LicensesCodeInfo, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.LicensesCode.PressKeys(LicensesCode);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LicensesButtonTagAdd' at Center.", repo.ApplicationUnderTest.LicensesButtonTagAddInfo, new RecordItemIndex(7));

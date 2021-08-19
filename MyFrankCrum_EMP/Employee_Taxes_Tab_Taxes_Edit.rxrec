@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="20b8bc1f-3122-461f-a2ce-34f411e0dcb0"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Employee_Taxes_Tab_Taxes_Edit"
+	namespace="MyFrankCrum_EMP">
+	</codegen>
+	<variables>
+		<var
+		id="4859952f-a0ea-49c0-9d07-d8e71516bcc7"
+		name="ChildrenAmount">
+		</var>
+		<var
+		id="d3d19091-ee70-4970-8536-8d99ddfea389"
+		name="OtherDependentsAmount">
+		</var>
+		<var
+		id="0ccc9021-dfd1-47e6-8429-5b41343ef285"
+		name="EditChildrenAmount">
+			3000
+		</var>
+		<var
+		id="99b1d238-2cea-4e43-ad8a-d44f0f4f5edd"
+		name="EditOtherDependents">
+			4000
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="834b6ba9-2a55-4a5b-b23f-e18f97a250a6"
+		sx="763"
+		sy="319"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4484973f-5ea0-494d-90cb-2d9efd1420a1"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, litag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="5"
+				prefcap="litag"
+				rect="741,296,44,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						react-tabs__tab
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						react-tabs-50
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Taxes
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						react-tabs__tab
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						li
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-controls"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-selected"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Taxes']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1e15e211-f123-42e6-aadb-b7d242ac94c1">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADqAOoDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigCnJ/rG+pqB4Elk3SKrgDADDOKnk/1jfWm0xlf7
+MVx5TqgVyygrkDI6dRTmjlJRvMQOuedhwc+2amopCITFNvDiRA23Byhwf1pwjPmb2IJKhSMcVJRQ
+MgigaLIR8gvnkdBjGP0p80bOUKMFZTnlcjpj1FSUUwIDblg299zOACQMDHoBS/Zo1cNEqxkZB2rj
+IqaikBA9tuhjQPhkAAbHUd6UxyiVnjkQBsZDIT/UVNRTEFFFFAy9RRRSEFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFACFVPVQfqKTYn91fyp1FADdif3V/KjYn91fyp1FADdif3V/KjYn91fyp1FA
+Ddif3V/KjYn91fyp1FADdif3V/KjYn91fyp1FADdif3V/KjYn91fyp1FADdif3V/KjYn91fyp1FA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRUc08cChpWIBOBgE5P4U1bqBojKr5RTg4ByD9OtAE1FFFABRRmo57iOAKZW
+I3HAwpOfyoAkopkM0c6b4mDL0p9ABRRRQAVla1GJbmyjbIDuVOPcrWmsiMWAP3Tg8Y5rO1X/AI/t
+P/66f1Wpnsb4fSovn+Qf2Fa/89JvzH+FH9hWv/PSb8x/hWi7hF3EMR/sqSfyFNhmSYZj3Y9ShX+Y
+o5I9g+sVf5ih/YVr/wA9JvzH+FH9hWv/AD0m/Mf4Vp0UckewfWKv8xmf2Fa/89JvzH+FVrixisr6
+y8pnO+QZ3EdiP8a3KzNV/wCP7T/+un9VqZRSRrRrVJTs33/I06KikuIo32OWBGCTtJAz6nGBUtaH
+GFFFN8xNrtnhPvcdO9ADqKQMpOAQSOopaACiiigAoopskixJufOM44BJ/IUAOoqE3cITeS+3kHEb
+cfXjj8aPtUf92b/vy/8AhQBFqIbZAyo77JlYhVycc1XdZ2W6uI45IzIUCjGGODycVp0UAUfLuC10
+6vJuUkRKT8vQfnUCC6FtIVecnC5UoQRzzgknnHpWrRQBmTx7kt3UXZRZDuzu3dOvrU98WWS2kEbu
+EfJCKSRxVyigDLdLnyp5okePzZAduPm245OB3pGaVI4A0s7BpTnClWxjpycmtWmvGjsjMMlDleel
+AGaPtPkQ+Z9o8vc27bnfj+HOOaa32vy4S3nswH3BkZ54yR3x61rUUAZl1HNJFPkSkCdSAM/d46U3
+UMfadNxuxv8A4uvVeua1azNV/wCP7T/+un9VqZfCb4f+Ivn+TNOqb71s4kw65+8QGJX8FwauUVRg
+UR9o8mML5m8Ah85Hy57Z/i9KCJTdD95Iq5XYPLcgrx1OcevUZpNTlnT/AFExi2wSSHCg5K7cdR7m
+rUV1bzsVhnikYDOEcE4oAittwuHB8xhydzbwBz0wePxFVtV/4/tP/wCun9VrTrM1X/j+0/8A66f1
+Wplsb4f+J9/5FmSGSWeVQwWN0UN8uSeucHNMfzTeDbvUBgMANgr65zt/SrtFUYFa3LmUoxOIRtJz
+94+v5Y/OmSQyMlyRJKuScKAMH5R6jNWo41jXagOOvJyT+Jp1AFSYPhwWkUfLjarHPHI+XmmgNuRw
+squYyFBZiAff/wCvV2igCh8+1/J+0f6o7t+773bGfx6cVLKrxEKjOfN+TJYnB9fyz+VWqaY1MgkI
+JYDA5OB+FADhwMVDdK7RqI/vb1OcZxzU1FAFaSFltZ8nfI/JwuO2OB+FWaKKAM77Xe/8+/8A441H
+2u9/59//ABxq0aK0512I5X3M77Xe/wDPv/441H2u9/59/wDxxq0aKOddg5X3M77Xe/8APv8A+ONR
+9rvf+ff/AMcatGijnXYOV9zO+13v/Pv/AOONR9rvf+ff/wAcatGijnXYOV9zO+13v/Pv/wCONR9r
+vf8An3/8catGijnXYOV9zO+13v8Az7/+ONVS6mnlvbPzotmJPl+UjPIrcqte2MV7s81nGzONpHf/
+APVUTd42SNqDUJpyen/AJd7/AN39KbJMYo2kcYVAWY4PAFUv7Ctf+ek35j/Cg6FakEF5sH/aH+FR
+eXY05aX834f8ESWUX87QxHDm2lXDKVIzsxkHnFPn0qKeYmSKMo02844O3ZjH580+1fyLn7Lccuo/
+cysBmRPTPqO/51ZuriO1t3mlYBVH5n0qjAhsZJWsLdmyxMSkk5JPFVNTZje2OR0k4491pLfQofs8
+XmtKsmwbgGHBxz2qaLRreKVJFeUlGDDJHb8Kh3eljppunB83N+Bd3v8A3f0o3v8A3f0qSirOYj3v
+/d/Sje/939KkooAj3v8A3f0o3v8A3f0qSigCPe/939KN7/3f0qSigCPe/wDd/Sje/wDd/SpKKAI9
+7/3f0o3v/d/SpKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCK4t4rqPy503LkEc4IPqCOl
+Rpp9qkok8su6/dMjs+PpknBqzRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAc2ERJmGpCdJ
+CeJAa6GDb5CbGLrtGGJzms2Wy1GePyZriJoyeTt5/lWjbxCCBIlOQgxn1oAkooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/
+2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mousewheelitem
+		delta="-800"
+		duration="300ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Before Edit Taxes"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="0be82c4e-d324-46bc-aba7-f9c41494361a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+			</info>
+		</loggingrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Taxes
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc=".98;.611"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="94829ac3-e4ad-422c-afa6-e1171a972753"
+		sx="1137"
+		sy="358"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0a4c4388-773c-4d8e-ac6d-bcc58c872c93"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[7]/div/div[3]//button[@innertext='Edit']
+				</path>
+			</info>
+		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Change the dollar amounts in the fields but DON'T press Save Changes
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8c70fccc-8ed7-4b08-9fe1-aa907f899468"
+		sx="588"
+		sy="326"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="307be464-d4e9-48bd-b8fd-08f6a19c3064"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div/div/div[2]//input[@type='text']
+				</path>
+			</info>
+		</mouseitem>
+		<getvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="dc92a4eb-2068-419c-b174-d89d711a81fc"
+		varname="ChildrenAmount">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="307be464-d4e9-48bd-b8fd-08f6a19c3064"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[3]/div[1]/div[2]/input[@name='additionalW4Fields[childrenAmount]']
+				</path>
+			</info>
+		</getvaluerecorditem>
+		<setvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="bdf16675-460d-48d2-a542-be6c2e6bfa20">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="EditChildrenAmount">
+				</binding>
+			</bindings>
+			<info
+			id="307be464-d4e9-48bd-b8fd-08f6a19c3064"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[3]/div[1]/div[2]/input[@name='additionalW4Fields[childrenAmount]']
+				</path>
+			</info>
+			<AttributeValue>
+				3000
+			</AttributeValue>
+		</setvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="52467f8f-91a3-4f2e-b3d1-ed26cd1c1a61"
+		sx="554"
+		sy="403"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="48f644d4-e8ce-4f0e-afee-3816b278c38d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div/div/div[2]//input[@type='text']
+				</path>
+			</info>
+		</mouseitem>
+		<getvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="04a24d24-61da-44b3-b2b8-d2e2fc183ad9"
+		varname="OtherDependentsAmount">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="48f644d4-e8ce-4f0e-afee-3816b278c38d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[4]/div[1]/div[2]/input[@name='additionalW4Fields[otherDependentsAmount]']
+				</path>
+			</info>
+		</getvaluerecorditem>
+		<setvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4d162121-ce42-4ef4-a3e1-79977d2013b2">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="EditOtherDependents">
+				</binding>
+			</bindings>
+			<info
+			id="48f644d4-e8ce-4f0e-afee-3816b278c38d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[4]/div[1]/div[2]/input[@name='additionalW4Fields[otherDependentsAmount]']
+				</path>
+			</info>
+			<AttributeValue>
+				4000
+			</AttributeValue>
+		</setvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fa6c6f65-49e0-4f72-b7f2-b4f581806ddd"
+		sx="744"
+		sy="611"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ada6dc23-84c5-47bf-9441-e08122bf70d2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div[10]/div/button[@innertext='Undo Changes']
+				</path>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="92849b30-fb35-4337-bcd4-37f1db79fa45">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="OtherDependentsAmount">
+				</binding>
+			</bindings>
+			<info
+			id="48f644d4-e8ce-4f0e-afee-3816b278c38d"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="503,157,342,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						section-input
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						otherDependents  (3 - part 2)
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						section-input
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						6,000
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						additionalW4Fields[otherDependentsAmount]
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						6,000
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="prefix"
+					readonly="False"
+					type="System.String">
+						$
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						opacity: 1;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[4]/div[1]/div[2]/input[@name='additionalW4Fields[otherDependentsAmount]']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="742970c0-80e2-47e5-b2b8-c5e9a2fdbab3">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAGrAakDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDeooop
+iCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAkwlGEqNpI1UMzqFPQk8G
+nbhkDIyRkDNIY7CUYSozNEFDGRApOASwxT6AFwlGEpKKAFwlGEpKKAFwlGEpKKAFwlGEpKKAFwlG
+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
+aQ3UaxKFDISwHfGOas1HHBHESUByeOWJ49OakoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApr/d/Efzp1Nf7v4j+dADqK
+KKACiiigAooooAKKKKACiiigApoIXIY45zmnUUAN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUU
+AN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUU
+AN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUU
+AN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUU
+AN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUU
+AN3p/eX86N6f3l/OnUUAN3p/eX86N6f3l/OnUUAN3p/eX86CQ2ApzznNOooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAqNplWYRnOT37VJVR4JXLyZw27IXjnHTmgCVrlVZgVfC9SBwKV7hVbaFduN2VGeKiKTbpQI+JM
+clhxxR5csUuUTeNgXOQKAJftCEjaGbK7hgU0XSlWby5AF6kimwwPHJHnkKpBPvmgxP8AZ5l28sxI
+GetAEj3CqwUK7HGcKM4pDdRgIecP0Pp9abslilLom8MoBGcYIpi2zYjVwCMNux2zQBY81cuOfk60
+wXKGEy4bAOCO9QiGfy5EI5YgbsjoO9DwShZFHzhsHPA5oAudqhS5RyvyuobgEjg09GdlO9Nh9M5q
+vHFKUjjZNoRtxORzQBMs4YthHwucnAxxSR3KuVG1l3fdLDrUUcUis4KNglsHfx+VLHHKwiV02CPn
+Oc5oAl+0J5XmYbG7bQZ1EhQK7EdSo4FQ+TLs8nYNu/dvz2z6VIqyxSviPertnOcYoAUXIMmzy5M/
+Sj7SmxWAY7uigc0uxvtTPj5SmM+9QpDLGsTBcsmQVz60ASm6QRlyG4OCuORTvPTI64K7s+1QGGRt
+zlQCzg7c9AKFheOZsLujCnaM+vagCxFL5oyEdR6sOtAlUhz0CnBNR2yOjNlSidlLZxTERni2KQCr
+ncCOtAEn2pSqEI535wAOeKck6Psxn584z/KqogmCR5QnbnIVsHn3p6IyiCNsbgxbA7CgC3RRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSZ
+JPy447mlpqfdP1P86ADD/wB5fy/+vRh/7y/l/wDXp1FADcP/AHl/L/69GH/vL+X/ANenUUANw/8A
+eX8v/r0Yf+8v5f8A16dRQA3D/wB5fy/+vRh/7y/l/wDXp1FADcP/AHl/L/69GH/vL+X/ANenUUAN
+w/8AeX8v/r0Yf+8v5f8A16dRQA3D/wB5fy/+vRh/7y/l/wDXp1FADcP/AHl/L/69GH/vL+X/ANen
+UUANw/8AeX8v/r0Yf+8v5f8A16dRQA3D/wB5fy/+vRh/7y/l/wDXp1FADcP/AHl/L/69GH/vL+X/
+ANenUUANw/8AeX8v/r0Yf+8v5f8A16dRQA3D/wB5fy/+vRh/7y/l/wDXp1FADcP/AHl/L/69GH/v
+L+X/ANenUUANw/8AeX8v/r0Yf+8v5f8A16dRQA3D/wB5fy/+vRh/7y/l/wDXp1FADcP/AHl/L/69
+GH/vL+X/ANenUUANw/8AeX8v/r0Yf+8v5f8A16dRQA3D/wB5fy/+vRh/7y/l/wDXp1FADcP/AHl/
+L/69GH/vL+X/ANenUUANw/8AeX8v/r0uSD82Oe4paa/3fxH86AHUUUUAFFFFABRRRQAUUUUAFFFF
+ABTU+7+J/nTqan3fxP8AOgCOR5DKIoigIXcSwzT4JPNiV8YJ6j0NMkSQS+bEFJ27SGOKfBH5USoT
+kjqfU0APooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKa/3fxH86dTX+7+I/nQA6iiigAooooAKKKKACiiigAo
+oooAKanQ/U/zp1IVycgkH2oAWim7T/fb9KNp/vt+lADqKbtP99v0o2n++36UAOopu0/32/Sjaf77
+fpQA6im7T/fb9KNp/vt+lADqKbtP99v0o2n++36UAOopu0/32/Sjaf77fpQA6im7T/fb9KNp/vt+
+lADqKbtP99v0o2n++36UAOopu0/32/Sjaf77fpQA6im7T/fb9KNp/vt+lADqKbtP99v0o2n++36U
+AOopu0/32/Sjaf77fpQA6im7T/fb9KNp/vt+lADqKbtP99v0o2n++36UAOopu0/32/Sjaf77fpQA
+6im7T/fb9KNp/vt+lADqKbtP99v0o2n++36UAOopu0/32/Sjaf77fpQA6im7T/fb9KNp/vt+lADq
+KbtP99v0o2n++36UAOpr9B9R/Ojaf77fpShcHJJJ96AFooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiqMsh+0GUKxE
+ZAyBxjvQBeoqjIIy9wzEBhgqc89KUhHm/f4H7oHk45oAu0VShBkeISc5jPXuM00RotvOwXBDED6U
+AX6KpkI85E5G0INoJxUYDyLDgncNxUn26UAaFFUVmyk7gfM2AB74pudtvLFhlwQQG64oA0KKb8si
+EAggjBwaoq7DY56Q4U/rQBoUVShQGSMOM7kJP4mmiNFt52C4IYgfSgC/RVPc5ni3pt+Q45znimKz
++RACmF3jDZ68+lAF+iqB2GKV3bEwY455HpU0LAXL7yASq9fpQBZoqg4QCds4kD/KQeaWTJE+7qdm
+aAL1FUkLLOkZ5aMMB7jHFJCyBomKhnY8sW5B+lAF6ioJGxc5IJCJkCqwkb9+wJ3lQeh4oA0KKqmO
+EW7mIjO3OQeasocopPUigBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAppCKCu0YPUAdadTU6E+5oAbtiznyxn12UMI2OWjyfUpUlFADcpuztOR
+xnaaT5MEbOD1GzrT6KAGMI2xuTOOmUoymQdpyOnynin0UAR4jznZznP3O9KwjY/Mme3KU+igBi7E
+GETb9EIoxHgjZwevydafRQAzKZB2nIGAdpo+TBGzg9Rs60+igBmUyDtOR0+U0fu8AbOB0GzpT6KA
+GERltxTLeuzmkZYmbLRgn1KVJRQBHiLdu8v5vXZzSnyznKZz1+TrT6KAGZTdu2ncO+05pMR7t3l/
+N67OakooAjIUyB/mBAx90807KZJ2nJ6naeadRQBE0cRUqFKg9dq4z+lP3j0b/vk06igBu8ejf98m
+jePRv++TTqKAG7x6N/3yaN49G/75NOooAbvHo3/fJo3j0b/vk06igBu8ejf98mjePRv++TTqKAG7
+x6N/3yaN49G/75NOooAbvHo3/fJo3j0b/vk06igBu8ejf98mjePRv++TTqKAG7x6N/3yaN49G/75
+NOooAbvHo3/fJpQwPSlpr9AfcUAOooooAKKKKACiiigAooooAKKKKACmp938T/OnU1Pu/if50AJJ
+MkWN5OT0AUk/pTlYMoZSCDyCKiH/AB/N7Rj+Zos/+PcD0Zh+poAmooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKa/3fxH86dTX+7+I/nQA6iiigAooooAKKKKAP/Z
+			</helperscreenshot>
+			<matchname>
+				Value
+			</matchname>
+			<matchvalue>
+				6,000
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="79bfed12-52ef-480c-bfe8-cb409baf7148">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ChildrenAmount">
+				</binding>
+			</bindings>
+			<info
+			id="307be464-d4e9-48bd-b8fd-08f6a19c3064"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="503,230,342,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						section-input
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						childrenUnder 17  (3 - part 1)
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						section-input
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						2,000
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						additionalW4Fields[childrenAmount]
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						2,000
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="prefix"
+					readonly="False"
+					type="System.String">
+						$
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						opacity: 1;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[3]/div[1]/div[2]/input[@name='additionalW4Fields[childrenAmount]']
+				</path>
+			</info>
+			<matchname>
+				Value
+			</matchname>
+			<matchvalue>
+				2,000
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Change the dollar amounts of the fields and press Save Changes
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8c70fccc-8ed7-4b08-9fe1-aa907f899468"
+		sx="588"
+		sy="326"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="307be464-d4e9-48bd-b8fd-08f6a19c3064"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div/div/div[2]//input[@type='text']
+				</path>
+			</info>
+		</mouseitem>
+		<setvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="bdf16675-460d-48d2-a542-be6c2e6bfa20">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="EditChildrenAmount">
+				</binding>
+			</bindings>
+			<info
+			id="307be464-d4e9-48bd-b8fd-08f6a19c3064"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[3]/div[1]/div[2]/input[@name='additionalW4Fields[childrenAmount]']
+				</path>
+			</info>
+			<AttributeValue>
+				6000
+			</AttributeValue>
+		</setvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="52467f8f-91a3-4f2e-b3d1-ed26cd1c1a61"
+		sx="554"
+		sy="403"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="48f644d4-e8ce-4f0e-afee-3816b278c38d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div/div/div[2]//input[@type='text']
+				</path>
+			</info>
+		</mouseitem>
+		<setvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4d162121-ce42-4ef4-a3e1-79977d2013b2">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="EditOtherDependents">
+				</binding>
+			</bindings>
+			<info
+			id="48f644d4-e8ce-4f0e-afee-3816b278c38d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[4]/div[1]/div[2]/input[@name='additionalW4Fields[otherDependentsAmount]']
+				</path>
+			</info>
+			<AttributeValue>
+				6000
+			</AttributeValue>
+		</setvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8fca14ec-989b-42cf-ac83-de1ae6359637"
+		sx="594"
+		sy="614"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a12ece53-cd90-4d21-a78e-ad18ac841d79"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div[10]/div/button[@innertext='Save Changes']
+				</path>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mousewheelitem
+		delta="-800"
+		duration="300ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="After Edit Taxes"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="0be82c4e-d324-46bc-aba7-f9c41494361a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"
+	name="MyFrankCrum_EMPRepository"
+	relativepath="MyFrankCrum_EMPRepository.rxrep">
+		<codegen
+		classname="MyFrankCrum_EMPRepository"
+		namespace="MyFrankCrum_EMP">
+		</codegen>
+		<rootfolder
+		id="57aa7af5-e1bb-4d86-b1a0-d72cef37e59c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Employee_Taxes_Tab_Taxes_Edit.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

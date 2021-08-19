@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="35.31s"
+		durationms="35311"
+		type="root"
+		rid="6577bab4471f965"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/5/2021 9:01:45 AM"
+		timestampiso="2021-05-05T13:01:45"
+		endtime="5/5/2021 9:02:20 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Logout">
+		<detail>
+			Logout
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.073"
+			timeRelativeToTestModuleStartTime="00:05.073"
+			timeWallClock="09:01:50"
+			time="00:05.073"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.107"
+			timeRelativeToTestModuleStartTime="00:05.107"
+			timeWallClock="09:01:50"
+			time="00:05.107"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ChangeCompany' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[1]/div/div[3]//button[@innertext='Change Company']"
+				itempath=".//div[#'app']/div[2]/div[1]/div/div[3]//button[@innertext='Change Company']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ChangeCompany"
+				id="79999ea687024994a99f069ba20c0895"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Logout.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.647"
+			timeRelativeToTestModuleStartTime="00:08.647"
+			timeWallClock="09:01:54"
+			time="00:08.647"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Logout' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[3]/div[4]/?/?/button[@innertext='Logout']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[3]/div[4]/?/?/button[@innertext='Logout']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Logout"
+				id="6b9edcb540164092b2cec1eacd6ea894"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Logout.cs"
+				codeline="96"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:35.308"
+			timeRelativeToTestModuleStartTime="00:35.308"
+			timeWallClock="09:02:20"
+			time="00:35.308"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

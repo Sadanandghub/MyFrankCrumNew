@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="9.08s"
+		durationms="9083"
+		type="root"
+		rid="84a3a39ce1133b2"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/20/2021 6:49:01 AM"
+		timestampiso="2021-07-20T10:49:01"
+		endtime="7/20/2021 6:49:10 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="New_Hire_Personal_Page">
+		<detail>
+			New_Hire_Personal_Page
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.069"
+			timeRelativeToTestModuleStartTime="00:04.069"
+			timeWallClock="06:49:05"
+			time="00:04.069"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>EmployeeFirstName, EmployeeLastName, EmployeeAdd1, EmployeeMiddleName, EmployeeAdd2, ZipCode, WorkPhone, WorkExt, EmployeMobilePhone, HomePhone, RepoURL, EmployeeSuffix, StateValue, EmployeeGender, MaritalStatusValue, EthnicValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.100"
+			timeRelativeToTestModuleStartTime="00:04.100"
+			timeWallClock="06:49:05"
+			time="00:04.100"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ClickEthnicID' at 4;1.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'ethnic Id']/div//i"
+				itempath=".//div[#'ethnic Id']/div//i"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ClickEthnicID"
+				id="e197ea40c5f544f289a0294d5b0fb2ca"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="274"
+				itemindex="34"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.078"
+			timeRelativeToTestModuleStartTime="00:07.078"
+			timeWallClock="06:49:08"
+			time="00:07.078"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EthnicValue' at 49;18.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'ethnic Id']/div[2]/div/div[3]/div[@innertext='Hispanic or Latino']"
+				itempath=".//div[#'ethnic Id']/div[2]/div/div[3]/div[@innertext=$EthnicValue]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EthnicValue"
+				id="232f799733ea438eb796e2faf42b4e15"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="278"
+				itemindex="35"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.874"
+			timeRelativeToTestModuleStartTime="00:07.874"
+			timeWallClock="06:49:09"
+			time="00:07.874"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.HomePhone2' at 34;21.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'homePhone']"
+				itempath=".//input[#'homePhone']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.HomePhone2"
+				id="9bcf397b3d4942e08662ba5f98604f43"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="282"
+				itemindex="36"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.543"
+			timeRelativeToTestModuleStartTime="00:08.543"
+			timeWallClock="06:49:10"
+			time="00:08.543"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$HomePhone' with focus on 'ApplicationUnderTest.HomePhone2'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//input[#'homePhone']"
+				itempath=".//input[#'homePhone']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.HomePhone2"
+				id="9bcf397b3d4942e08662ba5f98604f43"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\New_Hire_Personal_Page.cs"
+				codeline="286"
+				itemindex="37"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

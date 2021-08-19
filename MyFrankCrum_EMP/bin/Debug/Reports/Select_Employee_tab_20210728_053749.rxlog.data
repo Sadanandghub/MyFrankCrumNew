@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="11.1s"
+		durationms="11096"
+		type="root"
+		rid="26cd649956f1cc48"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="7/28/2021 5:37:53 AM"
+		timestampiso="2021-07-28T09:37:53"
+		endtime="7/28/2021 5:38:04 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Select_Employee_tab">
+		<detail>
+			Select_Employee_tab
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.971"
+			timeRelativeToTestModuleStartTime="00:04.971"
+			timeWallClock="05:37:58"
+			time="00:04.971"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.000"
+			timeRelativeToTestModuleStartTime="00:05.000"
+			timeWallClock="05:37:58"
+			time="00:05.000"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Employee' at 42;12.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev05.frankcrum.com']//div[#'sidebar-content-container']//button[@innertext='Employee']"
+				itempath=".//div[#'sidebar-content-container']//button[@innertext='Employee']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Employee"
+				id="e8d93151a04a4b73b53259a80681860a"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Select_Employee_tab.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.086"
+			timeRelativeToTestModuleStartTime="00:08.086"
+			timeWallClock="05:38:01"
+			time="00:08.086"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 3s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Select_Employee_tab.cs"
+				codeline="96"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

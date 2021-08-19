@@ -131,8 +131,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.DateOfBirth.PressKeys(EmployeeDOB);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Next' at Center.", repo.ApplicationUnderTest.NextInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.Next.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Next' at 75;20.", repo.ApplicationUnderTest.NextInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.Next.Click("75;20");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));

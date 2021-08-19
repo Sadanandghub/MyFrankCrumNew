@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.62s"
+		durationms="7622"
+		type="root"
+		rid="154a185f20f41ae8"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/29/2021 5:52:26 AM"
+		timestampiso="2021-04-29T09:52:26"
+		endtime="4/29/2021 5:52:33 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="PersonalTabContacts">
+		<detail>
+			PersonalTabContacts
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.564"
+			timeRelativeToTestModuleStartTime="00:04.564"
+			timeWallClock="05:52:30"
+			time="00:04.564"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.596"
+			timeRelativeToTestModuleStartTime="00:04.596"
+			timeWallClock="05:52:30"
+			time="00:04.596"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.AddContactbtnTr'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Add Contact']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Add Contact']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.AddContactbtnTr"
+				id="12862d1ec7e94a32ba86d51ad21b1a5e"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PersonalTabContacts.cs"
+				codeline="92"
+				itemindex="49"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.866"
+			timeRelativeToTestModuleStartTime="00:06.866"
+			timeWallClock="05:52:32"
+			time="00:06.866"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Enabled' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.AddContactbtnTr' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Add Contact']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Add Contact']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.AddContactbtnTr"
+				id="12862d1ec7e94a32ba86d51ad21b1a5e"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PersonalTabContacts.cs"
+				codeline="93"
+				loglvl="Success"
+				itemindex="49">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.968"
+			timeRelativeToTestModuleStartTime="00:06.968"
+			timeWallClock="05:52:33"
+			time="00:06.968"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.AddContact2' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Add Contact']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Add Contact']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.AddContact2"
+				id="27435f3b8ad440d597a68d8840a74de3"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\PersonalTabContacts.cs"
+				codeline="96"
+				itemindex="50"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

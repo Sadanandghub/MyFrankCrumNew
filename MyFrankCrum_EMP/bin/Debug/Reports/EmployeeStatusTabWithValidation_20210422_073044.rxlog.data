@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.56s"
+		durationms="7557"
+		type="root"
+		rid="9e473c0fc6d7548"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/22/2021 7:30:48 AM"
+		timestampiso="2021-04-22T11:30:48"
+		endtime="4/22/2021 7:30:55 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EmployeeStatusTabWithValidation">
+		<detail>
+			EmployeeStatusTabWithValidation
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.543"
+			timeRelativeToTestModuleStartTime="00:04.543"
+			timeWallClock="07:30:52"
+			time="00:04.543"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.573"
+			timeRelativeToTestModuleStartTime="00:04.573"
+			timeWallClock="07:30:52"
+			time="00:04.573"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Activeclick' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Active']"
+				itempath=".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Activeclick"
+				id="2c90fa00c4e346b988ab6b975cfeaff2"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.306"
+			timeRelativeToTestModuleStartTime="00:07.306"
+			timeWallClock="07:30:55"
+			time="00:07.306"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeContains (InnerText&gt;'Employees - Active') on item 'ApplicationUnderTest.EmployeesActive'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive"
+				id="0ba76efb49294597a665e83db7156fbf"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="96"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.447"
+			timeRelativeToTestModuleStartTime="00:07.447"
+			timeWallClock="07:30:55"
+			time="00:07.447"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive"
+				id="0ba76efb49294597a665e83db7156fbf"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="97"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

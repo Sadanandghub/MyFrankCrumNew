@@ -41,6 +41,15 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public EditPersonalDetails()
         {
+            EditFirstName = "Sadanand";
+            EditMiddleName = "Mukesh";
+            EditLastName = "Apple";
+            EditDOB = "05/03/1966";
+            EditSuffix = "M.D.";
+            EditEthnicId = "Asian";
+            EditMaritalStatus = "married";
+            EditAddressOne = "Test Address One";
+            EditAddressTwo = "Test Address Two";
         }
 
         /// <summary>
@@ -53,6 +62,114 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
+        string _EditFirstName;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditFirstName.
+        /// </summary>
+        [TestVariable("41eded12-b8e3-4e2c-a93e-168146412220")]
+        public string EditFirstName
+        {
+            get { return _EditFirstName; }
+            set { _EditFirstName = value; }
+        }
+
+        string _EditMiddleName;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditMiddleName.
+        /// </summary>
+        [TestVariable("e120dd4a-b5c4-4f8a-97d1-5324c7e83dcd")]
+        public string EditMiddleName
+        {
+            get { return _EditMiddleName; }
+            set { _EditMiddleName = value; }
+        }
+
+        string _EditLastName;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditLastName.
+        /// </summary>
+        [TestVariable("a47d83e4-4f1e-45a1-9ce3-34557ceb3eac")]
+        public string EditLastName
+        {
+            get { return _EditLastName; }
+            set { _EditLastName = value; }
+        }
+
+        string _EditDOB;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditDOB.
+        /// </summary>
+        [TestVariable("502ca527-543b-44c6-a555-4f8ea8b88969")]
+        public string EditDOB
+        {
+            get { return _EditDOB; }
+            set { _EditDOB = value; }
+        }
+
+        string _EditSuffix;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditSuffix.
+        /// </summary>
+        [TestVariable("fb6ddea7-605f-4589-9651-15e26df8259a")]
+        public string EditSuffix
+        {
+            get { return _EditSuffix; }
+            set { _EditSuffix = value; }
+        }
+
+        string _EditEthnicId;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditEthnicId.
+        /// </summary>
+        [TestVariable("9531e872-c9ad-44fc-a9a3-941f1553db38")]
+        public string EditEthnicId
+        {
+            get { return _EditEthnicId; }
+            set { _EditEthnicId = value; }
+        }
+
+        string _EditMaritalStatus;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditMaritalStatus.
+        /// </summary>
+        [TestVariable("f1788c15-ed0f-40b6-8e09-081f25e42e5e")]
+        public string EditMaritalStatus
+        {
+            get { return _EditMaritalStatus; }
+            set { _EditMaritalStatus = value; }
+        }
+
+        string _EditAddressOne;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditAddressOne.
+        /// </summary>
+        [TestVariable("0d373fb8-c34e-4e82-ada2-54797dbefd36")]
+        public string EditAddressOne
+        {
+            get { return _EditAddressOne; }
+            set { _EditAddressOne = value; }
+        }
+
+        string _EditAddressTwo;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditAddressTwo.
+        /// </summary>
+        [TestVariable("b416aad5-8ca6-4b17-9573-c816376ba372")]
+        public string EditAddressTwo
+        {
+            get { return _EditAddressTwo; }
+            set { _EditAddressTwo = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable RepoURL.
         /// </summary>
@@ -61,6 +178,16 @@ namespace MyFrankCrum_EMP
         {
             get { return repo.RepoURL; }
             set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable EditGender.
+        /// </summary>
+        [TestVariable("5470980e-be5d-40a5-b72f-fc51fe30345e")]
+        public string EditGender
+        {
+            get { return repo.EditGender; }
+            set { repo.EditGender = value; }
         }
 
 #endregion
@@ -93,130 +220,134 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.FirstName.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to 'Sally' on item 'ApplicationUnderTest.FirstName'.", repo.ApplicationUnderTest.FirstNameInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.FirstName.Element.SetAttributeValue("Value", "Sally");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$EditFirstName' on item 'ApplicationUnderTest.FirstName'.", repo.ApplicationUnderTest.FirstNameInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.FirstName.Element.SetAttributeValue("Value", EditFirstName);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.MiddleName1' at Center.", repo.ApplicationUnderTest.MiddleName1Info, new RecordItemIndex(2));
             repo.ApplicationUnderTest.MiddleName1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '' on item 'ApplicationUnderTest.MiddleName1'.", repo.ApplicationUnderTest.MiddleName1Info, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.MiddleName1.Element.SetAttributeValue("Value", "");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$EditMiddleName' on item 'ApplicationUnderTest.MiddleName1'.", repo.ApplicationUnderTest.MiddleName1Info, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.MiddleName1.Element.SetAttributeValue("Value", EditMiddleName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LastName1' at Center.", repo.ApplicationUnderTest.LastName1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LabelTagSuffix' at 12;7.", repo.ApplicationUnderTest.LabelTagSuffixInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.LabelTagSuffix.Click("12;7");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LastName1' at Center.", repo.ApplicationUnderTest.LastName1Info, new RecordItemIndex(5));
             repo.ApplicationUnderTest.LastName1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to 'Apple' on item 'ApplicationUnderTest.LastName1'.", repo.ApplicationUnderTest.LastName1Info, new RecordItemIndex(5));
-            repo.ApplicationUnderTest.LastName1.Element.SetAttributeValue("Value", "Apple");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$EditLastName' on item 'ApplicationUnderTest.LastName1'.", repo.ApplicationUnderTest.LastName1Info, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.LastName1.Element.SetAttributeValue("Value", EditLastName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BirthDate1' at Center.", repo.ApplicationUnderTest.BirthDate1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BirthDate1' at Center.", repo.ApplicationUnderTest.BirthDate1Info, new RecordItemIndex(7));
             repo.ApplicationUnderTest.BirthDate1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '05/03/1966' on item 'ApplicationUnderTest.BirthDate1'.", repo.ApplicationUnderTest.BirthDate1Info, new RecordItemIndex(7));
-            repo.ApplicationUnderTest.BirthDate1.Element.SetAttributeValue("Value", "05/03/1966");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$EditDOB' on item 'ApplicationUnderTest.BirthDate1'.", repo.ApplicationUnderTest.BirthDate1Info, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.BirthDate1.Element.SetAttributeValue("Value", EditDOB);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM' at Center.", repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerMInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM' at Center.", repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerMInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'M.D.' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EditSuffix' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(10));
             repo.ApplicationUnderTest.Self.EnsureVisible();
-            Keyboard.Press("M.D.");
+            Keyboard.Press(EditSuffix);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(11));
             repo.ApplicationUnderTest.Self.EnsureVisible();
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM1' at Center.", repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM1' at Center.", repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM1Info, new RecordItemIndex(12));
             repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Asian' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EditEthnicId' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(13));
             repo.ApplicationUnderTest.Self.EnsureVisible();
-            Keyboard.Press("Asian");
+            Keyboard.Press(EditEthnicId);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(14));
             repo.ApplicationUnderTest.Self.EnsureVisible();
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FaCaretDownFas3' at Center.", repo.ApplicationUnderTest.FaCaretDownFas3Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FaCaretDownFas3' at Center.", repo.ApplicationUnderTest.FaCaretDownFas3Info, new RecordItemIndex(15));
             repo.ApplicationUnderTest.FaCaretDownFas3.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Male' at Center.", repo.ApplicationUnderTest.MaleInfo, new RecordItemIndex(15));
-            repo.ApplicationUnderTest.Male.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EditGender' at Center.", repo.ApplicationUnderTest.EditGenderInfo, new RecordItemIndex(16));
+            repo.ApplicationUnderTest.EditGender.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM3' at Center.", repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM3Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM3' at Center.", repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM3Info, new RecordItemIndex(17));
             repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM3.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'married' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EditMaritalStatus' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(18));
             repo.ApplicationUnderTest.Self.EnsureVisible();
-            Keyboard.Press("married");
+            Keyboard.Press(EditMaritalStatus);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(19));
             repo.ApplicationUnderTest.Self.EnsureVisible();
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddressLineOne' at Center.", repo.ApplicationUnderTest.AddressLineOneInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddressLineOne' at Center.", repo.ApplicationUnderTest.AddressLineOneInfo, new RecordItemIndex(20));
             repo.ApplicationUnderTest.AddressLineOne.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to 'Test Address One' on item 'ApplicationUnderTest.AddressLineOne'.", repo.ApplicationUnderTest.AddressLineOneInfo, new RecordItemIndex(20));
-            repo.ApplicationUnderTest.AddressLineOne.Element.SetAttributeValue("Value", "Test Address One");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$EditAddressOne' on item 'ApplicationUnderTest.AddressLineOne'.", repo.ApplicationUnderTest.AddressLineOneInfo, new RecordItemIndex(21));
+            repo.ApplicationUnderTest.AddressLineOne.Element.SetAttributeValue("Value", EditAddressOne);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(22));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddressLineTwo' at Center.", repo.ApplicationUnderTest.AddressLineTwoInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddressLineTwo' at Center.", repo.ApplicationUnderTest.AddressLineTwoInfo, new RecordItemIndex(23));
             repo.ApplicationUnderTest.AddressLineTwo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to 'Test Address Two' on item 'ApplicationUnderTest.AddressLineTwo'.", repo.ApplicationUnderTest.AddressLineTwoInfo, new RecordItemIndex(23));
-            repo.ApplicationUnderTest.AddressLineTwo.Element.SetAttributeValue("Value", "Test Address Two");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$EditAddressTwo' on item 'ApplicationUnderTest.AddressLineTwo'.", repo.ApplicationUnderTest.AddressLineTwoInfo, new RecordItemIndex(24));
+            repo.ApplicationUnderTest.AddressLineTwo.Element.SetAttributeValue("Value", EditAddressTwo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(25));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveChanges' at Center.", repo.ApplicationUnderTest.SaveChangesInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveChanges' at Center.", repo.ApplicationUnderTest.SaveChangesInfo, new RecordItemIndex(26));
             repo.ApplicationUnderTest.SaveChanges.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.KeepAsIs' at Center.", repo.ApplicationUnderTest.KeepAsIsInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.KeepAsIs' at Center.", repo.ApplicationUnderTest.KeepAsIsInfo, new RecordItemIndex(27));
             repo.ApplicationUnderTest.KeepAsIs.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.City1' at Center.", repo.ApplicationUnderTest.City1Info, new RecordItemIndex(27));
-            repo.ApplicationUnderTest.City1.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.City1' at Center.", repo.ApplicationUnderTest.City1Info, new RecordItemIndex(28));
+            //repo.ApplicationUnderTest.City1.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM4' at Center.", repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM4Info, new RecordItemIndex(28));
-            repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM4.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM4' at Center.", repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM4Info, new RecordItemIndex(29));
+            //repo.ApplicationUnderTest.CssHxuxk6MfcSelectValueContainerM4.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Massachu{Return}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(29));
-            repo.ApplicationUnderTest.Self.EnsureVisible();
-            Keyboard.Press("Massachu{Return}");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Massachu{Return}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(30));
+            //repo.ApplicationUnderTest.Self.EnsureVisible();
+            //Keyboard.Press("Massachu{Return}");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ZipCode1' at Center.", repo.ApplicationUnderTest.ZipCode1Info, new RecordItemIndex(30));
-            repo.ApplicationUnderTest.ZipCode1.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ZipCode1' at Center.", repo.ApplicationUnderTest.ZipCode1Info, new RecordItemIndex(31));
+            //repo.ApplicationUnderTest.ZipCode1.Click();
+            //Delay.Milliseconds(0);
             
         }
 

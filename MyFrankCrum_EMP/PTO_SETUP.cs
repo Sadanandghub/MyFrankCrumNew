@@ -343,25 +343,28 @@ namespace MyFrankCrum_EMP
             // Press the Delete button
             Report.Log(ReportLevel.Info, "Section", "Press the Delete button", new RecordItemIndex(56));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTODropdownMenuButton' at Center.", repo.ApplicationUnderTest.PTODropdownMenuButtonInfo, new RecordItemIndex(57));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(57));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTODropdownMenuButton' at Center.", repo.ApplicationUnderTest.PTODropdownMenuButtonInfo, new RecordItemIndex(58));
             repo.ApplicationUnderTest.PTODropdownMenuButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTODelete' at Center.", repo.ApplicationUnderTest.PTODeleteInfo, new RecordItemIndex(58));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTODelete' at Center.", repo.ApplicationUnderTest.PTODeleteInfo, new RecordItemIndex(59));
             repo.ApplicationUnderTest.PTODelete.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(59));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(60));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTODeletebtn' at Center.", repo.ApplicationUnderTest.PTODeletebtnInfo, new RecordItemIndex(60));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PTODeletebtn' at Center.", repo.ApplicationUnderTest.PTODeletebtnInfo, new RecordItemIndex(61));
             repo.ApplicationUnderTest.PTODeletebtn.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(61));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(62));
             Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(62));
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(63));
             
         }
 

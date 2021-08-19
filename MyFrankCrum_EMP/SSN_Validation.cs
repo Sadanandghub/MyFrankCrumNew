@@ -106,8 +106,8 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(1));
             Delay.Duration(15000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'XXX-XX-0932') on item 'ApplicationUnderTest.SSNValue'.", repo.ApplicationUnderTest.SSNValueInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.ApplicationUnderTest.SSNValueInfo, "InnerText", "XXX-XX-0932");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'XXX-XX-') on item 'ApplicationUnderTest.SSNValue'.", repo.ApplicationUnderTest.SSNValueInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.ApplicationUnderTest.SSNValueInfo, "InnerText", "XXX-XX-");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FaFaLock' at Center.", repo.ApplicationUnderTest.FaFaLockInfo, new RecordItemIndex(3));
@@ -122,8 +122,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.Unlock.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'XXX-XX-0932') on item 'ApplicationUnderTest.SSNValue'.", repo.ApplicationUnderTest.SSNValueInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.ApplicationUnderTest.SSNValueInfo, "InnerText", "XXX-XX-0932");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'XXX-XX') on item 'ApplicationUnderTest.SSNValue'.", repo.ApplicationUnderTest.SSNValueInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.ApplicationUnderTest.SSNValueInfo, "InnerText", "XXX-XX");
             Delay.Milliseconds(100);
             
         }

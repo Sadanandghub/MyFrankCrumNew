@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.35s"
+		durationms="7351"
+		type="root"
+		rid="2817d026a1e4a96"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/5/2021 4:20:59 AM"
+		timestampiso="2021-05-05T08:20:59"
+		endtime="5/5/2021 4:21:06 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="C004_CreateAccount">
+		<detail>
+			C004_CreateAccount
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.656"
+			timeRelativeToTestModuleStartTime="00:04.656"
+			timeWallClock="04:21:03"
+			time="00:04.656"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>SocialSecurityNumber, DateOfBirth, NewUserName, NewPassword, NewConfirmPassword, SecurityAnswer, RepoURL, SecurityQuestionValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.688"
+			timeRelativeToTestModuleStartTime="00:04.688"
+			timeWallClock="04:21:03"
+			time="00:04.688"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText='Latest Paycheck (Net Pay):') on item 'ApplicationUnderTest.LatestPaycheckNetPay'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[2]/div/div[1]/div[1]/?/?/div[@innertext>'Latest Paycheck (Net Pay)']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div/div[2]/div/div[1]/div[1]/?/?/div[@innertext>'Latest Paycheck (Net Pay)']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.LatestPaycheckNetPay"
+				id="8042c234383d424ea6e9fab5adce2abd"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="180"
+				itemindex="23"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.248"
+			timeRelativeToTestModuleStartTime="00:07.248"
+			timeWallClock="04:21:06"
+			time="00:07.248"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.LatestPaycheckNetPay' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[2]/div/div[1]/div[1]/?/?/div[@innertext>'Latest Paycheck (Net Pay)']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div/div[2]/div/div[1]/div[1]/?/?/div[@innertext>'Latest Paycheck (Net Pay)']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.LatestPaycheckNetPay"
+				id="8042c234383d424ea6e9fab5adce2abd"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\C004_CreateAccount.cs"
+				codeline="181"
+				loglvl="Success"
+				itemindex="23">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="44.4s"
+		durationms="44400"
+		type="root"
+		rid="14fc5c8f4c95d628"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/26/2021 8:12:06 AM"
+		timestampiso="2021-04-26T12:12:06"
+		endtime="4/26/2021 8:12:50 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="WorkforceOnboarding">
+		<detail>
+			WorkforceOnboarding
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.880"
+			timeRelativeToTestModuleStartTime="00:05.880"
+			timeWallClock="08:12:12"
+			time="00:05.880"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.927"
+			timeRelativeToTestModuleStartTime="00:05.927"
+			timeWallClock="08:12:12"
+			time="00:05.927"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Onboarding' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']/dom[@domain='devmfc.frankcrum.com']//div[#'/Onboarding']//a[@innertext='Onboarding']"
+				itempath="dom[@domain='devmfc.frankcrum.com']//div[#'/Onboarding']//a[@innertext='Onboarding']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Onboarding"
+				id="83fbbdfced4b4bd98c198bf266bba188"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\WorkforceOnboarding.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:44.397"
+			timeRelativeToTestModuleStartTime="00:44.397"
+			timeWallClock="08:12:50"
+			time="00:44.397"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

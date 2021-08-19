@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="10.52s"
+		durationms="10519"
+		type="root"
+		rid="11ba39048ad6b502"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/22/2021 7:27:38 AM"
+		timestampiso="2021-04-22T11:27:38"
+		endtime="4/22/2021 7:27:48 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EmployeeStatusTabWithValidation">
+		<detail>
+			EmployeeStatusTabWithValidation
+		</detail>
+		<errormessage>
+			Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive' does not contain the specified value (actual='Employees·-·Active·(1)', expected='Employees··-·Active·').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.275"
+			timeRelativeToTestModuleStartTime="00:04.275"
+			timeWallClock="07:27:42"
+			time="00:04.275"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.304"
+			timeRelativeToTestModuleStartTime="00:04.304"
+			timeWallClock="07:27:42"
+			time="00:04.304"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Activeclick' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Active']"
+				itempath=".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Activeclick"
+				id="2c90fa00c4e346b988ab6b975cfeaff2"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.280"
+			timeRelativeToTestModuleStartTime="00:07.280"
+			timeWallClock="07:27:45"
+			time="00:07.280"
+			level="Info"
+			category="Validation"
+			errimg="images_Employee_3feb2b01\Employee_3feb2b01_0806c3fa_trace.jpg"
+			errthumb="images_Employee_3feb2b01\Employee_3feb2b01_0806c3fa_trace_thumb.jpg">
+			<message>
+				Validating AttributeContains (InnerText&gt;'Employees  - Active ') on item 'ApplicationUnderTest.EmployeesActive'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive"
+				id="0ba76efb49294597a665e83db7156fbf"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="96"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.424"
+			timeRelativeToTestModuleStartTime="00:10.424"
+			timeWallClock="07:27:48"
+			time="00:10.424"
+			level="Failure"
+			category="Validation"
+			errimg="images_Employee_3feb2b01\Employee_3feb2b01_4cd1fbec_trace.jpg"
+			errthumb="images_Employee_3feb2b01\Employee_3feb2b01_4cd1fbec_trace_thumb.jpg">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive' does not contain the specified value (actual='Employees·-·Active·(1)', expected='Employees··-·Active·').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive"
+				id="0ba76efb49294597a665e83db7156fbf"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="97"
+				loglvl="Failure"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.441"
+			timeRelativeToTestModuleStartTime="00:10.441"
+			timeWallClock="07:27:48"
+			time="00:10.441"
+			level="Error"
+			category="Module"
+			errimg="images_Employee_3feb2b01\Employee_3feb2b01_4cd1fbec_trace.jpg"
+			errthumb="images_Employee_3feb2b01\Employee_3feb2b01_4cd1fbec_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive' does not contain the specified value (actual='Employees·-·Active·(1)', expected='Employees··-·Active·').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   at Ranorex.Validate.AttributeContainsInternal(IElement element, String name, String value, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeContainsInternal(RepoItemInfo itemInfo, String name, String value, String message, Options options)
+   at Ranorex.Validate.AttributeContains(RepoItemInfo itemInfo, String name, String value, String message, Options options)
+   at Ranorex.Validate.AttributeContains(RepoItemInfo itemInfo, String name, String value)
+   at MyFrankCrum_EMP.EmployeeStatusTabWithValidation.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs:line 97
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeStatusTabWithValidation.cs"
+				codeline="97"
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div[1]/?/?/h4[@innertext>'Employees - Active']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EmployeesActive"
+				id="0ba76efb49294597a665e83db7156fbf"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

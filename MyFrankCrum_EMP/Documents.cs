@@ -41,6 +41,8 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public Documents()
         {
+            DocumentFilePath = "QDC_FWCI_Q-117097_34823_GL_ACCEPTED03182021_03212321_AM";
+            InvalidFileUpload = "Repository.postman_collection";
         }
 
         /// <summary>
@@ -52,6 +54,30 @@ namespace MyFrankCrum_EMP
         }
 
 #region Variables
+
+        string _DocumentFilePath;
+
+        /// <summary>
+        /// Gets or sets the value of variable DocumentFilePath.
+        /// </summary>
+        [TestVariable("8896de3e-d9c4-4d55-9368-8bb591a0549d")]
+        public string DocumentFilePath
+        {
+            get { return _DocumentFilePath; }
+            set { _DocumentFilePath = value; }
+        }
+
+        string _InvalidFileUpload;
+
+        /// <summary>
+        /// Gets or sets the value of variable InvalidFileUpload.
+        /// </summary>
+        [TestVariable("bc6264e0-7014-4df3-8405-e8b027f54df7")]
+        public string InvalidFileUpload
+        {
+            get { return _InvalidFileUpload; }
+            set { _InvalidFileUpload = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable RepoURL.
@@ -99,153 +125,162 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Documents' at Center.", repo.ApplicationUnderTest.DocumentsInfo, new RecordItemIndex(0));
+            // Fill out the dialog fields but select an valid file type and press the Upload button
+            Report.Log(ReportLevel.Info, "Section", "Fill out the dialog fields but select an valid file type and press the Upload button", new RecordItemIndex(0));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Documents' at Center.", repo.ApplicationUnderTest.DocumentsInfo, new RecordItemIndex(1));
             repo.ApplicationUnderTest.Documents.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UploadNewDocument' at Center.", repo.ApplicationUnderTest.UploadNewDocumentInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UploadNewDocument' at Center.", repo.ApplicationUnderTest.UploadNewDocumentInfo, new RecordItemIndex(3));
             repo.ApplicationUnderTest.UploadNewDocument.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryDropclick' at Center.", repo.ApplicationUnderTest.DocumentCategoryDropclickInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryDropclick' at Center.", repo.ApplicationUnderTest.DocumentCategoryDropclickInfo, new RecordItemIndex(4));
             repo.ApplicationUnderTest.DocumentCategoryDropclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryValue' at Center.", repo.ApplicationUnderTest.DocumentCategoryValueInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryValue' at Center.", repo.ApplicationUnderTest.DocumentCategoryValueInfo, new RecordItemIndex(5));
             repo.ApplicationUnderTest.DocumentCategoryValue.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentTitleClick' at Center.", repo.ApplicationUnderTest.DocumentTitleClickInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentTitleClick' at Center.", repo.ApplicationUnderTest.DocumentTitleClickInfo, new RecordItemIndex(6));
             repo.ApplicationUnderTest.DocumentTitleClick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'DocumentNAme' with focus on 'ApplicationUnderTest.DocumentTitleClick'.", repo.ApplicationUnderTest.DocumentTitleClickInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'DocumentNAme' with focus on 'ApplicationUnderTest.DocumentTitleClick'.", repo.ApplicationUnderTest.DocumentTitleClickInfo, new RecordItemIndex(7));
             repo.ApplicationUnderTest.DocumentTitleClick.PressKeys("DocumentNAme");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentExpiresDate' at Center.", repo.ApplicationUnderTest.DocumentExpiresDateInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentExpiresDate' at Center.", repo.ApplicationUnderTest.DocumentExpiresDateInfo, new RecordItemIndex(8));
             repo.ApplicationUnderTest.DocumentExpiresDate.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '05/18/2021' with focus on 'ApplicationUnderTest.DocumentExpiresDate'.", repo.ApplicationUnderTest.DocumentExpiresDateInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '05/18/2021' with focus on 'ApplicationUnderTest.DocumentExpiresDate'.", repo.ApplicationUnderTest.DocumentExpiresDateInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.DocumentExpiresDate.PressKeys("05/18/2021");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentFileEmployeeCanView' at Center.", repo.ApplicationUnderTest.DocumentFileEmployeeCanViewInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentFileEmployeeCanView' at Center.", repo.ApplicationUnderTest.DocumentFileEmployeeCanViewInfo, new RecordItemIndex(10));
             repo.ApplicationUnderTest.DocumentFileEmployeeCanView.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentChooseFile' at Center.", repo.ApplicationUnderTest.DocumentChooseFileInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentChooseFile' at Center.", repo.ApplicationUnderTest.DocumentChooseFileInfo, new RecordItemIndex(11));
             repo.ApplicationUnderTest.DocumentChooseFile.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay' at Center.", repo.Open.SystemItemNameDisplayInfo, new RecordItemIndex(11));
-            repo.Open.SystemItemNameDisplay.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Text1148' at Center.", repo.Open.Text1148Info, new RecordItemIndex(12));
+            repo.Open.Text1148.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.ButtonOpen' at Center.", repo.Open.ButtonOpenInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DocumentFilePath' with focus on 'Open.Text1148'.", repo.Open.Text1148Info, new RecordItemIndex(13));
+            repo.Open.Text1148.PressKeys(DocumentFilePath);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.ButtonOpen' at Center.", repo.Open.ButtonOpenInfo, new RecordItemIndex(14));
             repo.Open.ButtonOpen.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentUpload' at Center.", repo.ApplicationUnderTest.DocumentUploadInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentUpload' at Center.", repo.ApplicationUnderTest.DocumentUploadInfo, new RecordItemIndex(15));
             repo.ApplicationUnderTest.DocumentUpload.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(16));
             Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(15));
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(17));
             
             // Fill out the dialog fields but select an invalid file type and press the Upload button
-            Report.Log(ReportLevel.Info, "Section", "Fill out the dialog fields but select an invalid file type and press the Upload button", new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Section", "Fill out the dialog fields but select an invalid file type and press the Upload button", new RecordItemIndex(18));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UploadNewDocument' at Center.", repo.ApplicationUnderTest.UploadNewDocumentInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.UploadNewDocument' at Center.", repo.ApplicationUnderTest.UploadNewDocumentInfo, new RecordItemIndex(19));
             repo.ApplicationUnderTest.UploadNewDocument.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryDropclick' at Center.", repo.ApplicationUnderTest.DocumentCategoryDropclickInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryDropclick' at Center.", repo.ApplicationUnderTest.DocumentCategoryDropclickInfo, new RecordItemIndex(20));
             repo.ApplicationUnderTest.DocumentCategoryDropclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryValue' at Center.", repo.ApplicationUnderTest.DocumentCategoryValueInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentCategoryValue' at Center.", repo.ApplicationUnderTest.DocumentCategoryValueInfo, new RecordItemIndex(21));
             repo.ApplicationUnderTest.DocumentCategoryValue.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentTitleClick' at Center.", repo.ApplicationUnderTest.DocumentTitleClickInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentTitleClick' at Center.", repo.ApplicationUnderTest.DocumentTitleClickInfo, new RecordItemIndex(22));
             repo.ApplicationUnderTest.DocumentTitleClick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'DocumentNAme' with focus on 'ApplicationUnderTest.DocumentTitleClick'.", repo.ApplicationUnderTest.DocumentTitleClickInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'DocumentNAme' with focus on 'ApplicationUnderTest.DocumentTitleClick'.", repo.ApplicationUnderTest.DocumentTitleClickInfo, new RecordItemIndex(23));
             repo.ApplicationUnderTest.DocumentTitleClick.PressKeys("DocumentNAme");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentExpiresDate' at Center.", repo.ApplicationUnderTest.DocumentExpiresDateInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentExpiresDate' at Center.", repo.ApplicationUnderTest.DocumentExpiresDateInfo, new RecordItemIndex(24));
             repo.ApplicationUnderTest.DocumentExpiresDate.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '05/18/2021' with focus on 'ApplicationUnderTest.DocumentExpiresDate'.", repo.ApplicationUnderTest.DocumentExpiresDateInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '05/18/2021' with focus on 'ApplicationUnderTest.DocumentExpiresDate'.", repo.ApplicationUnderTest.DocumentExpiresDateInfo, new RecordItemIndex(25));
             repo.ApplicationUnderTest.DocumentExpiresDate.PressKeys("05/18/2021");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentFileEmployeeCanView' at Center.", repo.ApplicationUnderTest.DocumentFileEmployeeCanViewInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentFileEmployeeCanView' at Center.", repo.ApplicationUnderTest.DocumentFileEmployeeCanViewInfo, new RecordItemIndex(26));
             repo.ApplicationUnderTest.DocumentFileEmployeeCanView.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentChooseFile' at Center.", repo.ApplicationUnderTest.DocumentChooseFileInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentChooseFile' at Center.", repo.ApplicationUnderTest.DocumentChooseFileInfo, new RecordItemIndex(27));
             repo.ApplicationUnderTest.DocumentChooseFile.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay1' at Center.", repo.Open.SystemItemNameDisplay1Info, new RecordItemIndex(26));
-            repo.Open.SystemItemNameDisplay1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Text1148' at Center.", repo.Open.Text1148Info, new RecordItemIndex(28));
+            repo.Open.Text1148.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.SystemItemNameDisplay' at Center.", repo.Open.SystemItemNameDisplayInfo, new RecordItemIndex(27));
-            //repo.Open.SystemItemNameDisplay.Click();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$InvalidFileUpload' with focus on 'Open.Text1148'.", repo.Open.Text1148Info, new RecordItemIndex(29));
+            repo.Open.Text1148.PressKeys(InvalidFileUpload);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.ButtonOpen' at Center.", repo.Open.ButtonOpenInfo, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.ButtonOpen' at Center.", repo.Open.ButtonOpenInfo, new RecordItemIndex(30));
             repo.Open.ButtonOpen.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentUpload' at Center.", repo.ApplicationUnderTest.DocumentUploadInfo, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentUpload' at Center.", repo.ApplicationUnderTest.DocumentUploadInfo, new RecordItemIndex(31));
             repo.ApplicationUnderTest.DocumentUpload.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.AlertErrorErrorSectionWrapper'.", repo.ApplicationUnderTest.AlertErrorErrorSectionWrapperInfo, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.AlertErrorErrorSectionWrapper'.", repo.ApplicationUnderTest.AlertErrorErrorSectionWrapperInfo, new RecordItemIndex(32));
             Validate.Exists(repo.ApplicationUnderTest.AlertErrorErrorSectionWrapperInfo);
             Delay.Milliseconds(100);
             
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(33));
+            
             // Press the Download menu option on the right of the document row
-            Report.Log(ReportLevel.Info, "Section", "Press the Download menu option on the right of the document row", new RecordItemIndex(31));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton' at Center.", repo.ApplicationUnderTest.DropdownMenuButtonInfo, new RecordItemIndex(32));
-            repo.ApplicationUnderTest.DropdownMenuButton.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentDownload' at Center.", repo.ApplicationUnderTest.DocumentDownloadInfo, new RecordItemIndex(33));
-            repo.ApplicationUnderTest.DocumentDownload.Click();
-            Delay.Milliseconds(0);
-            
-            // The document is deleted **suggesting we add confirmation before deleting**
-            Report.Log(ReportLevel.Info, "Section", "The document is deleted **suggesting we add confirmation before deleting**", new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Section", "Press the Download menu option on the right of the document row", new RecordItemIndex(34));
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton' at Center.", repo.ApplicationUnderTest.DropdownMenuButtonInfo, new RecordItemIndex(35));
             repo.ApplicationUnderTest.DropdownMenuButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentDelete' at Center.", repo.ApplicationUnderTest.DocumentDeleteInfo, new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentDownload' at Center.", repo.ApplicationUnderTest.DocumentDownloadInfo, new RecordItemIndex(36));
+            repo.ApplicationUnderTest.DocumentDownload.Click();
+            Delay.Milliseconds(0);
+            
+            // The document is deleted **suggesting we add confirmation before deleting**
+            Report.Log(ReportLevel.Info, "Section", "The document is deleted **suggesting we add confirmation before deleting**", new RecordItemIndex(37));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton' at Center.", repo.ApplicationUnderTest.DropdownMenuButtonInfo, new RecordItemIndex(38));
+            repo.ApplicationUnderTest.DropdownMenuButton.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentDelete' at Center.", repo.ApplicationUnderTest.DocumentDeleteInfo, new RecordItemIndex(39));
             repo.ApplicationUnderTest.DocumentDelete.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(37));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(40));
             Delay.Duration(3000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(38));
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(41));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentDelete1' at Center.", repo.ApplicationUnderTest.DocumentDelete1Info, new RecordItemIndex(39));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DocumentDelete1' at Center.", repo.ApplicationUnderTest.DocumentDelete1Info, new RecordItemIndex(42));
             repo.ApplicationUnderTest.DocumentDelete1.Click();
             Delay.Milliseconds(0);
             

@@ -101,7 +101,7 @@ namespace MyFrankCrum_EMP
             set { _Emp = value; }
         }
 
-        string _EmpName = "Porter";
+        string _EmpName = "Apple";
 
         /// <summary>
         /// Gets or sets the value of variable EmpName.
@@ -125,7 +125,7 @@ namespace MyFrankCrum_EMP
             set { _Sortingvalue = value; }
         }
 
-        string _EarningCode = "SALARY-SALF";
+        string _EarningCode = "Overtime";
 
         /// <summary>
         /// Gets or sets the value of variable EarningCode.
@@ -209,7 +209,7 @@ namespace MyFrankCrum_EMP
             set { _Location = value; }
         }
 
-        string _PTODropdownValue = "All";
+        string _PTODropdownValue = "Paid Time Off";
 
         /// <summary>
         /// Gets or sets the value of variable PTODropdownValue.
@@ -545,6 +545,114 @@ namespace MyFrankCrum_EMP
             set { _GetEmpName = value; }
         }
 
+        string _EditGender = "Female";
+
+        /// <summary>
+        /// Gets or sets the value of variable EditGender.
+        /// </summary>
+        [TestVariable("5470980e-be5d-40a5-b72f-fc51fe30345e")]
+        public string EditGender
+        {
+            get { return _EditGender; }
+            set { _EditGender = value; }
+        }
+
+        string _Relationship = "Brother";
+
+        /// <summary>
+        /// Gets or sets the value of variable Relationship.
+        /// </summary>
+        [TestVariable("533e729f-6988-432e-908e-33a4b359e3e2")]
+        public string Relationship
+        {
+            get { return _Relationship; }
+            set { _Relationship = value; }
+        }
+
+        string _ContactSuffix = "Sr.";
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactSuffix.
+        /// </summary>
+        [TestVariable("8966e0e5-ac64-467d-aa41-728bdc7dcfc7")]
+        public string ContactSuffix
+        {
+            get { return _ContactSuffix; }
+            set { _ContactSuffix = value; }
+        }
+
+        string _ContactGender = "Male";
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactGender.
+        /// </summary>
+        [TestVariable("8763cbd0-d04c-4da6-9371-b5e9077e63e0")]
+        public string ContactGender
+        {
+            get { return _ContactGender; }
+            set { _ContactGender = value; }
+        }
+
+        string _ContactAddInfo = "isFullTimeStudent";
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactAddInfo.
+        /// </summary>
+        [TestVariable("f8179723-4f23-4df3-9e1b-0d00c9dfd354")]
+        public string ContactAddInfo
+        {
+            get { return _ContactAddInfo; }
+            set { _ContactAddInfo = value; }
+        }
+
+        string _ContactState = "Alaska";
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactState.
+        /// </summary>
+        [TestVariable("54c74ddc-9932-484a-920a-e1ba74fa3f5b")]
+        public string ContactState
+        {
+            get { return _ContactState; }
+            set { _ContactState = value; }
+        }
+
+        string _BirthCountry = "United States";
+
+        /// <summary>
+        /// Gets or sets the value of variable BirthCountry.
+        /// </summary>
+        [TestVariable("8c597bc6-0680-4c51-abf0-43bbb80edaa9")]
+        public string BirthCountry
+        {
+            get { return _BirthCountry; }
+            set { _BirthCountry = value; }
+        }
+
+        string _SelectReason = "Cost of living adjustment";
+
+        /// <summary>
+        /// Gets or sets the value of variable SelectReason.
+        /// </summary>
+        [TestVariable("16586a30-6aa1-4f00-a1c8-69562018748a")]
+        public string SelectReason
+        {
+            get { return _SelectReason; }
+            set { _SelectReason = value; }
+        }
+
+        string _JobCode = "8742 - 8742";
+
+        /// <summary>
+        /// Gets or sets the value of variable JobCode.
+        /// </summary>
+        [TestVariable("6052f08a-c048-4771-b726-a4a3c0d2bbc7")]
+        public string JobCode
+        {
+            get { return _JobCode; }
+            set { _JobCode = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -766,7 +874,7 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _lastname1Info;
             RepoItemInfo _birthdate1Info;
             RepoItemInfo _facaretdownfas3Info;
-            RepoItemInfo _maleInfo;
+            RepoItemInfo _editgenderInfo;
             RepoItemInfo _csshxuxk6mfcselectvaluecontainermInfo;
             RepoItemInfo _csshxuxk6mfcselectvaluecontainerm1Info;
             RepoItemInfo _csshxuxk6mfcselectvaluecontainerm3Info;
@@ -851,9 +959,9 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _contactpopupcloseInfo;
             RepoItemInfo _csskynsejindicatorcontainermfcselect3Info;
             RepoItemInfo _birthlocationInfo;
-            RepoItemInfo _csskynsejindicatorcontainermfcselect4Info;
-            RepoItemInfo _costoflivingadjustmentInfo;
-            RepoItemInfo _csskynsejindicatorcontainermfcselect5Info;
+            RepoItemInfo _reasonclickInfo;
+            RepoItemInfo _selectreasonInfo;
+            RepoItemInfo _clickjobcodeInfo;
             RepoItemInfo _departmentclickInfo;
             RepoItemInfo _departmentInfo;
             RepoItemInfo _savejobpaychangesInfo;
@@ -891,7 +999,7 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _csskynsejindicatorcontainermfcselect8Info;
             RepoItemInfo _edit1Info;
             RepoItemInfo _adddirectdepositaccountInfo;
-            RepoItemInfo _csskynsejindicatorcontainermfcselect9Info;
+            RepoItemInfo _clickdatInfo;
             RepoItemInfo _editsettingsInfo;
             RepoItemInfo _depositedollaramountInfo;
             RepoItemInfo _deactivateaccountInfo;
@@ -1062,6 +1170,18 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _balanceoverviewInfo;
             RepoItemInfo _backtosummaryInfo;
             RepoItemInfo _backtosummary2Info;
+            RepoItemInfo _divtag5Info;
+            RepoItemInfo _cancelnewhireprocessInfo;
+            RepoItemInfo _startnextInfo;
+            RepoItemInfo _cancelnewhireInfo;
+            RepoItemInfo _labeltagsuffixInfo;
+            RepoItemInfo _personalsectionInfo;
+            RepoItemInfo _checksampleInfo;
+            RepoItemInfo _pleaseselectInfo;
+            RepoItemInfo _divtag006645a0f21thsnationalllcgaInfo;
+            RepoItemInfo _checkboxInfo;
+            RepoItemInfo _historyselectdateInfo;
+            RepoItemInfo _reactdatepickermonthcontainerInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -1099,10 +1219,10 @@ namespace MyFrankCrum_EMP
                 _licenseseditlicenseInfo = new RepoItemInfo(this, "LicensesEditLicense", ".//div[#'dropdown-menu']/button[@innertext='Edit License']", 30000, null, "1a27c48f-d5f9-4e3c-b85a-b70f01c2df88");
                 _licensesaddnewlicenseInfo = new RepoItemInfo(this, "LicensesAddNewLicense", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Add License']", 30000, null, "f5cb2ad4-3db2-4d06-80ba-6b01d3e096e2");
                 _licensessavechangesInfo = new RepoItemInfo(this, "LicensesSaveChanges", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Save Changes']", 30000, null, "2a3f3d67-928e-42c2-bb92-04d4203f8e18");
-                _uploadnewdocumentInfo = new RepoItemInfo(this, "UploadNewDocument", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[11]//button[@innertext='Upload New Document']", 30000, null, "e100f70d-b2e2-4458-912a-51af7656e1fe");
+                _uploadnewdocumentInfo = new RepoItemInfo(this, "UploadNewDocument", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[11]//button[@innertext='Upload Document']", 30000, null, "e100f70d-b2e2-4458-912a-51af7656e1fe");
                 _fromdatelblclickInfo = new RepoItemInfo(this, "FROMDATElblclick", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[8]//span[@innertext='FROM DATE']", 30000, null, "f42ef576-4c2f-4362-a9f5-9f29f28dccbf");
                 _documentdownloadInfo = new RepoItemInfo(this, "DocumentDownload", ".//div[#'dropdown-menu']/button[@innertext='Download']", 30000, null, "14b69d2a-3e92-4521-9d93-fad3fcbf5101");
-                _addptoplanInfo = new RepoItemInfo(this, "AddPTOPlan", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[10]//button[@innertext='Add PTO Plan']", 30000, null, "cdccee3c-6b16-4359-914c-df53ebef8bdc");
+                _addptoplanInfo = new RepoItemInfo(this, "AddPTOPlan", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[10]//button[@innertext='Add PTO']", 30000, null, "cdccee3c-6b16-4359-914c-df53ebef8bdc");
                 _documentcategoryvalueInfo = new RepoItemInfo(this, "DocumentCategoryValue", ".//div[#'documentCategory']/div[@id='documentCategory']/div/?/?/div/div[@innertext=$DocumentCategoryValue]", 30000, null, "ff33e461-e135-4b14-98f1-f73dcf484275");
                 _ptoeditInfo = new RepoItemInfo(this, "PTOEdit", ".//div[#'dropdown-menu']/button[@innertext='Edit']", 30000, null, "10646ee7-8076-47df-a2fb-0defec67d504");
                 _ptodeleteInfo = new RepoItemInfo(this, "PTODelete", ".//div[#'dropdown-menu']/button[@innertext='Delete']", 30000, null, "3515b974-8116-41fb-a694-fa688a99b04d");
@@ -1135,7 +1255,7 @@ namespace MyFrankCrum_EMP
                 _isprimaryInfo = new RepoItemInfo(this, "IsPrimary", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[4]/input[@name='isPrimary']", 30000, null, "98a637d1-a217-4eaf-b0d3-1328bf910ded");
                 _depositebanknameInfo = new RepoItemInfo(this, "DepositeBankName", ".//input[#'Bank Name']", 30000, null, "0a454602-0c56-40a4-abfb-54a4bf09089d");
                 _addnewlocationInfo = new RepoItemInfo(this, "AddNewLocation", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[7]//button[@innertext='Add New Location']", 30000, null, "9af5bbdf-1796-4de1-8572-a57c6139385d");
-                _adddirectdepositaccountbtnInfo = new RepoItemInfo(this, "AddDirectDepositAccountbtn", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext>'Add Direct Deposit Accoun']", 30000, null, "c896c712-1237-4241-93f8-c99aee420f63");
+                _adddirectdepositaccountbtnInfo = new RepoItemInfo(this, "AddDirectDepositAccountbtn", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext>'Save & Add']", 30000, null, "c896c712-1237-4241-93f8-c99aee420f63");
                 _depositeroutingnumberInfo = new RepoItemInfo(this, "DepositeRoutingNumber", ".//input[#'Routing / Transit Number']", 30000, null, "8b1bfd4e-c19c-4448-8bb7-361c6bd0215f");
                 _depositeroutingnumberconfirmInfo = new RepoItemInfo(this, "DepositeRoutingNumberConfirm", ".//input[#'Confirm Routing / Transit Number']", 30000, null, "3c0b418b-9dc8-447d-99b6-327f493e600c");
                 _depositeruletypeInfo = new RepoItemInfo(this, "DepositeRuleType", ".//div[#'depositRule']/div[@id='depositRule']/div/?/?/div/div[@innertext=$DepositRuleType]", 30000, null, "9d419621-eb20-455f-8152-70d210fb76f6");
@@ -1154,13 +1274,13 @@ namespace MyFrankCrum_EMP
                 _termilastworkdateInfo = new RepoItemInfo(this, "TermiLastWorkDate", ".//div[#'modal-wrapper']/div/div/div[4]/form[@action='https://devmfc.frankcrum.com/Employees']/div/div/div[4]/div[1]/div[2]//input[@type='text']", 10000, null, "fb1c0c08-d7dc-48c4-a687-02820f00aea2");
                 _terminatedateInfo = new RepoItemInfo(this, "TerminateDate", ".//div[#'modal-wrapper']/div/div/div[4]/form[@action='https://devmfc.frankcrum.com/Employees']/div/div/div[3]/div[1]/div[2]//input[@type='text']", 10000, null, "15e0a553-dc20-4a48-95f4-a3184436c593");
                 _documenttitleclickInfo = new RepoItemInfo(this, "DocumentTitleClick", ".//input[#'documentTitle']", 10000, null, "b3cab21d-4653-49c2-b71c-2beb3829ed7c");
-                _eeo_i_9stateInfo = new RepoItemInfo(this, "EEO_I_9State", ".//div[#'birthCountry']/div[@id='birthCountry']/div/?/?/div/div[@innertext='United States']", 30000, null, "171aa017-5606-46da-b7e4-5f2b7f6f691d");
-                _performancedocumenttitleInfo = new RepoItemInfo(this, "PerformanceDocumentTitle", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div/div[1]/div/div[1]//input[@id='Document Title:' and @name='performanceReviewFile.fileDescription']", 30000, null, "14e7492c-ab0a-4353-815d-b7fcc55a9d8c");
+                _eeo_i_9stateInfo = new RepoItemInfo(this, "EEO_I_9State", ".//div[#'birthCountry']/div[@id='birthCountry']/div/?/?/div/div[@innertext=$BirthCountry]", 30000, null, "171aa017-5606-46da-b7e4-5f2b7f6f691d");
+                _performancedocumenttitleInfo = new RepoItemInfo(this, "PerformanceDocumentTitle", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form[]/div[1]/div[11]/div/div[1]//input[@id='Document Title:']", 30000, null, "14e7492c-ab0a-4353-815d-b7fcc55a9d8c");
                 _performancetextInfo = new RepoItemInfo(this, "performanceText", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div/div/div[2]//input[@type='text'][2]", 30000, null, "802f07af-5104-4882-968b-2a803b30a34e");
                 _addnewdeductionInfo = new RepoItemInfo(this, "AddNewDeduction", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[5]//button[@innertext='Add New Deduction']", 30000, null, "b2b75e1e-0867-4811-a8d8-ee473d6421b8");
                 _addearningInfo = new RepoItemInfo(this, "AddEarning", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Add Earning']", 30000, null, "32fd5d6e-2ee2-4cb3-ac30-bb767bec544e");
                 _savechanges1Info = new RepoItemInfo(this, "SaveChanges1", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Save Changes']", 30000, null, "99aaef52-99bf-485f-91f8-e73b8f93f31f");
-                _job_codeInfo = new RepoItemInfo(this, "Job_Code", ".//div[#'jobCode']/div[@id='jobCode']/div/?/?/div/div[@innertext='8742 - 8742']", 30000, null, "e93470a6-73b3-4ae7-bfc8-07346c090c21");
+                _job_codeInfo = new RepoItemInfo(this, "Job_Code", ".//div[#'jobCode']/div[@id='jobCode']/div/?/?/div/div[@innertext=$JobCode]", 30000, null, "e93470a6-73b3-4ae7-bfc8-07346c090c21");
                 _pendingtimeoffrequests0Info = new RepoItemInfo(this, "PendingTimeOffRequests0", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/div[1]/div[1]/?/?/div[@innertext>'Pending Time Off Requests']", 30000, null, "c56020f0-77cb-4f3b-959c-9530964f1a71");
                 _timeoffcalendarInfo = new RepoItemInfo(this, "TimeOffCalendar", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/?/?/h5[@innertext='Time Off Calendar']", 30000, null, "b0975e3b-721e-4b0e-87b0-893b6f26a04c");
                 _companynewsInfo = new RepoItemInfo(this, "CompanyNews", ".//div[#'app']/div[2]/div[3]/div/div/div[3]/?/?/h5[@innertext>'Company News']", 30000, null, "b76c8e54-8672-4017-8805-a419cfa206ac");
@@ -1199,12 +1319,12 @@ namespace MyFrankCrum_EMP
                 _terminatedclickInfo = new RepoItemInfo(this, "Terminatedclick", ".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Terminated']", 30000, null, "14540359-8a4c-4e93-9574-3b79cce97262");
                 _totalclickInfo = new RepoItemInfo(this, "Totalclick", ".//div[#'app']/div[2]/div[3]//ul/li[@innertext>'Total']", 30000, null, "c1799bb8-a568-4374-b97c-7dad75251455");
                 _empnameInfo = new RepoItemInfo(this, "EmpName", ".//div[#'app']/div[2]/div[3]/div/div[2]/h3[@innertext<='Jane  Porter ']", 30000, null, "3adb98d7-3eb9-4fad-b821-34649810c11b");
-                _backtoemployeelistInfo = new RepoItemInfo(this, "BackToEmployeeList", ".//div[#'app']/div[2]/div[3]/?/?/a[@href>'https://devmfc.frankcrum.']/?/?/div[@innertext='Back to Employee List']", 30000, null, "68921955-34ad-42fc-b013-c868c794b96d");
+                _backtoemployeelistInfo = new RepoItemInfo(this, "BackToEmployeeList", ".//div[#'app']/div[2]/div[3]/?/?/a[]/?/?/div[@innertext='Back to Employee List']", 30000, null, "68921955-34ad-42fc-b013-c868c794b96d");
                 _detailclickInfo = new RepoItemInfo(this, "Detailclick", ".//div[#'dropdown-menu']/*[@innertext='Details']", 30000, null, "02ab53d6-46f9-400a-8930-9faa30ebdef3");
                 _terminateclickInfo = new RepoItemInfo(this, "TerminateClick", ".//div[#'dropdown-menu']/*[@innertext='Terminate Employee']", 30000, null, "2c1862a8-230d-4c03-ae85-72d93a4c999a");
                 _ssnvalueInfo = new RepoItemInfo(this, "SSNValue", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext>'XXX-XX-']", 30000, null, "3269555b-956d-4d2e-9e7e-55dac860c104");
-                _fafalockInfo = new RepoItemInfo(this, "FaFaLock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='XXX-XX-0932']/i", 30000, null, "8a67bc5a-cd1d-4cfc-a3bc-545c34c29a8a");
-                _unlockInfo = new RepoItemInfo(this, "Unlock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[@innertext='743-98-0932']/i[@class='fa fa-lock-open']", 30000, null, "475de8fb-6b47-49c1-bf4d-8b0cba7235eb");
+                _fafalockInfo = new RepoItemInfo(this, "FaFaLock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[]/i", 30000, null, "8a67bc5a-cd1d-4cfc-a3bc-545c34c29a8a");
+                _unlockInfo = new RepoItemInfo(this, "Unlock", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[1]/div[]/i[@class='fa fa-lock-open']", 30000, null, "475de8fb-6b47-49c1-bf4d-8b0cba7235eb");
                 _appcuesInfo = new RepoItemInfo(this, "Appcues", "body/div[6]/?/?/iframe[@src='about:blank']/?/?/tag[@tagname='appcues']", 5000, null, "77098423-7751-4ee4-8ccf-702adc3eab27");
                 _firstnamelblInfo = new RepoItemInfo(this, "FirstNamelbl", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]//div[@tagname='div']/label[@innertext='FIRST NAME']", 30000, null, "2af7c699-d369-4a90-86c9-6b7c3a1157dd");
                 _middlenameInfo = new RepoItemInfo(this, "MIDDLENAME", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]/div/div[3]/label[@innertext='MIDDLE NAME']", 30000, null, "32852ee8-5c59-4021-b8d1-4b9946ed5125");
@@ -1236,7 +1356,7 @@ namespace MyFrankCrum_EMP
                 _lastname1Info = new RepoItemInfo(this, "LastName1", ".//input[#'lastName']", 30000, null, "7b574303-c51d-436b-a4ed-7b63d48aff36");
                 _birthdate1Info = new RepoItemInfo(this, "BirthDate1", ".//input[#'birthDate']", 30000, null, "1ea13a34-339d-4612-a318-719347520dfa");
                 _facaretdownfas3Info = new RepoItemInfo(this, "FaCaretDownFas3", ".//div[#'gender']/div[@id='gender']/div/div[2]/div", 30000, null, "489a0814-527b-4b09-8db5-6557df6f77e5");
-                _maleInfo = new RepoItemInfo(this, "Male", ".//div[#'gender']/div[@id='gender']//div[@innertext='Male']", 30000, null, "c110cc4a-9e00-491b-a53b-26bbe4dafb4c");
+                _editgenderInfo = new RepoItemInfo(this, "EditGender", ".//div[#'gender']/div[@id='gender']//div[@innertext=$EditGender]", 30000, null, "c110cc4a-9e00-491b-a53b-26bbe4dafb4c");
                 _csshxuxk6mfcselectvaluecontainermInfo = new RepoItemInfo(this, "CssHxuxk6MfcSelectValueContainerM", ".//div[#'Suffix']/div/div[1]", 30000, null, "bb9c84a0-7610-4be9-a8d8-2e1ed9c18380");
                 _csshxuxk6mfcselectvaluecontainerm1Info = new RepoItemInfo(this, "CssHxuxk6MfcSelectValueContainerM1", ".//div[#'ethnicity']/div/div/div[1]", 30000, null, "68a49c8b-17f7-4243-a219-a8559239bbbc");
                 _csshxuxk6mfcselectvaluecontainerm3Info = new RepoItemInfo(this, "CssHxuxk6MfcSelectValueContainerM3", ".//div[#'maritalStatus']/div/div/div[1]", 30000, null, "88b0428f-82c0-4b62-9e9c-c980e4924d39");
@@ -1257,7 +1377,7 @@ namespace MyFrankCrum_EMP
                 _lastname3Info = new RepoItemInfo(this, "LastName3", ".//input[#'last name']", 30000, null, "1ec55914-e521-4411-854e-5afaf174dc13");
                 _addressline11Info = new RepoItemInfo(this, "AddressLine11", ".//input[#'address line 1']", 30000, null, "45cd7388-26d0-4e14-b676-13fb1b146473");
                 _city2Info = new RepoItemInfo(this, "City2", ".//input[#'city']", 30000, null, "839b3f44-db29-46c3-b728-ec7e3febae67");
-                _addnewcontactInfo = new RepoItemInfo(this, "AddNewContact", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[2]/?/?/button[@innertext='Add New Contact']", 30000, null, "f721e4d4-7c64-4ffb-b0af-9f9a0c1432b0");
+                _addnewcontactInfo = new RepoItemInfo(this, "AddNewContact", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[2]/?/?/button[@innertext='Add New']", 30000, null, "f721e4d4-7c64-4ffb-b0af-9f9a0c1432b0");
                 _state2Info = new RepoItemInfo(this, "State2", ".//div[#'state']/div[1]/div[1]", 30000, null, "2983e818-21bf-4394-952b-1b973916596d");
                 _zipcode2Info = new RepoItemInfo(this, "ZipCode2", ".//input[#'zip code']", 30000, null, "f885b73e-5414-4f22-be31-266355cb1c3a");
                 _gender2Info = new RepoItemInfo(this, "Gender2", ".//div[#'gender']/div/div[1]", 30000, null, "4b3242df-7e0c-4dae-9365-1e5bbd7f6dff");
@@ -1289,9 +1409,9 @@ namespace MyFrankCrum_EMP
                 _directdepositenextInfo = new RepoItemInfo(this, "DirectDepositeNext", ".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[7]/div/div[2]/?/?/button[@innertext='Next']", 30000, null, "40502eb5-1a25-4502-9de3-237678e6e4cf");
                 _dollaramounttextInfo = new RepoItemInfo(this, "DollarAmountText", ".//input[#'dollarAmount']", 30000, null, "3ec41d84-9e0e-4c79-a945-a01d8ddd1515");
                 _modalscrollInfo = new ModalScrollInfoClass(this);
-                _relationshipInfo = new RepoItemInfo(this, "Relationship", ".//div[#'relationship']/div[@id='relationship']/div/?/?/div/div[@innertext='Father']", 30000, null, "c66952f9-6513-4f12-8dac-ebfc1700811a");
-                _contactssuffixInfo = new RepoItemInfo(this, "ContactsSuffix", ".//div[#'suffix']/div[@id='suffix']/div/?/?/div/div[@innertext='Sr.']", 30000, null, "f067da4e-6e5c-4c9f-a04c-89a8e3ed6ad0");
-                _contactgenderInfo = new RepoItemInfo(this, "ContactGender", ".//div[#'gender']/div[@id='gender']/div/?/?/div/div[@innertext='Male']", 30000, null, "3b6e4d91-f08e-4187-b40d-ba7649f73982");
+                _relationshipInfo = new RepoItemInfo(this, "Relationship", ".//div[#'relationship']/div[@id='relationship']/div/?/?/div/div[@innertext=$Relationship]", 30000, null, "c66952f9-6513-4f12-8dac-ebfc1700811a");
+                _contactssuffixInfo = new RepoItemInfo(this, "ContactsSuffix", ".//div[#'suffix']/div[@id='suffix']/div/?/?/div/div[@innertext=$ContactSuffix]", 30000, null, "f067da4e-6e5c-4c9f-a04c-89a8e3ed6ad0");
+                _contactgenderInfo = new RepoItemInfo(this, "ContactGender", ".//div[#'gender']/div[@id='gender']/div/?/?/div/div[@innertext=$ContactGender]", 30000, null, "3b6e4d91-f08e-4187-b40d-ba7649f73982");
                 _divorcedateInfo = new RepoItemInfo(this, "DivorceDate", ".//input[#'divorceDate']", 30000, null, "4ca7e75c-beca-409e-835d-be7a20f887d7");
                 _city3Info = new RepoItemInfo(this, "CITY3", ".//input[#'CITY']", 30000, null, "f827ea46-4662-4f44-b731-dbcc6e0d8016");
                 _csskynsejindicatorcontainermfcselect2Info = new RepoItemInfo(this, "CssKynsejIndicatorContainerMfcSelect2", ".//div[#'state']/div[@id='state']/div/div[2]/div", 30000, null, "097ec9f2-a676-4c44-ad48-0e6cede83b1f");
@@ -1299,11 +1419,11 @@ namespace MyFrankCrum_EMP
                 _workextInfo = new RepoItemInfo(this, "WorkExt", ".//input[#'work ext.']", 30000, null, "b9bc854f-f369-490e-938d-10d57cf35ec3");
                 _employerInfo = new RepoItemInfo(this, "Employer", ".//input[#'employer']", 30000, null, "dc73501f-4255-4087-81ea-9303f7d7cafd");
                 _occupationInfo = new RepoItemInfo(this, "Occupation", ".//input[#'occupation']", 30000, null, "ae66114b-a55e-4372-8256-23a8a61d7e4f");
-                _contactaddinfoInfo = new RepoItemInfo(this, "ContactAddinfo", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/div[1]/div[15]/?/?/input[@name='isFullTimeStudent']", 30000, null, "07eaa7e3-c3c6-489e-83f7-3564458ac28a");
+                _contactaddinfoInfo = new RepoItemInfo(this, "ContactAddinfo", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[3]/div[1]/div[15]/?/?/input[@name=$ContactAddInfo]", 30000, null, "07eaa7e3-c3c6-489e-83f7-3564458ac28a");
                 _contactadddifferInfo = new RepoItemInfo(this, "ContactAdddiffer", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/div[2]/div[2]/input[@name='addressIsDifferent']", 30000, null, "b3f541bc-bb33-4f1a-8b45-b02d0afcc8c7");
                 _contactaddoneInfo = new RepoItemInfo(this, "ContactAddone", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/div[2]/div[3]/div[1]//input[@name='addressLine1']", 30000, null, "27e63cad-f23d-4875-bc8b-f96e5b49a73b");
                 _contactaddtwoInfo = new RepoItemInfo(this, "ContactAddtwo", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/div[2]/div[3]/div[2]//input[@name='addressLine2']", 30000, null, "dc21e6b0-cef1-46a0-8278-950bff78b5f4");
-                _contactstateInfo = new RepoItemInfo(this, "ContactState", ".//div[#'state']/div[@id='state']/div/?/?/div/div[@innertext='Alaska']", 30000, null, "eccfca93-2db1-42ce-a99f-701b03646d25");
+                _contactstateInfo = new RepoItemInfo(this, "ContactState", ".//div[#'state']/div[@id='state']/div/?/?/div/div[@innertext=$ContactState]", 30000, null, "eccfca93-2db1-42ce-a99f-701b03646d25");
                 _contactworkphoneInfo = new RepoItemInfo(this, "ContactWorkPhone", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/div[2]/div[5]/div[1]//input[@name='workPhone']", 30000, null, "e3dd0201-9a78-45ca-b7b2-0691d859a434");
                 _contactotherphoneInfo = new RepoItemInfo(this, "ContactOtherPhone", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/div[2]/div[6]//input[@name='otherPhone']", 30000, null, "c05dac1c-dc68-4548-9c1b-70a6cf38f381");
                 _isemergencycontactInfo = new RepoItemInfo(this, "IsEmergencyContact", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div[3]/input[@name='isEmergencyContact']", 30000, null, "91bb9d9c-ffe1-49b4-991d-e326dd63d16d");
@@ -1321,12 +1441,12 @@ namespace MyFrankCrum_EMP
                 _contactpopupcloseInfo = new RepoItemInfo(this, "ContactPOPUPClose", ".//button[#'modal-close-button']/i", 30000, null, "7aab2c2b-4959-4bc0-95a7-5439dcad7e05");
                 _csskynsejindicatorcontainermfcselect3Info = new RepoItemInfo(this, "CssKynsejIndicatorContainerMfcSelect3", ".//div[#'birthCountry']/div[@id='birthCountry']/div/div[2]/div", 30000, null, "0e1a641b-3d95-4d9c-8cba-609260ee4338");
                 _birthlocationInfo = new RepoItemInfo(this, "BirthLocation", ".//input[#'birthLocation']", 30000, null, "949ab4f9-2714-4f64-b726-5adedc7510b3");
-                _csskynsejindicatorcontainermfcselect4Info = new RepoItemInfo(this, "CssKynsejIndicatorContainerMfcSelect4", ".//div[#'Reason']/div/div[2]/div", 30000, null, "1bfc2509-6a62-478a-b145-fcc5538c7f26");
-                _costoflivingadjustmentInfo = new RepoItemInfo(this, "CostOfLivingAdjustment", ".//div[#'Reason']/div/?/?/div/div[@innertext='Cost of living adjustment']", 30000, null, "dd4cdaee-27a9-4ac9-b954-287c1e117021");
-                _csskynsejindicatorcontainermfcselect5Info = new RepoItemInfo(this, "CssKynsejIndicatorContainerMfcSelect5", ".//div[#'jobCode']/div[@id='jobCode']/div/div[2]/div", 30000, null, "eb630f67-91e5-4217-8b12-13fb421bfbc4");
+                _reasonclickInfo = new RepoItemInfo(this, "ReasonClick", ".//div[#'Reason']/div/div[2]/div", 30000, null, "1bfc2509-6a62-478a-b145-fcc5538c7f26");
+                _selectreasonInfo = new RepoItemInfo(this, "SelectReason", ".//div[#'Reason']/div/?/?/div/div[@innertext=$SelectReason]", 30000, null, "dd4cdaee-27a9-4ac9-b954-287c1e117021");
+                _clickjobcodeInfo = new RepoItemInfo(this, "ClickJobCode", ".//div[#'jobCode']/div[@id='jobCode']/div/div[2]/div", 30000, null, "eb630f67-91e5-4217-8b12-13fb421bfbc4");
                 _departmentclickInfo = new RepoItemInfo(this, "Departmentclick", ".//div[#'department']/div/div[2]/div", 30000, null, "2a8de2d8-3065-40e2-8e65-239732cc6448");
                 _departmentInfo = new RepoItemInfo(this, "Department", ".//div[#'department']/div/?/?/div/div[@innertext='0001 - 0001']", 30000, null, "77734f4b-39df-48d6-a3f0-36ca624abdf9");
-                _savejobpaychangesInfo = new RepoItemInfo(this, "SaveJobPayChanges", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/?/?/button[@innertext='Save Job & Pay Changes ']", 30000, null, "b7dec824-03d8-4563-9f78-35fe61c9c18c");
+                _savejobpaychangesInfo = new RepoItemInfo(this, "SaveJobPayChanges", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/?/?/button[@innertext='Save']", 30000, null, "b7dec824-03d8-4563-9f78-35fe61c9c18c");
                 _notificationnotificationleavenotificaInfo = new RepoItemInfo(this, "NotificationNotificationLeaveNotifica", ".//div[#'app']/div[2]/div[5]/span/div", 30000, null, "9bb9b415-6d71-4b09-b846-f08e2ab4e544");
                 _scheduledhours1Info = new RepoItemInfo(this, "ScheduledHours1", ".//input[#'scheduledHours']", 30000, null, "98eaa9c9-5261-4988-b6fd-685fca4c03d1");
                 _salaryInfo = new RepoItemInfo(this, "Salary", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div[6]/h4[@innertext='Salary']", 30000, null, "46a2b680-3255-4376-a790-600b9673fee5");
@@ -1341,8 +1461,8 @@ namespace MyFrankCrum_EMP
                 _documenttitleInfo = new RepoItemInfo(this, "DocumentTitle", ".//input[#'Document Title:']", 30000, null, "6864b0e9-4527-41e4-9317-ec756ffe180a");
                 _documentdecInfo = new RepoItemInfo(this, "DocumentDec", ".//input[#'Document Description:']", 10000, null, "a20ff613-8f15-4780-bc0b-dd4fa3d4d38b");
                 _textInfo = new RepoItemInfo(this, "Text", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div/div/div[2]//input[@type='text']", 30000, null, "464b21fd-3ed1-402a-b2ea-60234c6222eb");
-                _other_dependentsInfo = new RepoItemInfo(this, "OTHER_DEPENDENTS", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[4]/div[1]/div[2]/input[@name='additionalW4Fields[otherDependentsAmount]']", 30000, null, "48f644d4-e8ce-4f0e-afee-3816b278c38d");
-                _children_underInfo = new RepoItemInfo(this, "CHILDREN_UNDER", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[3]/div[1]/div[2]/input[@name='additionalW4Fields[childrenAmount]']", 30000, null, "307be464-d4e9-48bd-b8fd-08f6a19c3064");
+                _other_dependentsInfo = new RepoItemInfo(this, "OTHER_DEPENDENTS", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[1]/div/div/div[4]/div[1]/div[2]/input[@name='additionalW4Fields[otherDependentsAmount]']", 30000, null, "48f644d4-e8ce-4f0e-afee-3816b278c38d");
+                _children_underInfo = new RepoItemInfo(this, "CHILDREN_UNDER", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[1]/div/div/div[3]/div[1]/div[2]/input[@name>'additionalW4Fields[childrenAmount]']", 30000, null, "307be464-d4e9-48bd-b8fd-08f6a19c3064");
                 _choosefileInfo = new RepoItemInfo(this, "ChooseFile", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/div[1]/div/div/div[3]/div[2]/div/div[2]/button[@innertext='Choose File']", 30000, null, "f7822fe9-9740-4942-ab31-5ae22206f576");
                 _salaryreviewfilefileemployeecanviewInfo = new RepoItemInfo(this, "SalaryReviewFileFileEmployeeCanView", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div//input[@name='salaryReviewFile.fileEmployeeCanView']", 30000, null, "6a57b5ca-4c05-49b3-aa7f-87b4365f48d6");
                 _modalbuttoncontainerInfo = new RepoItemInfo(this, "ModalButtonContainer", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]", 30000, null, "6d261078-1ce7-4b01-a5e8-77b1380c46ac");
@@ -1360,8 +1480,8 @@ namespace MyFrankCrum_EMP
                 _editInfo = new RepoItemInfo(this, "EDIT", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[4]/div/div/div/div[2]/div[1]/button[@innertext='EDIT']", 30000, null, "b85d6092-1d52-4e8a-835e-6fc05f7d9dc5");
                 _csskynsejindicatorcontainermfcselect8Info = new RepoItemInfo(this, "CssKynsejIndicatorContainerMfcSelect8", ".//div[#'deductionCode']/div[@id='deductionCode']/div/div[2]/div", 30000, null, "9767036b-767f-463a-b6d2-47b4b02d9470");
                 _edit1Info = new RepoItemInfo(this, "Edit1", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[5]/div/div[2]/div/div/div/div/?/?/button[@innertext='Edit']", 30000, null, "b628374a-0752-4e7c-ba40-b5f96115a005");
-                _adddirectdepositaccountInfo = new RepoItemInfo(this, "AddDirectDepositAccount", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[6]/?/?/main/div/div/div/div[1]/?/?/button[@innertext>'Add Direct Deposit Accoun']", 30000, null, "74dfb5d7-6b81-472d-b43e-1cc2bb21f22b");
-                _csskynsejindicatorcontainermfcselect9Info = new RepoItemInfo(this, "CssKynsejIndicatorContainerMfcSelect9", ".//div[#'Account Type']/div/div[2]/div", 30000, null, "c06f9b4f-3c54-4505-8305-57752ae2309a");
+                _adddirectdepositaccountInfo = new RepoItemInfo(this, "AddDirectDepositAccount", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[6]/?/?/main/div/div/div/div[1]/?/?/button[@innertext>'Add New Account']", 30000, null, "74dfb5d7-6b81-472d-b43e-1cc2bb21f22b");
+                _clickdatInfo = new RepoItemInfo(this, "ClickDAT", ".//div[#'Account Type']/div/div[2]/div", 30000, null, "c06f9b4f-3c54-4505-8305-57752ae2309a");
                 _editsettingsInfo = new RepoItemInfo(this, "EditSettings", ".//div[#'dropdown']/div[@id='dropdown-menu']/button[@innertext='Edit Settings']", 30000, null, "9656347e-ea36-42a7-a6c4-6d0a478258c6");
                 _depositedollaramountInfo = new RepoItemInfo(this, "DepositeDollarAmount", ".//input[#'Dollar Amount']", 30000, null, "c909b1eb-3e41-4905-b2b2-5fdae024574c");
                 _deactivateaccountInfo = new RepoItemInfo(this, "DeactivateAccount", ".//div[#'dropdown']/div[@id='dropdown-menu']/button[@innertext='Deactivate Account']", 30000, null, "4b692659-ba7e-440c-a992-e812b42f7752");
@@ -1375,27 +1495,27 @@ namespace MyFrankCrum_EMP
                 _invoicetodateInfo = new RepoItemInfo(this, "InvoiceTodate", ".//div[#'app']/div[2]/div[3]/div/div/div/div[1]/div/div[3]/div/div[2]/?/?/input[@type='text']", 30000, null, "7dda5ea5-dde9-4b71-b986-f1cc7b56c1ea");
                 _saveInfo = new RepoItemInfo(this, "Save", ".//div[#'modal-wrapper']/div/div/div[4]/?/?/form[]/div[10]/button[@innertext='Save']", 30000, null, "cdf6f3c8-c5e1-49bf-bad5-7a1e4bc8de49");
                 _addcontactbtntrInfo = new RepoItemInfo(this, "AddContactbtnTr", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Add Contact']", 30000, null, "12862d1e-c7e9-4a32-ba86-d51ad21b1a5e");
-                _addnewearningInfo = new RepoItemInfo(this, "AddNewEarning", "dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[4]//button[@innertext='Add New Earning']", 30000, null, "41653fe1-1ff7-4de6-a86a-caa484c9af2f");
+                _addnewearningInfo = new RepoItemInfo(this, "AddNewEarning", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[4]//button[@innertext='Add New']", 30000, null, "41653fe1-1ff7-4de6-a86a-caa484c9af2f");
                 _addlocationInfo = new RepoItemInfo(this, "AddLocation", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Add Location']", 30000, null, "ded1c994-06e3-4e00-83cf-92330b7bc8ac");
-                _taxeseditisprimaryInfo = new RepoItemInfo(this, "TaxesEditIsPrimary", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div/div[4]/input[@name='isPrimary']", 30000, null, "4ad22dc3-0730-402f-9e8f-d447abb95a5c");
-                _taxeseditsavechangesInfo = new RepoItemInfo(this, "TaxesEditSaveChanges", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Save Changes']", 30000, null, "7194f7b2-32ab-4133-b887-b5fc6b025e89");
-                _taxesundochanges1Info = new RepoItemInfo(this, "TaxesUndoChanges1", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']", 30000, null, "ada6dc23-84c5-47bf-9441-e08122bf70d2");
-                _taxeseditsavechanges3Info = new RepoItemInfo(this, "TaxesEditSaveChanges3", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Save Changes']", 30000, null, "a12ece53-cd90-4d21-a78e-ad18ac841d79");
-                _addnewptoplanInfo = new RepoItemInfo(this, "AddNewPTOPlan", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Add New PTO Plan']", 30000, null, "10db5503-e39b-4d4a-9c3c-22a67c878869");
-                _ptoundochangesInfo = new RepoItemInfo(this, "PTOUndoChanges", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']", 30000, null, "7dc0f316-329d-4a09-95a7-5ad90c9c0222");
-                _editsaveptoplanInfo = new RepoItemInfo(this, "EditSavePTOPlan", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Save PTO Plan']", 30000, null, "77165146-0801-4292-8710-bd033f81fcf3");
-                _ptodeletebtnInfo = new RepoItemInfo(this, "PTODeletebtn", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Delete']", 30000, null, "bb993218-78ca-418b-ad57-c31c348b9a5a");
-                _documentcategorydropclickInfo = new RepoItemInfo(this, "DocumentCategoryDropclick", "dom[@domain='devmfc.frankcrum.com']//div[#'documentCategory']/div[@id='documentCategory']/div/div[2]/div", 30000, null, "7dfe6241-32e3-4d6c-9b97-137bf3678938");
-                _documentfileemployeecanviewInfo = new RepoItemInfo(this, "DocumentFileEmployeeCanView", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div[4]/input[@name='fileEmployeeCanView']", 30000, null, "be23a5c7-0f04-43c4-8b8a-fe15ca0f5e83");
-                _alerterrorerrorsectionwrapperInfo = new RepoItemInfo(this, "AlertErrorErrorSectionWrapper", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/div", 30000, null, "dc65ccc6-e78a-4d5f-90c2-5ae0fbe53d9b");
-                _documentdeleteInfo = new RepoItemInfo(this, "DocumentDelete", "dom[@domain='devmfc.frankcrum.com']//div[#'dropdown']/?/?/button[@innertext='Delete']", 30000, null, "571c5e94-5054-49dc-8e9b-d268fb67a891");
+                _taxeseditisprimaryInfo = new RepoItemInfo(this, "TaxesEditIsPrimary", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[1]/div/div/div[4]/input[@name='isPrimary']", 30000, null, "4ad22dc3-0730-402f-9e8f-d447abb95a5c");
+                _taxeseditsavechangesInfo = new RepoItemInfo(this, "TaxesEditSaveChanges", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Save Changes']", 30000, null, "7194f7b2-32ab-4133-b887-b5fc6b025e89");
+                _taxesundochanges1Info = new RepoItemInfo(this, "TaxesUndoChanges1", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Undo Changes']", 30000, null, "ada6dc23-84c5-47bf-9441-e08122bf70d2");
+                _taxeseditsavechanges3Info = new RepoItemInfo(this, "TaxesEditSaveChanges3", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Save Changes']", 30000, null, "a12ece53-cd90-4d21-a78e-ad18ac841d79");
+                _addnewptoplanInfo = new RepoItemInfo(this, "AddNewPTOPlan", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Add PTO']", 30000, null, "10db5503-e39b-4d4a-9c3c-22a67c878869");
+                _ptoundochangesInfo = new RepoItemInfo(this, "PTOUndoChanges", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Undo Changes']", 30000, null, "7dc0f316-329d-4a09-95a7-5ad90c9c0222");
+                _editsaveptoplanInfo = new RepoItemInfo(this, "EditSavePTOPlan", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Save Changes']", 30000, null, "77165146-0801-4292-8710-bd033f81fcf3");
+                _ptodeletebtnInfo = new RepoItemInfo(this, "PTODeletebtn", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Delete']", 30000, null, "bb993218-78ca-418b-ad57-c31c348b9a5a");
+                _documentcategorydropclickInfo = new RepoItemInfo(this, "DocumentCategoryDropclick", ".//div[#'documentCategory']/div[@id='documentCategory']/div/div[2]/div", 30000, null, "7dfe6241-32e3-4d6c-9b97-137bf3678938");
+                _documentfileemployeecanviewInfo = new RepoItemInfo(this, "DocumentFileEmployeeCanView", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[1]/div/div[4]/input[@name='fileEmployeeCanView']", 30000, null, "be23a5c7-0f04-43c4-8b8a-fe15ca0f5e83");
+                _alerterrorerrorsectionwrapperInfo = new RepoItemInfo(this, "AlertErrorErrorSectionWrapper", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/div", 30000, null, "dc65ccc6-e78a-4d5f-90c2-5ae0fbe53d9b");
+                _documentdeleteInfo = new RepoItemInfo(this, "DocumentDelete", ".//div[#'dropdown-menu']/button[@innertext='Delete']", 30000, null, "571c5e94-5054-49dc-8e9b-d268fb67a891");
                 _documentdelete1Info = new RepoItemInfo(this, "DocumentDelete1", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Delete']", 30000, null, "4e2b22f2-8aaa-4d5a-b352-a900f9a0c01e");
                 _licensesbuttontagaddInfo = new RepoItemInfo(this, "LicensesButtonTagAdd", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div/div/div[1]/button[@innertext='Add']", 30000, null, "39da7470-b1b3-4560-93e6-f6e5453a6328");
                 _licensemanagepopupcloseInfo = new RepoItemInfo(this, "LicenseManagePopupClose", "dom[@domain='devmfc.frankcrum.com']//button[#'modal-close-button']/i", 30000, null, "cc736472-f11c-4b32-9156-a8123f07787b");
                 _licensedescriptionInfo = new RepoItemInfo(this, "LicenseDescription", "dom[@domain='devmfc.frankcrum.com']//div[#'Description']/div/div[2]/div", 30000, null, "f46fde3f-97d3-45ae-88ef-9f1667336e5e");
                 _licensenotesInfo = new RepoItemInfo(this, "LicenseNotes", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div[5]/textarea[@placeholder='Type the note here...']", 30000, null, "999a18f5-888b-4b36-a04f-7f370def7c9a");
-                _licenseundochangesInfo = new RepoItemInfo(this, "LicenseUndoChanges", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Undo Changes']", 30000, null, "2456acd3-c719-485d-a6b8-4bda9ff8a71b");
-                _licensenoteslableInfo = new RepoItemInfo(this, "LicenseNotesLable", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div[5]/label[@innertext='notes']", 30000, null, "dc93739c-bb05-4aeb-801f-ccf8a2decd03");
+                _licenseundochangesInfo = new RepoItemInfo(this, "LicenseUndoChanges", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Undo Changes']", 30000, null, "2456acd3-c719-485d-a6b8-4bda9ff8a71b");
+                _licensenoteslableInfo = new RepoItemInfo(this, "LicenseNotesLable", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[1]/div/div[5]/label[@innertext='notes']", 30000, null, "dc93739c-bb05-4aeb-801f-ccf8a2decd03");
                 _lastdayworkedInfo = new RepoItemInfo(this, "LastDayWorked", "dom[@domain='devmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form[@action='https://devmfc.frankcrum.com/Employees']/div/div/div[4]/div[1]/?/?/div[@innertext='Last day worked']", 30000, null, "8874ea05-872a-4039-9a0d-8607ded19546");
                 _termcancelbtnInfo = new RepoItemInfo(this, "TermCancelbtn", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[14]/button[@innertext='Cancel']", 30000, null, "36b87c07-8437-4994-a7ea-c4141cbd237c");
                 _terminatebtnInfo = new RepoItemInfo(this, "Terminatebtn", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[14]/button[@innertext='Terminate']", 30000, null, "c9fa43d7-dad0-4ed9-aa45-5277da034bec");
@@ -1532,6 +1652,18 @@ namespace MyFrankCrum_EMP
                 _balanceoverviewInfo = new RepoItemInfo(this, "BalanceOverview", ".//div[#'/BalanceOverview']//div[@innertext='Balance Overview']", 30000, null, "ce5b363a-6965-4359-b84c-70898409e3fe");
                 _backtosummaryInfo = new RepoItemInfo(this, "BackToSummary", ".//div[#'app']//div[]/div/div/div/?/?/a[]/button[@innertext='Back To Summary']", 30000, null, "a96af78d-d690-4f67-8b3e-af3e8bed496a");
                 _backtosummary2Info = new RepoItemInfo(this, "BackToSummary2", ".//div[#'app']//div[]/div/div/?/?/a[]/button[@innertext='Back To Summary']", 30000, null, "a65f7410-23a1-4d9f-aa6e-c51efda39581");
+                _divtag5Info = new RepoItemInfo(this, "DivTag5", ".//div[#'app']/div[2]/div[3]/div[]/div/div/div[5]/?/?/form[]/div/div[2]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[@tabindex='0']", 30000, null, "c1ce0780-047f-4c5b-b694-54a85c8aea55");
+                _cancelnewhireprocessInfo = new RepoItemInfo(this, "CancelNewHireProcess", ".//div[#'app']/div[2]/div[3]/div[]/div/div/div[2]//button[@innertext='Cancel New Hire Process']", 30000, null, "a0ee6ac6-df3d-402d-83e9-3687386b56ff");
+                _startnextInfo = new RepoItemInfo(this, "StartNext", ".//div[#'app']/div[2]/div[3]/div[@innertext>'Please fill out all the required']/div/div/div[2]/div/div/?/?/button[@innertext='Next']", 30000, null, "3bdc6254-76ef-438a-831f-d483ec172c7d");
+                _cancelnewhireInfo = new RepoItemInfo(this, "CancelNewHire", ".//div[#'modal-wrapper']/div/div/div[4]/div/div/div[2]/button[@innertext='Cancel New Hire']", 30000, null, "89fb9d43-7d9f-4d41-8b14-f8c83d41a56b");
+                _labeltagsuffixInfo = new RepoItemInfo(this, "LabelTagSuffix", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[1]/div[1]/div[6]//label[@innertext='Birth Date']", 30000, null, "86178bfb-7ac1-4a76-880c-f61ce3f34176");
+                _personalsectionInfo = new RepoItemInfo(this, "PersonalSection", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[2]/div/div[1]/div[1]", 30000, null, "60bb78f6-8c87-4278-99a7-d48fbb91613e");
+                _checksampleInfo = new RepoItemInfo(this, "CheckSample", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[1]/?/?/img[@alt='check-sample']", 30000, null, "87295cd7-78f6-4619-8f03-5ebf529f688a");
+                _pleaseselectInfo = new RepoItemInfo(this, "PleaseSelect", ".//div[#'Location']//div[@innertext='Please Select']", 30000, null, "8f1e4706-95ff-47a5-913c-4c54e1dec83d");
+                _divtag006645a0f21thsnationalllcgaInfo = new RepoItemInfo(this, "DivTag006645A0F21THSNATIONALLLCGA", ".//div[#'Location']/div[2]//div[@innertext>'006645 - A0F21-THS NATIONAL']", 30000, null, "8ded7597-26bd-4541-b63f-f7be6c3a4e52");
+                _checkboxInfo = new RepoItemInfo(this, "Checkbox", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[7]//input[@type='checkbox']", 30000, null, "aceb35b1-13f4-478f-a796-d3818f73b7ea");
+                _historyselectdateInfo = new RepoItemInfo(this, "Historyselectdate", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[8]/div/div/div/div[1]/div[2]/div[2]/div/div/div[2]/div[2]/div/div[@tabindex='0']", 30000, null, "b433c5df-66f5-4924-a22b-04c92c33e2dd");
+                _reactdatepickermonthcontainerInfo = new RepoItemInfo(this, "ReactDatepickerMonthContainer", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[8]/div/div/div/div[1]/div[2]/div[2]/div/div/div[2]", 30000, null, "1e494fb8-cffa-4b85-b796-93e146df62fe");
             }
 
             /// <summary>
@@ -5652,26 +5784,26 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
-            /// The Male item.
+            /// The EditGender item.
             /// </summary>
             [RepositoryItem("c110cc4a-9e00-491b-a53b-26bbe4dafb4c")]
-            public virtual Ranorex.DivTag Male
+            public virtual Ranorex.DivTag EditGender
             {
                 get
                 {
-                    return _maleInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _editgenderInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Male item info.
+            /// The EditGender item info.
             /// </summary>
             [RepositoryItemInfo("c110cc4a-9e00-491b-a53b-26bbe4dafb4c")]
-            public virtual RepoItemInfo MaleInfo
+            public virtual RepoItemInfo EditGenderInfo
             {
                 get
                 {
-                    return _maleInfo;
+                    return _editgenderInfo;
                 }
             }
 
@@ -7692,74 +7824,74 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
-            /// The CssKynsejIndicatorContainerMfcSelect4 item.
+            /// The ReasonClick item.
             /// </summary>
             [RepositoryItem("1bfc2509-6a62-478a-b145-fcc5538c7f26")]
-            public virtual Ranorex.DivTag CssKynsejIndicatorContainerMfcSelect4
+            public virtual Ranorex.DivTag ReasonClick
             {
                 get
                 {
-                    return _csskynsejindicatorcontainermfcselect4Info.CreateAdapter<Ranorex.DivTag>(true);
+                    return _reasonclickInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The CssKynsejIndicatorContainerMfcSelect4 item info.
+            /// The ReasonClick item info.
             /// </summary>
             [RepositoryItemInfo("1bfc2509-6a62-478a-b145-fcc5538c7f26")]
-            public virtual RepoItemInfo CssKynsejIndicatorContainerMfcSelect4Info
+            public virtual RepoItemInfo ReasonClickInfo
             {
                 get
                 {
-                    return _csskynsejindicatorcontainermfcselect4Info;
+                    return _reasonclickInfo;
                 }
             }
 
             /// <summary>
-            /// The CostOfLivingAdjustment item.
+            /// The SelectReason item.
             /// </summary>
             [RepositoryItem("dd4cdaee-27a9-4ac9-b954-287c1e117021")]
-            public virtual Ranorex.DivTag CostOfLivingAdjustment
+            public virtual Ranorex.DivTag SelectReason
             {
                 get
                 {
-                    return _costoflivingadjustmentInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _selectreasonInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The CostOfLivingAdjustment item info.
+            /// The SelectReason item info.
             /// </summary>
             [RepositoryItemInfo("dd4cdaee-27a9-4ac9-b954-287c1e117021")]
-            public virtual RepoItemInfo CostOfLivingAdjustmentInfo
+            public virtual RepoItemInfo SelectReasonInfo
             {
                 get
                 {
-                    return _costoflivingadjustmentInfo;
+                    return _selectreasonInfo;
                 }
             }
 
             /// <summary>
-            /// The CssKynsejIndicatorContainerMfcSelect5 item.
+            /// The ClickJobCode item.
             /// </summary>
             [RepositoryItem("eb630f67-91e5-4217-8b12-13fb421bfbc4")]
-            public virtual Ranorex.DivTag CssKynsejIndicatorContainerMfcSelect5
+            public virtual Ranorex.DivTag ClickJobCode
             {
                 get
                 {
-                    return _csskynsejindicatorcontainermfcselect5Info.CreateAdapter<Ranorex.DivTag>(true);
+                    return _clickjobcodeInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The CssKynsejIndicatorContainerMfcSelect5 item info.
+            /// The ClickJobCode item info.
             /// </summary>
             [RepositoryItemInfo("eb630f67-91e5-4217-8b12-13fb421bfbc4")]
-            public virtual RepoItemInfo CssKynsejIndicatorContainerMfcSelect5Info
+            public virtual RepoItemInfo ClickJobCodeInfo
             {
                 get
                 {
-                    return _csskynsejindicatorcontainermfcselect5Info;
+                    return _clickjobcodeInfo;
                 }
             }
 
@@ -8652,26 +8784,26 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
-            /// The CssKynsejIndicatorContainerMfcSelect9 item.
+            /// The ClickDAT item.
             /// </summary>
             [RepositoryItem("c06f9b4f-3c54-4505-8305-57752ae2309a")]
-            public virtual Ranorex.DivTag CssKynsejIndicatorContainerMfcSelect9
+            public virtual Ranorex.DivTag ClickDAT
             {
                 get
                 {
-                    return _csskynsejindicatorcontainermfcselect9Info.CreateAdapter<Ranorex.DivTag>(true);
+                    return _clickdatInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The CssKynsejIndicatorContainerMfcSelect9 item info.
+            /// The ClickDAT item info.
             /// </summary>
             [RepositoryItemInfo("c06f9b4f-3c54-4505-8305-57752ae2309a")]
-            public virtual RepoItemInfo CssKynsejIndicatorContainerMfcSelect9Info
+            public virtual RepoItemInfo ClickDATInfo
             {
                 get
                 {
-                    return _csskynsejindicatorcontainermfcselect9Info;
+                    return _clickdatInfo;
                 }
             }
 
@@ -12752,6 +12884,294 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _backtosummary2Info;
+                }
+            }
+
+            /// <summary>
+            /// The DivTag5 item.
+            /// </summary>
+            [RepositoryItem("c1ce0780-047f-4c5b-b694-54a85c8aea55")]
+            public virtual Ranorex.DivTag DivTag5
+            {
+                get
+                {
+                    return _divtag5Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DivTag5 item info.
+            /// </summary>
+            [RepositoryItemInfo("c1ce0780-047f-4c5b-b694-54a85c8aea55")]
+            public virtual RepoItemInfo DivTag5Info
+            {
+                get
+                {
+                    return _divtag5Info;
+                }
+            }
+
+            /// <summary>
+            /// The CancelNewHireProcess item.
+            /// </summary>
+            [RepositoryItem("a0ee6ac6-df3d-402d-83e9-3687386b56ff")]
+            public virtual Ranorex.ButtonTag CancelNewHireProcess
+            {
+                get
+                {
+                    return _cancelnewhireprocessInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CancelNewHireProcess item info.
+            /// </summary>
+            [RepositoryItemInfo("a0ee6ac6-df3d-402d-83e9-3687386b56ff")]
+            public virtual RepoItemInfo CancelNewHireProcessInfo
+            {
+                get
+                {
+                    return _cancelnewhireprocessInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StartNext item.
+            /// </summary>
+            [RepositoryItem("3bdc6254-76ef-438a-831f-d483ec172c7d")]
+            public virtual Ranorex.Button StartNext
+            {
+                get
+                {
+                    return _startnextInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StartNext item info.
+            /// </summary>
+            [RepositoryItemInfo("3bdc6254-76ef-438a-831f-d483ec172c7d")]
+            public virtual RepoItemInfo StartNextInfo
+            {
+                get
+                {
+                    return _startnextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CancelNewHire item.
+            /// </summary>
+            [RepositoryItem("89fb9d43-7d9f-4d41-8b14-f8c83d41a56b")]
+            public virtual Ranorex.ButtonTag CancelNewHire
+            {
+                get
+                {
+                    return _cancelnewhireInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CancelNewHire item info.
+            /// </summary>
+            [RepositoryItemInfo("89fb9d43-7d9f-4d41-8b14-f8c83d41a56b")]
+            public virtual RepoItemInfo CancelNewHireInfo
+            {
+                get
+                {
+                    return _cancelnewhireInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LabelTagSuffix item.
+            /// </summary>
+            [RepositoryItem("86178bfb-7ac1-4a76-880c-f61ce3f34176")]
+            public virtual Ranorex.LabelTag LabelTagSuffix
+            {
+                get
+                {
+                    return _labeltagsuffixInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelTagSuffix item info.
+            /// </summary>
+            [RepositoryItemInfo("86178bfb-7ac1-4a76-880c-f61ce3f34176")]
+            public virtual RepoItemInfo LabelTagSuffixInfo
+            {
+                get
+                {
+                    return _labeltagsuffixInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PersonalSection item.
+            /// </summary>
+            [RepositoryItem("60bb78f6-8c87-4278-99a7-d48fbb91613e")]
+            public virtual Ranorex.DivTag PersonalSection
+            {
+                get
+                {
+                    return _personalsectionInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PersonalSection item info.
+            /// </summary>
+            [RepositoryItemInfo("60bb78f6-8c87-4278-99a7-d48fbb91613e")]
+            public virtual RepoItemInfo PersonalSectionInfo
+            {
+                get
+                {
+                    return _personalsectionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckSample item.
+            /// </summary>
+            [RepositoryItem("87295cd7-78f6-4619-8f03-5ebf529f688a")]
+            public virtual Ranorex.ImgTag CheckSample
+            {
+                get
+                {
+                    return _checksampleInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckSample item info.
+            /// </summary>
+            [RepositoryItemInfo("87295cd7-78f6-4619-8f03-5ebf529f688a")]
+            public virtual RepoItemInfo CheckSampleInfo
+            {
+                get
+                {
+                    return _checksampleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PleaseSelect item.
+            /// </summary>
+            [RepositoryItem("8f1e4706-95ff-47a5-913c-4c54e1dec83d")]
+            public virtual Ranorex.DivTag PleaseSelect
+            {
+                get
+                {
+                    return _pleaseselectInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PleaseSelect item info.
+            /// </summary>
+            [RepositoryItemInfo("8f1e4706-95ff-47a5-913c-4c54e1dec83d")]
+            public virtual RepoItemInfo PleaseSelectInfo
+            {
+                get
+                {
+                    return _pleaseselectInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DivTag006645A0F21THSNATIONALLLCGA item.
+            /// </summary>
+            [RepositoryItem("8ded7597-26bd-4541-b63f-f7be6c3a4e52")]
+            public virtual Ranorex.DivTag DivTag006645A0F21THSNATIONALLLCGA
+            {
+                get
+                {
+                    return _divtag006645a0f21thsnationalllcgaInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DivTag006645A0F21THSNATIONALLLCGA item info.
+            /// </summary>
+            [RepositoryItemInfo("8ded7597-26bd-4541-b63f-f7be6c3a4e52")]
+            public virtual RepoItemInfo DivTag006645A0F21THSNATIONALLLCGAInfo
+            {
+                get
+                {
+                    return _divtag006645a0f21thsnationalllcgaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Checkbox item.
+            /// </summary>
+            [RepositoryItem("aceb35b1-13f4-478f-a796-d3818f73b7ea")]
+            public virtual Ranorex.InputTag Checkbox
+            {
+                get
+                {
+                    return _checkboxInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Checkbox item info.
+            /// </summary>
+            [RepositoryItemInfo("aceb35b1-13f4-478f-a796-d3818f73b7ea")]
+            public virtual RepoItemInfo CheckboxInfo
+            {
+                get
+                {
+                    return _checkboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Historyselectdate item.
+            /// </summary>
+            [RepositoryItem("b433c5df-66f5-4924-a22b-04c92c33e2dd")]
+            public virtual Ranorex.DivTag Historyselectdate
+            {
+                get
+                {
+                    return _historyselectdateInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Historyselectdate item info.
+            /// </summary>
+            [RepositoryItemInfo("b433c5df-66f5-4924-a22b-04c92c33e2dd")]
+            public virtual RepoItemInfo HistoryselectdateInfo
+            {
+                get
+                {
+                    return _historyselectdateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ReactDatepickerMonthContainer item.
+            /// </summary>
+            [RepositoryItem("1e494fb8-cffa-4b85-b796-93e146df62fe")]
+            public virtual Ranorex.DivTag ReactDatepickerMonthContainer
+            {
+                get
+                {
+                    return _reactdatepickermonthcontainerInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ReactDatepickerMonthContainer item info.
+            /// </summary>
+            [RepositoryItemInfo("1e494fb8-cffa-4b85-b796-93e146df62fe")]
+            public virtual RepoItemInfo ReactDatepickerMonthContainerInfo
+            {
+                get
+                {
+                    return _reactdatepickermonthcontainerInfo;
                 }
             }
 

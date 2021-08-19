@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="13.69s"
+		durationms="13685"
+		type="root"
+		rid="3913510ea5308a8d"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/16/2021 9:21:07 AM"
+		timestampiso="2021-04-16T13:21:07"
+		endtime="4/16/2021 9:21:21 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Deductions">
+		<detail>
+			Deductions
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.163"
+			timeRelativeToTestModuleStartTime="00:04.163"
+			timeWallClock="09:21:12"
+			time="00:04.163"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>DeductionStartDate, DeductionCode
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.192"
+			timeRelativeToTestModuleStartTime="00:04.192"
+			timeWallClock="09:21:12"
+			time="00:04.192"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList.Deductions' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div[4]/div[1]/ul/?/?/li[@innertext='Deductions']"
+				itempath="?/?/li[@innertext='Deductions']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.ReactTabsTabList.Deductions"
+				id="c01e2383e9c44565b771190f973eba43"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Deductions.cs"
+				codeline="106"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.681"
+			timeRelativeToTestModuleStartTime="00:13.681"
+			timeWallClock="09:21:21"
+			time="00:13.681"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

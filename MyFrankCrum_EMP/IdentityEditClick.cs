@@ -93,8 +93,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.EDIT2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(1));
-            Delay.Duration(30000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(1));
+            Delay.Duration(15000, false);
             
         }
 

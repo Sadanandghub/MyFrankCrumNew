@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="9.78s"
+		durationms="9781"
+		type="root"
+		rid="25ccb43f90a8dbe0"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="4/30/2021 9:45:19 AM"
+		timestampiso="2021-04-30T13:45:19"
+		endtime="4/30/2021 9:45:29 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Validation_for_std_view">
+		<detail>
+			Validation_for_std_view
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.915"
+			timeRelativeToTestModuleStartTime="00:04.915"
+			timeWallClock="09:45:24"
+			time="00:04.915"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.950"
+			timeRelativeToTestModuleStartTime="00:04.950"
+			timeWallClock="09:45:24"
+			time="00:04.950"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating ContainsImage (Screenshot: 'Screenshot4' with region {X=6,Y=3,Width=167,Height=578}) on item 'ApplicationUnderTest.SidebarContentContainer'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'sidebar-content-container']"
+				itempath=".//div[#'sidebar-content-container']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SidebarContentContainer"
+				id="a359618d729f4cf8824dfde5af5cb1ba"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Validation_for_std_view.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.650"
+			timeRelativeToTestModuleStartTime="00:09.650"
+			timeWallClock="09:45:29"
+			time="00:09.650"
+			level="Success"
+			category="Validation">
+			<message>
+				Screenshot of item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.SidebarContentContainer' does contain the specified image.
+			</message>
+			<metainfo
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Validation_for_std_view.cs"
+				codeline="93"
+				loglvl="Success"
+				id="a359618d729f4cf8824dfde5af5cb1ba"
+				path="/dom[@domain='devmfc.frankcrum.com']//div[#'sidebar-content-container']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SidebarContentContainer"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

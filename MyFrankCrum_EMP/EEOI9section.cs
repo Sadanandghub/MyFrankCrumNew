@@ -42,6 +42,7 @@ namespace MyFrankCrum_EMP
         public EEOI9section()
         {
             EEOI9_BirthLocattion = "";
+            EditBirthLocation = "Mumbai";
         }
 
         /// <summary>
@@ -66,6 +67,18 @@ namespace MyFrankCrum_EMP
             set { _EEOI9_BirthLocattion = value; }
         }
 
+        string _EditBirthLocation;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditBirthLocation.
+        /// </summary>
+        [TestVariable("b1473b39-5fdf-47e4-8cd4-56a66f79ea5f")]
+        public string EditBirthLocation
+        {
+            get { return _EditBirthLocation; }
+            set { _EditBirthLocation = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable RepoURL.
         /// </summary>
@@ -74,6 +87,16 @@ namespace MyFrankCrum_EMP
         {
             get { return repo.RepoURL; }
             set { repo.RepoURL = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable BirthCountry.
+        /// </summary>
+        [TestVariable("8c597bc6-0680-4c51-abf0-43bbb80edaa9")]
+        public string BirthCountry
+        {
+            get { return repo.BirthCountry; }
+            set { repo.BirthCountry = value; }
         }
 
 #endregion
@@ -102,75 +125,98 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            // Validaton -EEO/I-9 section
-            Report.Log(ReportLevel.Info, "Section", "Validaton -EEO/I-9 section", new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -1200 units.", new RecordItemIndex(0));
+            Mouse.ScrollWheel(-1200);
+            Delay.Milliseconds(300);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='EEO / I-9   ') on item 'ApplicationUnderTest.EEOI9'.", repo.ApplicationUnderTest.EEOI9Info, new RecordItemIndex(1));
+            Report.Screenshot(ReportLevel.Info, "User", "Before Edit Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(1));
+            
+            // Validaton -EEO/I-9 section
+            Report.Log(ReportLevel.Info, "Section", "Validaton -EEO/I-9 section", new RecordItemIndex(2));
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='EEO / I-9   ') on item 'ApplicationUnderTest.EEOI9'.", repo.ApplicationUnderTest.EEOI9Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.ApplicationUnderTest.EEOI9Info, "InnerText", "EEO / I-9   ");
             Delay.Milliseconds(100);
             
             // Press Edit Button
-            Report.Log(ReportLevel.Info, "Section", "Press Edit Button", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Section", "Press Edit Button", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EDIT_EEOI9Section' at Center.", repo.ApplicationUnderTest.EDIT_EEOI9SectionInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EDIT_EEOI9Section' at Center.", repo.ApplicationUnderTest.EDIT_EEOI9SectionInfo, new RecordItemIndex(5));
             repo.ApplicationUnderTest.EDIT_EEOI9Section.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(6));
             Delay.Duration(5000, false);
             
             // Change one or more of the fields  The Undo Changes button will become enabled
-            Report.Log(ReportLevel.Info, "Section", "Change one or more of the fields  The Undo Changes button will become enabled", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Section", "Change one or more of the fields  The Undo Changes button will become enabled", new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3Info, new RecordItemIndex(8));
             repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EEO_I_9State' at Center.", repo.ApplicationUnderTest.EEO_I_9StateInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EEO_I_9State' at Center.", repo.ApplicationUnderTest.EEO_I_9StateInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.EEO_I_9State.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.UndoChanges'.", repo.ApplicationUnderTest.UndoChangesInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.UndoChanges'.", repo.ApplicationUnderTest.UndoChangesInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.ApplicationUnderTest.UndoChangesInfo, "Enabled", "True");
             Delay.Milliseconds(100);
             
             // Press Undo Changes I The changes you made are reverted
-            Report.Log(ReportLevel.Info, "Section", "Press Undo Changes I The changes you made are reverted", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Section", "Press Undo Changes I The changes you made are reverted", new RecordItemIndex(11));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BirthLocation' at Center.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BirthLocation' at Center.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(12));
             repo.ApplicationUnderTest.BirthLocation.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'TagValue' from item 'ApplicationUnderTest.BirthLocation' and assigning its value to variable 'EEOI9_BirthLocattion'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'TagValue' from item 'ApplicationUnderTest.BirthLocation' and assigning its value to variable 'EEOI9_BirthLocattion'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(13));
             EEOI9_BirthLocattion = repo.ApplicationUnderTest.BirthLocation.Element.GetAttributeValueText("TagValue");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to 'Mumbai' on item 'ApplicationUnderTest.BirthLocation'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(12));
-            repo.ApplicationUnderTest.BirthLocation.Element.SetAttributeValue("TagValue", "Mumbai");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$EditBirthLocation' on item 'ApplicationUnderTest.BirthLocation'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(14));
+            repo.ApplicationUnderTest.BirthLocation.Element.SetAttributeValue("TagValue", EditBirthLocation);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EEOI9UndoChanges' at Center.", repo.ApplicationUnderTest.EEOI9UndoChangesInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EEOI9UndoChanges' at Center.", repo.ApplicationUnderTest.EEOI9UndoChangesInfo, new RecordItemIndex(15));
             repo.ApplicationUnderTest.EEOI9UndoChanges.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$EEOI9_BirthLocattion) on item 'ApplicationUnderTest.BirthLocation'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$EEOI9_BirthLocattion) on item 'ApplicationUnderTest.BirthLocation'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.ApplicationUnderTest.BirthLocationInfo, "TagValue", EEOI9_BirthLocattion);
             Delay.Milliseconds(100);
             
             // Make changes in the dialog box fields and press Save Changes
-            Report.Log(ReportLevel.Info, "Section", "Make changes in the dialog box fields and press Save Changes", new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Section", "Make changes in the dialog box fields and press Save Changes", new RecordItemIndex(17));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BirthLocation' at Center.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3' at Center.", repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3Info, new RecordItemIndex(18));
+            repo.ApplicationUnderTest.CssKynsejIndicatorContainerMfcSelect3.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EEO_I_9State' at Center.", repo.ApplicationUnderTest.EEO_I_9StateInfo, new RecordItemIndex(19));
+            repo.ApplicationUnderTest.EEO_I_9State.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BirthLocation' at Center.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(20));
             repo.ApplicationUnderTest.BirthLocation.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to 'Mumbai' on item 'ApplicationUnderTest.BirthLocation'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(17));
-            repo.ApplicationUnderTest.BirthLocation.Element.SetAttributeValue("TagValue", "Mumbai");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$EditBirthLocation' on item 'ApplicationUnderTest.BirthLocation'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(21));
+            repo.ApplicationUnderTest.BirthLocation.Element.SetAttributeValue("TagValue", EditBirthLocation);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveChanges1' at Center.", repo.ApplicationUnderTest.SaveChanges1Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveChanges1' at Center.", repo.ApplicationUnderTest.SaveChanges1Info, new RecordItemIndex(22));
             repo.ApplicationUnderTest.SaveChanges1.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(23));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -1200 units.", new RecordItemIndex(24));
+            Mouse.ScrollWheel(-1200);
+            Delay.Milliseconds(300);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "After Edit Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(25));
             
         }
 
