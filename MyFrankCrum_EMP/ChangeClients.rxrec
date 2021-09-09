@@ -30,6 +30,19 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Before change the client screenshot"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="41f8c21c-cb15-4ece-a832-d9b644f8d1c0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -625,6 +638,26 @@ UAFFFFAH/9k=
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="After  change the client screenshot"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="41f8c21c-cb15-4ece-a832-d9b644f8d1c0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"

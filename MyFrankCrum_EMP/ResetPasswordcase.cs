@@ -231,11 +231,18 @@ namespace MyFrankCrum_EMP
             // Home Page Validation
             Report.Log(ReportLevel.Info, "Section", "Home Page Validation", new RecordItemIndex(20));
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Employee' at 42;12.", repo.ApplicationUnderTest.EmployeeInfo, new RecordItemIndex(21));
+            repo.ApplicationUnderTest.Employee.Click("42;12");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(22));
+            Delay.Duration(3000, false);
+            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Latest Paycheck (Net Pay):') on item 'ApplicationUnderTest.LatestPaycheckNetPay'.", repo.ApplicationUnderTest.LatestPaycheckNetPayInfo, new RecordItemIndex(21));
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Latest Paycheck (Net Pay):') on item 'ApplicationUnderTest.LatestPaycheckNetPay'.", repo.ApplicationUnderTest.LatestPaycheckNetPayInfo, new RecordItemIndex(23));
                 Validate.AttributeEqual(repo.ApplicationUnderTest.LatestPaycheckNetPayInfo, "InnerText", "Latest Paycheck (Net Pay):", null, false);
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(21)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(23)); }
             
         }
 

@@ -41,7 +41,7 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public Home()
         {
-            RepoURL = "devmfc.frankcrum.com";
+            RepoURL = "mfcdev05.frankcrum.com";
         }
 
         /// <summary>

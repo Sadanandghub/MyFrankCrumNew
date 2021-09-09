@@ -41,6 +41,9 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public TerminateActiveEmployee()
         {
+            TerminateDate = "04/08/2021";
+            TermiLastWorkDate = "20/08/2021";
+            TermiPayThrough = "25/08/2021";
         }
 
         /// <summary>
@@ -52,6 +55,42 @@ namespace MyFrankCrum_EMP
         }
 
 #region Variables
+
+        string _TerminateDate;
+
+        /// <summary>
+        /// Gets or sets the value of variable TerminateDate.
+        /// </summary>
+        [TestVariable("2eb71069-00aa-416b-88f2-518423a917d2")]
+        public string TerminateDate
+        {
+            get { return _TerminateDate; }
+            set { _TerminateDate = value; }
+        }
+
+        string _TermiLastWorkDate;
+
+        /// <summary>
+        /// Gets or sets the value of variable TermiLastWorkDate.
+        /// </summary>
+        [TestVariable("d08edb2e-5e7a-4d38-86da-b1fee5d3bc70")]
+        public string TermiLastWorkDate
+        {
+            get { return _TermiLastWorkDate; }
+            set { _TermiLastWorkDate = value; }
+        }
+
+        string _TermiPayThrough;
+
+        /// <summary>
+        /// Gets or sets the value of variable TermiPayThrough.
+        /// </summary>
+        [TestVariable("e60e036d-519c-45d1-acfc-d1d730545cca")]
+        public string TermiPayThrough
+        {
+            get { return _TermiPayThrough; }
+            set { _TermiPayThrough = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable RepoURL.
@@ -119,138 +158,155 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.TerminateDate.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04/01/2021' with focus on 'ApplicationUnderTest.TerminateDate'.", repo.ApplicationUnderTest.TerminateDateInfo, new RecordItemIndex(6));
-            repo.ApplicationUnderTest.TerminateDate.PressKeys("04/01/2021");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TerminateDate' with focus on 'ApplicationUnderTest.TerminateDate'.", repo.ApplicationUnderTest.TerminateDateInfo, new RecordItemIndex(6));
+            //repo.ApplicationUnderTest.TerminateDate.PressKeys(TerminateDate);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$TerminateDate' on item 'ApplicationUnderTest.TerminateDate'.", repo.ApplicationUnderTest.TerminateDateInfo, new RecordItemIndex(7));
+            repo.ApplicationUnderTest.TerminateDate.Element.SetAttributeValue("Value", TerminateDate);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(8));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LastDayWorked' at Center.", repo.ApplicationUnderTest.LastDayWorkedInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LastDayWorked' at Center.", repo.ApplicationUnderTest.LastDayWorkedInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.LastDayWorked.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermiLastWorkDate' at Center.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermiLastWorkDate' at Center.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(10));
             repo.ApplicationUnderTest.TermiLastWorkDate.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04/03/2021' with focus on 'ApplicationUnderTest.TermiLastWorkDate'.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04/03/2021' with focus on 'ApplicationUnderTest.TermiLastWorkDate'.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(11));
             //repo.ApplicationUnderTest.TermiLastWorkDate.PressKeys("04/03/2021");
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '04/03/2021' on item 'ApplicationUnderTest.TermiLastWorkDate'.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(11));
-            repo.ApplicationUnderTest.TermiLastWorkDate.Element.SetAttributeValue("Value", "04/03/2021");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$TermiLastWorkDate' on item 'ApplicationUnderTest.TermiLastWorkDate'.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(12));
+            repo.ApplicationUnderTest.TermiLastWorkDate.Element.SetAttributeValue("Value", TermiLastWorkDate);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermiPayThrough' at Center.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermiPayThrough' at Center.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(13));
             repo.ApplicationUnderTest.TermiPayThrough.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04/03/2021' with focus on 'ApplicationUnderTest.TermiPayThrough'.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(13));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04/03/2021' with focus on 'ApplicationUnderTest.TermiPayThrough'.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(14));
             //repo.ApplicationUnderTest.TermiPayThrough.PressKeys("04/03/2021");
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '04/04/2021' on item 'ApplicationUnderTest.TermiPayThrough'.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(14));
-            repo.ApplicationUnderTest.TermiPayThrough.Element.SetAttributeValue("Value", "04/04/2021");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$TermiPayThrough' on item 'ApplicationUnderTest.TermiPayThrough'.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(15));
+            repo.ApplicationUnderTest.TermiPayThrough.Element.SetAttributeValue("Value", TermiPayThrough);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermReasonClick' at Center.", repo.ApplicationUnderTest.TermReasonClickInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermReasonClick' at Center.", repo.ApplicationUnderTest.TermReasonClickInfo, new RecordItemIndex(16));
             repo.ApplicationUnderTest.TermReasonClick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermReasonValue' at Center.", repo.ApplicationUnderTest.TermReasonValueInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermReasonValue' at Center.", repo.ApplicationUnderTest.TermReasonValueInfo, new RecordItemIndex(17));
             repo.ApplicationUnderTest.TermReasonValue.Click();
             Delay.Milliseconds(0);
             
             // Press the Cancel button
-            Report.Log(ReportLevel.Info, "Section", "Press the Cancel button", new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Section", "Press the Cancel button", new RecordItemIndex(18));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermCancelbtn' at Center.", repo.ApplicationUnderTest.TermCancelbtnInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermCancelbtn' at Center.", repo.ApplicationUnderTest.TermCancelbtnInfo, new RecordItemIndex(19));
             repo.ApplicationUnderTest.TermCancelbtn.Click();
             Delay.Milliseconds(0);
             
             // On an employee row click "Terminate Employee" in the right menu
-            Report.Log(ReportLevel.Info, "Section", "On an employee row click \"Terminate Employee\" in the right menu", new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Section", "On an employee row click \"Terminate Employee\" in the right menu", new RecordItemIndex(20));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.GrayBox' at Center.", repo.ApplicationUnderTest.GrayBoxInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.GrayBox' at Center.", repo.ApplicationUnderTest.GrayBoxInfo, new RecordItemIndex(21));
             repo.ApplicationUnderTest.GrayBox.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateClick' at Center.", repo.ApplicationUnderTest.TerminateClickInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateClick' at Center.", repo.ApplicationUnderTest.TerminateClickInfo, new RecordItemIndex(22));
             repo.ApplicationUnderTest.TerminateClick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(23));
             Delay.Duration(10000, false);
             
             // Enter the required data
-            Report.Log(ReportLevel.Info, "Section", "Enter the required data", new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Section", "Enter the required data", new RecordItemIndex(24));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateDate' at Center.", repo.ApplicationUnderTest.TerminateDateInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateDate' at Center.", repo.ApplicationUnderTest.TerminateDateInfo, new RecordItemIndex(25));
             repo.ApplicationUnderTest.TerminateDate.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04/01/2021' with focus on 'ApplicationUnderTest.TerminateDate'.", repo.ApplicationUnderTest.TerminateDateInfo, new RecordItemIndex(25));
-            repo.ApplicationUnderTest.TerminateDate.PressKeys("04/01/2021");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TerminateDate' with focus on 'ApplicationUnderTest.TerminateDate'.", repo.ApplicationUnderTest.TerminateDateInfo, new RecordItemIndex(26));
+            repo.ApplicationUnderTest.TerminateDate.PressKeys(TerminateDate);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(26));
+            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$TerminateDate' on item 'ApplicationUnderTest.TerminateDate'.", repo.ApplicationUnderTest.TerminateDateInfo, new RecordItemIndex(27));
+            //repo.ApplicationUnderTest.TerminateDate.Element.SetAttributeValue("Value", TerminateDate);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(28));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LastDayWorked' at Center.", repo.ApplicationUnderTest.LastDayWorkedInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SelectDate' at 12;15.", repo.ApplicationUnderTest.SelectDateInfo, new RecordItemIndex(29));
+            repo.ApplicationUnderTest.SelectDate.Click("12;15");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LastDayWorked' at Center.", repo.ApplicationUnderTest.LastDayWorkedInfo, new RecordItemIndex(30));
             repo.ApplicationUnderTest.LastDayWorked.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermiLastWorkDate' at Center.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(28));
-            repo.ApplicationUnderTest.TermiLastWorkDate.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.TermiLastWorkDate'.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(31));
+            Keyboard.PrepareFocus(repo.ApplicationUnderTest.TermiLastWorkDate);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04/03/2021' with focus on 'ApplicationUnderTest.TermiLastWorkDate'.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(29));
-            //repo.ApplicationUnderTest.TermiLastWorkDate.PressKeys("04/03/2021");
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TermiLastWorkDate' with focus on 'ApplicationUnderTest.TermiLastWorkDate'.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(32));
+            repo.ApplicationUnderTest.TermiLastWorkDate.PressKeys(TermiLastWorkDate);
+            Delay.Milliseconds(20);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '04/03/2021' on item 'ApplicationUnderTest.TermiLastWorkDate'.", repo.ApplicationUnderTest.TermiLastWorkDateInfo, new RecordItemIndex(30));
-            repo.ApplicationUnderTest.TermiLastWorkDate.Element.SetAttributeValue("Value", "04/03/2021");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(33));
+            Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermiPayThrough' at Center.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermiPayThrough' at Center.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(34));
             repo.ApplicationUnderTest.TermiPayThrough.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '04/03/2021' with focus on 'ApplicationUnderTest.TermiPayThrough'.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(32));
-            //repo.ApplicationUnderTest.TermiPayThrough.PressKeys("04/03/2021");
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '04/04/2021' on item 'ApplicationUnderTest.TermiPayThrough'.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(33));
-            repo.ApplicationUnderTest.TermiPayThrough.Element.SetAttributeValue("Value", "04/04/2021");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.TermiPayThrough'.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(35));
+            Keyboard.PrepareFocus(repo.ApplicationUnderTest.TermiPayThrough);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermReasonClick' at Center.", repo.ApplicationUnderTest.TermReasonClickInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TermiPayThrough' with focus on 'ApplicationUnderTest.TermiPayThrough'.", repo.ApplicationUnderTest.TermiPayThroughInfo, new RecordItemIndex(36));
+            repo.ApplicationUnderTest.TermiPayThrough.PressKeys(TermiPayThrough);
+            Delay.Milliseconds(20);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PayThrough' at 36;10.", repo.ApplicationUnderTest.PayThroughInfo, new RecordItemIndex(37));
+            repo.ApplicationUnderTest.PayThrough.Click("36;10");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermReasonClick' at Center.", repo.ApplicationUnderTest.TermReasonClickInfo, new RecordItemIndex(38));
             repo.ApplicationUnderTest.TermReasonClick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermReasonValue' at Center.", repo.ApplicationUnderTest.TermReasonValueInfo, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TermReasonValue' at Center.", repo.ApplicationUnderTest.TermReasonValueInfo, new RecordItemIndex(39));
             repo.ApplicationUnderTest.TermReasonValue.Click();
             Delay.Milliseconds(0);
             
             // Press the Terminate button
-            Report.Log(ReportLevel.Info, "Section", "Press the Terminate button", new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Section", "Press the Terminate button", new RecordItemIndex(40));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Terminatebtn' at Center.", repo.ApplicationUnderTest.TerminatebtnInfo, new RecordItemIndex(37));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Terminatebtn' at Center.", repo.ApplicationUnderTest.TerminatebtnInfo, new RecordItemIndex(41));
             repo.ApplicationUnderTest.Terminatebtn.Click();
             Delay.Milliseconds(0);
             
             // Press Yes, Terminate
-            Report.Log(ReportLevel.Info, "Section", "Press Yes, Terminate", new RecordItemIndex(38));
+            Report.Log(ReportLevel.Info, "Section", "Press Yes, Terminate", new RecordItemIndex(42));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateYesbtn' at Center.", repo.ApplicationUnderTest.TerminateYesbtnInfo, new RecordItemIndex(39));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TerminateYesbtn' at Center.", repo.ApplicationUnderTest.TerminateYesbtnInfo, new RecordItemIndex(43));
             repo.ApplicationUnderTest.TerminateYesbtn.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(44));
             Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Emp Count After done Inactive Employee", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(41));
+            Report.Screenshot(ReportLevel.Info, "User", "Emp Count After done Inactive Employee", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(45));
             
         }
 

@@ -93,11 +93,7 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.Unifiedsettings.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Stdchecked' at Center.", repo.ApplicationUnderTest.StdcheckedInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.Stdchecked.Click();
-            Delay.Milliseconds(2080);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(1));
             Delay.Duration(60000, false);
             
         }

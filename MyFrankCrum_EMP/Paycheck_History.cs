@@ -112,9 +112,9 @@ namespace MyFrankCrum_EMP
             
             Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(6));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DivTagGoBackToPaycheckHistory' at 53;7.", repo.ApplicationUnderTest.DivTagGoBackToPaycheckHistoryInfo, new RecordItemIndex(7));
-            repo.ApplicationUnderTest.DivTagGoBackToPaycheckHistory.Click("53;7");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DivTagGoBackToPaycheckHistory' at 53;7.", repo.ApplicationUnderTest.DivTagGoBackToPaycheckHistoryInfo, new RecordItemIndex(7));
+            //repo.ApplicationUnderTest.DivTagGoBackToPaycheckHistory.Click("53;7");
+            //Delay.Milliseconds(0);
             
         }
 

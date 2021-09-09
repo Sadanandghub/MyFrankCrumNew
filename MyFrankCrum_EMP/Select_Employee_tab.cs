@@ -96,6 +96,8 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
             Delay.Duration(3000, false);
             
+            Report.Screenshot(ReportLevel.Info, "User", "After Login Home Page screenshot taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
+            
         }
 
 #region Image Feature Data

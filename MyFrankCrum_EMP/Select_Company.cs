@@ -42,7 +42,7 @@ namespace MyFrankCrum_EMP
         public Select_Company()
         {
             CompName = "A0F21";
-            RepoURL = "mfcdev05.frankcrum.com";
+            RepoURL = "mfcqa01.frankcrum.com";
         }
 
         /// <summary>

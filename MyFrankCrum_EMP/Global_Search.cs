@@ -117,16 +117,20 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(3));
             Delay.Duration(10000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at CenterLeft.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(4));
+            Report.Screenshot(ReportLevel.Info, "User", "Globle search screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(4));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at CenterLeft.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(5));
             repo.ApplicationUnderTest.DropdownMenuButton1.Click(Location.CenterLeft);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(6));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EmpdetailsClick' at Center.", repo.ApplicationUnderTest.EmpdetailsClickInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EmpdetailsClick' at Center.", repo.ApplicationUnderTest.EmpdetailsClickInfo, new RecordItemIndex(7));
             repo.ApplicationUnderTest.EmpdetailsClick.Click();
             Delay.Milliseconds(0);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Globle search screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(8));
             
         }
 

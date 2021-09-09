@@ -100,27 +100,31 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChangeCompany' at Center.", repo.ApplicationUnderTest.ChangeCompanyInfo, new RecordItemIndex(0));
+            Report.Screenshot(ReportLevel.Info, "User", "Before change the client screenshot", null, false, new RecordItemIndex(0));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChangeCompany' at Center.", repo.ApplicationUnderTest.ChangeCompanyInfo, new RecordItemIndex(1));
             repo.ApplicationUnderTest.ChangeCompany.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Text1' at Center.", repo.ApplicationUnderTest.Text1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Text1' at Center.", repo.ApplicationUnderTest.Text1Info, new RecordItemIndex(3));
             repo.ApplicationUnderTest.Text1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ChangeCompanyName' with focus on 'ApplicationUnderTest.Text1'.", repo.ApplicationUnderTest.Text1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ChangeCompanyName' with focus on 'ApplicationUnderTest.Text1'.", repo.ApplicationUnderTest.Text1Info, new RecordItemIndex(4));
             repo.ApplicationUnderTest.Text1.PressKeys(ChangeCompanyName);
             Delay.Milliseconds(20);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SelectChangecompany' at Center.", repo.ApplicationUnderTest.SelectChangecompanyInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SelectChangecompany' at Center.", repo.ApplicationUnderTest.SelectChangecompanyInfo, new RecordItemIndex(5));
             repo.ApplicationUnderTest.SelectChangecompany.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(6));
             Delay.Duration(3000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "After  change the client screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(7));
             
         }
 

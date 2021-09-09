@@ -97,6 +97,23 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.History.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
+            Delay.Duration(3000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(3));
+            
+            // Check the History tab Paging Links
+            Report.Log(ReportLevel.Info, "Section", "Check the History tab Paging Links", new RecordItemIndex(4));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SomeATag' at 15;16.", repo.ApplicationUnderTest.SomeATagInfo, new RecordItemIndex(5));
+            repo.ApplicationUnderTest.SomeATag.Click("15;16");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(6));
+            Delay.Duration(5000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(7));
+            
         }
 
 #region Image Feature Data
