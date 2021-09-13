@@ -24,15 +24,66 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="0e96c659-e6f7-4a3f-9823-0da4e672f596"
+			name="Login"
+			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Password"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<setup
+			id="0f6d6427-4e19-4330-9e67-a5d54be350a8"
+			name="setup">
+			</setup>
 			<setup
 			id="184365b8-1661-4741-b52b-4b42fd7213dd"
 			name="setup">
 			</setup>
 			<testcase
+			datarangeactive="True"
 			datasource="WSE_Login_Page"
 			id="1a7af161-b71a-450c-8c3a-04fb258e1b20"
-			maxrange="1"
-			minrange="1"
+			maxrange="2"
+			minrange="2"
 			name="WSE_Login_Page(8070)">
 			</testcase>
 			<teardown
@@ -52,6 +103,74 @@
 					variablename="RepoURL">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="209814ae-40ae-48a5-9599-e77bf993035f"
+			name="Login_Page_Screenshot"
+			ref="cca02172-a68e-45a0-9b79-3d6006efb75a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="f49a8467-1353-4d58-afe6-12fb2eafc74f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="341d1b09-9edc-40a5-950e-507823098846"
+			name="OpenBrowser"
+			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testcase
 			datasource="Direct_Deposit_Settings"
@@ -214,6 +333,29 @@
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
+			<testmodule
+			enabled="False"
+			id="77c1e29b-b3f9-4bf7-8e96-64137eac14cf"
+			name="CloseBrowser"
+			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<smartfoldernode
 			id="79f0c330-c659-40f8-9882-35298e6ef68a"
 			name="WSE_Menu_Item-_Paychecks(8074)">
@@ -405,6 +547,10 @@
 			id="91ea15b0-4490-4156-b176-b311851967af"
 			name="setup">
 			</setup>
+			<smartfoldernode
+			id="92a855da-3293-48bb-bf77-daca890749c5"
+			name="ER-_Login_and_Home_Screens">
+			</smartfoldernode>
 			<testmodule
 			id="9858bfa6-562a-4ae3-82a7-0f30b71fa1f6"
 			name="OpenBrowser"
@@ -533,6 +679,15 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testcase
+			datasource="ER_Login_Page"
+			id="a899065f-ea35-4679-bd77-aedd85eb30d6"
+			name="ER-_Login_Page">
+			</testcase>
+			<teardown
+			id="aa0b8c71-a836-409d-82b8-35563c5f89fc"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="b522b115-0994-441a-b6f4-55c77dfecd41"
 			name="Login"
@@ -749,6 +904,40 @@
 			id="dd446e25-5de6-4741-86cc-1b8af653aa62"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="ee156f8e-a71c-497a-8d6b-5e949d2c67a8"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CompName"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="47b858f9-4b21-4ecf-a127-a6446276d469"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="47b858f9-4b21-4ecf-a127-a6446276d469"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="ee3a4bde-8a80-4271-a630-0741b27640e7"
 			name="Login"
@@ -1019,6 +1208,42 @@
 							</teardown>
 						</testcase>
 					</smartfoldernode>
+					<smartfoldernode
+					id="92a855da-3293-48bb-bf77-daca890749c5"
+					name="ER-_Login_and_Home_Screens">
+						<testcase
+						id="a899065f-ea35-4679-bd77-aedd85eb30d6"
+						name="ER-_Login_Page">
+							<setup
+							id="0f6d6427-4e19-4330-9e67-a5d54be350a8"
+							name="setup">
+								<testmodule
+								id="341d1b09-9edc-40a5-950e-507823098846"
+								name="OpenBrowser">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="0e96c659-e6f7-4a3f-9823-0da4e672f596"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="ee156f8e-a71c-497a-8d6b-5e949d2c67a8"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="209814ae-40ae-48a5-9599-e77bf993035f"
+							name="Login_Page_Screenshot">
+							</testmodule>
+							<teardown
+							id="aa0b8c71-a836-409d-82b8-35563c5f89fc"
+							name="teardown">
+								<testmodule
+								id="77c1e29b-b3f9-4bf7-8e96-64137eac14cf"
+								name="CloseBrowser">
+								</testmodule>
+							</teardown>
+						</testcase>
+					</smartfoldernode>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -1102,6 +1327,44 @@
 		</DataSource>
 		<DataSource
 		filename="Segment_A.xlsx"
+		id="6581d58f-4e63-416d-bdaf-8c34d54e8e15"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="ER_Login_Page"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="ER_Login_Page"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					TC's ID
+				</column>
+				<column>
+					TC Name
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					RepoURL
+				</column>
+				<column>
+					UserId
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					CompName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="Segment_A.xlsx"
 		id="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
 		includefile="Unchecked"
 		lastknownrowcount="1"
@@ -1142,7 +1405,7 @@
 		filename="Segment_A.xlsx"
 		id="fd5a45a7-1fde-4b94-81f4-1c6d5a27b588"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="3"
 		name="WSE_Home_Page"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="WSE_Home_Page"
@@ -1180,7 +1443,7 @@
 		filename="Segment_A.xlsx"
 		id="f49a8467-1353-4d58-afe6-12fb2eafc74f"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="3"
 		name="WSE_Login_Page"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="WSE_Login_Page"
