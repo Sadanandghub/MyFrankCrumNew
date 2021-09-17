@@ -1391,6 +1391,50 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.Documents_Tab">
+             <summary>
+            The Documents_Tab recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Documents_Tab.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Documents_Tab.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Documents_Tab.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Documents_Tab.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Documents_Tab.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Documents_Tab.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Documents_Tab.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Documents_Tab.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.Edit_Direct_Deposite_Account">
              <summary>
             The Edit_Direct_Deposite_Account recording.
@@ -1445,6 +1489,50 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:MyFrankCrum_EMP.Edit_Direct_Deposite_Account.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.EmployeeList_Screenshot">
+             <summary>
+            The EmployeeList_Screenshot recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.EmployeeList_Screenshot.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.EmployeeList_Screenshot.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EmployeeList_Screenshot.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.EmployeeList_Screenshot.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.EmployeeList_Screenshot.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.EmployeeList_Screenshot.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.EmployeeList_Screenshot.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.EmployeeList_Screenshot.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -2515,6 +2603,50 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.Home_Page_Validaton">
+             <summary>
+            The Home_Page_Validaton recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Home_Page_Validaton.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Home_Page_Validaton.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Home_Page_Validaton.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Home_Page_Validaton.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Home_Page_Validaton.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Home_Page_Validaton.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Home_Page_Validaton.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Home_Page_Validaton.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.InvoicesSearchByNumber">
              <summary>
             The InvoicesSearchByNumber recording.
@@ -3524,6 +3656,50 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.OSHA_Form_Link">
+             <summary>
+            The OSHA_Form_Link recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.OSHA_Form_Link.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.OSHA_Form_Link.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.OSHA_Form_Link.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.OSHA_Form_Link.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.OSHA_Form_Link.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.OSHA_Form_Link.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.OSHA_Form_Link.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.OSHA_Form_Link.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.PaycheckViewDetail">
              <summary>
             The PaycheckViewDetail recording.
@@ -3700,6 +3876,50 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:MyFrankCrum_EMP.Pay_History_Tab">
+             <summary>
+            The Pay_History_Tab recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Pay_History_Tab.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Pay_History_Tab.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Pay_History_Tab.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Pay_History_Tab.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Pay_History_Tab.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Pay_History_Tab.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Pay_History_Tab.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Pay_History_Tab.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:MyFrankCrum_EMP.percentPERCT">
              <summary>
             The percentPERCT recording.
@@ -3739,6 +3959,50 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:MyFrankCrum_EMP.percentPERCT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:MyFrankCrum_EMP.Personal_Tab_Screenshot">
+             <summary>
+            The Personal_Tab_Screenshot recording.
+             </summary>
+        </member>
+        <member name="F:MyFrankCrum_EMP.Personal_Tab_Screenshot.repo">
+            <summary>
+            Holds an instance of the MyFrankCrum_EMPRepository repository.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Personal_Tab_Screenshot.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Personal_Tab_Screenshot.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.Personal_Tab_Screenshot.RepoURL">
+            <summary>
+            Gets or sets the value of variable RepoURL.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Personal_Tab_Screenshot.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyFrankCrum_EMP.Personal_Tab_Screenshot.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Personal_Tab_Screenshot.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyFrankCrum_EMP.Personal_Tab_Screenshot.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -12293,6 +12557,26 @@
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.AddNewAccountInfo">
             <summary>
             The AddNewAccount item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.OSHAForms">
+            <summary>
+            The OSHAForms item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.OSHAFormsInfo">
+            <summary>
+            The OSHAForms item info.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.Iwantlink">
+            <summary>
+            The Iwantlink item.
+            </summary>
+        </member>
+        <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.IwantlinkInfo">
+            <summary>
+            The Iwantlink item info.
             </summary>
         </member>
         <member name="P:MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.ReactTabsTabList">

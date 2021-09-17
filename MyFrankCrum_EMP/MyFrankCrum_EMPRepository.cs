@@ -107,7 +107,7 @@ namespace MyFrankCrum_EMP
             set { _Emp = value; }
         }
 
-        string _EmpName = "Apple";
+        string _EmpName = "Draper";
 
         /// <summary>
         /// Gets or sets the value of variable EmpName.
@@ -1296,6 +1296,8 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _paychecksInfo;
             RepoItemInfo _directdepositsettingsInfo;
             RepoItemInfo _addnewaccountInfo;
+            RepoItemInfo _oshaformsInfo;
+            RepoItemInfo _iwantlinkInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -1403,7 +1405,7 @@ namespace MyFrankCrum_EMP
                 _job_codeInfo = new RepoItemInfo(this, "Job_Code", ".//div[#'jobCode']/div[@id='jobCode']/div/?/?/div/div[@innertext=$JobCode]", 30000, null, "e93470a6-73b3-4ae7-bfc8-07346c090c21");
                 _pendingtimeoffrequests0Info = new RepoItemInfo(this, "PendingTimeOffRequests0", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/div[1]/div[1]/?/?/div[@innertext>'Pending Time Off Requests']", 30000, null, "c56020f0-77cb-4f3b-959c-9530964f1a71");
                 _timeoffcalendarInfo = new RepoItemInfo(this, "TimeOffCalendar", ".//div[#'app']/div[2]/div[3]/div/div/div[2]/?/?/h5[@innertext='Time Off Calendar']", 30000, null, "b0975e3b-721e-4b0e-87b0-893b6f26a04c");
-                _companynewsInfo = new RepoItemInfo(this, "CompanyNews", ".//div[#'app']/div[2]/div[3]/div/div/div[3]/?/?/h5[@innertext>'Company News']", 30000, null, "b76c8e54-8672-4017-8805-a419cfa206ac");
+                _companynewsInfo = new RepoItemInfo(this, "CompanyNews", ".//div[#'app']/div[2]/div[3]/div/div/div/div/div//h5[@innertext>'Company News']", 30000, null, "b76c8e54-8672-4017-8805-a419cfa206ac");
                 _employeesInfo = new RepoItemInfo(this, "Employees", ".//div[#'/Employees']//div[@innertext='Employees']", 30000, null, "4c761a55-0c84-4b80-b662-f8ba98ff564f");
                 _detailsInfo = new RepoItemInfo(this, "Details", ".//div[#'dropdown-menu']/button[@innertext='Details']", 30000, null, "98189446-a511-431a-b6da-465fbad7b1c7");
                 _terminateemployeeInfo = new RepoItemInfo(this, "TerminateEmployee", ".//div[#'dropdown-menu']/button[@innertext='Terminate Employee']", 30000, null, "ce2aa6e5-6c76-4365-b1e6-dadd03fbe9dc");
@@ -1764,7 +1766,7 @@ namespace MyFrankCrum_EMP
                 _finishInfo = new RepoItemInfo(this, "Finish", ".//div[#'app']/div[2]/div[3]/div/div/div/div[9]/div/div/?/?/button[@innertext='Finish']", 30000, null, "976c2a0b-a8e8-439c-9b26-5171ee935f29");
                 _newhirerehireInfo = new RepoItemInfo(this, "NewHireRehire", "element", 30000, null, "3caa5afb-38b1-46ee-b9b2-24471b1802b4");
                 _timeentryInfo = new RepoItemInfo(this, "TimeEntry", ".//div[#'sidebar-content-container']/div[6]/div[2]/div[1]//div[@innertext='Time Entry']", 30000, null, "07efcd65-2f42-4d2f-8bfb-fca9d2c2cf8b");
-                _divtagw2Info = new RepoItemInfo(this, "DivTagW2", ".//div[#'sidebar-content-container']/div[6]/div[2]/div[1]//div[@innertext='W-2']", 30000, null, "77fb02e4-fb0e-4d04-b5f9-a07baf342bec");
+                _divtagw2Info = new RepoItemInfo(this, "DivTagW2", ".//div[#'sidebar-content-container']/div/div[2]/div[1]//div[@innertext='W-2']", 30000, null, "77fb02e4-fb0e-4d04-b5f9-a07baf342bec");
                 _pendingrequestsInfo = new RepoItemInfo(this, "PendingRequests", ".//div[#'sidebar-content-container']/div[]//a[]/?/?/div[@innertext='Pending Requests']", 30000, null, "076e92ce-0706-40e9-b92e-33e11653a14c");
                 _reviewInfo = new RepoItemInfo(this, "Review", ".//div[#'app']/div[2]/div[3]/div/div/div/div/?/?/button[@innertext='Review']", 30000, null, "316c0a78-1788-4a13-bc66-ffa85a4a11d0");
                 _approvedstatuses0selectedInfo = new RepoItemInfo(this, "ApprovedStatuses0Selected", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/div/div[5]/div/div[3]/input[@name='approvedStatuses[0].selected']", 30000, null, "cd06245b-3ac7-4751-94ea-bcbe756df093");
@@ -1832,6 +1834,8 @@ namespace MyFrankCrum_EMP
                 _paychecksInfo = new RepoItemInfo(this, "Paychecks", ".//div[#'app']/div[2]/div[3]//header/?/?/h2[@tagname='h2']", 30000, null, "69ffb112-4e2e-4522-ae10-8253dfbd9d48");
                 _directdepositsettingsInfo = new RepoItemInfo(this, "DirectDepositSettings", ".//div[#'/DirectDepositSettings']//div[@innertext='Direct Deposit Settings']", 30000, null, "f5650ced-8b5b-47ef-afc9-52bbc55cd1c0");
                 _addnewaccountInfo = new RepoItemInfo(this, "AddNewAccount", ".//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[1]/?/?/button[@innertext='Add New Account']", 30000, null, "dc86be1f-2f6b-4dd6-9400-9e2205c7e485");
+                _oshaformsInfo = new RepoItemInfo(this, "OSHAForms", ".//div[#'sidebar-content-container']/div[5]/div[2]/div[3]//div[@innertext='OSHA Forms']", 30000, null, "361c7cb4-6639-4fda-8963-a51aa5748c67");
+                _iwantlinkInfo = new RepoItemInfo(this, "Iwantlink", ".//div[#'app']/div[2]/div[3]/div/div/div[2]//div[@innertext='I Want To']", 30000, null, "7a5bd1fd-0914-4291-a63b-329741d6c3ac");
             }
 
             /// <summary>
@@ -14564,6 +14568,54 @@ namespace MyFrankCrum_EMP
                 get
                 {
                     return _addnewaccountInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OSHAForms item.
+            /// </summary>
+            [RepositoryItem("361c7cb4-6639-4fda-8963-a51aa5748c67")]
+            public virtual Ranorex.DivTag OSHAForms
+            {
+                get
+                {
+                    return _oshaformsInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OSHAForms item info.
+            /// </summary>
+            [RepositoryItemInfo("361c7cb4-6639-4fda-8963-a51aa5748c67")]
+            public virtual RepoItemInfo OSHAFormsInfo
+            {
+                get
+                {
+                    return _oshaformsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Iwantlink item.
+            /// </summary>
+            [RepositoryItem("7a5bd1fd-0914-4291-a63b-329741d6c3ac")]
+            public virtual Ranorex.DivTag Iwantlink
+            {
+                get
+                {
+                    return _iwantlinkInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Iwantlink item info.
+            /// </summary>
+            [RepositoryItemInfo("7a5bd1fd-0914-4291-a63b-329741d6c3ac")]
+            public virtual RepoItemInfo IwantlinkInfo
+            {
+                get
+                {
+                    return _iwantlinkInfo;
                 }
             }
 

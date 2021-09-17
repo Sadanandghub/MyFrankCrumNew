@@ -881,7 +881,7 @@ name="MyFrankCrum_EMPRepository">
 			name="CompanyNews"
 			refimgid="326a43cd-13d8-46ac-8a38-edca29afa307"
 			searchtimeout="30000ms">
-				/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div[3]/?/?/h5[@innertext&gt;'Company News']
+				/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div/div/div//h5[@innertext&gt;'Company News']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -6626,9 +6626,8 @@ l/47836Pxj9HkcGNiIo0T/4/XD9dD+vyfQEAAAAASUVORK5CYII=
 			id="77fb02e4-fb0e-4d04-b5f9-a07baf342bec"
 			name="DivTagW2"
 			refimgid="96faa64c-5a26-4f4b-ab2e-2cd681886289"
-			refpath="/dom[1]//div[#'sidebar-content-container']/div[6]/div[2]/div[1]/div/a/div[@innertext='W-2']"
 			searchtimeout="30000ms">
-				/dom[@domain=$RepoURL]//div[#'sidebar-content-container']/div[6]/div[2]/div[1]//div[@innertext='W-2']
+				/dom[@domain=$RepoURL]//div[#'sidebar-content-container']/div/div[2]/div[1]//div[@innertext='W-2']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -7608,6 +7607,23 @@ l/47836Pxj9HkcGNiIo0T/4/XD9dD+vyfQEAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[1]/?/?/button[@innertext='Add New Account']
 			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="361c7cb4-6639-4fda-8963-a51aa5748c67"
+			name="OSHAForms"
+			refimgid="279e4fd9-7c99-4b0a-8115-d97217a6adfe"
+			refpath="/dom[@domain='mfcqa01.frankcrum.com']//div[#'sidebar-content-container']/div[5]/div[2]/div[3]/div/a/div[@innertext='OSHA Forms']"
+			searchtimeout="30000ms">
+				/dom[@domain=$RepoURL]//div[#'sidebar-content-container']/div[5]/div[2]/div[3]//div[@innertext='OSHA Forms']
+			</item>
+			<item
+			capname="divtag"
+			id="7a5bd1fd-0914-4291-a63b-329741d6c3ac"
+			name="Iwantlink"
+			searchtimeout="30000ms">
+				/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div[2]//div[@innertext='I Want To']
+			</item>
 			<basepath>
 				/dom[@domain=$RepoURL]
 			</basepath>
@@ -7868,7 +7884,7 @@ AAAASUVORK5CYII=
 		<var
 		id="63421979-03c2-4681-8118-3604485e880a"
 		name="EmpName">
-			Apple
+			Draper
 		</var>
 		<var
 		id="f17c01d4-2115-4a8a-8535-c75aeffd4d53"

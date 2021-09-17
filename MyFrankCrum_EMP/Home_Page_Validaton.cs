@@ -24,30 +24,29 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The FindEmployee recording.
+    ///The Home_Page_Validaton recording.
     /// </summary>
-    [TestModule("188eecc5-1111-4823-9324-72e27139559c", ModuleType.Recording, 1)]
-    public partial class FindEmployee : ITestModule
+    [TestModule("64d1514b-5524-4bac-be21-75e9c86634cb", ModuleType.Recording, 1)]
+    public partial class Home_Page_Validaton : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static FindEmployee instance = new FindEmployee();
+        static Home_Page_Validaton instance = new Home_Page_Validaton();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public FindEmployee()
+        public Home_Page_Validaton()
         {
-            EmpName = "Draper";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static FindEmployee Instance
+        public static Home_Page_Validaton Instance
         {
             get { return instance; }
         }
@@ -62,16 +61,6 @@ namespace MyFrankCrum_EMP
         {
             get { return repo.RepoURL; }
             set { repo.RepoURL = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable EmpName.
-        /// </summary>
-        [TestVariable("8cd8cad7-5dad-41bd-abdd-61b9d649412f")]
-        public string EmpName
-        {
-            get { return repo.EmpName; }
-            set { repo.EmpName = value; }
         }
 
 #endregion
@@ -100,24 +89,12 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Search' at Center.", repo.ApplicationUnderTest.SearchInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.Search.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Company News') on item 'ApplicationUnderTest.CompanyNews'.", repo.ApplicationUnderTest.CompanyNewsInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.CompanyNewsInfo, "InnerText", "Company News");
+            Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EmpName' with focus on 'ApplicationUnderTest.Search'.", repo.ApplicationUnderTest.SearchInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.Search.PressKeys(EmpName);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FindEmployee' at Center.", repo.ApplicationUnderTest.FindEmployeeInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.FindEmployee.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.selectEmp' at Center.", repo.ApplicationUnderTest.selectEmpInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.selectEmp.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Personal') on item 'ApplicationUnderTest.Personal'.", repo.ApplicationUnderTest.PersonalInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.PersonalInfo, "InnerText", "Personal");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='I Want To') on item 'ApplicationUnderTest.Iwantlink'.", repo.ApplicationUnderTest.IwantlinkInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.IwantlinkInfo, "InnerText", "I Want To");
             Delay.Milliseconds(100);
             
         }

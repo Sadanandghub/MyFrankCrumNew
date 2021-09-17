@@ -24,30 +24,29 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The FindEmployee recording.
+    ///The Documents_Tab recording.
     /// </summary>
-    [TestModule("188eecc5-1111-4823-9324-72e27139559c", ModuleType.Recording, 1)]
-    public partial class FindEmployee : ITestModule
+    [TestModule("28dac55f-f373-448a-9831-e5ad24f94790", ModuleType.Recording, 1)]
+    public partial class Documents_Tab : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static FindEmployee instance = new FindEmployee();
+        static Documents_Tab instance = new Documents_Tab();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public FindEmployee()
+        public Documents_Tab()
         {
-            EmpName = "Draper";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static FindEmployee Instance
+        public static Documents_Tab Instance
         {
             get { return instance; }
         }
@@ -62,16 +61,6 @@ namespace MyFrankCrum_EMP
         {
             get { return repo.RepoURL; }
             set { repo.RepoURL = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable EmpName.
-        /// </summary>
-        [TestVariable("8cd8cad7-5dad-41bd-abdd-61b9d649412f")]
-        public string EmpName
-        {
-            get { return repo.EmpName; }
-            set { repo.EmpName = value; }
         }
 
 #endregion
@@ -100,25 +89,14 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Search' at Center.", repo.ApplicationUnderTest.SearchInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.Search.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Documents' at Center.", repo.ApplicationUnderTest.DocumentsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Documents.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EmpName' with focus on 'ApplicationUnderTest.Search'.", repo.ApplicationUnderTest.SearchInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.Search.PressKeys(EmpName);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FindEmployee' at Center.", repo.ApplicationUnderTest.FindEmployeeInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.FindEmployee.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.selectEmp' at Center.", repo.ApplicationUnderTest.selectEmpInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.selectEmp.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Personal') on item 'ApplicationUnderTest.Personal'.", repo.ApplicationUnderTest.PersonalInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.PersonalInfo, "InnerText", "Personal");
-            Delay.Milliseconds(100);
+            Report.Screenshot(ReportLevel.Info, "User", "Document tab Sreenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
             
         }
 
