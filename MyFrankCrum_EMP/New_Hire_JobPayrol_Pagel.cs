@@ -52,6 +52,8 @@ namespace MyFrankCrum_EMP
             PayRatePerHour = "100";
             PayGroup = "A0F212";
             ScheduledHours = "100";
+            EmployeeNumber = "1234";
+            I9verifiedValue = "No";
         }
 
         /// <summary>
@@ -158,6 +160,30 @@ namespace MyFrankCrum_EMP
         {
             get { return _ScheduledHours; }
             set { _ScheduledHours = value; }
+        }
+
+        string _EmployeeNumber;
+
+        /// <summary>
+        /// Gets or sets the value of variable EmployeeNumber.
+        /// </summary>
+        [TestVariable("99b7946e-11a7-4ce2-949d-8c2b8efa500b")]
+        public string EmployeeNumber
+        {
+            get { return _EmployeeNumber; }
+            set { _EmployeeNumber = value; }
+        }
+
+        string _I9verifiedValue;
+
+        /// <summary>
+        /// Gets or sets the value of variable I9verifiedValue.
+        /// </summary>
+        [TestVariable("f12c0fbc-5d4e-49f2-b70e-b6af4c6b0378")]
+        public string I9verifiedValue
+        {
+            get { return _I9verifiedValue; }
+            set { _I9verifiedValue = value; }
         }
 
         /// <summary>
@@ -311,134 +337,156 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.HireSourceValue.Click("53;16");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EmployeeType' at 11;6.", repo.ApplicationUnderTest.EmployeeTypeInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.I9verified' at 117;15.", repo.ApplicationUnderTest.I9verifiedInfo, new RecordItemIndex(13));
+            repo.ApplicationUnderTest.I9verified.Click("117;15");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$I9verifiedValue' with focus on 'ApplicationUnderTest.I9verified'.", repo.ApplicationUnderTest.I9verifiedInfo, new RecordItemIndex(14));
+            repo.ApplicationUnderTest.I9verified.EnsureVisible();
+            Keyboard.Press(I9verifiedValue);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.I9verified'.", repo.ApplicationUnderTest.I9verifiedInfo, new RecordItemIndex(15));
+            repo.ApplicationUnderTest.I9verified.EnsureVisible();
+            Keyboard.Press("{Return}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EmployeeType' at 11;6.", repo.ApplicationUnderTest.EmployeeTypeInfo, new RecordItemIndex(16));
             repo.ApplicationUnderTest.EmployeeType.Click("11;6");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EmployeeTypeValue' at 72;19.", repo.ApplicationUnderTest.EmployeeTypeValueInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EmployeeTypeValue' at 72;19.", repo.ApplicationUnderTest.EmployeeTypeValueInfo, new RecordItemIndex(17));
             repo.ApplicationUnderTest.EmployeeTypeValue.Click("72;19");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FLSAStatus1' at Center.", repo.ApplicationUnderTest.FLSAStatus1Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FLSAStatus1' at Center.", repo.ApplicationUnderTest.FLSAStatus1Info, new RecordItemIndex(18));
             repo.ApplicationUnderTest.FLSAStatus1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FLSAStatus' with focus on 'ApplicationUnderTest.FLSAStatus1'.", repo.ApplicationUnderTest.FLSAStatus1Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FLSAStatus' with focus on 'ApplicationUnderTest.FLSAStatus1'.", repo.ApplicationUnderTest.FLSAStatus1Info, new RecordItemIndex(19));
             repo.ApplicationUnderTest.FLSAStatus1.EnsureVisible();
             Keyboard.Press(FLSAStatus);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.FLSAStatus1'.", repo.ApplicationUnderTest.FLSAStatus1Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.FLSAStatus1'.", repo.ApplicationUnderTest.FLSAStatus1Info, new RecordItemIndex(20));
             repo.ApplicationUnderTest.FLSAStatus1.EnsureVisible();
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Departmentclick' at 7;9.", repo.ApplicationUnderTest.DepartmentclickInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Departmentclick' at 7;9.", repo.ApplicationUnderTest.DepartmentclickInfo, new RecordItemIndex(21));
             repo.ApplicationUnderTest.Departmentclick.Click("7;9");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepartmentValue' at 34;16.", repo.ApplicationUnderTest.DepartmentValueInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepartmentValue' at 34;16.", repo.ApplicationUnderTest.DepartmentValueInfo, new RecordItemIndex(22));
             repo.ApplicationUnderTest.DepartmentValue.Click("34;16");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CostItem' at 11;8.", repo.ApplicationUnderTest.CostItemInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CostItem' at 11;8.", repo.ApplicationUnderTest.CostItemInfo, new RecordItemIndex(23));
             repo.ApplicationUnderTest.CostItem.Click("11;8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CostitemValue' at 56;15.", repo.ApplicationUnderTest.CostitemValueInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CostitemValue' at 56;15.", repo.ApplicationUnderTest.CostitemValueInfo, new RecordItemIndex(24));
             repo.ApplicationUnderTest.CostitemValue.Click("56;15");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ClientProject' at 104;17.", repo.ApplicationUnderTest.ClientProjectInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ClientProject' at 104;17.", repo.ApplicationUnderTest.ClientProjectInfo, new RecordItemIndex(25));
             repo.ApplicationUnderTest.ClientProject.Click("104;17");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ClientProjectValue' with focus on 'ApplicationUnderTest.ClientProject'.", repo.ApplicationUnderTest.ClientProjectInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ClientProjectValue' with focus on 'ApplicationUnderTest.ClientProject'.", repo.ApplicationUnderTest.ClientProjectInfo, new RecordItemIndex(26));
             repo.ApplicationUnderTest.ClientProject.EnsureVisible();
             Keyboard.Press(ClientProjectValue);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.ClientProject'.", repo.ApplicationUnderTest.ClientProjectInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.ClientProject'.", repo.ApplicationUnderTest.ClientProjectInfo, new RecordItemIndex(27));
             repo.ApplicationUnderTest.ClientProject.EnsureVisible();
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Project' at 133;12.", repo.ApplicationUnderTest.ProjectInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Project' at 133;12.", repo.ApplicationUnderTest.ProjectInfo, new RecordItemIndex(28));
             repo.ApplicationUnderTest.Project.Click("133;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Project' with focus on 'ApplicationUnderTest.Project'.", repo.ApplicationUnderTest.ProjectInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Project' with focus on 'ApplicationUnderTest.Project'.", repo.ApplicationUnderTest.ProjectInfo, new RecordItemIndex(29));
             repo.ApplicationUnderTest.Project.EnsureVisible();
             Keyboard.Press(Project);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.Project'.", repo.ApplicationUnderTest.ProjectInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.Project'.", repo.ApplicationUnderTest.ProjectInfo, new RecordItemIndex(30));
             repo.ApplicationUnderTest.Project.EnsureVisible();
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            // Wage Information
-            Report.Log(ReportLevel.Info, "Section", "Wage Information", new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EmployeeNumber' at 25;19.", repo.ApplicationUnderTest.EmployeeNumberInfo, new RecordItemIndex(31));
+            repo.ApplicationUnderTest.EmployeeNumber.Click("25;19");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PayRatePerHour' at Center.", repo.ApplicationUnderTest.PayRatePerHourInfo, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EmployeeNumber' with focus on 'ApplicationUnderTest.EmployeeNumber'.", repo.ApplicationUnderTest.EmployeeNumberInfo, new RecordItemIndex(32));
+            repo.ApplicationUnderTest.EmployeeNumber.PressKeys(EmployeeNumber);
+            Delay.Milliseconds(0);
+            
+            // Wage Information
+            Report.Log(ReportLevel.Info, "Section", "Wage Information", new RecordItemIndex(33));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PayRatePerHour' at Center.", repo.ApplicationUnderTest.PayRatePerHourInfo, new RecordItemIndex(34));
             repo.ApplicationUnderTest.PayRatePerHour.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PayRatePerHour' with focus on 'ApplicationUnderTest.PayRatePerHour'.", repo.ApplicationUnderTest.PayRatePerHourInfo, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PayRatePerHour' with focus on 'ApplicationUnderTest.PayRatePerHour'.", repo.ApplicationUnderTest.PayRatePerHourInfo, new RecordItemIndex(35));
             repo.ApplicationUnderTest.PayRatePerHour.PressKeys(PayRatePerHour);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AnnualSalary' at Center.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AnnualSalary' at Center.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(36));
             repo.ApplicationUnderTest.AnnualSalary.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'ApplicationUnderTest.AnnualSalary' and assigning its value to variable 'AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'ApplicationUnderTest.AnnualSalary' and assigning its value to variable 'AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(37));
             AnnualSalary = repo.ApplicationUnderTest.AnnualSalary.Element.GetAttributeValueText("Value");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$AnnualSalary) on item 'ApplicationUnderTest.AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$AnnualSalary) on item 'ApplicationUnderTest.AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(38));
             Validate.AttributeContains(repo.ApplicationUnderTest.AnnualSalaryInfo, "Value", AnnualSalary);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Paygroup' at Center.", repo.ApplicationUnderTest.PaygroupInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Paygroup' at Center.", repo.ApplicationUnderTest.PaygroupInfo, new RecordItemIndex(39));
             repo.ApplicationUnderTest.Paygroup.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PayGroup' with focus on 'ApplicationUnderTest.Paygroup'.", repo.ApplicationUnderTest.PaygroupInfo, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PayGroup' with focus on 'ApplicationUnderTest.Paygroup'.", repo.ApplicationUnderTest.PaygroupInfo, new RecordItemIndex(40));
             repo.ApplicationUnderTest.Paygroup.EnsureVisible();
             Keyboard.Press(PayGroup);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.Paygroup'.", repo.ApplicationUnderTest.PaygroupInfo, new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.Paygroup'.", repo.ApplicationUnderTest.PaygroupInfo, new RecordItemIndex(41));
             repo.ApplicationUnderTest.Paygroup.EnsureVisible();
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.Next2'.", repo.ApplicationUnderTest.Next2Info, new RecordItemIndex(37));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.Next2'.", repo.ApplicationUnderTest.Next2Info, new RecordItemIndex(42));
             Validate.AttributeEqual(repo.ApplicationUnderTest.Next2Info, "Enabled", "True");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.ScheduledHours' at Center.", repo.ApplicationUnderTest.ScheduledHoursInfo, new RecordItemIndex(38));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.ScheduledHours' at Center.", repo.ApplicationUnderTest.ScheduledHoursInfo, new RecordItemIndex(43));
             repo.ApplicationUnderTest.ScheduledHours.DoubleClick();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ScheduledHours' with focus on 'ApplicationUnderTest.ScheduledHours'.", repo.ApplicationUnderTest.ScheduledHoursInfo, new RecordItemIndex(39));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ScheduledHours' with focus on 'ApplicationUnderTest.ScheduledHours'.", repo.ApplicationUnderTest.ScheduledHoursInfo, new RecordItemIndex(44));
             repo.ApplicationUnderTest.ScheduledHours.PressKeys(ScheduledHours);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'ApplicationUnderTest.AnnualSalary' and assigning its value to variable 'AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'ApplicationUnderTest.AnnualSalary' and assigning its value to variable 'AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(45));
             AnnualSalary = repo.ApplicationUnderTest.AnnualSalary.Element.GetAttributeValueText("Value");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$AnnualSalary) on item 'ApplicationUnderTest.AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$AnnualSalary) on item 'ApplicationUnderTest.AnnualSalary'.", repo.ApplicationUnderTest.AnnualSalaryInfo, new RecordItemIndex(46));
             Validate.AttributeContains(repo.ApplicationUnderTest.AnnualSalaryInfo, "Value", AnnualSalary);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Next2' at Center.", repo.ApplicationUnderTest.Next2Info, new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Next2' at Center.", repo.ApplicationUnderTest.Next2Info, new RecordItemIndex(47));
             repo.ApplicationUnderTest.Next2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.LiTag4Deductions'.", repo.ApplicationUnderTest.LiTag4DeductionsInfo, new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.LiTag4Deductions'.", repo.ApplicationUnderTest.LiTag4DeductionsInfo, new RecordItemIndex(48));
             Validate.AttributeEqual(repo.ApplicationUnderTest.LiTag4DeductionsInfo, "Enabled", "True");
             Delay.Milliseconds(100);
             

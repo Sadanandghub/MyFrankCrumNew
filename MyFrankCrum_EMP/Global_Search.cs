@@ -130,7 +130,10 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.EmpdetailsClick.Click();
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Globle search screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(8));
+            Delay.Duration(5000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Globle search screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(9));
             
         }
 

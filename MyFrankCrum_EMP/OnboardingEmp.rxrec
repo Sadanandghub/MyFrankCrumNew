@@ -81,6 +81,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]//div[#'/Onboarding']/div/?/?/a[@innertext='Onboarding']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="84a5ef28-c31a-43dc-8169-1a4c4f40111c">
@@ -124,7 +126,7 @@ yCMg0tZc9ogsI5UCgRpuKFcq2R/P3q/bNvtomA25QHHpxQBLRRRQMKKKKACiiigAooooA//Z
 			</helperscreenshot>
 		</mouseitem>
 		<explicitdelayitem
-		duration="3000ms"
+		duration="5000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -150,6 +152,8 @@ yCMg0tZc9ogsI5UCgRpuKFcq2R/P3q/bNvtomA25QHHpxQBLRRRQMKKKKACiiigAooooA//Z
 				<path>
 					/dom[@domain=$RepoURL]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>

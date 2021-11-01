@@ -100,11 +100,7 @@ namespace MyFrankCrum_EMP
             
             Report.Screenshot(ReportLevel.Info, "User", "After validate Paycheck net pay and earning  screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Company News') on item 'ApplicationUnderTest.CompanyNews'.", repo.ApplicationUnderTest.CompanyNewsInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.CompanyNewsInfo, "InnerText", "Company News");
-            Delay.Milliseconds(100);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "After validate company news section   screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(4));
+            //Report.Screenshot(ReportLevel.Info, "User", "After validate company news section   screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(3));
             
         }
 

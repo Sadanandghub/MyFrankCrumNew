@@ -93,8 +93,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.Onboarding.Click("19;11");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
-            Delay.Duration(3000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Delay.Duration(5000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
             

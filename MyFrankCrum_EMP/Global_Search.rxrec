@@ -157,6 +157,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[1]/div/div[3]//input[@type='text']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="722a6d2f-a617-42ee-9b9a-ec3fc6dedc60">
@@ -374,6 +376,8 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/
 				<path>
 					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[1]/div/div[3]//input[@type='text']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="4c928d1e-1a0f-4afe-94ff-f1a4966bf2ab">
@@ -580,6 +584,8 @@ AUUUUAFFFFAH/9k=
 				<path>
 					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[1]/div/div[3]//input[@type='text']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="4c928d1e-1a0f-4afe-94ff-f1a4966bf2ab">
@@ -694,6 +700,8 @@ AUUUUAFFFFAH/9k=
 				<path>
 					/dom[@domain=$RepoURL]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -805,6 +813,8 @@ AUUUUAFFFFAH/9k=
 				<path>
 					/dom[@domain=$RepoURL]//button[#'dropdownMenuButton']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="44a89ad9-046e-4e89-9510-65760c623e6f">
@@ -881,8 +891,19 @@ AFFFFABRRRQAUUUUAMm/1TfSqFFFAEV//wAgy4/4D/6EKwKKKAENFFFABRRRQAUUUUAf/9k=
 				<path>
 					/dom[@domain=$RepoURL]//button[#'dropdownMenuButton']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -901,6 +922,8 @@ AFFFFABRRRQAUUUUAMm/1TfSqFFFAEV//wAgy4/4D/6EKwKKKAENFFFABRRRQAUUUUAf/9k=
 				<path>
 					/dom[@domain=$RepoURL]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>

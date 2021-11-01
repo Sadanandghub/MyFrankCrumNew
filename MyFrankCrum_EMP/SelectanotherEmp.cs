@@ -106,18 +106,28 @@ namespace MyFrankCrum_EMP
             //repo.ApplicationUnderTest.EmployeeDropdown.Click();
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EmployeeNameclick' at Center.", repo.ApplicationUnderTest.EmployeeNameclickInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Delay.Duration(5000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EmployeeNameclick' at Center.", repo.ApplicationUnderTest.EmployeeNameclickInfo, new RecordItemIndex(3));
             repo.ApplicationUnderTest.EmployeeNameclick.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EmployeeNameValue' with focus on 'ApplicationUnderTest.EmployeeNameclick'.", repo.ApplicationUnderTest.EmployeeNameclickInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EmployeeNameValue' with focus on 'ApplicationUnderTest.EmployeeNameclick'.", repo.ApplicationUnderTest.EmployeeNameclickInfo, new RecordItemIndex(4));
             repo.ApplicationUnderTest.EmployeeNameclick.PressKeys(EmployeeNameValue);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.EmployeeNameclick'.", repo.ApplicationUnderTest.EmployeeNameclickInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'ApplicationUnderTest.EmployeeNameclick'.", repo.ApplicationUnderTest.EmployeeNameclickInfo, new RecordItemIndex(5));
             repo.ApplicationUnderTest.EmployeeNameclick.EnsureVisible();
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(6));
+            Delay.Duration(5000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(7));
             
         }
 

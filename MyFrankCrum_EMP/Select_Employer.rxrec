@@ -118,6 +118,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]//div[#'sidebar-content-container']//button[@innertext='Employer']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="77ebb5d4-9293-4cdd-a634-c28ab402804f">
@@ -169,7 +171,7 @@ GiuMvv8Aj9m/3jRVKwH/2Q==
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="d8806b22-0f6f-4cf9-ace5-3f71ef0e0c95">
 			<comment>
@@ -255,6 +257,8 @@ GiuMvv8Aj9m/3jRVKwH/2Q==
 				<path>
 					/dom[@domain='mfcdev05.frankcrum.com']//div[#'sidebar-content-container']//button[@innertext='Employer']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="cb612e3b-a1c9-4445-aef7-7216622870ec">
@@ -303,9 +307,40 @@ WpdQNCPVLGVNy3UWP9ptp/I0Vxl9/wAfs3+8aKpWA//Z
 				style
 			</matchname>
 			<matchvalue>
-				background: rgb(116, 231, 240);
+				background:·rgb(163,·213,·93)
 			</matchvalue>
 		</validationitem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="2230ee35-310e-4498-aaf1-d440491e2358">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"

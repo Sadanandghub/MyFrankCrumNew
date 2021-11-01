@@ -41,9 +41,9 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public OpenBrowser()
         {
-            URL = "https://mfcdev05.frankcrum.com";
+            URL = "https://mfcqa01.frankcrum.com";
             Browser = "Chrome";
-            RepoURL = "mfcdev05.frankcrum.com";
+            RepoURL = "mfcqa01.frankcrum.com";
         }
 
         /// <summary>
@@ -120,7 +120,7 @@ namespace MyFrankCrum_EMP
             //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(1));
-            Host.Current.OpenBrowser(URL, Browser, "", false, true, false, false, false, true);
+            Host.Current.OpenBrowser(URL, Browser, "", false, true, false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));

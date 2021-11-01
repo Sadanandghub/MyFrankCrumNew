@@ -26,7 +26,7 @@ mode="Desktop">
 		<var
 		id="c48f33a1-1d14-48b4-93c8-303518d18814"
 		name="URL">
-			https://mfcdev05.frankcrum.com
+			https://mfcqa01.frankcrum.com
 		</var>
 		<var
 		id="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
@@ -36,7 +36,7 @@ mode="Desktop">
 		<var
 		id="c75816bd-3150-4b49-aa6d-f8479454f515"
 		name="RepoURL">
-			mfcdev05.frankcrum.com
+			mfcqa01.frankcrum.com
 		</var>
 	</variables>
 	<recorditems>
@@ -79,7 +79,9 @@ mode="Desktop">
 		args=""
 		browser="IE"
 		clearcache="False"
+		clearcodecache="False"
 		clearcookies="False"
+		clearserviceworker="False"
 		enabled="True"
 		incognito="False"
 		instrument="True"
@@ -182,6 +184,8 @@ mode="Desktop">
 				<path>
 					/dom[@domain='devmfc.frankcrum.com']/body/div[6]/?/?/iframe[@src='about:blank']/?/?/tag[@tagname='appcues']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="0c2b9c92-97b7-4f1b-b7c8-1b217603b7bf">

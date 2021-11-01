@@ -16,6 +16,11 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datasource="ER_General_Settings"
+			id="00a8d06c-36ef-4370-803a-0130f9bbc0f1"
+			name="ER_General_Settings(8111)">
+			</testcase>
 			<testmodule
 			id="00effd6a-aea1-413b-addc-483d5ee97329"
 			name="Personal_Tab_Screenshot"
@@ -35,6 +40,74 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="02cccb9f-3f2f-442a-b13e-317e80c9a139"
+			name="Login"
+			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Password"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="0683bbc6-6296-45ce-912f-0356f3547fa5"
+			name="Select_Employee_tab"
+			ref="1c3fd369-68fa-4848-bad3-ab931307ca8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="06b13723-c0ad-4a22-883e-702eace4da09"
 			name="Documents_Tab"
 			ref="28dac55f-f373-448a-9831-e5ad24f94790"
@@ -47,6 +120,21 @@
 					variablename="RepoURL">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="072fb456-1894-4214-80fe-08ef4c68c2be"
+			name="CloseBrowser"
+			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<teardown
 			id="08e7991e-6787-4627-872e-6b71a1653026"
@@ -98,6 +186,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<setup
+			id="0a608cb7-d67a-4d96-b12f-2a78c062f1bf"
+			name="setup">
+			</setup>
 			<testmodule
 			id="0ab6362e-a1de-49be-8856-640414a014ec"
 			name="Paycheck_History"
@@ -117,6 +209,52 @@
 					datasourceid="d1576a98-c977-4a11-9297-c907e27d7e38"
 					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
 					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="0c2c4714-32a2-4f1b-9d9c-b1d61048e9e1"
+			name="OpenBrowser"
+			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
 					</var>
 				</missingdatabinding>
 			</testmodule>
@@ -171,6 +309,38 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="0fb4aad6-99f6-4c44-8299-7a99b0a1d522"
+			name="Contact_MyInfo_Link"
+			ref="90a67eb2-7cea-4277-93a9-f0beda4c93e4"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="10bbd83c-ec43-40e4-835d-a1685cb63166"
+			name="CloseBrowser"
+			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<teardown
+			id="11151c69-0061-49a6-9369-5c08ad1c3f69"
+			name="teardown">
+			</teardown>
+			<testmodule
 			id="116d12f9-405a-402a-beb0-1e9f9141d484"
 			name="Login"
 			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
@@ -216,6 +386,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<setup
+			id="11fea73b-9ce0-4979-87ce-781c9615b904"
+			name="setup">
+			</setup>
 			<testmodule
 			id="126a2a01-bc6b-42a9-a618-5f1296df9d1f"
 			name="Select_Company"
@@ -250,23 +424,106 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<teardown
+			id="12e6e5c2-5a46-4229-9149-6f257def3a5f"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="1732193e-eae5-44f2-885e-13572411955e"
+			name="Click_Setting"
+			ref="102dcc91-3811-423a-9803-bc1cbec3312b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="123c9598-078b-45c1-8832-ee3991e8386d"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<setup
 			id="184365b8-1661-4741-b52b-4b42fd7213dd"
 			name="setup">
 			</setup>
+			<testmodule
+			id="18de4ab4-a6b3-4e41-9554-d0447705bf6a"
+			name="Select_Employee_tab"
+			ref="1c3fd369-68fa-4848-bad3-ab931307ca8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="271a4e34-6f8a-4d7f-99b4-0a600d5985f4"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testcase
 			datasource="ER__Employees_Pay_History"
 			id="18efdc1f-e709-4e59-8e72-e4b8d3d265e4"
 			name="ER_Employees_Pay_History(8097)">
 			</testcase>
+			<testmodule
+			id="19f32190-6d5f-46be-8c6d-0a3e7ecc6e7f"
+			name="EESecurityQuestion"
+			ref="e389932c-1a20-467c-8d74-080c270f0446"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="SecurityQuestion"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="8e108100-ac64-4a1a-9959-e382ca7ed4f9"
+					variablename="SecurityQuestion">
+					</var>
+					<var
+					dataname="NewQuestion"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="8986d103-a867-46fc-b374-d0c83bc41693"
+					variablename="NewQuestion">
+					</var>
+					<var
+					dataname="ConfirmNewQuestion"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="45712d54-b611-4306-9b00-036ba9a49cfa"
+					variablename="ConfirmNewQuestion">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
-			datarangeactive="True"
 			datasource="WSE_Login_Page"
 			id="1a7af161-b71a-450c-8c3a-04fb258e1b20"
 			maxrange="2"
 			minrange="2"
 			name="WSE_Login_Page(8070)">
 			</testcase>
+			<smartfoldernode
+			id="1b1b525c-c07c-4a1e-bc3c-49d54f6145fe"
+			name="WSE_Menu_Item_Settings(8089)">
+			</smartfoldernode>
 			<teardown
 			id="1b69be95-c7ff-4002-8e7c-c140b29581ee"
 			name="teardown">
@@ -284,6 +541,44 @@
 					variablename="RepoURL">
 					</var>
 				</databinding>
+			</testmodule>
+			<teardown
+			id="1f283e47-6e47-4d6b-a7b4-be9b734dae79"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="1f3fc01e-6e06-4575-9a27-ccc761b9568a"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CompName"
+					datasourceid="271a4e34-6f8a-4d7f-99b4-0a600d5985f4"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="271a4e34-6f8a-4d7f-99b4-0a600d5985f4"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="1fa13575-e98d-4ec9-ab5c-1ce95474d40c"
@@ -400,6 +695,218 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="25b93f0f-dc0b-404f-80bf-26c81d337e1e"
+			name="Login"
+			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Password"
+					datasourceid="aace8078-42fd-4e32-9249-1c421f328a00"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="aace8078-42fd-4e32-9249-1c421f328a00"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="aace8078-42fd-4e32-9249-1c421f328a00"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="28e0353b-934e-420b-82f5-d77778f1a612"
+			name="Login"
+			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Password"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<teardown
+			id="290b0fcb-6376-41ad-be3e-c70f4d5da906"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="29cff5d2-43cd-4721-9119-d026425ffe4e"
+			name="Select_Employee_tab"
+			ref="1c3fd369-68fa-4848-bad3-ab931307ca8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="2b0ad337-65e2-4b26-9670-2c0cecd095f6"
+			name="OpenBrowser"
+			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="6c4e1d95-9048-4f50-a1c8-7d77abde763f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="6c4e1d95-9048-4f50-a1c8-7d77abde763f"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="6c4e1d95-9048-4f50-a1c8-7d77abde763f"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="2d21df6f-0175-42e3-a910-588978f52d41"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CompName"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="2f5e9dc1-c730-49f6-b9bc-829fa2cb2512"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="dcfab2bf-e608-40d8-88fc-48c3e6ed1eec"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="dcfab2bf-e608-40d8-88fc-48c3e6ed1eec"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="303ac058-bbc4-494e-8780-2a4d9ec0ad24"
 			name="EmployeeList_Screenshot"
 			ref="1cf36f2d-36fb-46d5-aafb-401f3afe3992"
@@ -413,6 +920,38 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datasource="Change_Password_Security_Qsn"
+			id="31621e57-a54a-4007-aff0-4f727165aa67"
+			name="Change_Password/Security_Question(8090)">
+			</testcase>
+			<testmodule
+			enabled="False"
+			id="32c54c61-a630-4ce1-ad17-d17abba39e3c"
+			name="CloseBrowser"
+			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="6c4e1d95-9048-4f50-a1c8-7d77abde763f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<setup
+			id="336a6284-5376-4e0f-a512-06b20b4ea84d"
+			name="setup">
+			</setup>
 			<testmodule
 			id="341d1b09-9edc-40a5-950e-507823098846"
 			name="OpenBrowser"
@@ -460,7 +999,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="35430330-4dad-4add-b498-25b970d95f19"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -486,6 +1024,52 @@
 			id="3683b976-5d52-4682-a784-4a9cd2ff8ff1"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="36cb050b-cfb2-413e-ad5d-016558bbac68"
+			name="OpenBrowser"
+			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="aace8078-42fd-4e32-9249-1c421f328a00"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="aace8078-42fd-4e32-9249-1c421f328a00"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="aace8078-42fd-4e32-9249-1c421f328a00"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="37566a55-0836-44d8-9835-5c5f20ac815c"
 			name="OpenBrowser"
@@ -624,6 +1208,11 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testcase
+			datasource="Delivery_Agreement_of_W_2s"
+			id="399bac19-14e7-451c-9e66-22280d6cd168"
+			name="Delivery_Agreement_of_W_2s(8085)">
+			</testcase>
 			<testmodule
 			id="399d25bc-3878-4530-ba4f-b53ad914e8bd"
 			name="FindEmployee"
@@ -754,7 +1343,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="3e90cf0c-22f9-402a-9cc2-5974a070f249"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -835,6 +1423,14 @@
 					variablename="RepoURL">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="43dd8cb0-06e3-4ffa-83bf-518208860f71"
@@ -939,6 +1535,52 @@
 			id="4e832c3b-0851-4f4d-a022-6896958364ef"
 			name="Paycheck_History(8076)">
 			</testcase>
+			<testmodule
+			id="4fe86022-e29f-421b-8458-344aec7a0ed2"
+			name="Login"
+			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Password"
+					datasourceid="6c4e1d95-9048-4f50-a1c8-7d77abde763f"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="6c4e1d95-9048-4f50-a1c8-7d77abde763f"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="6c4e1d95-9048-4f50-a1c8-7d77abde763f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Password"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="5045be17-8d14-4bb9-94da-be0eb238a18b"
 			name="selectEmp"
@@ -1077,7 +1719,6 @@
 			name="Current_Paycheck(8075)">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="59aa8c93-1a46-43ff-baac-9108c4aa17a6"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -1105,7 +1746,6 @@
 			name="ER_Employees_List_and_Search_Screen(8170)">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="5da6fe3f-7701-4953-9f0e-0b310cfca4eb"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -1132,6 +1772,26 @@
 			id="5db8e7e4-75e8-4136-8872-2420335fe293"
 			name="ER_Employees_Personal(8096)">
 			</testcase>
+			<testmodule
+			id="5e95e37d-12db-43f5-a09b-98cf7c0b4557"
+			name="EE_Submit_a_Request"
+			ref="2a6cf400-a9d2-407f-bf34-a1dac878f3bd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="RequestComment"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="a65bcd40-5b86-4594-9a00-8eaed101dd9c"
+					variablename="RequestComment">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="6026be31-991a-4da4-9e3a-599270af8988"
 			name="teardown">
@@ -1267,6 +1927,48 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="66f29b26-d3b7-4dd7-88d3-0df9f38ec263"
+			name="Myinfo_Contact_Add"
+			ref="d7105f4c-e4fc-4fd0-8d8b-2bd866b0db92"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="671749e2-d8dd-4d04-9b4f-672da6e9d403"
+			name="CloseBrowser"
+			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="6db9bf0e-4d24-493f-814d-fddc81cb1026"
+			name="Pay_Tax_Details"
+			ref="fcfae49e-7457-4d8d-97d6-62419490a821"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="e014ccd0-729b-4fd5-ad58-d4527081c5b7"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6e5e38cf-9b8a-4d53-b2d9-17fd194252e5"
 			name="selectEmp"
 			ref="887af8ca-271e-43b2-971d-865dbfecce45"
@@ -1346,6 +2048,59 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="715ad3c8-57d0-462a-aaf4-928f396a4862"
+			name="ER_General_Setting"
+			ref="a6e4752c-fb8c-4fba-b3cb-5d2c4c3559a7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="72e13b0c-2ff0-4f50-9c46-8a7c0eec820e"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testcase
+			datasource="ER_Invoices"
+			id="73ebd5ee-f6f2-4522-b610-e456f9955ffa"
+			name="ER_Invoices(8104)">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -1354,16 +2109,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="74f87604-18d3-4886-9496-34f9a52ecec4"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="Segment_A"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="76e2ed0c-469e-4e8b-9f11-f80707a2f43d"
@@ -1400,7 +2160,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="77c1e29b-b3f9-4bf7-8e96-64137eac14cf"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -1422,6 +2181,11 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testcase
+			datasource="EE_Submit_a_Request"
+			id="786528b7-f515-45d2-98c3-f0c25eb31014"
+			name="EE_Submit_a_Request(8086)">
+			</testcase>
 			<smartfoldernode
 			id="79f0c330-c659-40f8-9882-35298e6ef68a"
 			name="WSE_Menu_Item-_Paychecks(8074)">
@@ -1472,11 +2236,35 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<smartfoldernode
+			id="7c4ee8e9-4f23-48cb-889d-f50d7eb23144"
+			name="WSE_Menu_Item-_W-2s_&amp;_Documents(8082)">
+			</smartfoldernode>
 			<testmodule
 			id="7e26b6aa-ad99-4938-89e1-2d3985cec4e1"
 			name="OpenBrowser"
 			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="RepoURL"
@@ -1503,11 +2291,98 @@
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
+			id="8284199b-8a58-481b-a533-57fcd8b149e7"
+			name="OpenBrowser"
+			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="dcfab2bf-e608-40d8-88fc-48c3e6ed1eec"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="dcfab2bf-e608-40d8-88fc-48c3e6ed1eec"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="dcfab2bf-e608-40d8-88fc-48c3e6ed1eec"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="83c25756-606e-4ce8-a076-6ac650ef55d5"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="8624ae2c-6d9b-44b9-86a6-1817d4786a7f"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="RepoURL"
@@ -1517,6 +2392,14 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<teardown
+			id="8880afc9-72eb-402b-815c-91a5fbe58aa9"
+			name="teardown">
+			</teardown>
+			<teardown
+			id="88ccec57-4094-4d23-adbd-aa5988b0d4f4"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="8955f3e5-6eb4-469f-852f-229760a391b5"
 			name="ClickEmployeeLink"
@@ -1640,6 +2523,10 @@
 			name="setup">
 			</setup>
 			<setup
+			id="9007d611-f6bc-4c70-bb5a-0059a5afffd3"
+			name="setup">
+			</setup>
+			<setup
 			id="91ea15b0-4490-4156-b176-b311851967af"
 			name="setup">
 			</setup>
@@ -1681,6 +2568,44 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="95bead4f-ddb4-4d4c-a5a6-86eb38dacef0"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CompName"
+					datasourceid="fd5a45a7-1fde-4b94-81f4-1c6d5a27b588"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="fd5a45a7-1fde-4b94-81f4-1c6d5a27b588"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="271a4e34-6f8a-4d7f-99b4-0a600d5985f4"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="271a4e34-6f8a-4d7f-99b4-0a600d5985f4"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<setup
+			id="969c2760-93c6-4543-9b09-383cbfd68252"
+			name="setup">
+			</setup>
 			<testmodule
 			id="980202b6-a165-43ad-a876-5b013e456fd0"
 			name="Login"
@@ -1754,22 +2679,22 @@
 				</databinding>
 				<missingdatabinding>
 					<var
-					dataname="RepoURL"
-					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
-					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
-					variablename="RepoURL">
+					dataname="Browser"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
 					</var>
 					<var
 					dataname="URL"
-					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
 					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
 					variablename="URL">
 					</var>
 					<var
-					dataname="Browser"
-					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
-					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
-					variablename="Browser">
+					dataname="RepoURL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
 					</var>
 				</missingdatabinding>
 			</testmodule>
@@ -1778,6 +2703,28 @@
 			name="Segment_A"
 			reportlevel="Info;20">
 			</testcase>
+			<testmodule
+			id="999bfe29-7a42-4ead-ad38-a1262720322b"
+			name="Click_Invoices"
+			ref="27fe6dff-ff52-49f3-a9d8-09d59d617c77"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="0f52c820-0ad5-47aa-8bc4-5b1116e005c7"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="9a86be78-bca6-438d-848f-dd81a923f5dd"
 			name="OpenBrowser"
@@ -1824,6 +2771,96 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="9e378c8c-1ff0-48c5-977f-2f518a97c554"
+			name="Select_Employee_tab"
+			ref="1c3fd369-68fa-4848-bad3-ab931307ca8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="9eb83e6f-fbf4-4c68-9f1c-6c6705f68bdd"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="aace8078-42fd-4e32-9249-1c421f328a00"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="aace8078-42fd-4e32-9249-1c421f328a00"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="a0826fc2-eddd-4771-9af6-494bdf752274"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CompName"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="CompName"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<teardown
 			id="a0c78838-57dd-4834-a49b-8cc90be6ec66"
 			name="teardown">
@@ -1859,7 +2896,6 @@
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
 			id="a50967c5-f5b6-4438-b4dd-501b09c5b111"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -1882,7 +2918,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="a7ebe2e4-dcfb-43aa-afa2-4d6dfb69b096"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -1899,6 +2934,29 @@
 					<var
 					dataname="RepoURL"
 					datasourceid="b09fabda-f4d9-406a-bcdf-88a7c1730d9f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="a84eaa34-631e-4c88-8437-bd60ac4ce496"
+			name="CloseBrowser"
+			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="dcfab2bf-e608-40d8-88fc-48c3e6ed1eec"
 					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
 					variablename="RepoURL">
 					</var>
@@ -1948,6 +3006,54 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="b282442b-9e8b-495b-a4b0-4dd1177892de"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="b3ac7e14-1093-4e90-91d1-32532e6daf1b"
+			name="Select_Employee_tab"
+			ref="1c3fd369-68fa-4848-bad3-ab931307ca8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="b453739c-3e2f-4d3f-9235-755e4845d95e"
 			name="CloseBrowser"
@@ -1975,6 +3081,26 @@
 			name="Login"
 			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Password"
@@ -1996,6 +3122,32 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="b5c2d7af-9479-45c2-b918-514c6f98c892"
+			name="Select_Employee_tab"
+			ref="1c3fd369-68fa-4848-bad3-ab931307ca8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testcase
+			id="b6742447-cf83-44bd-8123-c9766200da3a"
+			name="Contacts(8088)">
+			</testcase>
 			<testmodule
 			enabled="False"
 			id="b91aef05-1f11-492e-a137-2e5342bb5731"
@@ -2020,7 +3172,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="b9a8093c-e33f-45c9-8dc9-1099d58cc6a3"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -2036,7 +3187,7 @@
 				<missingdatabinding>
 					<var
 					dataname="RepoURL"
-					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
 					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
 					variablename="RepoURL">
 					</var>
@@ -2088,10 +3239,90 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="bbe24fcb-9a1b-4221-8600-be1ed1172110"
+			name="Select_Employee_tab"
+			ref="1c3fd369-68fa-4848-bad3-ab931307ca8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="bc271510-c4c1-4669-b25e-a81787e2c97e"
+			name="ChangePassword"
+			ref="a74315e8-048a-4092-baa0-4fabe7c3d423"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="OldPassword"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="f36a1c3f-1b1c-4da1-8779-e39101fcbd34"
+					variablename="OldPassword">
+					</var>
+					<var
+					dataname="NewPassword"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="528cc0d3-66f9-4644-8d58-f277b88ce1c5"
+					variablename="NewPassword">
+					</var>
+					<var
+					dataname="ConfirmNewPassword"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="758b386a-b619-4135-8e9a-6bd546726c93"
+					variablename="ConfirmNewPassword">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="bc95b85b-822e-4c58-b4e1-f439991469c9"
-			name="WSE_Login_and_Home_Screens(8079)">
+			name="WSE_Login_and_Home_Screens(8069)">
 			</smartfoldernode>
+			<testmodule
+			id="bca5f274-aab1-4f7a-b3ad-a52f2b9596cb"
+			name="OpenBrowser"
+			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<setup
 			id="bfb08773-7a04-414f-92a2-e08d3dead46e"
 			name="setup">
@@ -2105,7 +3336,6 @@
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
 			id="c2540167-bf84-4b13-a491-45fb4a8a44be"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -2127,6 +3357,52 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="c2ef7e39-d775-42d4-96ab-fd05626178dd"
+			name="Login"
+			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Password"
+					datasourceid="dcfab2bf-e608-40d8-88fc-48c3e6ed1eec"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="dcfab2bf-e608-40d8-88fc-48c3e6ed1eec"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="dcfab2bf-e608-40d8-88fc-48c3e6ed1eec"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testcase
 			datasource="ER_OSHA_Forms"
 			id="c3d3e5ce-58a0-42f5-86c6-b0a852b70c04"
@@ -2137,8 +3413,9 @@
 			name="teardown">
 			</teardown>
 			<testcase
+			datasource="Pay__Tax_Details_Read_"
 			id="c849eab4-21fc-43a6-af80-8c9948d5d7c4"
-			name="Pay_&amp;_Tax_Details_(READ-ONLY_version)">
+			name="Pay_&amp;_Tax_Details_(8079)(READ-ONLY_version)">
 			</testcase>
 			<testmodule
 			id="c95a3d74-15fc-4c75-aeb4-ab990c4b20bf"
@@ -2282,6 +3559,52 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="ccbbdc28-1be3-4a46-a0db-b81eb3d64569"
+			name="OpenBrowser"
+			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testcase
 			datasource="ER__Employees_Documents"
 			id="cd6dcdee-1228-4420-bd3d-1e9f2abd95c5"
@@ -2291,10 +3614,135 @@
 			id="cd815930-0c93-41c9-9d34-8cf8f12e3d91"
 			name="setup">
 			</setup>
+			<testmodule
+			id="ce142216-e271-440e-a9ce-ff1004312e8d"
+			name="Login"
+			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Password"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<smartfoldernode
 			id="ce375aa1-ecbb-4a27-b401-51965d34d72d"
 			name="ER-_Menu_Item_Workforce(8095)">
 			</smartfoldernode>
+			<testmodule
+			id="ce4fd5bb-2c85-4f15-a2b8-d64f3c8a8e66"
+			name="Select_Employee_tab"
+			ref="1c3fd369-68fa-4848-bad3-ab931307ca8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="fd5a45a7-1fde-4b94-81f4-1c6d5a27b588"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="271a4e34-6f8a-4d7f-99b4-0a600d5985f4"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="cf0498b9-fc05-4676-b3a0-41e01d443636"
+			name="Login"
+			ref="36c8b41b-2742-4277-9a7e-e0ef2589f773"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Password"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+					<var
+					dataname="UserId"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
+					variablename="UserID">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testcase
+			datasource="EE_My_W2s"
+			id="d14f16bd-7d36-4114-abe0-3f72b8b15af0"
+			name="My_W-2s(8084)_-_Blocked">
+			</testcase>
+			<testmodule
+			id="d192482c-c75e-466f-b5d4-8a917e5d3790"
+			name="Myinfo_Contact_Edit"
+			ref="8d28e9cf-c300-4a0f-9a69-9254d9b3b8c4"
+			type="Recording">
+			</testmodule>
 			<testcase
 			datasource="WSE_Home_Page"
 			id="d2cf7e53-5437-4182-bb5f-3539e50af1ac"
@@ -2308,6 +3756,28 @@
 			id="d636446b-401e-438b-8fcb-a7d9bf43c3e3"
 			name="ER_Menu_Item_Documents(8100)">
 			</smartfoldernode>
+			<testmodule
+			id="d6afba2f-02e8-4f65-a7aa-f42d19ab09c7"
+			name="DeliveryAgreement"
+			ref="b88e4efd-bf42-458f-9d6f-0b717debc818"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="84144eb8-2c57-4e52-ad89-59a3795860d3"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<teardown
 			id="d829425e-cdf2-4c33-929f-fdb5ab532775"
 			name="teardown">
@@ -2326,8 +3796,16 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="dd2f6704-4613-4b4c-a209-88fb0b18a586"
+			name="WSE_Menu_Item-_My_Info(8087)">
+			</smartfoldernode>
 			<teardown
 			id="dd446e25-5de6-4741-86cc-1b8af653aa62"
+			name="teardown">
+			</teardown>
+			<teardown
+			id="ddb94f0d-ed57-4ee3-837a-476fa1d1055a"
 			name="teardown">
 			</teardown>
 			<testmodule
@@ -2349,6 +3827,74 @@
 					datasourceid="4ee6a4cb-ffda-4827-873c-20d4a22c18bd"
 					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
 					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="e2fe2001-fde3-477b-ae38-07aba10094a6"
+			name="CloseBrowser"
+			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="1730f40b-8954-484f-aa8f-97bcb0225f48"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="e48c5267-fbdc-4467-bdd6-26f1f647722b"
+			name="OpenBrowser"
+			ref="2233b59d-d6bb-4791-a1a0-7b94ed89c073"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="URL"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="c48f33a1-1d14-48b4-93c8-303518d18814"
+					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="55699ec8-d609-480b-9dbc-7bbdd4840133"
+					variableid="21808886-c6dc-4eb8-aaeb-6751a59d2efd"
+					variablename="Browser">
 					</var>
 				</missingdatabinding>
 			</testmodule>
@@ -2379,6 +3925,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<setup
+			id="edc3a482-c18f-4c18-93e8-ef50d53b3cb8"
+			name="setup">
+			</setup>
 			<testmodule
 			id="ee156f8e-a71c-497a-8d6b-5e949d2c67a8"
 			name="Select_Company"
@@ -2440,22 +3990,60 @@
 				</databinding>
 				<missingdatabinding>
 					<var
-					dataname="Password"
-					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
-					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
-					variablename="Password">
+					dataname="RepoURL"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
 					</var>
 					<var
 					dataname="UserId"
-					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
 					variableid="4b080769-593e-4275-ad9e-2a9bd08bcfae"
 					variablename="UserID">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="46598e8f-ce92-41e5-a5ec-14a25a146720"
+					variableid="b0780f8a-34b4-4e0a-9ae8-8b57866aa511"
+					variablename="Password">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<setup
+			id="ee6ed4fb-3beb-4b74-b4d0-2ff3a3385c83"
+			name="setup">
+			</setup>
+			<testmodule
+			id="eede107b-6093-4f2b-80c3-2ac57fd3e3c9"
+			name="Select_Company"
+			ref="08404687-1bf3-4ad5-b53e-becdc510a179"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CompName"
+					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
 					</var>
 					<var
 					dataname="RepoURL"
 					datasourceid="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
 					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
 					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="723977db-c47a-4ea9-bc46-5038d5c40007"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+					<var
+					dataname="CompName"
+					datasourceid="723977db-c47a-4ea9-bc46-5038d5c40007"
+					variableid="5ac666fd-4de1-4e60-8c76-7b15e63726f4"
+					variablename="CompName">
 					</var>
 				</missingdatabinding>
 			</testmodule>
@@ -2474,6 +4062,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="f39cc914-bb00-402e-a99a-67c4d93f1d1d"
 			name="CloseBrowser"
 			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
@@ -2500,6 +4089,55 @@
 			id="f487fa9b-89f7-4e43-b435-af72f6d0ba3a"
 			name="ER_Home_Screen(8093)">
 			</testcase>
+			<testmodule
+			enabled="False"
+			id="f52b0676-6804-476e-90cd-6e08c5d970c1"
+			name="CloseBrowser"
+			ref="59d72108-e515-499f-9a9e-fbc2de6dc4b5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="0a224061-3b36-4dec-ab3d-35e60a22915f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="aace8078-42fd-4e32-9249-1c421f328a00"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="f8417809-5934-4b5e-aeec-a70485e9bd8b"
+			name="My_W2s"
+			ref="a47be95d-3e9f-4126-b348-5b5368cf81d1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="6c4e1d95-9048-4f50-a1c8-7d77abde763f"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RepoURL"
+					datasourceid="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+					variableid="c75816bd-3150-4b49-aa6d-f8479454f515"
+					variablename="RepoURL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<smartfoldernode
+			id="f868e93c-7978-44ab-87b3-738afba8e5b2"
+			name="ER_Menu_Item_Settings(8010)">
+			</smartfoldernode>
 			<testmodule
 			id="fb769fe5-9c06-437b-b007-11e2e8d33e71"
 			name="Select_Company"
@@ -2566,7 +4204,7 @@
 				name="Segment_A">
 					<smartfoldernode
 					id="bc95b85b-822e-4c58-b4e1-f439991469c9"
-					name="WSE_Login_and_Home_Screens(8079)">
+					name="WSE_Login_and_Home_Screens(8069)">
 						<testcase
 						id="1a7af161-b71a-450c-8c3a-04fb258e1b20"
 						name="WSE_Login_Page(8070)">
@@ -2611,6 +4249,14 @@
 							name="Login">
 							</testmodule>
 							<testmodule
+							id="95bead4f-ddb4-4d4c-a5a6-86eb38dacef0"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="ce4fd5bb-2c85-4f15-a2b8-d64f3c8a8e66"
+							name="Select_Employee_tab">
+							</testmodule>
+							<testmodule
 							id="43dd8cb0-06e3-4ffa-83bf-518208860f71"
 							name="Home_Page_Validation">
 							</testmodule>
@@ -2643,6 +4289,14 @@
 							name="Login">
 							</testmodule>
 							<testmodule
+							id="1f3fc01e-6e06-4575-9a27-ccc761b9568a"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="18de4ab4-a6b3-4e41-9554-d0447705bf6a"
+							name="Select_Employee_tab">
+							</testmodule>
+							<testmodule
 							id="fcc21de9-dcb4-4854-9cf0-4564d14a9d47"
 							name="Current_Paycheck">
 							</testmodule>
@@ -2669,6 +4323,14 @@
 							<testmodule
 							id="ca1c833a-7eac-4a88-afce-92de8901f761"
 							name="Login">
+							</testmodule>
+							<testmodule
+							id="eede107b-6093-4f2b-80c3-2ac57fd3e3c9"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="b3ac7e14-1093-4e90-91d1-32532e6daf1b"
+							name="Select_Employee_tab">
 							</testmodule>
 							<testmodule
 							id="0ab6362e-a1de-49be-8856-640414a014ec"
@@ -2699,6 +4361,14 @@
 							name="Login">
 							</testmodule>
 							<testmodule
+							id="2d21df6f-0175-42e3-a910-588978f52d41"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="b5c2d7af-9479-45c2-b918-514c6f98c892"
+							name="Select_Employee_tab">
+							</testmodule>
+							<testmodule
 							id="431cc258-8d7d-4fd5-a99b-8a0836205d90"
 							name="Direct_Deposit_Settings_READONLY_version">
 							</testmodule>
@@ -2713,7 +4383,7 @@
 						</testcase>
 						<testcase
 						id="c849eab4-21fc-43a6-af80-8c9948d5d7c4"
-						name="Pay_&amp;_Tax_Details_(READ-ONLY_version)">
+						name="Pay_&amp;_Tax_Details_(8079)(READ-ONLY_version)">
 							<setup
 							id="60e91b6d-dd23-45a4-b00c-197ebede789e"
 							name="setup">
@@ -2726,11 +4396,215 @@
 							id="b522b115-0994-441a-b6f4-55c77dfecd41"
 							name="Login">
 							</testmodule>
+							<testmodule
+							id="83c25756-606e-4ce8-a076-6ac650ef55d5"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="29cff5d2-43cd-4721-9119-d026425ffe4e"
+							name="Select_Employee_tab">
+							</testmodule>
+							<testmodule
+							id="6db9bf0e-4d24-493f-814d-fddc81cb1026"
+							name="Pay_Tax_Details">
+							</testmodule>
 							<teardown
 							id="ca73b6e9-7948-4ef6-bcf2-7dc3ade00faa"
 							name="teardown">
 								<testmodule
 								id="8624ae2c-6d9b-44b9-86a6-1817d4786a7f"
+								name="CloseBrowser">
+								</testmodule>
+							</teardown>
+						</testcase>
+					</smartfoldernode>
+					<smartfoldernode
+					id="7c4ee8e9-4f23-48cb-889d-f50d7eb23144"
+					name="WSE_Menu_Item-_W-2s_&amp;_Documents(8082)">
+						<testcase
+						id="d14f16bd-7d36-4114-abe0-3f72b8b15af0"
+						name="My_W-2s(8084)_-_Blocked">
+							<setup
+							id="336a6284-5376-4e0f-a512-06b20b4ea84d"
+							name="setup">
+								<testmodule
+								id="2b0ad337-65e2-4b26-9670-2c0cecd095f6"
+								name="OpenBrowser">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="4fe86022-e29f-421b-8458-344aec7a0ed2"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="f8417809-5934-4b5e-aeec-a70485e9bd8b"
+							name="My_W2s">
+							</testmodule>
+							<teardown
+							id="1f283e47-6e47-4d6b-a7b4-be9b734dae79"
+							name="teardown">
+								<testmodule
+								id="32c54c61-a630-4ce1-ad17-d17abba39e3c"
+								name="CloseBrowser">
+								</testmodule>
+							</teardown>
+						</testcase>
+						<testcase
+						id="399bac19-14e7-451c-9e66-22280d6cd168"
+						name="Delivery_Agreement_of_W_2s(8085)">
+							<setup
+							id="ee6ed4fb-3beb-4b74-b4d0-2ff3a3385c83"
+							name="setup">
+								<testmodule
+								id="e48c5267-fbdc-4467-bdd6-26f1f647722b"
+								name="OpenBrowser">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="cf0498b9-fc05-4676-b3a0-41e01d443636"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="72e13b0c-2ff0-4f50-9c46-8a7c0eec820e"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="0683bbc6-6296-45ce-912f-0356f3547fa5"
+							name="Select_Employee_tab">
+							</testmodule>
+							<testmodule
+							id="d6afba2f-02e8-4f65-a7aa-f42d19ab09c7"
+							name="DeliveryAgreement">
+							</testmodule>
+							<teardown
+							id="8880afc9-72eb-402b-815c-91a5fbe58aa9"
+							name="teardown">
+								<testmodule
+								id="671749e2-d8dd-4d04-9b4f-672da6e9d403"
+								name="CloseBrowser">
+								</testmodule>
+							</teardown>
+						</testcase>
+						<testcase
+						id="786528b7-f515-45d2-98c3-f0c25eb31014"
+						name="EE_Submit_a_Request(8086)">
+							<setup
+							id="9007d611-f6bc-4c70-bb5a-0059a5afffd3"
+							name="setup">
+								<testmodule
+								id="ccbbdc28-1be3-4a46-a0db-b81eb3d64569"
+								name="OpenBrowser">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="ce142216-e271-440e-a9ce-ff1004312e8d"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="b282442b-9e8b-495b-a4b0-4dd1177892de"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="9e378c8c-1ff0-48c5-977f-2f518a97c554"
+							name="Select_Employee_tab">
+							</testmodule>
+							<testmodule
+							id="5e95e37d-12db-43f5-a09b-98cf7c0b4557"
+							name="EE_Submit_a_Request">
+							</testmodule>
+							<teardown
+							id="290b0fcb-6376-41ad-be3e-c70f4d5da906"
+							name="teardown">
+								<testmodule
+								id="10bbd83c-ec43-40e4-835d-a1685cb63166"
+								name="CloseBrowser">
+								</testmodule>
+							</teardown>
+						</testcase>
+					</smartfoldernode>
+					<smartfoldernode
+					id="dd2f6704-4613-4b4c-a209-88fb0b18a586"
+					name="WSE_Menu_Item-_My_Info(8087)">
+						<testcase
+						id="b6742447-cf83-44bd-8123-c9766200da3a"
+						name="Contacts(8088)">
+							<setup
+							id="0a608cb7-d67a-4d96-b12f-2a78c062f1bf"
+							name="setup">
+								<testmodule
+								id="bca5f274-aab1-4f7a-b3ad-a52f2b9596cb"
+								name="OpenBrowser">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="28e0353b-934e-420b-82f5-d77778f1a612"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="0fb4aad6-99f6-4c44-8299-7a99b0a1d522"
+							name="Contact_MyInfo_Link">
+							</testmodule>
+							<testmodule
+							id="d192482c-c75e-466f-b5d4-8a917e5d3790"
+							name="Myinfo_Contact_Edit">
+							</testmodule>
+							<testmodule
+							id="66f29b26-d3b7-4dd7-88d3-0df9f38ec263"
+							name="Myinfo_Contact_Add">
+							</testmodule>
+							<teardown
+							id="12e6e5c2-5a46-4229-9149-6f257def3a5f"
+							name="teardown">
+								<testmodule
+								id="072fb456-1894-4214-80fe-08ef4c68c2be"
+								name="CloseBrowser">
+								</testmodule>
+							</teardown>
+						</testcase>
+					</smartfoldernode>
+					<smartfoldernode
+					id="1b1b525c-c07c-4a1e-bc3c-49d54f6145fe"
+					name="WSE_Menu_Item_Settings(8089)">
+						<testcase
+						id="31621e57-a54a-4007-aff0-4f727165aa67"
+						name="Change_Password/Security_Question(8090)">
+							<setup
+							id="edc3a482-c18f-4c18-93e8-ef50d53b3cb8"
+							name="setup">
+								<testmodule
+								id="0c2c4714-32a2-4f1b-9d9c-b1d61048e9e1"
+								name="OpenBrowser">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="02cccb9f-3f2f-442a-b13e-317e80c9a139"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="a0826fc2-eddd-4771-9af6-494bdf752274"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="bbe24fcb-9a1b-4221-8600-be1ed1172110"
+							name="Select_Employee_tab">
+							</testmodule>
+							<testmodule
+							id="1732193e-eae5-44f2-885e-13572411955e"
+							name="Click_Setting">
+							</testmodule>
+							<testmodule
+							id="bc271510-c4c1-4669-b25e-a81787e2c97e"
+							name="ChangePassword">
+							</testmodule>
+							<testmodule
+							id="19f32190-6d5f-46be-8c6d-0a3e7ecc6e7f"
+							name="EESecurityQuestion">
+							</testmodule>
+							<teardown
+							id="ddb94f0d-ed57-4ee3-837a-476fa1d1055a"
+							name="teardown">
+								<testmodule
+								id="e2fe2001-fde3-477b-ae38-07aba10094a6"
 								name="CloseBrowser">
 								</testmodule>
 							</teardown>
@@ -3043,6 +4917,74 @@
 								</testmodule>
 							</teardown>
 						</testcase>
+						<testcase
+						id="73ebd5ee-f6f2-4522-b610-e456f9955ffa"
+						name="ER_Invoices(8104)">
+							<setup
+							id="11fea73b-9ce0-4979-87ce-781c9615b904"
+							name="setup">
+								<testmodule
+								id="36cb050b-cfb2-413e-ad5d-016558bbac68"
+								name="OpenBrowser">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="25b93f0f-dc0b-404f-80bf-26c81d337e1e"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="9eb83e6f-fbf4-4c68-9f1c-6c6705f68bdd"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="999bfe29-7a42-4ead-ad38-a1262720322b"
+							name="Click_Invoices">
+							</testmodule>
+							<teardown
+							id="11151c69-0061-49a6-9369-5c08ad1c3f69"
+							name="teardown">
+								<testmodule
+								id="f52b0676-6804-476e-90cd-6e08c5d970c1"
+								name="CloseBrowser">
+								</testmodule>
+							</teardown>
+						</testcase>
+					</smartfoldernode>
+					<smartfoldernode
+					id="f868e93c-7978-44ab-87b3-738afba8e5b2"
+					name="ER_Menu_Item_Settings(8010)">
+						<testcase
+						id="00a8d06c-36ef-4370-803a-0130f9bbc0f1"
+						name="ER_General_Settings(8111)">
+							<setup
+							id="969c2760-93c6-4543-9b09-383cbfd68252"
+							name="setup">
+								<testmodule
+								id="8284199b-8a58-481b-a533-57fcd8b149e7"
+								name="OpenBrowser">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="c2ef7e39-d775-42d4-96ab-fd05626178dd"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="2f5e9dc1-c730-49f6-b9bc-829fa2cb2512"
+							name="Select_Company">
+							</testmodule>
+							<testmodule
+							id="715ad3c8-57d0-462a-aaf4-928f396a4862"
+							name="ER_General_Setting">
+							</testmodule>
+							<teardown
+							id="88ccec57-4094-4d23-adbd-aa5988b0d4f4"
+							name="teardown">
+								<testmodule
+								id="a84eaa34-631e-4c88-8437-bd60ac4ce496"
+								name="CloseBrowser">
+								</testmodule>
+							</teardown>
+						</testcase>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -3051,12 +4993,106 @@
 	<datasources>
 		<DataSource
 		filename="Segment_A.xlsx"
+		id="1730f40b-8954-484f-aa8f-97bcb0225f48"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="Change_Password_Security_Qsn"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Change_Password_Security_Qsn"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					TC's ID
+				</column>
+				<column>
+					TC Name
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					RepoURL
+				</column>
+				<column>
+					UserId
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					CompName
+				</column>
+				<column>
+					OldPassword
+				</column>
+				<column>
+					NewPassword
+				</column>
+				<column>
+					ConfirmNewPassword
+				</column>
+				<column>
+					SecurityQuestion
+				</column>
+				<column>
+					NewQuestion
+				</column>
+				<column>
+					ConfirmNewQuestion
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="Segment_A.xlsx"
 		id="271a4e34-6f8a-4d7f-99b4-0a600d5985f4"
 		includefile="Unchecked"
 		lastknownrowcount="1"
 		name="Current_Paycheck"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Current_Paycheck"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					TC's ID
+				</column>
+				<column>
+					TC Name
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					RepoURL
+				</column>
+				<column>
+					UserId
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					CompName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="Segment_A.xlsx"
+		id="be9be1b8-8201-4a42-921e-9a4ce23bf393"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="Delivery_Agreement_of_W_2s"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Delivery_Agreement_of_W_2s"
 		worksheetrange="Auto-Range">
 			<lastknowncolumns>
 				<column>
@@ -3120,6 +5156,85 @@
 				</column>
 				<column>
 					CompName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="Segment_A.xlsx"
+		id="6c4e1d95-9048-4f50-a1c8-7d77abde763f"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="EE_My_W2s"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="EE_My W-2s"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					TC's ID
+				</column>
+				<column>
+					TC Name
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					RepoURL
+				</column>
+				<column>
+					UserId
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					CompName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="Segment_A.xlsx"
+		id="8627fc86-d197-4d60-b0ab-b5135b1d85da"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="EE_Submit_a_Request"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="EE_Submit_a_Request"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					TC's ID
+				</column>
+				<column>
+					TC Name
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					RepoURL
+				</column>
+				<column>
+					UserId
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					CompName
+				</column>
+				<column>
+					RequestComment
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -3288,12 +5403,88 @@
 		</DataSource>
 		<DataSource
 		filename="Segment_A_ER.xlsx"
+		id="bad6fc6b-4f0a-45ff-a7e2-25e865b95951"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="ER_General_Settings"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="ER_General_Settings"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					TC's ID
+				</column>
+				<column>
+					TC Name
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					RepoURL
+				</column>
+				<column>
+					UserId
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					CompName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="Segment_A_ER.xlsx"
 		id="6649b9b1-5468-401a-bcde-1892c83aee36"
 		includefile="Unchecked"
 		lastknownrowcount="1"
 		name="ER_Home_Screen"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="ER_Home_Screen"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					TC's ID
+				</column>
+				<column>
+					TC Name
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					RepoURL
+				</column>
+				<column>
+					UserId
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					CompName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="Segment_A_ER.xlsx"
+		id="0a224061-3b36-4dec-ab3d-35e60a22915f"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="ER_Invoices"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="ER_Invoices"
 		worksheetrange="Auto-Range">
 			<lastknowncolumns>
 				<column>
@@ -3440,6 +5631,44 @@
 		</DataSource>
 		<DataSource
 		filename="Segment_A.xlsx"
+		id="46598e8f-ce92-41e5-a5ec-14a25a146720"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="Pay__Tax_Details_Read_"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Pay &amp; Tax Details(Read)"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					TC's ID
+				</column>
+				<column>
+					TC Name
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					RepoURL
+				</column>
+				<column>
+					UserId
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					CompName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="Segment_A.xlsx"
 		id="42cd6c0c-05cb-49f8-8854-2c3b6303becf"
 		includefile="Unchecked"
 		lastknownrowcount="1"
@@ -3480,7 +5709,7 @@
 		filename="Segment_A.xlsx"
 		id="fd5a45a7-1fde-4b94-81f4-1c6d5a27b588"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="1"
 		name="WSE_Home_Page"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="WSE_Home_Page"
@@ -3518,7 +5747,7 @@
 		filename="Segment_A.xlsx"
 		id="f49a8467-1353-4d58-afe6-12fb2eafc74f"
 		includefile="Checked"
-		lastknownrowcount="3"
+		lastknownrowcount="1"
 		name="WSE_Login_Page"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="WSE_Login_Page"
@@ -3557,39 +5786,6 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="18efdc1f-e709-4e59-8e72-e4b8d3d265e4">
-			</testcontainer>
-			<testcontainer
-			id="1a7af161-b71a-450c-8c3a-04fb258e1b20">
-			</testcontainer>
-			<testcontainer
-			id="5aae1273-c6de-4292-a37b-8483944b36d7">
-			</testcontainer>
-			<testcontainer
-			id="5db8e7e4-75e8-4136-8872-2420335fe293">
-			</testcontainer>
-			<testcontainer
-			id="996c1461-04c5-412a-9ec2-31c93e55be1b">
-			</testcontainer>
-			<testcontainer
-			id="bc95b85b-822e-4c58-b4e1-f439991469c9">
-			</testcontainer>
-			<testcontainer
-			id="c3d3e5ce-58a0-42f5-86c6-b0a852b70c04">
-			</testcontainer>
-			<testcontainer
-			id="cd6dcdee-1228-4420-bd3d-1e9f2abd95c5">
-			</testcontainer>
-			<testcontainer
-			id="ce375aa1-ecbb-4a27-b401-51965d34d72d">
-			</testcontainer>
-			<testcontainer
-			id="d636446b-401e-438b-8fcb-a7d9bf43c3e3">
-			</testcontainer>
-			<testcontainer
-			id="e75febcb-4980-4ee0-8ad6-3ca71c9105aa">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

@@ -93,9 +93,14 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.Employer1.Click("39;13");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (style='background: rgb(116, 231, 240);') on item 'ApplicationUnderTest.Employer1'.", repo.ApplicationUnderTest.Employer1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.Employer1Info, "style", "background: rgb(116, 231, 240);");
-            Delay.Milliseconds(100);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (style='background:·rgb(163,·213,·93)') on item 'ApplicationUnderTest.Employer1'.", repo.ApplicationUnderTest.Employer1Info, new RecordItemIndex(1));
+            //Validate.AttributeEqual(repo.ApplicationUnderTest.Employer1Info, "style", "background:·rgb(163,·213,·93)");
+            //Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
+            Delay.Duration(3000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(3));
             
         }
 

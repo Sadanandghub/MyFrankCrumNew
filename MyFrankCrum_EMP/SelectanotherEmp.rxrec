@@ -101,6 +101,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div[1]/div/div/div[2]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="b77eb5a1-29f1-48a8-b30c-52fe5c4e0268">
@@ -152,6 +154,37 @@ FABRRRQAUUUUAFFFFAEVFFFABRRRQAUUUUAFFFFAEtFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
 FABRRRQBFRRRQAUUUUAFFFFABRRRQB//2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Screenshot Taken"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="a6474fb9-079a-4db3-afb5-3ce8aebfe87b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -174,6 +207,8 @@ FABRRRQBFRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain=$RepoURL]/element
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -197,6 +232,8 @@ FABRRRQBFRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div[1]/div/div/div[1]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -217,8 +254,41 @@ FABRRRQBFRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div[1]/div/div/div[1]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Screenshot Taken"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="a6474fb9-079a-4db3-afb5-3ce8aebfe87b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"

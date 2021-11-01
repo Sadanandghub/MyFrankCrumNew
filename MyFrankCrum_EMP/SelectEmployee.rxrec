@@ -91,6 +91,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]//iframe[#'onboardingIframe']//table[#'gvEmployees']//a[@innertext='Select']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="ab20c748-2e2b-4d39-b042-ee6b253c37d8">
@@ -121,6 +123,37 @@ YXMJQOUcEMjgAlWHQ1DHfOgKXNtOJU4JjjZ1b3BAq7RQBStlmuLtrqaNoUCbIkYjJB5JI7dBx7Gr
 mPc0tFACY9zRj3NLRQAmPc0Y9zS0UAJj3NGPc0tFAH//2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="b3da5503-0675-4b02-b005-85128b5cc27e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"

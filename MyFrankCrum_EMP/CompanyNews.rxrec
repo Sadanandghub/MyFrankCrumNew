@@ -47,6 +47,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div[2]//button[@innertext='View']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -110,6 +112,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>

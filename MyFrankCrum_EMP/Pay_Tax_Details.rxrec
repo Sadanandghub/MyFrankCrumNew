@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fcfae49e-7457-4d8d-97d6-62419490a821"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Pay_Tax_Details"
+	namespace="MyFrankCrum_EMP">
+	</codegen>
+	<variables>
+		<var
+		id="e014ccd0-729b-4fd5-ad58-d4527081c5b7"
+		name="RepoURL">
+			mfcdev01.frankcrum.com
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="35;10"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0a094ca5-336e-4e7d-b67c-10acd26ac314"
+		sx="255"
+		sy="316"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bfbc7c92-c92d-49d2-9006-b30368aae9f9"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="220,306,94,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						sidebar-option-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Pay &amp; Tax Details
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						sidebar-option-text
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$RepoURL]//div[#'sidebar-content-container']/div[3]/div[2]/div[4]//div[@innertext='Pay &amp; Tax Details']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="ef3780c7-19f9-4da3-8851-354d36c22674">
+				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
+q1RRQAUUUUDCiiigD//Z
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="after click Pay and Tax Details screenshot"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="c9603157-d8a7-40b4-9356-1443be22bb6d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1366,657"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="False">
+					<attribute
+					name="caption"
+					type="System.String">
+						JDK Ski School - MyFrankCrum
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						93.0.4577.82
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mfcdev01.frankcrum.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						PayTaxDetail
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mfcdev01.frankcrum.com/PayTaxDetail
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/PayTaxDetail
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"
+	name="MyFrankCrum_EMPRepository"
+	relativepath="MyFrankCrum_EMPRepository.rxrep">
+		<codegen
+		classname="MyFrankCrum_EMPRepository"
+		namespace="MyFrankCrum_EMP">
+		</codegen>
+		<rootfolder
+		id="57aa7af5-e1bb-4d86-b1a0-d72cef37e59c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Pay_Tax_Details.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

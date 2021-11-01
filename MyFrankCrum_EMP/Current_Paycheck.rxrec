@@ -91,6 +91,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]//div[#'/CurrentPaycheck']//div[@innertext='Current Paycheck']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="72b714e8-8116-4511-ab8c-9eb5c8015fe1">
@@ -145,7 +147,7 @@ R7jtz/stn+gqCK3kD/OcLg5Kyt834cBfwqxGixrtXOPckn8zQA+iiigYUUUUAf/Z
 			</helperscreenshot>
 		</mouseitem>
 		<explicitdelayitem
-		duration="3000ms"
+		duration="5000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -157,7 +159,7 @@ R7jtz/stn+gqCK3kD/OcLg5Kyt834cBfwqxGixrtXOPckn8zQA+iiigYUUUUAf/Z
 		action="Screenshot"
 		category="User"
 		enabled="True"
-		message=""
+		message="Current Paycheck Page screenshot"
 		optional="False"
 		reportlevel="Info;20"
 		searchpropertyid="aee30588-949c-4143-bcbf-76a32782b998">
@@ -235,6 +237,211 @@ R7jtz/stn+gqCK3kD/OcLg5Kyt834cBfwqxGixrtXOPckn8zQA+iiigYUUUUAf/Z
 				<path>
 					/dom[@domain=$RepoURL]
 				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="11;10"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8a818916-e964-44a4-9cdb-cdb9112b2b68"
+		sx="1158"
+		sy="192"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d96a4fa7-e38c-43e2-8227-c6d37a357723"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, itag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="itag"
+				rect="1147,182,20,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-print
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						fa fa-print
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						i
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-hidden"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$RepoURL]//div[#'Paychecks']/div/div[1]/div/div[1]/h3[@innertext='Warren''s Paycheck:']//i
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="4683fc65-fda7-430a-bdd2-dfddc48ef19d">
+				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
+AUUUUAA60tFFAgpjfeNFFADaKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="8000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Print page screenshot taken"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="aee30588-949c-4143-bcbf-76a32782b998">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1366,657"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="False">
+					<attribute
+					name="caption"
+					type="System.String">
+						MyFrankCrum
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						92.0.4515.107
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mfcdev05.frankcrum.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						CurrentPaycheck
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mfcdev05.frankcrum.com/CurrentPaycheck
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/CurrentPaycheck
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>

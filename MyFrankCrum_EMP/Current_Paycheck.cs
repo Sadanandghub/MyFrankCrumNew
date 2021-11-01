@@ -93,10 +93,19 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.CurrentPaycheck.Click("46;3");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
-            Delay.Duration(3000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
+            Report.Screenshot(ReportLevel.Info, "User", "Current Paycheck Page screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FaFaPrint1' at 11;10.", repo.ApplicationUnderTest.FaFaPrint1Info, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.FaFaPrint1.Click("11;10");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(4));
+            Delay.Duration(8000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Print page screenshot taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(5));
             
         }
 

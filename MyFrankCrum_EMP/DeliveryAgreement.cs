@@ -41,6 +41,7 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public DeliveryAgreement()
         {
+            RepoURL = "mfcqa01.frankcrum.com";
         }
 
         /// <summary>

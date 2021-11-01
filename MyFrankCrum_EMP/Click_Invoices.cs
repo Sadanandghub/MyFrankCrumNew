@@ -96,6 +96,11 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.ClickInvoices.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
+            Delay.Duration(3000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Invoice page screenshot taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(3));
+            
         }
 
 #region Image Feature Data

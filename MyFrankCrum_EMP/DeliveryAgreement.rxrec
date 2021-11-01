@@ -23,6 +23,11 @@ mode="Global">
 	namespace="MyFrankCrum_EMP">
 	</codegen>
 	<variables>
+		<var
+		id="c75816bd-3150-4b49-aa6d-f8479454f515"
+		name="RepoURL">
+			mfcqa01.frankcrum.com
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -91,6 +96,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]//div[#'sidebar-content-container']/div[6]/div[2]/div[2]//div[@innertext='Delivery Agreement']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="67fbb8ad-92fb-49a0-86b6-538cb006594b">
@@ -176,6 +183,8 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAoooooEf//Z
 				<path>
 					/dom[@domain=$RepoURL]/element
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -209,6 +218,8 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAoooooEf//Z
 				<path>
 					/dom[@domain=$RepoURL]//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[14]/button[@innertext='Cancel']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -242,6 +253,8 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAoooooEf//Z
 				<path>
 					/dom[@domain=$RepoURL]/element
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -275,6 +288,8 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAoooooEf//Z
 				<path>
 					/dom[@domain=$RepoURL]//button[#'submit']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -368,6 +383,8 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAoooooEf//Z
 				<path>
 					/dom[@domain=$RepoURL]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>

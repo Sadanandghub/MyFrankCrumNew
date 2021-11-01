@@ -41,12 +41,13 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public New_Hire_Taxes_Page()
         {
-            FillingStatus = "HEad of household";
+            FillingStatus = "Married Filing Jointly";
             ChildrenAmount = "10000";
             OtherDependentsAmount = "1000";
             OtherIncome = "1";
             AdditionalDeductions = "1";
             WithholdingAmt = "1";
+            AllowancesExemptions = "2345";
         }
 
         /// <summary>
@@ -131,6 +132,18 @@ namespace MyFrankCrum_EMP
             set { _WithholdingAmt = value; }
         }
 
+        string _AllowancesExemptions;
+
+        /// <summary>
+        /// Gets or sets the value of variable AllowancesExemptions.
+        /// </summary>
+        [TestVariable("f1303306-3e3d-470a-b6e6-87c25ac58722")]
+        public string AllowancesExemptions
+        {
+            get { return _AllowancesExemptions; }
+            set { _AllowancesExemptions = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable RepoURL.
         /// </summary>
@@ -183,58 +196,66 @@ namespace MyFrankCrum_EMP
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChildrenAmount' at Center.", repo.ApplicationUnderTest.ChildrenAmountInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.ChildrenAmount.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AllowancesExemptions' at 19;25.", repo.ApplicationUnderTest.AllowancesExemptionsInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.AllowancesExemptions.Click("19;25");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ChildrenAmount' with focus on 'ApplicationUnderTest.ChildrenAmount'.", repo.ApplicationUnderTest.ChildrenAmountInfo, new RecordItemIndex(5));
-            repo.ApplicationUnderTest.ChildrenAmount.PressKeys(ChildrenAmount);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AllowancesExemptions' with focus on 'ApplicationUnderTest.AllowancesExemptions'.", repo.ApplicationUnderTest.AllowancesExemptionsInfo, new RecordItemIndex(5));
+            repo.ApplicationUnderTest.AllowancesExemptions.PressKeys(AllowancesExemptions);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OtherDependentsAmount' at Center.", repo.ApplicationUnderTest.OtherDependentsAmountInfo, new RecordItemIndex(6));
-            repo.ApplicationUnderTest.OtherDependentsAmount.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChildrenAmount' at Center.", repo.ApplicationUnderTest.ChildrenAmountInfo, new RecordItemIndex(6));
+            //repo.ApplicationUnderTest.ChildrenAmount.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OtherDependentsAmount' with focus on 'ApplicationUnderTest.OtherDependentsAmount'.", repo.ApplicationUnderTest.OtherDependentsAmountInfo, new RecordItemIndex(7));
-            repo.ApplicationUnderTest.OtherDependentsAmount.PressKeys(OtherDependentsAmount);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ChildrenAmount' with focus on 'ApplicationUnderTest.ChildrenAmount'.", repo.ApplicationUnderTest.ChildrenAmountInfo, new RecordItemIndex(7));
+            //repo.ApplicationUnderTest.ChildrenAmount.PressKeys(ChildrenAmount);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OtherIncome' at Center.", repo.ApplicationUnderTest.OtherIncomeInfo, new RecordItemIndex(8));
-            repo.ApplicationUnderTest.OtherIncome.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OtherDependentsAmount' at Center.", repo.ApplicationUnderTest.OtherDependentsAmountInfo, new RecordItemIndex(8));
+            //repo.ApplicationUnderTest.OtherDependentsAmount.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OtherIncome' with focus on 'ApplicationUnderTest.OtherIncome'.", repo.ApplicationUnderTest.OtherIncomeInfo, new RecordItemIndex(9));
-            repo.ApplicationUnderTest.OtherIncome.PressKeys(OtherIncome);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OtherDependentsAmount' with focus on 'ApplicationUnderTest.OtherDependentsAmount'.", repo.ApplicationUnderTest.OtherDependentsAmountInfo, new RecordItemIndex(9));
+            //repo.ApplicationUnderTest.OtherDependentsAmount.PressKeys(OtherDependentsAmount);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AdditionalDeductions' at Center.", repo.ApplicationUnderTest.AdditionalDeductionsInfo, new RecordItemIndex(10));
-            repo.ApplicationUnderTest.AdditionalDeductions.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OtherIncome' at Center.", repo.ApplicationUnderTest.OtherIncomeInfo, new RecordItemIndex(10));
+            //repo.ApplicationUnderTest.OtherIncome.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AdditionalDeductions' with focus on 'ApplicationUnderTest.AdditionalDeductions'.", repo.ApplicationUnderTest.AdditionalDeductionsInfo, new RecordItemIndex(11));
-            repo.ApplicationUnderTest.AdditionalDeductions.PressKeys(AdditionalDeductions);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OtherIncome' with focus on 'ApplicationUnderTest.OtherIncome'.", repo.ApplicationUnderTest.OtherIncomeInfo, new RecordItemIndex(11));
+            //repo.ApplicationUnderTest.OtherIncome.PressKeys(OtherIncome);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.WithholdingAmt' at Center.", repo.ApplicationUnderTest.WithholdingAmtInfo, new RecordItemIndex(12));
-            repo.ApplicationUnderTest.WithholdingAmt.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AdditionalDeductions' at Center.", repo.ApplicationUnderTest.AdditionalDeductionsInfo, new RecordItemIndex(12));
+            //repo.ApplicationUnderTest.AdditionalDeductions.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WithholdingAmt' with focus on 'ApplicationUnderTest.WithholdingAmt'.", repo.ApplicationUnderTest.WithholdingAmtInfo, new RecordItemIndex(13));
-            repo.ApplicationUnderTest.WithholdingAmt.PressKeys(WithholdingAmt);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AdditionalDeductions' with focus on 'ApplicationUnderTest.AdditionalDeductions'.", repo.ApplicationUnderTest.AdditionalDeductionsInfo, new RecordItemIndex(13));
+            //repo.ApplicationUnderTest.AdditionalDeductions.PressKeys(AdditionalDeductions);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.TaxesNext'.", repo.ApplicationUnderTest.TaxesNextInfo, new RecordItemIndex(14));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.WithholdingAmt' at Center.", repo.ApplicationUnderTest.WithholdingAmtInfo, new RecordItemIndex(14));
+            //repo.ApplicationUnderTest.WithholdingAmt.Click();
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WithholdingAmt' with focus on 'ApplicationUnderTest.WithholdingAmt'.", repo.ApplicationUnderTest.WithholdingAmtInfo, new RecordItemIndex(15));
+            //repo.ApplicationUnderTest.WithholdingAmt.PressKeys(WithholdingAmt);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.TaxesNext'.", repo.ApplicationUnderTest.TaxesNextInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.ApplicationUnderTest.TaxesNextInfo, "Enabled", "True");
             Delay.Milliseconds(100);
             
             Mouse_Click_DeductionNext(repo.ApplicationUnderTest.TaxesNextInfo);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TaxesNext' at Center.", repo.ApplicationUnderTest.TaxesNextInfo, new RecordItemIndex(16));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TaxesNext' at Center.", repo.ApplicationUnderTest.TaxesNextInfo, new RecordItemIndex(18));
             //repo.ApplicationUnderTest.TaxesNext.Click();
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.LiTag6DirectDepositAccounts'.", repo.ApplicationUnderTest.LiTag6DirectDepositAccountsInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationUnderTest.LiTag6DirectDepositAccounts'.", repo.ApplicationUnderTest.LiTag6DirectDepositAccountsInfo, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.ApplicationUnderTest.LiTag6DirectDepositAccountsInfo, "Enabled", "True");
             Delay.Milliseconds(100);
             

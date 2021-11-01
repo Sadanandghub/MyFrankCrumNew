@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d9266c0c-5930-407e-9722-77e19ea7c5a4"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="StagingMyFrankCrum">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="7fac01a0-8573-400b-ba07-f7fb6f7059a6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d9db7576-8d1e-4c13-bda6-987a89b2afe9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="50ae31f4-2aa3-46df-966e-5c68ded531d2"
+	name="StagingMyFrankCrumRepository"
+	relativepath="StagingMyFrankCrumRepository.rxrep">
+		<codegen
+		classname="StagingMyFrankCrumRepository"
+		namespace="StagingMyFrankCrum">
+		</codegen>
+		<rootfolder
+		id="5c461095-bb54-419b-9379-dd0463cb78b2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

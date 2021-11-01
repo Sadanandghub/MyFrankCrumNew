@@ -41,7 +41,7 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public Home()
         {
-            RepoURL = "mfcdev05.frankcrum.com";
+            RepoURL = "stagingmfc.frankcrum.com";
         }
 
         /// <summary>
@@ -97,17 +97,23 @@ namespace MyFrankCrum_EMP
             Validate.AttributeContains(repo.ApplicationUnderTest.HiUserInfo, "InnerText", "Hi,");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Pending Time Off Requests (0)') on item 'ApplicationUnderTest.PendingTimeOffRequests0'.", repo.ApplicationUnderTest.PendingTimeOffRequests0Info, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.ApplicationUnderTest.PendingTimeOffRequests0Info, "InnerText", "Pending Time Off Requests (0)");
-            Delay.Milliseconds(100);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (InnerText>'Pending Time Off Requests (0)') on item 'ApplicationUnderTest.PendingTimeOffRequests0'.", repo.ApplicationUnderTest.PendingTimeOffRequests0Info, new RecordItemIndex(2));
+                Validate.AttributeContains(repo.ApplicationUnderTest.PendingTimeOffRequests0Info, "InnerText", "Pending Time Off Requests (0)", null, false);
+                Delay.Milliseconds(100);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Time Off Calendar') on item 'ApplicationUnderTest.TimeOffCalendar'.", repo.ApplicationUnderTest.TimeOffCalendarInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.TimeOffCalendarInfo, "InnerText", "Time Off Calendar");
-            Delay.Milliseconds(100);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Time Off Calendar') on item 'ApplicationUnderTest.TimeOffCalendar'.", repo.ApplicationUnderTest.TimeOffCalendarInfo, new RecordItemIndex(3));
+                Validate.AttributeEqual(repo.ApplicationUnderTest.TimeOffCalendarInfo, "InnerText", "Time Off Calendar", null, false);
+                Delay.Milliseconds(100);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Company News') on item 'ApplicationUnderTest.CompanyNews'.", repo.ApplicationUnderTest.CompanyNewsInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.CompanyNewsInfo, "InnerText", "Company News");
-            Delay.Milliseconds(100);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Company News') on item 'ApplicationUnderTest.CompanyNews'.", repo.ApplicationUnderTest.CompanyNewsInfo, new RecordItemIndex(4));
+                Validate.AttributeEqual(repo.ApplicationUnderTest.CompanyNewsInfo, "InnerText", "Company News", null, false);
+                Delay.Milliseconds(100);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
         }
 

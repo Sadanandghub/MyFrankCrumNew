@@ -100,6 +100,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$RepoURL]//div[#'/Invoices']//div[@innertext='Invoices']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="5890987c-4dea-4e5a-8ddc-a55abae39598">
@@ -149,6 +151,37 @@ oooEFFFFAxRRQKKBCUUUUDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
 ooooAUUUUUCP/9k=
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Invoice page screenshot taken"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="be580c84-4860-49e3-a51b-059a690fb275">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4adb2402-d0f1-4185-819f-54d35157c656"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="76292bf5-fa5a-4ba1-8c5c-3ca2ecffd089"
