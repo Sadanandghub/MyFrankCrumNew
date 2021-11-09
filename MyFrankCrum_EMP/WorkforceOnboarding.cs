@@ -146,8 +146,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.OnboardingIframe.TxtLastName.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'BUG' with focus on 'ApplicationUnderTest.OnboardingIframe.TxtLastName'.", repo.ApplicationUnderTest.OnboardingIframe.TxtLastNameInfo, new RecordItemIndex(16));
-            repo.ApplicationUnderTest.OnboardingIframe.TxtLastName.PressKeys("BUG");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'WRIGHT' with focus on 'ApplicationUnderTest.OnboardingIframe.TxtLastName'.", repo.ApplicationUnderTest.OnboardingIframe.TxtLastNameInfo, new RecordItemIndex(16));
+            repo.ApplicationUnderTest.OnboardingIframe.TxtLastName.PressKeys("WRIGHT");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.BtnSearch' at Center.", repo.ApplicationUnderTest.OnboardingIframe.BtnSearchInfo, new RecordItemIndex(17));
@@ -167,8 +167,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.OnboardingIframe.TxtFirstName.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ADAM' with focus on 'ApplicationUnderTest.OnboardingIframe.TxtFirstName'.", repo.ApplicationUnderTest.OnboardingIframe.TxtFirstNameInfo, new RecordItemIndex(22));
-            repo.ApplicationUnderTest.OnboardingIframe.TxtFirstName.PressKeys("ADAM");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'DENNIE' with focus on 'ApplicationUnderTest.OnboardingIframe.TxtFirstName'.", repo.ApplicationUnderTest.OnboardingIframe.TxtFirstNameInfo, new RecordItemIndex(22));
+            repo.ApplicationUnderTest.OnboardingIframe.TxtFirstName.PressKeys("DENNIE");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.BtnSearch' at Center.", repo.ApplicationUnderTest.OnboardingIframe.BtnSearchInfo, new RecordItemIndex(23));
@@ -479,7 +479,7 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.OnboardingIframe.Select.Click();
             Delay.Milliseconds(0);
             
-            NoHireMethod(repo.ApplicationUnderTest.OnboardingIframe.NoHireInfo, repo.ApplicationUnderTest.OnboardingIframe.SpanTagNoInfo);
+            NoHireMethod(repo.ApplicationUnderTest.OnboardingIframe.NoHireInfo, repo.ApplicationUnderTest.OnboardingIframe.NoHireNoInfo);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.SpanTagOK' at Center.", repo.ApplicationUnderTest.OnboardingIframe.SpanTagOKInfo, new RecordItemIndex(107));
@@ -489,7 +489,7 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(108));
             Delay.Duration(3000, false);
             
-            NoHireMethod(repo.ApplicationUnderTest.OnboardingIframe.NoHireInfo, repo.ApplicationUnderTest.OnboardingIframe.SpanTagYesInfo);
+            NoHireMethod(repo.ApplicationUnderTest.OnboardingIframe.NoHireInfo, repo.ApplicationUnderTest.OnboardingIframe.HoHireYesInfo);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.SpanTagOK' at Center.", repo.ApplicationUnderTest.OnboardingIframe.SpanTagOKInfo, new RecordItemIndex(110));

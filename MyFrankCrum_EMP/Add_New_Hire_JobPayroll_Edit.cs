@@ -147,7 +147,10 @@ namespace MyFrankCrum_EMP
             Mouse.ScrollWheel(-1634);
             Delay.Milliseconds(300);
             
-            Report.Screenshot(ReportLevel.Info, "User", "PAGE CAPTURED", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(8));
+            Delay.Duration(300, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "PAGE CAPTURED", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(9));
             
         }
 

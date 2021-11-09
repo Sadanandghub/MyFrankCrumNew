@@ -138,25 +138,29 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(5));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeactivatePopupClose' at 18;11.", repo.ApplicationUnderTest.DeactivatePopupCloseInfo, new RecordItemIndex(6));
+            Report.Screenshot(ReportLevel.Info, "User", "After Click Cancel New Hire Process", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(6));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeactivatePopupClose' at 18;11.", repo.ApplicationUnderTest.DeactivatePopupCloseInfo, new RecordItemIndex(7));
             repo.ApplicationUnderTest.DeactivatePopupClose.Click("18;11");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(8));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CancelNewHireProcess' at 56;10.", repo.ApplicationUnderTest.CancelNewHireProcessInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CancelNewHireProcess' at 56;10.", repo.ApplicationUnderTest.CancelNewHireProcessInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.CancelNewHireProcess.Click("56;10");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(10));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CancelNewHire' at 58;19.", repo.ApplicationUnderTest.CancelNewHireInfo, new RecordItemIndex(10));
+            Report.Screenshot(ReportLevel.Info, "User", "After Click Cancel New Hire Process", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(11));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CancelNewHire' at 58;19.", repo.ApplicationUnderTest.CancelNewHireInfo, new RecordItemIndex(12));
             repo.ApplicationUnderTest.CancelNewHire.Click("58;19");
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Captured", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(11));
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Captured", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(13));
             
         }
 

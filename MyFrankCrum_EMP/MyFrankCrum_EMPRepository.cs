@@ -1325,6 +1325,7 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _confirmnewquestionInfo;
             RepoItemInfo _fafaprint1Info;
             RepoItemInfo _allowancesexemptionsInfo;
+            RepoItemInfo _jobtitleInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -1353,7 +1354,7 @@ namespace MyFrankCrum_EMP
                 _flexrownameInfo = new RepoItemInfo(this, "FlexRowName", ".//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div[1]/div/div/div[1]/div[2]/?/?/button", "", 30000, null, "cd1a6415-51ce-4d7e-873f-8893acfb0502");
                 _grayboxInfo = new RepoItemInfo(this, "GrayBox", ".//div[#'app']/div[2]/div[3]/div/div[3]/div/div/div[3]/div/div/div/?/?/div[@id='dropdown']", "", 30000, null, "e4b1d86c-907b-46cd-a541-0040da95abcd");
                 _summaryInfo = new RepoItemInfo(this, "Summary", ".//div[#'app']/div[2]/div[3]/div[]/div/div/div[9]/?/?/form[]/h4[@innertext='Summary']", "", 30000, null, "31a32214-4ed5-4517-b245-82b0145b608a");
-                _columnInfo = new RepoItemInfo(this, "Column", ".//div[#'app']/div[2]/div[3]/div/div[3]/div[9]/?/?/form/section/div[4]/div[1]", "", 30000, null, "8248600a-7c8f-4315-ada5-0862b9ad5d96");
+                _columnInfo = new RepoItemInfo(this, "Column", ".//div[#'app']/div[2]/div[3]/div[]/div/div/div[9]/?/?/form[]/section/div[4]/div[1]", "", 30000, null, "8248600a-7c8f-4315-ada5-0862b9ad5d96");
                 _edit11Info = new RepoItemInfo(this, "Edit11", ".//div[#'app']/div[2]/div[3]/div/div[3]/div[9]/?/?/form/div[1]/section//button[@innertext='Edit']", "", 30000, null, "2a88a520-5e98-4e16-bc39-1c5d0b39f8bd");
                 _sumeditInfo = new RepoItemInfo(this, "SumEdit", ".//div[#'app']/div[2]/div[3]/div[]/div/div/div[9]/?/?/form[]/div[1]/section//button[@innertext='Edit']", "", 30000, null, "e8d4781b-32ab-4b08-8631-3ee0cd4c4be0");
                 _backtosummary1Info = new RepoItemInfo(this, "BackToSummary1", ".//div[#'app']/div[2]/div[3]/div/div/div[]/div[4]/?/?/a[]/button[@innertext='Back To Summary']", "", 30000, null, "f3628b1a-f698-44b6-be5a-e5e9e93658be");
@@ -1693,7 +1694,7 @@ namespace MyFrankCrum_EMP
                 _documentchoosefileInfo = new RepoItemInfo(this, "DocumentChooseFile", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div[5]/div[2]/div/div[2]/button[@innertext='Choose File']", "", 30000, null, "bb184e10-9795-4e61-ae27-11b03bd59169");
                 _documentuploadInfo = new RepoItemInfo(this, "DocumentUpload", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/button[@innertext='Upload']", "", 30000, null, "4169c3d2-9c18-48e3-8cfa-434ef4f734c1");
                 _depositechoosefileInfo = new RepoItemInfo(this, "DepositeChooseFile", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[1]/div/div[9]/div/div[2]/div/div[2]/button[@innertext='Choose File']", "", 30000, null, "a52625fd-9e06-4bc1-b905-ccf4d9ae30d2");
-                _deductionchoosefileInfo = new RepoItemInfo(this, "DeductionChooseFile", ".//div[#'modal-wrapper']/div[2]/div/div[4]/form/div/div/div[1]/div/div[3]/div[1]/div[2]/div/div[2]/button[@innertext='Choose File']", "", 30000, null, "3f756d8f-533c-4b94-8ee2-676b367934f7");
+                _deductionchoosefileInfo = new RepoItemInfo(this, "DeductionChooseFile", ".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[1]/div/div/div[1]/div[2]/div/div[2]/button[@innertext='Choose File']", "", 30000, null, "3f756d8f-533c-4b94-8ee2-676b367934f7");
                 _performancereviewfilefileemployeecanvieInfo = new RepoItemInfo(this, "PerformanceReviewFileFileEmployeeCanVie", ".//div[#'app']/div[2]/div[3]/div/div[4]/div[3]/?/?/form/div[1]/div//input[@name='performanceReviewFile.FileEmployeeCanView']", "", 30000, null, "39ec2a3d-47ab-457f-9d09-67acc17aa5a2");
                 _undochangescontactInfo = new RepoItemInfo(this, "UndoChangesContact", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[3]/button[@innertext='Undo Changes']", "", 30000, null, "5ed3f902-fcec-4cd9-81d2-dae2f272ba76");
                 _addresscontactInfo = new RepoItemInfo(this, "AddressContact", ".//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div[2]/?/?/div[@innertext='Address & Contact']", "", 30000, null, "be6e887c-7389-4989-b8ee-63fdc62dc6aa");
@@ -1878,6 +1879,7 @@ namespace MyFrankCrum_EMP
                 _confirmnewquestionInfo = new RepoItemInfo(this, "ConfirmNewQuestion", ".//div[#'modal-wrapper']/div/div/div[4]/?/?/form[]/div[3]/div[1]/?/?/input[@name='securityAnswerConfirm']", "", 30000, null, "b0962408-19f5-44e7-9fdb-1f2ba213d562");
                 _fafaprint1Info = new RepoItemInfo(this, "FaFaPrint1", ".//div[#'Paychecks']/div/div[1]/div/div[1]/h3[@innertext='Warren''s Paycheck:']//i", "", 30000, null, "d96a4fa7-e38c-43e2-8227-c6d37a357723");
                 _allowancesexemptionsInfo = new RepoItemInfo(this, "AllowancesExemptions", ".//div[#'app']/div[2]/div[3]/div[]/div/div/div[6]/?/?/form[]/section[1]/div/div[2]//input[@id='allowances/exemptions']", "", 30000, null, "a254062c-d57c-4e12-b434-0bb17dbdbf43");
+                _jobtitleInfo = new RepoItemInfo(this, "JobTitle", ".//div[#'job title']/div/div[1]", "", 30000, null, "83df794e-fee8-4bd5-b9fe-6fa844b17632");
             }
 
             /// <summary>
@@ -14998,6 +15000,30 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
+            /// The JobTitle item.
+            /// </summary>
+            [RepositoryItem("83df794e-fee8-4bd5-b9fe-6fa844b17632")]
+            public virtual Ranorex.DivTag JobTitle
+            {
+                get
+                {
+                    return _jobtitleInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The JobTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("83df794e-fee8-4bd5-b9fe-6fa844b17632")]
+            public virtual RepoItemInfo JobTitleInfo
+            {
+                get
+                {
+                    return _jobtitleInfo;
+                }
+            }
+
+            /// <summary>
             /// The ReactTabsTabList folder.
             /// </summary>
             [RepositoryFolder("5c790e60-8f13-4c69-8197-7fd2f571bc9a")]
@@ -15132,10 +15158,10 @@ namespace MyFrankCrum_EMP
             RepoItemInfo _text4Info;
             RepoItemInfo _cancelInfo;
             RepoItemInfo _nohireInfo;
-            RepoItemInfo _spantagnoInfo;
+            RepoItemInfo _nohirenoInfo;
             RepoItemInfo _somefieldsettagInfo;
             RepoItemInfo _hireemployeeInfo;
-            RepoItemInfo _spantagyesInfo;
+            RepoItemInfo _hohireyesInfo;
             RepoItemInfo _ddlstatusInfo;
 
             /// <summary>
@@ -15178,10 +15204,10 @@ namespace MyFrankCrum_EMP
                 _text4Info = new RepoItemInfo(this, "Text4", ".//div[#'other-rates-div']/table//input[@id='other-rate4-text']", "", 30000, null, "b04a0949-3ba3-435b-940e-6de216842220");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "body/div[3]/div[3]//span[@innertext='Cancel']", "", 30000, null, "ac87616e-7c37-42a1-8790-8c4b55fd4309");
                 _nohireInfo = new RepoItemInfo(this, "NoHire", ".//input[#'NoHire']", "", 30000, null, "5488ea8f-c866-443a-bdd1-2337aa20df8d");
-                _spantagnoInfo = new RepoItemInfo(this, "SpanTagNo", "body/div[4]/div[11]//span[@innertext='No']", "", 30000, null, "4b5e8f59-fc7b-4a67-90f8-a432ac3ac794");
+                _nohirenoInfo = new RepoItemInfo(this, "NoHireNo", "body/div[4]/div[11]//span[@innertext='No']", "", 30000, null, "4b5e8f59-fc7b-4a67-90f8-a432ac3ac794");
                 _somefieldsettagInfo = new RepoItemInfo(this, "SomeFieldSetTag", ".//div[#'TaxPanel']/fieldset", "", 30000, null, "eebf0940-0249-4baf-93ec-dbc2c33b1e16");
                 _hireemployeeInfo = new RepoItemInfo(this, "HireEmployee", ".//input[#'HireEmployee']", "", 30000, null, "8617bf62-6518-4f5f-bd5b-031e2bea11e8");
-                _spantagyesInfo = new RepoItemInfo(this, "SpanTagYes", "body/div[4]/div[11]//span[@innertext='Yes']", "", 30000, null, "259751f8-0f36-436a-a94c-498c8ac0c9c4");
+                _hohireyesInfo = new RepoItemInfo(this, "HoHireYes", "body/div[4]/div[11]//span[@innertext='Yes']", "", 30000, null, "259751f8-0f36-436a-a94c-498c8ac0c9c4");
                 _ddlstatusInfo = new RepoItemInfo(this, "DdlStatus", ".//select[#'ddlStatus']", "", 30000, null, "c91040a0-a1b1-41dc-9dc9-c8e6314c7a9e");
             }
 
@@ -16061,26 +16087,26 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
-            /// The SpanTagNo item.
+            /// The NoHireNo item.
             /// </summary>
             [RepositoryItem("4b5e8f59-fc7b-4a67-90f8-a432ac3ac794")]
-            public virtual Ranorex.SpanTag SpanTagNo
+            public virtual Ranorex.SpanTag NoHireNo
             {
                 get
                 {
-                    return _spantagnoInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _nohirenoInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The SpanTagNo item info.
+            /// The NoHireNo item info.
             /// </summary>
             [RepositoryItemInfo("4b5e8f59-fc7b-4a67-90f8-a432ac3ac794")]
-            public virtual RepoItemInfo SpanTagNoInfo
+            public virtual RepoItemInfo NoHireNoInfo
             {
                 get
                 {
-                    return _spantagnoInfo;
+                    return _nohirenoInfo;
                 }
             }
 
@@ -16133,26 +16159,26 @@ namespace MyFrankCrum_EMP
             }
 
             /// <summary>
-            /// The SpanTagYes item.
+            /// The HoHireYes item.
             /// </summary>
             [RepositoryItem("259751f8-0f36-436a-a94c-498c8ac0c9c4")]
-            public virtual Ranorex.SpanTag SpanTagYes
+            public virtual Ranorex.SpanTag HoHireYes
             {
                 get
                 {
-                    return _spantagyesInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _hohireyesInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The SpanTagYes item info.
+            /// The HoHireYes item info.
             /// </summary>
             [RepositoryItemInfo("259751f8-0f36-436a-a94c-498c8ac0c9c4")]
-            public virtual RepoItemInfo SpanTagYesInfo
+            public virtual RepoItemInfo HoHireYesInfo
             {
                 get
                 {
-                    return _spantagyesInfo;
+                    return _hohireyesInfo;
                 }
             }
 

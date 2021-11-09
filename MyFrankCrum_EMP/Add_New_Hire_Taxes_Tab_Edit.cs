@@ -42,6 +42,7 @@ namespace MyFrankCrum_EMP
         public Add_New_Hire_Taxes_Tab_Edit()
         {
             EditOtherIncTaxe = "16";
+            EditAllowanceExemption = "2345";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace MyFrankCrum_EMP
         {
             get { return _EditOtherIncTaxe; }
             set { _EditOtherIncTaxe = value; }
+        }
+
+        string _EditAllowanceExemption;
+
+        /// <summary>
+        /// Gets or sets the value of variable EditAllowanceExemption.
+        /// </summary>
+        [TestVariable("31646828-eab3-4c4a-a26b-5b9b9e25c489")]
+        public string EditAllowanceExemption
+        {
+            get { return _EditAllowanceExemption; }
+            set { _EditAllowanceExemption = value; }
         }
 
         /// <summary>
@@ -110,22 +123,26 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.OtherIncome.DoubleClick("29;18");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EditOtherIncTaxe' with focus on 'ApplicationUnderTest.OtherIncome'.", repo.ApplicationUnderTest.OtherIncomeInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.OtherIncome.PressKeys(EditOtherIncTaxe);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EditOtherIncTaxe' with focus on 'ApplicationUnderTest.OtherIncome'.", repo.ApplicationUnderTest.OtherIncomeInfo, new RecordItemIndex(2));
+            //repo.ApplicationUnderTest.OtherIncome.PressKeys(EditOtherIncTaxe);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EditAllowanceExemption' with focus on 'ApplicationUnderTest.AllowancesExemptions'.", repo.ApplicationUnderTest.AllowancesExemptionsInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.AllowancesExemptions.PressKeys(EditAllowanceExemption);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BackToSummary' at 52;7.", repo.ApplicationUnderTest.BackToSummaryInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BackToSummary' at 52;7.", repo.ApplicationUnderTest.BackToSummaryInfo, new RecordItemIndex(4));
             repo.ApplicationUnderTest.BackToSummary.Click("52;7");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(5));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -2400 units.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -2400 units.", new RecordItemIndex(6));
             Mouse.ScrollWheel(-2400);
             Delay.Milliseconds(300);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Captured", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(6));
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Captured", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(7));
             
         }
 

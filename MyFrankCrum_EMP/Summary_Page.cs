@@ -93,6 +93,11 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.Finish.Click("56;16");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(1));
+            Delay.Duration(8000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "After added new employee screenshot taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
+            
         }
 
 #region Image Feature Data
