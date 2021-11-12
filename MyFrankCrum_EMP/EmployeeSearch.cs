@@ -145,6 +145,17 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(7));
             Delay.Duration(3000, false);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.OnboardingIframe.StatusDate' at 33;8.", repo.ApplicationUnderTest.OnboardingIframe.StatusDateInfo, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.OnboardingIframe.StatusDate.DoubleClick("33;8");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(9));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.StatusDate' at 33;8.", repo.ApplicationUnderTest.OnboardingIframe.StatusDateInfo, new RecordItemIndex(10));
+            repo.ApplicationUnderTest.OnboardingIframe.StatusDate.Click("33;8");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

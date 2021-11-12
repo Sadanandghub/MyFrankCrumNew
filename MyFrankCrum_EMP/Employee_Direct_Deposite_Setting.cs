@@ -286,8 +286,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.DDepositeRuleType.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeDollarAmount' at 40;17.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(18));
-            repo.ApplicationUnderTest.DepositeDollarAmount.Click("40;17");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.DepositeDollarAmount' at 40;17.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(18));
+            repo.ApplicationUnderTest.DepositeDollarAmount.DoubleClick("40;17");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DDollerAmount' with focus on 'ApplicationUnderTest.DepositeDollarAmount'.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(19));

@@ -702,6 +702,16 @@ name="MyFrankCrum_EMPRepository">
 			<item
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
+			id="e98546fb-4d5d-4400-abba-a29ec8171f96"
+			name="DepositeRoutingNumberEdit"
+			refimgid="e0d2b761-0e75-4ffe-bd2b-44cd13c3e7ca"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$RepoURL]//input[#'Routing/Transit Number']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
 			id="3c0b418b-9dc8-447d-99b6-327f493e600c"
 			name="DepositeRoutingNumberConfirm"
 			refimgid="8849ea6d-066f-494f-a4a8-056b9943fdf1"
@@ -3842,7 +3852,7 @@ HgAAAABJRU5ErkJggg==
 				refimgid="99e8c899-c16f-436d-ac56-49f3db66260a"
 				robustPath=""
 				searchtimeout="30000ms">
-					/dom[@domain=$RepoURL]//iframe[#'onboardingIframe']/body/div[3]/div[3]//span[@innertext='OK']
+					/dom[@domain=$RepoURL]//iframe[#'onboardingIframe']/body/div[2]/div[3]/?/?/button/span[@innertext='OK']
 				</item>
 				<item
 				capname="inputtag"
@@ -3887,6 +3897,16 @@ HgAAAABJRU5ErkJggg==
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$RepoURL]//iframe[#'onboardingIframe']//input[#'NoHire']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="cd7014ba-013c-40c3-9604-c9bdf2766d4f"
+				name="Hire"
+				refimgid="25e2a7f3-c51d-4183-a9ff-3e98c7c29967"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//iframe[#'onboardingIframe']//input[#'HireEmployee']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -3937,6 +3957,17 @@ HgAAAABJRU5ErkJggg==
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$RepoURL]//iframe[#'onboardingIframe']//select[#'ddlStatus']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="4fe099cc-34f7-4503-9852-b50b57f91f05"
+				name="StatusDate"
+				refimgid="aa763c2f-b076-4e4e-a32e-7ac5175b578a"
+				refpath="/dom[@domain='stagingmfc.frankcrum.com']//iframe[#'onboardingIframe']//table[#'gvEmployees']/tbody/tr[1]/th[6]/a[@innertext='Status Date']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//iframe[#'onboardingIframe']//table[#'gvEmployees']//a[@innertext='Status Date']
 				</item>
 				<basepath>
 					/dom[@domain=$RepoURL]//iframe[#'onboardingIframe']
@@ -7678,6 +7709,72 @@ l/47836Pxj9HkcGNiIo0T/4/XD9dD+vyfQEAAAAASUVORK5CYII=
 				searchtimeout="30000ms">
 					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div[3]/button[@innertext='Submit Request']
 				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="2738e8d7-a5e0-499b-81a6-afef3ea5ff4d"
+				name="PayDistribution"
+				refimgid="fa76b43a-ff2f-455c-85d4-1d89de823a74"
+				refpath="/dom[1]//div[#'app']/div[2]/div[3]/div/div/div/div/div[1]/ul/div/li[@innertext='Pay Distribution']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div//ul/?/?/li[@innertext='Pay Distribution']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="65f2d679-1432-4059-b67d-ba1481dcef6d"
+				name="Taxes"
+				refimgid="84cc1b4b-ba38-4b14-afc6-6764261ffdef"
+				refpath="/dom[1]//div[#'app']/div[2]/div[3]/div/div/div/div/div[1]/ul/div/li[@innertext='Taxes']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div//ul/?/?/li[@innertext='Taxes']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="74b3cd19-0d36-4407-82a0-bf1a7e2c438d"
+				name="Deductions"
+				refimgid="85673225-1b06-4882-a2ac-bb9270efd408"
+				refpath="/dom[1]//div[#'app']/div[2]/div[3]/div/div/div/div/div[1]/ul/div/li[@innertext='Deductions']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div//ul/?/?/li[@innertext='Deductions']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="5c06208b-e40b-48a0-a014-804f39587645"
+				name="LiTagAll"
+				refimgid="a19c08e3-970f-467b-bc9f-b394db471c4f"
+				refpath="/dom[1]//div[#'app']/div[2]/div[3]/div/div/div/div/div[1]/ul/div/li[@innertext='All']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div//ul/?/?/li[@innertext='All']
+				</item>
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="68e3184e-99ad-4bf0-87d9-a7ac54978995"
+				name="DirectDepositSettings"
+				refimgid="38a2eac9-fee8-4d72-a3a5-2443fcf79b5b"
+				refpath="/dom[1]//div[#'app']/div[2]/div[3]/div/div/div/div/div[2]/div[1]/div[1]/button[@innertext='Direct Deposit Settings']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div/div/div[2]/div[1]/div[1]/button[@innertext='Direct Deposit Settings']
+				</item>
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="3604a884-b796-4e7c-acdc-9aacf55c5155"
+				name="ViewTaxForms"
+				refimgid="c3589baf-958a-4970-8d9a-53709860ad0c"
+				refpath="/dom[1]//div[#'app']/div[2]/div[3]/div/div/div/div/div[2]/div[1]/div[2]/button[@innertext='View Tax Forms']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div/div/div/div/div[2]/div[1]/div[2]/button[@innertext='View Tax Forms']
+				</item>
 				<basepath>
 					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/div
 				</basepath>
@@ -8285,6 +8382,28 @@ l/47836Pxj9HkcGNiIo0T/4/XD9dD+vyfQEAAAAASUVORK5CYII=
 				searchtimeout="30000ms">
 					/dom[@domain=$RepoURL]//div[#'modal-wrapper']//form[@action='https://mfcqa01.frankcrum.com/employeeSettings']/div[4]/button[@innertext='Update &amp; Save']
 				</item>
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="2f83218d-9cd0-4c19-8e33-8cb38d6acb8e"
+				name="Deactivate"
+				refimgid="ad4fa5b0-4b2d-4765-9d93-dd4347ecbdb7"
+				refpath="/dom[@domain='stagingmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div/div[2]/button[@innertext='Deactivate']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'modal-wrapper']/div/div/div[4]/form[@action='https://stagingmfc.frankcrum.com/DirectDepositSettings']/div/div/div/div[2]/button[@innertext='Deactivate']
+				</item>
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="3b43d2ee-0124-4ddf-ab50-e4374d1d2dc4"
+				name="Activate"
+				refimgid="c20eba9a-5c29-4d96-bd6f-7b2e29200acc"
+				refpath="/dom[@domain='stagingmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form/div/div/div/div[2]/button[@innertext='Activate']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'modal-wrapper']/div/div/div[4]/form[@action='https://stagingmfc.frankcrum.com/DirectDepositSettings']/div/div/div/div[2]/button[@innertext='Activate']
+				</item>
 				<basepath>
 					/dom[@domain=$RepoURL]//div[#'modal-wrapper']
 				</basepath>
@@ -8365,6 +8484,62 @@ l/47836Pxj9HkcGNiIo0T/4/XD9dD+vyfQEAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain=$RepoURL]//div[#'job title']/div/div[1]
 			</item>
+			<item
+			addcaps="button,webelement,buttontag"
+			capname="buttontag"
+			id="32bbcd35-33da-48aa-9fb4-ff611611f9b0"
+			name="selectempdd"
+			refimgid="7688b399-4c1e-4a1b-9eed-df8255a48da9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[2]/div/div[1]/div[1]/button[@class='bold flex-link blue-link  no-button-style is-span-button']
+			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="fac9c1d8-6006-4ffd-a2dc-cc208fa20d5a"
+			isrooted="True"
+			name="FlexRow1"
+			refpath="/dom[@domain='stagingmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/main/div/div/div/div[2]/div/div[1]"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="9dae149b-b502-4590-860f-79af1304abcf"
+				name="FlexRow"
+				refimgid="22f2c5b3-da74-49e3-a37f-9c98ec687b20"
+				refpath="/dom[@domain='stagingmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/main/div/div/div/div[2]/div/div[5]"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[2]/div/div[5]
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="ed252c88-1da4-499b-b651-1e9f70086f49"
+				name="Inactive"
+				refimgid="0caf2c3d-a5b3-4298-9aa9-5b2ff768460b"
+				refpath="/dom[@domain='stagingmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/main/div/div/div/div[2]/div/div[5]/div[6]/span[@innertext='Inactive']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[2]/div/div[5]/div[6]/span[@innertext='Inactive']
+				</item>
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="03188361-ef90-4a46-9374-8cc620999037"
+				name="ActivateAccount"
+				refimgid="37772c98-336b-419d-8a5a-c7a17e701999"
+				refpath="/dom[@domain='stagingmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/div/main/div/div/div/div[2]/div/div[5]/div[7]/div/div/button[@innertext='Activate Account']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[2]/div/div[5]/div[7]/div[@id='dropdown']/div[@id='dropdown-menu']/button[@innertext='Activate Account']
+				</item>
+				<basepath>
+					/dom[@domain=$RepoURL]//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[2]/div/div[5]
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain=$RepoURL]
 			</basepath>

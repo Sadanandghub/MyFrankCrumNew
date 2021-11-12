@@ -197,265 +197,271 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.RoutingNumber.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RoutingNumber' with focus on 'ApplicationUnderTest.RoutingNumber'.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(8));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RoutingNumber' with focus on 'ApplicationUnderTest.RoutingNumber'.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.RoutingNumber.PressKeys(RoutingNumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RoutingNumberConfirm' at Center.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RoutingNumberConfirm' at Center.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(10));
             repo.ApplicationUnderTest.RoutingNumberConfirm.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RoutingNumberConfirm' with focus on 'ApplicationUnderTest.RoutingNumberConfirm'.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(11));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RoutingNumberConfirm' with focus on 'ApplicationUnderTest.RoutingNumberConfirm'.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(12));
             repo.ApplicationUnderTest.RoutingNumberConfirm.PressKeys(RoutingNumberConfirm);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumber' at Center.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumber' at Center.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(13));
             repo.ApplicationUnderTest.AccountNumber.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AccountNumber' with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AccountNumber' with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(14));
             repo.ApplicationUnderTest.AccountNumber.EnsureVisible();
             Keyboard.Press(AccountNumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumberConfirm' at Center.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumberConfirm' at Center.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(15));
             repo.ApplicationUnderTest.AccountNumberConfirm.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AccountNumberConfirm' with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AccountNumberConfirm' with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(16));
             repo.ApplicationUnderTest.AccountNumberConfirm.PressKeys(AccountNumberConfirm);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositRule' at Center.", repo.ApplicationUnderTest.DepositRuleInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositRule' at Center.", repo.ApplicationUnderTest.DepositRuleInfo, new RecordItemIndex(17));
             repo.ApplicationUnderTest.DepositRule.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DollarAmount1' at Center.", repo.ApplicationUnderTest.DollarAmount1Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DollarAmount1' at Center.", repo.ApplicationUnderTest.DollarAmount1Info, new RecordItemIndex(18));
             repo.ApplicationUnderTest.DollarAmount1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DollarAmount' at Center.", repo.ApplicationUnderTest.DollarAmountInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DollarAmount' at Center.", repo.ApplicationUnderTest.DollarAmountInfo, new RecordItemIndex(19));
             repo.ApplicationUnderTest.DollarAmount.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.DollarAmount1'.", repo.ApplicationUnderTest.DollarAmount1Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.DollarAmount1'.", repo.ApplicationUnderTest.DollarAmount1Info, new RecordItemIndex(20));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.DollarAmount1);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.BankName'.", repo.ApplicationUnderTest.BankNameInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.BankName'.", repo.ApplicationUnderTest.BankNameInfo, new RecordItemIndex(21));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.BankName);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.RoutingNumber'.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.RoutingNumber'.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(22));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.RoutingNumber);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Down with focus on 'ApplicationUnderTest.RoutingNumberConfirm'.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Down with focus on 'ApplicationUnderTest.RoutingNumberConfirm'.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(23));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.RoutingNumberConfirm);
             Keyboard.Down(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, true);
             Delay.Milliseconds(20);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(24));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.AccountNumber);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(25));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.AccountNumberConfirm);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DollarAmount' with focus on 'ApplicationUnderTest.DollarAmount'.", repo.ApplicationUnderTest.DollarAmountInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DollarAmount' with focus on 'ApplicationUnderTest.DollarAmount'.", repo.ApplicationUnderTest.DollarAmountInfo, new RecordItemIndex(26));
             repo.ApplicationUnderTest.DollarAmount.PressKeys(DollarAmount);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChooseFile1' at Center.", repo.ApplicationUnderTest.ChooseFile1Info, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChooseFile1' at Center.", repo.ApplicationUnderTest.ChooseFile1Info, new RecordItemIndex(27));
             repo.ApplicationUnderTest.ChooseFile1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Text1148' at Center.", repo.Open.Text1148Info, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Text1148' at Center.", repo.Open.Text1148Info, new RecordItemIndex(28));
             repo.Open.Text1148.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Cancel' at Center.", repo.Open.CancelInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Cancel' at Center.", repo.Open.CancelInfo, new RecordItemIndex(29));
             repo.Open.Cancel.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveAdd' at Center.", repo.ApplicationUnderTest.SaveAddInfo, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveAdd' at Center.", repo.ApplicationUnderTest.SaveAddInfo, new RecordItemIndex(30));
             repo.ApplicationUnderTest.SaveAdd.Click();
             Delay.Milliseconds(0);
             
             // Second Account Added
-            Report.Log(ReportLevel.Info, "Section", "Second Account Added", new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Section", "Second Account Added", new RecordItemIndex(31));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddAccount' at Center.", repo.ApplicationUnderTest.AddAccountInfo, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddAccount' at Center.", repo.ApplicationUnderTest.AddAccountInfo, new RecordItemIndex(32));
             repo.ApplicationUnderTest.AddAccount.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountType' at Center.", repo.ApplicationUnderTest.AccountTypeInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountType' at Center.", repo.ApplicationUnderTest.AccountTypeInfo, new RecordItemIndex(33));
             repo.ApplicationUnderTest.AccountType.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Savings' at Center.", repo.ApplicationUnderTest.SavingsInfo, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Savings' at Center.", repo.ApplicationUnderTest.SavingsInfo, new RecordItemIndex(34));
             repo.ApplicationUnderTest.Savings.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BankName' at Center.", repo.ApplicationUnderTest.BankNameInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BankName' at Center.", repo.ApplicationUnderTest.BankNameInfo, new RecordItemIndex(35));
             repo.ApplicationUnderTest.BankName.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'SBI ePay' with focus on 'ApplicationUnderTest.BankName'.", repo.ApplicationUnderTest.BankNameInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'SBI ePay' with focus on 'ApplicationUnderTest.BankName'.", repo.ApplicationUnderTest.BankNameInfo, new RecordItemIndex(36));
             repo.ApplicationUnderTest.BankName.PressKeys("SBI ePay");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RoutingNumber' at Center.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RoutingNumber' at Center.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(37));
             repo.ApplicationUnderTest.RoutingNumber.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RoutingNumber' with focus on 'ApplicationUnderTest.RoutingNumber'.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RoutingNumber' with focus on 'ApplicationUnderTest.RoutingNumber'.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(38));
             repo.ApplicationUnderTest.RoutingNumber.PressKeys(RoutingNumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RoutingNumberConfirm' at Center.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(37));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RoutingNumberConfirm' at Center.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(39));
             repo.ApplicationUnderTest.RoutingNumberConfirm.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RoutingNumberConfirm' with focus on 'ApplicationUnderTest.RoutingNumberConfirm'.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(38));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RoutingNumberConfirm' with focus on 'ApplicationUnderTest.RoutingNumberConfirm'.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(40));
             repo.ApplicationUnderTest.RoutingNumberConfirm.PressKeys(RoutingNumberConfirm);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumber' at Center.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(39));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumber' at Center.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(41));
             repo.ApplicationUnderTest.AccountNumber.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AccountNumber' with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AccountNumber' with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(42));
             repo.ApplicationUnderTest.AccountNumber.EnsureVisible();
             Keyboard.Press(AccountNumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumberConfirm' at Center.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumberConfirm' at Center.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(43));
             repo.ApplicationUnderTest.AccountNumberConfirm.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AccountNumberConfirm' with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AccountNumberConfirm' with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(44));
             repo.ApplicationUnderTest.AccountNumberConfirm.PressKeys(AccountNumberConfirm);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositRule' at Center.", repo.ApplicationUnderTest.DepositRuleInfo, new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositRule' at Center.", repo.ApplicationUnderTest.DepositRuleInfo, new RecordItemIndex(45));
             repo.ApplicationUnderTest.DepositRule.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DollarAmount1' at Center.", repo.ApplicationUnderTest.DollarAmount1Info, new RecordItemIndex(44));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DollarAmount1' at Center.", repo.ApplicationUnderTest.DollarAmount1Info, new RecordItemIndex(46));
             repo.ApplicationUnderTest.DollarAmount1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DollarAmountText' at Center.", repo.ApplicationUnderTest.DollarAmountTextInfo, new RecordItemIndex(45));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DollarAmountText' at Center.", repo.ApplicationUnderTest.DollarAmountTextInfo, new RecordItemIndex(47));
             repo.ApplicationUnderTest.DollarAmountText.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.DollarAmountText'.", repo.ApplicationUnderTest.DollarAmountTextInfo, new RecordItemIndex(46));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.DollarAmountText'.", repo.ApplicationUnderTest.DollarAmountTextInfo, new RecordItemIndex(48));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.DollarAmountText);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.BankName'.", repo.ApplicationUnderTest.BankNameInfo, new RecordItemIndex(47));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.BankName'.", repo.ApplicationUnderTest.BankNameInfo, new RecordItemIndex(49));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.BankName);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.RoutingNumber'.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(48));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.RoutingNumber'.", repo.ApplicationUnderTest.RoutingNumberInfo, new RecordItemIndex(50));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.RoutingNumber);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.RoutingNumberConfirm'.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(49));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.RoutingNumberConfirm'.", repo.ApplicationUnderTest.RoutingNumberConfirmInfo, new RecordItemIndex(51));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.RoutingNumberConfirm);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(50));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(52));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.AccountNumber);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(51));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(53));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.AccountNumberConfirm);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DollarAmount' with focus on 'ApplicationUnderTest.DollarAmountText'.", repo.ApplicationUnderTest.DollarAmountTextInfo, new RecordItemIndex(52));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DollarAmount' with focus on 'ApplicationUnderTest.DollarAmountText'.", repo.ApplicationUnderTest.DollarAmountTextInfo, new RecordItemIndex(54));
             repo.ApplicationUnderTest.DollarAmountText.PressKeys(DollarAmount);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChooseFile1' at Center.", repo.ApplicationUnderTest.ChooseFile1Info, new RecordItemIndex(53));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ChooseFile1' at Center.", repo.ApplicationUnderTest.ChooseFile1Info, new RecordItemIndex(55));
             repo.ApplicationUnderTest.ChooseFile1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Text1148' at Center.", repo.Open.Text1148Info, new RecordItemIndex(54));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Text1148' at Center.", repo.Open.Text1148Info, new RecordItemIndex(56));
             repo.Open.Text1148.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Cancel' at Center.", repo.Open.CancelInfo, new RecordItemIndex(55));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open.Cancel' at Center.", repo.Open.CancelInfo, new RecordItemIndex(57));
             repo.Open.Cancel.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveAdd' at Center.", repo.ApplicationUnderTest.SaveAddInfo, new RecordItemIndex(56));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SaveAdd' at Center.", repo.ApplicationUnderTest.SaveAddInfo, new RecordItemIndex(58));
             repo.ApplicationUnderTest.SaveAdd.Click();
             Delay.Milliseconds(0);
             
             // Edit 2nd Account ---
-            Report.Log(ReportLevel.Info, "Section", "Edit 2nd Account ---", new RecordItemIndex(57));
+            Report.Log(ReportLevel.Info, "Section", "Edit 2nd Account ---", new RecordItemIndex(59));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at Center.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(58));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at Center.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(60));
             repo.ApplicationUnderTest.DropdownMenuButton1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Edit12' at Center.", repo.ApplicationUnderTest.Edit12Info, new RecordItemIndex(59));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Edit12' at Center.", repo.ApplicationUnderTest.Edit12Info, new RecordItemIndex(61));
             repo.ApplicationUnderTest.Edit12.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumber' at Center.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(60));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumber' at Center.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(62));
             repo.ApplicationUnderTest.AccountNumber.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(61));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(63));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.AccountNumber);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '978656789' with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(62));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '978656789' with focus on 'ApplicationUnderTest.AccountNumber'.", repo.ApplicationUnderTest.AccountNumberInfo, new RecordItemIndex(64));
             repo.ApplicationUnderTest.AccountNumber.EnsureVisible();
             Keyboard.Press("978656789");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumberConfirm' at Center.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(63));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AccountNumberConfirm' at Center.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(65));
             repo.ApplicationUnderTest.AccountNumberConfirm.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(64));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(66));
             Keyboard.PrepareFocus(repo.ApplicationUnderTest.AccountNumberConfirm);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '978656789' with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(65));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '978656789' with focus on 'ApplicationUnderTest.AccountNumberConfirm'.", repo.ApplicationUnderTest.AccountNumberConfirmInfo, new RecordItemIndex(67));
             repo.ApplicationUnderTest.AccountNumberConfirm.PressKeys("978656789");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Save' at Center.", repo.ApplicationUnderTest.SaveInfo, new RecordItemIndex(66));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Save' at Center.", repo.ApplicationUnderTest.SaveInfo, new RecordItemIndex(68));
             repo.ApplicationUnderTest.Save.Click();
             Delay.Milliseconds(0);
             
             // Delete a Account
-            Report.Log(ReportLevel.Info, "Section", "Delete a Account", new RecordItemIndex(67));
+            Report.Log(ReportLevel.Info, "Section", "Delete a Account", new RecordItemIndex(69));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at Center.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(68));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at Center.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(70));
             repo.ApplicationUnderTest.DropdownMenuButton1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Delete' at Center.", repo.ApplicationUnderTest.DeleteInfo, new RecordItemIndex(69));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Delete' at Center.", repo.ApplicationUnderTest.DeleteInfo, new RecordItemIndex(71));
             repo.ApplicationUnderTest.Delete.Click();
             Delay.Milliseconds(0);
             

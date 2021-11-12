@@ -24,29 +24,29 @@ namespace MyFrankCrum_EMP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Summary_Page recording.
+    ///The View_Tax_Forms_button_clk recording.
     /// </summary>
-    [TestModule("ce55fdd6-f498-42ca-b111-0b7baf212d74", ModuleType.Recording, 1)]
-    public partial class Summary_Page : ITestModule
+    [TestModule("c55b89a3-3338-41b6-aa4b-8899556bec99", ModuleType.Recording, 1)]
+    public partial class View_Tax_Forms_button_clk : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyFrankCrum_EMPRepository repository.
         /// </summary>
         public static MyFrankCrum_EMPRepository repo = MyFrankCrum_EMPRepository.Instance;
 
-        static Summary_Page instance = new Summary_Page();
+        static View_Tax_Forms_button_clk instance = new View_Tax_Forms_button_clk();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Summary_Page()
+        public View_Tax_Forms_button_clk()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Summary_Page Instance
+        public static View_Tax_Forms_button_clk Instance
         {
             get { return instance; }
         }
@@ -89,18 +89,23 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Finish' at 56;16.", repo.ApplicationUnderTest.FinishInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.Finish.Click("56;16");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.BalanceViewContainer.ViewTaxForms' at 55;17.", repo.ApplicationUnderTest.BalanceViewContainer.ViewTaxFormsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.BalanceViewContainer.ViewTaxForms.Click("55;17");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(1));
-            Delay.Duration(8000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
+            Delay.Duration(3000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "After added new employee screenshot taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
+            Report.Screenshot(ReportLevel.Info, "User", "After clicked View tax Forms  button", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(2));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeactivatePopupOK' at 62;23.", repo.ApplicationUnderTest.DeactivatePopupOKInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.DeactivatePopupOK.Click("62;23");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.PayTaxDetails' at 35;8.", repo.ApplicationUnderTest.PayTaxDetailsInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.PayTaxDetails.Click("35;8");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(4));
+            Delay.Duration(3000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "After clicked Pay Tax Details link", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(5));
             
         }
 
