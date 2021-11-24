@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="37.8s"
+		durationms="37797"
+		type="root"
+		rid="ac7a026f0720bc1"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="10.1.1.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="11/11/2021 6:54:07 AM"
+		timestampiso="2021-11-11T11:54:07"
+		endtime="11/11/2021 6:54:45 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Employee_Direct_Deposite_Setting_Edit">
+		<detail>
+			Employee_Direct_Deposite_Setting_Edit
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.550"
+			timeRelativeToTestModuleStartTime="00:07.550"
+			timeWallClock="06:54:15"
+			time="00:07.550"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>GetRoutnumber, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.602"
+			timeRelativeToTestModuleStartTime="00:07.602"
+			timeWallClock="06:54:15"
+			time="00:07.602"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.selectempdd' at 15;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[2]/div/div[1]/div[1]/button[@class='bold flex-link blue-link  no-button-style is-span-button']"
+				itempath=".//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[2]/div/div[1]/div[1]/button[@class='bold flex-link blue-link  no-button-style is-span-button']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.selectempdd"
+				id="32bbcd3533da48aa9fb4ff611611f9b0"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="105"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.211"
+			timeRelativeToTestModuleStartTime="00:12.211"
+			timeWallClock="06:54:19"
+			time="00:12.211"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 4s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="109"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.219"
+			timeRelativeToTestModuleStartTime="00:16.219"
+			timeWallClock="06:54:23"
+			time="00:16.219"
+			level="Info"
+			category="Get Value">
+			<message>
+				Getting attribute 'Value' from item 'ApplicationUnderTest.DepositeRoutingNumber' and assigning its value to variable 'GetRoutnumber'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Routing / Transit Number']"
+				itempath=".//input[#'Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumber"
+				id="8b1bfd4ec19c44488bb7361c6bd0215f"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="116"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:37.790"
+			timeRelativeToTestModuleStartTime="00:37.790"
+			timeWallClock="06:54:45"
+			time="00:37.790"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

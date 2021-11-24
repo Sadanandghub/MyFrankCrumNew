@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="23.2s"
+		durationms="23195"
+		type="root"
+		rid="df23b712057215d"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="10.1.1.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="11/11/2021 7:14:47 AM"
+		timestampiso="2021-11-11T12:14:47"
+		endtime="11/11/2021 7:15:10 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Employee_D_D_Setting_Gray_Edit">
+		<detail>
+			Employee_D_D_Setting_Gray_Edit
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.640"
+			timeRelativeToTestModuleStartTime="00:07.640"
+			timeWallClock="07:14:54"
+			time="00:07.640"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>GetRoutnumber, ChangeDepositeDollar, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.690"
+			timeRelativeToTestModuleStartTime="00:07.690"
+			timeWallClock="07:14:54"
+			time="00:07.690"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at 19;17.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//button[#'dropdownMenuButton']"
+				itempath=".//button[#'dropdownMenuButton']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DropdownMenuButton1"
+				id="0b1bc084442a4bee8bad0af29b3af8a4"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="118"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.484"
+			timeRelativeToTestModuleStartTime="00:12.484"
+			timeWallClock="07:14:59"
+			time="00:12.484"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EditSettings' at 52;14.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//div[#'dropdown']/div[@id='dropdown-menu']/button[@innertext='Edit Settings']"
+				itempath=".//div[#'dropdown']/div[@id='dropdown-menu']/button[@innertext='Edit Settings']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EditSettings"
+				id="9656347eea3642a7a6c46d0a478258c6"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="122"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.374"
+			timeRelativeToTestModuleStartTime="00:13.374"
+			timeWallClock="07:15:00"
+			time="00:13.374"
+			level="Info"
+			category="Get Value">
+			<message>
+				Getting attribute 'Value' from item 'ApplicationUnderTest.DepositeRoutingNumberEdit' and assigning its value to variable 'GetRoutnumber'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Routing/Transit Number']"
+				itempath=".//input[#'Routing/Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberEdit"
+				id="e98546fb4d5d4400abbaa29ec8171f96"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="126"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.560"
+			timeRelativeToTestModuleStartTime="00:13.560"
+			timeWallClock="07:15:00"
+			time="00:13.560"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 3s.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="130"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.571"
+			timeRelativeToTestModuleStartTime="00:16.571"
+			timeWallClock="07:15:03"
+			time="00:16.571"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeRoutingNumberConfirm' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Confirm Routing / Transit Number']"
+				itempath=".//input[#'Confirm Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberConfirm"
+				id="3c0b418b9dc8447d99b6327f493e600c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="133"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.435"
+			timeRelativeToTestModuleStartTime="00:17.435"
+			timeWallClock="07:15:04"
+			time="00:17.435"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute Value to '$GetRoutnumber' on item 'ApplicationUnderTest.DepositeRoutingNumberConfirm'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Confirm Routing / Transit Number']"
+				itempath=".//input[#'Confirm Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberConfirm"
+				id="3c0b418b9dc8447d99b6327f493e600c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="137"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.620"
+			timeRelativeToTestModuleStartTime="00:17.620"
+			timeWallClock="07:15:04"
+			time="00:17.620"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 3s.
+			</message>
+			<metainfo
+				itemindex="6"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="141"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.630"
+			timeRelativeToTestModuleStartTime="00:20.630"
+			timeWallClock="07:15:07"
+			time="00:20.630"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'ApplicationUnderTest.DepositeDollarAmount' at 70;18.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Dollar Amount']"
+				itempath=".//input[#'Dollar Amount']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeDollarAmount"
+				id="c909b1eb3e414905b2b25fdae024574c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="144"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.758"
+			timeRelativeToTestModuleStartTime="00:21.758"
+			timeWallClock="07:15:08"
+			time="00:21.758"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$ChangeDepositeDollar' with focus on 'ApplicationUnderTest.DepositeDollarAmount'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Dollar Amount']"
+				itempath=".//input[#'Dollar Amount']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeDollarAmount"
+				id="c909b1eb3e414905b2b25fdae024574c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="148"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:22.431"
+			timeRelativeToTestModuleStartTime="00:22.431"
+			timeWallClock="07:15:09"
+			time="00:22.431"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EditSaveContent' at 73;12.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Save Changes']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Save Changes']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EditSaveContent"
+				id="62b185cee7ea4be187a2d555d78ce350"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_D_D_Setting_Gray_Edit.cs"
+				codeline="152"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

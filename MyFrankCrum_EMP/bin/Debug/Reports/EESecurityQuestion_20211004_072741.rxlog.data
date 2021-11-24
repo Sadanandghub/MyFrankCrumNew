@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.2m"
+		durationms="72919"
+		type="root"
+		rid="3c6945130773ff8"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="10/4/2021 7:27:45 AM"
+		timestampiso="2021-10-04T11:27:45"
+		endtime="10/4/2021 7:28:58 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EESecurityQuestion">
+		<detail>
+			EESecurityQuestion
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.Text2'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.550"
+			timeRelativeToTestModuleStartTime="00:04.550"
+			timeWallClock="07:27:49"
+			time="00:04.550"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL, SecurityQuestion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.580"
+			timeRelativeToTestModuleStartTime="00:04.580"
+			timeWallClock="07:27:49"
+			time="00:04.580"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EditQuestion' at 57;20.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]//button[@innertext='Edit Question']"
+				itempath=".//div[#'app']/div[2]/div[3]//button[@innertext='Edit Question']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EditQuestion"
+				id="d2cdc68f7c8b4e0182441687ada60ea0"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EESecurityQuestion.cs"
+				codeline="102"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.027"
+			timeRelativeToTestModuleStartTime="00:08.027"
+			timeWallClock="07:27:53"
+			time="00:08.027"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 3s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EESecurityQuestion.cs"
+				codeline="106"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.038"
+			timeRelativeToTestModuleStartTime="00:11.038"
+			timeWallClock="07:27:56"
+			time="00:11.038"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SecurityQuestiontext' at 20;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'new security question']/div/div[2]/div"
+				itempath=".//div[#'new security question']/div/div[2]/div"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SecurityQuestiontext"
+				id="c56122879c734e369b6bf27bf4cc3662"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EESecurityQuestion.cs"
+				codeline="109"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.803"
+			timeRelativeToTestModuleStartTime="00:11.803"
+			timeWallClock="07:27:57"
+			time="00:11.803"
+			level="Info"
+			category="Mouse"
+			errimg="images_EESecuri_985fc28f\EESecuri_985fc28f_9c9ef648_trace.jpg"
+			errthumb="images_EESecuri_985fc28f\EESecuri_985fc28f_9c9ef648_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SecurityQuestionValues' at 88;19.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'new security question']/div/?/?/div/div[@innertext='What is your favorite color?']"
+				itempath=".//div[#'new security question']/div/?/?/div/div[@innertext=$SecurityQuestion]"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.SecurityQuestionValues"
+				id="4e0238c9dfcb48bc854b16e79946bd14"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EESecurityQuestion.cs"
+				codeline="113"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.602"
+			timeRelativeToTestModuleStartTime="00:12.602"
+			timeWallClock="07:27:57"
+			time="00:12.602"
+			level="Info"
+			category="Mouse"
+			errimg="images_EESecuri_985fc28f\EESecuri_985fc28f_bc8bad20_trace.jpg"
+			errthumb="images_EESecuri_985fc28f\EESecuri_985fc28f_bc8bad20_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Text2' at 28;23.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div[]/div/div/div[5]/?/?/form[]/div/div[2]/div[2]//input[@type='text']"
+				itempath=".//div[#'app']/div[2]/div[3]/div[]/div/div/div[5]/?/?/form[]/div/div[2]/div[2]//input[@type='text']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Text2"
+				id="c3d02a50c69149e193d26d177892c9f7"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EESecurityQuestion.cs"
+				codeline="117"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:12.815"
+			timeRelativeToTestModuleStartTime="01:12.815"
+			timeWallClock="07:28:58"
+			time="01:12.815"
+			level="Error"
+			category="Module"
+			errimg="images_EESecuri_985fc28f\EESecuri_985fc28f_575e7c26_trace.jpg"
+			errthumb="images_EESecuri_985fc28f\EESecuri_985fc28f_575e7c26_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.Text2'.<br/>No element found for path '/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div[]/div/div/div[5]/?/?/form[]/div/div[2]/div[2]//input[@type='text']' at step 'div[5]' after 351 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_Text2() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 10966&#13;&#10;   at MyFrankCrum_EMP.EESecurityQuestion.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\EESecurityQuestion.cs:line 118&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EESecurityQuestion.cs"
+				codeline="118"
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div[]/div/div/div[5]/?/?/form[]/div/div[2]/div[2]//input[@type='text']"
+				itempath=".//div[#'app']/div[2]/div[3]/div[]/div/div/div[5]/?/?/form[]/div/div[2]/div[2]//input[@type='text']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Text2"
+				id="c3d02a50c69149e193d26d177892c9f7"
+				timeout="60000"
+				failedStep="div[5]"
+				bestPathPrefix="/dom[@domain=$RepoURL]/descendant-or-self::div[#'app']/div[2]/div[3]/div[]/div/div"
+				loglvl="Error"
+				itemindex="4">
+			</metainfo>
+		</item>
+	</activity>
+</report>

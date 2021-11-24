@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.1m"
+		durationms="64631"
+		type="root"
+		rid="62215f9da8a53d9"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="9/22/2021 8:37:20 AM"
+		timestampiso="2021-09-22T12:37:20"
+		endtime="9/22/2021 8:38:25 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DeliveryAgreement">
+		<detail>
+			DeliveryAgreement
+		</detail>
+		<errormessage>
+			Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.DeliveryAgreement'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.299"
+			timeRelativeToTestModuleStartTime="00:04.299"
+			timeWallClock="08:37:25"
+			time="00:04.299"
+			level="Warn"
+			category="Data"
+			errimg="images_Delivery_d6a88f34\Delivery_d6a88f34_a83dd5f4_trace.jpg"
+			errthumb="images_Delivery_d6a88f34\Delivery_d6a88f34_a83dd5f4_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.328"
+			timeRelativeToTestModuleStartTime="00:04.328"
+			timeWallClock="08:37:25"
+			time="00:04.328"
+			level="Info"
+			category="Mouse"
+			errimg="images_Delivery_d6a88f34\Delivery_d6a88f34_a83dd5f4_trace.jpg"
+			errthumb="images_Delivery_d6a88f34\Delivery_d6a88f34_a83dd5f4_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DeliveryAgreement' at 24;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcdev01.frankcrum.com']//div[#'sidebar-content-container']/div[6]/div[2]/div[2]//div[@innertext='Delivery Agreement']"
+				itempath=".//div[#'sidebar-content-container']/div[6]/div[2]/div[2]//div[@innertext='Delivery Agreement']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeliveryAgreement"
+				id="589d7f178f134774b32310fdb3d0c910"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DeliveryAgreement.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:04.526"
+			timeRelativeToTestModuleStartTime="01:04.526"
+			timeWallClock="08:38:25"
+			time="01:04.526"
+			level="Error"
+			category="Module"
+			errimg="images_Delivery_d6a88f34\Delivery_d6a88f34_3075855b_trace.jpg"
+			errthumb="images_Delivery_d6a88f34\Delivery_d6a88f34_3075855b_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.DeliveryAgreement'.<br/>No element found for path '/dom[@domain='mfcdev01.frankcrum.com']//div[#'sidebar-content-container']/div[6]/div[2]/div[2]//div[@innertext='Delivery Agreement']' at step 'dom[@domain='mfcdev01.frankcrum.com']' after 362 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyFrankCrum_EMP.MyFrankCrum_EMPRepositoryFolders.ApplicationUnderTestAppFolder.get_DeliveryAgreement() in C:\MFC_Ranorex\MyFrankCrum_EMP\MyFrankCrum_EMPRepository.cs:line 13868&#13;&#10;   at MyFrankCrum_EMP.DeliveryAgreement.Ranorex.Core.Testing.ITestModule.Run() in C:\MFC_Ranorex\MyFrankCrum_EMP\DeliveryAgreement.cs:line 93&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\DeliveryAgreement.cs"
+				codeline="93"
+				type="repoitem"
+				path="/dom[@domain='mfcdev01.frankcrum.com']//div[#'sidebar-content-container']/div[6]/div[2]/div[2]//div[@innertext='Delivery Agreement']"
+				itempath=".//div[#'sidebar-content-container']/div[6]/div[2]/div[2]//div[@innertext='Delivery Agreement']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DeliveryAgreement"
+				id="589d7f178f134774b32310fdb3d0c910"
+				timeout="60000"
+				failedStep="dom[@domain=$RepoURL]"
+				bestPathPrefix=""
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

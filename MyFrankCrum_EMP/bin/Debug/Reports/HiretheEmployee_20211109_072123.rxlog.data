@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="16.95s"
+		durationms="16947"
+		type="root"
+		rid="3435b67d45d39562"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="10.1.1.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="11/9/2021 7:21:30 AM"
+		timestampiso="2021-11-09T12:21:30"
+		endtime="11/9/2021 7:21:47 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="HiretheEmployee">
+		<detail>
+			HiretheEmployee
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.232"
+			timeRelativeToTestModuleStartTime="00:08.232"
+			timeWallClock="07:21:38"
+			time="00:08.232"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.322"
+			timeRelativeToTestModuleStartTime="00:08.322"
+			timeWallClock="07:21:38"
+			time="00:08.322"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.Select' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//iframe[#'onboardingIframe']//table[#'gvEmployees']//a[@innertext='Select']"
+				itempath=".//table[#'gvEmployees']//a[@innertext='Select']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.OnboardingIframe.Select"
+				id="c8ae870076fd433fa38ff4db1ed1ffc8"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\HiretheEmployee.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.938"
+			timeRelativeToTestModuleStartTime="00:13.938"
+			timeWallClock="07:21:44"
+			time="00:13.938"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 3s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\HiretheEmployee.cs"
+				codeline="96"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

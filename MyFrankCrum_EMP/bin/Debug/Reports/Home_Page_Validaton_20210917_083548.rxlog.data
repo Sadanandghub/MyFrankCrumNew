@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="6.92s"
+		durationms="6923"
+		type="root"
+		rid="83306c907ae8a0"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="9.3.2.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="9/17/2021 8:35:52 AM"
+		timestampiso="2021-09-17T12:35:52"
+		endtime="9/17/2021 8:35:59 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Home_Page_Validaton">
+		<detail>
+			Home_Page_Validaton
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.809"
+			timeRelativeToTestModuleStartTime="00:04.809"
+			timeWallClock="08:35:56"
+			time="00:04.809"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.842"
+			timeRelativeToTestModuleStartTime="00:04.842"
+			timeWallClock="08:35:56"
+			time="00:04.842"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText='Company News') on item 'ApplicationUnderTest.CompanyNews'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div/div/div//h5[@innertext>'Company News']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div/div/div/div//h5[@innertext>'Company News']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.CompanyNews"
+				id="b76c8e54867240178805a419cfa206ac"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Home_Page_Validaton.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.545"
+			timeRelativeToTestModuleStartTime="00:06.545"
+			timeWallClock="08:35:58"
+			time="00:06.545"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.CompanyNews' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div/div/div//h5[@innertext>'Company News']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div/div/div/div//h5[@innertext>'Company News']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.CompanyNews"
+				id="b76c8e54867240178805a419cfa206ac"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Home_Page_Validaton.cs"
+				codeline="93"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.648"
+			timeRelativeToTestModuleStartTime="00:06.648"
+			timeWallClock="08:35:58"
+			time="00:06.648"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText='I Want To') on item 'ApplicationUnderTest.Iwantlink'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[2]//div[@innertext='I Want To']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div/div[2]//div[@innertext='I Want To']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Iwantlink"
+				id="7a5bd1fd09144291a63b329741d6c3ac"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Home_Page_Validaton.cs"
+				codeline="96"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.811"
+			timeRelativeToTestModuleStartTime="00:06.811"
+			timeWallClock="08:35:58"
+			time="00:06.811"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'MyFrankCrum_EMPRepository.ApplicationUnderTest.Iwantlink' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='mfcqa01.frankcrum.com']//div[#'app']/div[2]/div[3]/div/div/div[2]//div[@innertext='I Want To']"
+				itempath=".//div[#'app']/div[2]/div[3]/div/div/div[2]//div[@innertext='I Want To']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.Iwantlink"
+				id="7a5bd1fd09144291a63b329741d6c3ac"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Home_Page_Validaton.cs"
+				codeline="97"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

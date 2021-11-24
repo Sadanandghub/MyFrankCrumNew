@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="14.79s"
+		durationms="14788"
+		type="root"
+		rid="2b047f3507489d32"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="10.1.1.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="11/10/2021 8:06:22 AM"
+		timestampiso="2021-11-10T13:06:22"
+		endtime="11/10/2021 8:06:37 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="EmployeeSearch">
+		<detail>
+			EmployeeSearch
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.024"
+			timeRelativeToTestModuleStartTime="00:08.024"
+			timeWallClock="08:06:30"
+			time="00:08.024"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>CompanyID, EmployeeStatus, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.079"
+			timeRelativeToTestModuleStartTime="00:08.079"
+			timeWallClock="08:06:30"
+			time="00:08.079"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'ApplicationUnderTest.OnboardingIframe.StatusDate' at 33;8.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//iframe[#'onboardingIframe']//table[#'gvEmployees']//a[@innertext='Status Date']"
+				itempath=".//table[#'gvEmployees']//a[@innertext='Status Date']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.OnboardingIframe.StatusDate"
+				id="4fe099cc34f745039852b50b57f91f05"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeSearch.cs"
+				codeline="118"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.698"
+			timeRelativeToTestModuleStartTime="00:13.698"
+			timeWallClock="08:06:36"
+			time="00:13.698"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.OnboardingIframe.StatusDate' at 33;8.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//iframe[#'onboardingIframe']//table[#'gvEmployees']//a[@innertext='Status Date']"
+				itempath=".//table[#'gvEmployees']//a[@innertext='Status Date']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.OnboardingIframe.StatusDate"
+				id="4fe099cc34f745039852b50b57f91f05"
+				timeout="90000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\EmployeeSearch.cs"
+				codeline="122"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

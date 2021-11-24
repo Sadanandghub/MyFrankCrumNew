@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="25.95s"
+		durationms="25953"
+		type="root"
+		rid="174d5f0fce394f80"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SadanandG"
+		rxversion="10.1.1.0"
+		host="SADG-VM-W10"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="11/11/2021 7:02:23 AM"
+		timestampiso="2021-11-11T12:02:23"
+		endtime="11/11/2021 7:02:49 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Employee_Direct_Deposite_Setting_Edit">
+		<detail>
+			Employee_Direct_Deposite_Setting_Edit
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.483"
+			timeRelativeToTestModuleStartTime="00:07.483"
+			timeWallClock="07:02:30"
+			time="00:07.483"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>GetRoutnumber, RepoURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.534"
+			timeRelativeToTestModuleStartTime="00:07.534"
+			timeWallClock="07:02:30"
+			time="00:07.534"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.selectempdd' at 15;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[2]/div/div[1]/div[1]/button[@class='bold flex-link blue-link  no-button-style is-span-button']"
+				itempath=".//div[#'app']/div[2]/div[3]/?/?/main/div/div/div/div[2]/div/div[1]/div[1]/button[@class='bold flex-link blue-link  no-button-style is-span-button']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.selectempdd"
+				id="32bbcd3533da48aa9fb4ff611611f9b0"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="105"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.201"
+			timeRelativeToTestModuleStartTime="00:12.201"
+			timeWallClock="07:02:35"
+			time="00:12.201"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 4s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="109"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.209"
+			timeRelativeToTestModuleStartTime="00:16.209"
+			timeWallClock="07:02:39"
+			time="00:16.209"
+			level="Info"
+			category="Get Value">
+			<message>
+				Getting attribute 'Value' from item 'ApplicationUnderTest.DepositeRoutingNumberEdit' and assigning its value to variable 'GetRoutnumber'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Routing/Transit Number']"
+				itempath=".//input[#'Routing/Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberEdit"
+				id="e98546fb4d5d4400abbaa29ec8171f96"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="116"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.390"
+			timeRelativeToTestModuleStartTime="00:16.390"
+			timeWallClock="07:02:39"
+			time="00:16.390"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 3s.
+			</message>
+			<metainfo
+				itemindex="4"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="120"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.392"
+			timeRelativeToTestModuleStartTime="00:19.392"
+			timeWallClock="07:02:42"
+			time="00:19.392"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.DepositeRoutingNumberConfirm' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Confirm Routing / Transit Number']"
+				itempath=".//input[#'Confirm Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberConfirm"
+				id="3c0b418b9dc8447d99b6327f493e600c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="123"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.257"
+			timeRelativeToTestModuleStartTime="00:20.257"
+			timeWallClock="07:02:43"
+			time="00:20.257"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute Value to '$GetRoutnumber' on item 'ApplicationUnderTest.DepositeRoutingNumberConfirm'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Confirm Routing / Transit Number']"
+				itempath=".//input[#'Confirm Routing / Transit Number']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeRoutingNumberConfirm"
+				id="3c0b418b9dc8447d99b6327f493e600c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="127"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.443"
+			timeRelativeToTestModuleStartTime="00:20.443"
+			timeWallClock="07:02:43"
+			time="00:20.443"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 3s.
+			</message>
+			<metainfo
+				itemindex="7"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="131"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:23.449"
+			timeRelativeToTestModuleStartTime="00:23.449"
+			timeWallClock="07:02:46"
+			time="00:23.449"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'ApplicationUnderTest.DepositeDollarAmount' at 70;18.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Dollar Amount']"
+				itempath=".//input[#'Dollar Amount']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeDollarAmount"
+				id="c909b1eb3e414905b2b25fdae024574c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="134"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:24.548"
+			timeRelativeToTestModuleStartTime="00:24.548"
+			timeWallClock="07:02:47"
+			time="00:24.548"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '40' with focus on 'ApplicationUnderTest.DepositeDollarAmount'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//input[#'Dollar Amount']"
+				itempath=".//input[#'Dollar Amount']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.DepositeDollarAmount"
+				id="c909b1eb3e414905b2b25fdae024574c"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="138"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:25.207"
+			timeRelativeToTestModuleStartTime="00:25.207"
+			timeWallClock="07:02:48"
+			time="00:25.207"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.EditSaveContent' at 73;12.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='stagingmfc.frankcrum.com']//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Save Changes']"
+				itempath=".//div[#'modal-wrapper']/div/div/div[4]/form[]/div/div/div[2]/button[@innertext='Save Changes']"
+				fullname="MyFrankCrum_EMPRepository.ApplicationUnderTest.EditSaveContent"
+				id="62b185cee7ea4be187a2d555d78ce350"
+				timeout="60000"
+				codefile="C:\MFC_Ranorex\MyFrankCrum_EMP\Employee_Direct_Deposite_Setting_Edit.cs"
+				codeline="142"
+				itemindex="10"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>
