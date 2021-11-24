@@ -59,8 +59,8 @@ namespace MyFrankCrum_EMP
             ContactOtherPhone = "6498765434";
             ContactEmployer = "Sadanand";
             ContactOccupation = "Sales";
-            Relationship = "Partner";
-            ContactSuffix = "Sr";
+            Relationship = "Brother";
+            ContactSuffix = "III";
         }
 
         /// <summary>
@@ -590,7 +590,11 @@ namespace MyFrankCrum_EMP
             Mouse.ScrollWheel(-713);
             Delay.Milliseconds(300);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(54));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.Myinfopagetext'.", repo.ApplicationUnderTest.MyinfopagetextInfo, new RecordItemIndex(54));
+            Validate.Exists(repo.ApplicationUnderTest.MyinfopagetextInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot Taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(55));
             
         }
 

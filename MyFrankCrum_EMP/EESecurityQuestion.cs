@@ -41,7 +41,7 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public EESecurityQuestion()
         {
-            NewQuestion = "umbai";
+            NewQuestion = "Mumbai";
             ConfirmNewQuestion = "Mumbai";
         }
 
@@ -163,7 +163,11 @@ namespace MyFrankCrum_EMP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(9));
             Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "After changed Question screenshot taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.Settingpagetext'.", repo.ApplicationUnderTest.SettingpagetextInfo, new RecordItemIndex(10));
+            Validate.Exists(repo.ApplicationUnderTest.SettingpagetextInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "After changed Question screenshot taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(11));
             
         }
 

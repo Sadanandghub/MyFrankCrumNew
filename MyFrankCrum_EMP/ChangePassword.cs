@@ -41,9 +41,9 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public ChangePassword()
         {
-            OldPassword = "test";
-            NewPassword = "Test";
-            ConfirmNewPassword = "Test";
+            OldPassword = "JMartin123$";
+            NewPassword = "JMartin123#";
+            ConfirmNewPassword = "JMartin123#";
         }
 
         /// <summary>

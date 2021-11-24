@@ -89,30 +89,34 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Screenshot(ReportLevel.Info, "User", "Before Deactivate Direct Deposit Settings Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DirectDepositSettings' at 52;9.", repo.ApplicationUnderTest.DirectDepositSettingsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.DirectDepositSettings.Click("52;9");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at 19;20.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(1));
+            Report.Screenshot(ReportLevel.Info, "User", "Before Deactivate Direct Deposit Settings Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(1));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at 19;20.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(2));
             repo.ApplicationUnderTest.DropdownMenuButton1.Click("19;20");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(3));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeactivateAccount' at 59;11.", repo.ApplicationUnderTest.DeactivateAccountInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DeactivateAccount' at 59;11.", repo.ApplicationUnderTest.DeactivateAccountInfo, new RecordItemIndex(4));
             repo.ApplicationUnderTest.DeactivateAccount.Click("59;11");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ModalWrapper.Deactivate' at 51;19.", repo.ApplicationUnderTest.ModalWrapper.DeactivateInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ModalWrapper.Deactivate' at 51;19.", repo.ApplicationUnderTest.ModalWrapper.DeactivateInfo, new RecordItemIndex(6));
             repo.ApplicationUnderTest.ModalWrapper.Deactivate.Click("51;19");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(7));
             Delay.Duration(3000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "After Deactivate Direct Deposit Settings Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(7));
+            Report.Screenshot(ReportLevel.Info, "User", "After Deactivate Direct Deposit Settings Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(8));
             
         }
 

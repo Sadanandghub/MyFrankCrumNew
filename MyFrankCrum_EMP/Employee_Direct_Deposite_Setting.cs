@@ -242,66 +242,72 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.DepositeRoutingNumber.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DepositeRoutinNumber' with focus on 'ApplicationUnderTest.DepositeRoutingNumber'.", repo.ApplicationUnderTest.DepositeRoutingNumberInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(7));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DepositeRoutinNumber' with focus on 'ApplicationUnderTest.DepositeRoutingNumber'.", repo.ApplicationUnderTest.DepositeRoutingNumberInfo, new RecordItemIndex(8));
             repo.ApplicationUnderTest.DepositeRoutingNumber.PressKeys(DepositeRoutinNumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeRoutingNumberConfirm' at Center.", repo.ApplicationUnderTest.DepositeRoutingNumberConfirmInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeRoutingNumberConfirm' at Center.", repo.ApplicationUnderTest.DepositeRoutingNumberConfirmInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.DepositeRoutingNumberConfirm.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DepositeRoutingNameConfirm' with focus on 'ApplicationUnderTest.DepositeRoutingNumberConfirm'.", repo.ApplicationUnderTest.DepositeRoutingNumberConfirmInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(10));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DepositeRoutingNameConfirm' with focus on 'ApplicationUnderTest.DepositeRoutingNumberConfirm'.", repo.ApplicationUnderTest.DepositeRoutingNumberConfirmInfo, new RecordItemIndex(11));
             repo.ApplicationUnderTest.DepositeRoutingNumberConfirm.PressKeys(DepositeRoutingNameConfirm);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeAccountNumber' at Center.", repo.ApplicationUnderTest.DepositeAccountNumberInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeAccountNumber' at Center.", repo.ApplicationUnderTest.DepositeAccountNumberInfo, new RecordItemIndex(12));
             repo.ApplicationUnderTest.DepositeAccountNumber.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DepositeAccountNumber' with focus on 'ApplicationUnderTest.DepositeAccountNumber'.", repo.ApplicationUnderTest.DepositeAccountNumberInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DepositeAccountNumber' with focus on 'ApplicationUnderTest.DepositeAccountNumber'.", repo.ApplicationUnderTest.DepositeAccountNumberInfo, new RecordItemIndex(13));
             repo.ApplicationUnderTest.DepositeAccountNumber.EnsureVisible();
             Keyboard.Press(DepositeAccountNumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeAccountNumberConfirm' at Center.", repo.ApplicationUnderTest.DepositeAccountNumberConfirmInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeAccountNumberConfirm' at Center.", repo.ApplicationUnderTest.DepositeAccountNumberConfirmInfo, new RecordItemIndex(14));
             repo.ApplicationUnderTest.DepositeAccountNumberConfirm.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ConfirmDepositeAccountNumber' with focus on 'ApplicationUnderTest.DepositeAccountNumberConfirm'.", repo.ApplicationUnderTest.DepositeAccountNumberConfirmInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ConfirmDepositeAccountNumber' with focus on 'ApplicationUnderTest.DepositeAccountNumberConfirm'.", repo.ApplicationUnderTest.DepositeAccountNumberConfirmInfo, new RecordItemIndex(15));
             repo.ApplicationUnderTest.DepositeAccountNumberConfirm.PressKeys(ConfirmDepositeAccountNumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CheckSample' at 352;117.", repo.ApplicationUnderTest.CheckSampleInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CheckSample' at 352;117.", repo.ApplicationUnderTest.CheckSampleInfo, new RecordItemIndex(16));
             repo.ApplicationUnderTest.CheckSample.Click("352;117");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(17));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ClickDepositRule' at Center.", repo.ApplicationUnderTest.ClickDepositRuleInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ClickDepositRule' at Center.", repo.ApplicationUnderTest.ClickDepositRuleInfo, new RecordItemIndex(18));
             repo.ApplicationUnderTest.ClickDepositRule.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DDepositeRuleType' at Center.", repo.ApplicationUnderTest.DDepositeRuleTypeInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DDepositeRuleType' at Center.", repo.ApplicationUnderTest.DDepositeRuleTypeInfo, new RecordItemIndex(19));
             repo.ApplicationUnderTest.DDepositeRuleType.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.DepositeDollarAmount' at 40;17.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.DepositeDollarAmount' at 40;17.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(20));
             repo.ApplicationUnderTest.DepositeDollarAmount.DoubleClick("40;17");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DDollerAmount' with focus on 'ApplicationUnderTest.DepositeDollarAmount'.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DDollerAmount' with focus on 'ApplicationUnderTest.DepositeDollarAmount'.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(21));
             repo.ApplicationUnderTest.DepositeDollarAmount.PressKeys(DDollerAmount);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddDirectDepositAccountbtn' at Center.", repo.ApplicationUnderTest.AddDirectDepositAccountbtnInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddDirectDepositAccountbtn' at Center.", repo.ApplicationUnderTest.AddDirectDepositAccountbtnInfo, new RecordItemIndex(22));
             repo.ApplicationUnderTest.AddDirectDepositAccountbtn.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(23));
             Delay.Duration(8000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "After added Direct Deposite Account screenshot taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(22));
+            Report.Screenshot(ReportLevel.Info, "User", "After added Direct Deposite Account screenshot taken", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(24));
             
         }
 

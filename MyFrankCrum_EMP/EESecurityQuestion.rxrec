@@ -26,7 +26,7 @@ mode="Global">
 		<var
 		id="8986d103-a867-46fc-b374-d0c83bc41693"
 		name="NewQuestion">
-			umbai
+			Mumbai
 		</var>
 		<var
 		id="45712d54-b611-4306-9b00-036ba9a49cfa"
@@ -991,6 +991,31 @@ ABRRRTAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7db6ad5d-d4d6-4c13-97bb-e2b2d806bdae">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e950b767-44b0-47ae-ad8c-8cc5b1f0f691"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]/element
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"

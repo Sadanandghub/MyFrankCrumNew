@@ -116,12 +116,12 @@ mode="Global">
 		<var
 		id="533e729f-6988-432e-908e-33a4b359e3e2"
 		name="Relationship">
-			Partner
+			Brother
 		</var>
 		<var
 		id="8966e0e5-ac64-467d-aa41-728bdc7dcfc7"
 		name="ContactSuffix">
-			Sr
+			III
 		</var>
 	</variables>
 	<recorditems>
@@ -11643,6 +11643,31 @@ cYI4/rRVN+JrHH/PJv8A0GincTguh//Z
 			<bindings>
 			</bindings>
 		</mousewheelitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f4940601-b9a8-4ad3-9dd6-daa8f4d8b800">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="44cbbf15-f8a2-4963-bfcd-1cce7910c2e6"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RepoURL]/element
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"

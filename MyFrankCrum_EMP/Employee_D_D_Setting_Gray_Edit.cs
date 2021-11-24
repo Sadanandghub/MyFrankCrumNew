@@ -115,50 +115,54 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Screenshot(ReportLevel.Info, "User", "Before Edit Direct Deposit Settings Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DirectDepositSettings' at 52;9.", repo.ApplicationUnderTest.DirectDepositSettingsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.DirectDepositSettings.Click("52;9");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at 19;17.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(1));
+            Report.Screenshot(ReportLevel.Info, "User", "Before Edit Direct Deposit Settings Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(1));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at 19;17.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(2));
             repo.ApplicationUnderTest.DropdownMenuButton1.Click("19;17");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EditSettings' at 52;14.", repo.ApplicationUnderTest.EditSettingsInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EditSettings' at 52;14.", repo.ApplicationUnderTest.EditSettingsInfo, new RecordItemIndex(3));
             repo.ApplicationUnderTest.EditSettings.Click("52;14");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'ApplicationUnderTest.DepositeRoutingNumberEdit' and assigning its value to variable 'GetRoutnumber'.", repo.ApplicationUnderTest.DepositeRoutingNumberEditInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'ApplicationUnderTest.DepositeRoutingNumberEdit' and assigning its value to variable 'GetRoutnumber'.", repo.ApplicationUnderTest.DepositeRoutingNumberEditInfo, new RecordItemIndex(4));
             GetRoutnumber = repo.ApplicationUnderTest.DepositeRoutingNumberEdit.Element.GetAttributeValueText("Value");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeRoutingNumberConfirm' at Center.", repo.ApplicationUnderTest.DepositeRoutingNumberConfirmInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DepositeRoutingNumberConfirm' at Center.", repo.ApplicationUnderTest.DepositeRoutingNumberConfirmInfo, new RecordItemIndex(6));
             repo.ApplicationUnderTest.DepositeRoutingNumberConfirm.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$GetRoutnumber' on item 'ApplicationUnderTest.DepositeRoutingNumberConfirm'.", repo.ApplicationUnderTest.DepositeRoutingNumberConfirmInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$GetRoutnumber' on item 'ApplicationUnderTest.DepositeRoutingNumberConfirm'.", repo.ApplicationUnderTest.DepositeRoutingNumberConfirmInfo, new RecordItemIndex(7));
             repo.ApplicationUnderTest.DepositeRoutingNumberConfirm.Element.SetAttributeValue("Value", GetRoutnumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(8));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.DepositeDollarAmount' at 70;18.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.DepositeDollarAmount' at 70;18.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(9));
             repo.ApplicationUnderTest.DepositeDollarAmount.DoubleClick("70;18");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ChangeDepositDollar' with focus on 'ApplicationUnderTest.DepositeDollarAmount'.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ChangeDepositDollar' with focus on 'ApplicationUnderTest.DepositeDollarAmount'.", repo.ApplicationUnderTest.DepositeDollarAmountInfo, new RecordItemIndex(10));
             repo.ApplicationUnderTest.DepositeDollarAmount.PressKeys(ChangeDepositDollar);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EditSaveContent' at 73;12.", repo.ApplicationUnderTest.EditSaveContentInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EditSaveContent' at 73;12.", repo.ApplicationUnderTest.EditSaveContentInfo, new RecordItemIndex(11));
             repo.ApplicationUnderTest.EditSaveContent.Click("73;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(12));
             Delay.Duration(3000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "After Edit Direct Deposit Settings Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(12));
+            Report.Screenshot(ReportLevel.Info, "User", "After Edit Direct Deposit Settings Screenshot", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(13));
             
         }
 

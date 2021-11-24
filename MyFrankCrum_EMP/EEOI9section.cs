@@ -178,8 +178,8 @@ namespace MyFrankCrum_EMP
             repo.ApplicationUnderTest.BirthLocation.Element.SetAttributeValue("TagValue", EditBirthLocation);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EEOI9UndoChanges' at Center.", repo.ApplicationUnderTest.EEOI9UndoChangesInfo, new RecordItemIndex(15));
-            repo.ApplicationUnderTest.EEOI9UndoChanges.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.EEUndoChanges' at Center.", repo.ApplicationUnderTest.EEUndoChangesInfo, new RecordItemIndex(15));
+            repo.ApplicationUnderTest.EEUndoChanges.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$EEOI9_BirthLocattion) on item 'ApplicationUnderTest.BirthLocation'.", repo.ApplicationUnderTest.BirthLocationInfo, new RecordItemIndex(16));

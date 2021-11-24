@@ -41,7 +41,8 @@ namespace MyFrankCrum_EMP
         /// </summary>
         public Myinfo_Contact_Edit()
         {
-            ContactEditAddress = "test";
+            ContactOtherPhone = "6498765490";
+            ContactWorkPhone = "5674567887";
         }
 
         /// <summary>
@@ -54,16 +55,28 @@ namespace MyFrankCrum_EMP
 
 #region Variables
 
-        string _ContactEditAddress;
+        string _ContactOtherPhone;
 
         /// <summary>
-        /// Gets or sets the value of variable ContactEditAddress.
+        /// Gets or sets the value of variable ContactOtherPhone.
         /// </summary>
-        [TestVariable("f5dd4eb1-1963-40b8-a780-662d9f97df66")]
-        public string ContactEditAddress
+        [TestVariable("f201ca13-d5e5-47f2-baa2-1b7956d8b569")]
+        public string ContactOtherPhone
         {
-            get { return _ContactEditAddress; }
-            set { _ContactEditAddress = value; }
+            get { return _ContactOtherPhone; }
+            set { _ContactOtherPhone = value; }
+        }
+
+        string _ContactWorkPhone;
+
+        /// <summary>
+        /// Gets or sets the value of variable ContactWorkPhone.
+        /// </summary>
+        [TestVariable("b4027c45-107f-4806-9da6-2d8cf84b71f6")]
+        public string ContactWorkPhone
+        {
+            get { return _ContactWorkPhone; }
+            set { _ContactWorkPhone = value; }
         }
 
         /// <summary>
@@ -102,17 +115,64 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TaxesEdit' at 60;19.", repo.ApplicationUnderTest.TaxesEditInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.TaxesEdit.Click("60;19");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ReactTabsTabList1.Contacts' at 27;12.", repo.ApplicationUnderTest.ReactTabsTabList1.ContactsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.ReactTabsTabList1.Contacts.Click("27;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AddressLineTwo' at 19;20.", repo.ApplicationUnderTest.AddressLineTwoInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.AddressLineTwo.Click("19;20");
+            Report.Screenshot(ReportLevel.Info, "User", "Before edit Otherphone  & WorkPhone number", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(1));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactdropdownEdit' at Center.", repo.ApplicationUnderTest.ContactdropdownEditInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.ContactdropdownEdit.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactEditAddress' with focus on 'ApplicationUnderTest.AddressLineTwo'.", repo.ApplicationUnderTest.AddressLineTwoInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.AddressLineTwo.PressKeys(ContactEditAddress);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(3));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactdEditSetting' at 60;19.", repo.ApplicationUnderTest.ContactdEditSettingInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.ContactdEditSetting.Click("60;19");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactOtherPhone' at Center.", repo.ApplicationUnderTest.ContactOtherPhoneInfo, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.ContactOtherPhone.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.ContactOtherPhone'.", repo.ApplicationUnderTest.ContactOtherPhoneInfo, new RecordItemIndex(7));
+            Keyboard.PrepareFocus(repo.ApplicationUnderTest.ContactOtherPhone);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactOtherPhone' with focus on 'ApplicationUnderTest.ContactOtherPhone'.", repo.ApplicationUnderTest.ContactOtherPhoneInfo, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.ContactOtherPhone.PressKeys(ContactOtherPhone);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactWorkPhone' at Center.", repo.ApplicationUnderTest.ContactWorkPhoneInfo, new RecordItemIndex(9));
+            repo.ApplicationUnderTest.ContactWorkPhone.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'ApplicationUnderTest.ContactWorkPhone'.", repo.ApplicationUnderTest.ContactWorkPhoneInfo, new RecordItemIndex(10));
+            Keyboard.PrepareFocus(repo.ApplicationUnderTest.ContactWorkPhone);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ContactWorkPhone' with focus on 'ApplicationUnderTest.ContactWorkPhone'.", repo.ApplicationUnderTest.ContactWorkPhoneInfo, new RecordItemIndex(11));
+            repo.ApplicationUnderTest.ContactWorkPhone.PressKeys(ContactWorkPhone);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ContactSaveChanges' at 56;18.", repo.ApplicationUnderTest.ContactSaveChangesInfo, new RecordItemIndex(12));
+            repo.ApplicationUnderTest.ContactSaveChanges.Click("56;18");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(13));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.Myinfopagetext'.", repo.ApplicationUnderTest.MyinfopagetextInfo, new RecordItemIndex(14));
+            Validate.Exists(repo.ApplicationUnderTest.MyinfopagetextInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "After edit Otherphone  & WorkPhone number", repo.ApplicationUnderTest.Self, false, new RecordItemIndex(15));
             
         }
 

@@ -89,23 +89,27 @@ namespace MyFrankCrum_EMP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FlexRow1.FlexRow' at 561;5.", repo.ApplicationUnderTest.FlexRow1.FlexRowInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DirectDepositSettings' at 52;9.", repo.ApplicationUnderTest.DirectDepositSettingsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.DirectDepositSettings.Click("52;9");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FlexRow1.FlexRow' at 561;5.", repo.ApplicationUnderTest.FlexRow1.FlexRowInfo, new RecordItemIndex(1));
             repo.ApplicationUnderTest.FlexRow1.FlexRow.Click("561;5");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FlexRow1.Inactive' at 21;13.", repo.ApplicationUnderTest.FlexRow1.InactiveInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FlexRow1.Inactive' at 21;13.", repo.ApplicationUnderTest.FlexRow1.InactiveInfo, new RecordItemIndex(2));
             repo.ApplicationUnderTest.FlexRow1.Inactive.Click("21;13");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at 22;24.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DropdownMenuButton1' at 22;24.", repo.ApplicationUnderTest.DropdownMenuButton1Info, new RecordItemIndex(3));
             repo.ApplicationUnderTest.DropdownMenuButton1.Click("22;24");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FlexRow1.ActivateAccount' at 48;17.", repo.ApplicationUnderTest.FlexRow1.ActivateAccountInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FlexRow1.ActivateAccount' at 48;17.", repo.ApplicationUnderTest.FlexRow1.ActivateAccountInfo, new RecordItemIndex(4));
             repo.ApplicationUnderTest.FlexRow1.ActivateAccount.Click("48;17");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ModalWrapper.Activate' at 56;21.", repo.ApplicationUnderTest.ModalWrapper.ActivateInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.ModalWrapper.Activate' at 56;21.", repo.ApplicationUnderTest.ModalWrapper.ActivateInfo, new RecordItemIndex(5));
             repo.ApplicationUnderTest.ModalWrapper.Activate.Click("56;21");
             Delay.Milliseconds(0);
             
